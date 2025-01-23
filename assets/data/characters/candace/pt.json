@@ -1,0 +1,310 @@
+{
+  "name": "Candace",
+  "title": "Golden Vow",
+  "vision": "Hydro",
+  "weapon": "Polearm",
+  "gender": "Female",
+  "nation": "Sumeru",
+  "affiliation": "Aaru Village",
+  "rarity": 4,
+  "release": "2022-09-28",
+  "constellation": "Sagitta Scutum",
+  "birthday": "0000-05-03",
+  "description": "A descendant of King Deshret with an amber left eye. The defender of Aaru Village.",
+  "skillTalents": [
+    {
+      "name": "Lança Reluzente – Postura Guardiã",
+      "unlock": "Ataque Normal",
+      "description": "Ataque Normal\nRealiza até 4 golpes com a lança.\n\nAtaque Carregado\nConsome uma certa quantidade de Stamina para se lançar para a frente, infligindo Dano em seu trajeto.\n\nAtaque Imersivo\nMergulha em pleno ar para golpear o chão, causando dano aos inimigos ao longo do caminho e infligindo Dano em uma AdE\ndurante o impacto.\n",
+      "upgrades": [
+        {
+          "name": "Dano do 1° Golpe",
+          "value": "60.8%"
+        },
+        {
+          "name": "Dano do 2° Golpe",
+          "value": "61.1%"
+        },
+        {
+          "name": "Dano do 3° Golpe",
+          "value": "35.5% + 43.4%"
+        },
+        {
+          "name": "Dano do 4° Golpe",
+          "value": "94.9%"
+        },
+        {
+          "name": "Dano de Ataque Carregado",
+          "value": "124.2%"
+        },
+        {
+          "name": "Consumo de Stamina do Ataque Carregado",
+          "value": "25"
+        },
+        {
+          "name": "Dano Durante a Queda",
+          "value": "63.9%"
+        },
+        {
+          "name": "Dano de Queda de Baixa/Alta Altitude",
+          "value": "128% / 160%"
+        }
+      ],
+      "type": "NORMAL_ATTACK"
+    },
+    {
+      "name": "Ritual Sagrado: Garça Guardiã",
+      "unlock": "Habilidade Elemental",
+      "description": "O estilo de luta de Candace é capaz de resistir a uma onda de inimigos.\n\nPressionar\nAtaca avançando com seu escudo, infligindo Dano Hydro contra os inimigos em sua frente.\n\nManter Pressionado\nErgue seu escudo para bloquear o ataque dos inimigos, formando um Escudo que absorve Dano baseado na Vida Máxima de Candace e possui 250% de eficiência contra Dano Hydro. O Escudo dura até o fim da Habilidade Elemental.\nAo Manter Pressionado por um certo tempo, Candace completará o carregamento, e quando lançar a habilidade, a duração acabar ou o escudo for destruído, realizará um ataque de salto que infligirá Dano Hydro contra os inimigos em sua frente.\n",
+      "upgrades": [
+        {
+          "name": "Absorção de Dano de Escudo",
+          "value": "12.0% Max HP + 1.156"
+        },
+        {
+          "name": "Dano Básico",
+          "value": "12.0% Max HP"
+        },
+        {
+          "name": "Dano de Carga Completa",
+          "value": "19.0% Max HP"
+        },
+        {
+          "name": "Recarga de Pressionar",
+          "value": "6.0s"
+        },
+        {
+          "name": "Recarga de Manter Pressionado",
+          "value": "9.0s"
+        }
+      ],
+      "type": "ELEMENTAL_SKILL"
+    },
+    {
+      "name": "Ritual Sagrado: Maré dos Alvéolas",
+      "unlock": "Explosão Elemental",
+      "description": "Candace ergue sua arma e invoca uma bênção divina que inflige Dano Hydro em AdE baseado em sua Vida Máxima, e aplica continuamente o estado 'Súplica da Coroa Escarlate' nos seus próprios personagens da equipe.\n\nSúplica da Coroa Escarlate\nPossui as seguintes características:\n· Quando o Ataque Normal do personagem inflige Dano Elemental contra os inimigos, aumenta o Dano infligido;\n· Quando o personagem se torna o ativo no campo de batalha, lança uma Onda do Dilúvio que inflige Dano Hydro contra os inimigos próximos. Esse efeito possui um limite de vezes que pode ser desencadeado dentro da duração dessa habilidade;\n· Personagens sob esse efeito que usem Espada, Espadão ou Lança obterão Encantamento Hydro.\n",
+      "upgrades": [
+        {
+          "name": "Dano de Habilidade",
+          "value": "6.6% Max HP"
+        },
+        {
+          "name": "Duração",
+          "value": "9.0s"
+        },
+        {
+          "name": "Bônus de Dano",
+          "value": "20.0%"
+        },
+        {
+          "name": "Dano da Onda do Dilúvio",
+          "value": "6.6% Max HP"
+        },
+        {
+          "name": "Ativações da Onda do Dilúvio",
+          "value": "3"
+        },
+        {
+          "name": "Tempo de Recarga",
+          "value": "15.0s"
+        },
+        {
+          "name": "Energia Elemental",
+          "value": "60"
+        }
+      ],
+      "type": "ELEMENTAL_BURST"
+    }
+  ],
+  "passiveTalents": [
+    {
+      "name": "Proteção Plúmea",
+      "unlock": "Desbloqueado na Ascensão 1",
+      "description": "Quando Candace recebe um ataque enquanto manter pressionado Ritual Sagrado: Garça Guardiã, a habilidade carregará por completo imediatamente.",
+      "level": 1
+    },
+    {
+      "name": "Arco das Areias",
+      "unlock": "Desbloqueado na Ascensão 4",
+      "description": "Personagens afetados pela Súplica da Coroa Escarlate causado pelo Ritual Sagrado: Maré dos Alvéolas aumentam o dano aos oponentes em 0,5% para cada 1.000 pontos de Vida Máxima de Candace quando causam Dano Elemental com seus Ataques Normais",
+      "level": 4
+    },
+    {
+      "name": "Aurora Primordial",
+      "unlock": "Desbloqueado Automaticamente",
+      "description": "Diminui o consumo de Stamina ao Escalar de todos os seus próprios personagens da equipe em 20%.\nNão acumulável com Talentos Passivos que concedem exatamente os mesmos efeitos."
+    }
+  ],
+  "constellations": [
+    {
+      "name": "Herdeira das Areias Escarlates Ressurgida",
+      "unlock": "Constelação Lv. 1",
+      "description": "Estende a duração de Súplica da Coroa Escarlate de Ritual Sagrado: Maré dos Alvéolas em 3s.",
+      "level": 1
+    },
+    {
+      "name": "Brilho Perfura-Luas",
+      "unlock": "Constelação Lv. 2",
+      "description": "Quando Ritual Sagrado: Garça Guardiã atinge os inimigos, a Vida Máxima de Candace aumenta 20% por 15s.",
+      "level": 2
+    },
+    {
+      "name": "Devoção à Caça",
+      "unlock": "Constelação Lv. 3",
+      "description": "Aumenta o nível de Ritual Sagrado: Maré dos Alvéolas em 3.\nO nível máximo de elevação é 15.",
+      "level": 3
+    },
+    {
+      "name": "Juramento da Sentinela",
+      "unlock": "Constelação Lv. 4",
+      "description": "A recarga do Manter Pressionado de Ritual Sagrado: Garça Guardiã é reduzida para a recarga do Pressionar.",
+      "level": 4
+    },
+    {
+      "name": "Olhos Dourados",
+      "unlock": "Constelação Lv. 5",
+      "description": "Aumenta o nível do Ritual Sagrado: Garça Guardiã em 3.\nO nível máximo de elevação é 15.",
+      "level": 5
+    },
+    {
+      "name": "Inundação",
+      "unlock": "Constelação Lv. 6",
+      "description": "Quando o personagem ativo no campo de batalha estiver sob o estado Súplica da Coroa Escarlate de Ritual Sagrado: Maré dos Alvéolas (exceto a própria Candace) infligir Dano.\n Elemental contra um inimigo com um Ataque Normal, lançará uma Onda Torrencial que infligirá Dano Hydro em AdE equivalente a 15% da Vida Máxima de Candace.\nEsse efeito só pode ser desencadeado uma vez a cada 2,3s, e o Dano infligido é considerado Dano de Supremo.\n",
+      "level": 6
+    }
+  ],
+  "vision_key": "HYDRO",
+  "weapon_type": "POLEARM",
+  "ascension_materials": {
+    "level_20": [
+      {
+        "name": "Lasca de Lazurita Varunada",
+        "value": 1
+      },
+      {
+        "name": "Bagas de Espinheiro",
+        "value": 3
+      },
+      {
+        "name": "Cetim Vermelho Desbotado",
+        "value": 3
+      },
+      {
+        "name": "Mora",
+        "value": 20000
+      }
+    ],
+    "level_40": [
+      {
+        "name": "Fragmento de Lazurita Varunada",
+        "value": 3
+      },
+      {
+        "name": "Bagas de Espinheiro",
+        "value": 2
+      },
+      {
+        "name": "Cetim Vermelho Desbotado",
+        "value": 10
+      },
+      {
+        "name": "Tetraedro da Luz Guiadora",
+        "value": 15
+      },
+      {
+        "name": "Mora",
+        "value": 40000
+      }
+    ],
+    "level_50": [
+      {
+        "name": "Fragmento de Lazurita Varunada",
+        "value": 6
+      },
+      {
+        "name": "Bagas de Espinheiro",
+        "value": 4
+      },
+      {
+        "name": "Seda Vermelha Bordada",
+        "value": 20
+      },
+      {
+        "name": "Tetraedro da Luz Guiadora",
+        "value": 12
+      },
+      {
+        "name": "Mora",
+        "value": 60000
+      }
+    ],
+    "level_60": [
+      {
+        "name": "Pedaço de Lazurita Varunada",
+        "value": 3
+      },
+      {
+        "name": "Bagas de Espinheiro",
+        "value": 8
+      },
+      {
+        "name": "Seda Vermelha Bordada",
+        "value": 30
+      },
+      {
+        "name": "Tetraedro da Luz Guiadora",
+        "value": 18
+      },
+      {
+        "name": "Mora",
+        "value": 80000
+      }
+    ],
+    "level_70": [
+      {
+        "name": "Pedaço de Lazurita Varunada",
+        "value": 6
+      },
+      {
+        "name": "Bagas de Espinheiro",
+        "value": 12
+      },
+      {
+        "name": "Cetim Vermelho",
+        "value": 45
+      },
+      {
+        "name": "Tetraedro da Luz Guiadora",
+        "value": 12
+      },
+      {
+        "name": "Mora",
+        "value": 100000
+      }
+    ],
+    "level_80": [
+      {
+        "name": "Gema de Lazurita Varunada",
+        "value": 6
+      },
+      {
+        "name": "Bagas de Espinheiro",
+        "value": 20
+      },
+      {
+        "name": "Cetim Vermelho",
+        "value": 60
+      },
+      {
+        "name": "Tetraedro da Luz Guiadora",
+        "value": 24
+      },
+      {
+        "name": "Mora",
+        "value": 120000
+      }
+    ]
+  },
+  "id": "candace"
+}
