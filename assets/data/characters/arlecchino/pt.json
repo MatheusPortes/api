@@ -1,0 +1,311 @@
+{
+  "name": "Arlecchino",
+  "title": "Lua Solitária da Escuridão",
+  "vision": "Pyro",
+  "weapon": "Lança",
+  "gender": "Feminino",
+  "nation": "Snezhnaya",
+  "affiliation": "Fatui",
+  "specialDish": "Trilha do Fogo do Lar",
+  "rarity": 5,
+  "release": "2024-04-24",
+  "constellation": "Ignis Purgatorius",
+  "birthday": "0000-08-22",
+  "description": "A Serva, a Quarta Mensageira dos Fatui. Uma diplomata calma e implacável, o 'Pai' que todas as crianças da Casa da Lareira temem e em quem reverenciam.",
+  "skillTalents": [
+    {
+      "name": "Convite para Decapitação",
+      "unlock": "Ataque Normal",
+      "description": "Ataque Normal\nRealiza até 6 golpes consecutivos.\n\nAtaque Carregado\nConsome uma certa quantidade de Stamina, avançando contra os inimigos em frente e os atacando uma vez.\nQuando você mantiver pressionado, Arlecchino se moverá rapidamente, consumindo Stamina. Esse movimento durará até 5s.\n\nAtaque Imersivo\nMergulha no ar para atacar no chão, causando Dano contra os oponentes no caminho e causando Dano em AdE ao atingir o chão.\n\nMáscara Vermelha da Morte\nQuando Arlecchino tem um Contrato de Vida igual ou maior que 30% de sua Vida Máxima, o Dano do Ataque Normal, Carregado e Imersivo de Arlecchino é convertido para Dano Pyro que não pode ser substituído.\nQuando estiver no estado 'Máscara Vermelha da Morte', e quando os Ataques Normais de Arlecchino atingirem um oponente, esse Ataque causará Dano adicional baseado no ATQ multiplicado por uma certa porcentagem do Contrato de Vida atual.\n Isso consumirá 7.5% desse Contrato de Vida. Um Contrato de Vida pode ser consumido dessa forma uma vez a cada 0.03s.\nQuando o Contrato de Vida é consumido dessa forma, reduz a recarga da Habilidade Elemental 'Tudo são Cinzas' em 0.8s\n.",
+      "upgrades": [
+        {
+          "name": "Aumento da Máscara Vermelha da Morte",
+          "value": "120.4"
+        },
+        {
+          "name": "Dano do 1º Golpe",
+          "value": "47.5%"
+        },
+        {
+          "name": "Dano do 2º Golpe",
+          "value": "52.11%"
+        },
+        {
+          "name": "Dano do 3º Golpe",
+          "value": "65.39%"
+        },
+        {
+          "name": "Dano do 4º Golpe",
+          "value": "37.15% + 37.15%"
+        },
+        {
+          "name": "Dano do 5º Golpe",
+          "value": "69.98%"
+        },
+        {
+          "name": "Dano do 6º Golpe",
+          "value": "85.38%"
+        },
+        {
+          "name": "Dano de Ataque Carregado",
+          "value": "90.82%"
+        },
+        {
+          "name": "Consumo de Stamina do Ataque Carregado",
+          "value": "25"
+        },
+        {
+          "name": "Consumo de Stamina de Movimento Rápido",
+          "value": "40/s"
+        },
+        {
+          "name": "Dano Durante a Queda",
+          "value": "63.93%"
+        },
+        {
+          "name": "Dano de Queda de Baixa/Alta Altitude",
+          "value": "127.84% / 159.68%"
+        }
+      ],
+      "type": "NORMAL_ATTACK"
+    },
+    {
+      "name": "Tudo são Cinzas",
+      "unlock": "Habilidade Elemental",
+      "description": "Invoca a Lua de Sangue, causando Dano Pyro contra vários inimigos próximos, fazendo um golpe contra um deles que causa Dano Pyro em AdE.\nInimigos atingidos por esse ataque serão marcados com o Comando da Dívida de Sangue.\n\nComando da Dívida de Sangue\n· Dura 30s. A cada 5s, causa 1 instância de Dano Pyro contra o oponente. Máximo de 2 instâncias. Esse Dano é considerado Dano de Habilidade Elemental.\n· Quando Arlecchino usa um Ataque Carregado ou lança seu Supremo 'Ascensão da Lua Ominosa', absorve e elimina os Comandos das Dívidas de Sangue que aplicou. Cada Comando absorvido a dá um Contrato de Vida equivalente a 65% de sua Vida Máxima.\n· Ela pode ganhar um Contrato de Vida equivalente a 145% de sua Vida Máxima dentro nos 35s após usar sua Habilidade Elemental. Lançar a Habilidade Elemental novamente durante esse período redefinirá a contagem da duração e o limite do Contrato de Vida que ganha de Comando da Dívida de Sangue.",
+      "upgrades": [
+        {
+          "name": "Dano dos Espinhos",
+          "value": "14.84%"
+        },
+        {
+          "name": "Dano do Corte",
+          "value": "133.56%"
+        },
+        {
+          "name": "Dano de Comando da Dívida de Sangue",
+          "value": "31.8%"
+        },
+        {
+          "name": "Tempo de Recarga",
+          "value": "30s"
+        }
+      ],
+      "type": "ELEMENTAL_SKILL"
+    },
+    {
+      "name": "Ascensão da Lua Ominosa",
+      "unlock": "Explosão Elemental",
+      "description": "Arlecchino bate as asas da Lua de Sangue, absorvendo e eliminando os Comandos da Dívida de Sangue ao seu redor, causando Dano Pyro em AdE, depois disso remove a recarga da Habilidade Elemental 'Tudo são Cinzas' e regenera a própria Vida. A quantidade regenerada é baseada no valor do Contrato de Vida e no ATQ.\n\nÉ comum se acreditar em Teyvat que as fases da lua são metáforas de presságios, usadas por àqueles que praticam a alquimia e astrologia.\nEla viu a lua carmesim muitas vezes em seus sonhos. Eram presságios de desastres? Sim, mas as catástrofes previstas eram daqueles que a haviam enfurecido.\n",
+      "upgrades": [
+        {
+          "name": "Dano de Habilidade",
+          "value": "370.4%"
+        },
+        {
+          "name": "Regeneração de Vida",
+          "value": "150% Bond of Life + 150% ATK"
+        },
+        {
+          "name": "Tempo de Recarga",
+          "value": "15s"
+        },
+        {
+          "name": "Energia Elemental",
+          "value": "60"
+        }
+      ],
+      "type": "ELEMENTAL_BURST"
+    }
+  ],
+  "passiveTalents": [
+    {
+      "name": "Somente a Dor pode ser Compensada",
+      "unlock": "Desbloqueado na Ascensão 1",
+      "description": "Comando da Dívida de Sangue tem as seguintes características:\n· Quando um oponente afetado por Comando da Dívida de Sangue de Arlecchino é derrotado, será concedido a ela um Contrato de Vida equivalente a 130% de sua Vida Máxima.\n· 5s depois de um Comando da Dívida de Sangue ser aplicado, ele será elevado à Comando da Dívida de Sangue: Pagamento. Ao ser absorvido, fornecerá para Arlecchino um Contrato de Vida equivalente a 130% da sua Vida Máxima.\nUm Contrato de Vida criado dessa forma não pode ultrapassar o limite original do valor do Contrato de Vida obtido através de Tudo são Cinzas.\n",
+      "level": 1
+    },
+    {
+      "name": "Somente a Força Defende",
+      "unlock": "Desbloqueado na Ascensão 4",
+      "description": "Arlecchino ganha 1% de RES contra Todos os Elementos e RES Física para cada 100 pontos de ATQ que possui acima de 1.000. O aumento máximo de RES que Arlecchino pode obter dessa forma para a RES contra Todos Elementos e RES Física é de 20%.",
+      "level": 4
+    },
+    {
+      "name": "Somente a Lua Ominosa Sabe",
+      "unlock": "Desbloqueado automaticamente",
+      "description": "Enquanto em combate, Arlecchino ganha 40% de Bônus de Dano Pyro e somente pode ser curada através de Ascensão da Lua Ominosa."
+    }
+  ],
+  "constellations": [
+    {
+      "name": "Todas as Vinganças e Dívidas são Minhas...",
+      "unlock": "Constelação Lv. 1",
+      "description": "Máscara Vermelha da Morte é fortalecida. O valor do aumento é de 100%. Além disso, enquanto estiver no estado Máscara Vermelha da Morte, a RES contra Interrupção de Arlecchino é aumentada quando ela realiza Ataques Normais ou Carregados.",
+      "level": 1
+    },
+    {
+      "name": "Todas as Recompensas e Retribuições são Minhas para Dar...",
+      "unlock": "Constelação Lv. 2",
+      "description": "Comando da Dívida de Sangue lança agora Comando da Dívida de Sangue: Pagamento\nQuando Arlecchino absorve um Comando da Dívida de Sangue: Pagamento, ela lança uma Lua de Sangue que causa 900% de seu ATQ como Dano Pyro em AdE e aumenta todas as suas resistências elementais e físicas em 20% por 15s. Esse efeito pode ser desencadeado uma vez a cada 10s.\nPrimeiro é necessário desbloquear o Talento Passivo 'Somente a Dor pode ser Compensada'.\n",
+      "level": 2
+    },
+    {
+      "name": "Você se Tornará um Novo Membro da Nossa Família...",
+      "unlock": "Constelação Lv. 3",
+      "description": "Aumenta o nível do Ataque Normal: Convite para Decapitação em 3.\nO nível máximo de elevação é 15.",
+      "level": 3
+    },
+    {
+      "name": "De Hoje em Diante, Amor e Proteção Mútua...",
+      "unlock": "Constelação Lv. 4",
+      "description": "Quando Arlecchino absorve com sucesso Comando da Dívida de Sangue, a recarga de Ascensão da Lua Ominosa reduzirá em 2s, e regenerará 15 de Energia para ela. Esse efeito pode ocorrer uma vez a cada 10s.",
+      "level": 4
+    },
+    {
+      "name": "Sozinhos, Estamos Mortos...",
+      "unlock": "Constelação Lv. 5",
+      "description": "Aumenta o Nível de Ascensão da Lua Ominosa em 3.\nO nível máximo de elevação é 15.",
+      "level": 5
+    },
+    {
+      "name": "De Hoje em Diante, Nos Deliciaremos numa Nova Vida.",
+      "unlock": "Constelação Lv. 6",
+      "description": "O Dano do ataque de Ascensão da Lua Ominosa é aumentado no valor do ATQ de Arlecchino multiplicado por 700% do Contrato de Vida atual.\nNos 20s depois de Arlecchino usar Tudo são Cinzas, o Ataque Normal e o Supremo terão a Taxa CRIT aumentada em 10% e o Dano CRIT em 70%. Esse efeito pode ser desencadeado uma vez a cada 15s.",
+      "level": 6
+    }
+  ],
+  "vision_key": "PYRO",
+  "weapon_type": "POLEARM",
+  "ascension_materials": {
+    "level_20": [
+      {
+        "name": "Lasca de Ágata Agnidus",
+        "value": 1
+      },
+      {
+        "name": "Rosa Arco-Íris",
+        "value": 3
+      },
+      {
+        "name": "Insígnia de Recruta",
+        "value": 3
+      },
+      {
+        "name": "Mora",
+        "value": 20000
+      }
+    ],
+    "level_40": [
+      {
+        "name": "Fragmento de Ágata Agnidus",
+        "value": 3
+      },
+      {
+        "name": "Fragmento da Melodia Dourada",
+        "value": 2
+      },
+      {
+        "name": "Rosa Arco-Íris",
+        "value": 10
+      },
+      {
+        "name": "Insígnia de Recruta",
+        "value": 15
+      },
+      {
+        "name": "Mora",
+        "value": 40000
+      }
+    ],
+    "level_50": [
+      {
+        "name": "Fragmento de Ágata Agnidus",
+        "value": 6
+      },
+      {
+        "name": "Fragmento da Melodia Dourada",
+        "value": 4
+      },
+      {
+        "name": "Rosa Arco-Íris",
+        "value": 20
+      },
+      {
+        "name": "Insígnia de Sargento",
+        "value": 12
+      },
+      {
+        "name": "Mora",
+        "value": 60000
+      }
+    ],
+    "level_60": [
+      {
+        "name": "Pedaço de Ágata Agnidus",
+        "value": 3
+      },
+      {
+        "name": "Fragmento da Melodia Dourada",
+        "value": 8
+      },
+      {
+        "name": "Rosa Arco-Íris",
+        "value": 30
+      },
+      {
+        "name": "Insígnia de Sargento",
+        "value": 18
+      },
+      {
+        "name": "Mora",
+        "value": 80000
+      }
+    ],
+    "level_70": [
+      {
+        "name": "Pedaço de Ágata Agnidus",
+        "value": 6
+      },
+      {
+        "name": "Fragmento da Melodia Dourada",
+        "value": 12
+      },
+      {
+        "name": "Rosa Arco-Íris",
+        "value": 45
+      },
+      {
+        "name": "Insígnia de Oficial",
+        "value": 12
+      },
+      {
+        "name": "Mora",
+        "value": 100000
+      }
+    ],
+    "level_80": [
+      {
+        "name": "Gema de Ágata Agnidus",
+        "value": 6
+      },
+      {
+        "name": "Fragmento da Melodia Dourada",
+        "value": 20
+      },
+      {
+        "name": "Rosa Arco-Íris",
+        "value": 60
+      },
+      {
+        "name": "Insígnia de Oficial",
+        "value": 24
+      },
+      {
+        "name": "Mora",
+        "value": 120000
+      }
+    ]
+  },
+  "id": "arlecchino"
+}
