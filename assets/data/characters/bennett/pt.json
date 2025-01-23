@@ -1,0 +1,310 @@
+{
+  "name": "Bennett",
+  "title": "Julgamento por Fogo",
+  "vision": "Pyro",
+  "weapon": "Espada",
+  "gender": "Masculino",
+  "nation": "Mondstadt",
+  "affiliation": "Guilda de Aventureiros",
+  "rarity": 4,
+  "release": "2020-09-28",
+  "constellation": "Rota Calamitas",
+  "birthday": "0000-02-29",
+  "description": "Um aventureiro de Mondstadt justo e bondoso, mas muito azarado.",
+  "skillTalents": [
+    {
+      "name": "Espada da Sorte",
+      "unlock": "Ataque Normal",
+      "description": "Ataque Normal\nRealiza até 5 golpes rápidos.\n\nAtaque Carregado\nConsome uma certa quantidade de Stamina para desferir 2 golpes rápidos com a espada.\n\nAtaque Imersivo\nMergulha em pleno ar para golpear o chão, causando dano aos inimigos ao longo do caminho e infligindo Dano em uma AdE durante o impacto.\n",
+      "upgrades": [
+        {
+          "name": "Dano do 1° Golpe",
+          "value": "44.5%"
+        },
+        {
+          "name": "Dano do 2° Golpe",
+          "value": "42.7%"
+        },
+        {
+          "name": "Dano do 3° Golpe",
+          "value": "54.6%"
+        },
+        {
+          "name": "Dano do 4° Golpe",
+          "value": "59.7%"
+        },
+        {
+          "name": "Dano do 5° Golpe",
+          "value": "71.9%"
+        },
+        {
+          "name": "Dano de Ataque Carregado",
+          "value": "55.9% + 60.7%"
+        },
+        {
+          "name": "Consumo de Stamina de Ataque Carregado",
+          "value": "20"
+        },
+        {
+          "name": "Dano Durante a Queda",
+          "value": "63.9%"
+        },
+        {
+          "name": "Dano de Queda de Baixa/Alta Altitude",
+          "value": "128% / 160%"
+        }
+      ],
+      "type": "NORMAL_ATTACK"
+    },
+    {
+      "name": "Sobrecarga de Paixão",
+      "unlock": "Habilidade Elemental",
+      "description": "Bennett coloca todo seu fogo e sua paixão por aventura em sua espada. Os resultados podem variar baseados no quão fervente ele está...\n\nPressionar\nUm único e rápido ataque de chamas que causa Dano Pyro.\n\nManter pressionado (Brevemente)\nSobrecarrega, resultando em diferentes efeitos quando liberado baseado no Nível de Carga.\nNível 1: Ataca duas vezes, causando Dano Pyro e lançando inimigos.\nNível 2: Desfere 3 ataques consecutivos que causam um incrível Dano Pyro, mas o último ataque desencadeia uma explosão que lança Bennett e seu inimigo.\nBennett não leva nenhum dano ao ser lançado.\n",
+      "upgrades": [
+        {
+          "name": "Dano de Toque",
+          "value": "138%"
+        },
+        {
+          "name": "Dano da 1ª Energização",
+          "value": "84% + 92%"
+        },
+        {
+          "name": "Dano da 2ª Energização",
+          "value": "88% + 96%"
+        },
+        {
+          "name": "Dano de Explosão",
+          "value": "132%"
+        },
+        {
+          "name": "Tempo de Recarga",
+          "value": "5 / 7.5 / 10s"
+        }
+      ],
+      "type": "ELEMENTAL_SKILL"
+    },
+    {
+      "name": "Viagem Fantástica",
+      "unlock": "Explosão Elemental",
+      "description": "Bennett pula, causando Dano Pyro, e cria um Campo de Inspiração.\n\nCampo de Inspiração\n·Se a Vida dos personagens dentro da AdE for igual ou cair para menos de 70%, regenerará Vida continuamente. A regeneração de Vida se baseia na Vida Máxima de Bennett.\n·Se a Vida dos personagens dentro da AdE for maior que 70%, receberão um Bônus de ATQ proporcional ao Ataque Básico de Bennett.\n·Aplica-se aos personagens dentro da AdE Elemento Pyro.\n",
+      "upgrades": [
+        {
+          "name": "Dano de Habilidade",
+          "value": "233%"
+        },
+        {
+          "name": "Regeneração Contínua",
+          "value": "6% max HP + 577"
+        },
+        {
+          "name": "Taxa de Bônus de ATQ",
+          "value": "56%"
+        },
+        {
+          "name": "Duração",
+          "value": "12s"
+        },
+        {
+          "name": "Tempo de Recarga",
+          "value": "15s"
+        },
+        {
+          "name": "Energia Elemental",
+          "value": "60"
+        }
+      ],
+      "type": "ELEMENTAL_BURST"
+    }
+  ],
+  "passiveTalents": [
+    {
+      "name": "Ressurgimento da Paixão",
+      "unlock": "Desbloqueado na Ascensão 1",
+      "description": "Diminui o Tempo de Recarga da Sobrecarga da Paixão em 20%.",
+      "level": 1
+    },
+    {
+      "name": "Fervor Intrépido",
+      "unlock": "Desbloqueado na Ascensão 4",
+      "description": "Dentro da área criada pela Viagem Fantástica, a Sobrecarga da Paixão recebe os seguintes efeitos:\nA Recarga é reduzida em 50%.\nBennett não será lançado pelos efeitos da Carga Nível 2.\n",
+      "level": 4
+    },
+    {
+      "name": "Deve Ser Seguro...",
+      "unlock": "Desbloqueado automaticamente",
+      "description": "Quando despachado em uma expedição em Mondstadt, o tempo consumido é reduzido em 25%."
+    }
+  ],
+  "constellations": [
+    {
+      "name": "Grande Expectativa",
+      "unlock": "Constelação Lv. 1",
+      "description": "O aumento do ATQ da Viagem Fantástica não possui mais restrição de Vida, e aumenta numericamente 20% do ATQ Básico de Bennett.",
+      "level": 1
+    },
+    {
+      "name": "Escape da Desolação",
+      "unlock": "Constelação Lv. 2",
+      "description": "Quando a Vida de Bennett cair abaixo de 70%, a Recarga da sua Energia é aumentada em 30%.",
+      "level": 2
+    },
+    {
+      "name": "Paixão Ardente",
+      "unlock": "Constelação Lv. 3",
+      "description": "Aumenta o nível da Sobrecarga de Paixão em 3.\nO nível máximo de elevação é 15.",
+      "level": 3
+    },
+    {
+      "name": "Odisseia Inesperada",
+      "unlock": "Constelação Lv. 4",
+      "description": "Usar um Ataque Normal ao executar um segundo ataque de Carga Nível 1 da Sobrecarga da Paixão permite realizar um ataque adicional.\nEsse ataque adicional causa 135% do Dano do segundo ataque.",
+      "level": 4
+    },
+    {
+      "name": "O Verdadeiro Explorador",
+      "unlock": "Constelação Lv. 5",
+      "description": "Aumenta o nível da Viagem Fantástica em 3.\nO nível máximo de elevação é 15.",
+      "level": 5
+    },
+    {
+      "name": "Fogo e Coragem",
+      "unlock": "Constelação Lv. 6",
+      "description": "Viagem Fantástica concede 15% de Bônus de Dano Pyro aos membros do grupo dentro da AdE. Além disso, personagens que usam Espadas, Espadões e Lanças recebem um Encantamento Pyro.",
+      "level": 6
+    }
+  ],
+  "vision_key": "PYRO",
+  "weapon_type": "SWORD",
+  "ascension_materials": {
+    "level_20": [
+      {
+        "name": "Lasca de Ágata Agnidus",
+        "value": 1
+      },
+      {
+        "name": "Margaridas Voadoras",
+        "value": 3
+      },
+      {
+        "name": "Insígnia dos Ladrões de Tesouro",
+        "value": 3
+      },
+      {
+        "name": "Mora",
+        "value": 20000
+      }
+    ],
+    "level_40": [
+      {
+        "name": "Fragmento de Ágata Agnidus",
+        "value": 3
+      },
+      {
+        "name": "Semente de Fogo Eterno",
+        "value": 2
+      },
+      {
+        "name": "Margaridas Voadoras",
+        "value": 10
+      },
+      {
+        "name": "Insígnia dos Ladrões de Tesouro",
+        "value": 15
+      },
+      {
+        "name": "Mora",
+        "value": 40000
+      }
+    ],
+    "level_50": [
+      {
+        "name": "Fragmento de Ágata Agnidus",
+        "value": 6
+      },
+      {
+        "name": "Semente de Fogo Eterno",
+        "value": 4
+      },
+      {
+        "name": "Margaridas Voadoras",
+        "value": 20
+      },
+      {
+        "name": "Insígnia do Corvo Prateado",
+        "value": 12
+      },
+      {
+        "name": "Mora",
+        "value": 60000
+      }
+    ],
+    "level_60": [
+      {
+        "name": "Pedaço de Ágata Agnidus",
+        "value": 3
+      },
+      {
+        "name": "Semente de Fogo Eterno",
+        "value": 8
+      },
+      {
+        "name": "Margaridas Voadoras",
+        "value": 30
+      },
+      {
+        "name": "Insígnia do Corvo Prateado",
+        "value": 18
+      },
+      {
+        "name": "Mora",
+        "value": 80000
+      }
+    ],
+    "level_70": [
+      {
+        "name": "Pedaço de Ágata Agnidus",
+        "value": 6
+      },
+      {
+        "name": "Semente de Fogo Eterno",
+        "value": 12
+      },
+      {
+        "name": "Margaridas Voadoras",
+        "value": 45
+      },
+      {
+        "name": "Insígnia de Corvo Dourado",
+        "value": 12
+      },
+      {
+        "name": "Mora",
+        "value": 100000
+      }
+    ],
+    "level_80": [
+      {
+        "name": "Gema de Ágata Agnidus",
+        "value": 6
+      },
+      {
+        "name": "Semente de Fogo Eterno",
+        "value": 20
+      },
+      {
+        "name": "Margaridas Voadoras",
+        "value": 60
+      },
+      {
+        "name": "Insígnia de Corvo Dourado",
+        "value": 24
+      },
+      {
+        "name": "Mora",
+        "value": 120000
+      }
+    ]
+  },
+  "id": "bennett"
+}
