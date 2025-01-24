@@ -1,0 +1,322 @@
+{
+  "name": "Dehya",
+  "title": "Leoa Flamejante",
+  "vision": "Pyro",
+  "weapon": "Espadão",
+  "gender": "Feminino",
+  "nation": "Sumeru",
+  "affiliation": "Eremitas",
+  "rarity": 5,
+  "release": "2023-03-01",
+  "constellation": "Mantichora",
+  "birthday": "0000-04-07",
+  "description": "Membro dos 'Eremitas', uma organização mercenária que vaga pelos desertos de Sumeru. Ela é corajosa, poderosa e tem uma excelente reputação entre os seus colegas Eremitas.",
+  "skillTalents": [
+    {
+      "name": "Técnica da Espada Dourada",
+      "unlock": "Ataque Normal",
+      "description": "Ataque Normal\nRealiza até 4 golpes consecutivos com seu Espadão e artes marciais.\n\nAtaque Carregado\nDrena Stamina ao longo do tempo para realizar cortes contínuos.\nAo final da sequência, realiza um corte ainda mais poderoso.\n\nAtaque Imersivo\nMergulha em pleno ar para golpear o chão, causando danos aos inimigos em seu caminho e infligindo dano em uma AdE durante o impacto.\n",
+      "upgrades": [
+        {
+          "name": "Dano do 1° Golpe",
+          "value": "62.12%"
+        },
+        {
+          "name": "Dano do 2° Golpe",
+          "value": "61.71%"
+        },
+        {
+          "name": "Dano do 3° Golpe",
+          "value": "76.63%"
+        },
+        {
+          "name": "Dano do 4° Golpe",
+          "value": "95.29%"
+        },
+        {
+          "name": "Dano de Loop de Ataque Carregado",
+          "value": "56.33%"
+        },
+        {
+          "name": "Dano Final de Ataque Carregado",
+          "value": "101.82%"
+        },
+        {
+          "name": "Consumo de Stamina de Ataque Carregado",
+          "value": "40"
+        },
+        {
+          "name": "Maximum Duration",
+          "value": "5"
+        },
+        {
+          "name": "Dano Durante a Queda",
+          "value": "74.59%"
+        },
+        {
+          "name": "Dano de Queda de Baixa/Alta Altitude",
+          "value": "149.14% / 186.29%"
+        }
+      ],
+      "type": "NORMAL_ATTACK"
+    },
+    {
+      "name": "Inferno Derretido",
+      "unlock": "Habilidade Elemental",
+      "description": "Dependendo da situação de combate, Dehya utiliza técnicas de combate diferentes.\n\nCoragem Flamejante\nLança quando não houve uma ' Prisão Flamejante'  criada por Dehya ativa no campo de batalha.\nCausando Dano Pyro em AdE e gera um campo da Prisão Flamejante.\n\nCampo da Espada Incinerante\nLança quando houver uma Prisão Flamejante criada por Dehya ativa no campo de batalha.\nRealiza um ataque de salto, causando Dano Pyro em AdE e novamente gerando um campo da Prisão Flamejante numa nova posição.\nO campo da Prisão Flamejante gerado novamente dessa forma gerdará a duração do campo original.\n\nSó é possivel lançar um Campo da Espada Incinerante na duração de um campo de Prisão Flamejante\n\nPrisão Flamejante\nQuando os inimigos dentro desse campo sofrem Dano, a Prisão Flamejante realizará um Ataque Coordenado baseado no ATQ e Vida Máxima de Dehya, causando Dano Pyro em AdE. Esse efeito pode ser desencadeado uma vez a cada 2.5s.\nAumenta a Resistência contra Interrupção dos personagens ativos dentro do campo, e quando esses personagens sofrem Dano, mitiga parte desse Dano, convertendo-o em ' Sangue da Leoa Vermelha' , com Dehya sofrendo esse Dano por 10s. Quando o Dano armazenado alcançar ou ultrapassar uma certa proporção da Vida Máxima de Dehya, parará de absorvê-lo.\n\nSó é possível existir uma Prisão Flamejante criada por Dehya simultaneamente.\n",
+      "upgrades": [
+        {
+          "name": "Dano de Coragem Flamejante",
+          "value": "112.88%"
+        },
+        {
+          "name": "Dano do Campo da Espada Incinerante",
+          "value": "132.8%"
+        },
+        {
+          "name": "Dano do campo",
+          "value": "60.2 ATK + 1.03 Max HP"
+        },
+        {
+          "name": "Mitigação de Dano",
+          "value": "32"
+        },
+        {
+          "name": "Intervalo de gatilho de purificação Tri-Karma",
+          "value": "2.5s"
+        },
+        {
+          "name": "Máximo de Sangue da Leoa Vermelha",
+          "value": "200 Max HP"
+        },
+        {
+          "name": "Duração do campo",
+          "value": "12s"
+        },
+        {
+          "name": "Tempo de Recarga",
+          "value": "20s"
+        }
+      ],
+      "type": "ELEMENTAL_SKILL"
+    },
+    {
+      "name": "Mordida da Leoa",
+      "unlock": "Explosão Elemental",
+      "description": "Liberando sua fúria flamejante e jogando sua lâmina de lado, Dehya entra no estado 'Leoa Chamajante', aumentando sua Resistência contra interrupção.\nNesse estado, Dehya irá automática e continuamente desferir Socos da Leoa Flamejante baseados em seu ATQ e Vida Máxima, causando Dano Pyro.\nQuando a duração acabar, ela fará um Chute-Labareda que causará Dano Pyro em AdE baseado em seu ATQ e Vida Máxima.\nSe ao lançar existir ativo no campo de batalha o campo 'Prisão Flamejante' da Habilidade Elemental 'Inferno Derretido' de Dehya, ela irá recolhê-lo, e quando a duração de Leoa Chamajante acabar, o gerará novamente numa nova posição, ao gerar novamente, herdará a duração do campo recolhido.\nNesse estado, Dehya não poderá lançar sua Habilidade Elemental, não poderá fazer Ataques Normais, Carregados e Imersivos. Seu 'Ataque Normal: Técnica da Espada Dourada' e Habilidade Elemental 'Inferno Derretido' serão substituídos por 'Golpes do Rugido'.\n\nGolpes do Rugido\nLançar um Golpe do Rugido nos 0.4s após lançar Soco da Leoa Flamejante aumentará a velocidade de lançamento do próximo Soco da Leoa Flamejante.\n",
+      "upgrades": [
+        {
+          "name": "Dano do Soco da Leoa Flamejante",
+          "value": "98.7 ATK + 1.69 Max HP"
+        },
+        {
+          "name": "Dano do Chute-Labareda",
+          "value": "139.3 ATK + 2.39 Max HP"
+        },
+        {
+          "name": "Duração",
+          "value": "4s"
+        },
+        {
+          "name": "Tempo de Recarga",
+          "value": "18s"
+        },
+        {
+          "name": "Energia Elemental",
+          "value": "70"
+        }
+      ],
+      "type": "ELEMENTAL_BURST"
+    }
+  ],
+  "passiveTalents": [
+    {
+      "name": "Socorro Generoso",
+      "unlock": "Desbloqueado na Ascensão 1",
+      "description": "Nos 6s após Dehya recolher Prisão Flamejante com Inferno Derretido - Campo da Espada Incinerante ou Mordida da Leoa, o Dano que Dehya recebe de Sangue da Leoa Vermelha será reduzido em 60%. Este efeito pode ser ativado 1 vez a cada 2s.\nAlém disso, nos 9s após lançar Inferno Derretido - Coragem Flamejante, concederá o estado 'Corpo Fundido Dourado' para todos os membros da equipe. Quando personagens que estiverem sob o estado do Corpo Fundido Dourado entrarem na Prisão Flamejante, obeterão Resistência contra Interrupção adicional, É possível gerar o estado Corpo Fundido Dourado uma vez a cada 18s.",
+      "level": 1
+    },
+    {
+      "name": "Verdade Honesta",
+      "unlock": "Desbloqueado na Ascensão 4",
+      "description": "Quando a Vida é inferior a 40%, Dehya regenerará Vida baseado em 20% de sua Vida Máxima, e nos 10s seguintes, Dehya regenerará Vida a cada 2s baseado em 6% de sua Vida Máxima. Esse efeito pode ser desencadeado uma vez a cada 20s.",
+      "level": 4
+    },
+    {
+      "name": "Jornada Iluminada",
+      "unlock": "Desbloqueado Automaticamente",
+      "description": "Durante o dia (06:00 - 18:00), os personagens da equipe recebem um aumento da Veloc. Mov. de 10%.\nEsse efeito não se aplica em Domínios, Domínios Dizimados e Abismo do Espiral. Além disso, esse não e acumulado com Talentos Passivos de efeito igual."
+    }
+  ],
+  "constellations": [
+    {
+      "name": "Chama Incandescente",
+      "unlock": "Constelação Lv. 1",
+      "description": "A vida Máxima de Dehya aumenta 20%. Além disso, aumenta o Dano causado pelos ataques de Dehya baseado na sua Vida Máxima:\n· Aumento de Dano de Inferno Derretido: 3.6% da Vida Máxima\n· Aumento de Dano de Mordida da Leoa: 6% da Vida Máxima\n",
+      "level": 1
+    },
+    {
+      "name": "Brilho das Lâminas de Areia",
+      "unlock": "Constelação Lv. 2",
+      "description": "Ao lançar Inferno Derretido - Campo da Espada Incinerante, estende a duração do campo da Prisão Flamejante que foi gerado novamente em 6s. Além disso, quando há um campo da Prisão Flamejante ativo e o personagem ativo dentro dele sofre Dano, aumenta o Dano do Ataque Coordenado seguinte da Prisão Flamejante em 50%.",
+      "level": 2
+    },
+    {
+      "name": "Fúria Rápida como Fogo",
+      "unlock": "Constelação Lv. 3",
+      "description": "Aumenta o nível de Mordida da Leoa em 3.\nO nível máximo de elevação é 15.",
+      "level": 3
+    },
+    {
+      "name": "Juramento Duradouro",
+      "unlock": "Constelação Lv. 4",
+      "description": "Quando os Socos da Leoa Flamejante e o Chute-Labareda de Mordida da Leoa atingem um inimigo, renegeram 1.5 de Energia Elemental para Dehya, e regenera a Vida de Dehya com base em 2.5% da Vida Máxima. Esse efeito pode ser desencadeado uma vez a cada 0.2s.",
+      "level": 4
+    },
+    {
+      "name": "A Leoa Está Saindo",
+      "unlock": "Constelação Lv. 5",
+      "description": "Aumenta o nível do Inferno Derretido em 3.\nO nível máximo de elevação é 15.",
+      "level": 5
+    },
+    {
+      "name": "Corte das Garras Incandescentes",
+      "unlock": "Constelação Lv. 6",
+      "description": "Aumenta a Taxa CRIT de Mordida da Leoa em 10%.\nAlém disso, quando o Soco da Leoa Flamejante atingir um inimigo e causar Dano CRIT na duração de Leoa Chamejante, aumentará o Dano CRIT na duração de Mordida da Leoa em 15% e prolongará a duração de Leoa Chamejante em 0.5s. Esse efeito pode ser desencadeado uma vez a cada 0.2s, e é possível estender a duração dessa maneira até 2s e aumentar o Dano CRIT até 60%.",
+      "level": 6
+    }
+  ],
+  "vision_key": "PYRO",
+  "weapon_type": "CLAYMORE",
+  "ascension_materials": {
+    "level_20": [
+      {
+        "name": "Lasca de Ágata Agnidus",
+        "value": 1
+      },
+      {
+        "name": "Gordura de Pupa de Areia",
+        "value": 3
+      },
+      {
+        "name": "Cetim Vermelho Desbotado",
+        "value": 3
+      },
+      {
+        "name": "Mora",
+        "value": 20000
+      }
+    ],
+    "level_40": [
+      {
+        "name": "Fragmento de Ágata Agnidus",
+        "value": 3
+      },
+      {
+        "name": "Tetraedro da Luz Guiadora",
+        "value": 2
+      },
+      {
+        "name": "Gordura de Pupa de Areia",
+        "value": 10
+      },
+      {
+        "name": "Cetim Vermelho Desbotado",
+        "value": 15
+      },
+      {
+        "name": "Mora",
+        "value": 40000
+      }
+    ],
+    "level_50": [
+      {
+        "name": "Fragmento de Ágata Agnidus",
+        "value": 6
+      },
+      {
+        "name": "Tetraedro da Luz Guiadora",
+        "value": 4
+      },
+      {
+        "name": "Gordura de Pupa de Areia",
+        "value": 20
+      },
+      {
+        "name": "Seda Vermelha Bordada",
+        "value": 12
+      },
+      {
+        "name": "Mora",
+        "value": 60000
+      }
+    ],
+    "level_60": [
+      {
+        "name": "Pedaço de Ágata Agnidus",
+        "value": 3
+      },
+      {
+        "name": "Tetraedro da Luz Guiadora",
+        "value": 8
+      },
+      {
+        "name": "Gordura de Pupa de Areia",
+        "value": 30
+      },
+      {
+        "name": "Seda Vermelha Bordada",
+        "value": 18
+      },
+      {
+        "name": "Mora",
+        "value": 80000
+      }
+    ],
+    "level_70": [
+      {
+        "name": "Pedaço de Ágata Agnidus",
+        "value": 6
+      },
+      {
+        "name": "Tetraedro da Luz Guiadora",
+        "value": 12
+      },
+      {
+        "name": "Gordura de Pupa de Areia",
+        "value": 45
+      },
+      {
+        "name": "Cetim Vermelho",
+        "value": 12
+      },
+      {
+        "name": "Mora",
+        "value": 100000
+      }
+    ],
+    "level_80": [
+      {
+        "name": "Gema de Ágata Agnidus",
+        "value": 6
+      },
+      {
+        "name": "Tetraedro da Luz Guiadora",
+        "value": 20
+      },
+      {
+        "name": "Gordura de Pupa de Areia",
+        "value": 60
+      },
+      {
+        "name": "Cetim Vermelho",
+        "value": 24
+      },
+      {
+        "name": "Mora",
+        "value": 120000
+      }
+    ]
+  },
+  "id": "dehya"
+}
