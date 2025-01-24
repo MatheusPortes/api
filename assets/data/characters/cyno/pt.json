@@ -1,0 +1,335 @@
+{
+  "name": "Cyno",
+  "title": "Juiz dos Segredos",
+  "vision": "Electro",
+  "weapon": "Lança",
+  "gender": "Masculino",
+  "nation": "Sumeru",
+  "affiliation": "Templo do Silêncio",
+  "rarity": 5,
+  "release": "2022-09-28",
+  "constellation": "Lupus Aureus",
+  "birthday": "0000-06-23",
+  "description": "O General Mahamatra está encarregado de supervisionar os estudiosos da Academia.\nDizem que quando o General Mahamatra está trabalhando, ele é mais eficiente que o 'Grande Vayuvyastra' criado pelos Kshahrewar.",
+  "skillTalents": [
+    {
+      "name": "Lança da Invocação",
+      "unlock": "Ataque Normal",
+      "description": "Ataque Normal\nRealiza até 4 golpes com a lança.\n\nAtaque Carregado\nConsome uma certa quantidade de Stamina para se lançar para frente, infligindo Dano em seu trajeto.\n\nAtaque Imersivo\nMergulha em pleno ar para golpear o chão, causando dano aos inimigos ao longo do caminho e infligindo Dano em uma AdE durante o impacto.\n",
+      "upgrades": [
+        {
+          "name": "Dano do 1° Golpe",
+          "value": "49.3%"
+        },
+        {
+          "name": "Dano do 2° Golpe",
+          "value": "48.0%"
+        },
+        {
+          "name": "Dano do 3° Golpe",
+          "value": "29.3% + 29.3%"
+        },
+        {
+          "name": "Dano do 4° Golpe",
+          "value": "75.9%"
+        },
+        {
+          "name": "Dano de Ataque Carregado",
+          "value": "122.4%"
+        },
+        {
+          "name": "Consumo de Stamina do Ataque Carregado",
+          "value": "25"
+        },
+        {
+          "name": "Dano Durante a Queda",
+          "value": "63.9%"
+        },
+        {
+          "name": "Dano de Queda de Baixa/Alta Altitude",
+          "value": "127.8% / 159.7%"
+        }
+      ],
+      "type": "NORMAL_ATTACK"
+    },
+    {
+      "name": "Ritual Secreto: Travessia Abissal",
+      "unlock": "Habilidade Elemental",
+      "description": "Avança rapidamente, infligindo Dano Electro contra os inimigos no caminho.\nQuando Cyno está sob o estado 'Juramento Desbravador' de seu Supremo “Ritual Sagrado: Agilidade Lupina”, lançará Ritual Mortuário, usando o poder dos raios para infligir Dano Electro em AdE, e prolongar a duração de 'Juramento Desbravador'.",
+      "upgrades": [
+        {
+          "name": "Dano de Habilidade",
+          "value": "130.4%"
+        },
+        {
+          "name": "Dano de Ritual Mortuário",
+          "value": "156.8%"
+        },
+        {
+          "name": "Extensão da duração do Juramento Desbravado",
+          "value": "4s"
+        },
+        {
+          "name": "Recarga",
+          "value": "7.5s"
+        },
+        {
+          "name": "Recarga",
+          "value": "3s"
+        }
+      ],
+      "type": "ELEMENTAL_SKILL"
+    },
+    {
+      "name": "Ritual Sagrado: Agilidade Lupina",
+      "unlock": "Explosão Elemental",
+      "description": "Invoca um espírito divino para possuí-lo, transformando-o no Juramento Desbravador.\n\nJuramento Desbravador\nO Dano que Cyno inflige por Ataques Normais, Carregados e Imersivos é convertido para Dano Electro que não pode ser substituído;\n· Aumenta a Proficiência Elemental de Cyno, aumenta sua Resistência contra Interrupção e o torna imune ao Dano infligido pela reação Eletricamente Carregado.\n\nEsse efeito desaparecerá quando Cyno sair do campo de batalha, e dura até 18s.\n",
+      "upgrades": [
+        {
+          "name": "Dano do 1° Golpe",
+          "value": "78.3%"
+        },
+        {
+          "name": "Dano do 2° Golpe",
+          "value": "82.5%"
+        },
+        {
+          "name": "Dano do 3° Golpe",
+          "value": "104.6%"
+        },
+        {
+          "name": "Dano do 4° Golpe",
+          "value": "51.7% + 51.7%"
+        },
+        {
+          "name": "Dano do 5° Golpe",
+          "value": "130.8%"
+        },
+        {
+          "name": "Dano de Ataque Carregado",
+          "value": "101.1%"
+        },
+        {
+          "name": "Consumo de Stamina do Ataque Carregado",
+          "value": "25"
+        },
+        {
+          "name": "Dano Durante a Queda",
+          "value": "63.9%"
+        },
+        {
+          "name": "Dano de Queda de Baixa/Alta Altitude",
+          "value": "127.8% / 159.7%"
+        },
+        {
+          "name": "Bônus de Proficiência Elemental",
+          "value": "100"
+        },
+        {
+          "name": "Duração Básica",
+          "value": "10s"
+        },
+        {
+          "name": "Tempo de Recarga",
+          "value": "20s"
+        },
+        {
+          "name": "Energia Elemental",
+          "value": "80"
+        }
+      ],
+      "type": "ELEMENTAL_BURST"
+    }
+  ],
+  "passiveTalents": [
+    {
+      "name": "Julgamento das Plumas",
+      "unlock": "Desbloqueado na Ascensão 1",
+      "description": "Quando Cyno está com o estado Juramento Desbravador ativado pelo Ritual Sagrado: Agilidade Lupina, Cyno entrará periodicamente no estado 'Vidente do Fim'. Se ele lançar Ritual Secreto: Travessia Abissal enquanto estiver neste estado, desencadeará o efeito 'Adjudicação', aumentando o Dano deste Ritual Secreto: Travessia Abissal em 35%, e disparando 3 Raios da Desolação que infligem 50% do ATQ de Cyno como Dano Electro.\nO Dano do Raio da Desolação é considerado Dano de Habilidade Elemental.",
+      "level": 1
+    },
+    {
+      "name": "Soberania dos Nove Arcos",
+      "unlock": "Desbloqueado na Ascensão 4",
+      "description": "Os valores de Dano de Cyno aumentam baseados na Proficiência Elemental do seguinte modo:\n· O Dano de Ataque Normal no estado Juramento Desbravador é aumentado em 125% da Proficiência Elemental.\n· O Dano do Raio da Desolação do seu Talento Passivo 'Julgamento das Plumas' é aumentado em 250% da Proficiência Elemental.\n",
+      "level": 4
+    },
+    {
+      "name": "O Dom do Silêncio",
+      "unlock": "Desbloqueado Automaticamente",
+      "description": "Ganha 25% a mais de recompensas quando enviado numa Expedição em Sumeru por 20 horas."
+    }
+  ],
+  "constellations": [
+    {
+      "name": "Ordinance: Unceasing Vigil",
+      "unlock": "Constelação Lv. 1",
+      "description": "Ao lançar Ritual Sagrado: Agilidade Lupina, aumenta a Vel. de ATQ do Ataque Normal de Cyno em 20% por 10s. Se ao lançar Ritual Secreto: Travessia Abissal desencadear o efeito 'Adjudicação' do Talento Passivo “Julgamento das Plumas”, redefinirá a duração do efeito de aumento da Vel. de ATQ do Ataque Normal.\nVocê deve desbloquear o Talento Passivo 'Julgamento das Plumas' primeiro.",
+      "level": 1
+    },
+    {
+      "name": "Cerimônia: Retorno das Almas",
+      "unlock": "Constelação Lv. 2",
+      "description": "Quando os Ataques Normais de Cyno acertam os oponentes, seu Bônus de Dano Electro irá aumentar em 10% por 4s. Esse efeito pode ser desencadeado uma vez a cada 0.1s. Máximo de 5 acúmulos.",
+      "level": 2
+    },
+    {
+      "name": "Édito: Punição da Lei",
+      "unlock": "Constelação Lv. 3",
+      "description": "Aumenta o nível de Ritual Sagrado: Agilidade Lupina em 3.\nO nível máximo de elevação é 15.",
+      "level": 3
+    },
+    {
+      "name": "Austeridade: Defesa Intimidante",
+      "unlock": "Constelação Lv. 4",
+      "description": "Quando Cyno está no estado Juramento Desbravador de Ritual Sagrado: Agilidade Lupina, ao desencadear as reações de Eletricamente Carregado, Supercondutor, Sobrecarga, Aceleração, Intensificação, Superflorescimento e Redemoinho Electro, regenerará 3 de Energia Elemental para todos os membros próximos da equipe (com exceção do próprio Cyno).\nEsse efeito pode ser desencadeado até 5 vezes por uso de Ritual Sagrado: Agilidade Lupina.",
+      "level": 4
+    },
+    {
+      "name": "Ritual Funerário: Passagem da Aura Estelar",
+      "unlock": "Constelação Lv. 5",
+      "description": "Aumenta o Nível de Ritual Secreto: Travessia Abissal em 3.\nO aumento máximo de nível é 15.",
+      "level": 5
+    },
+    {
+      "name": "Vestes: Balança da Justiça",
+      "unlock": "Constelação Lv. 6",
+      "description": "Após usar Ritual Sagrado: Agilidade Lupina ou desencadear o efeito 'Adjudicação' do Talento Passivo 'Julgamento das Plumas' , Cyno ganha 4 acúmulos do efeito 'Dia do Chacal'. Quando Cyno acerta oponentes com Ataques Normais, será consumido 1 acúmulo de 'Dia do Chacal” para lançar um Raio da Desolação.\nO 'Dia do Chacal' dura por 8s, e possui no máximo 8 acúmulos. Ele será cancelado quando o estado Juramento Desbravador do 'Ritual Sagrado: Agilidade Lupina' acabar.\nO máximo de 1 Raio da Desolação pode ser lançado a cada 0,4s.\nVocê precisa desbloquear o Talento Passivo 'Julgamento das Plumas' primeiro.\n",
+      "level": 6
+    }
+  ],
+  "vision_key": "ELECTRO",
+  "name_key": "cyno",
+  "weapon_type": "POLEARM",
+  "ascension_materials": {
+    "level_20": [
+      {
+        "name": "Lasca de Ametista Vajrada",
+        "value": 1
+      },
+      {
+        "name": "Pergaminho Guia",
+        "value": 3
+      },
+      {
+        "name": "Escaravelho Dourado",
+        "value": 3
+      },
+      {
+        "name": "Mora",
+        "value": 20000
+      }
+    ],
+    "level_40": [
+      {
+        "name": "Fragmento de Ametista Vajrada",
+        "value": 3
+      },
+      {
+        "name": "Fruto do Trovão",
+        "value": 2
+      },
+      {
+        "name": "Pergaminho Guia",
+        "value": 10
+      },
+      {
+        "name": "Escaravelho Dourado",
+        "value": 15
+      },
+      {
+        "name": "Mora",
+        "value": 40000
+      }
+    ],
+    "level_50": [
+      {
+        "name": "Fragmento de Ametista Vajrada",
+        "value": 6
+      },
+      {
+        "name": "Fruto do Trovão",
+        "value": 4
+      },
+      {
+        "name": "Pergaminho Guia",
+        "value": 20
+      },
+      {
+        "name": "Pergaminho do Encantamento",
+        "value": 12
+      },
+      {
+        "name": "Mora",
+        "value": 60000
+      }
+    ],
+    "level_60": [
+      {
+        "name": "Pedaço de Ametista Vajrada",
+        "value": 3
+      },
+      {
+        "name": "Fruto do Trovão",
+        "value": 8
+      },
+      {
+        "name": "Pergaminho Guia",
+        "value": 30
+      },
+      {
+        "name": "Pergaminho do Encantamento",
+        "value": 18
+      },
+      {
+        "name": "Mora",
+        "value": 80000
+      }
+    ],
+    "level_70": [
+      {
+        "name": "Pedaço de Ametista Vajrada",
+        "value": 6
+      },
+      {
+        "name": "Fruto do Trovão",
+        "value": 12
+      },
+      {
+        "name": "Pergaminho Guia",
+        "value": 45
+      },
+      {
+        "name": "Pergaminho da Maldição",
+        "value": 12
+      },
+      {
+        "name": "Mora",
+        "value": 100000
+      }
+    ],
+    "level_80": [
+      {
+        "name": "Gema de Ametista Vajrada",
+        "value": 6
+      },
+      {
+        "name": "Fruto do Trovão",
+        "value": 20
+      },
+      {
+        "name": "Pergaminho Guia",
+        "value": 60
+      },
+      {
+        "name": "Pergaminho da Maldição",
+        "value": 24
+      },
+      {
+        "name": "Mora",
+        "value": 120000
+      }
+    ]
+  },
+  "id": "cyno"
+}
