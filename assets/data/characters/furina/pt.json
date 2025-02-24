@@ -1,0 +1,337 @@
+{
+  "name": "Furina",
+  "title": "Dançarina Solitária Eterna",
+  "vision": "Hydro",
+  "weapon": "Espada",
+  "gender": "Feminino",
+  "nation": "Fontaine",
+  "affiliation": "Corte de Fontaine",
+  "rarity": 5,
+  "release": "2023-11-08",
+  "constellation": "Animula Choragi",
+  "birthday": "0000-10-13",
+  "description": "O foco absoluto em cima do palco durante um julgamento, até o momento das cortinas fecharem e dos aplausos soarem.",
+  "skillTalents": [
+    {
+      "name": "Solicitação da Solista",
+      "unlock": "Ataque Normal",
+      "description": "Ataque Normal\nRealiza até 4 golpes consecutivos.\n\nAtaque Carregado\nConsome uma certa quantidade de Stamina para lançar uma dança sozinha e causar Dano Físico contra oponentes próximos e mudar seu alinhamento de Arkhe. Se Membros do Salon ou Cantores das Correntes invocados por sua Habilidade Elemental \"Salon Solitaire\" estiverem presentes, sua formação mudará para a forma correspondente.\n\nArkhe: Trono Sagrado e Secular\nPeriodicamente, quando o Ataque Normal de Furina atingir, uma Lâmina da Fluidez ou Espinho Espiritual cairá segundo seu alinhamento atual, causando Dano Hydro.\nQuando Furina entrar no campo de batalha, seu Arkhe será Ousia.\n\nAtaque Imersivo\nMergulha em pleno ar para golpear o chão, causando dano aos inimigos ao longo do caminho e infligindo Dano em uma AdE no impacto.\n",
+      "upgrades": [
+        {
+          "name": "Dano do 1º Golpe",
+          "value": "48.39%"
+        },
+        {
+          "name": "Dano do 2º Golpe",
+          "value": "43.73%"
+        },
+        {
+          "name": "Dano do 3º Golpe",
+          "value": "55.12%"
+        },
+        {
+          "name": "Dano do 4º Golpe",
+          "value": "73.3%"
+        },
+        {
+          "name": "Dano de Ataque Carregado",
+          "value": "74.22%"
+        },
+        {
+          "name": "Consumo de Stamina do Ataque Carregado",
+          "value": "20"
+        },
+        {
+          "name": "Dano Durante a Queda",
+          "value": "63.93%"
+        },
+        {
+          "name": "Dano de Queda de Baixa / Alta Altitude",
+          "value": "127.84% / 159.68%"
+        },
+        {
+          "name": "Espinho Espiritual / Dano da Lâmina da Fluidez",
+          "value": "9.46%"
+        },
+        {
+          "name": "Intervalo de Dano de Espinho Espiritual / Dano da Lâmina da Fluidez",
+          "value": "6s / 6s"
+        }
+      ],
+      "type": "NORMAL_ATTACK"
+    },
+    {
+      "name": "Salon Solitaire",
+      "unlock": "Habilidade Elemental",
+      "description": "Convida os convidados do Salon Solitaire para participarem da performance de Furina. Convidará Membros do Salon ou Cantores das Correntes segundo o alinhamento Arkhe atual.\n\nOusia\nJoga bolhas comemorativas, causa Dano Hydro em AdE baseado na Vida Máxima de Furina e invoca três Membros do Salon: Polvo de Bola \"Gentilshomme Usher\", Cavalo-Marinho de Bolhas \"Surintendante Chevalmarin\" e Carangueijo de Armadura \"Mademoiselle Crabaletta\".\nOs Membros do Salon periodicamente atacarão os inimigos próximos, e priorizarão atacar o alvo do personagem atual, causando Dano Hydro Baseado na Vida Máxima de Furina.\nQuando os Membros do Salon atacarem, baseado no número de personagens próximos com mais de 50% de Vida, aumenta o poder do Ataque e consome Vida desses personagens: se 1/2/3/4 ou mais personagens cumprirem os requisitos, aumenta o Dano original do seu Ataque em 110%/120%/130%/140%.\n\nPneuma\nInvoca os Cantores das Correntes que periodicamente regeneram Vida para os personagens atuais próximos baseado na Vida Máxima.\nA duração dos Membros do Salon e Cantores das Correntes é compartilhada. Quando Furina trocar a formação ao realizar Ataque Carregado, eles continuarão herdando a duração. Enquanto os Membros do Lason ou a Cantora das Correntes existirem, Furina poderá se mover sobre a água.\n",
+      "upgrades": [
+        {
+          "name": "Dano da Bolha de Ousia",
+          "value": "7.86% Max HP"
+        },
+        {
+          "name": "Duração",
+          "value": "30s"
+        },
+        {
+          "name": "Dano de Gentilshomme Usher",
+          "value": "5.96% Max HP"
+        },
+        {
+          "name": "Dano de Surintendante Chevalmarin",
+          "value": "3.23% Max HP"
+        },
+        {
+          "name": "Dano de Mademoiselle Crabaletta",
+          "value": "8.29% Max HP"
+        },
+        {
+          "name": "Consumo de Vida de Gentilshomme Usher",
+          "value": "2.4% Max HP"
+        },
+        {
+          "name": "Consumo de Vida de Surintendante Chevalmarin",
+          "value": "1.6% Max HP"
+        },
+        {
+          "name": "Consumo de Vida de Mademoiselle Crabaletta",
+          "value": "3.6% Max HP"
+        },
+        {
+          "name": "Cura de Cantores das Correntes",
+          "value": "4.8% Max HP + 462"
+        },
+        {
+          "name": "Recarga",
+          "value": "20s"
+        }
+      ],
+      "type": "ELEMENTAL_SKILL"
+    },
+    {
+      "name": "E o Povo Vai à Loucura",
+      "unlock": "Explosão Elemental",
+      "description": "Reúne o impulso da euforia, criando um palco de espuma que causa Dano Hydro em AdE baseado na Vida Máxima de Furina, e faz todos os personagens próximos entrarem no estado \"Euforia Universal\": em sua duração, quando a Vida de um personagem próximo aumentar ou diminuir, fará Furina obter 1 ponto de Fanfarra para cada 1% da proporção de valor do aumento ou queda da Vida Máxima.\nAo mesmo tempo, quando Furina possuir Fanfarra, aumenta o Dano causado por todos os membros próximos da equipe e aumenta o bônus de Cura baseado nos pontos de Fanfarra possuídos.\nQuando a duração terminar, as Fanfarras que Furina possui serão eliminadas.\n",
+      "upgrades": [
+        {
+          "name": "Dano de Habilidade",
+          "value": "11.41% Max HP"
+        },
+        {
+          "name": "Duração",
+          "value": "18s"
+        },
+        {
+          "name": "Fanfarra Máxima",
+          "value": "300"
+        },
+        {
+          "name": "Taxa de Conversão de Fanfarra para Aumento de Dano",
+          "value": "0.07%"
+        },
+        {
+          "name": "Taxa de Conversão de Fanfarra para Bônus de Cura",
+          "value": "0.01%"
+        },
+        {
+          "name": "Tempo de Recarga",
+          "value": "15s"
+        },
+        {
+          "name": "Energia Elemental",
+          "value": "60"
+        }
+      ],
+      "type": "ELEMENTAL_BURST"
+    }
+  ],
+  "passiveTalents": [
+    {
+      "name": "O Mar é o meu Palco",
+      "unlock": "Desbloqueado na Ascensão 1",
+      "description": "Diminui a recarga das habilidades das Aberrações Primordiais Heterocromáticas em 30%.",
+      "level": 1
+    },
+    {
+      "name": "Valsa Infinita",
+      "unlock": "Desbloqueado na Ascensão 4",
+      "description": "Quando o personagem ativo é curado, se a fonte de cura não for Furina e a quantidade curada for maior que o necessário, nos próximos 4s, Furina regenerará Vida para os personagens próximos da equipe a cada 2s. A quantidade regenerada é equivalente a 2% da Vida Máxima de cada personagem.",
+      "level": 4
+    },
+    {
+      "name": "Confissão Inaudita",
+      "unlock": "Desbloqueado Automaticamente",
+      "description": "Cada 1.000 pontos da Vida Máxima de Furina podem dar bônus para os Arkhe de Salon Solitaire:\nAumenta o Dano causado pelos Membros do Salon em 0.7%. É possível aumentar o Dano causado pelos Membros do Salon em até 28% dessa forma.\nReduzirá o intervalo de cura do personagens ativo pelos Cantores das Correntes em 0.4%. É possivel reduzir até 16%.\n"
+    }
+  ],
+  "constellations": [
+    {
+      "name": "Como um Pássaro Recalcitrante, o Amor é Surdo a Súplicas.",
+      "unlock": "Constelação Lv. 1",
+      "description": "Ao lançar E o Povo Vai à Loucura Furina ganha 150 de Fanfarra. Além disso, aumenta o limite de Fanfarra em 100.",
+      "level": 1
+    },
+    {
+      "name": "Uma Mulher se Adapta como Plantas na Água.",
+      "unlock": "Constelação Lv. 2",
+      "description": "Na duração de E o Povo Vai à Loucura, o ganho de Fanfarra por aumentos ou quedas de Vida dos personagens próximos é aumentado em 250%. Cada ponto de Fanfarra acima do limite vai aumentar Vida Máxima de Furina em 0.35%. O limite máximo de aumento de Vida Máxima com esse método é de 140%.",
+      "level": 2
+    },
+    {
+      "name": "\"Meus Segredos Eu Escondo, Desconhecido a Todos.\"",
+      "unlock": "Constelação Lv. 3",
+      "description": "Aumenta o nível do Salon Solitaire em 3.\nO nível máximo de elevação é 15.",
+      "level": 3
+    },
+    {
+      "name": "\"Aqueles que Vivem no limbo Não Conhecem a Vida!\"",
+      "unlock": "Constelação Lv. 4",
+      "description": "Quando os Membros do Salon de Salon Solitaire atingem um inimigo, ou quando os Cantores das Correntes regeneram Vida para um personagem ativo próximo, Furina obtém 4 de Energial Elemental. Esse efeito pode ser desencadeado uma vez a cada 5s.",
+      "level": 4
+    },
+    {
+      "name": "\"Agora sei seu nome, é...!\"",
+      "unlock": "Constelação Lv. 5",
+      "description": "Aumenta o nível da E o Povo Vai à Loucura em 3.\nO nível máximo de elevação é 15.",
+      "level": 5
+    },
+    {
+      "name": "\"Vamos Levantar o Cálice do Amor!\"",
+      "unlock": "Constelação Lv. 6",
+      "description": "Ao lançar a Habilidade Elemental Salon Solitaire, Furina ganha \"Centro das Atenções\" por 10s.\nNesse período, os Ataques Normais, Carregados e Imersivos serão convertidos em Dano Hydro que não pode ser substituído, e aumenta o Dano causado em um valor equivalente a 18% da Vida Máxima de Furina.\nNa duração, a cada 0.1s, depois dos Ataques Normais (não incluindo \"Arkhe: Trono Sagrado e Secular\"), Carregados e Imersivos que atingem o chão atingirem inimigos, gerarão efeitos diferentes segundo o Arkhe atual de Furina:\n\nArkhe Ousia\nA cada 1s, regenera Vida para todos os membro da equipe baseado em 4% da Vida Máxima de Furina por 2.5s. Desencadear o efeito novamente prolonga a duração.\nArkhe: Pneuma\nAumenta o Dano do Ataque Normal (não incluindo \"Arkhe: Trono Sagrado e Secular\"), Carregado e Imersivo que atingir o chão em mais 25% da Vida Máxima de Furina. Quando esse ataque atingir um inimigo, consome 1% da Vida Máxima de todos os membros da equipe.\n\nNa duração de \"Centro das Atenções\", esse efeito pode ser desencadeado até 6 vezes. o efeito será removido quando for ativado 6 vezes ou sua duração acabar.\n",
+      "level": 6
+    }
+  ],
+  "vision_key": "HYDRO",
+  "weapon_type": "SWORD",
+  "ascension_materials": {
+    "level_20": [
+      {
+        "name": "Lasca de Lazurita Varunada",
+        "value": 1
+      },
+      {
+        "name": "Flor da Luz do Lago",
+        "value": 3
+      },
+      {
+        "name": "Néctar da Flor Gigante",
+        "value": 3
+      },
+      {
+        "name": "Mora",
+        "value": 20000
+      }
+    ],
+    "level_40": [
+      {
+        "name": "Fragmento de Lazurita Varunada",
+        "value": 3
+      },
+      {
+        "name": "Água Que Falhou de Transceder",
+        "value": 2
+      },
+      {
+        "name": "Flor da Luz do Lago",
+        "value": 10
+      },
+      {
+        "name": "Néctar da Flor Gigante",
+        "value": 15
+      },
+      {
+        "name": "Mora",
+        "value": 40000
+      }
+    ],
+    "level_50": [
+      {
+        "name": "Fragmento de Lazurita Varunada",
+        "value": 6
+      },
+      {
+        "name": "Água Que Falhou de Transceder",
+        "value": 4
+      },
+      {
+        "name": "Flor da Luz do Lago",
+        "value": 20
+      },
+      {
+        "name": "Néctar Brilhante",
+        "value": 12
+      },
+      {
+        "name": "Mora",
+        "value": 60000
+      }
+    ],
+    "level_60": [
+      {
+        "name": "Pedaço de Lazurita Varunada",
+        "value": 3
+      },
+      {
+        "name": "Água Que Falhou de Transceder",
+        "value": 8
+      },
+      {
+        "name": "Flor da Luz do Lago",
+        "value": 30
+      },
+      {
+        "name": "Néctar Brilhante",
+        "value": 18
+      },
+      {
+        "name": "Mora",
+        "value": 80000
+      }
+    ],
+    "level_70": [
+      {
+        "name": "Pedaço de Lazurita Varunada",
+        "value": 6
+      },
+      {
+        "name": "Água Que Falhou de Transceder",
+        "value": 12
+      },
+      {
+        "name": "Flor da Luz do Lago",
+        "value": 45
+      },
+      {
+        "name": "Néctar Elemental",
+        "value": 12
+      },
+      {
+        "name": "Mora",
+        "value": 100000
+      }
+    ],
+    "level_80": [
+      {
+        "name": "Gema de Lazurita Varunada",
+        "value": 6
+      },
+      {
+        "name": "Água Que Falhou de Transceder",
+        "value": 20
+      },
+      {
+        "name": "Flor da Luz do Lago",
+        "value": 60
+      },
+      {
+        "name": "Néctar Elemental",
+        "value": 24
+      },
+      {
+        "name": "Mora",
+        "value": 120000
+      }
+    ]
+  }
+}
