@@ -10,6 +10,7 @@ COPY pnpm-lock.yaml ./
 RUN pnpm install
 
 COPY . .
+RUN npm rebuild --verbose sharp
 RUN npm run build
 
 EXPOSE ${PORT}
