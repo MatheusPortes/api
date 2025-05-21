@@ -132,18 +132,18 @@ export async function getAvailableImages(
 
 export async function getImage(type: string, id: string, image: string) {
   const parsedPath = path.parse(image);
-  const filePath = path
-    .join(imagesDirectory(type), id, parsedPath.name)
-    .normalize();
-  const requestedFileType =
-    parsedPath.ext.length > 0 ? parsedPath.ext.substring(1) : 'webp';
+  const filePath = path.join(imagesDirectory(type), id, parsedPath.name).normalize();
 
   if (!existsSync(filePath)) {
     throw new Error(`Image ${type}/${id}/${image} doesn't exist`);
   }
 
+  const extension = parsedPath.ext.length > 0 && ['png', 'jpg', 'jpeg'].includes(parsedPath.ext.substring(1))
+    ? parsedPath.ext.substring(1) as 'png' | 'jpg' | 'jpeg'
+    : 'webp';
+
   return {
-    image: await sharp(filePath).toFormat(requestedFileType).toBuffer(),
-    type: mimeTypes.lookup(requestedFileType) || 'text/plain',
+    image: await sharp(filePath).toFormat(extension).toBuffer(),
+    type: mimeTypes.lookup(extension) || 'text/plain',
   };
 }
