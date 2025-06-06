@@ -4,67 +4,247 @@
   "vision": "Pyro",
   "weapon": "Lança",
   "gender": "Feminino",
-  "nation": "Snezhnaya",
+  "nation": "Fontaine",
   "affiliation": "Fatui",
-  "specialDish": "Trilha do Fogo do Lar",
   "rarity": 5,
-  "release": "2024-04-24",
+  "release": "30-04-2024",
   "constellation": "Ignis Purgatorius",
-  "birthday": "0000-08-22",
-  "description": "A Serva, a Quarta Mensageira dos Fatui. Uma diplomata calma e implacável, o 'Pai' que todas as crianças da Casa da Lareira temem e em quem reverenciam.",
+  "birthday": "22-08-0000",
+  "description": "A Serva, a Quarta Mensageira dos Fatui. Uma diplomata calma e implacável, o \"Pai\" que todas as crianças da Casa da Lareira temem e em quem reverenciam.",
+  "specialDish": "Trilha do Fogo do Lar",
   "skillTalents": [
     {
-      "name": "Convite para Decapitação",
+      "name": "Ataque Normal: Convite para Decapitação",
       "unlock": "Ataque Normal",
-      "description": "Ataque Normal\nRealiza até 6 golpes consecutivos.\n\nAtaque Carregado\nConsome uma certa quantidade de Stamina, avançando contra os inimigos em frente e os atacando uma vez.\nQuando você mantiver pressionado, Arlecchino se moverá rapidamente, consumindo Stamina. Esse movimento durará até 5s.\n\nAtaque Imersivo\nMergulha no ar para atacar no chão, causando Dano contra os oponentes no caminho e causando Dano em AdE ao atingir o chão.\n\nMáscara Vermelha da Morte\nQuando Arlecchino tem um Contrato de Vida igual ou maior que 30% de sua Vida Máxima, o Dano do Ataque Normal, Carregado e Imersivo de Arlecchino é convertido para Dano Pyro que não pode ser substituído.\nQuando estiver no estado 'Máscara Vermelha da Morte', e quando os Ataques Normais de Arlecchino atingirem um oponente, esse Ataque causará Dano adicional baseado no ATQ multiplicado por uma certa porcentagem do Contrato de Vida atual.\n Isso consumirá 7.5% desse Contrato de Vida. Um Contrato de Vida pode ser consumido dessa forma uma vez a cada 0.03s.\nQuando o Contrato de Vida é consumido dessa forma, reduz a recarga da Habilidade Elemental 'Tudo são Cinzas' em 0.8s\n.",
+      "description": "Ataque Normal\nRealiza até 6 golpes consecutivos.\n\nAtaque Carregado\nConsome uma certa quantidade de Stamina, avançando contra os inimigos em frente e os atacando uma vez.\nQuando você mantiver pressionado, Arlecchino se moverá rapidamente, consumindo Stamina. Esse movimento durará até 5s.\n\nAtaque Imersivo\nMergulha no ar para atacar no chão, causando Dano contra os oponentes no caminho e causando Dano em AdE ao atingir o chão.\n\nMáscara Vermelha da Morte\nQuando Arlecchino tem um Contrato de Vida igual ou maior que 30% de sua Vida Máxima, o Dano do Ataque Normal, Carregado e Imersivo de Arlecchino é convertido para Dano Pyro que não pode ser substituído.\nQuando estiver no estado \"Máscara Vermelha da Morte\", e quando os Ataques Normais de Arlecchino atingirem um oponente, esse Ataque causará Dano adicional baseado no ATQ multiplicado por uma certa porcentagem do Contrato de Vida atual. Isso consumirá 7.5% desse Contrato de Vida. Um Contrato de Vida pode ser consumido dessa forma uma vez a cada 0.03s. Quando o Contrato de Vida é consumido dessa forma, reduz a recarga da Habilidade Elemental \"Tudo são Cinzas\" em 0.8s.",
       "upgrades": [
         {
           "name": "Aumento da Máscara Vermelha da Morte",
-          "value": "120.4"
+          "power": [
+            { "value": "120.4%", "level": 1 },
+            { "value": "130.2%", "level": 2 },
+            { "value": "140.0%", "level": 3 },
+            { "value": "154.0%", "level": 4 },
+            { "value": "163.8%", "level": 5 },
+            { "value": "175.0%", "level": 6 },
+            { "value": "190.4%", "level": 7 },
+            { "value": "205.8%", "level": 8 },
+            { "value": "221.2%", "level": 9 },
+            { "value": "238.0%", "level": 10 },
+            { "value": "254.8%", "level": 11 },
+            { "value": "271.6%", "level": 12 },
+            { "value": "288.4%", "level": 13 },
+            { "value": "305.2%", "level": 14 }
+          ]
         },
         {
           "name": "Dano do 1º Golpe",
-          "value": "47.5%"
+          "power": [
+            { "value": "47.5%", "level": 1 },
+            { "value": "51.4%", "level": 2 },
+            { "value": "55.2%", "level": 3 },
+            { "value": "60.8%", "level": 4 },
+            { "value": "64.6%", "level": 5 },
+            { "value": "69.0%", "level": 6 },
+            { "value": "75.1%", "level": 7 },
+            { "value": "81.2%", "level": 8 },
+            { "value": "87.3%", "level": 9 },
+            { "value": "93.9%", "level": 10 },
+            { "value": "100.5%", "level": 11 },
+            { "value": "107.2%", "level": 12 },
+            { "value": "113.8%", "level": 13 },
+            { "value": "120.4%", "level": 14 }
+          ]
         },
         {
           "name": "Dano do 2º Golpe",
-          "value": "52.11%"
+          "power": [
+            { "value": "52.1%", "level": 1 },
+            { "value": "56.3%", "level": 2 },
+            { "value": "60.6%", "level": 3 },
+            { "value": "66.6%", "level": 4 },
+            { "value": "70.9%", "level": 5 },
+            { "value": "75.7%", "level": 6 },
+            { "value": "82.4%", "level": 7 },
+            { "value": "89.1%", "level": 8 },
+            { "value": "95.7%", "level": 9 },
+            { "value": "103.0%", "level": 10 },
+            { "value": "110.3%", "level": 11 },
+            { "value": "117.5%", "level": 12 },
+            { "value": "124.8%", "level": 13 },
+            { "value": "132.1%", "level": 14 }
+          ]
         },
         {
           "name": "Dano do 3º Golpe",
-          "value": "65.39%"
+          "power": [
+            { "value": "65.4%", "level": 1 },
+            { "value": "70.7%", "level": 2 },
+            { "value": "76.0%", "level": 3 },
+            { "value": "83.6%", "level": 4 },
+            { "value": "89.0%", "level": 5 },
+            { "value": "95.0%", "level": 6 },
+            { "value": "103.4%", "level": 7 },
+            { "value": "111.8%", "level": 8 },
+            { "value": "120.1%", "level": 9 },
+            { "value": "129.3%", "level": 10 },
+            { "value": "138.4%", "level": 11 },
+            { "value": "147.5%", "level": 12 },
+            { "value": "156.6%", "level": 13 },
+            { "value": "165.7%", "level": 14 }
+          ]
         },
         {
           "name": "Dano do 4º Golpe",
-          "value": "37.15% + 37.15%"
+          "power": [
+            { "value": "37.1%+37.1%", "level": 1 },
+            { "value": "40.2%+40.2%", "level": 2 },
+            { "value": "43.2%+43.2%", "level": 3 },
+            { "value": "47.5%+47.5%", "level": 4 },
+            { "value": "50.5%+50.5%", "level": 5 },
+            { "value": "54.0%+54.0%", "level": 6 },
+            { "value": "58.7%+58.7%", "level": 7 },
+            { "value": "63.5%+63.5%", "level": 8 },
+            { "value": "68.2%+68.2%", "level": 9 },
+            { "value": "73.4%+73.4%", "level": 10 },
+            { "value": "78.6%+78.6%", "level": 11 },
+            { "value": "83.8%+83.8%", "level": 12 },
+            { "value": "89.0%+89.0%", "level": 13 },
+            { "value": "94.2%+94.2%", "level": 14 }
+          ]
         },
         {
           "name": "Dano do 5º Golpe",
-          "value": "69.98%"
+          "power": [
+            { "value": "70.0%", "level": 1 },
+            { "value": "75.7%", "level": 2 },
+            { "value": "81.4%", "level": 3 },
+            { "value": "89.5%", "level": 4 },
+            { "value": "95.2%", "level": 5 },
+            { "value": "101.7%", "level": 6 },
+            { "value": "110.7%", "level": 7 },
+            { "value": "119.6%", "level": 8 },
+            { "value": "128.6%", "level": 9 },
+            { "value": "138.3%", "level": 10 },
+            { "value": "148.1%", "level": 11 },
+            { "value": "157.9%", "level": 12 },
+            { "value": "167.6%", "level": 13 },
+            { "value": "177.4%", "level": 14 }
+          ]
         },
         {
           "name": "Dano do 6º Golpe",
-          "value": "85.38%"
+          "power": [
+            { "value": "85.4%", "level": 1 },
+            { "value": "92.3%", "level": 2 },
+            { "value": "99.3%", "level": 3 },
+            { "value": "109.2%", "level": 4 },
+            { "value": "116.2%", "level": 5 },
+            { "value": "124.1%", "level": 6 },
+            { "value": "135.0%", "level": 7 },
+            { "value": "145.9%", "level": 8 },
+            { "value": "156.9%", "level": 9 },
+            { "value": "168.8%", "level": 10 },
+            { "value": "180.7%", "level": 11 },
+            { "value": "192.6%", "level": 12 },
+            { "value": "204.5%", "level": 13 },
+            { "value": "216.4%", "level": 14 }
+          ]
         },
         {
           "name": "Dano de Ataque Carregado",
-          "value": "90.82%"
+          "power": [
+            { "value": "90.8%", "level": 1 },
+            { "value": "98.2%", "level": 2 },
+            { "value": "105.6%", "level": 3 },
+            { "value": "116.2%", "level": 4 },
+            { "value": "123.6%", "level": 5 },
+            { "value": "132.0%", "level": 6 },
+            { "value": "143.6%", "level": 7 },
+            { "value": "155.2%", "level": 8 },
+            { "value": "166.8%", "level": 9 },
+            { "value": "179.5%", "level": 10 },
+            { "value": "192.2%", "level": 11 },
+            { "value": "204.9%", "level": 12 },
+            { "value": "217.5%", "level": 13 },
+            { "value": "230.2%", "level": 14 }
+          ]
         },
         {
           "name": "Consumo de Stamina do Ataque Carregado",
-          "value": "25"
+          "power": [
+            { "value": "25.0", "level": 1 },
+            { "value": "25.0", "level": 2 },
+            { "value": "25.0", "level": 3 },
+            { "value": "25.0", "level": 4 },
+            { "value": "25.0", "level": 5 },
+            { "value": "25.0", "level": 6 },
+            { "value": "25.0", "level": 7 },
+            { "value": "25.0", "level": 8 },
+            { "value": "25.0", "level": 9 },
+            { "value": "25.0", "level": 10 },
+            { "value": "25.0", "level": 11 },
+            { "value": "25.0", "level": 12 },
+            { "value": "25.0", "level": 13 },
+            { "value": "25.0", "level": 14 }
+          ]
         },
         {
           "name": "Consumo de Stamina de Movimento Rápido",
-          "value": "40/s"
+          "power": [
+            { "value": "40.0/s", "level": 1 },
+            { "value": "40.0/s", "level": 2 },
+            { "value": "40.0/s", "level": 3 },
+            { "value": "40.0/s", "level": 4 },
+            { "value": "40.0/s", "level": 5 },
+            { "value": "40.0/s", "level": 6 },
+            { "value": "40.0/s", "level": 7 },
+            { "value": "40.0/s", "level": 8 },
+            { "value": "40.0/s", "level": 9 },
+            { "value": "40.0/s", "level": 10 },
+            { "value": "40.0/s", "level": 11 },
+            { "value": "40.0/s", "level": 12 },
+            { "value": "40.0/s", "level": 13 },
+            { "value": "40.0/s", "level": 14 }
+          ]
         },
         {
           "name": "Dano Durante a Queda",
-          "value": "63.93%"
+          "power": [
+            { "value": "63.9%", "level": 1 },
+            { "value": "69.1%", "level": 2 },
+            { "value": "74.3%", "level": 3 },
+            { "value": "81.8%", "level": 4 },
+            { "value": "87.0%", "level": 5 },
+            { "value": "92.9%", "level": 6 },
+            { "value": "101.1%", "level": 7 },
+            { "value": "109.3%", "level": 8 },
+            { "value": "117.5%", "level": 9 },
+            { "value": "126.4%", "level": 10 },
+            { "value": "135.3%", "level": 11 },
+            { "value": "144.2%", "level": 12 },
+            { "value": "153.1%", "level": 13 },
+            { "value": "162.1%", "level": 14 }
+          ]
         },
         {
           "name": "Dano de Queda de Baixa/Alta Altitude",
-          "value": "127.84% / 159.68%"
+          "power": [
+            { "value": "127.8%/159.7%", "level": 1 },
+            { "value": "138.2%/172.7%", "level": 2 },
+            { "value": "148.6%/185.7%", "level": 3 },
+            { "value": "163.5%/204.2%", "level": 4 },
+            { "value": "173.9%/217.2%", "level": 5 },
+            { "value": "185.8%/232.1%", "level": 6 },
+            { "value": "202.2%/252.5%", "level": 7 },
+            { "value": "218.5%/272.9%", "level": 8 },
+            { "value": "234.9%/293.4%", "level": 9 },
+            { "value": "252.7%/315.6%", "level": 10 },
+            { "value": "270.5%/337.9%", "level": 11 },
+            { "value": "288.4%/360.2%", "level": 12 },
+            { "value": "306.2%/382.5%", "level": 13 },
+            { "value": "324.1%/404.8%", "level": 14 }
+          ]
         }
       ],
       "type": "NORMAL_ATTACK"
@@ -72,23 +252,67 @@
     {
       "name": "Tudo são Cinzas",
       "unlock": "Habilidade Elemental",
-      "description": "Invoca a Lua de Sangue, causando Dano Pyro contra vários inimigos próximos, fazendo um golpe contra um deles que causa Dano Pyro em AdE.\nInimigos atingidos por esse ataque serão marcados com o Comando da Dívida de Sangue.\n\nComando da Dívida de Sangue\n· Dura 30s. A cada 5s, causa 1 instância de Dano Pyro contra o oponente. Máximo de 2 instâncias. Esse Dano é considerado Dano de Habilidade Elemental.\n· Quando Arlecchino usa um Ataque Carregado ou lança seu Supremo 'Ascensão da Lua Ominosa', absorve e elimina os Comandos das Dívidas de Sangue que aplicou. Cada Comando absorvido a dá um Contrato de Vida equivalente a 65% de sua Vida Máxima.\n· Ela pode ganhar um Contrato de Vida equivalente a 145% de sua Vida Máxima dentro nos 35s após usar sua Habilidade Elemental. Lançar a Habilidade Elemental novamente durante esse período redefinirá a contagem da duração e o limite do Contrato de Vida que ganha de Comando da Dívida de Sangue.",
+      "description": "Invoca a Lua de Sangue, causando Dano Pyro contra vários inimigos próximos, fazendo um golpe contra um deles que causa Dano Pyro em AdE.\nInimigos atingidos por esse ataque serão marcados com o Comando da Dívida de Sangue.\n\nComando da Dívida de Sangue\n· Dura 30s. A cada 5s, causa 1 instância de Dano Pyro contra o oponente. Máximo de 2 instâncias. Esse Dano é considerado Dano de Habilidade Elemental\n· Quando Arlecchino usa um Ataque Carregado ou lança seu Supremo \"Ascensão da Lua Ominosa\", absorve e elimina os Comandos das Dívidas de Sangue que aplicou. Cada Comando absorvido a dá um Contrato de Vida equivalente a 65% de sua Vida Máxima.\n· Ela pode ganhar um Contrato de Vida equivalente a 145% de sua Vida Máxima dentro nos 35s após usar sua Habilidade Elemental. Lançar a Habilidade Elemental novamente durante esse período redefinirá a contagem da duração e o limite do Contrato de Vida que ganha de Comando da Dívida de Sangue.\n\nDa forma que ela vê, não é todo grão de trigo que cai na terra que vai crescer, enquanto aqueles que ficam em seu caminho, quando queimados em chamas, podem ser usados novamente para nutrir as flores.",
       "upgrades": [
         {
           "name": "Dano dos Espinhos",
-          "value": "14.84%"
+          "power": [
+            { "value": "14.8%", "level": 1 },
+            { "value": "16.0%", "level": 2 },
+            { "value": "17.1%", "level": 3 },
+            { "value": "18.6%", "level": 4 },
+            { "value": "19.7%", "level": 5 },
+            { "value": "20.8%", "level": 6 },
+            { "value": "22.3%", "level": 7 },
+            { "value": "23.7%", "level": 8 },
+            { "value": "25.2%", "level": 9 },
+            { "value": "26.7%", "level": 10 }
+          ]
         },
         {
           "name": "Dano do Corte",
-          "value": "133.56%"
+          "power": [
+            { "value": "133.6%", "level": 1 },
+            { "value": "143.6%", "level": 2 },
+            { "value": "153.6%", "level": 3 },
+            { "value": "167.0%", "level": 4 },
+            { "value": "177.0%", "level": 5 },
+            { "value": "187.0%", "level": 6 },
+            { "value": "200.3%", "level": 7 },
+            { "value": "213.7%", "level": 8 },
+            { "value": "227.1%", "level": 9 },
+            { "value": "240.4%", "level": 10 }
+          ]
         },
         {
           "name": "Dano de Comando da Dívida de Sangue",
-          "value": "31.8%"
+          "power": [
+            { "value": "31.8%", "level": 1 },
+            { "value": "34.2%", "level": 2 },
+            { "value": "36.6%", "level": 3 },
+            { "value": "39.8%", "level": 4 },
+            { "value": "42.1%", "level": 5 },
+            { "value": "44.5%", "level": 6 },
+            { "value": "47.7%", "level": 7 },
+            { "value": "50.9%", "level": 8 },
+            { "value": "54.1%", "level": 9 },
+            { "value": "57.2%", "level": 10 }
+          ]
         },
         {
           "name": "Tempo de Recarga",
-          "value": "30s"
+          "power": [
+            { "value": "30.0s", "level": 1 },
+            { "value": "30.0s", "level": 2 },
+            { "value": "30.0s", "level": 3 },
+            { "value": "30.0s", "level": 4 },
+            { "value": "30.0s", "level": 5 },
+            { "value": "30.0s", "level": 6 },
+            { "value": "30.0s", "level": 7 },
+            { "value": "30.0s", "level": 8 },
+            { "value": "30.0s", "level": 9 },
+            { "value": "30.0s", "level": 10 }
+          ]
         }
       ],
       "type": "ELEMENTAL_SKILL"
@@ -96,23 +320,79 @@
     {
       "name": "Ascensão da Lua Ominosa",
       "unlock": "Explosão Elemental",
-      "description": "Arlecchino bate as asas da Lua de Sangue, absorvendo e eliminando os Comandos da Dívida de Sangue ao seu redor, causando Dano Pyro em AdE, depois disso remove a recarga da Habilidade Elemental 'Tudo são Cinzas' e regenera a própria Vida. A quantidade regenerada é baseada no valor do Contrato de Vida e no ATQ.\n\nÉ comum se acreditar em Teyvat que as fases da lua são metáforas de presságios, usadas por àqueles que praticam a alquimia e astrologia.\nEla viu a lua carmesim muitas vezes em seus sonhos. Eram presságios de desastres? Sim, mas as catástrofes previstas eram daqueles que a haviam enfurecido.\n",
+      "description": "Arlecchino bate as asas da Lua de Sangue, absorvendo e eliminando os Comandos da Dívida de Sangue ao seu redor, causando Dano Pyro em AdE, depois disso remove a recarga da Habilidade Elemental \"Tudo são Cinzas\" e regenera a própria Vida. A quantidade regenerada é baseada no valor do Contrato de Vida e no ATQ.\n\nÉ comum se acreditar em Teyvat que as fases da lua são metáforas de presságios, usadas por àqueles que praticam a alquimia e astrologia.Ela viu a lua carmesim muitas vezes em seus sonhos. Eram presságios de desastres? Sim, mas as catástrofes previstas eram daqueles que a haviam enfurecido.",
       "upgrades": [
         {
           "name": "Dano de Habilidade",
-          "value": "370.4%"
+          "power": [
+            { "value": "370.4%", "level": 1 },
+            { "value": "398.2%", "level": 2 },
+            { "value": "426.0%", "level": 3 },
+            { "value": "463.0%", "level": 4 },
+            { "value": "490.8%", "level": 5 },
+            { "value": "518.6%", "level": 6 },
+            { "value": "555.6%", "level": 7 },
+            { "value": "592.6%", "level": 8 },
+            { "value": "629.7%", "level": 9 },
+            { "value": "666.7%", "level": 10 },
+            { "value": "703.8%", "level": 11 },
+            { "value": "740.8%", "level": 12 },
+            { "value": "787.1%", "level": 13 }
+          ]
         },
         {
           "name": "Regeneração de Vida",
-          "value": "150% Bond of Life + 150% ATK"
+          "power": [
+            { "value": "150.0% do Contrato de Vida +150.0% ATK", "level": 1 },
+            { "value": "150.0%do Contrato de Vida +150.0% ATK", "level": 2 },
+            { "value": "150.0% do Contrato de Vida +150.0% ATK", "level": 3 },
+            { "value": "150.0% do Contrato de Vida +150.0% ATK", "level": 4 },
+            { "value": "150.0% do Contrato de Vida +150.0% ATK", "level": 5 },
+            { "value": "150.0% do Contrato de Vida +150.0% ATK", "level": 6 },
+            { "value": "150.0% do Contrato de Vida +150.0% ATK", "level": 7 },
+            { "value": "150.0% do Contrato de Vida +150.0% ATK", "level": 8 },
+            { "value": "150.0% do Contrato de Vida +150.0% ATK", "level": 9 },
+            { "value": "150.0% do Contrato de Vida +150.0% ATK", "level": 10 },
+            { "value": "150.0% do Contrato de Vida +150.0% ATK", "level": 11 },
+            { "value": "150.0% do Contrato de Vida +150.0% ATK", "level": 12 },
+            { "value": "150.0% do Contrato de Vida +150.0% ATK", "level": 13 }
+          ]
         },
         {
           "name": "Tempo de Recarga",
-          "value": "15s"
+          "power": [
+            { "value": "15.0s", "level": 1 },
+            { "value": "15.0s", "level": 2 },
+            { "value": "15.0s", "level": 3 },
+            { "value": "15.0s", "level": 4 },
+            { "value": "15.0s", "level": 5 },
+            { "value": "15.0s", "level": 6 },
+            { "value": "15.0s", "level": 7 },
+            { "value": "15.0s", "level": 8 },
+            { "value": "15.0s", "level": 9 },
+            { "value": "15.0s", "level": 10 },
+            { "value": "15.0s", "level": 11 },
+            { "value": "15.0s", "level": 12 },
+            { "value": "15.0s", "level": 13 }
+          ]
         },
         {
           "name": "Energia Elemental",
-          "value": "60"
+          "power": [
+            { "value": "60", "level": 1 },
+            { "value": "60", "level": 2 },
+            { "value": "60", "level": 3 },
+            { "value": "60", "level": 4 },
+            { "value": "60", "level": 5 },
+            { "value": "60", "level": 6 },
+            { "value": "60", "level": 7 },
+            { "value": "60", "level": 8 },
+            { "value": "60", "level": 9 },
+            { "value": "60", "level": 10 },
+            { "value": "60", "level": 11 },
+            { "value": "60", "level": 12 },
+            { "value": "60", "level": 13 }
+          ]
         }
       ],
       "type": "ELEMENTAL_BURST"
@@ -121,13 +401,13 @@
   "passiveTalents": [
     {
       "name": "Somente a Dor pode ser Compensada",
-      "unlock": "Desbloqueado na Ascensão 1",
-      "description": "Comando da Dívida de Sangue tem as seguintes características:\n· Quando um oponente afetado por Comando da Dívida de Sangue de Arlecchino é derrotado, será concedido a ela um Contrato de Vida equivalente a 130% de sua Vida Máxima.\n· 5s depois de um Comando da Dívida de Sangue ser aplicado, ele será elevado à Comando da Dívida de Sangue: Pagamento. Ao ser absorvido, fornecerá para Arlecchino um Contrato de Vida equivalente a 130% da sua Vida Máxima.\nUm Contrato de Vida criado dessa forma não pode ultrapassar o limite original do valor do Contrato de Vida obtido através de Tudo são Cinzas.\n",
+      "unlock": "Desbloqueado na Ascenção 1",
+      "description": "Comando da Dívida de Sangue tem as seguintes características:\n· Quando um oponente afetado por Comando da Dívida de Sangue de Arlecchino é derrotado, será concedido a ela um Contrato de Vida equivalente a 130% de sua Vida Máxima.\n· 5s depois de um Comando da Dívida de Sangue ser aplicado, ele será elevado à Comando da Dívida de Sangue: Pagamento. Ao ser absorvido, fornecerá para Arlecchino um Contrato de Vida equivalente a 130% da sua Vida Máxima.\nUm Contrato de Vida criado dessa forma não pode ultrapassar o limite original do valor do Contrato de Vida obtido através de Tudo são Cinzas.",
       "level": 1
     },
     {
       "name": "Somente a Força Defende",
-      "unlock": "Desbloqueado na Ascensão 4",
+      "unlock": "Desbloqueado na Ascenção 4",
       "description": "Arlecchino ganha 1% de RES contra Todos os Elementos e RES Física para cada 100 pontos de ATQ que possui acima de 1.000. O aumento máximo de RES que Arlecchino pode obter dessa forma para a RES contra Todos Elementos e RES Física é de 20%.",
       "level": 4
     },
@@ -139,37 +419,37 @@
   ],
   "constellations": [
     {
-      "name": "Todas as Vinganças e Dívidas são Minhas...",
+      "name": "\"Todas as Vinganças e Dívidas são Minhas...\"",
       "unlock": "Constelação Lv. 1",
       "description": "Máscara Vermelha da Morte é fortalecida. O valor do aumento é de 100%. Além disso, enquanto estiver no estado Máscara Vermelha da Morte, a RES contra Interrupção de Arlecchino é aumentada quando ela realiza Ataques Normais ou Carregados.",
       "level": 1
     },
     {
-      "name": "Todas as Recompensas e Retribuições são Minhas para Dar...",
+      "name": "\"Todas as Recompensas e Retribuições são Minhas para Dar...\"",
       "unlock": "Constelação Lv. 2",
-      "description": "Comando da Dívida de Sangue lança agora Comando da Dívida de Sangue: Pagamento\nQuando Arlecchino absorve um Comando da Dívida de Sangue: Pagamento, ela lança uma Lua de Sangue que causa 900% de seu ATQ como Dano Pyro em AdE e aumenta todas as suas resistências elementais e físicas em 20% por 15s. Esse efeito pode ser desencadeado uma vez a cada 10s.\nPrimeiro é necessário desbloquear o Talento Passivo 'Somente a Dor pode ser Compensada'.\n",
+      "description": "Comando da Dívida de Sangue lança agora Comando da Dívida de Sangue: Pagamento\nQuando Arlecchino absorve um Comando da Dívida de Sangue: Pagamento, ela lança uma Lua de Sangue que causa 900% de seu ATQ como Dano Pyro em AdE e aumenta todas as suas resistências elementais e físicas em 20% por 15s. Esse efeito pode ser desencadeado uma vez a cada 10s.\nPrimeiro é necessário desbloquear o Talento Passivo \"Somente a Dor pode ser Compensada\".",
       "level": 2
     },
     {
-      "name": "Você se Tornará um Novo Membro da Nossa Família...",
+      "name": "\"Você se Tornará um Novo Membro da Nossa Família...\"",
       "unlock": "Constelação Lv. 3",
       "description": "Aumenta o nível do Ataque Normal: Convite para Decapitação em 3.\nO nível máximo de elevação é 15.",
       "level": 3
     },
     {
-      "name": "De Hoje em Diante, Amor e Proteção Mútua...",
+      "name": "\"De Hoje em Diante, Amor e Proteção Mútua...\"",
       "unlock": "Constelação Lv. 4",
       "description": "Quando Arlecchino absorve com sucesso Comando da Dívida de Sangue, a recarga de Ascensão da Lua Ominosa reduzirá em 2s, e regenerará 15 de Energia para ela. Esse efeito pode ocorrer uma vez a cada 10s.",
       "level": 4
     },
     {
-      "name": "Sozinhos, Estamos Mortos...",
+      "name": "\"Sozinhos, Estamos Mortos...\"",
       "unlock": "Constelação Lv. 5",
       "description": "Aumenta o Nível de Ascensão da Lua Ominosa em 3.\nO nível máximo de elevação é 15.",
       "level": 5
     },
     {
-      "name": "De Hoje em Diante, Nos Deliciaremos numa Nova Vida.",
+      "name": "\"De Hoje em Diante, Nos Deliciaremos numa Nova Vida.\"",
       "unlock": "Constelação Lv. 6",
       "description": "O Dano do ataque de Ascensão da Lua Ominosa é aumentado no valor do ATQ de Arlecchino multiplicado por 700% do Contrato de Vida atual.\nNos 20s depois de Arlecchino usar Tudo são Cinzas, o Ataque Normal e o Supremo terão a Taxa CRIT aumentada em 10% e o Dano CRIT em 70%. Esse efeito pode ser desencadeado uma vez a cada 15s.",
       "level": 6
@@ -179,133 +459,45 @@
   "weapon_type": "POLEARM",
   "ascension_materials": {
     "level_20": [
-      {
-        "name": "Lasca de Ágata Agnidus",
-        "value": 1
-      },
-      {
-        "name": "Rosa Arco-Íris",
-        "value": 3
-      },
-      {
-        "name": "Insígnia de Recruta",
-        "value": 3
-      },
-      {
-        "name": "Mora",
-        "value": 20000
-      }
+      { "name": "Mora", "value": 20000 },
+      { "name": "Agnidus Agate Sliver", "value": 1 },
+      { "name": "Rainbow Rose", "value": 3 },
+      { "name": "Recruit's Insignia", "value": 3 }
     ],
     "level_40": [
-      {
-        "name": "Fragmento de Ágata Agnidus",
-        "value": 3
-      },
-      {
-        "name": "Fragmento da Melodia Dourada",
-        "value": 2
-      },
-      {
-        "name": "Rosa Arco-Íris",
-        "value": 10
-      },
-      {
-        "name": "Insígnia de Recruta",
-        "value": 15
-      },
-      {
-        "name": "Mora",
-        "value": 40000
-      }
+      { "name": "Mora", "value": 40000 },
+      { "name": "Agnidus Agate Fragment", "value": 3 },
+      { "name": "Fragment of a Golden Melody", "value": 2 },
+      { "name": "Rainbow Rose", "value": 10 },
+      { "name": "Recruit's Insignia", "value": 15 }
     ],
     "level_50": [
-      {
-        "name": "Fragmento de Ágata Agnidus",
-        "value": 6
-      },
-      {
-        "name": "Fragmento da Melodia Dourada",
-        "value": 4
-      },
-      {
-        "name": "Rosa Arco-Íris",
-        "value": 20
-      },
-      {
-        "name": "Insígnia de Sargento",
-        "value": 12
-      },
-      {
-        "name": "Mora",
-        "value": 60000
-      }
+      { "name": "Mora", "value": 60000 },
+      { "name": "Agnidus Agate Fragment", "value": 6 },
+      { "name": "Fragment of a Golden Melody", "value": 4 },
+      { "name": "Rainbow Rose", "value": 20 },
+      { "name": "Sergeant's Insignia", "value": 12 }
     ],
     "level_60": [
-      {
-        "name": "Pedaço de Ágata Agnidus",
-        "value": 3
-      },
-      {
-        "name": "Fragmento da Melodia Dourada",
-        "value": 8
-      },
-      {
-        "name": "Rosa Arco-Íris",
-        "value": 30
-      },
-      {
-        "name": "Insígnia de Sargento",
-        "value": 18
-      },
-      {
-        "name": "Mora",
-        "value": 80000
-      }
+      { "name": "Mora", "value": 80000 },
+      { "name": "Agnidus Agate Chunk", "value": 3 },
+      { "name": "Fragment of a Golden Melody", "value": 8 },
+      { "name": "Rainbow Rose", "value": 30 },
+      { "name": "Sergeant's Insignia", "value": 18 }
     ],
     "level_70": [
-      {
-        "name": "Pedaço de Ágata Agnidus",
-        "value": 6
-      },
-      {
-        "name": "Fragmento da Melodia Dourada",
-        "value": 12
-      },
-      {
-        "name": "Rosa Arco-Íris",
-        "value": 45
-      },
-      {
-        "name": "Insígnia de Oficial",
-        "value": 12
-      },
-      {
-        "name": "Mora",
-        "value": 100000
-      }
+      { "name": "Mora", "value": 100000 },
+      { "name": "Agnidus Agate Chunk", "value": 6 },
+      { "name": "Fragment of a Golden Melody", "value": 12 },
+      { "name": "Rainbow Rose", "value": 45 },
+      { "name": "Lieutenant's Insignia", "value": 12 }
     ],
     "level_80": [
-      {
-        "name": "Gema de Ágata Agnidus",
-        "value": 6
-      },
-      {
-        "name": "Fragmento da Melodia Dourada",
-        "value": 20
-      },
-      {
-        "name": "Rosa Arco-Íris",
-        "value": 60
-      },
-      {
-        "name": "Insígnia de Oficial",
-        "value": 24
-      },
-      {
-        "name": "Mora",
-        "value": 120000
-      }
+      { "name": "Mora", "value": 120000 },
+      { "name": "Agnidus Agate Gemstone", "value": 6 },
+      { "name": "Fragment of a Golden Melody", "value": 20 },
+      { "name": "Rainbow Rose", "value": 60 },
+      { "name": "Lieutenant's Insignia", "value": 24 }
     ]
-  },
-  "id": "arlecchino"
+  }
 }
