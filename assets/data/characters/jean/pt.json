@@ -1,113 +1,368 @@
 {
   "name": "Jean",
-  "title": "Dandelion Knight",
+  "title": "Cavaleira de Dandelion",
   "vision": "Anemo",
-  "weapon": "Sword",
+  "weapon": "Espada",
   "gender": "Female",
   "nation": "Mondstadt",
-  "affiliation": "Knights of Favonius",
+  "affiliation": "Cavaleiros de Favonius",
   "rarity": 5,
-  "release": "2020-09-28",
-  "constellation": "Leo Minor",
-  "birthday": "0000-03-14",
-  "description": "The righteous and rigorous Dandelion Knight, and Acting Grand Master of Mondstadt's Knights of Favonius",
+  "release": "28-09-2020",
+  "constellation": "Leo Menor",
+  "birthday": "14-03-0000",
+  "description": "A justa e rigorosa Cavaleira de Dandelion, a Grande Mestre Intendente dos Cavaleiros de Favonius em Mondstadt.",
+  "specialDish": "Pizza Revigorante",
   "skillTalents": [
     {
-      "name": "Favonius Bladework",
-      "unlock": "Normal Attack",
-      "description": "Normal Attack\nPerforms up to 5 consecutive strikes.\nCharged Attack\nConsumes a certain amount of Stamina to launch an enemy using the power of wind.\n\nLaunched enemies will slowly fall to the ground.\nPlunging Attack\nPlunges from mid-air to strike the ground below, damaging enemies along the path and dealing AoE DMG upon impact.",
+      "name": "Ataque Normal: Técnica de Favonius",
+      "unlock": "Ataque Normal",
+      "description": "Ataque Normal\nRealiza até 5 golpes rápidos.\n\nAtaque Carregado\nConsome certa quantidade de Stamina para lançar um inimigo ao ar usando o poder do vento.\nInimigos lançados cairão lentamente ao chão.\n\n Ataque Imersivo\nMergulha do ar para atingir o chão abaixo, causando Dano aos inimigos ao longo do caminho e causando Dano em uma AdE no impacto.",
       "upgrades": [
         {
-          "name": "1-Hit DMG",
-          "value": "48.3%"
+          "name": "Dano do 1° Golpe",
+          "power": [
+            { "value": "48.3%", "level": 1 },
+            { "value": "52.3%", "level": 2 },
+            { "value": "56.2%", "level": 3 },
+            { "value": "61.8%", "level": 4 },
+            { "value": "65.8%", "level": 5 },
+            { "value": "70.3%", "level": 6 },
+            { "value": "76.4%", "level": 7 },
+            { "value": "82.6%", "level": 8 },
+            { "value": "88.8%", "level": 9 },
+            { "value": "95.5%", "level": 10 },
+            { "value": "103%", "level": 11 }
+          ]
         },
         {
-          "name": "2-Hit DMG",
-          "value": "45.6%"
+          "name": "Dano do 2° Golpe",
+          "power": [
+            { "value": "45.6%", "level": 1 },
+            { "value": "49.3%", "level": 2 },
+            { "value": "53%", "level": 3 },
+            { "value": "58.3%", "level": 4 },
+            { "value": "62%", "level": 5 },
+            { "value": "66.3%", "level": 6 },
+            { "value": "72.1%", "level": 7 },
+            { "value": "77.9%", "level": 8 },
+            { "value": "83.7%", "level": 9 },
+            { "value": "90.1%", "level": 10 },
+            { "value": "97.4%", "level": 11 }
+          ]
         },
         {
-          "name": "3-Hit DMG",
-          "value": "60.3%"
+          "name": "Dano do 3° Golpe",
+          "power": [
+            { "value": "60.3%", "level": 1 },
+            { "value": "65.2%", "level": 2 },
+            { "value": "70.1%", "level": 3 },
+            { "value": "77.1%", "level": 4 },
+            { "value": "82%", "level": 5 },
+            { "value": "87.6%", "level": 6 },
+            { "value": "95.3%", "level": 7 },
+            { "value": "103%", "level": 8 },
+            { "value": "111%", "level": 9 },
+            { "value": "119%", "level": 10 },
+            { "value": "129%", "level": 11 }
+          ]
         },
         {
-          "name": "4-Hit DMG",
-          "value": "65.9%"
+          "name": "Dano do 4° Golpe",
+          "power": [
+            { "value": "65.9%", "level": 1 },
+            { "value": "71.2%", "level": 2 },
+            { "value": "76.6%", "level": 3 },
+            { "value": "84.3%", "level": 4 },
+            { "value": "89.6%", "level": 5 },
+            { "value": "95.8%", "level": 6 },
+            { "value": "104%", "level": 7 },
+            { "value": "113%", "level": 8 },
+            { "value": "121%", "level": 9 },
+            { "value": "130%", "level": 10 },
+            { "value": "141%", "level": 11 }
+          ]
         },
         {
-          "name": "5-Hit DMG",
-          "value": "79.2%"
+          "name": "Dano do 5° Golpe",
+          "power": [
+            { "value": "79.2%", "level": 1 },
+            { "value": "85.7%", "level": 2 },
+            { "value": "92.1%", "level": 3 },
+            { "value": "101%", "level": 4 },
+            { "value": "108%", "level": 5 },
+            { "value": "115%", "level": 6 },
+            { "value": "125%", "level": 7 },
+            { "value": "135%", "level": 8 },
+            { "value": "146%", "level": 9 },
+            { "value": "157%", "level": 10 },
+            { "value": "169%", "level": 11 }
+          ]
         },
         {
-          "name": "Charged Attack DMG",
-          "value": "162%"
+          "name": "Dano de Ataque Carregado",
+          "power": [
+            { "value": "162%", "level": 1 },
+            { "value": "175%", "level": 2 },
+            { "value": "188%", "level": 3 },
+            { "value": "207%", "level": 4 },
+            { "value": "220%", "level": 5 },
+            { "value": "236%", "level": 6 },
+            { "value": "256%", "level": 7 },
+            { "value": "277%", "level": 8 },
+            { "value": "298%", "level": 9 },
+            { "value": "320%", "level": 10 },
+            { "value": "346%", "level": 11 }
+          ]
         },
         {
-          "name": "Charged Attack Stamina Cost",
-          "value": "20"
+          "name": "Consumo de Stamina de Ataque Carregado",
+          "power": [
+            { "value": "20", "level": 1 },
+            { "value": "20", "level": 2 },
+            { "value": "20", "level": 3 },
+            { "value": "20", "level": 4 },
+            { "value": "20", "level": 5 },
+            { "value": "20", "level": 6 },
+            { "value": "20", "level": 7 },
+            { "value": "20", "level": 8 },
+            { "value": "20", "level": 9 },
+            { "value": "20", "level": 10 },
+            { "value": "20", "level": 11 }
+          ]
         },
         {
-          "name": "Plunge DMG",
-          "value": "63.9%"
+          "name": "Dano Durante a Queda",
+          "power": [
+            { "value": "63.9%", "level": 1 },
+            { "value": "69.1%", "level": 2 },
+            { "value": "74.3%", "level": 3 },
+            { "value": "81.8%", "level": 4 },
+            { "value": "87%", "level": 5 },
+            { "value": "92.9%", "level": 6 },
+            { "value": "101%", "level": 7 },
+            { "value": "109.3%", "level": 8 },
+            { "value": "117%", "level": 9 },
+            { "value": "126%", "level": 10 },
+            { "value": "135%", "level": 11 }
+          ]
         },
         {
-          "name": "Low / High Plunge DMG",
-          "value": "128% / 160%"
+          "name": "Dano de Queda de Baixa/Alta Altitude",
+          "power": [
+            { "value": "128%/160%", "level": 1 },
+            { "value": "138%/173%", "level": 2 },
+            { "value": "149%/186%", "level": 3 },
+            { "value": "164%/204%", "level": 4 },
+            { "value": "174%/217%", "level": 5 },
+            { "value": "186%/232%", "level": 6 },
+            { "value": "202%/253%", "level": 7 },
+            { "value": "219%/273%", "level": 8 },
+            { "value": "235%/293%", "level": 9 },
+            { "value": "253%/316%", "level": 10 },
+            { "value": "271%/338%", "level": 11 }
+          ]
         }
       ],
       "type": "NORMAL_ATTACK"
     },
     {
-      "name": "Gale Blade",
-      "unlock": "Elemental Skill",
-      "description": "Focusing the might of the formless wind around her blade, Jean releases a miniature storm, launching enemies in the direction she aims at, dealing massive Anemo DMG.\nHold\nAt the cost of continued Stamina consumption, Jean can command the whirlwind to pull surrounding enemies towards her front.\n\nDirection can be adjusted.\n\nCharacter is immobile during skill duration.",
+      "name": "Espada do Temporal",
+      "unlock": "Habilidade Elemental",
+      "description": "Canalizando o poder do vento sem forma em volta da sua espada, Jean libera uma miniatura de uma tempestade, lançando inimigos na direção em que ela mira, causando um Dano Anemo massivo.\n\nManter pressionado\nAo custo de um consumo constante de Stamina, Jean pode comandar um turbilhão que suga inimigos e objetos próximos à sua frente.\nA direção pode ser controlada.\nO personagem fica imóvel ao longo da duração da habilidade.\n\nAquilo que segue Jean, a defensora convicta, é um vento guardião que pode expulsar o perigo da presença de seus companheiros.",
       "upgrades": [
         {
-          "name": "Skill DMG",
-          "value": "292%"
+          "name": "Dano de Habilidade",
+          "power": [
+            { "value": "292%", "level": 1 },
+            { "value": "314%", "level": 2 },
+            { "value": "336%", "level": 3 },
+            { "value": "365%", "level": 4 },
+            { "value": "387%", "level": 5 },
+            { "value": "409%", "level": 6 },
+            { "value": "438%", "level": 7 },
+            { "value": "467%", "level": 8 },
+            { "value": "496%", "level": 9 },
+            { "value": "525%", "level": 10 },
+            { "value": "555%", "level": 11 },
+            { "value": "584%", "level": 12 },
+            { "value": "620%", "level": 13 }
+          ]
         },
         {
-          "name": "Stamina Consumption",
-          "value": "20 per second"
+          "name": "Consumo de Stamina",
+          "power": [
+            { "value": "20 pontos/segundo", "level": 1 },
+            { "value": "20 pontos/segundo", "level": 2 },
+            { "value": "20 pontos/segundo", "level": 3 },
+            { "value": "20 pontos/segundo", "level": 4 },
+            { "value": "20 pontos/segundo", "level": 5 },
+            { "value": "20 pontos/segundo", "level": 6 },
+            { "value": "20 pontos/segundo", "level": 7 },
+            { "value": "20 pontos/segundo", "level": 8 },
+            { "value": "20 pontos/segundo", "level": 9 },
+            { "value": "20 pontos/segundo", "level": 10 },
+            { "value": "20 pontos/segundo", "level": 11 },
+            { "value": "20 pontos/segundo", "level": 12 },
+            { "value": "20 pontos/segundo", "level": 13 }
+          ]
         },
         {
-          "name": "Max Duration",
-          "value": "5s"
+          "name": "Duração Máxima",
+          "power": [
+            { "value": "5s", "level": 1 },
+            { "value": "5s", "level": 2 },
+            { "value": "5s", "level": 3 },
+            { "value": "5s", "level": 4 },
+            { "value": "5s", "level": 5 },
+            { "value": "5s", "level": 6 },
+            { "value": "5s", "level": 7 },
+            { "value": "5s", "level": 8 },
+            { "value": "5s", "level": 9 },
+            { "value": "5s", "level": 10 },
+            { "value": "5s", "level": 11 },
+            { "value": "5s", "level": 12 },
+            { "value": "5s", "level": 13 }
+          ]
         },
         {
-          "name": "CD",
-          "value": "6s"
+          "name": "Tempo de Recarga",
+          "power": [
+            { "value": "6s", "level": 1 },
+            { "value": "6s", "level": 2 },
+            { "value": "6s", "level": 3 },
+            { "value": "6s", "level": 4 },
+            { "value": "6s", "level": 5 },
+            { "value": "6s", "level": 6 },
+            { "value": "6s", "level": 7 },
+            { "value": "6s", "level": 8 },
+            { "value": "6s", "level": 9 },
+            { "value": "6s", "level": 10 },
+            { "value": "6s", "level": 11 },
+            { "value": "6s", "level": 12 },
+            { "value": "6s", "level": 13 }
+          ]
         }
       ],
       "type": "ELEMENTAL_SKILL"
     },
     {
-      "name": "Dandelion Breeze",
-      "unlock": "Elemental Burst",
-      "description": "Calling upon the wind's protection, Jean creates a swirling Dandelion Field, launching surrounding enemies and causing Anemo DMG.\n\nAt the same time, she instantly regenerates a large amount of HP for nearby allied units and all party members. HP restored scale off Jean's ATK.\nDandelion Field\n\nContinuously regenerates HP for one ally and imbues them with the Anemo attribute.\nDeals Anemo DMG to enemies entering or exiting the field.\n",
+      "name": "Brisa de Dandelion",
+      "unlock": "Explosão Elemental",
+      "description": "Invocando a proteção do vento, Jean cria um Campo Dandelion rodopiante, lançando inimigos ao redor e causando Dano Anemo.\nAo mesmo tempo, ela regenera instantaneamente uma grande quantidade de Vida para todos os membros da equipe. A Vida restaurada é baseada no ATQ de Jean.\n\nCampo de Dandelions\nRegenera continuamente a Vida dos personagens dentro da AdE concede o atributo Anemo.\nCausa Dano Anemo aos inimigos que entram ou saem do campo.\n\n A magnanimidade de Jean é tão vasta quanto os Dandelions, e é a raiz de seu desejo de proteger os outros.",
       "upgrades": [
         {
-          "name": "Elemental Burst DMG",
-          "value": "425%"
+          "name": "Dano de Explosão",
+          "power": [
+            { "value": "425%", "level": 1 },
+            { "value": "457%", "level": 2 },
+            { "value": "489%", "level": 3 },
+            { "value": "531%", "level": 4 },
+            { "value": "563%", "level": 5 },
+            { "value": "595%", "level": 6 },
+            { "value": "637%", "level": 7 },
+            { "value": "680%", "level": 8 },
+            { "value": "722%", "level": 9 },
+            { "value": "765%", "level": 10 },
+            { "value": "807%", "level": 11 },
+            { "value": "850%", "level": 12 },
+            { "value": "903%", "level": 13 },
+            { "value": "956%", "level": 14 }
+          ]
         },
         {
-          "name": "Field Entering / Exiting DMG",
-          "value": "78.4%"
+          "name": "Dano de Entrada e Saída da Área",
+          "power": [
+            { "value": "78.4%", "level": 1 },
+            { "value": "84.3%", "level": 2 },
+            { "value": "90.2%", "level": 3 },
+            { "value": "98%", "level": 4 },
+            { "value": "104%", "level": 5 },
+            { "value": "110%", "level": 6 },
+            { "value": "118%", "level": 7 },
+            { "value": "125%", "level": 8 },
+            { "value": "133%", "level": 9 },
+            { "value": "141%", "level": 10 },
+            { "value": "149%", "level": 11 },
+            { "value": "157%", "level": 12 },
+            { "value": "167%", "level": 13 },
+            { "value": "176%", "level": 14 }
+          ]
         },
         {
-          "name": "Field Activation Healing",
-          "value": "251% atk + 1540"
+          "name": "Cura de Ativação de Área",
+          "power": [
+            { "value": "251% do ATQ +1540", "level": 1 },
+            { "value": "270% do ATQ +1694", "level": 2 },
+            { "value": "289% do ATQ +1861", "level": 3 },
+            { "value": "314% do ATQ +2041", "level": 4 },
+            { "value": "333% do ATQ +2234", "level": 5 },
+            { "value": "352% do ATQ +2439", "level": 6 },
+            { "value": "377% do ATQ +2657", "level": 7 },
+            { "value": "402% do ATQ +2888", "level": 8 },
+            { "value": "427% do ATQ +3132", "level": 9 },
+            { "value": "452% do ATQ +3389", "level": 10 },
+            { "value": "477% do ATQ +3659", "level": 11 },
+            { "value": "502% do ATQ +3941", "level": 12 },
+            { "value": "534% do ATQ +4236", "level": 13 },
+            { "value": "565% do ATQ +4544", "level": 14 }
+          ]
         },
         {
-          "name": "Continuous Regeneration",
-          "value": "25.12% atk + 154"
+          "name": "Regeneração Contínua",
+          "power": [
+            { "value": "25.12% ATQ + 154/s", "level": 1 },
+            { "value": "27.00% ATQ + 169/s", "level": 2 },
+            { "value": "28.89% ATQ + 186/s", "level": 3 },
+            { "value": "31.40% ATQ + 204/s", "level": 4 },
+            { "value": "33.28% ATQ + 223/s", "level": 5 },
+            { "value": "35.17% ATQ + 244/s", "level": 6 },
+            { "value": "37.68% ATQ + 266/s", "level": 7 },
+            { "value": "40.19% ATQ + 289/s", "level": 8 },
+            { "value": "42.70% ATQ + 313/s", "level": 9 },
+            { "value": "45.22% ATQ + 339/s", "level": 10 },
+            { "value": "47.73% ATQ + 366/s", "level": 11 },
+            { "value": "50.24% ATQ + 394/s", "level": 12 },
+            { "value": "53.38% ATQ + 424/s", "level": 13 },
+            { "value": "56.52% ATQ + 454/s", "level": 14 }
+          ]
         },
         {
-          "name": "CD",
-          "value": "20s"
+          "name": "Tempo de Recarga",
+          "power": [
+            { "value": "20s", "level": 1 },
+            { "value": "20s", "level": 2 },
+            { "value": "20s", "level": 3 },
+            { "value": "20s", "level": 4 },
+            { "value": "20s", "level": 5 },
+            { "value": "20s", "level": 6 },
+            { "value": "20s", "level": 7 },
+            { "value": "20s", "level": 8 },
+            { "value": "20s", "level": 9 },
+            { "value": "20s", "level": 10 },
+            { "value": "20s", "level": 11 },
+            { "value": "20s", "level": 12 },
+            { "value": "20s", "level": 13 },
+            { "value": "20s", "level": 14 }
+          ]
         },
         {
-          "name": "Energy Cost",
-          "value": "80"
+          "name": "Energia Elemental",
+          "power": [
+            { "value": "80", "level": 1 },
+            { "value": "80", "level": 2 },
+            { "value": "80", "level": 3 },
+            { "value": "80", "level": 4 },
+            { "value": "80", "level": 5 },
+            { "value": "80", "level": 6 },
+            { "value": "80", "level": 7 },
+            { "value": "80", "level": 8 },
+            { "value": "80", "level": 9 },
+            { "value": "80", "level": 10 },
+            { "value": "80", "level": 11 },
+            { "value": "80", "level": 12 },
+            { "value": "80", "level": 13 },
+            { "value": "80", "level": 14 }
+          ]
         }
       ],
       "type": "ELEMENTAL_BURST"
@@ -115,58 +370,58 @@
   ],
   "passiveTalents": [
     {
-      "name": "Wind Companion",
-      "unlock": "Unlocked at Ascension 1",
-      "description": "Hits by Normal Attacks have a 50% chance to regenerate HP equal to 15% of Jean's ATK for all party members.",
+      "name": "Companhia do Vento",
+      "unlock": "Desbloqueado na Ascenção 1",
+      "description": "Ao acertar Ataques Normais de Jean, possui 50% de chance de regenerar Vida equivalente a 15% do ATQ de Jean a todos os membros da equipe.",
       "level": 1
     },
     {
-      "name": "Let the Wind Lead",
-      "unlock": "Unlocked at Ascension 4",
-      "description": "Using Dandelion Breeze will regenerate 20% of its Energy.",
+      "name": "Deixe o vento guiar.",
+      "unlock": "Desbloqueado na Ascenção 4",
+      "description": "Após usar a Brisa de Dandelion regenera 20% de Energia Elemental.",
       "level": 4
     },
     {
-      "name": "Guiding Breeze",
-      "unlock": "Unlocked Automatically",
-      "description": "When a Perfect Cooking is achieved on a dish with restorative effects, there is a 12% chance to obtain double the product."
+      "name": "Brisa de Planagem",
+      "unlock": "Desbloqueado automaticamente",
+      "description": "Quando uma Culinária Perfeita é feita em uma comida com efeito de recuperação, tem uma chance de 12% de receber o dobro de produção."
     }
   ],
   "constellations": [
     {
-      "name": "Spiraling Tempest",
-      "unlock": "Constellation Lv. 1",
-      "description": "Increases the pulling speed of Gale Blade after holding for more than 1s, and increases the DMG dealt by 40%.",
+      "name": "Tempestade Espiral",
+      "unlock": "Constelação Lv. 1",
+      "description": "Aumenta a velocidade da sucção da Espada do Temporal após manter pressionado por mais de 1s e aumenta o dano causado em 40%.",
       "level": 1
     },
     {
-      "name": "People's Aegis",
-      "unlock": "Constellation Lv. 2",
-      "description": "When Jean picks up an Elemental Orb/Particle, all party members have their Movement SPD and ATK SPD increased by 15% for 15s.",
+      "name": "Égide do Povo",
+      "unlock": "Constelação Lv. 2",
+      "description": "Quando a Jean pega um Orbe/Partícula Elemental, todos os membros terão sua Veloc. Mov. e VEL de ATQ aumentados em 15% por 15s.",
       "level": 2
     },
     {
-      "name": "When the West Wind Arises",
-      "unlock": "Constellation Lv. 3",
-      "description": "Increases the Level of Dandelion Breeze by 3.\nMaximum upgrade level is 15.",
+      "name": "Quando o Vento do Oeste Sopra",
+      "unlock": "Constelação Lv. 3",
+      "description": "Aumenta o nível da Brisa de Dandelion em 3.\nO nível máximo de elevação é 15.",
       "level": 3
     },
     {
-      "name": "Lands of Dandelion",
-      "unlock": "Constellation Lv. 4",
-      "description": "Within the Field created by Dandelion Breeze, all enemies have their Anemo RES decreased by 40%.",
+      "name": "Terra dos Dandelions",
+      "unlock": "Constelação Lv. 4",
+      "description": "Dentro do Campo criado pela Brisa de Dandelion, todos os inimigos têm sua RES Anemo diminuída em 40%.",
       "level": 4
     },
     {
-      "name": "Outbursting Gust",
-      "unlock": "Constellation Lv. 5",
-      "description": "Increase the Level of Gale Blade by 3.\nMaximum upgrade level is 15.",
+      "name": "Rajada Explosiva",
+      "unlock": "Constelação Lv. 5",
+      "description": "Aumenta o nível da Espada do Temporal em 3.\nO nível máximo de elevação é 15.",
       "level": 5
     },
     {
-      "name": "Lion's Fang, Fair Protector of Mondstadt",
-      "unlock": "Constellation Lv. 6",
-      "description": "Incoming DMG is decreased by 35% within the Field created by Dandelion Breeze. Upon leaving the Dandelion Field, this effect lasts for 3 attacks or 10s.",
+      "name": "Presa do Leão, Protetor de Mondstadt",
+      "unlock": "Constelação Lv. 6",
+      "description": "Dano recebido é reduzido em 35% dentro da Área criada por Brisa de Dandelion. Após sair do Campo de Dandelion, este efeito dura por 3 ataques ou 10 segundos.",
       "level": 6
     }
   ],
@@ -189,134 +444,47 @@
       "image": "outfit-gunnhildr-s-legacy"
     }
   ],
-  "ascension_materials":  {
+  "ascension_materials": {
     "level_20": [
-      {
-        "name": "Vayuda Turquoise Sliver",
-        "value": 1
-      },
-      {
-        "name": "Dandelion Seed",
-        "value": 3
-      },
-      {
-        "name": "Damaged Mask",
-        "value": 3
-      },
-      {
-        "name": "Mora",
-        "value": 20000
-      }
+      { "name": "Mora", "value": 20000 },
+      { "name": "Lasca de Turquesa Vayuda", "value": 1 },
+      { "name": "Sementes de Dandelion", "value": 3 },
+      { "name": "Máscara Danificada", "value": 3 }
     ],
     "level_40": [
-      {
-        "name": "Vayuda Turquoise Fragment",
-        "value": 3
-      },
-      {
-        "name": "Hurricane Seed",
-        "value": 2
-      },
-      {
-        "name": "Dandelion Seed",
-        "value": 10
-      },
-      {
-        "name": "Damaged Mask",
-        "value": 15
-      },
-      {
-        "name": "Mora",
-        "value": 40000
-      }
+      { "name": "Mora", "value": 40000 },
+      { "name": "Fragmento de Turquesa Vayuda", "value": 3 },
+      { "name": "Semente de Furacão", "value": 2 },
+      { "name": "Sementes de Dandelion", "value": 10 },
+      { "name": "Máscara Danificada", "value": 15 }
     ],
     "level_50": [
-      {
-        "name": "Vayuda Turquoise Fragment",
-        "value": 6
-      },
-      {
-        "name": "Hurricane Seed",
-        "value": 4
-      },
-      {
-        "name": "Dandelion Seed",
-        "value": 20
-      },
-      {
-        "name": "Stained Mask",
-        "value": 12
-      },
-      {
-        "name": "Mora",
-        "value": 60000
-      }
+      { "name": "Mora", "value": 60000 },
+      { "name": "Fragmento de Turquesa Vayuda", "value": 6 },
+      { "name": "Semente de Furacão", "value": 4 },
+      { "name": "Sementes de Dandelion", "value": 20 },
+      { "name": "Máscara Suja", "value": 12 }
     ],
     "level_60": [
-      {
-        "name": "Vayuda Turquoise Chunk",
-        "value": 3
-      },
-      {
-        "name": "Hurricane Seed",
-        "value": 8
-      },
-      {
-        "name": "Dandelion Seed",
-        "value": 30
-      },
-      {
-        "name": "Stained Mask",
-        "value": 18
-      },
-      {
-        "name": "Mora",
-        "value": 80000
-      }
+      { "name": "Mora", "value": 80000 },
+      { "name": "Pedaço de Turquesa Vayuda", "value": 3 },
+      { "name": "Semente de Furacão", "value": 8 },
+      { "name": "Sementes de Dandelion", "value": 30 },
+      { "name": "Máscara Suja", "value": 18 }
     ],
     "level_70": [
-      {
-        "name": "Vayuda Turquoise Chunk",
-        "value": 6
-      },
-      {
-        "name": "Hurricane Seed",
-        "value": 12
-      },
-      {
-        "name": "Dandelion Seed",
-        "value": 45
-      },
-      {
-        "name": "Ominous Mask",
-        "value": 12
-      },
-      {
-        "name": "Mora",
-        "value": 100000
-      }
+      { "name": "Mora", "value": 100000 },
+      { "name": "Pedaço de Turquesa Vayuda", "value": 6 },
+      { "name": "Semente de Furacão", "value": 12 },
+      { "name": "Sementes de Dandelion", "value": 45 },
+      { "name": "Máscara Ominosa", "value": 12 }
     ],
     "level_80": [
-      {
-        "name": "Vayuda Turquoise Gemstone",
-        "value": 6
-      },
-      {
-        "name": "Hurricane Seed",
-        "value": 20
-      },
-      {
-        "name": "Dandelion Seed",
-        "value": 60
-      },
-      {
-        "name": "Ominous Mask",
-        "value": 24
-      },
-      {
-        "name": "Mora",
-        "value": 120000
-      }
+      { "name": "Mora", "value": 120000 },
+      { "name": "Gema de Turquesa Vayuda", "value": 6 },
+      { "name": "Semente de Furacão", "value": 20 },
+      { "name": "Sementes de Dandelion", "value": 60 },
+      { "name": "Máscara Ominosa", "value": 24 }
     ]
   }
 }
