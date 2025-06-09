@@ -7,103 +7,392 @@
   "nation": "Fontaine",
   "affiliation": "Um renomado Mergulhador da Corte de Fontaine",
   "rarity": 4,
-  "release": "2023-09-06",
+  "release": "23-08-2023",
   "constellation": "Automaton",
-  "birthday": "0000-09-24",
+  "birthday": "24-09-0000",
   "description": "Um jovem reservado muito habilidoso em mergulho. Sob seu comportamento distante e frio, há um coração puro isento de qualquer falha.",
   "skillTalents": [
     {
-      "name": "Espada do Fluxo",
+      "name": "Ataque Normal: Espada do Fluxo",
       "unlock": "Ataque Normal",
       "description": "Ataque Normal\nRealiza até 4 golpes consecutivos.\n\nAtaque Carregado\nDrena Stamina ao longo do tempo para realizar um ataque giratório contínuo contra todos os inimigos próximos. Ao final da sequência, realiza um corte poderoso.\n\nAtaque Imersivo\nMergulha em pleno ar para golpear o châo, causando dano aos inimigos em seu caminho e inflingindo Dano em um AdE durante o impacto.",
       "upgrades": [
         {
           "name": "Dano do 1º Golpe",
-          "value": "84.24%"
+          "power": [
+            { "value": "84.2%", "level": 1 },
+            { "value": "91.1%", "level": 2 },
+            { "value": "98.0%", "level": 3 },
+            { "value": "107.7%", "level": 4 },
+            { "value": "114.6%", "level": 5 },
+            { "value": "122.4%", "level": 6 },
+            { "value": "133.2%", "level": 7 },
+            { "value": "144.0%", "level": 8 },
+            { "value": "154.8%", "level": 9 },
+            { "value": "166.5%", "level": 10 },
+            { "value": "178.3%", "level": 11 },
+            { "value": "190.0%", "level": 12 },
+            { "value": "201.8%", "level": 13 },
+            { "value": "213.5%", "level": 14 }
+          ]
         },
         {
           "name": "Dano do 2º Golpe",
-          "value": "80.68%"
+          "power": [
+            { "value": "80.7%", "level": 1 },
+            { "value": "87.2%", "level": 2 },
+            { "value": "93.8%", "level": 3 },
+            { "value": "103.2%", "level": 4 },
+            { "value": "109.8%", "level": 5 },
+            { "value": "117.3%", "level": 6 },
+            { "value": "127.6%", "level": 7 },
+            { "value": "137.9%", "level": 8 },
+            { "value": "148.2%", "level": 9 },
+            { "value": "159.5%", "level": 10 },
+            { "value": "170.7%", "level": 11 },
+            { "value": "182.0%", "level": 12 },
+            { "value": "193.2%", "level": 13 },
+            { "value": "204.5%", "level": 14 }
+          ]
         },
         {
           "name": "Dano do 3º Golpe",
-          "value": "101.9%"
+          "power": [
+            { "value": "101.9%", "level": 1 },
+            { "value": "110.2%", "level": 2 },
+            { "value": "118.5%", "level": 3 },
+            { "value": "130.3%", "level": 4 },
+            { "value": "138.6%", "level": 5 },
+            { "value": "148.1%", "level": 6 },
+            { "value": "161.2%", "level": 7 },
+            { "value": "174.2%", "level": 8 },
+            { "value": "187.2%", "level": 9 },
+            { "value": "201.4%", "level": 10 },
+            { "value": "215.7%", "level": 11 },
+            { "value": "229.9%", "level": 12 },
+            { "value": "244.1%", "level": 13 },
+            { "value": "258.3%", "level": 14 }
+          ]
         },
         {
           "name": "Dano do 4º Golpe",
-          "value": "123.8%"
+          "power": [
+            { "value": "123.8%", "level": 1 },
+            { "value": "133.9%", "level": 2 },
+            { "value": "144.0%", "level": 3 },
+            { "value": "158.4%", "level": 4 },
+            { "value": "168.4%", "level": 5 },
+            { "value": "179.9%", "level": 6 },
+            { "value": "195.8%", "level": 7 },
+            { "value": "211.6%", "level": 8 },
+            { "value": "227.5%", "level": 9 },
+            { "value": "244.7%", "level": 10 },
+            { "value": "262.0%", "level": 11 },
+            { "value": "279.3%", "level": 12 },
+            { "value": "296.6%", "level": 13 },
+            { "value": "313.8%", "level": 14 }
+          ]
         },
         {
           "name": "Dano de Loop de Ataque Carregado",
-          "value": "62.52%"
+          "power": [
+            { "value": "62.5%", "level": 1 },
+            { "value": "67.6%", "level": 2 },
+            { "value": "72.7%", "level": 3 },
+            { "value": "80.0%", "level": 4 },
+            { "value": "85.1%", "level": 5 },
+            { "value": "90.9%", "level": 6 },
+            { "value": "98.9%", "level": 7 },
+            { "value": "106.9%", "level": 8 },
+            { "value": "114.9%", "level": 9 },
+            { "value": "123.6%", "level": 10 },
+            { "value": "132.3%", "level": 11 },
+            { "value": "141.0%", "level": 12 },
+            { "value": "149.8%", "level": 13 },
+            { "value": "158.5%", "level": 14 }
+          ]
         },
         {
           "name": "Dano Final de Ataque Carregado",
-          "value": "113.09%"
+          "power": [
+            { "value": "113%", "level": 1 },
+            { "value": "122%", "level": 2 },
+            { "value": "132%", "level": 3 },
+            { "value": "145%", "level": 4 },
+            { "value": "154%", "level": 5 },
+            { "value": "164%", "level": 6 },
+            { "value": "179%", "level": 7 },
+            { "value": "193%", "level": 8 },
+            { "value": "208%", "level": 9 },
+            { "value": "244%", "level": 10 },
+            { "value": "239%", "level": 11 },
+            { "value": "255%", "level": 12 },
+            { "value": "271%", "level": 13 },
+            { "value": "287%", "level": 14 }
+          ]
         },
         {
           "name": "Consumo de Stamina de Ataque Carregado",
-          "value": "40/s"
+          "power": [
+            { "value": "40.0/s", "level": 1 },
+            { "value": "40.0/s", "level": 2 },
+            { "value": "40.0/s", "level": 3 },
+            { "value": "40.0/s", "level": 4 },
+            { "value": "40.0/s", "level": 5 },
+            { "value": "40.0/s", "level": 6 },
+            { "value": "40.0/s", "level": 7 },
+            { "value": "40.0/s", "level": 8 },
+            { "value": "40.0/s", "level": 9 },
+            { "value": "40.0/s", "level": 10 },
+            { "value": "40.0/s", "level": 11 },
+            { "value": "40.0/s", "level": 12 },
+            { "value": "40.0/s", "level": 13 },
+            { "value": "40.0/s", "level": 14 }
+          ]
         },
         {
           "name": "Duração Máxima",
-          "value": "5s"
+          "power": [
+            { "value": "5.0s", "level": 1 },
+            { "value": "5.0s", "level": 2 },
+            { "value": "5.0s", "level": 3 },
+            { "value": "5.0s", "level": 4 },
+            { "value": "5.0s", "level": 5 },
+            { "value": "5.0s", "level": 6 },
+            { "value": "5.0s", "level": 7 },
+            { "value": "5.0s", "level": 8 },
+            { "value": "5.0s", "level": 9 },
+            { "value": "5.0s", "level": 10 },
+            { "value": "5.0s", "level": 11 },
+            { "value": "5.0s", "level": 12 },
+            { "value": "5.0s", "level": 13 },
+            { "value": "5.0s", "level": 14 }
+          ]
         },
         {
           "name": "Dano Durante a Queda",
-          "value": "74.59%"
+          "power": [
+            { "value": "74.6%", "level": 1 },
+            { "value": "80.7%", "level": 2 },
+            { "value": "86.7%", "level": 3 },
+            { "value": "95.4%", "level": 4 },
+            { "value": "101.5%", "level": 5 },
+            { "value": "108.4%", "level": 6 },
+            { "value": "118.0%", "level": 7 },
+            { "value": "127.5%", "level": 8 },
+            { "value": "137.0%", "level": 9 },
+            { "value": "147.4%", "level": 10 },
+            { "value": "157.8%", "level": 11 },
+            { "value": "168.3%", "level": 12 },
+            { "value": "178.7%", "level": 13 },
+            { "value": "189.1%", "level": 14 }
+          ]
         },
         {
-          "name": "Dano de Queda de Baixa / Alta Altitude",
-          "value": "149.14% / 186.29%"
+          "name": "Dano de Queda de Baixa/Alta Altitude",
+          "power": [
+            { "value": "149%/186%", "level": 1 },
+            { "value": "161%/201%", "level": 2 },
+            { "value": "173%/217%", "level": 3 },
+            { "value": "191%/238%", "level": 4 },
+            { "value": "203%/253%", "level": 5 },
+            { "value": "217%/271%", "level": 6 },
+            { "value": "236%/295%", "level": 7 },
+            { "value": "255%/318%", "level": 8 },
+            { "value": "274%/342%", "level": 9 },
+            { "value": "295%/368%", "level": 10 },
+            { "value": "316%/394%", "level": 11 },
+            { "value": "357%/466%", "level": 12 },
+            { "value": "378%/472%", "level": 13 }
+          ]
         }
       ],
       "type": "NORMAL_ATTACK"
     },
     {
-      "name": "Fluxo Pressurizado",
+      "name": "",
       "unlock": "Habilidade Elemental",
-      "description": "Faz um Ataque de Impulso Ascendente que causa Dano Cryo e entra no estado Tempo Pers por 10s.\nEnquanto estiver no estado Tempo Pers, a Habilidade Elemental será convertida em Pressão Esmagadora.\n\nPressão Esmagadora\nRealiza ataques diferentes segundo o Nível de Pressão de Tempo Pers, e remove p estado Tempo Pers:\nNível 0: lança um corte vertical que causa Dano Cryo.\n- Nível 1 a 2: lança cortes verticais junto com Pers, causando Dano Cryo e Dano Físico. O Dano é diferente segundo o nível da Pressão Esmagadora.\n- Nível 4: pega o poder emprestado de um Pers totalmente pressurizado para causar Dano Físico. Neste momento, o Ataque Normal: Espada do FLuxo será substituído pela Pressão Esmagadora.\n\nTempo Pers\nQuando Freminet faz um Ataque Normal, lançará ao mesmo tempo um Gelo Congelante que causa Dano Cryo e eleva o nível de Pressão Esmagadora de Tempo Pers.\nO Dano Cryo causado dessa forma nesse tempo é considerado Dano de Habilidade Elemental.\n\nArkha: Pneuma\nPeriodicamente, depois de lançar um Ataque de Impulso Ascendente, criará um Espinho Espiritual na forma de outro Impulso Ascendente que causará Dano Cryo com Pneuma.\nImobilizar o seu oponente sem tirar sua vida também pode ser considerado uma estratégia de sobrevivência que alguém pode escolher.\n",
+      "description": "Faz um Ataque de Impulso Ascendente que causa Dano Cryo e entra no estado Tempo Pers por 10s.\nEnquanto estiver no estado Tempo Pers, a Habilidade Elemental será convertida em Pressão Esmagadora\n\nPressão Esmagadora\nRealiza ataques diferentes segundo o Nível de Pressão de Tempo Pers, e remove p estado Tempo Pers:\nNível 0: lança um corte vertical que causa Dano Cryo.- Nível 1 a 2: lança cortes verticais junto com Pers, causando Dano Cryo e Dano Físico. O Dano é diferente segundo o nível da Pressão Esmagadora- Nível 4: pega o poder emprestado de um Pers totalmente pressurizado para causar Dano Físico. Neste momento, o Ataque Normal: Espada do FLuxo será substituído pela Pressão Esmagadora.\n\nTempo Pers\nQuando Freminet faz um Ataque Normal, lançará ao mesmo tempo um Gelo Congelante que causa Dano Cryo e eleva o nível de Pressão Esmagadora de Tempo Pers.\nO Dano Cryo causado dessa forma nesse tempo é considerado Dano de Habilidade Elemental.\n\nArkha: Pneuma\nPeriodicamente, depois de lançar um Ataque de Impulso Ascendente, criará um Espinho Espiritual na forma de outro Impulso Ascendente que causará Dano Cryo com Pneuma.\n\nImobilizar o seu oponente sem tirar sua vida também pode ser considerado uma estratégia de sobrevivência que alguém pode escolher.\n\"Pers... deixo o resto nas suas mãos.\"",
       "upgrades": [
         {
           "name": "Dano de Ataque de Impulso Ascendente",
-          "value": "83.04%"
+          "power": [
+            { "value": "83.0%", "level": 1 },
+            { "value": "89.3%", "level": 2 },
+            { "value": "95.5%", "level": 3 },
+            { "value": "103.8%", "level": 4 },
+            { "value": "110.0%", "level": 5 },
+            { "value": "116.3%", "level": 6 },
+            { "value": "124.6%", "level": 7 },
+            { "value": "132.9%", "level": 8 },
+            { "value": "141.2%", "level": 9 },
+            { "value": "149.5%", "level": 10 },
+            { "value": "157.8%", "level": 11 },
+            { "value": "166.1%", "level": 12 },
+            { "value": "176.5%", "level": 13 }
+          ]
         },
         {
           "name": "Dano de Gelo Congelante",
-          "value": "7.16%"
+          "power": [
+            { "value": "7.2%", "level": 1 },
+            { "value": "7.7%", "level": 2 },
+            { "value": "8.2%", "level": 3 },
+            { "value": "9.0%", "level": 4 },
+            { "value": "9.5%", "level": 5 },
+            { "value": "10.0%", "level": 6 },
+            { "value": "10.7%", "level": 7 },
+            { "value": "11.5%", "level": 8 },
+            { "value": "12.2%", "level": 9 },
+            { "value": "12.9%", "level": 10 },
+            { "value": "13.6%", "level": 11 },
+            { "value": "14.3%", "level": 12 },
+            { "value": "15.2%", "level": 13 }
+          ]
         },
         {
           "name": "Dano de Pressão Esmagadora Nível 0",
-          "value": "200.48%"
+          "power": [
+            { "value": "200.5%", "level": 1 },
+            { "value": "215.5%", "level": 2 },
+            { "value": "230.6%", "level": 3 },
+            { "value": "250.6%", "level": 4 },
+            { "value": "265.6%", "level": 5 },
+            { "value": "280.7%", "level": 6 },
+            { "value": "300.7%", "level": 7 },
+            { "value": "320.8%", "level": 8 },
+            { "value": "340.8%", "level": 9 },
+            { "value": "360.9%", "level": 10 },
+            { "value": "380.9%", "level": 11 },
+            { "value": "401.0%", "level": 12 },
+            { "value": "426.0%", "level": 13 }
+          ]
         },
         {
           "name": "Dano de Pressão Esmagadora Nível 1",
-          "value": "100.24% Cryo + 48.69% Phys"
+          "power": [
+            { "value": "100.2% Cryo + 48.7% Físico", "level": 1 },
+            { "value": "107.8% Cryo + 52.3% Físico", "level": 2 },
+            { "value": "115.3% Cryo + 56.0% Físico", "level": 3 },
+            { "value": "125.3% Cryo + 57.3% Físico", "level": 4 },
+            { "value": "132.8% Cryo + 64.5% Físico", "level": 5 },
+            { "value": "140.3% Cryo + 68.2% Físico", "level": 6 },
+            { "value": "150.4% Cryo + 73.0% Físico", "level": 7 },
+            { "value": "160.4% Cryo + 77.9% Físico", "level": 8 },
+            { "value": "170.4% Cryo + 82.8% Físico", "level": 9 },
+            { "value": "180.4% Cryo + 87.6% Físico", "level": 10 },
+            { "value": "190.5% Cryo + 92.5% Físico", "level": 11 },
+            { "value": "200.5% Cryo + 97.4% Físico", "level": 12 },
+            { "value": "213.0% Cryo + 103.5% Físico", "level": 13 }
+          ]
         },
         {
           "name": "Dano de Pressão Esmagadora Nível 2",
-          "value": "70.17% Cryo + 85.2% Phys"
+          "power": [
+            { "value": "70.2% Cryo + 85.2% Físico", "level": 1 },
+            { "value": "75.4% Cryo + 91.6% Físico", "level": 2 },
+            { "value": "80.7% Cryo + 98.0% Físico", "level": 3 },
+            { "value": "90.3% Cryo + 100.2.% Físico", "level": 4 },
+            { "value": "98.2% Cryo + 112.9% Físico", "level": 5 },
+            { "value": "105.3% Cryo + 119.3% Físico", "level": 6 },
+            { "value": "105.3% Cryo + 127.8% Físico", "level": 7 },
+            { "value": "112.3% Cryo + 136.3% Físico", "level": 8 },
+            { "value": "119.3% Cryo + 144.8% Físico", "level": 9 },
+            { "value": "126.3% Cryo + 153.4% Físico", "level": 10 },
+            { "value": "133.3% Cryo + 161.9% Físico", "level": 11 },
+            { "value": "140.3% Cryo + 170.4% Físico", "level": 12 },
+            { "value": "149.1% Cryo + 181.1% Físico", "level": 13 }
+          ]
         },
         {
           "name": "Dano de Pressão Esmagadora Nível 3",
-          "value": "40.1% Cryo + 121.72% Phys"
+          "power": [
+            { "value": "40.1% Cryo + 121.7% Físico", "level": 1 },
+            { "value": "43.1% Cryo + 130.8% Físico", "level": 2 },
+            { "value": "46.1% Cryo + 140.0% Físico", "level": 3 },
+            { "value": "50.1% Cryo + 143.2% Físico", "level": 4 },
+            { "value": "53.1% Cryo + 161.3% Físico", "level": 5 },
+            { "value": "56.1% Cryo + 170.4% Físico", "level": 6 },
+            { "value": "60.1% Cryo + 182.6% Físico", "level": 7 },
+            { "value": "64.2% Cryo + 194.8% Físico", "level": 8 },
+            { "value": "68.2% Cryo + 206.9% Físico", "level": 9 },
+            { "value": "72.2% Cryo + 219.1% Físico", "level": 10 },
+            { "value": "76.2% Cryo + 231.3% Físico", "level": 11 },
+            { "value": "80.2% Cryo + 243.4% Físico", "level": 12 },
+            { "value": "85.2% Cryo + 258.7% Físico", "level": 13 }
+          ]
         },
         {
           "name": "Dano de Pressão Esmagadora Nível 4",
-          "value": "243.44%"
+          "power": [
+            { "value": "243.4%", "level": 1 },
+            { "value": "261.7%", "level": 2 },
+            { "value": "280.0%", "level": 3 },
+            { "value": "286.4%", "level": 4 },
+            { "value": "322.6%", "level": 5 },
+            { "value": "340.8%", "level": 6 },
+            { "value": "365.2%", "level": 7 },
+            { "value": "389.5%", "level": 8 },
+            { "value": "413.8%", "level": 9 },
+            { "value": "438.2%", "level": 10 },
+            { "value": "462.5%", "level": 11 },
+            { "value": "486.9%", "level": 12 },
+            { "value": "517.3%", "level": 13 }
+          ]
         },
         {
           "name": "Dano do Espinho Espiritual",
-          "value": "14.4%"
+          "power": [
+            { "value": "14.4%", "level": 1 },
+            { "value": "15.5%", "level": 2 },
+            { "value": "16.6%", "level": 3 },
+            { "value": "18.0%", "level": 4 },
+            { "value": "19.1%", "level": 5 },
+            { "value": "20.2%", "level": 6 },
+            { "value": "21.6%", "level": 7 },
+            { "value": "23.0%", "level": 8 },
+            { "value": "24.5%", "level": 9 },
+            { "value": "25.9%", "level": 10 },
+            { "value": "27.4%", "level": 11 },
+            { "value": "28.8%", "level": 12 },
+            { "value": "30.6%", "level": 13 }
+          ]
         },
         {
           "name": "Intervalo do Espinho Espiritual",
-          "value": "9s"
+          "power": [
+            { "value": "9.0s", "level": 1 },
+            { "value": "9.0s", "level": 2 },
+            { "value": "9.0s", "level": 3 },
+            { "value": "9.0s", "level": 4 },
+            { "value": "9.0s", "level": 5 },
+            { "value": "9.0s", "level": 6 },
+            { "value": "9.0s", "level": 7 },
+            { "value": "9.0s", "level": 8 },
+            { "value": "9.0s", "level": 9 },
+            { "value": "9.0s", "level": 10 },
+            { "value": "9.0s", "level": 11 },
+            { "value": "9.0s", "level": 12 },
+            { "value": "9.0s", "level": 13 }
+          ]
         },
         {
           "name": "Tempo de Recarga",
-          "value": "10s"
+          "power": [
+            { "value": "10.0s", "level": 1 },
+            { "value": "10.0s", "level": 2 },
+            { "value": "10.0s", "level": 3 },
+            { "value": "10.0s", "level": 4 },
+            { "value": "10.0s", "level": 5 },
+            { "value": "10.0s", "level": 6 },
+            { "value": "10.0s", "level": 7 },
+            { "value": "10.0s", "level": 8 },
+            { "value": "10.0s", "level": 9 },
+            { "value": "10.0s", "level": 10 },
+            { "value": "10.0s", "level": 11 },
+            { "value": "10.0s", "level": 12 },
+            { "value": "10.0s", "level": 13 }
+          ]
         }
       ],
       "type": "ELEMENTAL_SKILL"
@@ -111,23 +400,67 @@
     {
       "name": "Emboscada das Sombras",
       "unlock": "Explosão Elemental",
-      "description": "Libera um ar frio que não pode ser tocado, causando Dano Cryo em AdE, redefinindo a recarga da Habilidade \"Fluxo Pressurizado\" e entrando no modo Caçador Secreto por 10s.\n\nQuando estiver no modo Caçador Secreto, aumenta a RES contra Interrupção de Freminet, e sua Habilidade Elemental \"Fluxo Pressurizado\" obtém os seguintes fortalecimentos:\n- Redução de Recarga em 70%.\n- Ao fazer um Ataque Normal, aumenta um nível adicional no Nível de Pressão de Tempo Pers, e aumenta o Dano causado pelo Gelo Congelante ao lançar um Ataque Normal em 200% do Dano original causado.\n\nEsse efeito será removido quando Freminet sair do campo de batalha.",
+      "description": "Libera um ar frio que não pode ser tocado, causando Dano Cryo em AdE, redefinindo a recarga da Habilidade \"Fluxo Pressurizado\" e entrando no modo Caçador Secreto por 10s.\n\nQUando estiver no modo Caçador Secreto, aumenta a RES contra Interrupção de Freminet, e sua Habilidade Elemental \"Fluxo Pressurizado\" obtém os seguintes fortalecimentos:\n- Redução de Recarga em 70%.- Ao fazer um Ataque Normal, aumenta um nível adicional no Nível de Pressão de Tempo Pers, e aumenta o Dano causado pelo Gelo Congelante ao lançar um Ataque Normal em 200% do Dano original causado.\n\nEsse efeito será removido quando Freminet sair do campo de batalha.\n\n\"Agora... eu não preciso de nenhum barulho extra.\"",
       "upgrades": [
         {
           "name": "Dano de Habilidade",
-          "value": "318.4%"
+          "power": [
+            { "value": "318.4%", "level": 1 },
+            { "value": "342.3%", "level": 2 },
+            { "value": "366.2%", "level": 3 },
+            { "value": "398.0%", "level": 4 },
+            { "value": "421.9%", "level": 5 },
+            { "value": "445.8%", "level": 6 },
+            { "value": "477.6%", "level": 7 },
+            { "value": "509.4%", "level": 8 },
+            { "value": "541.3%", "level": 9 },
+            { "value": "573.1%", "level": 10 }
+          ]
         },
         {
           "name": "Duração",
-          "value": "10s"
+          "power": [
+            { "value": "10.0s", "level": 1 },
+            { "value": "10.0s", "level": 2 },
+            { "value": "10.0s", "level": 3 },
+            { "value": "10.0s", "level": 4 },
+            { "value": "10.0s", "level": 5 },
+            { "value": "10.0s", "level": 6 },
+            { "value": "10.0s", "level": 7 },
+            { "value": "10.0s", "level": 8 },
+            { "value": "10.0s", "level": 9 },
+            { "value": "10.0s", "level": 10 }
+          ]
         },
         {
           "name": "Tempo de Recarga",
-          "value": "15s"
+          "power": [
+            { "value": "15.0s", "level": 1 },
+            { "value": "15.0s", "level": 2 },
+            { "value": "15.0s", "level": 3 },
+            { "value": "15.0s", "level": 4 },
+            { "value": "15.0s", "level": 5 },
+            { "value": "15.0s", "level": 6 },
+            { "value": "15.0s", "level": 7 },
+            { "value": "15.0s", "level": 8 },
+            { "value": "15.0s", "level": 9 },
+            { "value": "15.0s", "level": 10 }
+          ]
         },
         {
           "name": "Energia Elemental",
-          "value": "60"
+          "power": [
+            { "value": "60", "level": 1 },
+            { "value": "60", "level": 2 },
+            { "value": "60", "level": 3 },
+            { "value": "60", "level": 4 },
+            { "value": "60", "level": 5 },
+            { "value": "60", "level": 6 },
+            { "value": "60", "level": 7 },
+            { "value": "60", "level": 8 },
+            { "value": "60", "level": 9 },
+            { "value": "60", "level": 10 }
+          ]
         }
       ],
       "type": "ELEMENTAL_BURST"
@@ -135,21 +468,21 @@
   ],
   "passiveTalents": [
     {
-      "name": "Navegando em Águas Profundas",
-      "unlock": "Desbloqueado na Ascensão 1",
-      "description": "Reduz o consumo de Fôlego dos membros da equipe em 35%. Não acumulável com outros Talentos Passivos que concedem exatamente os mesmos efeitos.",
+      "name": "Mergulho da Saturação",
+      "unlock": "Desbloqueado na Ascenção 1",
+      "description": "Ao lançar Fluxo Pressurizado: Pressão Esmagadora, se o Nível de Pressão do Tempo Pers for menor que 4, a recarga de Fluxo Pressurizado será reduzida em 1s.",
       "level": 1
     },
     {
-      "name": "Mergulho da Saturação",
-      "unlock": "Desbloqueado na Ascensão 4",
-      "description": "Ao lançar Fluxo Pressurizado: Pressão Esmagadora, se o Nível de Pressão do Tempo Pers for menor que 4, a recarga de Fluxo Pressurizado será reduzida em 1s.",
+      "name": "Condensadores Paralelos",
+      "unlock": "Desbloqueado na Ascenção 4",
+      "description": "Quando Freminet desencadeia a reação de Quebrar Gelo contra um inimigo, o dano causado pelo Fluxo Pressurizado: Pressão Esmagadora será aumentado em 40% por 5s.",
       "level": 4
     },
     {
-      "name": "Condensadores Paralelos",
-      "unlock": "Desbloqueado Automaticamente",
-      "description": "Quando Freminet desencadeia a reação de Quebrar Gelo contra um inimigo, o dano causado pelo Fluxo Pressurizado: Pressão Esmagadora será aumentado em 40% por 5s."
+      "name": "Navegando em Águas Profundas",
+      "unlock": "Desbloqueado automaticamente",
+      "description": "Reduz o consumo de Fôlego dos membros da equipe em 35%. Não acumulável com outros Talentos Passivos que concedem exatamente os mesmos efeitos."
     }
   ],
   "constellations": [
@@ -194,132 +527,45 @@
   "weapon_type": "CLAYMORE",
   "ascension_materials": {
     "level_20": [
-      {
-        "name": "Lasca de Jade Shivada",
-        "value": 1
-      },
-      {
-        "name": "Flor Rociomarinha",
-        "value": 3
-      },
-      {
-        "name": "Pérola Transoceânica",
-        "value": 3
-      },
-      {
-        "name": "Mora",
-        "value": 20000
-      }
+      { "name": "Mora", "value": 20000 },
+      { "name": "Lasca de Jade Shivada", "value": 1 },
+      { "name": "Flor Rociomarinha", "value": 3 },
+      { "name": "Pérola Transoceânica", "value": 3 }
     ],
     "level_40": [
-      {
-        "name": "Fragmento de Jade Shivada",
-        "value": 3
-      },
-      {
-        "name": "Componente Mecânico Reserva: Coppelius",
-        "value": 2
-      },
-      {
-        "name": "Flor Rociomarinha",
-        "value": 10
-      },
-      {
-        "name": "Pérola Transoceânica",
-        "value": 15
-      },
-      {
-        "name": "Mora",
-        "value": 40000
-      }
+      { "name": "Mora", "value": 40000 },
+      { "name": "Fragmento de Jade Shivada", "value": 3 },
+      { "name": "Flor Rociomarinha", "value": 10 },
+      { "name": "Pérola Transoceânica", "value": 15 },
+      { "name": "Componente Mecânico Reserva: Coppelius", "value": 2 }
     ],
     "level_50": [
-      {
-        "name": "Fragmento de Jade Shivada",
-        "value": 6
-      },
-      {
-        "name": "Componente Mecânico Reserva: Coppelius",
-        "value": 4
-      },
-      {
-        "name": "Flor Rociomarinha",
-        "value": 20
-      },
-      {
-        "name": "Pedaço Transoceânico",
-        "value": 12
-      },
-      {
-        "name": "Mora",
-        "value": 60000
-      }
+      { "name": "Mora", "value": 60000 },
+      { "name": "Fragmento de Jade Shivada", "value": 6 },
+      { "name": "Flor Rociomarinha", "value": 20 },
+      { "name": "Componente Mecânico Reserva: Coppelius", "value": 4 },
+      { "name": "Pedaço Transoceânico", "value": 12 }
     ],
     "level_60": [
-      {
-        "name": "Pedaço de Jade Shivada",
-        "value": 3
-      },
-      {
-        "name": "Componente Mecânico Reserva: Coppelius",
-        "value": 8
-      },
-      {
-        "name": "Flor Rociomarinha",
-        "value": 30
-      },
-      {
-        "name": "Pedaço Transoceânico",
-        "value": 18
-      },
-      {
-        "name": "Mora",
-        "value": 80000
-      }
+      { "name": "Mora", "value": 80000 },
+      { "name": "Pedaço de Jade Shivada", "value": 3 },
+      { "name": "Flor Rociomarinha", "value": 30 },
+      { "name": "Pedaço Transoceânico", "value": 18 },
+      { "name": "Componente Mecânico Reserva: Coppelius", "value": 8 }
     ],
     "level_70": [
-      {
-        "name": "Pedaço de Jade Shivada",
-        "value": 6
-      },
-      {
-        "name": "Componente Mecânico Reserva: Coppelius",
-        "value": 12
-      },
-      {
-        "name": "Flor Rociomarinha",
-        "value": 45
-      },
-      {
-        "name": "Cristal Caleidoscópico",
-        "value": 12
-      },
-      {
-        "name": "Mora",
-        "value": 100000
-      }
+      { "name": "Mora", "value": 100000 },
+      { "name": "Pedaço de Jade Shivada", "value": 6 },
+      { "name": "Flor Rociomarinha", "value": 45 },
+      { "name": "Cristal Caleidoscópico", "value": 12 },
+      { "name": "Componente Mecânico Reserva: Coppelius", "value": 6 }
     ],
     "level_80": [
-      {
-        "name": "Gema de Jade Shivada",
-        "value": 6
-      },
-      {
-        "name": "Componente Mecânico Reserva: Coppelius",
-        "value": 20
-      },
-      {
-        "name": "Flor Rociomarinha",
-        "value": 60
-      },
-      {
-        "name": "Cristal Caleidoscópico",
-        "value": 24
-      },
-      {
-        "name": "Mora",
-        "value": 120000
-      }
+      { "name": "Mora", "value": 120000 },
+      { "name": "Gema de Jade Shivada", "value": 6 },
+      { "name": "Flor Rociomarinha", "value": 60 },
+      { "name": "Cristal Caleidoscópico", "value": 24 },
+      { "name": "Componente Mecânico Reserva: Coppelius", "value": 20 }
     ]
   }
 }
