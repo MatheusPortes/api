@@ -6,9 +6,13 @@ WORKDIR /usr/src/app
 COPY package*.json pnpm-lock.yaml ./
 RUN pnpm install
 
+COPY . .
+RUN npm rebuild --verbose sharp
+
 FROM base AS builder
 COPY tsconfig.json ./
 COPY src ./src
+
 RUN npm run build
 
 FROM base AS main
