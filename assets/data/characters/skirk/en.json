@@ -1,0 +1,573 @@
+{
+  "name": "Skirk",
+  "title": "Void Star",
+  "vision": "Cryo",
+  "weapon": "Sword",
+  "affiliation": "Cosmic Calamity",
+  "rarity": 5,
+  "release": "2025-06-18",
+  "constellation": "Crystallina",
+  "birthday": "11-05-0000",
+  "description": "A visitor who once appeared in an Abyssal rift and the Primordial Sea, this solitary warrior mentored Tartaglia in the martial arts.",
+  "specialDish": "Abyssal Bounty",
+  "skillTalents": [
+    {
+      "name": "Havoc: Sunder",
+      "unlock": "Normal Attack",
+      "description": "Normal Attack\nPerforms up to 5 consecutive attacks.\n\nCharged Attack\nConsumes a certain amount of Stamina to hurl a spinning crystal spear, dealing DMG to opponents ahead.\n\nPlunging Attack\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+      "upgrades": [
+        {
+          "name": "1-Hit DMG",
+          "power": [
+            { "value": "54.5%", "level": 1 },
+            { "value": "59.0%", "level": 2 },
+            { "value": "63.4%", "level": 3 },
+            { "value": "69.7%", "level": 4 },
+            { "value": "74.2%", "level": 5 },
+            { "value": "79.3%", "level": 6 },
+            { "value": "86.2%", "level": 7 },
+            { "value": "93.2%", "level": 8 },
+            { "value": "100.2%", "level": 9 },
+            { "value": "107.8%", "level": 10 },
+            { "value": "115.4%", "level": 11 }
+          ]
+        },
+        {
+          "name": "2-Hit DMG",
+          "power": [
+            { "value": "49.8%", "level": 1 },
+            { "value": "53.8%", "level": 2 },
+            { "value": "57.9%", "level": 3 },
+            { "value": "63.7%", "level": 4 },
+            { "value": "67.7%", "level": 5 },
+            { "value": "72.4%", "level": 6 },
+            { "value": "78.7%", "level": 7 },
+            { "value": "85.1%", "level": 8 },
+            { "value": "91.5%", "level": 9 },
+            { "value": "98.4%", "level": 10 },
+            { "value": "105.4%", "level": 11 }
+          ]
+        },
+        {
+          "name": "3-Hit DMG",
+          "power": [
+            { "value": "32.4%+32.4%", "level": 1 },
+            { "value": "35.1%+35.1%", "level": 2 },
+            { "value": "37.7%+37.7%", "level": 3 },
+            { "value": "41.5%+41.5%", "level": 4 },
+            { "value": "44.1%+44.1%", "level": 5 },
+            { "value": "47.1%+47.1%", "level": 6 },
+            { "value": "51.3%+51.3%", "level": 7 },
+            { "value": "55.4%+55.4%", "level": 8 },
+            { "value": "59.6%+59.6%", "level": 9 },
+            { "value": "64.1%+64.1%", "level": 10 },
+            { "value": "68.6%+68.6%", "level": 11 }
+          ]
+        },
+        {
+          "name": "4-Hit DMG",
+          "power": [
+            { "value": "60.8%", "level": 1 },
+            { "value": "65.8%", "level": 2 },
+            { "value": "70.7%", "level": 3 },
+            { "value": "77.8%", "level": 4 },
+            { "value": "82.7%", "level": 5 },
+            { "value": "88.4%", "level": 6 },
+            { "value": "96.2%", "level": 7 },
+            { "value": "103.9%", "level": 8 },
+            { "value": "111.7%", "level": 9 },
+            { "value": "120.2%", "level": 10 },
+            { "value": "128.7%", "level": 11 }
+          ]
+        },
+        {
+          "name": "5-Hit DMG",
+          "power": [
+            { "value": "82.9%", "level": 1 },
+            { "value": "89.7%", "level": 2 },
+            { "value": "96.4%", "level": 3 },
+            { "value": "106.0%", "level": 4 },
+            { "value": "112.8%", "level": 5 },
+            { "value": "120.5%", "level": 6 },
+            { "value": "131.1%", "level": 7 },
+            { "value": "141.7%", "level": 8 },
+            { "value": "152.3%", "level": 9 },
+            { "value": "163.9%", "level": 10 },
+            { "value": "175.4%", "level": 11 }
+          ]
+        },
+        {
+          "name": "Charged Attack DMG",
+          "power": [
+            { "value": "66.8%×2", "level": 1 },
+            { "value": "72.3%×2", "level": 2 },
+            { "value": "77.7%×2", "level": 3 },
+            { "value": "85.5%×2", "level": 4 },
+            { "value": "90.9%×2", "level": 5 },
+            { "value": "97.1%×2", "level": 6 },
+            { "value": "105.7%×2", "level": 7 },
+            { "value": "114.2%×2", "level": 8 },
+            { "value": "122.8%×2", "level": 9 },
+            { "value": "132.1%×2", "level": 10 },
+            { "value": "141.4%×2", "level": 11 }
+          ]
+        },
+        {
+          "name": "Charged Attack Stamina Cost",
+          "power": [
+            { "value": "20.0", "level": 1 },
+            { "value": "20.0", "level": 2 },
+            { "value": "20.0", "level": 3 },
+            { "value": "20.0", "level": 4 },
+            { "value": "20.0", "level": 5 },
+            { "value": "20.0", "level": 6 },
+            { "value": "20.0", "level": 7 },
+            { "value": "20.0", "level": 8 },
+            { "value": "20.0", "level": 9 },
+            { "value": "20.0", "level": 10 },
+            { "value": "20.0", "level": 11 }
+          ]
+        },
+        {
+          "name": "Plunge DMG",
+          "power": [
+            { "value": "63.9%", "level": 1 },
+            { "value": "69.1%", "level": 2 },
+            { "value": "74.3%", "level": 3 },
+            { "value": "81.8%", "level": 4 },
+            { "value": "87.0%", "level": 5 },
+            { "value": "92.9%", "level": 6 },
+            { "value": "101.1%", "level": 7 },
+            { "value": "109.3%", "level": 8 },
+            { "value": "117.5%", "level": 9 },
+            { "value": "126.4%", "level": 10 },
+            { "value": "135.3%", "level": 11 }
+          ]
+        },
+        {
+          "name": "Low/High Plunge DMG",
+          "power": [
+            { "value": "128%/160%", "level": 1 },
+            { "value": "138%/173%", "level": 2 },
+            { "value": "149%/186%", "level": 3 },
+            { "value": "164%/204%", "level": 4 },
+            { "value": "174%/217%", "level": 5 },
+            { "value": "186%/232%", "level": 6 },
+            { "value": "202%/253%", "level": 7 },
+            { "value": "219%/273%", "level": 8 },
+            { "value": "235%/293%", "level": 9 },
+            { "value": "253%/316%", "level": 10 },
+            { "value": "271%/338%", "level": 11 }
+          ]
+        }
+      ],
+      "type": "NORMAL_ATTACK"
+    },
+    {
+      "name": "Havoc: Sunder",
+      "unlock": "Elemental Skill",
+      "description": "Normal Attack\nPerforms up to 5 consecutive attacks.\n\nCharged Attack\nConsumes a certain amount of Stamina to hurl a spinning crystal spear, dealing DMG to opponents ahead.\n\nPlunging Attack\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+      "upgrades": [
+        {
+          "name": "1-Hit DMG",
+          "power": [
+            { "value": "54.5%", "level": 1 },
+            { "value": "59.0%", "level": 2 },
+            { "value": "63.4%", "level": 3 },
+            { "value": "69.7%", "level": 4 },
+            { "value": "74.2%", "level": 5 },
+            { "value": "79.3%", "level": 6 },
+            { "value": "86.2%", "level": 7 },
+            { "value": "93.2%", "level": 8 },
+            { "value": "100.2%", "level": 9 },
+            { "value": "107.8%", "level": 10 },
+            { "value": "115.4%", "level": 11 }
+          ]
+        },
+        {
+          "name": "2-Hit DMG",
+          "power": [
+            { "value": "49.8%", "level": 1 },
+            { "value": "53.8%", "level": 2 },
+            { "value": "57.9%", "level": 3 },
+            { "value": "63.7%", "level": 4 },
+            { "value": "67.7%", "level": 5 },
+            { "value": "72.4%", "level": 6 },
+            { "value": "78.7%", "level": 7 },
+            { "value": "85.1%", "level": 8 },
+            { "value": "91.5%", "level": 9 },
+            { "value": "98.4%", "level": 10 },
+            { "value": "105.4%", "level": 11 }
+          ]
+        },
+        {
+          "name": "3-Hit DMG",
+          "power": [
+            { "value": "32.4%+32.4%", "level": 1 },
+            { "value": "35.1%+35.1%", "level": 2 },
+            { "value": "37.7%+37.7%", "level": 3 },
+            { "value": "41.5%+41.5%", "level": 4 },
+            { "value": "44.1%+44.1%", "level": 5 },
+            { "value": "47.1%+47.1%", "level": 6 },
+            { "value": "51.3%+51.3%", "level": 7 },
+            { "value": "55.4%+55.4%", "level": 8 },
+            { "value": "59.6%+59.6%", "level": 9 },
+            { "value": "64.1%+64.1%", "level": 10 },
+            { "value": "68.6%+68.6%", "level": 11 }
+          ]
+        },
+        {
+          "name": "4-Hit DMG",
+          "power": [
+            { "value": "60.8%", "level": 1 },
+            { "value": "65.8%", "level": 2 },
+            { "value": "70.7%", "level": 3 },
+            { "value": "77.8%", "level": 4 },
+            { "value": "82.7%", "level": 5 },
+            { "value": "88.4%", "level": 6 },
+            { "value": "96.2%", "level": 7 },
+            { "value": "103.9%", "level": 8 },
+            { "value": "111.7%", "level": 9 },
+            { "value": "120.2%", "level": 10 },
+            { "value": "128.7%", "level": 11 }
+          ]
+        },
+        {
+          "name": "5-Hit DMG",
+          "power": [
+            { "value": "82.9%", "level": 1 },
+            { "value": "89.7%", "level": 2 },
+            { "value": "96.4%", "level": 3 },
+            { "value": "106.0%", "level": 4 },
+            { "value": "112.8%", "level": 5 },
+            { "value": "120.5%", "level": 6 },
+            { "value": "131.1%", "level": 7 },
+            { "value": "141.7%", "level": 8 },
+            { "value": "152.3%", "level": 9 },
+            { "value": "163.9%", "level": 10 },
+            { "value": "175.4%", "level": 11 }
+          ]
+        },
+        {
+          "name": "Charged Attack DMG",
+          "power": [
+            { "value": "66.8%×2", "level": 1 },
+            { "value": "72.3%×2", "level": 2 },
+            { "value": "77.7%×2", "level": 3 },
+            { "value": "85.5%×2", "level": 4 },
+            { "value": "90.9%×2", "level": 5 },
+            { "value": "97.1%×2", "level": 6 },
+            { "value": "105.7%×2", "level": 7 },
+            { "value": "114.2%×2", "level": 8 },
+            { "value": "122.8%×2", "level": 9 },
+            { "value": "132.1%×2", "level": 10 },
+            { "value": "141.4%×2", "level": 11 }
+          ]
+        },
+        {
+          "name": "Charged Attack Stamina Cost",
+          "power": [
+            { "value": "20.0", "level": 1 },
+            { "value": "20.0", "level": 2 },
+            { "value": "20.0", "level": 3 },
+            { "value": "20.0", "level": 4 },
+            { "value": "20.0", "level": 5 },
+            { "value": "20.0", "level": 6 },
+            { "value": "20.0", "level": 7 },
+            { "value": "20.0", "level": 8 },
+            { "value": "20.0", "level": 9 },
+            { "value": "20.0", "level": 10 },
+            { "value": "20.0", "level": 11 }
+          ]
+        },
+        {
+          "name": "Plunge DMG",
+          "power": [
+            { "value": "63.9%", "level": 1 },
+            { "value": "69.1%", "level": 2 },
+            { "value": "74.3%", "level": 3 },
+            { "value": "81.8%", "level": 4 },
+            { "value": "87.0%", "level": 5 },
+            { "value": "92.9%", "level": 6 },
+            { "value": "101.1%", "level": 7 },
+            { "value": "109.3%", "level": 8 },
+            { "value": "117.5%", "level": 9 },
+            { "value": "126.4%", "level": 10 },
+            { "value": "135.3%", "level": 11 }
+          ]
+        },
+        {
+          "name": "Low/High Plunge DMG",
+          "power": [
+            { "value": "128%/160%", "level": 1 },
+            { "value": "138%/173%", "level": 2 },
+            { "value": "149%/186%", "level": 3 },
+            { "value": "164%/204%", "level": 4 },
+            { "value": "174%/217%", "level": 5 },
+            { "value": "186%/232%", "level": 6 },
+            { "value": "202%/253%", "level": 7 },
+            { "value": "219%/273%", "level": 8 },
+            { "value": "235%/293%", "level": 9 },
+            { "value": "253%/316%", "level": 10 },
+            { "value": "271%/338%", "level": 11 }
+          ]
+        }
+      ],
+      "type": "ELEMENTAL_SKILL"
+    },
+    {
+      "name": "Havoc: Sunder",
+      "unlock": "Elemental Burst",
+      "description": "Normal Attack\nPerforms up to 5 consecutive attacks.\n\nCharged Attack\nConsumes a certain amount of Stamina to hurl a spinning crystal spear, dealing DMG to opponents ahead.\n\nPlunging Attack\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+      "upgrades": [
+        {
+          "name": "1-Hit DMG",
+          "power": [
+            { "value": "54.5%", "level": 1 },
+            { "value": "59.0%", "level": 2 },
+            { "value": "63.4%", "level": 3 },
+            { "value": "69.7%", "level": 4 },
+            { "value": "74.2%", "level": 5 },
+            { "value": "79.3%", "level": 6 },
+            { "value": "86.2%", "level": 7 },
+            { "value": "93.2%", "level": 8 },
+            { "value": "100.2%", "level": 9 },
+            { "value": "107.8%", "level": 10 },
+            { "value": "115.4%", "level": 11 }
+          ]
+        },
+        {
+          "name": "2-Hit DMG",
+          "power": [
+            { "value": "49.8%", "level": 1 },
+            { "value": "53.8%", "level": 2 },
+            { "value": "57.9%", "level": 3 },
+            { "value": "63.7%", "level": 4 },
+            { "value": "67.7%", "level": 5 },
+            { "value": "72.4%", "level": 6 },
+            { "value": "78.7%", "level": 7 },
+            { "value": "85.1%", "level": 8 },
+            { "value": "91.5%", "level": 9 },
+            { "value": "98.4%", "level": 10 },
+            { "value": "105.4%", "level": 11 }
+          ]
+        },
+        {
+          "name": "3-Hit DMG",
+          "power": [
+            { "value": "32.4%+32.4%", "level": 1 },
+            { "value": "35.1%+35.1%", "level": 2 },
+            { "value": "37.7%+37.7%", "level": 3 },
+            { "value": "41.5%+41.5%", "level": 4 },
+            { "value": "44.1%+44.1%", "level": 5 },
+            { "value": "47.1%+47.1%", "level": 6 },
+            { "value": "51.3%+51.3%", "level": 7 },
+            { "value": "55.4%+55.4%", "level": 8 },
+            { "value": "59.6%+59.6%", "level": 9 },
+            { "value": "64.1%+64.1%", "level": 10 },
+            { "value": "68.6%+68.6%", "level": 11 }
+          ]
+        },
+        {
+          "name": "4-Hit DMG",
+          "power": [
+            { "value": "60.8%", "level": 1 },
+            { "value": "65.8%", "level": 2 },
+            { "value": "70.7%", "level": 3 },
+            { "value": "77.8%", "level": 4 },
+            { "value": "82.7%", "level": 5 },
+            { "value": "88.4%", "level": 6 },
+            { "value": "96.2%", "level": 7 },
+            { "value": "103.9%", "level": 8 },
+            { "value": "111.7%", "level": 9 },
+            { "value": "120.2%", "level": 10 },
+            { "value": "128.7%", "level": 11 }
+          ]
+        },
+        {
+          "name": "5-Hit DMG",
+          "power": [
+            { "value": "82.9%", "level": 1 },
+            { "value": "89.7%", "level": 2 },
+            { "value": "96.4%", "level": 3 },
+            { "value": "106.0%", "level": 4 },
+            { "value": "112.8%", "level": 5 },
+            { "value": "120.5%", "level": 6 },
+            { "value": "131.1%", "level": 7 },
+            { "value": "141.7%", "level": 8 },
+            { "value": "152.3%", "level": 9 },
+            { "value": "163.9%", "level": 10 },
+            { "value": "175.4%", "level": 11 }
+          ]
+        },
+        {
+          "name": "Charged Attack DMG",
+          "power": [
+            { "value": "66.8%×2", "level": 1 },
+            { "value": "72.3%×2", "level": 2 },
+            { "value": "77.7%×2", "level": 3 },
+            { "value": "85.5%×2", "level": 4 },
+            { "value": "90.9%×2", "level": 5 },
+            { "value": "97.1%×2", "level": 6 },
+            { "value": "105.7%×2", "level": 7 },
+            { "value": "114.2%×2", "level": 8 },
+            { "value": "122.8%×2", "level": 9 },
+            { "value": "132.1%×2", "level": 10 },
+            { "value": "141.4%×2", "level": 11 }
+          ]
+        },
+        {
+          "name": "Charged Attack Stamina Cost",
+          "power": [
+            { "value": "20.0", "level": 1 },
+            { "value": "20.0", "level": 2 },
+            { "value": "20.0", "level": 3 },
+            { "value": "20.0", "level": 4 },
+            { "value": "20.0", "level": 5 },
+            { "value": "20.0", "level": 6 },
+            { "value": "20.0", "level": 7 },
+            { "value": "20.0", "level": 8 },
+            { "value": "20.0", "level": 9 },
+            { "value": "20.0", "level": 10 },
+            { "value": "20.0", "level": 11 }
+          ]
+        },
+        {
+          "name": "Plunge DMG",
+          "power": [
+            { "value": "63.9%", "level": 1 },
+            { "value": "69.1%", "level": 2 },
+            { "value": "74.3%", "level": 3 },
+            { "value": "81.8%", "level": 4 },
+            { "value": "87.0%", "level": 5 },
+            { "value": "92.9%", "level": 6 },
+            { "value": "101.1%", "level": 7 },
+            { "value": "109.3%", "level": 8 },
+            { "value": "117.5%", "level": 9 },
+            { "value": "126.4%", "level": 10 },
+            { "value": "135.3%", "level": 11 }
+          ]
+        },
+        {
+          "name": "Low/High Plunge DMG",
+          "power": [
+            { "value": "128%/160%", "level": 1 },
+            { "value": "138%/173%", "level": 2 },
+            { "value": "149%/186%", "level": 3 },
+            { "value": "164%/204%", "level": 4 },
+            { "value": "174%/217%", "level": 5 },
+            { "value": "186%/232%", "level": 6 },
+            { "value": "202%/253%", "level": 7 },
+            { "value": "219%/273%", "level": 8 },
+            { "value": "235%/293%", "level": 9 },
+            { "value": "253%/316%", "level": 10 },
+            { "value": "271%/338%", "level": 11 }
+          ]
+        }
+      ],
+      "type": "ELEMENTAL_BURST"
+    }
+  ],
+  "passiveTalents": [
+    {
+      "name": "Havoc: Sunder",
+      "unlock": "Unlocked at Ascension 1",
+      "description": "Normal Attack\nPerforms up to 5 consecutive attacks.\n\nCharged Attack\nConsumes a certain amount of Stamina to hurl a spinning crystal spear, dealing DMG to opponents ahead.\n\nPlunging Attack\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+      "level": 1
+    },
+    {
+      "name": "Havoc: Sunder",
+      "unlock": "Unlocked at Ascension 4",
+      "description": "Normal Attack\nPerforms up to 5 consecutive attacks.\n\nCharged Attack\nConsumes a certain amount of Stamina to hurl a spinning crystal spear, dealing DMG to opponents ahead.\n\nPlunging Attack\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+      "level": 4
+    },
+    {
+      "name": "Havoc: Sunder",
+      "unlock": "Desbloqueado automaticamente",
+      "description": "Normal Attack\nPerforms up to 5 consecutive attacks.\n\nCharged Attack\nConsumes a certain amount of Stamina to hurl a spinning crystal spear, dealing DMG to opponents ahead.\n\nPlunging Attack\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact."
+    }
+  ],
+  "constellations": [
+    {
+      "name": "Far to Fall",
+      "unlock": "Constelação Lv. 1",
+      "description": "Enhances the effects of the Passive Talent Reason Beyond Reason: Every Void Rift absorbed will summon a crystal blade to attack nearby opponents, dealing 500% of Skirk's ATK as Cryo DMG. This DMG is considered Charged Attack DMG.\nYou must first unlock the Passive Talent Reason Beyond Reason.",
+      "level": 1
+    },
+    {
+      "name": "Into the Abyss",
+      "unlock": "Constelação Lv. 2",
+      "description": "After unleashing her Elemental Skill Havoc: Warp, Skirk will gain 10 additional Serpent's Subtlety points.\nWhen using her Elemental Burst Havoc: Ruin, the DMG of this Elemental Burst instance will be increased by taking up to 10 more Serpent's Subtlety points into account.\nAdditionally, within 12.5s after Skirk unleashes the special Elemental Burst Havoc: Extinction while in her Seven-Phase Flash mode, her ATK is increased by 70%. This effect will be canceled when she leaves the Seven-Phase Flash mode.",
+      "level": 2
+    },
+    {
+      "name": "Serendipitous Sin",
+      "unlock": "Constelação Lv. 3",
+      "description": "Increases the Level of Havoc: Ruin by 3.\nMaximum upgrade level is 15.",
+      "level": 3
+    },
+    {
+      "name": "Fractured Flow",
+      "unlock": "Constelação Lv. 4",
+      "description": "Enhances the effects of the Passive Talent Return to Oblivion: Each Death's Crossing stack also increases Skirk's ATK by 10%/20%/40%.\nYou must first unlock the Passive Talent Return to Oblivion.",
+      "level": 4
+    },
+    {
+      "name": "End of Wishes",
+      "unlock": "Constelação Lv. 5",
+      "description": "Increases the Level of Havoc: Warp by 3.\nMaximum upgrade level is 15.",
+      "level": 5
+    },
+    {
+      "name": "To the Source",
+      "unlock": "Constelação Lv. 6",
+      "description": "Each Void Rift Skirk absorbs via the effects of the Passive Talent Reason Beyond Reason will grant her 1 Havoc: Sever stack. She can consume such stacks to initiate coordinated attacks and decrease the DMG she takes while in Seven-Phase Flash mode. These stacks last for 15s, and each stack's duration is counted independently (max 3 stacks).\nYou must first unlock the Passive Talent \"Reason Beyond Reason.\"\n\nHavoc: Sever\n· When Skirk uses the Elemental Burst Havoc: Ruin, she will consume all Havoc: Sever stacks to initiate a coordinated attack in which each Havoc: Sever stack will deal 750% of Skirk's ATK as Cryo DMG. This DMG is considered Elemental Burst DMG.\n· When she uses Normal Attacks while in Seven-Phase Flash mode, 1 Havoc: Sever stack will be consumed when her third or fifth sequenced attacks hit an opponent to launch 3 coordinated attacks. Each coordinated attack deals 180% of Skirk's ATK as Cryo DMG. This damage is considered Normal Attack DMG.\n· When Skirk takes DMG while in Seven-Phase Flash mode, 1 Havoc: Sever stack will be consumed to decrease this DMG instance by 80% and attack nearby opponents 3 times, with each attack dealing 180% of Skirk's ATK as Cryo DMG. This DMG is considered Charged Attack DMG.",
+      "level": 6
+    }
+  ],
+  "vision_key": "CRYO",
+  "weapon_type": "SWORD",
+  "ascension_materials": {
+    "level_20": [
+      { "name": "Mora", "value": 20000 },
+      { "name": "Shivada Jade Sliver", "value": 1 },
+      { "name": "Skysplit Gembloom", "value": 3 },
+      { "name": "Meshing Gear", "value": 3 }
+    ],
+    "level_40": [
+      { "name": "Mora", "value": 40000 },
+      { "name": "Ensnaring Gaze", "value": 2 },
+      { "name": "Shivada Jade Fragment", "value": 3 },
+      { "name": "Skysplit Gembloom", "value": 10 },
+      { "name": "Meshing Gear", "value": 15 }
+    ],
+    "level_50": [
+      { "name": "Mora", "value": 60000 },
+      { "name": "Ensnaring Gaze", "value": 4 },
+      { "name": "Shivada Jade Fragment", "value": 6 },
+      { "name": "Skysplit Gembloom", "value": 20 },
+      { "name": "Mechanical Spur Gear", "value": 12 }
+    ],
+    "level_60": [
+      { "name": "Mora", "value": 80000 },
+      { "name": "Ensnaring Gaze", "value": 8 },
+      { "name": "Shivada Jade Chunk", "value": 3 },
+      { "name": "Skysplit Gembloom", "value": 30 },
+      { "name": "Mechanical Spur Gear", "value": 18 }
+    ],
+    "level_70": [
+      { "name": "Mora", "value": 100000 },
+      { "name": "Ensnaring Gaze", "value": 12 },
+      { "name": "Shivada Jade Chunk", "value": 6 },
+      { "name": "Skysplit Gembloom", "value": 45 },
+      { "name": "Artificed Dynamic Gear", "value": 12 }
+    ],
+    "level_80": [
+      { "name": "Mora", "value": 120000 },
+      { "name": "Ensnaring Gaze", "value": 20 },
+      { "name": "Shivada Jade Gemstone", "value": 6 },
+      { "name": "Skysplit Gembloom", "value": 60 },
+      { "name": "Artificed Dynamic Gear", "value": 24 }
+    ]
+  }
+}
