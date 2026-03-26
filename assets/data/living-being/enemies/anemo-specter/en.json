@@ -1,0 +1,36 @@
+{
+  "id": "anemo-specter",
+  "name": "Anemo Specter",
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "Immune" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "base"
+        }
+      ]
+    }
+  ],
+  "description": "A monster birthed from a high concentration of Anemo that can float in the air.\nAs reason might dictate, monsters made from coalesced Anemo already come equipped with the ability to float. As such, their petal-like wings are most likely to be a mimetic organ first and foremost.",
+  "element": "Anemo",
+  "damageType": ["Anemo"],
+  "livingBeingCategory": ["common-enemies", "elemental-lifeforms", "specters"],
+  "faction": [],
+  "drop": [
+    { "rarity": [3], "name": "Mora" },
+    { "rarity": [3], "name": "Character EXP" },
+    { "rarity": [1], "name": "Spectral Husk" },
+    { "rarity": [2], "name": "Spectral Heart" },
+    { "rarity": [3], "name": "Spectral Nucleus" }
+  ]
+}

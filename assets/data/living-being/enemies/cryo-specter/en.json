@@ -1,0 +1,36 @@
+{
+  "id": "cryo-specter",
+  "name": "Cryo Specter",
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "Immune" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "base"
+        }
+      ]
+    }
+  ],
+  "description": "A monster born from highly-concentrated Cryo elements that can float in the air.\nA certain alchemist once studied these beings, speculating that they might be a kind of Slime or the Traveler, as none of the above needed a Vision to use the elements. He was reprimanded by his teacher.",
+  "element": "Cryo",
+  "damageType": ["Cryo"],
+  "livingBeingCategory": ["common-enemies", "elemental-lifeforms", "specters"],
+  "faction": [],
+  "drop": [
+    { "rarity": [3], "name": "Mora" },
+    { "rarity": [3], "name": "Character EXP" },
+    { "rarity": [1], "name": "Spectral Husk" },
+    { "rarity": [2], "name": "Spectral Heart" },
+    { "rarity": [3], "name": "Spectral Nucleus" }
+  ]
+}
