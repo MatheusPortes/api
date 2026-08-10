@@ -4,7 +4,7 @@
 
 - Read all applicable `.opencode/specs/` files before investigating, planning, editing, or validating work.
 - Treat these files as the AI-readable application schema. Update the affected spec in the same change whenever application state, behavior, architecture, data layout, generation, or delivery changes.
-- Version AI artifacts only on the `agents` branch. Do not transfer `AGENTS.md`, `opencode.json`, or `.opencode/` files to application delivery branches.
+- Version AI artifacts only on the `agent` branch. Do not transfer `AGENTS.md`, `opencode.json`, or `.opencode/` files to application delivery branches.
 
 ## Tooling and checks
 

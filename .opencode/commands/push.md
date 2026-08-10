@@ -8,10 +8,10 @@ Read `AGENTS.md` and all applicable `.opencode/specs/` files first. Target branc
 If `$1` is empty, ask the user for the target branch and stop until it is provided. Use only the `origin` remote.
 
 1. Inspect `git status`, `git diff`, recent commits, branches, and remotes. Identify AI artifacts as `AGENTS.md`, `opencode.json`, and `.opencode/**`.
-2. Do not use `agents` as an application delivery target. AI artifacts belong exclusively on `origin/agents` and must never be copied to the requested branch.
+2. Do not use `agent` as an application delivery target. First commit and push AI artifact changes to `origin/agent`; AI artifacts must never be copied to the requested branch.
 3. Fetch `origin`, update local `main` from `origin/main` with fast-forward only, then create the requested new branch from the updated main branch. Stop if the target branch already exists or main cannot fast-forward.
 4. Before moving changes, create a recoverable temporary backup of the current worktree. Preserve the backup until the push succeeds.
-5. Transfer only non-AI changes to the requested branch. Keep AI artifacts in `agents`.
+5. Transfer only non-AI changes to the requested branch. Keep AI artifacts in `agent`.
 6. Inspect the target diff. Create small, coherent commits: commit a single file alone when independent, and group files only when they implement the same change.
 7. Run the relevant validation. Push with `git push -u origin <target-branch>` only after validation succeeds.
-8. After a successful push, delete the temporary backup and return to `agents`. If any command fails, do not push, do not delete the backup, and report the exact blocker and repository state.
+8. After a successful push, delete the temporary backup and return to `agent`. If any command fails, do not push, do not delete the backup, and report the exact blocker and repository state.
