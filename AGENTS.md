@@ -11,6 +11,7 @@
 - Use Node.js `^20` and pnpm; `pnpm-lock.yaml` is the tracked lockfile.
 - Build/type-check with `pnpm run build`; lint and check formatting with `pnpm run lint`; format with `pnpm run format`.
 - There is no test script or test configuration. Run the focused checks above after changes.
+- The `/push` command does not run `pnpm run lint` or `pnpm run build`; it runs focused validation appropriate to the files being delivered.
 - For local development, run `npm run watch` and `npm run dev` in separate terminals.
 
 ## Service and assets
