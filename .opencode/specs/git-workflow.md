@@ -8,6 +8,7 @@
 
 ## Application Delivery
 
+- Use `/push <target-branch>` to perform an application delivery push. The command applies the checks and recovery steps below.
 - Start each application delivery branch from an updated `origin/main`.
 - Create the requested branch from `main`, then transfer only non-AI changes.
 - Create small, coherent commits. A single-file change may have its own commit; files that implement one change may share a commit.
