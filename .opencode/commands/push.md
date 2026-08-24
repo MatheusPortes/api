@@ -1,5 +1,5 @@
 ---
-description: Safely publish non-AI application changes to a new branch based on origin/main.
+description: Safely publish non-AI application changes to a branch based on origin/main.
 agent: build
 ---
 
@@ -9,7 +9,7 @@ If `$1` is empty, ask the user for the target branch and stop until it is provid
 
 1. Inspect `git status`, `git diff`, recent commits, branches, and remotes. Identify AI artifacts as `AGENTS.md`, `opencode.json`, and `.opencode/**`.
 2. Do not use `agent` as an application delivery target. First commit and push AI artifact changes to `origin/agent`; AI artifacts must never be copied to the requested branch.
-3. Fetch `origin`, update local `main` from `origin/main` with fast-forward only, then create the requested new branch from the updated main branch. Stop if the target branch already exists or main cannot fast-forward.
+3. Fetch `origin` and stop if the target branch exists on `origin`. Update local `main` from `origin/main` with fast-forward only. If the target branch exists locally, check it out and fast-forward it from the updated `main`; otherwise, create it from the updated `main`. Stop if either branch cannot fast-forward.
 4. Before moving changes, create a recoverable temporary backup of the current worktree. Preserve the backup until the push succeeds.
 5. Transfer only non-AI changes to the requested branch. Keep AI artifacts in `agent`.
 6. Inspect the target diff. Create small, coherent commits: commit a single file alone when independent, and group files only when they implement the same change.
