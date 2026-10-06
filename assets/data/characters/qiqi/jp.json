@@ -173,5 +173,83 @@
     }
   ],
   "vision_key": "CRYO",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "calculation": {
+    "initialStats": {
+      "baseHp": 962.8532,
+      "baseAttack": 22.344,
+      "baseDefense": 71.796
+    },
+    "growthCurves": {
+      "baseHp": "Regular HP/DEF 5*",
+      "baseAttack": "Regular ATK 5*",
+      "baseDefense": "Regular HP/DEF 5*"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseHp": 825.5596,
+          "baseDefense": 61.56,
+          "baseAttack": 19.15656
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseHp": 1412.1414,
+          "baseDefense": 105.3,
+          "baseAttack": 32.7678,
+          "healingBonus": 0.0554
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseHp": 2194.2505,
+          "baseDefense": 163.62,
+          "baseAttack": 50.91612,
+          "healingBonus": 0.1108
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseHp": 2780.8323,
+          "baseDefense": 207.36,
+          "baseAttack": 64.52736,
+          "healingBonus": 0.1108
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseHp": 3367.414,
+          "baseDefense": 251.1,
+          "baseAttack": 78.1386,
+          "healingBonus": 0.1662
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseHp": 3953.9958,
+          "baseDefense": 294.84,
+          "baseAttack": 91.74984,
+          "healingBonus": 0.2215
+        }
+      }
+    ]
+  }
 }

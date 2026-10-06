@@ -153,5 +153,83 @@
     }
   ],
   "vision_key": "ANEMO",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "calculation": {
+    "initialStats": {
+      "baseHp": 775.02234,
+      "baseAttack": 14.2464,
+      "baseDefense": 58.94175
+    },
+    "growthCurves": {
+      "baseHp": "Regular HP/DEF 4*",
+      "baseAttack": "Regular ATK 4*",
+      "baseDefense": "Regular HP/DEF 4*"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseHp": 578.9814,
+          "baseDefense": 44.0325,
+          "baseAttack": 10.64304
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseHp": 990.36285,
+          "baseDefense": 75.31875,
+          "baseAttack": 18.2052,
+          "anemoDamageBonus": 0.06
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseHp": 1538.8716,
+          "baseDefense": 117.03375,
+          "baseAttack": 28.28808,
+          "anemoDamageBonus": 0.12
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseHp": 1950.253,
+          "baseDefense": 148.32,
+          "baseAttack": 35.85024,
+          "anemoDamageBonus": 0.12
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseHp": 2361.6345,
+          "baseDefense": 179.60625,
+          "baseAttack": 43.4124,
+          "anemoDamageBonus": 0.18
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseHp": 2773.016,
+          "baseDefense": 210.8925,
+          "baseAttack": 50.97456,
+          "anemoDamageBonus": 0.24
+        }
+      }
+    ]
+  }
 }

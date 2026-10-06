@@ -7,5 +7,64 @@
   "passiveName": "縛り無き朱色の蝶",
   "passiveDesc": "HP上限+20%。また、キャラクターのHP上限の0.8%分、攻撃力がアップする。キャラクターのHPが50%未満の時、攻撃力が更にHP上限の1%分アップする。",
   "location": "祈願",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 45.9364,
+      "critDamage": 0.144
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.1",
+      "critDamage": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

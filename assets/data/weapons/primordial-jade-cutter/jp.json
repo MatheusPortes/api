@@ -7,5 +7,64 @@
   "passiveName": "護国の無垢なる心",
   "passiveDesc": "HP上限+20%。また、キャラクターのHP上限の1.2%分、攻撃力がアップする。",
   "location": "祈願",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 44.3358,
+      "critRate": 0.096
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.4",
+      "critRate": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

@@ -173,5 +173,83 @@
     }
   ],
   "vision_key": "PYRO",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "calculation": {
+    "initialStats": {
+      "baseHp": 1039.4418,
+      "baseAttack": 16.0272,
+      "baseDefense": 64.66425
+    },
+    "growthCurves": {
+      "baseHp": "Regular HP/DEF 4*",
+      "baseAttack": "Regular ATK 4*",
+      "baseDefense": "Regular HP/DEF 4*"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseHp": 776.5162,
+          "baseDefense": 48.3075,
+          "baseAttack": 11.97342
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseHp": 1328.2513,
+          "baseDefense": 82.63125,
+          "baseAttack": 20.48085,
+          "energyRecharge": 0.0667
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseHp": 2063.8984,
+          "baseDefense": 128.39626,
+          "baseAttack": 31.82409,
+          "energyRecharge": 0.1333
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseHp": 2615.6335,
+          "baseDefense": 162.72,
+          "baseAttack": 40.33152,
+          "energyRecharge": 0.1333
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseHp": 3167.3687,
+          "baseDefense": 197.04375,
+          "baseAttack": 48.83895,
+          "energyRecharge": 0.2
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseHp": 3719.104,
+          "baseDefense": 231.3675,
+          "baseAttack": 57.34638,
+          "energyRecharge": 0.2667
+        }
+      }
+    ]
+  }
 }

@@ -7,5 +7,64 @@
   "passiveName": "ドドベンチャー！",
   "passiveDesc": "通常攻撃が敵に命中した後の6秒間、重撃ダメージ+16%。重撃が敵に命中した後の6秒間、攻撃力+8%。",
   "location": "イベント「真夏！島？大冒険！」",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 41.0671,
+      "attackPercent": 0.12
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 2.4",
+      "attackPercent": "C2"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 25.9
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 51.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 103.7
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 129.7
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      }
+    ]
+  }
 }

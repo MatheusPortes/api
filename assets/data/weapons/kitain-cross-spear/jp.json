@@ -7,5 +7,64 @@
   "passiveName": "名士の振舞",
   "passiveDesc": "元素スキルのダメージ+6%。元素スキルが命中した時、キャラクターは元素エネルギーを3ポイント失う。その後の6秒間、2秒毎に元素エネルギーを3ポイント獲得する。この効果は10秒毎に1回のみ発動でき、待機中のキャラクターも発動できる。",
   "location": "鍛造",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 43.7349,
+      "elementalMastery": 24
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 2.2",
+      "elementalMastery": "C2"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 25.9
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 51.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 103.7
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 129.7
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      }
+    ]
+  }
 }

@@ -87,5 +87,83 @@
     }
   ],
   "vision_key": "GEO",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "calculation": {
+    "initialStats": {
+      "baseHp": 1143.984,
+      "baseAttack": 19.551,
+      "baseDefense": 57.4368
+    },
+    "growthCurves": {
+      "baseHp": "Regular HP/DEF 5*",
+      "baseAttack": "Regular ATK 5*",
+      "baseDefense": "Regular HP/DEF 5*"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseHp": 980.8628,
+          "baseDefense": 49.248,
+          "baseAttack": 16.762
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseHp": 1677.7917,
+          "baseDefense": 84.24,
+          "baseAttack": 28.6718,
+          "geoDamageBonus": 0.072
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseHp": 2607.0303,
+          "baseDefense": 130.896,
+          "baseAttack": 44.5516,
+          "geoDamageBonus": 0.144
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseHp": 3303.959,
+          "baseDefense": 165.888,
+          "baseAttack": 56.4614,
+          "geoDamageBonus": 0.144
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseHp": 4000.888,
+          "baseDefense": 200.88,
+          "baseAttack": 68.3713,
+          "geoDamageBonus": 0.216
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseHp": 4697.817,
+          "baseDefense": 235.872,
+          "baseAttack": 80.2811,
+          "geoDamageBonus": 0.288
+        }
+      }
+    ]
+  }
 }

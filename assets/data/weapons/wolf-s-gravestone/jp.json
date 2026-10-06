@@ -7,5 +7,64 @@
   "passiveName": "狼のような狩人",
   "passiveDesc": "攻撃力+20%。HPが30%以下の敵に命中すると、チーム全員の攻撃力+40%、継続時間12秒。30秒に1回のみ発動可能。",
   "location": "祈願",
-  "weapon_type": "CLAYMORE"
+  "weapon_type": "CLAYMORE",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 45.9364,
+      "attackPercent": 0.108
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.1",
+      "attackPercent": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

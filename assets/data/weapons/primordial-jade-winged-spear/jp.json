@@ -7,5 +7,64 @@
   "passiveName": "正義を貫く鳶の槍",
   "passiveDesc": "敵に命中した時、自身の攻撃力+3.2%、継続時間6秒、最大7重まで。0.3秒に1回のみ発動できる。7重まで発動すると与えるダメージ+12%。",
   "location": "祈願",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 47.537,
+      "critRate": 0.048
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.2",
+      "critRate": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

@@ -7,5 +7,64 @@
   "passiveName": "炊金",
   "passiveDesc": "元素爆発を発動した後の6秒間、2秒毎に元素エネルギーを4回復し、チーム全員のHPを2秒毎に4%回復する。",
   "location": "鍛造",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 42.401,
+      "hpPercent": 0.09
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 2.1",
+      "hpPercent": "C2"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 25.9
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 51.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 103.7
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 129.7
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      }
+    ]
+  }
 }

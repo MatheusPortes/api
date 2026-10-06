@@ -7,5 +7,64 @@
   "passiveName": "集中",
   "passiveDesc": "攻撃が敵にダメージを与えた時、会心率+8%、最大5重まで。攻撃会心発生時、効果がクリアされる。",
   "location": "スターライト交換",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 42.401,
+      "attackPercent": 0.09
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 2.1",
+      "attackPercent": "C2"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 25.9
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 51.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 103.7
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 129.7
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      }
+    ]
+  }
 }

@@ -7,5 +7,64 @@
   "passiveName": "黒翼を切り裂く鋭牙",
   "passiveDesc": "会心率+8%、通常攻撃速度+12%。通常攻撃と重撃が命中時、50%の確率で真空刃を発動し、攻撃力の40%の狭範囲ダメージを与える。2秒毎に1回のみ発動可能。",
   "location": "祈願",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 47.537,
+      "energyRecharge": 0.08
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.2",
+      "energyRecharge": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

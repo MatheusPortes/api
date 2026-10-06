@@ -7,5 +7,64 @@
   "passiveName": "霜の埋葬",
   "passiveDesc": "通常攻撃と重撃が敵に命中した時、60%の確率で敵の上に恒氷晶核が作られ落下し、攻撃力の80%の範囲ダメージを与える。敵が氷元素の影響を受けている場合、攻撃力の200%のダメージを与える。この効果は10秒毎に1回のみ発動可能。",
   "location": "鍛造",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 42.401,
+      "attackPercent": 0.09
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 2.1",
+      "attackPercent": "C2"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 25.9
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 51.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 103.7
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 129.7
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      }
+    ]
+  }
 }
