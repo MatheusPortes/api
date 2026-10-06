@@ -15,6 +15,8 @@ This repository is a static-data API for Genshin Impact entities, including char
 
 - Entity data is stored at `assets/data/<type>/<lowercase-hyphenated-id>/en.json`.
 - Translation files use language-code names such as `pt.json`. The API serves the requested file as a complete record; it does not merge it with `en.json` or fall back to English.
+- Calculation data is static only: this service does not resolve progression, compose stats, or calculate damage. Character and weapon mechanical data is stored in the English entity record after validation.
+- Shared growth curves are stored once at `assets/data/calculation/curves/en.json` and are served at `/calculation/curves`. The document declares the patch that its curves support.
 - Images are stored at `assets/images/<type>/<id>/<image-name>` without filename extensions.
 - Character `icon` files are generated from `icon-big` by `pnpm run gen` and are ignored by Git.
 - Read `data-conventions.md` before changing entity data or images, and `entity-research.md` before using external factual information.
@@ -27,4 +29,4 @@ This repository is a static-data API for Genshin Impact entities, including char
 
 ## Maintenance Contract
 
-Read this spec before planning, editing, or validating repository work. Update it in the same change whenever runtime behavior, routes, data layout, asset conventions, generation, environment variables, or delivery behavior changes.
+Read this spec before planning, editing, or validating repository work. Update it in the same change whenever runtime behavior, routes, data layout, calculation-data conventions, asset conventions, generation, environment variables, or delivery behavior changes.

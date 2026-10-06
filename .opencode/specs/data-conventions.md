@@ -8,13 +8,14 @@
 
 ## Storage Layouts
 
-| Data area         | Layout                                                   | Notes                                                                           |
-| ----------------- | -------------------------------------------------------- | ------------------------------------------------------------------------------- |
-| Standard entities | `<type>/<id>/en.json`                                    | Artifacts, characters, domains, elements, legacy enemies, nations, and weapons. |
-| Bosses            | `boss/weekly-boss/<id>/en.json`                          | `weekly-boss` is part of the route and image path.                              |
-| Living beings     | `living-being/{enemies,groups,families,types}/...`       | Individual enemies and classification records use different schemas.            |
-| Materials         | Root category catalogs and `materials/drop/<id>/en.json` | Only `drop` records are individually addressable.                               |
-| Consumables       | `consumables/{food,potions}/en.json`                     | Each file is a catalog keyed by item ID, not per-item directories.              |
+| Data area         | Layout                                                   | Notes                                                                                   |
+| ----------------- | -------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| Standard entities | `<type>/<id>/en.json`                                    | Artifacts, characters, domains, elements, legacy enemies, nations, and weapons.         |
+| Bosses            | `boss/weekly-boss/<id>/en.json`                          | `weekly-boss` is part of the route and image path.                                      |
+| Living beings     | `living-being/{enemies,groups,families,types}/...`       | Individual enemies and classification records use different schemas.                    |
+| Materials         | Root category catalogs and `materials/drop/<id>/en.json` | Only `drop` records are individually addressable.                                       |
+| Consumables       | `consumables/{food,potions}/en.json`                     | Each file is a catalog keyed by item ID, not per-item directories.                      |
+| Growth curves     | `calculation/curves/en.json`                             | One shared dataset with a top-level `patch`; do not duplicate curve tables in entities. |
 
 ## Record Shapes
 
@@ -26,6 +27,14 @@
 | Domains              | Location, requirements, recommended elements, and rewards                                                                      | Reward tiers inconsistently use `drops` or `items`; preserve the comparable shape. |
 | Legacy enemies       | Region, type, family, elements, and drops                                                                                      | This schema is incompatible with `living-being/enemies`.                           |
 | Living-being enemies | `id`, `name`, optional resistance, element, damage type, category, faction, and drop                                           | Groups, families, and types are separate classification records.                   |
+
+## Calculation Data
+
+- This API exposes calculation inputs only; it does not calculate character stats or damage.
+- Add validated character and weapon mechanical data under a top-level `calculation` field in `en.json` first. After the English contract is approved, copy the exact field to every existing localized record for that entity.
+- Entity calculation data contains only values unique to that entity, such as initial properties, curve identifiers, ascension bonuses, talent multipliers, and structured effects.
+- Shared curve tables belong only in `calculation/curves/en.json`. Its top-level `patch` identifies the game patch for every included table.
+- Do not expose upstream provider IDs in entity responses. They may be used in import and validation tooling only.
 
 ## Translations
 

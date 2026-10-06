@@ -2,7 +2,7 @@
 
 ## Scope
 
-Apply this policy before using external factual information to create, correct, or edit an entity, translation, image label, or relationship.
+Apply this policy before using external factual information to create, correct, or edit an entity, translation, image label, relationship, or entity calculation data.
 
 ## Required Validation
 
@@ -13,6 +13,13 @@ Apply this policy before using external factual information to create, correct, 
 2. Use entity-specific pages, not source homepages, and compare each factual field being changed.
 3. Treat a fact as validated only when all three sources agree or an official Genshin source resolves a documented disagreement.
 4. Do not edit factual data when any required source is unavailable, lacks the entity, or has an unresolved conflict. Report the blocker instead.
+
+## Calculation Data Exception
+
+- Character and weapon calculation data may use Yatta as the structured entity source and KQM TCL as the shared growth-curve source.
+- Validate that the Yatta entity name, type, and element or weapon type match the local record before importing values.
+- Keep upstream IDs and source metadata out of public entity responses.
+- This exception applies only to numerical progression and calculation fields. The required community-source validation remains in effect for all other entity facts.
 
 ## References
 
