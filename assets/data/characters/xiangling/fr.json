@@ -89,5 +89,83 @@
     }
   ],
   "vision_key": "PYRO",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "calculation": {
+    "initialStats": {
+      "baseHp": 911.791,
+      "baseAttack": 18.87648,
+      "baseDefense": 56.0805
+    },
+    "growthCurves": {
+      "baseHp": "Regular HP/DEF 4*",
+      "baseAttack": "Regular ATK 4*",
+      "baseDefense": "Regular HP/DEF 4*"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseHp": 681.15454,
+          "baseDefense": 41.895,
+          "baseAttack": 14.102028
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseHp": 1165.1328,
+          "baseDefense": 71.6625,
+          "baseAttack": 24.12189,
+          "elementalMastery": 24
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseHp": 1810.4371,
+          "baseDefense": 111.3525,
+          "baseAttack": 37.481705,
+          "elementalMastery": 48
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseHp": 2294.4153,
+          "baseDefense": 141.12,
+          "baseAttack": 47.501568,
+          "elementalMastery": 48
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseHp": 2778.3936,
+          "baseDefense": 170.8875,
+          "baseAttack": 57.52143,
+          "elementalMastery": 72
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseHp": 3262.3718,
+          "baseDefense": 200.655,
+          "baseAttack": 67.54129,
+          "elementalMastery": 96
+        }
+      }
+    ]
+  }
 }
