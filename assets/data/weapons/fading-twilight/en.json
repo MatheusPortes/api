@@ -8,5 +8,64 @@
   "passiveDesc": "Has three states, Evengleam, Afterglow, and Dawnblaze, which increase DMG dealt from 6%/10%/14% (R1) to 12%/20%/28% (R5) respectively. When attacks hit opponents, this weapon will switch to the next state. This weapon can change states once every 7s. The character equipping this weapon can still trigger the state switch while not on the field.",
   "location": "Event: Perilous Trail",
   "ascensionMaterial": "aerosiderite",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 43.7349,
+      "energyRecharge": 0.066667
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 2.2",
+      "energyRecharge": "C2"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 25.9
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 51.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 103.7
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 129.7
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      }
+    ]
+  }
 }

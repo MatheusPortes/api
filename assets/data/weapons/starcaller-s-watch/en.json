@@ -7,7 +7,69 @@
   "passiveName": "Offering Unto Wind and Sun",
   "passiveDesc": "Increases Elemental Mastery by 100/125/150/175/200. Gain the \"Mirror of Night\" effect within 15s after the equipping character creates a shield: The current active party member deals 28%/35%/42%/49%/56% increased DMG to nearby opponents. You can gain the \"Mirror of Night\" effect once every 14s.",
   "location": "Event Wish Exclusive",
-  "baseDamage": { "attack": 44, "subStat": 58 },
+  "baseDamage": {
+    "attack": 44,
+    "subStat": 58
+  },
   "description": "A statue carved in the shape of an eagle, a sacred relic of the Masters of the Night-Wind that has been passed down from generation to generation.",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 44.3358,
+      "elementalMastery": 57.6
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.4",
+      "elementalMastery": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

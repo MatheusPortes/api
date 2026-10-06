@@ -8,5 +8,64 @@
   "passiveDesc": "DEF is increased by 28/35/42/49/56%. Normal and Charged Attack DMG is increased by 40/50/60/70/80% of DEF.",
   "location": "Gacha",
   "ascensionMaterial": "narukami",
-  "weapon_type": "CLAYMORE"
+  "weapon_type": "CLAYMORE",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 44.3358,
+      "critDamage": 0.192
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.4",
+      "critDamage": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

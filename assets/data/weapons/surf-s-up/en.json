@@ -7,7 +7,69 @@
   "passiveName": "Aqua Remembrance",
   "passiveDesc": "Max HP increased by 20%/25%/30%/35%/40%. Once every 15s, for the 14s after using an Elemental Skill: Gain 4 Scorching Summer stacks. Each stack increases Normal Attack DMG by 12%/15%/18%/21%/24%. For the duration of the effect, once every 1.5s, lose 1 stack after a Normal Attack hits an opponent; once every 1.5s, gain 1 stack after triggering a Vaporize reaction on an opponent. Max 4 Scorching Summer stacks.",
   "location": "Event Wish Exclusive",
-  "baseDamage": { "attack": 44, "subStat": 192 },
+  "baseDamage": {
+    "attack": 44,
+    "subStat": 192
+  },
   "description": "A commemorative item originally reserved for the champion of the \"First All-Tribe Surfing Championship.\" Since said tournament is currently in the preparatory stage, the prize is in temporary storage at the Leisurely Puffer, with the shop owner as its custodian.",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 44.3358,
+      "critDamage": 0.192
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.4",
+      "critDamage": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

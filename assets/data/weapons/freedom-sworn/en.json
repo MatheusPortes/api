@@ -8,5 +8,64 @@
   "passiveDesc": "A part of the \"Millennial Movement\" that wanders amidst the winds. Increases DMG by 10%/12.5%/15%/17.5%/20%. When the character wielding this weapon triggers Elemental Reactions, they gain a Sigil of Rebellion. This effect can be triggered once every 0.5s and can be triggered even if said character is not on the field.When you possess 2 Sigils of Rebellion, all of them will be consumed and all nearby party members will obtain \"Millennial Movement: Song of Resistance\" for 12s. \"Millennial Movement: Song of Resistance\" increases Normal, Charged, and Plunging Attack DMG by 16%/20%/24%/28%/32% and increases ATK by 20%/25%/30%/35%/40%. Once this effect is triggered, you will not gain Sigils of Rebellion for 20s.Of the many effects of the \"Millennial Movement,\" buffs of the same type will not stack.",
   "location": "Gacha",
   "ascensionMaterial": "dandelion",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 45.9364,
+      "elementalMastery": 43.2
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.1",
+      "elementalMastery": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

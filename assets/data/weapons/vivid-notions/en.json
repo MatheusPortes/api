@@ -7,7 +7,69 @@
   "passiveName": "Falling Rainbow's Wish",
   "passiveDesc": "ATK is increased by 28%/35%/42%/49%/56%. When you use a Plunging Attack, you will gain the \"Dawn's First Hue\" effect: Plunging Attack CRIT DMG is increased by 28%/35%/42%/49%/56%. When you use an Elemental Skill or Burst, you will gain the \"Twilight's Splendor\" effect: Plunging Attack CRIT DMG is increased by 40%/50%/60%/70%/80%. The two effects above each last for 15s, and will be canceled 0.1s after the ground impact hits a target.",
   "location": "Event Wish Exclusive",
-  "baseDamage": { "attack": 48, "subStat": 96 },
+  "baseDamage": {
+    "attack": 48,
+    "subStat": 96
+  },
   "description": "A trophy made from gemstones from the Collective of Plenty and crystals from the Flower-Feather Clan. It is said to have once belonged to a legendary wrestler.",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 47.537,
+      "critDamage": 0.096
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.2",
+      "critDamage": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

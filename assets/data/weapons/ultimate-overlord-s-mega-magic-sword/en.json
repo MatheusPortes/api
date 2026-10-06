@@ -8,5 +8,64 @@
   "passiveDesc": "ATK increased by 12/15/18/21/24%. That's not all! The support from all Melusines you've helped in Merusea Village fills you with strength! Based on the number of them you've helped, your ATK is increased by up to an additional 12/15/18/21/24%.",
   "location": "Event: Roses and Muskets",
   "ascensionMaterial": "pristine-sea",
-  "weapon_type": "CLAYMORE"
+  "weapon_type": "CLAYMORE",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 43.7349,
+      "energyRecharge": 0.066667
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 2.2",
+      "energyRecharge": "C2"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 25.9
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 51.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 103.7
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 129.7
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      }
+    ]
+  }
 }

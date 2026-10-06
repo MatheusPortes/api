@@ -7,7 +7,69 @@
   "passiveName": "Deathly Pact",
   "passiveDesc": "CRIT DMG increased by 20%/25%/30%/35%/40%. Increasing the value of a Bond of Life increases the DMG the equipping character deals by 16%/20%/24%/28%/32% for 6s. Max 3 stacks.",
   "location": "Event Wish Exclusive",
-  "baseDamage": { "attack": 48, "subStat": 96 },
+  "baseDamage": {
+    "attack": 48,
+    "subStat": 96
+  },
   "description": "A rapier once wielded by a deceiver who had forsaken everything. In the past, it was primarily used as a tool when he had to disguise his identity.",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 47.537,
+      "critDamage": 0.096
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.2",
+      "critDamage": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }
