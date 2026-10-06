@@ -7,7 +7,69 @@
   "passiveName": "Dente Perfurador do Céu",
   "passiveDesc": "A Taxa Crítica aumenta em 4%/5%/6%/7%/8%. Obtém a Perfuração Celestial ao usar o Supremo: Aumenta a Veloc. Mov. em 10%/10%/10%/10%/10%, aumenta a Velocidade de Ataque em 10%/10%/10%/10%/10%. Quando o Ataque Normal e o Ataque Carregado atingirem, causará um Dano Adicional de 20%/25%/30%/35%/40% por 12s.",
   "location": "Mondstadt",
-  "baseDamage": { "attack": 46, "subStat": 120 },
+  "baseDamage": {
+    "attack": 46,
+    "subStat": 120
+  },
   "description": "A espada de um cavaleiro que simboliza a honra restaurada de Dvalin. As bênçãos do Arconte Anemo repousam sobre a lâmina mais cheia, imbuindo a espada com os poderes do céu e do vento.",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 45.9364,
+      "energyRecharge": 0.12
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.1",
+      "energyRecharge": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

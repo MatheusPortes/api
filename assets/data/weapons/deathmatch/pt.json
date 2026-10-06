@@ -7,7 +7,69 @@
   "passiveName": "Gladiador",
   "passiveDesc": "Se houver 2 inimigos ao redor, o ATQ é aumentado em 16%/20%/24%/28%/32% e a DEF é aumentada em 16%/20%/24%/28%/32%. Se houver menos que 2 inimigos ao redor, o ATQ é aumentado em 24%/30%/36%/42%/48%.",
   "location": "Mondstadt",
-  "baseDamage": { "attack": 41, "subStat": 80 },
+  "baseDamage": {
+    "attack": 41,
+    "subStat": 80
+  },
   "description": "Uma lança afiada vermelho-sangue que era inestimável para um gladiador no passado. Sua ponta está manchada com o sangue de inúmeras bestas e pessoas.",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 41.0671,
+      "critRate": 0.08
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 2.4",
+      "critRate": "C2"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 25.9
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 51.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 103.7
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 129.7
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      }
+    ]
+  }
 }

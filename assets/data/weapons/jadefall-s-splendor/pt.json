@@ -7,7 +7,69 @@
   "passiveName": "Presente de Jade Primordial",
   "passiveDesc": "Nos 3s após lançar um Supremo ou criar um Escudo, gera o efeito “Presente de Jade Primordial”: regenera 4.5/5/5.5/6/6.5 de Energia Elemental a cada 2.5s, e concede um Bônus de Dano Elemental do Tipo Elemental correspondente do personagem que tem esta arma equipada de 0.3%/0.5%/0.7%/0.9%/1.1% para cada 1.000 pontos de Sua Vida Máxima. É possível aumentar em até 12%/20%/28%/36%/44%. O efeito \"Presente de Jade Primordial\" pode ser desencadeado mesmo se o personagem que tem esta arma equipada não estiver ativo no campo de batalha.",
   "location": "Oração de Evento de Arma",
-  "baseDamage": { "attack": 46, "subStat": 108 },
+  "baseDamage": {
+    "attack": 46,
+    "subStat": 108
+  },
   "description": "Um recipiente ritualístico esculpido de jade que reflete o brilho dos céus e águas cristalinas.",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 45.9364,
+      "hpPercent": 0.108
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.1",
+      "hpPercent": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

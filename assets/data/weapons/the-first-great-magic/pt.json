@@ -7,7 +7,69 @@
   "passiveName": "Parsifal, a Incrível",
   "passiveDesc": "Aumenta o Dano do Ataque Carregado em 16/20/24/28/32%. Para cada personagem na equipe com o mesmo Tipo Elemental que o personagem que está com essa arma equipada (incluindo o personagem que está com a arma equipada), obtém 1 acúmulo do efeito \"Método\". Para cada personagem de Tipo Elemental diferente, obtém 1 acúmulo do efeito \"Atuação\". Quando possuir 1/2/3 ou mais acúmulos do efeito \"Método\", o ATQ aumentará 16%/32%/48% | 20%/40%/60% | 24%/48%/72% | 28%/56%/84% | 32%/64%/96%. Quando possuir 1/2/3 ou mais acúmulos do efeito \"Atuação\", aumenta a Veloc. Mov. em 4%/7%/10% | 6%/9%/12% | 8%/11%/14% | 10%/13%/16% | 12%/15%/18%.",
   "location": "Oração de Evento de Arma",
-  "baseDamage": { "attack": 46, "subStat": 144 },
+  "baseDamage": {
+    "attack": 46,
+    "subStat": 144
+  },
   "description": "Um adereço de performance usado pela antiga \"Grande Mágica\", que acabou revelando-se um notável armamento.",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 45.9364,
+      "critDamage": 0.144
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.1",
+      "critDamage": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

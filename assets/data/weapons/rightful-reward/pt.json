@@ -7,7 +7,69 @@
   "passiveName": "Ponta da Lança",
   "passiveDesc": "Ao ser curado, restaura 8/10/12/14/16 de Energia. Este efeito pode ser ativado uma vez a cada 10s e pode ser ativado mesmo quando o personagem não estiver em campo.",
   "location": "Obtido na forja",
-  "baseDamage": { "attack": 44, "subStat": 60 },
+  "baseDamage": {
+    "attack": 44,
+    "subStat": 60
+  },
   "description": "Uma lança afiada. Somente a ponta dela permanece recentemente manchada de sangue.",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 43.7349,
+      "hpPercent": 0.06
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 2.2",
+      "hpPercent": "C2"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 25.9
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 51.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 103.7
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 129.7
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      }
+    ]
+  }
 }

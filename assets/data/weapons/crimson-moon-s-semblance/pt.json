@@ -7,7 +7,69 @@
   "passiveName": "Sombra do Sol de Cinzas",
   "passiveDesc": "Quando um Ataque Carregado atinge um inimigo, ganha um Contrato de Vida equivalente a 25% da Vida Máxima. Esse efeito pode ser desencadeado uma vez a cada 14s. Além disso, quando o personagem que está com essa arma equipada tem um Contrato de Vida, aumenta o Dano em 12%/16%/20%/24%/28%. Se o valor do Contrato de Vida for maior ou igual a 30% da Vida Máxima, então ganha 24%/32%/40%/48%/56% de aumento de Dano adicional.",
   "location": "Oração de Evento de Arma",
-  "baseDamage": { "attack": 48, "subStat": 48 },
+  "baseDamage": {
+    "attack": 48,
+    "subStat": 48
+  },
   "description": "Uma arma de gume afiado, brilho deslumbrante como a Lua Carmesim. Dizem que uma antiga dinastia a considerava um objeto ritual que poderia unir dois mundos, mas ninguém mais se lembra das crenças e cerimônias daquela era passada.",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 47.537,
+      "critRate": 0.048
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.2",
+      "critRate": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

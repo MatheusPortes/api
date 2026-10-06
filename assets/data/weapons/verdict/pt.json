@@ -7,7 +7,69 @@
   "passiveName": "Juramento dos Reinos e Crepúsculos",
   "passiveDesc": "Aumenta o ATQ em 20%/25%/30%/35%/40%. Quando o personagem da equipe obtém um Fragmento gerado por Cristalização, concede ao personagem que está com essa arma equipada 1 \"Selo do Juramento\", aumentando o Dano causado por sua Habilidade Elemental em 18%/22.5%/27%/31.5%/36%. O Selo do Juramento dura 15s e pode ser acumulado até duas vezes. Todos os Selos do Juramento serão removidos 0.2s após o personagem que está com essa arma equipada causar Dano de Habilidade Elemental.",
   "location": "Oração de Evento de Arma",
-  "baseDamage": { "attack": 48, "subStat": 48 },
+  "baseDamage": {
+    "attack": 48,
+    "subStat": 48
+  },
   "description": "Uma espada usada por uma jovem donzela que abandonou o nome de sua família, manchada com o sangue de inimigos e de familiares.",
-  "weapon_type": "CLAYMORE"
+  "weapon_type": "CLAYMORE",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 47.537,
+      "critRate": 0.048
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.2",
+      "critRate": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

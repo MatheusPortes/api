@@ -7,7 +7,69 @@
   "passiveName": "Vitória Oceânica",
   "passiveDesc": "Aumenta o Dano do Supremo em 12%/15%/18%/21%/24%. Quando o Supremo acerta os oponentes, existe 100% de chance de invocar uma tuna titânica que avança e causa 100%/125%/150%/175%/200% do ATQ como Dano em uma AdE. Este efeito pode ocorrer uma vez a cada 15s.",
   "location": "Liyue",
-  "baseDamage": { "attack": 41, "subStat": 12 },
+  "baseDamage": {
+    "attack": 41,
+    "subStat": 12
+  },
   "description": "O grande rei do oceano. Após ter sido desidratado, serve como uma boa arma, bem como um alimento de emergência.",
-  "weapon_type": "CLAYMORE"
+  "weapon_type": "CLAYMORE",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 41.0671,
+      "attackPercent": 0.12
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 2.4",
+      "attackPercent": "C2"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 25.9
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 51.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 103.7
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 129.7
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      }
+    ]
+  }
 }

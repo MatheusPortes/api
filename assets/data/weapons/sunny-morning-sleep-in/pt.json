@@ -7,7 +7,69 @@
   "passiveName": "Narukami Um, Dois, Três",
   "passiveDesc": "Aumenta a Proficiência Elemental em 120/150/180/210/240 por 6s após desencadear um Redemoinho. A Proficiência Elemental aumenta em 96/120/144/168/192 por 9s após a Habilidade Elemental atingir um oponente. A Proficiência Elemental aumenta em 32/40/48/56/64 por 30s após o Supremo do portador atingir um oponente.",
   "location": "Oração de Evento de Arma",
-  "baseDamage": { "attack": 44, "subStat": 58 },
+  "baseDamage": {
+    "attack": 44,
+    "subStat": 58
+  },
   "description": "Um sino-lanterna forjado com puro jade púrpura, diz-se que, ao ser colocado ao lado do travesseiro, pode trazer sonhos felizes.",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 44.3358,
+      "elementalMastery": 57.6
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.4",
+      "elementalMastery": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

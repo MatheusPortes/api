@@ -7,7 +7,69 @@
   "passiveName": "Esperança Além dos Picos",
   "passiveDesc": "Reduz o consumo de Stamina ao escalar em 15% e aumenta o Dano causado pela Habilidade Elemental em 12%/15%/18%/21%/24%. Além disso, quando os outros personagens próximos da equipe lançam sua Habilidade Elemental, aumenta o Dano da Habilidade Elemental do personagem que está com essa arma equipada em mais 12%/15%/18%/21%/24% por 8s.",
   "location": "Oração de Evento de Arma",
-  "baseDamage": { "attack": 44, "subStat": 67 },
+  "baseDamage": {
+    "attack": 44,
+    "subStat": 67
+  },
   "description": "Esta arma de haste foi feita por artesãos nas minas como um sacrifício para os espíritos das montanhas.",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 43.7349,
+      "energyRecharge": 0.066667
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 2.2",
+      "energyRecharge": "C2"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 25.9
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 51.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 103.7
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 129.7
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      }
+    ]
+  }
 }

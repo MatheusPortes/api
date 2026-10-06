@@ -7,7 +7,69 @@
   "passiveName": "Descensão",
   "passiveDesc": "Efetivo apenas para jogadores da seguinte plataforma: \"PlayStation Network\" Acertar oponentes com um Ataque Normal ou Carregado concede 50% de chance de causar 200% do ATQ como Dano em uma pequena AdE. Este efeito pode ocorrer apenas uma vez a cada 10s. Adicionalmente, se o/a Viajante equipar a Espada do Advento, seu ATQ é aumentado em 66.",
   "location": "Mondstadt",
-  "baseDamage": { "attack": 39, "subStat": 77 },
+  "baseDamage": {
+    "attack": 39,
+    "subStat": 77
+  },
   "description": "Uma espada de artesanato único. Não parece pertencer a este mundo.",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 38.7413,
+      "attackPercent": 0.0766
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 1.1",
+      "attackPercent": "C1"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 25.9
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 51.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 103.7
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 129.7
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      }
+    ]
+  }
 }

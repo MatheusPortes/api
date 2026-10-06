@@ -7,7 +7,69 @@
   "passiveName": "Dança Kagura da Sakura Sagrada",
   "passiveDesc": "Ao usar a Habilidade Elemental, obtém o efeito de \"Dança Kagura\", o qual aumenta o Dano da Habilidade Elemental em 12%/15%/18%/21%/24% do personagem que tiver esta arma equipada. Este efeito dura 16s e pode ser acumulado em até 3 vezes. Ao obter 3 acúmulos, o personagem obtém 12%/15%/18%/21%/24% de Bônus de Dano de todos os Elementos.",
   "location": "Inazuma",
-  "baseDamage": { "attack": 46, "subStat": 144 },
+  "baseDamage": {
+    "attack": 46,
+    "subStat": 144
+  },
   "description": "Sino usado para a execução da Dança Kagura, abençoado pela própria Guuji. O cheiro da Sakura Sagrada ainda permanece nele.",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 45.9364,
+      "critDamage": 0.144
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.1",
+      "critDamage": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

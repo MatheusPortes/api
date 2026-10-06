@@ -7,7 +7,69 @@
   "passiveName": "Determinação",
   "passiveDesc": "Ao usar o Supremo, concede um aumento de 12%/15%/18%/21%/24% no ATQ e Veloc. Mov. por 15s.",
   "location": "Liyue",
-  "baseDamage": { "attack": 38, "subStat": 113 },
+  "baseDamage": {
+    "attack": 38,
+    "subStat": 113
+  },
   "description": "Uma espada de aço confiável. Uma certa pessoa tentou usá-la como espada voadora...",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 37.6075,
+      "energyRecharge": 0.113333
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 1.4",
+      "energyRecharge": "C1"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 19.5
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 38.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 58.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 97.3
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 116.7
+        }
+      }
+    ]
+  }
 }

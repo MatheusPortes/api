@@ -7,7 +7,69 @@
   "passiveName": "Pacto das Fontes Fluentes",
   "passiveDesc": "Aumenta a DEF em 16%/20%/24%/28%/32% por 15s após utilizar a Habilidade Elemental.",
   "location": "Forjar",
-  "baseDamage": { "attack": 42, "subStat": 113 },
+  "baseDamage": {
+    "attack": 42,
+    "subStat": 113
+  },
   "description": "Uma lança afiada forjada em jade, que pode refletir um brilho iridescente sob a luz do sol.",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 42.401,
+      "defensePercent": 0.1126
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 2.1",
+      "defensePercent": "C2"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 25.9
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 51.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 103.7
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 129.7
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      }
+    ]
+  }
 }

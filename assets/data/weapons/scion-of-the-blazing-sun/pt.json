@@ -7,7 +7,69 @@
   "passiveName": "Caminho do Fogo Solar",
   "passiveDesc": "Quando um Ataque Carregado atinge um inimigo, fará cair uma Flecha Solar no inimigo atingido, causando Dano equivalente a 60/75/90/105/120% do ATQ e aplicando o efeito \"Coração Flamejante\" no inimigo atingido pela Flecha Solar por 10s. Aumenta o Dano causado pelo personagem que está com essa arma equipada contra inimigos afetados por \"Coração Flamejante\" em 28/35/42/49/56%. A Flecha Solar pode ser desencadeada uma vez a cada 10s.",
   "location": "Passe de Batalha do Gnóstico",
-  "baseDamage": { "attack": 44, "subStat": 40 },
+  "baseDamage": {
+    "attack": 44,
+    "subStat": 40
+  },
   "description": "Um Arco Longo antigo que é um vestígio da era antiga do Rei Deshret. Um texto antigo indecifrável e padrões solenes foram entalhados nele.",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 43.7349,
+      "critRate": 0.04
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 2.2",
+      "critRate": "C2"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 25.9
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 51.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 103.7
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 129.7
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      }
+    ]
+  }
 }

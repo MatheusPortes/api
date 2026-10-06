@@ -7,7 +7,69 @@
   "passiveName": "Contos das Tundras",
   "passiveDesc": "Quando houver pelo menos 3 personagens de Tipos Elementais diferentes na equipe, aumenta a Proficiência Elemental em 120/150/180/210/240 pontos.",
   "location": "Passe de Batalha do Gnóstico",
-  "baseDamage": { "attack": 42, "subStat": 60 },
+  "baseDamage": {
+    "attack": 42,
+    "subStat": 60
+  },
   "description": "Uma lança usada por aqueles que querem pegar peixes nas tundras. Não deixa ninguém escapar.",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 42.401,
+      "critRate": 0.06
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 2.1",
+      "critRate": "C2"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 25.9
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 51.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 103.7
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 129.7
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      }
+    ]
+  }
 }

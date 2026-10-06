@@ -7,7 +7,69 @@
   "passiveName": "Asas Negras",
   "passiveDesc": "A Taxa Crítica aumenta 8%/10%/12%/14%/16%, a VEL do Ataque Normal aumenta 12%/12%/12%/12%/12%. Além disso, o Ataque Normal e o Ataque Carregado ao atingir o inimigo possuem 50%/50%/50%/50%/50% de chance de criar uma Lâmina de Vácuo que causa 40%/55%/70%/85%/100% de Dano de ATQ adicional em uma área. Este efeito pode ser ativado uma vez a cada 2s.",
   "location": "Mondstadt",
-  "baseDamage": { "attack": 48, "subStat": 80 },
+  "baseDamage": {
+    "attack": 48,
+    "subStat": 80
+  },
   "description": "Lança que simboliza a determinação firme de Dvalin. O eixo vertical desta arma aponta para o céu, carregado a força do céu e do vento.",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 47.537,
+      "energyRecharge": 0.08
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.2",
+      "energyRecharge": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

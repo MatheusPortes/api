@@ -7,7 +7,69 @@
   "passiveName": "O Destino da Besta",
   "passiveDesc": "Ganha 12%/15%/18%/21%/24% de Bônus de Dano de todos os Elementos. Obtém o efeito“Caça Incansável”ao acertar um oponente com um Ataque Carregado. Esse efeito aumenta o Dano do Ataque Carregado em 160%/200%/240%/280%/320% da Proficiência Elemental. Esse efeito será removido depois 12 Ataques Carregados ou após 10s. Só é possível obter 1 efeito de Caça Incansável a cada 12s.",
   "location": "Oração de Evento de Arma",
-  "baseDamage": { "attack": 44, "subStat": 9.6 },
+  "baseDamage": {
+    "attack": 44,
+    "subStat": 9.6
+  },
   "description": "Este arco adornado foi feito usando galhos brancos preciosos. Ele já derrotou inúmeras bestas malignas que tentaram infiltrar a floresta.",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 44.3358,
+      "critRate": 0.096
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.4",
+      "critRate": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

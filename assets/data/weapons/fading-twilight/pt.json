@@ -7,7 +7,69 @@
   "passiveName": "Brilho Abismal",
   "passiveDesc": "Possui três estados: Entardecer, Amanhecer e Alvorada. Estes estados aumentam o Dano infligido em 6%/10%/14%/7.5%/12.5%/17.5%/9%/15%/21%/10.5%/17.5%/24.5%/12%/20%/28% respectivamente. Ao atingir um inimigo com um ataque, se trocará para o próximo estado. Essa troca pode acontecer uma vez a cada 7s. Esse efeito também ocorrerá se o personagem que tiver esta arma equipada não estiver ativo no campo de batalha.",
   "location": "Liyue",
-  "baseDamage": { "attack": 44, "subStat": 67 },
+  "baseDamage": {
+    "attack": 44,
+    "subStat": 67
+  },
   "description": "Um arco precioso feito de platina, com uma gema incrustada que cintila com o brilho do crepúsculo.",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 43.7349,
+      "energyRecharge": 0.066667
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 2.2",
+      "energyRecharge": "C2"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 25.9
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 51.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 103.7
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 129.7
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      }
+    ]
+  }
 }

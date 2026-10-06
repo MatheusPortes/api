@@ -7,7 +7,69 @@
   "passiveName": "Preceito Extinguidor",
   "passiveDesc": "Obtém um Bônus de Dano Elemental para todos os Elementos de 12%/15%/18%/21%/24%; após lançar uma Habilidade Elemental, obtém Consumação por 20s, fazendo com que o Ataque aumente 3.2%/4%/4.8%/5.6%/6.4% por segundo. Este efeito pode ser acumulado em até 6 vezes. Quando o personagem da equipe que estiver com esta arma equipada não for o ativo no campo de batalha, o aumento do Ataque de Consumação será duplicado.",
   "location": "Liyue",
-  "baseDamage": { "attack": 49, "subStat": 36 },
+  "baseDamage": {
+    "attack": 49,
+    "subStat": 36
+  },
   "description": "Uma arma afiada forjada de algum cristal estranho. Sua luz azul tênue parece murmurar incontáveis histórias do passado.",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 49.1377,
+      "attackPercent": 0.036
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.3",
+      "attackPercent": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

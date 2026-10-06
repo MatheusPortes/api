@@ -7,7 +7,69 @@
   "passiveName": "Admiração Inabalável",
   "passiveDesc": "Aumenta em 16%/20%/24%/28%/32% o Dano da Habilidade Elemental e em 6%/7.5%/9%/10.5%/12% a Taxa CRIT da Habilidade Elemental.",
   "location": "Mondstadt",
-  "baseDamage": { "attack": 42, "subStat": 100 },
+  "baseDamage": {
+    "attack": 42,
+    "subStat": 100
+  },
   "description": "Uma espada reta assustadora que parece ansiar pela vida. Ela verte um veneno enfraquecedor que poderia corromper até mesmo um dragão poderoso.",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 42.401,
+      "energyRecharge": 0.1
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 2.1",
+      "energyRecharge": "C2"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 25.9
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 51.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 103.7
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 129.7
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      }
+    ]
+  }
 }
