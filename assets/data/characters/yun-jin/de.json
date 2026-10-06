@@ -170,5 +170,83 @@
     }
   ],
   "vision_key": "GEO",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "calculation": {
+    "initialStats": {
+      "baseHp": 893.5552,
+      "baseAttack": 16.0272,
+      "baseDefense": 61.5741
+    },
+    "growthCurves": {
+      "baseHp": "Regular HP/DEF 4*",
+      "baseAttack": "Regular ATK 4*",
+      "baseDefense": "Regular HP/DEF 4*"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseHp": 667.5315,
+          "baseDefense": 45.999,
+          "baseAttack": 11.97342
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseHp": 1141.8302,
+          "baseDefense": 78.6825,
+          "baseAttack": 20.48085,
+          "energyRecharge": 0.0667
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseHp": 1774.2284,
+          "baseDefense": 122.2605,
+          "baseAttack": 31.82409,
+          "energyRecharge": 0.1333
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseHp": 2248.527,
+          "baseDefense": 154.944,
+          "baseAttack": 40.33152,
+          "energyRecharge": 0.1333
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseHp": 2722.8257,
+          "baseDefense": 187.6275,
+          "baseAttack": 48.83895,
+          "energyRecharge": 0.2
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseHp": 3197.1245,
+          "baseDefense": 220.311,
+          "baseAttack": 57.34638,
+          "energyRecharge": 0.2667
+        }
+      }
+    ]
+  }
 }
