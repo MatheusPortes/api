@@ -87,5 +87,83 @@
     }
   ],
   "vision_key": "CRYO",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "calculation": {
+    "initialStats": {
+      "baseHp": 848.4548,
+      "baseAttack": 18.21036,
+      "baseDefense": 52.6504
+    },
+    "growthCurves": {
+      "baseHp": "Regular HP/DEF 5*",
+      "baseAttack": "Regular ATK 5*",
+      "baseDefense": "Regular HP/DEF 5*"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseHp": 727.47327,
+          "baseDefense": 45.144,
+          "baseAttack": 15.612596
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseHp": 1244.3622,
+          "baseDefense": 77.22,
+          "baseAttack": 26.705757,
+          "cryoDamageBonus": 0.072
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseHp": 1933.5474,
+          "baseDefense": 119.988,
+          "baseAttack": 41.49664,
+          "cryoDamageBonus": 0.144
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseHp": 2450.4363,
+          "baseDefense": 152.064,
+          "baseAttack": 52.589798,
+          "cryoDamageBonus": 0.144
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseHp": 2967.3252,
+          "baseDefense": 184.14,
+          "baseAttack": 63.68296,
+          "cryoDamageBonus": 0.216
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseHp": 3484.214,
+          "baseDefense": 216.216,
+          "baseAttack": 74.77612,
+          "cryoDamageBonus": 0.288
+        }
+      }
+    ]
+  }
 }
