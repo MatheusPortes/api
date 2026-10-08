@@ -31,8 +31,12 @@
 ## Calculation Data
 
 - This API exposes calculation inputs only; it does not calculate character stats or damage.
-- Add validated character and weapon mechanical data under a top-level `calculation` field in `en.json` first. After the English contract is approved, copy the exact field to every existing localized record for that entity.
+- Add validated character and weapon mechanical data under a top-level `calculation` field in `en.json` first. After the English contract is approved, copy its exact mechanical fields to every existing localized record for that entity; localize human-readable labels alongside the served locale.
 - Entity calculation data contains only values unique to that entity, such as initial properties, curve identifiers, ascension bonuses, talent multipliers, and structured effects.
+- Structured passive modifiers are stored in `calculation.effects`. An effect can map its values to refinement levels with `refinementLevels` and contains `modifiers`.
+- Weapon damage procs are stored separately in `calculation.skills`. A weapon skill has optional `refinementLevels`, a `damageType` using the uppercase `Vision` enum, and `scalings`. Each scaling identifies its normalized status `type` and decimal-ratio `values` (`2` for 200% of ATK).
+- Each effect modifier has a `label`, a normalized `type`, and decimal-ratio `values` (`0.2` for 20%). Use a name supplied by the effect text when available; otherwise create a concise, meaningful label in the record's locale. `elemental_dmg_percent` requires `element` using the uppercase `Vision` value.
+- The supported normalized effect types are `hp_percent`, `atk_percent`, `elemental_dmg_percent`, `physical_dmg_percent`, `def_percent`, `crit_rate`, `crit_dmg`, `energy_recharge`, `healing_bonus`, `elemental_mastery`, `flat_hp`, and `flat_atk`. Keep the source text even when a number does not yet have a supported type.
 - Shared curve tables belong only in `calculation/curves/en.json`. Its top-level `patch` identifies the game patch for every included table.
 - Do not expose upstream provider IDs in entity responses. They may be used in import and validation tooling only.
 
