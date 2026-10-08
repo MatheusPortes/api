@@ -7,7 +7,69 @@
   "passiveName": "Forma Purificadora",
   "passiveDesc": "Aumenta a Vida em 16%/20%/24%/28%/32%. Se existirem inimigos próximos, o personagem que tem esta arma equipada terá um aumento de Dano de 20%/25%/30%/35%/40%, independentemente do personagem estar ativo no campo de batalha ou não.",
   "location": "Liyue",
-  "baseDamage": { "attack": 44, "subStat": 194 },
+  "baseDamage": {
+    "attack": 44,
+    "subStat": 194
+  },
   "description": "A cor desse arco longo muda imprevisivelmente. Sob a luz, possui um brilho azulado como água.",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 44.3358,
+      "critDamage": 0.192
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.4",
+      "critDamage": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

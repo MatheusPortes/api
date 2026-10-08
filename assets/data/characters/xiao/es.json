@@ -87,5 +87,83 @@
     }
   ],
   "vision_key": "ANEMO",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "calculation": {
+    "initialStats": {
+      "baseHp": 991.4528,
+      "baseAttack": 27.1852,
+      "baseDefense": 62.2232
+    },
+    "growthCurves": {
+      "baseHp": "Regular HP/DEF 5*",
+      "baseAttack": "Regular ATK 5*",
+      "baseDefense": "Regular HP/DEF 5*"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseHp": 850.0811,
+          "baseDefense": 53.352,
+          "baseAttack": 23.307148
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseHp": 1454.0862,
+          "baseDefense": 91.26,
+          "baseAttack": 39.86749,
+          "critRate": 0.048
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseHp": 2259.4263,
+          "baseDefense": 141.804,
+          "baseAttack": 61.947945,
+          "critRate": 0.096
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseHp": 2863.4312,
+          "baseDefense": 179.712,
+          "baseAttack": 78.508286,
+          "critRate": 0.096
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseHp": 3467.4363,
+          "baseDefense": 217.62,
+          "baseAttack": 95.06863,
+          "critRate": 0.144
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseHp": 4071.4412,
+          "baseDefense": 255.528,
+          "baseAttack": 111.628975,
+          "critRate": 0.192
+        }
+      }
+    ]
+  }
 }

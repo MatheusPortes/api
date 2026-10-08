@@ -7,7 +7,69 @@
   "passiveName": "Presas Voando de Lá para Cá",
   "passiveDesc": "Diminui o consumo de Stamina ao Nadar em 15%. Além disso, por 10s após usar uma Habilidade Elemental, a Vida Máxima é aumentada em 20%/25%/30%/35%/40%. Para cada personagem Hydro na equipe, a Vida Máxima é aumentada em mais 12%/15%/18%/21%/24%, e o aumento máximo que pode ser alcançado dessa forma é de 24%/30%/36%/42%/48%. Pode ser ativado uma vez a cada 15s.",
   "location": "Oração de Evento de Arma",
-  "baseDamage": { "attack": 41, "subStat": 133 },
+  "baseDamage": {
+    "attack": 41,
+    "subStat": 133
+  },
   "description": "Um bumerangue feito das presas de uma gigantesca serpente do mar. Era uma arma rara que o gigante Tupac se referia como confiável.",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 41.0671,
+      "energyRecharge": 0.133333
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 2.4",
+      "energyRecharge": "C2"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 25.9
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 51.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 103.7
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 129.7
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      }
+    ]
+  }
 }

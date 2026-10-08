@@ -7,7 +7,69 @@
   "passiveName": "Trapper's Pride",
   "passiveDesc": "Sprint or Alternate Sprint Stamina Consumption decreased by 15%. Additionally, after using Sprint or Alternate Sprint, Normal Attack DMG is increased by 16%/20%/24%/28%/32% of ATK. This effect expires after triggering 18 times or 7s.",
   "location": "Event Wish Exclusive",
-  "baseDamage": { "attack": 44, "subStat": 60 },
+  "baseDamage": {
+    "attack": 44,
+    "subStat": 60
+  },
   "description": "A longsword made of bone that has only grown harder after being hit and swung countless times. It is said that this was the hero Wanjiru's reliable weapon.",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 43.7349,
+      "attackPercent": 0.06
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 2.2",
+      "attackPercent": "C2"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 25.9
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 51.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 103.7
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 129.7
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      }
+    ]
+  }
 }

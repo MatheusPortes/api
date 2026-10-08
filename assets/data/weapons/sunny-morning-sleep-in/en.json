@@ -7,7 +7,69 @@
   "passiveName": "Bathhouses, Hawks, and Narukami",
   "passiveDesc": "Elemental Mastery increases by 120/150/180/210/240 for 6s after triggering Swirl. Elemental Mastery increases by 96/120/144/168/192 for 9s after the wielder's Elemental Skill hits an opponent. Elemental Mastery increases by 32/40/48/56/64 for 30s after the wielder's Elemental Burst hits an opponent.",
   "location": "Event Wish Exclusive",
-  "baseDamage": { "attack": 44, "subStat": 58 },
+  "baseDamage": {
+    "attack": 44,
+    "subStat": 58
+  },
   "description": "A bell lantern forged from purple jade. They say it brings sweet dreams when placed beside one's pillow.",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 44.3358,
+      "elementalMastery": 57.6
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.4",
+      "elementalMastery": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

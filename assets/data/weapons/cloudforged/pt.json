@@ -7,7 +7,69 @@
   "passiveName": "Padrões Entalhados na Rocha",
   "passiveDesc": "Depois que a Energia Elemental diminui, a Proficiência Elemental do personagem que está com essa arma equipada aumenta em 40/50/60/70/80. Esse efeito dura 18s e pode ser acumulado até 2 vezes.",
   "location": "Arco",
-  "baseDamage": { "attack": 42, "subStat": 36 },
+  "baseDamage": {
+    "attack": 42,
+    "subStat": 36
+  },
   "description": "Após analisar os antigos mecanismos Adepti que protegem o Tianheng, a Yuheng comissionou a fabricação desse protótipo para a Forja do Penhasco Obscuro.",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 42.401,
+      "elementalMastery": 36
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 2.1",
+      "elementalMastery": "C2"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 25.9
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 51.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 103.7
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 129.7
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      }
+    ]
+  }
 }

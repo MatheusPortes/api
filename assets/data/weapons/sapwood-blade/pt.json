@@ -7,7 +7,69 @@
   "passiveName": "Bênção da Floresta",
   "passiveDesc": "Após desencadear Queimaduras, Aceleração, Intensificação, Propagação, Florescimento, Superflorescimento ou Germinação, uma Folha da Consciência será criada em volta do personagem por no máximo 10s. Quando coletada, a Folha da Consciência aumentará a Proficiência Elemental do personagem em 60/75/90/105/120 por 12s. Apenas 1 Folha pode ser criada dessa forma a cada 20s. Esse efeito ainda pode ser desencadeado mesmo se o personagem não estiver em campo. O efeito da Folha da Consciência não pode ser acumulado.",
   "location": "Forja",
-  "baseDamage": { "attack": 44, "subStat": 6.7 },
+  "baseDamage": {
+    "attack": 44,
+    "subStat": 6.7
+  },
   "description": "Uma arma obtida através de uma das histórias dos Aranara. Ela tomou a forma de uma espada que é capaz de cortar os inimigos da floresta.",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 43.7349,
+      "energyRecharge": 0.066667
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 2.2",
+      "energyRecharge": "C2"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 25.9
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 51.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 103.7
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 129.7
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      }
+    ]
+  }
 }

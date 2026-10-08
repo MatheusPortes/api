@@ -7,7 +7,69 @@
   "passiveName": "Governo do Trovão",
   "passiveDesc": "Aumenta o Ataque em 20%/25%/30%/35%/40%, e concede a grandeza do Selo da Trovoada. Nas cargas 1/2/3, o Selo de Trovoada aumenta o Dano do Ataque Normal em 12/24/40%/15/30/50%/18/36/60%/21/42/70%/24/48/80%. O personagem obterá uma carga de Selo da Trovoada nos seguintes cenários: Ataque Normal que causa Dano (a carga dura 5s), lançar uma Habilidade Elemental (carga dura 10s); Energia Elemental menor que 100% (carga desaparece quando a energia está completa). A duração de cada carga é calculada independentemente uma da outra.",
   "location": "Inazuma",
-  "baseDamage": { "attack": 46, "subStat": 144 },
+  "baseDamage": {
+    "attack": 46,
+    "subStat": 144
+  },
   "description": "Um Arco Longo que foi dado a alguém pela Shogun. Ele emite raios que nunca se apagam.",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 45.9364,
+      "critDamage": 0.144
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.1",
+      "critDamage": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

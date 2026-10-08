@@ -7,7 +7,69 @@
   "passiveName": "Pavilhão do Deserto",
   "passiveDesc": "A cada 10s, gera os seguintes efeitos: aumenta o ATQ do personagem que está com essa arma equipada baseado em 24%/30%/36%/42%/48% da sua Proficiência Elemental. Os demais personagens próximos da equipe ganham 30% desse bônus. Esses efeitos duram 12s. É possível acumular esses efeitos equipando vários exemplares desta mesma arma. Esse efeito será desencadeado mesmo que o personagem não esteja ativo no campo de batalha.",
   "location": "Oração de Evento de Arma",
-  "baseDamage": { "attack": 42, "subStat": 36 },
+  "baseDamage": {
+    "attack": 42,
+    "subStat": 36
+  },
   "description": "Um espadão antigo que brilha como a própria água. Nem mesmo os milhares de anos de erosão da areia conseguiram tirar o fio impecável de sua lâmina.",
-  "weapon_type": "CLAYMORE"
+  "weapon_type": "CLAYMORE",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 42.401,
+      "elementalMastery": 36
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 2.1",
+      "elementalMastery": "C2"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 25.9
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 51.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 103.7
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 129.7
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      }
+    ]
+  }
 }

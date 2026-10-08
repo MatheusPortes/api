@@ -89,5 +89,83 @@
     }
   ],
   "vision_key": "GEO",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "calculation": {
+    "initialStats": {
+      "baseHp": 802.3761,
+      "baseAttack": 15.31488,
+      "baseDefense": 54.36375
+    },
+    "growthCurves": {
+      "baseHp": "Regular HP/DEF 4*",
+      "baseAttack": "Regular ATK 4*",
+      "baseDefense": "Regular HP/DEF 4*"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseHp": 599.416,
+          "baseDefense": 40.6125,
+          "baseAttack": 11.441268
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseHp": 1025.3169,
+          "baseDefense": 69.46875,
+          "baseAttack": 19.57059,
+          "geoDamageBonus": 0.06
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseHp": 1593.1847,
+          "baseDefense": 107.94375,
+          "baseAttack": 30.409685,
+          "geoDamageBonus": 0.12
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseHp": 2019.0856,
+          "baseDefense": 136.8,
+          "baseAttack": 38.53901,
+          "geoDamageBonus": 0.12
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseHp": 2444.9863,
+          "baseDefense": 165.65625,
+          "baseAttack": 46.66833,
+          "geoDamageBonus": 0.18
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseHp": 2870.8872,
+          "baseDefense": 194.5125,
+          "baseAttack": 54.797653,
+          "geoDamageBonus": 0.24
+        }
+      }
+    ]
+  }
 }

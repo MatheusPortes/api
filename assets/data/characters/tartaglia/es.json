@@ -87,5 +87,83 @@
     }
   ],
   "vision_key": "HYDRO",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "calculation": {
+    "initialStats": {
+      "baseHp": 1020.0524,
+      "baseAttack": 23.4612,
+      "baseDefense": 63.4198
+    },
+    "growthCurves": {
+      "baseHp": "Regular HP/DEF 5*",
+      "baseAttack": "Regular ATK 5*",
+      "baseDefense": "Regular HP/DEF 5*"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseHp": 874.6027,
+          "baseDefense": 54.378,
+          "baseAttack": 20.114388
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseHp": 1496.0309,
+          "baseDefense": 93.015,
+          "baseAttack": 34.40619,
+          "hydroDamageBonus": 0.072
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseHp": 2324.6018,
+          "baseDefense": 144.531,
+          "baseAttack": 53.461926,
+          "hydroDamageBonus": 0.144
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseHp": 2946.03,
+          "baseDefense": 183.168,
+          "baseAttack": 67.75373,
+          "hydroDamageBonus": 0.144
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseHp": 3567.4585,
+          "baseDefense": 221.805,
+          "baseAttack": 82.04553,
+          "hydroDamageBonus": 0.216
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseHp": 4188.8867,
+          "baseDefense": 260.442,
+          "baseAttack": 96.33733,
+          "hydroDamageBonus": 0.288
+        }
+      }
+    ]
+  }
 }

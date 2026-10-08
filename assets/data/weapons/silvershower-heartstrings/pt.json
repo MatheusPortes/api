@@ -7,7 +7,69 @@
   "passiveName": "Melodia de Dryas",
   "passiveDesc": "O personagem equipado pode obter o efeito \"Remédio\". Quando eles possuem 1/2/3 acúmulos de \"Remédio\", sua Vida Máxima aumentará em 12%/24%/40% | 15%/30%/50% | 18%/36%/60% | 21%/42%/70% | 24%/48%/80%. Eles podem obter 1 acúmulo nas seguintes situações: 1 ao usar uma Habilidade Elemental por 25s; 1 ao aumentar o valor do Contrato de Vida por 25s; 1 ao iniciar Cura por 20s. Isso ainda pode ser ativado quando o personagem equipado não está em campo. A duração de cada acúmulo é contada independentemente. Além disso, quando você tem 3 acúmulos, a Taxa CRIT do Supremo será aumentada em 28%/35%/42%/49%/56%. Este efeito será cancelado 4s após você ficar com menos de 3 acúmulos.",
   "location": "Oração de Evento de Arma",
-  "baseDamage": { "attack": 44, "subStat": 144 },
+  "baseDamage": {
+    "attack": 44,
+    "subStat": 144
+  },
   "description": "Um arco espiritual lendário. Não importa se nos palcos ou nas batalhas, ele pode tocar facilmente o coração de todos os seus ouvintes.",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 44.3358,
+      "hpPercent": 0.144
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.4",
+      "hpPercent": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

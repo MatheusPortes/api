@@ -7,7 +7,69 @@
   "passiveName": "Pureza do Protetor",
   "passiveDesc": "Aumenta a Vida em 20%/25%/30%/35%/40%. Além disso, o Personagem que equipar esta arma terá um Bônus de ATQ de 1.2%/1.5%/1.8%/2.1%/2.4% com base na Vida Máxima.",
   "location": "Liyue",
-  "baseDamage": { "attack": 44, "subStat": 96 },
+  "baseDamage": {
+    "attack": 44,
+    "subStat": 96
+  },
   "description": "Uma espada para cerimônias feita com essência de jade puro esculpido delicadamente. O ar que produz quando balança emite um som parecido a um suspiro.",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 44.3358,
+      "critRate": 0.096
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.4",
+      "critRate": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

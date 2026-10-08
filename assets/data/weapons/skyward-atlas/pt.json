@@ -7,7 +7,69 @@
   "passiveName": "Nuvens Vagantes",
   "passiveDesc": "Aumenta o Bônus do Dano Elemental em 12%/15%/18%/21%/24%. O Ataque normal possui 50% de chance de ganhar a graça das nuvens, que buscam ativamente por inimigos ao redor para atacar por 15s, causando 160%/200%/240%/280%/320% de Dano de ATQ. Este efeito pode ser ativado uma vez a cada 30s.",
   "location": "Mondstadt",
-  "baseDamage": { "attack": 48, "subStat": 72 },
+  "baseDamage": {
+    "attack": 48,
+    "subStat": 72
+  },
   "description": "Um atlas das nuvens que simboliza Dvalin e o Arconte Anemo, seu antigo mestre. Detalha os ventos e as nuvens das regiões do norte e contém o poder dos céus e dos ventos.",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 47.537,
+      "attackPercent": 0.072
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.2",
+      "attackPercent": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

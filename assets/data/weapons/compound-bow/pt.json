@@ -7,7 +7,69 @@
   "passiveName": "Flecha Infundida",
   "passiveDesc": "Ao acertar o Ataque Normal e o Ataque Carregado, aumenta o ATQ em 4%/5%/6%/7%/8% e a VEL do Ataque Normal em 1.2%/1.5%/1.8%/2.1%/2.4% por 6s, podendo acumular até 4 vezes. Este efeito pode ser ativado uma vez a cada 0.3s.",
   "location": "Liyue",
-  "baseDamage": { "attack": 41, "subStat": 150 },
+  "baseDamage": {
+    "attack": 41,
+    "subStat": 150
+  },
   "description": "Um arco de liga de metal, com rodas que esticam a corda. De difícil manuseio, mas consegue acertar o alvo com uma força incrível.",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 41.0671,
+      "physicalDamageBonus": 0.150133
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 2.4",
+      "physicalDamageBonus": "C2"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 25.9
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 51.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 103.7
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 129.7
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      }
+    ]
+  }
 }

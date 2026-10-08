@@ -7,5 +7,64 @@
   "passiveName": "執行と抗争の歌",
   "passiveDesc": "風と共に流れる「千年の大楽章」の一部。与えるダメージ+10%。元素反応を起こすと、奮起の欠片を1枚獲得する。この効果は0.5秒内に1回のみ発動でき、待機中のキャラクターも発動できる。奮起の欠片を2枚集めると、全ての奮起の欠片を消費し、周囲のチーム全員に12秒継続する「千年の大楽章·抗争の歌」効果を付与する：通常攻撃、重撃、落下攻撃のダメージ+16%、攻撃力+20%。発動後20秒の間、奮起の欠片を再度獲得することはできない。「千年の大楽章」のもたらす各効果中、同種類の効果は重ね掛け不可。",
   "location": "祈願",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 45.9364,
+      "elementalMastery": 43.2
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.1",
+      "elementalMastery": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

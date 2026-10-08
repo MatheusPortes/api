@@ -3,5 +3,83 @@
   "gender": "Weiblich",
   "affiliation": "Ordo Favonius",
   "release": "2020-09-28",
-  "description": "Das lebhafte und offenherzige Mädchen ist die einzige Kundschafterin aus Mondstadt. Sie beherrscht den Gleiter wie kein Zweiter! Denn sie hat drei Jahre in Folge die \"Flugmeisterschaften\" von Mondstadt gewonnen. Als neuer Stern des Ordo Favonius ist Amber ganz vorn mit dabei."
+  "description": "Das lebhafte und offenherzige Mädchen ist die einzige Kundschafterin aus Mondstadt. Sie beherrscht den Gleiter wie kein Zweiter! Denn sie hat drei Jahre in Folge die \"Flugmeisterschaften\" von Mondstadt gewonnen. Als neuer Stern des Ordo Favonius ist Amber ganz vorn mit dabei.",
+  "calculation": {
+    "initialStats": {
+      "baseHp": 793.2582,
+      "baseAttack": 18.6984,
+      "baseDefense": 50.358
+    },
+    "growthCurves": {
+      "baseHp": "Regular HP/DEF 4*",
+      "baseAttack": "Regular ATK 4*",
+      "baseDefense": "Regular HP/DEF 4*"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseHp": 592.6045,
+          "baseDefense": 37.62,
+          "baseAttack": 13.96899
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseHp": 1013.6655,
+          "baseDefense": 64.35,
+          "baseAttack": 23.894325,
+          "attackPercent": 0.06
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseHp": 1575.0803,
+          "baseDefense": 99.99,
+          "baseAttack": 37.128105,
+          "attackPercent": 0.12
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseHp": 1996.1414,
+          "baseDefense": 126.72,
+          "baseAttack": 47.05344,
+          "attackPercent": 0.12
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseHp": 2417.2024,
+          "baseDefense": 153.45,
+          "baseAttack": 56.978775,
+          "attackPercent": 0.18
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseHp": 2838.2634,
+          "baseDefense": 180.18,
+          "baseAttack": 66.90411,
+          "attackPercent": 0.24
+        }
+      }
+    ]
+  }
 }

@@ -7,7 +7,69 @@
   "passiveName": "Ondas de Eras Passadas",
   "passiveDesc": "Aumenta a Vida em 16%/20%/24%/28%/32%. Quando a Vida atual aumentar ou cair, aumenta o Dano do Ataque Carregado em 14%/18%/22%/26%/30%. Esse efeito dura 4s, pode ser acumulado até 3 vezes e desencadeado uma vez a cada 0.3s. Ao possuir 3 acúmulos ou quando redefinir a duração dos 3 acúmulos, regenera 8/9/10/11/12 de Energia Elemental. É possível regenerar Energia Elemental uma vez a cada 12s dessa forma.",
   "location": "Oração de Evento de Arma",
-  "baseDamage": { "attack": 44, "subStat": 192 },
+  "baseDamage": {
+    "attack": 44,
+    "subStat": 192
+  },
   "description": "Um manual passado de geração em geração num centro de treinamento submarino. Hoje, ninguém sabe da sua existência.",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 44.3358,
+      "critDamage": 0.192
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.4",
+      "critDamage": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

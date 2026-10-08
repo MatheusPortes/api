@@ -7,7 +7,69 @@
   "passiveName": "Inabalável",
   "passiveDesc": "Aumenta o Dano infligido pelo Ataque Normal e Ataque Carregado em 12%/15%/18%/21%/24%. A cada 0.1s depois de disparar uma flecha com o Ataque Normal e Ataque Carregado, terá aumento de Dano de 8%/10%/12%/14%/16%, acumulando até um máximo de 5 vezes.",
   "location": "Mondstadt",
-  "baseDamage": { "attack": 46, "subStat": 108 },
+  "baseDamage": {
+    "attack": 46,
+    "subStat": 108
+  },
   "description": "Um arco extremamente antigo que reteve seu poder, apesar de seu mestre original ter desaparecido há muito tempo. Ele extrai poder de todos e de tudo no mundo, e quanto mais longe você estiver daquilo que seu coração deseja, mais poderoso será.",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 45.9364,
+      "attackPercent": 0.108
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.1",
+      "attackPercent": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

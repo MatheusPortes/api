@@ -7,7 +7,69 @@
   "passiveName": "Espada do Herói",
   "passiveDesc": "Quando o personagem com esta arma equipada não possui um Arkhe: quando Ataques Normais, Ataques Carregados ou Ataques Imersivos acertam, uma explosão de energia Pneuma ou Ousia será liberada, causando 160%/200%/240%/280%/320% do ATQ como Dano. Este efeito pode ser ativado uma vez a cada 12 segundos. O tipo de explosão de energia é determinado pelo tipo atual da Espada da Cruz de Narcissus.",
   "location": "Série de Missões de Mundo - Pistas de Narcissus",
-  "baseDamage": { "attack": 42, "subStat": 90 },
+  "baseDamage": {
+    "attack": 42,
+    "subStat": 90
+  },
   "description": "Uma espada cujo poder desapareceu quando a história chegou ao fim. Agora, ela partirá em uma nova jornada com o poder que permanece dentro dela, o qual comemora um certo grande sonho.",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 42.401,
+      "attackPercent": 0.09
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 2.1",
+      "attackPercent": "C2"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 25.9
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 51.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 103.7
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 129.7
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      }
+    ]
+  }
 }

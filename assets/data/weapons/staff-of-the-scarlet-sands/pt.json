@@ -7,7 +7,69 @@
   "passiveName": "Sonho Ardente no Fim do Horizonte",
   "passiveDesc": "Obtém Bônus de ATQ baseado em 52%/65%/785/91%/104% da Proficiência Elemental do personagem que está com essa arma equipada. Quando a Habilidade Elemental atinge um inimigo, gera por 10s o efeito \"Sonhos de Areias Escarlates\": obtém Bônus de ATQ baseado em 28%/35%/42%/49%/56% da Proficiência Elemental do personagem que está com essa arma equipada. Esse efeito pode ser acumulado até 3 vezes.",
   "location": "Oração de Evento de Arma",
-  "baseDamage": { "attack": null, "subStat": 0 },
+  "baseDamage": {
+    "attack": null,
+    "subStat": 0
+  },
   "description": "Um dos pares de cetros feitos com obsidiana. Dizem que esses artefatos eram usados para guiar o povo do deserto, mas hoje em dia não há ninguém capaz de distinguir a aparência real desta relíquia.",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 43.7349,
+      "elementalMastery": 24
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 2.2",
+      "elementalMastery": "C2"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 25.9
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 51.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 103.7
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 129.7
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      }
+    ]
+  }
 }

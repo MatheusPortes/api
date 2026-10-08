@@ -7,5 +7,64 @@
   "passiveName": "四方浮遊する霊雲",
   "passiveDesc": "元素ダメージ+12%。通常攻撃が命中した時、50%の確率で高天流雲の好意を獲得し、15秒以内に自分から周囲の敵を攻撃すると、攻撃力の160%相当のダメージを与える。30秒毎に1回のみ発動可能。",
   "location": "祈願",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 47.537,
+      "attackPercent": 0.072
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.2",
+      "attackPercent": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

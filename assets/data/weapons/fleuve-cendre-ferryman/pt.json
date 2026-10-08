@@ -7,7 +7,69 @@
   "passiveName": "Ossos de Aço",
   "passiveDesc": "Aumenta a Taxa CRIT da Habilidade Elemental em 8/10/12/14/16%. Além disso, após utilizar a Habilidade Elemental, aumenta a Recarga de Energia em 16/20/24/28/32% por 5s.",
   "location": "Resgatado na Associação de Pesca de Fontaine",
-  "baseDamage": { "attack": 42, "subStat": 100 },
+  "baseDamage": {
+    "attack": 42,
+    "subStat": 100
+  },
   "description": "Um cano de cobre abandonado que foi usado como arma. Era famoso, ou infame, dependendo de onde estivesse.",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 42.401,
+      "energyRecharge": 0.1
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 2.1",
+      "energyRecharge": "C2"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 25.9
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 51.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 103.7
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 129.7
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      }
+    ]
+  }
 }

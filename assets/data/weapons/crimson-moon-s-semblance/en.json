@@ -7,7 +7,69 @@
   "passiveName": "Ashen Sun's Shadow",
   "passiveDesc": "Grants a Bond of Life equal to 25% of Max HP when a Charged Attack hits an opponent. This effect can be triggered up to once every 14s. In addition, when the equipping character has a Bond of Life, they gain a 12%/16%/20%/24%/28% DMG Bonus; if the value of the Bond of Life is greater than or equal to 30% of Max HP, then gain an additional 24%/32%/40%/48%/56% DMG Bonus.",
   "location": "Event Wish Exclusive",
-  "baseDamage": { "attack": 48, "subStat": 48 },
+  "baseDamage": {
+    "attack": 48,
+    "subStat": 48
+  },
   "description": "A keen-edged weapon, luster dazzling as the crimson moon. It is said that an ancient dynasty once regarded it as a ritual object that could bridge two worlds, but none still remember the beliefs and ceremonies of that bygone age.",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 47.537,
+      "critRate": 0.048
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.2",
+      "critRate": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

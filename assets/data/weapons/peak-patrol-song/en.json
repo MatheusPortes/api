@@ -7,7 +7,69 @@
   "passiveName": "Halcyon Years Unending",
   "passiveDesc": "Gain \"Ode to Flowers\" after Normal or Plunging Attacks hit an opponent: DEF increases by 8%/10%/12%/14%/16% and gain a 10%/12.5%/15%/17.5%/20% All Elemental DMG Bonus for 6s. Max 2 stacks. Can trigger once per 0.1s. When this effect reaches 2 stacks or the 2nd stack's duration is refreshed, increase all nearby party members' All Elemental DMG Bonus by 8%/10%/12%/14%/16% for every 1,000 DEF the equipping character has, up to a maximum of 25.6%/32%/38.4%/44.8%/51.2%, for 15s.",
   "location": "Event Wish Exclusive",
-  "baseDamage": { "attack": 44, "subStat": 180 },
+  "baseDamage": {
+    "attack": 44,
+    "subStat": 180
+  },
   "description": "An obsidian blade of unparalleled sharpness, light as a song. It was modified by a certain artisan to come equipped with a record-playing detachable Phlogiston Device.",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 44.3358,
+      "defensePercent": 0.18
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.4",
+      "defensePercent": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

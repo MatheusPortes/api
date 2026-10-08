@@ -7,7 +7,69 @@
   "passiveName": "Destruição de Tempestade e Maré",
   "passiveDesc": "Aumenta o Dano contra inimigos afetados por Hydro ou Electro em 12%/15%/18%/21%/24%.",
   "location": "Mondstadt",
-  "baseDamage": { "attack": 38, "subStat": 41 },
+  "baseDamage": {
+    "attack": 38,
+    "subStat": 41
+  },
   "description": "12ª edição. Uma reedição com correção da 11ª edição e novas adições baseadas nos desenvolvimentos atuais.",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 37.6075,
+      "elementalMastery": 40.8
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 1.4",
+      "elementalMastery": "C1"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 19.5
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 38.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 58.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 97.3
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 116.7
+        }
+      }
+    ]
+  }
 }

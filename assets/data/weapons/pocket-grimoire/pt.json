@@ -4,7 +4,53 @@
   "rarity": 2,
   "baseAttack": 33,
   "location": "-",
-  "baseDamage": { "attack": 33, "subStat": 0 },
+  "baseDamage": {
+    "attack": 33,
+    "subStat": 0
+  },
   "description": "Um caderno cuidadosamente compilado com os elementos essenciais necessários para passar em um exame de mágica.",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 32.93
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 1.1"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 11.7
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 23.3
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 35
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 46.7
+        }
+      }
+    ]
+  }
 }

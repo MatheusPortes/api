@@ -89,5 +89,83 @@
     }
   ],
   "vision_key": "ELECTRO",
-  "weapon_type": "CLAYMORE"
+  "weapon_type": "CLAYMORE",
+  "calculation": {
+    "initialStats": {
+      "baseHp": 1094.1492,
+      "baseAttack": 18.87648,
+      "baseDefense": 54.36375
+    },
+    "growthCurves": {
+      "baseHp": "Regular HP/DEF 4*",
+      "baseAttack": "Regular ATK 4*",
+      "baseDefense": "Regular HP/DEF 4*"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseHp": 817.3855,
+          "baseDefense": 40.6125,
+          "baseAttack": 14.102028
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseHp": 1398.1593,
+          "baseDefense": 69.46875,
+          "baseAttack": 24.12189,
+          "electroDamageBonus": 0.06
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseHp": 2172.5247,
+          "baseDefense": 107.94375,
+          "baseAttack": 37.481705,
+          "electroDamageBonus": 0.12
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseHp": 2753.2983,
+          "baseDefense": 136.8,
+          "baseAttack": 47.501568,
+          "electroDamageBonus": 0.12
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseHp": 3334.0723,
+          "baseDefense": 165.65625,
+          "baseAttack": 57.52143,
+          "electroDamageBonus": 0.18
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseHp": 3914.8462,
+          "baseDefense": 194.5125,
+          "baseAttack": 67.54129,
+          "electroDamageBonus": 0.24
+        }
+      }
+    ]
+  }
 }

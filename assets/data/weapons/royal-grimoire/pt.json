@@ -7,7 +7,69 @@
   "passiveName": "Foco",
   "passiveDesc": "Ao atingir um oponente, aumenta a Taxa Crítica em 8%/10%/12%/14%/16%, acumulando no máximo 5 vezes. Causar Dano Crítico remove todos os acúmulos.",
   "location": "Mondstadt",
-  "baseDamage": { "attack": 44, "subStat": 6 },
+  "baseDamage": {
+    "attack": 44,
+    "subStat": 6
+  },
   "description": "Um livro que pertenceu a um feiticeiro da realeza de Mondstadt. Guarda feitiços e relatos históricos verdadeiros e extensos.",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 43.7349,
+      "attackPercent": 0.06
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 2.2",
+      "attackPercent": "C2"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 25.9
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 51.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 103.7
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 129.7
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      }
+    ]
+  }
 }

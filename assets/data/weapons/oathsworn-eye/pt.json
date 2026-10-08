@@ -7,7 +7,69 @@
   "passiveName": "Povo das Profundezas Brilhantes",
   "passiveDesc": "Após usar a Habilidade Elemental, a Recarga de Energia aumenta em 24%/30%/36%/42%/48% por 10s.",
   "location": "Inazuma",
-  "baseDamage": { "attack": 44, "subStat": 6 },
+  "baseDamage": {
+    "attack": 44,
+    "subStat": 6
+  },
   "description": "Um tesouro nacional do Reino de Byakuya guardado no Dainichi Mikoshi. Com a chegada do Deus Serpente, este item foi usado para autenticar grandes juramentos e desejos.",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 43.7349,
+      "attackPercent": 0.06
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 2.2",
+      "attackPercent": "C2"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 25.9
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 51.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 103.7
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 129.7
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      }
+    ]
+  }
 }

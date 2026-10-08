@@ -7,7 +7,69 @@
   "passiveName": "Seasoned Symphony",
   "passiveDesc": "ATK is increased by 12%/15%/18%/21%/24%. When the equipping character is off-field, ATK is increased by an additional 12%/15%/18%/21%/24%. After initiating healing, the equipping character and the character(s) they have healed will obtain the \"Sweet Echoes\" effect, increasing their ATK by 32%/40%/48%/56%/64% for 3s. This effect can be triggered even if the equipping character is off-field.",
   "location": "Event Wish Exclusive",
-  "baseDamage": { "attack": 46, "subStat": 144 },
+  "baseDamage": {
+    "attack": 46,
+    "subStat": 144
+  },
   "description": "An elegantly built polearm, said to have been a conductor's baton wielded by a great musician to bridge tune and taste.",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 45.9364,
+      "critDamage": 0.144
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.1",
+      "critDamage": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

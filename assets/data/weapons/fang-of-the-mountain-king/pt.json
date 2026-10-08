@@ -7,7 +7,69 @@
   "passiveName": "Caça à Turquesa",
   "passiveDesc": "Ganha 1 acúmulo de Favor da Copa ao acertar um oponente com uma Habilidade Elemental. Isso pode ser desencadeado uma vez a cada 0.5s; após um membro da equipe próximo desencadear uma reação de Queimadura ou Germinação, o personagem que está com essa arma equipada ganhará 3 acúmulos de Favor da Copa. Este efeito pode ser desencadeado uma vez a cada 2s e pode ser desencadeado mesmo quando o personagem não é o personagem ativo. Favor da Copa: o Dano da Habilidade Elemental e do Supremo é aumentado em 10%/12.5%/15%/17.5%/20% por 6s. Máximo de 6 acúmulos. A duração de cada acúmulo é contabilizada de forma independente.",
   "location": "Banner de Invocação Limitado",
-  "baseDamage": { "attack": 49, "subStat": 24 },
+  "baseDamage": {
+    "attack": 49,
+    "subStat": 24
+  },
   "description": "Uma espada gigante forjada de turquesa pura. Recebeu o nome de Rei da Montanha pelo seu peso considerável e tamanho muito maior do que uma lâmina comum.",
-  "weapon_type": "CLAYMORE"
+  "weapon_type": "CLAYMORE",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 49.1377,
+      "critRate": 0.024
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.3",
+      "critRate": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

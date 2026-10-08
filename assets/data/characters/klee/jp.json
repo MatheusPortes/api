@@ -153,5 +153,83 @@
     }
   ],
   "vision_key": "PYRO",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "calculation": {
+    "initialStats": {
+      "baseHp": 800.7888,
+      "baseAttack": 24.206,
+      "baseDefense": 47.864
+    },
+    "growthCurves": {
+      "baseHp": "Regular HP/DEF 5*",
+      "baseAttack": "Regular ATK 5*",
+      "baseDefense": "Regular HP/DEF 5*"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseHp": 686.604,
+          "baseDefense": 41.04,
+          "baseAttack": 20.75294
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseHp": 1174.4542,
+          "baseDefense": 70.2,
+          "baseAttack": 35.49845,
+          "pyroDamageBonus": 0.072
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseHp": 1824.9211,
+          "baseDefense": 109.08,
+          "baseAttack": 55.15913,
+          "pyroDamageBonus": 0.144
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseHp": 2312.7712,
+          "baseDefense": 138.24,
+          "baseAttack": 69.90464,
+          "pyroDamageBonus": 0.144
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseHp": 2800.6216,
+          "baseDefense": 167.4,
+          "baseAttack": 84.65015,
+          "pyroDamageBonus": 0.216
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseHp": 3288.4717,
+          "baseDefense": 196.56,
+          "baseAttack": 99.39566,
+          "pyroDamageBonus": 0.288
+        }
+      }
+    ]
+  }
 }

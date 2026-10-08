@@ -7,7 +7,69 @@
   "passiveName": "Chapeamento de Ouro",
   "passiveDesc": "Ao usar o Supremo, regenera 4/4.5/5/5.5/6 de Energia a cada 2s por 6s. Todos os membros da Equipe regenerarão 4%/4.5%/5%/5.5%/6% de Vida a cada 2s.",
   "location": "Liyue",
-  "baseDamage": { "attack": 42, "subStat": 90 },
+  "baseDamage": {
+    "attack": 42,
+    "subStat": 90
+  },
   "description": "Um catalisador dourado, guardado secretamente na Forja do Penhasco Obscuro. Parece brilhar com a própria luz do céu.",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 42.401,
+      "hpPercent": 0.09
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 2.1",
+      "hpPercent": "C2"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 25.9
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 51.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 103.7
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 129.7
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      }
+    ]
+  }
 }

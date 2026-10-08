@@ -7,7 +7,69 @@
   "passiveName": "Herdeiro de Iwakura",
   "passiveDesc": "Depois de lançar a Habilidade Elemental, ganha 1 Semente de Sucessão. Este efeito pode ser ativado uma vez a cada 5s. A Semente de Sucessão dura 30s e no máximo podem coexistir 3 sementes. Depois de lançar o Supremo, todas as Sementes de Sucessão serão eliminadas e, após 2s, o personagem restaura 6/7.5/9/10.5/12 de Energia Elemental por cada Semente de Sucessão consumida.",
   "location": "Inazuma",
-  "baseDamage": { "attack": 41, "subStat": 120 },
+  "baseDamage": {
+    "attack": 41,
+    "subStat": 120
+  },
   "description": "Uma lâmina que dizem ter sido feita sob encomenda por um famoso samurai que poderia até mesmo cortar do ar um guerreiro tengu, famoso por sua habilidade em usar sua incrível velocidade.",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 41.0671,
+      "attackPercent": 0.12
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 2.4",
+      "attackPercent": "C2"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 25.9
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 51.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 103.7
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 129.7
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      }
+    ]
+  }
 }

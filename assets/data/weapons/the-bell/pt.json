@@ -7,7 +7,69 @@
   "passiveName": "Guarda da Rebelião",
   "passiveDesc": "Ao receber dano, cria um escudo que absorve o equivalente a 20%/23%/26%/29%/32% da Vida Máxima por 10s ou até o escudo desparecer. Pode ser ativado uma vez a cada 45/45/45/45/45s. Quando o personagem estiver com o escudo, o Dano causado aumenta 12%/15%/18%/21%/24%.",
   "location": "Mondstadt",
-  "baseDamage": { "attack": 42, "subStat": 90 },
+  "baseDamage": {
+    "attack": 42,
+    "subStat": 90
+  },
   "description": "Um espadão pesado com um relógio, mas seus mecanismos internos foram danificados.",
-  "weapon_type": "CLAYMORE"
+  "weapon_type": "CLAYMORE",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 42.401,
+      "hpPercent": 0.09
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 2.1",
+      "hpPercent": "C2"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 25.9
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 51.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 103.7
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 129.7
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      }
+    ]
+  }
 }

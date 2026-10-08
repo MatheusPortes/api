@@ -89,5 +89,83 @@
     }
   ],
   "vision_key": "ANEMO",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "calculation": {
+    "initialStats": {
+      "baseHp": 1039.1188,
+      "baseAttack": 23.0888,
+      "baseDefense": 62.8215
+    },
+    "growthCurves": {
+      "baseHp": "Regular HP/DEF 5*",
+      "baseAttack": "Regular ATK 5*",
+      "baseDefense": "Regular HP/DEF 5*"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseHp": 890.95044,
+          "baseDefense": 53.865,
+          "baseAttack": 19.795113
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseHp": 1523.9941,
+          "baseDefense": 92.1375,
+          "baseAttack": 33.86006,
+          "elementalMastery": 28.8
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseHp": 2368.0525,
+          "baseDefense": 143.1675,
+          "baseAttack": 52.613323,
+          "elementalMastery": 57.6
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseHp": 3001.0962,
+          "baseDefense": 181.44,
+          "baseAttack": 66.67827,
+          "elementalMastery": 57.6
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseHp": 3634.14,
+          "baseDefense": 219.7125,
+          "baseAttack": 80.74322,
+          "elementalMastery": 86.4
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseHp": 4267.1836,
+          "baseDefense": 257.985,
+          "baseAttack": 94.80817,
+          "elementalMastery": 115.2
+        }
+      }
+    ]
+  }
 }

@@ -7,5 +7,64 @@
   "passiveName": "追憶と別れの歌",
   "passiveDesc": "風と共に流れる「千年の大楽章」の一部。元素熟知+60。元素スキルまたは元素爆発が敵に命中すると、追憶の欠片を1枚獲得する。この効果は0.2秒毎に一回のみ発動でき、待機中のキャラクターも発動できる。追憶の欠片を4枚集めると、全ての追憶の欠片を消費し、周囲のチーム全員に12秒継続する「千年の大楽章·別れの歌」効果を付与する：元素熟知+100、攻撃力+20%。発動後の20秒間、追憶の欠片を再度獲得することはできない。「千年の大楽章」のもたらす各効果中、同種類の効果は重ね掛け不可。",
   "location": "祈願",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 45.9364,
+      "energyRecharge": 0.12
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.1",
+      "energyRecharge": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

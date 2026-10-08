@@ -7,7 +7,69 @@
   "passiveName": "Música de Rebelião da Bandeira",
   "passiveDesc": "Uma parte do Concerto Milenar que flutua no vento. Aumenta o ATQ em 16%/20%/24%/28%/32%. Quando Ataque Normal ou Ataque Carregado atingir os inimigos, o personagem obterá um Símbolo dos Suspiros, que pode ser ativado uma vez a cada 0.3s. Possuir 4 Símbolos dos Sussurros faz consumir todos eles, e faz todos os personagens da equipe obterem o efeito de \"Concerto Milenar: Música do Levantar da Bandeira\" por 12s: A Vel. de Ataque Normal será aumentada em 12%/15%/18%/21%/24%, além disso o ATQ será aumentado em 20%/25%/30%/35%/40%. Dentro de 20s depois da ativação, não é possível obter os Símbolos dos Sussurros de novo. Entre todos os efeitos de vários valores, os efeitos do mesmo valor não podem ser acumulados.",
   "location": "Mondstadt",
-  "baseDamage": { "attack": 49, "subStat": 45 },
+  "baseDamage": {
+    "attack": 49,
+    "subStat": 45
+  },
   "description": "Uma espada grande tão leve quanto o suspiro de grama na brisa, mas tão impiedosa para os corruptos quanto um tufão.",
-  "weapon_type": "CLAYMORE"
+  "weapon_type": "CLAYMORE",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 49.1377,
+      "physicalDamageBonus": 0.045
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.3",
+      "physicalDamageBonus": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

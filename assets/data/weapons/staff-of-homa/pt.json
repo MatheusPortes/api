@@ -7,7 +7,69 @@
   "passiveName": "Liberdade da Borboleta Vermelha",
   "passiveDesc": "Aumenta a Vida em 20%/25%/30%/35%/40%. Além disso, o Personagem que equipar esta arma terá um Bônus de ATQ de 0.8%/1%/1.2%/1.4%/1.6% com base na Vida Máxima. Quando a Vida do Personagem que equipar essa arma cair para abaixo de 50%, seu ATQ aumentará 1%/1.2%/1.4%/1.6%/1.8% com base em sua Vida Máxima.",
   "location": "Liyue",
-  "baseDamage": { "attack": 46, "subStat": 144 },
+  "baseDamage": {
+    "attack": 46,
+    "subStat": 144
+  },
   "description": "Um bastão vermelho utilizado em um antigo ritual que não se pratica há muito tempo.",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 45.9364,
+      "critDamage": 0.144
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.1",
+      "critDamage": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

@@ -87,5 +87,83 @@
     }
   ],
   "vision_key": "ELECTRO",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "calculation": {
+    "initialStats": {
+      "baseHp": 1004.79926,
+      "baseAttack": 26.2542,
+      "baseDefense": 61.44541
+    },
+    "growthCurves": {
+      "baseHp": "Regular HP/DEF 5*",
+      "baseAttack": "Regular ATK 5*",
+      "baseDefense": "Regular HP/DEF 5*"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseHp": 861.52454,
+          "baseDefense": 52.6851,
+          "baseAttack": 22.508959
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseHp": 1473.6604,
+          "baseDefense": 90.11925,
+          "baseAttack": 38.502167,
+          "energyRecharge": 0.08
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseHp": 2289.8416,
+          "baseDefense": 140.03145,
+          "baseAttack": 59.826443,
+          "energyRecharge": 0.16
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseHp": 2901.9773,
+          "baseDefense": 177.4656,
+          "baseAttack": 75.81965,
+          "energyRecharge": 0.16
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseHp": 3514.1133,
+          "baseDefense": 214.89975,
+          "baseAttack": 91.81286,
+          "energyRecharge": 0.24
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseHp": 4126.249,
+          "baseDefense": 252.3339,
+          "baseAttack": 107.80606,
+          "energyRecharge": 0.32
+        }
+      }
+    ]
+  }
 }

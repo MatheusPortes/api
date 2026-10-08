@@ -7,7 +7,69 @@
   "passiveName": "Balada Retumbante",
   "passiveDesc": "Aumenta o Dano Crítico em 20%/25%/30%/35%/40%. Ao acertar, possui 60%/70%/80%/90%/125% de chance de infligir um pequeno ataque AdE, causando 100% de Dano de ATQ Físico. Pode ser ativada uma vez a cada 4/3.5/3/2.5/2s.",
   "location": "Mondstadt",
-  "baseDamage": { "attack": 48, "subStat": 48 },
+  "baseDamage": {
+    "attack": 48,
+    "subStat": 48
+  },
   "description": "Um grande arco que simboliza o vínculo entre Dvalin e o Arconte Anemo. O som do disparo das flechas é como música para os ouvidos do Arconte do Vento. Contém poderes dos céus e do vento.",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 47.537,
+      "critRate": 0.048
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.2",
+      "critRate": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

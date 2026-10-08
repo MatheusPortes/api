@@ -7,7 +7,69 @@
   "passiveName": "Luz de Corrida do Curioso",
   "passiveDesc": "Aumenta o ATQ e a Veloc. Mov. em 20%/25%/30%/35%/40% e 10%, respectivamente, por 10s ao usar uma Habilidade Elemental.",
   "location": "Evento da Versão 5.4 - Contos Encantados do Festival Mikawa",
-  "baseDamage": { "attack": 44, "subStat": 67 },
+  "baseDamage": {
+    "attack": 44,
+    "subStat": 67
+  },
   "description": "No passado, existiu um Youkai que percorria Inazuma em forma de uma lanterna de fogos de artifício. Esta deve ter sido uma das lanternas em que ele habitou.",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 43.7349,
+      "energyRecharge": 0.066667
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 2.2",
+      "energyRecharge": "C2"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 25.9
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 51.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 103.7
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 129.7
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      }
+    ]
+  }
 }

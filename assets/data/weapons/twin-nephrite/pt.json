@@ -7,7 +7,69 @@
   "passiveName": "Táticas de Invasão",
   "passiveDesc": "Ao derrotar um inimigo, aumenta a Veloc. Mov. e o ATQ em 12%/14%/16%/18%/20% por 15s.",
   "location": "Liyue",
-  "baseDamage": { "attack": 40, "subStat": 34 },
+  "baseDamage": {
+    "attack": 40,
+    "subStat": 34
+  },
   "description": "Um pingente de jade colocado junto entre duas pedras de jade.",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 39.8751,
+      "critRate": 0.034
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 1.2",
+      "critRate": "C1"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 19.5
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 38.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 58.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 97.3
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 116.7
+        }
+      }
+    ]
+  }
 }

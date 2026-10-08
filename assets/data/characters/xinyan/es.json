@@ -87,5 +87,83 @@
     }
   ],
   "vision_key": "PYRO",
-  "weapon_type": "CLAYMORE"
+  "weapon_type": "CLAYMORE",
+  "calculation": {
+    "initialStats": {
+      "baseHp": 939.1447,
+      "baseAttack": 20.83536,
+      "baseDefense": 66.95325
+    },
+    "growthCurves": {
+      "baseHp": "Regular HP/DEF 4*",
+      "baseAttack": "Regular ATK 4*",
+      "baseDefense": "Regular HP/DEF 4*"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseHp": 701.5892,
+          "baseDefense": 50.0175,
+          "baseAttack": 15.565446
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseHp": 1200.0868,
+          "baseDefense": 85.55625,
+          "baseAttack": 26.625105,
+          "attackPercent": 0.06
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseHp": 1864.7502,
+          "baseDefense": 132.94125,
+          "baseAttack": 41.37132,
+          "attackPercent": 0.12
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseHp": 2363.2478,
+          "baseDefense": 168.48,
+          "baseAttack": 52.430977,
+          "attackPercent": 0.12
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseHp": 2861.7454,
+          "baseDefense": 204.01875,
+          "baseAttack": 63.490635,
+          "attackPercent": 0.18
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseHp": 3360.243,
+          "baseDefense": 239.5575,
+          "baseAttack": 74.55029,
+          "attackPercent": 0.24
+        }
+      }
+    ]
+  }
 }

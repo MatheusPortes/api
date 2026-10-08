@@ -7,7 +7,69 @@
   "passiveName": "Gokadaiou Otogibanashi",
   "passiveDesc": "DEF é aumentada em 28%/35%/42%/49%/56%. Dano do Ataque Normal e Carregado é aumentado em 40%/50%/60%/70%/80% da DEF.",
   "location": "Inazuma",
-  "baseDamage": { "attack": 44, "subStat": 192 },
+  "baseDamage": {
+    "attack": 44,
+    "subStat": 192
+  },
   "description": "De acordo com seu dono anterior, esta arma é o \"Leão Heroico, Poderoso e de Chifres Vermelhos Destruidores de Pedras\" que pode fazer com que qualquer monstro saia correndo com sua cauda entre suas pernas.",
-  "weapon_type": "CLAYMORE"
+  "weapon_type": "CLAYMORE",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 44.3358,
+      "critDamage": 0.192
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.4",
+      "critDamage": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

@@ -89,5 +89,83 @@
     }
   ],
   "vision_key": "CRYO",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "calculation": {
+    "initialStats": {
+      "baseHp": 1030.3239,
+      "baseAttack": 20.12304,
+      "baseDefense": 59.514
+    },
+    "growthCurves": {
+      "baseHp": "Regular HP/DEF 4*",
+      "baseAttack": "Regular ATK 4*",
+      "baseDefense": "Regular HP/DEF 4*"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseHp": 769.70465,
+          "baseDefense": 44.46,
+          "baseAttack": 15.033294
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseHp": 1316.6001,
+          "baseDefense": 76.05,
+          "baseAttack": 25.714846,
+          "attackPercent": 0.06
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseHp": 2045.794,
+          "baseDefense": 118.17,
+          "baseAttack": 39.956913,
+          "attackPercent": 0.12
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseHp": 2592.6895,
+          "baseDefense": 149.76,
+          "baseAttack": 50.638466,
+          "attackPercent": 0.12
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseHp": 3139.5847,
+          "baseDefense": 181.35,
+          "baseAttack": 61.320015,
+          "attackPercent": 0.18
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseHp": 3686.4802,
+          "baseDefense": 212.94,
+          "baseAttack": 72.001564,
+          "attackPercent": 0.24
+        }
+      }
+    ]
+  }
 }

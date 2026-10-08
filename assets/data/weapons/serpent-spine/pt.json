@@ -7,7 +7,69 @@
   "passiveName": "Divisor de Ondas",
   "passiveDesc": "Quando o jogador está em combate, a cada 4s aumenta o dano causado em 6%/7%/8%/9%/10% e 3%/2.7%/2.4%/2.2%/2% do Dano recebido. Este efeito pode ser acumulado até 5 vezes, não sendo redefinido após o personagem sair de campo, mas reduzirá 1 camada do efeito quando o personagem receber Dano.",
   "location": "Liyue",
-  "baseDamage": { "attack": 42, "subStat": 60 },
+  "baseDamage": {
+    "attack": 42,
+    "subStat": 60
+  },
   "description": "Uma arma rara cuja origem são os oceanos antigos. Ao brandi-la, é possível ouvir as ondas do mar.",
-  "weapon_type": "CLAYMORE"
+  "weapon_type": "CLAYMORE",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 42.401,
+      "critRate": 0.06
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 2.1",
+      "critRate": "C2"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 25.9
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 51.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 103.7
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 129.7
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      }
+    ]
+  }
 }

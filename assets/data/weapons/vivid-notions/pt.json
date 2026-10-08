@@ -7,7 +7,69 @@
   "passiveName": "Desejo do Arco-Íris Cadente",
   "passiveDesc": "Aumenta o ATQ em 28%/35%/42%/49%/56%. Ao fazer um Ataque Imersivo, obtém o efeito \"Cores do Crepúsculo\": aumenta o Dano CRIT causado pelo Ataque Imersivo em 28%/35%/42%/49%/56%. Quando lançar uma Habilidade Elemental ou Supremo, obtém o efeito \"Esplendor do Crepúsculo\": aumenta o Dano CRIT causado pelo Ataque Imersivo em 40%/50%/60%/70%/80%. Esses efeitos possuem cada um uma duração de 15s, e serão removidos 0.1s após a Onda Mergulhadora atingir o alvo.",
   "location": "Oração de Evento de Arma",
-  "baseDamage": { "attack": 48, "subStat": 96 },
+  "baseDamage": {
+    "attack": 48,
+    "subStat": 96
+  },
   "description": "Um troféu feito de gemas do Coletivo da Fartura e cristais do Clã das Plumas de Flores. Dizem que pertenceu a um lendário lutador.",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 47.537,
+      "critDamage": 0.096
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.2",
+      "critDamage": "C3"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

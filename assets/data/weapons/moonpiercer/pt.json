@@ -7,7 +7,69 @@
   "passiveName": "Sombra da Lua na Floresta",
   "passiveDesc": "Após desencadear Queimadura, Aceleração, Intensificação, Propagação, Florescimento, Superflorescimento ou Germinação, uma Folha do Renascimento será criada em volta do personagem por no máximo 10s. Quando coletada, a Folha do Renascimento aumentará o ATQ do personagem em 16%/20%/24%/28%/32% por 12s. Apenas 1 Folha pode ser criada dessa forma a cada 20s. Esse efeito ainda pode ser desencadeado mesmo se o personagem não estiver em campo.",
   "location": "Forja",
-  "baseDamage": { "attack": 44, "subStat": 24 },
+  "baseDamage": {
+    "attack": 44,
+    "subStat": 24
+  },
   "description": "Uma arma obtida através de uma das histórias dos Aranara. Ela tomou a forma de uma flecha gigantesca e pode ser usada como uma lança.",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 43.7349,
+      "elementalMastery": 24
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 2.2",
+      "elementalMastery": "C2"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 25.9
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 51.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 103.7
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 129.7
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      }
+    ]
+  }
 }

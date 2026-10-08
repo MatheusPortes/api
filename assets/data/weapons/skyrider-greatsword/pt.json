@@ -7,7 +7,69 @@
   "passiveName": "Coragem",
   "passiveDesc": "Ao acertar um Ataque Normal ou Carregado, aumenta o ATQ e DEF em 6%/7%/8%/9%/10% por 6s, podendo ser acumulado até 4 vezes. Este efeito pode ser ativado uma vez a cada 0.5s.",
   "location": "Liyue",
-  "baseDamage": { "attack": 39, "subStat": 96 },
+  "baseDamage": {
+    "attack": 39,
+    "subStat": 96
+  },
   "description": "Um espadão de aço confiável. Uma certa pessoa tentou usá-lo como espada voadora... pela segunda vez.",
-  "weapon_type": "CLAYMORE"
+  "weapon_type": "CLAYMORE",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 38.7413,
+      "physicalDamageBonus": 0.0956
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 1.1",
+      "physicalDamageBonus": "C1"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 19.5
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 38.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 58.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 97.3
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 116.7
+        }
+      }
+    ]
+  }
 }

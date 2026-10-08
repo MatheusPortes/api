@@ -7,7 +7,69 @@
   "passiveName": "Bênção da Floresta",
   "passiveDesc": "Ao causar uma Reação Elemental, obtém o efeito \"Excesso de Falta\", que aumenta a Proficiência Elemental em 24/27/30/33/36 e reduz o ATQ em 5%. Apenas 1 acúmulo de Excesso de Falta poderá ser obitido a cada 0.3s. Máximo de 5 acúmulos. 1 acúmulo será perdido a cada 6s que passar sem que uma Reação Elemental seja desencadeada. Esse efeito pode ser desencadeado mesmo se o personagem estiver fora de campo.",
   "location": "Forja",
-  "baseDamage": { "attack": 42, "subStat": 10 },
+  "baseDamage": {
+    "attack": 42,
+    "subStat": 10
+  },
   "description": "Uma fruta obtida através de uma das histórias dos Aranara. Ela tem o poder de conquistar qualquer crise.",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 42.401,
+      "energyRecharge": 0.1
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 2.1",
+      "energyRecharge": "C2"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 25.9
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 51.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 103.7
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 129.7
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      }
+    ]
+  }
 }
