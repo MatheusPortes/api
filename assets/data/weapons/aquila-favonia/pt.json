@@ -9,5 +9,88 @@
   "location": "Mondstadt",
   "baseDamage": { "attack": 48, "subStat": 90 },
   "description": "A alma dos Cavaleiros de Favonius. Milênios depois, ainda chama pelos ventos para expulsar todo o mal - assim como a última heroína que a manejava.",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 47.537,
+      "physicalDamageBonus": 0.09
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.2",
+      "physicalDamageBonus": "C3"
+    },
+    "effects": [
+      {
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "modifiers": [
+          {
+            "label": "Aumento de ATQ",
+            "type": "atk_percent",
+            "values": [0.2, 0.25, 0.3, 0.35, 0.4]
+          }
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "damageType": "PHYSICAL",
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [2, 2.3, 2.6, 2.9, 3.2]
+          }
+        ]
+      }
+    ],
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }
