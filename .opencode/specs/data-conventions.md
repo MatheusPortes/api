@@ -41,6 +41,7 @@
 - Stackable bonuses use optional `accumulations` for a source-validated maximum count, not active consumer state; retain per-stack coefficients. Apply rule `stackable-bonus-cap` from the calculation workflow, omitting the field on non-stackable bonuses and preserving EN/PT mechanical parity.
 - Approved enemy elemental resistance reductions use `elemental_res_reduction` with explicit `element` and a positive reduction amount in `values`; omit `bonus` and do not disguise the result as a damage bonus. The authority and limits are rule `enemy-elemental-resistance-reduction` in the calculation workflow; Deepwood Memories is the first individually reviewed example.
 - Approved wearer elemental resistance bonuses use `elemental_res_percent`, explicit `element`, positive `values` and `bonus: true`. Defender's Will uses seven party-element-conditioned alternatives that may coexist only for represented elements; no stacking by repeated elements or unconditional all-element grant. Apply rule `wearer-party-element-resistance-bonus` from the calculation workflow.
+- Approved attack-speed bonuses use `atk_speed_percent`, a source-validated attack `target`, positive `values` and `bonus: true`, distinct from attack/damage stat bonuses. Desert Pavilion Chronicle's Normal Attack speed is `[0.1]`, separately from its three attack-targeted damage modifiers `[0.4]`. Apply rule `attack-scoped-speed-bonus` from the calculation workflow.
 
 ## Translations
 

@@ -108,6 +108,14 @@ Do not use enemy `elemental_res_reduction`, precompute resistance/damage multipl
 
 Retrospective live EN/PT review of all eight earlier individual artifact sets found no wearer-resistance clause or conflicting modifier. Deepwood Memories's enemy reduction is a counterexample and retains its type and omission of `bonus`; Archaic Petra's reaction-selected damage alternatives retain their at-most-one constraint. History's archived examples do not identify an earlier wearer-resistance bonus. No other entity edited or globally certified; paths and outcomes are recorded in history.
 
+#### Rule `attack-scoped-speed-bonus`
+
+Owner-approved on 2026-10-14: supplied attack-speed increases use `type: "atk_speed_percent"`, a positive source ratio in `values`, `bonus: true`, and the supported attack `target` when the source restricts the affected category. Desert Pavilion Chronicle's 4-piece Normal Attack speed bonus uses `target: "normal_attack"`, `values: [0.1]`; the Charged Attack hit is its activation trigger, not the speed target. Localized labels identify both the supplied speed and trigger. Preserve the source description and leave activation, 15s duration, animation/hitlag handling and actual attack timing to the consumer.
+
+Speed is distinct from ATK, damage bonuses and a damage-per-second multiplier: do not store it as `atk_percent`/`dmg_percent`, apply it to Charged/Plunging attacks merely because those share the damage clause, or precompute attack intervals/DPS. No element, reaction scope, attribute-reference `conditional`, stack count, rank or independent proc is implied. This source validates only Normal Attack speed; other speed categories and mixed/tiered speed mechanics require their own source mapping, not an assumed global speed grant. The separate 40% damage clause uses three `dmg_percent` modifiers with the supported Normal/Charged/Plunging targets; only the applicable category contributes once to a hit.
+
+Retrospective live EN/PT review of all nine earlier individually worked artifacts found no attack-speed clause or conflicting speed representation. Bloodstained Chivalry's Charged Attack damage modifier is compatible with attack targeting but is not speed; its 10s/zero-Stamina usage is not a speed coefficient. The historical examples in the work history identify no prior speed representation. No other entity edited or globally certified; exact paths/outcomes are recorded in history.
+
 ### Stat References and Consumer Usage
 
 `conditional` contains exactly `{ origin, attribute }`. Supported origins are `character`, `weapon`, `artifact`; attributes are `hp`, `atk`, `def`, `elemental_mastery`, `energy_recharge`. Coefficients remain in `values`, not in `conditional.coefficient`, `conditional.value` or a retired `per` field.
@@ -137,6 +145,7 @@ Activation, actual active stacks, party state, timing, costs, consumption, coold
 type EffectType =
   | 'hp_percent'
   | 'atk_percent'
+  | 'atk_speed_percent'
   | 'base_atk'
   | 'base_def'
   | 'elemental_dmg_percent'
@@ -166,7 +175,7 @@ type Vision =
   | 'PHYSICAL';
 ```
 
-`base_atk`/`base_def` are percentage changes to base attributes before stat composition, not ordinary ATK%/DEF%. Do not infer base-stat mechanics from legacy wording. Resistance changes other than the approved enemy elemental reduction and wearer elemental bonus, ignore/reduction of DEF, attack speed, unsupported reaction/scoped-CRIT bonuses and flat DEF need an explicit supported contract before import. Healing coefficients can use approved stat-plus-fixed-addition talent rows; this does not approve every possible healing/result schema.
+`base_atk`/`base_def` are percentage changes to base attributes before stat composition, not ordinary ATK%/DEF%. Do not infer base-stat mechanics from legacy wording. Resistance changes other than the approved enemy elemental reduction and wearer elemental bonus, ignore/reduction of DEF, unsupported speed mechanics outside `attack-scoped-speed-bonus`, unsupported reaction/scoped-CRIT bonuses and flat DEF need an explicit supported contract before import. Healing coefficients can use approved stat-plus-fixed-addition talent rows; this does not approve every possible healing/result schema.
 
 Reaction bonuses covered by `reaction-scoped-damage-bonus` use this initial standardized enum (uppercase serialized identifiers are identical across locales):
 

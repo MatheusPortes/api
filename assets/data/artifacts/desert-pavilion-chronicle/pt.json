@@ -3,5 +3,52 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "Bônus de Dano Anemo +15%",
-  "4-piece_bonus": "Quando um Ataque Carregado atinge um inimigo, aumenta a Vel. de ATQ do Ataque Normal desse Personagem em 10% e aumenta o Dano infligido por Ataques Normais, Carregados e Imersivos em 40% por 15s."
+  "4-piece_bonus": "Quando um Ataque Carregado atinge um inimigo, aumenta a Vel. de ATQ do Ataque Normal desse Personagem em 10% e aumenta o Dano infligido por Ataques Normais, Carregados e Imersivos em 40% por 15s.",
+  "effects": [
+    {
+      "label": "Bônus de 2 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Dano Anemo",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.15],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Bônus de 4 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Velocidade de Ataque Normal Após Acerto de Ataque Carregado",
+          "type": "atk_speed_percent",
+          "target": "normal_attack",
+          "values": [0.1],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano de Ataque Normal Após Acerto de Ataque Carregado",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.4],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano de Ataque Carregado Após Acerto de Ataque Carregado",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.4],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano de Ataque Imersivo Após Acerto de Ataque Carregado",
+          "type": "dmg_percent",
+          "target": "plunging_attack",
+          "values": [0.4],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
