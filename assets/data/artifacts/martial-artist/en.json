@@ -3,5 +3,45 @@
   "max_rarity": 4,
   "min_rarity": 3,
   "2-piece_bonus": "Increases Normal Attack and Charged Attack DMG by 15%.",
-  "4-piece_bonus": "After using Elemental Skill, increases Normal Attack and Charged Attack DMG by 25% for 8s."
+  "4-piece_bonus": "After using Elemental Skill, increases Normal Attack and Charged Attack DMG by 25% for 8s.",
+  "effects": [
+    {
+      "label": "2-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Normal Attack DMG Bonus",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.15],
+          "bonus": true
+        },
+        {
+          "label": "Charged Attack DMG Bonus",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.15],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "4-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Normal Attack DMG Bonus After Using an Elemental Skill",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.25],
+          "bonus": true
+        },
+        {
+          "label": "Charged Attack DMG Bonus After Using an Elemental Skill",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.25],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
