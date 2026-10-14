@@ -3,5 +3,35 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "Recarga de Energia +20%",
-  "4-piece_bonus": "Aumenta o Dano do Supremo em 25% da Recarga de Energia. No máximo é possível obter 75% de aumento de Dano dessa maneira."
+  "4-piece_bonus": "Aumenta o Dano do Supremo em 25% da Recarga de Energia. No máximo é possível obter 75% de aumento de Dano dessa maneira.",
+  "effects": [
+    {
+      "label": "Bônus de 2 Peças",
+      "modifiers": [
+        {
+          "label": "Aumento de Recarga de Energia",
+          "type": "energy_recharge",
+          "values": [0.2],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Bônus de 4 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Dano do Supremo baseado na Recarga de Energia",
+          "type": "dmg_percent",
+          "target": "elemental_burst",
+          "conditional": {
+            "origin": "character",
+            "attribute": "energy_recharge"
+          },
+          "values": [0.25],
+          "maxValues": [0.75],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
