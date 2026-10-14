@@ -3,5 +3,30 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "Physical DMG +25%",
-  "4-piece_bonus": "After defeating an opponent, increases Charged Attack DMG by 50%, and reduces its Stamina cost to 0 for 10s."
+  "4-piece_bonus": "After defeating an opponent, increases Charged Attack DMG by 50%, and reduces its Stamina cost to 0 for 10s.",
+  "effects": [
+    {
+      "label": "2-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Physical DMG Bonus",
+          "type": "physical_dmg_percent",
+          "values": [0.25],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "4-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Charged Attack DMG Bonus After Defeating an Opponent",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.5],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }

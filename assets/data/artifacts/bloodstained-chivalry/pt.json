@@ -3,5 +3,30 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "Dano Físico causado +25%",
-  "4-piece_bonus": "Após derrotar um oponente, aumenta o Dano do Ataque Carregado em 50% e reduz seu custo de Stamina para 0 por 10s."
+  "4-piece_bonus": "Após derrotar um oponente, aumenta o Dano do Ataque Carregado em 50% e reduz seu custo de Stamina para 0 por 10s.",
+  "effects": [
+    {
+      "label": "Bônus de 2 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Dano Físico",
+          "type": "physical_dmg_percent",
+          "values": [0.25],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Bônus de 4 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Dano de Ataque Carregado Após Derrotar um Oponente",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.5],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
