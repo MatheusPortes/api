@@ -3,5 +3,72 @@
   "max_rarity": 4,
   "min_rarity": 3,
   "2-piece_bonus": "DEF +30%",
-  "4-piece_bonus": "Aumenta a própria RES do respectivo elemento em 30% para cada elemento diferente dos seus personagens da equipe."
+  "4-piece_bonus": "Aumenta a própria RES do respectivo elemento em 30% para cada elemento diferente dos seus personagens da equipe.",
+  "effects": [
+    {
+      "label": "Bônus de 2 Peças",
+      "modifiers": [
+        {
+          "label": "Aumento de DEF",
+          "type": "def_percent",
+          "values": [0.3],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Bônus de 4 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de RES Geo do Portador com Geo Presente na Equipe",
+          "type": "elemental_res_percent",
+          "element": "GEO",
+          "values": [0.3],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de RES Anemo do Portador com Anemo Presente na Equipe",
+          "type": "elemental_res_percent",
+          "element": "ANEMO",
+          "values": [0.3],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de RES Cryo do Portador com Cryo Presente na Equipe",
+          "type": "elemental_res_percent",
+          "element": "CRYO",
+          "values": [0.3],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de RES Dendro do Portador com Dendro Presente na Equipe",
+          "type": "elemental_res_percent",
+          "element": "DENDRO",
+          "values": [0.3],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de RES Electro do Portador com Electro Presente na Equipe",
+          "type": "elemental_res_percent",
+          "element": "ELECTRO",
+          "values": [0.3],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de RES Hydro do Portador com Hydro Presente na Equipe",
+          "type": "elemental_res_percent",
+          "element": "HYDRO",
+          "values": [0.3],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de RES Pyro do Portador com Pyro Presente na Equipe",
+          "type": "elemental_res_percent",
+          "element": "PYRO",
+          "values": [0.3],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }

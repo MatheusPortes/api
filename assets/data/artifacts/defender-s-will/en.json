@@ -2,6 +2,73 @@
   "name": "Defender's Will",
   "max_rarity": 4,
   "min_rarity": 3,
-  "2-piece_bonus": "Base DEF +30%",
-  "4-piece_bonus": "Increases Elemental RES by 30% for each element present in the party."
+  "2-piece_bonus": "DEF +30%",
+  "4-piece_bonus": "Increases Elemental RES by 30% for each element present in the party.",
+  "effects": [
+    {
+      "label": "2-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "DEF Increase",
+          "type": "def_percent",
+          "values": [0.3],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "4-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Wearer Geo RES Bonus with Geo Present in the Party",
+          "type": "elemental_res_percent",
+          "element": "GEO",
+          "values": [0.3],
+          "bonus": true
+        },
+        {
+          "label": "Wearer Anemo RES Bonus with Anemo Present in the Party",
+          "type": "elemental_res_percent",
+          "element": "ANEMO",
+          "values": [0.3],
+          "bonus": true
+        },
+        {
+          "label": "Wearer Cryo RES Bonus with Cryo Present in the Party",
+          "type": "elemental_res_percent",
+          "element": "CRYO",
+          "values": [0.3],
+          "bonus": true
+        },
+        {
+          "label": "Wearer Dendro RES Bonus with Dendro Present in the Party",
+          "type": "elemental_res_percent",
+          "element": "DENDRO",
+          "values": [0.3],
+          "bonus": true
+        },
+        {
+          "label": "Wearer Electro RES Bonus with Electro Present in the Party",
+          "type": "elemental_res_percent",
+          "element": "ELECTRO",
+          "values": [0.3],
+          "bonus": true
+        },
+        {
+          "label": "Wearer Hydro RES Bonus with Hydro Present in the Party",
+          "type": "elemental_res_percent",
+          "element": "HYDRO",
+          "values": [0.3],
+          "bonus": true
+        },
+        {
+          "label": "Wearer Pyro RES Bonus with Pyro Present in the Party",
+          "type": "elemental_res_percent",
+          "element": "PYRO",
+          "values": [0.3],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }

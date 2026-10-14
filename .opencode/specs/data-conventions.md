@@ -40,6 +40,7 @@
 - Approved reaction-damage modifiers retain `type: "dmg_percent"` and add a nonempty `reaction` enum array, grouping the reactions that share one source multiplier. Canonical enum values, scope limits and fixed-source bonus normalization are defined only in the calculation workflow. `crimson-witch-of-flames` is the first individually reviewed example; do not add empty reaction arrays or reaction scope to ordinary damage bonuses.
 - Stackable bonuses use optional `accumulations` for a source-validated maximum count, not active consumer state; retain per-stack coefficients. Apply rule `stackable-bonus-cap` from the calculation workflow, omitting the field on non-stackable bonuses and preserving EN/PT mechanical parity.
 - Approved enemy elemental resistance reductions use `elemental_res_reduction` with explicit `element` and a positive reduction amount in `values`; omit `bonus` and do not disguise the result as a damage bonus. The authority and limits are rule `enemy-elemental-resistance-reduction` in the calculation workflow; Deepwood Memories is the first individually reviewed example.
+- Approved wearer elemental resistance bonuses use `elemental_res_percent`, explicit `element`, positive `values` and `bonus: true`. Defender's Will uses seven party-element-conditioned alternatives that may coexist only for represented elements; no stacking by repeated elements or unconditional all-element grant. Apply rule `wearer-party-element-resistance-bonus` from the calculation workflow.
 
 ## Translations
 
