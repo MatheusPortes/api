@@ -3,5 +3,37 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "Elemental Mastery +80",
-  "4-piece_bonus": "Within 8s of triggering an Elemental Reaction, the character equipping this will obtain buffs based on the Elemental Type of the other party members, ATK is increased by 14% for each party member whose Elemental Type is the same as the equipping character, and Elemental Mastery is increased by 50 for every party member with a different Elemental Type. Each of the aforementioned buffs will count up to 3 characters. This effect can be triggered once every 8s. The character who equips this can still trigger its effects when not on the field."
+  "4-piece_bonus": "Within 8s of triggering an Elemental Reaction, the character equipping this will obtain buffs based on the Elemental Type of the other party members, ATK is increased by 14% for each party member whose Elemental Type is the same as the equipping character, and Elemental Mastery is increased by 50 for every party member with a different Elemental Type. Each of the aforementioned buffs will count up to 3 characters. This effect can be triggered once every 8s. The character who equips this can still trigger its effects when not on the field.",
+  "effects": [
+    {
+      "label": "2-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Elemental Mastery Increase",
+          "type": "elemental_mastery",
+          "values": [80],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "4-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "ATK Bonus per Other Same-Element Party Member After an Elemental Reaction",
+          "type": "atk_percent",
+          "values": [0.14],
+          "accumulations": 3,
+          "bonus": true
+        },
+        {
+          "label": "Elemental Mastery Bonus per Other Different-Element Party Member After an Elemental Reaction",
+          "type": "elemental_mastery",
+          "values": [50],
+          "accumulations": 3,
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }

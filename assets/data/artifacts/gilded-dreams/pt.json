@@ -3,5 +3,37 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "Proficiência Elemental +80",
-  "4-piece_bonus": "Dentro de 8s após causar uma Reação Elemental, o personagem equipando este conjunto irá obter aprimoramentos baseados no Tipo Elemental dos outros membros da equipe. O ATQ é aumentado em 14% para cada membro da equipe cujo Tipo Elemental seja o mesmo que o personagem equipando o conjunto. A Proficiência Elemental é aumentada em 50 para cada membro da equipe com Tipos Elementais diferentes. Cada um desses aprimoramentos mencionados anteriormente irá contar para até 3 personagens. Esse efeito pode ser desencadeado uma vez a cada 8s. O personagem que equipar este conjunto ainda pode ativar seu efeito mesmo que não esteja em campo."
+  "4-piece_bonus": "Dentro de 8s após causar uma Reação Elemental, o personagem equipando este conjunto irá obter aprimoramentos baseados no Tipo Elemental dos outros membros da equipe. O ATQ é aumentado em 14% para cada membro da equipe cujo Tipo Elemental seja o mesmo que o personagem equipando o conjunto. A Proficiência Elemental é aumentada em 50 para cada membro da equipe com Tipos Elementais diferentes. Cada um desses aprimoramentos mencionados anteriormente irá contar para até 3 personagens. Esse efeito pode ser desencadeado uma vez a cada 8s. O personagem que equipar este conjunto ainda pode ativar seu efeito mesmo que não esteja em campo.",
+  "effects": [
+    {
+      "label": "Bônus de 2 Peças",
+      "modifiers": [
+        {
+          "label": "Aumento de Proficiência Elemental",
+          "type": "elemental_mastery",
+          "values": [80],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Bônus de 4 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de ATQ por Outro Membro da Equipe do Mesmo Elemento Após uma Reação Elemental",
+          "type": "atk_percent",
+          "values": [0.14],
+          "accumulations": 3,
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Proficiência Elemental por Outro Membro da Equipe de Elemento Diferente Após uma Reação Elemental",
+          "type": "elemental_mastery",
+          "values": [50],
+          "accumulations": 3,
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
