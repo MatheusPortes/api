@@ -3,5 +3,34 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "ATK +18%",
-  "4-piece_bonus": "When Normal Attacks hit opponents, there is a 36% chance that it will trigger Valley Rite, which will increase Normal Attack DMG by 70% of ATK. \nThis effect will be dispelled 0.05s after a Normal Attack deals DMG. \nIf a Normal Attack fails to trigger Valley Rite, the odds of it triggering the next time will increase by 20%. \nThis trigger can occur once every 0.2s."
+  "4-piece_bonus": "When Normal Attacks hit opponents, there is a 36% chance that it will trigger Valley Rite, which will increase Normal Attack DMG by 70% of ATK. \nThis effect will be dispelled 0.05s after a Normal Attack deals DMG. \nIf a Normal Attack fails to trigger Valley Rite, the odds of it triggering the next time will increase by 20%. \nThis trigger can occur once every 0.2s.",
+  "effects": [
+    {
+      "label": "2-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "ATK Increase",
+          "type": "atk_percent",
+          "values": [0.18],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "4-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Valley Rite: Additional Normal Attack DMG from ATK",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "conditional": {
+            "origin": "character",
+            "attribute": "atk"
+          },
+          "values": [0.7],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
