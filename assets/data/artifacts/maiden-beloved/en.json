@@ -3,5 +3,29 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "Character Healing Effectiveness +15%",
-  "4-piece_bonus": "Using an Elemental Skill or Burst increases healing received by all party members by 20% for 10s."
+  "4-piece_bonus": "Using an Elemental Skill or Burst increases healing received by all party members by 20% for 10s.",
+  "effects": [
+    {
+      "label": "2-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Outgoing Healing Bonus",
+          "type": "healing_bonus",
+          "values": [0.15],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "4-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Incoming Healing Bonus for All Party Members After Using an Elemental Skill or Burst",
+          "type": "healing_bonus",
+          "values": [0.2],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }

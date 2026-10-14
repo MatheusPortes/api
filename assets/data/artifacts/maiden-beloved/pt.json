@@ -3,5 +3,29 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "Efeito de Cura do Personagem aumenta em 15%",
-  "4-piece_bonus": "Ao usar uma Habilidade Elemental ou Explosão, aumenta a cura recebida por todos os membros da equipe em 20% por 10s."
+  "4-piece_bonus": "Ao usar uma Habilidade Elemental ou Explosão, aumenta a cura recebida por todos os membros da equipe em 20% por 10s.",
+  "effects": [
+    {
+      "label": "Bônus de 2 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Cura Realizada",
+          "type": "healing_bonus",
+          "values": [0.15],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Bônus de 4 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Cura Recebida para Todos os Membros da Equipe Após Usar Habilidade Elemental ou Supremo",
+          "type": "healing_bonus",
+          "values": [0.2],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
