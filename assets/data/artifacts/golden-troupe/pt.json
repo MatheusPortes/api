@@ -3,5 +3,38 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "Aumenta o Dano da Habilidade Elemental em 20%.",
-  "4-piece_bonus": "Aumenta o Dano da Habilidade Elemental em 25%. Além disso, quando o personagem não estiver em campo, o Dano da Habilidade Elemental aumentará em mais 25%. Esse efeito será removido 2s após o personagem entrar em campo."
+  "4-piece_bonus": "Aumenta o Dano da Habilidade Elemental em 25%. Além disso, quando o personagem não estiver em campo, o Dano da Habilidade Elemental aumentará em mais 25%. Esse efeito será removido 2s após o personagem entrar em campo.",
+  "effects": [
+    {
+      "label": "Bônus de 2 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Dano da Habilidade Elemental",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.2],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Bônus de 4 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Dano da Habilidade Elemental",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.25],
+          "bonus": true
+        },
+        {
+          "label": "Bônus Adicional de Dano da Habilidade Elemental Fora de Campo (Removido 2s Após Entrar em Campo)",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.25],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
