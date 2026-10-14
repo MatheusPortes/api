@@ -74,15 +74,19 @@ Limits and retrospective review: this approves target-state activation only, not
 
 Owner-approved on 2026-10-14: use `type: "dmg_percent"` with a nonempty `reaction: Reaction[]` and `bonus: true` for a supplied reaction-damage bonus. One modifier represents the shared multiplier of a source contribution and lists every reaction to which that contribution applies. Crimson Witch of Flames uses `["OVERLOADED", "BURNING", "BURGEON"]` with `values: [0.4]`, and `["VAPORIZE", "MELT"]` with `values: [0.15]`. Do not split either common multiplier into one modifier per reaction, treat the list as simultaneous damage events, or apply it as generic/elemental damage. Independent source contributions remain separate even when their coefficients match; this is not permission to deduplicate bonuses with different activation conditions.
 
-`reaction` is optional elsewhere but required for reaction-scoped `dmg_percent`; omit it on generic or attack-scoped damage, not `reaction: []`. Use the canonical locale-independent enum below, without duplicates or provider IDs. The initial supported values are only the five validated reactions; extending the enum requires a deliberate source-backed contract. Reaction-formula placement, ownership, activation, base multipliers and EM terms remain consumer work: stored bonuses are not final reaction multipliers or a complete reaction engine. Do not add an attack `target`, damage `element` or attribute-reference `conditional` to these scalar bonuses without separately validating that combined scope.
+`reaction` is optional elsewhere but required for reaction-scoped `dmg_percent`; omit it on generic or attack-scoped damage, not `reaction: []`. Use the canonical locale-independent enum below, without duplicates or provider IDs. The initial five values were extended by owner approval on 2026-10-14 with BLOOM/HYPERBLOOM/LUNAR_BLOOM after source validation for Flower of Paradise Lost; any further extension requires a deliberate source-backed contract. Reaction-formula placement, ownership, activation, base multipliers and EM terms remain consumer work: stored bonuses are not final reaction multipliers or a complete reaction engine. Do not add an attack `target`, damage `element` or attribute-reference `conditional` to these scalar bonuses without separately validating that combined scope.
 
 Retrospective live EN/PT review: Brave Heart's generic damage and Bloodstained Chivalry's Charged Attack bonus correctly omit `reaction`. Archaic Petra grants an elemental bonus selected by a reaction, not a bonus to the reaction's damage; its `elemental_dmg_percent` alternatives remain unchanged, including the existing Lunar-Crystallize blocker. No earlier worked reaction-damage modifier was found in history; no other entity was edited. Paths and source evidence are recorded in history.
+
+Flower of Paradise Lost's approved extension preserves one modifier per shared source multiplier: BLOOM/HYPERBLOOM/BURGEON share base `[0.4]` and a separate `[0.1]` per stack; LUNAR_BLOOM has base `[0.1]` and separate `[0.025]` per stack. The two additional modifiers carry `accumulations: 4`; they share source activation/count but have unequal coefficients and must not be merged into `[0.025]` for all reactions. Retrospective live EN/PT Crimson Witch reaction groups/per-stack Pyro bonus remain compatible and unchanged. Archaic Petra's reaction-selected damage and Emblem's ER conversion are counterexamples, not candidates for the new enum values. No new Lunar-Crystallize mapping or reaction engine is approved; exact paths/results are in history.
 
 #### Rule `fixed-source-bonus-increase`
 
 When a source increases a fixed, source-defined bonus by a ratio of its starting value, store the separate absolute bonus contribution per activation unit, validated against that source expression. Crimson Witch of Flames gives `0.15 * 0.5 = 0.075` additional Pyro damage bonus per stack, distinct from its base `0.15`. This is normalization of fixed source constants, not pre-application of a character stat or a guessed stack count. Keep the original 50%-of-starting-value expression in the description and record its derivation in history. Do not store `0.5` as 50 percentage points of Pyro bonus, pre-apply three stacks, combine the base/additional modifiers, or use a stack count as `hits`/refinement ranks. The validated maximum is represented by `accumulations` under the rule below; actual stack activation/count and duration remain consumer usage. This rule does not approve fixed normalization when the referenced base is a consumer-dependent stat/result.
 
 Retrospective review found no previously worked fixed-base relative-bonus increase. Live Archaic Petra's separate base/activated elemental bonuses are not relative increases; they remain compatible with the separate-contribution contract. The archived Berserker partial-coverage lesson also describes an additional flat CRIT percentage, not an amplification of its starting bonus. No other entity was edited or globally certified.
+
+Flower of Paradise Lost also applies this contract: each stack grants 25% of its respective starting bonus, so `0.4 * 0.25 = 0.1` for BLOOM/HYPERBLOOM/BURGEON and `0.1 * 0.25 = 0.025` for LUNAR_BLOOM. Preserve distinct base/additional contributions and unequal multipliers, even though the trigger and max 4 stacks are shared. Values are additive per-stack increments, not a recursive amplification of the current stack total. Live Crimson Witch's `0.15 * 0.5 = 0.075` example remains compatible; no prior record changed.
 
 #### Rule `stackable-bonus-cap`
 
@@ -177,13 +181,16 @@ type Vision =
 
 `base_atk`/`base_def` are percentage changes to base attributes before stat composition, not ordinary ATK%/DEF%. Do not infer base-stat mechanics from legacy wording. Resistance changes other than the approved enemy elemental reduction and wearer elemental bonus, ignore/reduction of DEF, unsupported speed mechanics outside `attack-scoped-speed-bonus`, unsupported reaction/scoped-CRIT bonuses and flat DEF need an explicit supported contract before import. Healing coefficients can use approved stat-plus-fixed-addition talent rows; this does not approve every possible healing/result schema.
 
-Reaction bonuses covered by `reaction-scoped-damage-bonus` use this initial standardized enum (uppercase serialized identifiers are identical across locales):
+Reaction bonuses covered by `reaction-scoped-damage-bonus` use this standardized enum (uppercase serialized identifiers are identical across locales):
 
 ```ts
 enum Reaction {
   OVERLOADED = 'OVERLOADED',
   BURNING = 'BURNING',
   BURGEON = 'BURGEON',
+  BLOOM = 'BLOOM',
+  HYPERBLOOM = 'HYPERBLOOM',
+  LUNAR_BLOOM = 'LUNAR_BLOOM',
   VAPORIZE = 'VAPORIZE',
   MELT = 'MELT',
 }

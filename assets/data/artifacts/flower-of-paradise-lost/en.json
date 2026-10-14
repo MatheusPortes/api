@@ -3,5 +3,53 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "Increases Elemental Mastery by 80",
-  "4-piece_bonus": "The equipping character's Bloom, Hyperbloom, and Burgeon reaction DMG are increased by 40%. Additionally, after the equipping character triggers Bloom, Hyperbloom, or Burgeon, they will gain another 25% bonus to the effect mentioned prior. Each stack of this lasts 10s. Max 4 stacks simultaneously. This effect can only be triggered once per second. The character who equips this can still trigger its effects when not on the field."
+  "4-piece_bonus": "The equipping character's Bloom, Hyperbloom, and Burgeon reaction DMG are increased by 40%, and their Lunar-Bloom reaction DMG is increased by 10%. Additionally, after the equipping character triggers Bloom, Hyperbloom, Lunar-Bloom, or Burgeon, they will gain another 25% bonus to the effects mentioned prior. Each stack of this lasts 10s. Max 4 stacks simultaneously. This effect can only be triggered once per second. The character who equips this can still trigger its effects when not on the field.",
+  "effects": [
+    {
+      "label": "2-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Elemental Mastery Increase",
+          "type": "elemental_mastery",
+          "values": [80],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "4-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Bloom, Hyperbloom, and Burgeon DMG Bonus",
+          "type": "dmg_percent",
+          "reaction": ["BLOOM", "HYPERBLOOM", "BURGEON"],
+          "values": [0.4],
+          "bonus": true
+        },
+        {
+          "label": "Lunar-Bloom DMG Bonus",
+          "type": "dmg_percent",
+          "reaction": ["LUNAR_BLOOM"],
+          "values": [0.1],
+          "bonus": true
+        },
+        {
+          "label": "Additional Bloom, Hyperbloom, and Burgeon DMG Bonus per Stack",
+          "type": "dmg_percent",
+          "reaction": ["BLOOM", "HYPERBLOOM", "BURGEON"],
+          "values": [0.1],
+          "accumulations": 4,
+          "bonus": true
+        },
+        {
+          "label": "Additional Lunar-Bloom DMG Bonus per Stack",
+          "type": "dmg_percent",
+          "reaction": ["LUNAR_BLOOM"],
+          "values": [0.025],
+          "accumulations": 4,
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
