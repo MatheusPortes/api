@@ -3,5 +3,23 @@
   "max_rarity": 4,
   "min_rarity": 3,
   "2-piece_bonus": "Elemental Skill DMG increased by 20%",
-  "4-piece_bonus": "Defeating an enemy has 100% chance to remove Elemental Skill CD. Can only occur once every 15s."
+  "4-piece_bonus": "Defeating an enemy has 100% chance to remove Elemental Skill CD. Can only occur once every 15s.",
+  "effects": [
+    {
+      "label": "2-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Elemental Skill DMG Bonus",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.2],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "4-Piece Bonus",
+      "modifiers": []
+    }
+  ]
 }
