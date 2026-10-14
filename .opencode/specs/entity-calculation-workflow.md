@@ -50,7 +50,7 @@ A text rule is not settled merely because it works for the first example. Record
 - A supplied stat/result modifier belongs to `effects[].modifiers[]`; an independent damage proc belongs to `skills[]`.
 - Attached attack additions follow the approved targeted-modifier convention, not the independent-proc convention. Preserve their stat reference with `conditional`.
 - `bonus: true` marks a stat/result bonus on a modifier or talent upgrade. Omit it on ordinary hits and independent procs; do not emit `bonus: false` placeholders.
-- `target` is optional only for genuinely generic damage bonuses. Supported targets are `normal_attack`, `charged_attack`, `plunging_attack`, `elemental_skill`, and `elemental_burst`. Unsupported reaction/scoped-CRIT results must not be disguised as generic damage or global CRIT. Target-state CRIT follows the explicitly approved rule below; other unsupported CRIT scopes remain blocked.
+- An attack-scoped damage modifier requires its supported `target`: `normal_attack`, `charged_attack`, `plunging_attack`, `elemental_skill`, or `elemental_burst`. Genuinely generic damage bonuses omit it; approved reaction-scoped bonuses use `reaction` instead. Unsupported reaction/scoped-CRIT results must not be disguised as generic damage or global CRIT. Reaction damage and target-state CRIT follow the explicitly approved rules below; other unsupported scopes remain blocked.
 - `elemental_dmg_percent` requires `element`. Expand an all-element bonus into seven modifiers: GEO, ANEMO, CRYO, DENDRO, ELECTRO, HYDRO, PYRO; exclude physical damage.
 - `maxValues` is an optional same-rank numeric cap. Do not pre-apply consumer inputs to stored coefficients.
 
@@ -70,6 +70,28 @@ Blizzard Strayer's 4-piece bonus has two contributions: `values: [0.2]` against 
 
 Limits and retrospective review: this approves target-state activation only, not an arbitrary attack-category CRIT scope or a reaction-only CRIT formula. Berserker's live EN/PT 4-piece modifier is compatible with the existing activation contract but is a counterexample to target-state scope: its condition is the holder's HP, not the attacked enemy. No prior worked target-state CRIT modifier was recorded; no other entity was edited or globally certified. Paths and source evidence are recorded in history.
 
+#### Rule `reaction-scoped-damage-bonus`
+
+Owner-approved on 2026-10-14: use `type: "dmg_percent"` with a nonempty `reaction: Reaction[]` and `bonus: true` for a supplied reaction-damage bonus. One modifier represents the shared multiplier of a source contribution and lists every reaction to which that contribution applies. Crimson Witch of Flames uses `["OVERLOADED", "BURNING", "BURGEON"]` with `values: [0.4]`, and `["VAPORIZE", "MELT"]` with `values: [0.15]`. Do not split either common multiplier into one modifier per reaction, treat the list as simultaneous damage events, or apply it as generic/elemental damage. Independent source contributions remain separate even when their coefficients match; this is not permission to deduplicate bonuses with different activation conditions.
+
+`reaction` is optional elsewhere but required for reaction-scoped `dmg_percent`; omit it on generic or attack-scoped damage, not `reaction: []`. Use the canonical locale-independent enum below, without duplicates or provider IDs. The initial supported values are only the five validated reactions; extending the enum requires a deliberate source-backed contract. Reaction-formula placement, ownership, activation, base multipliers and EM terms remain consumer work: stored bonuses are not final reaction multipliers or a complete reaction engine. Do not add an attack `target`, damage `element` or attribute-reference `conditional` to these scalar bonuses without separately validating that combined scope.
+
+Retrospective live EN/PT review: Brave Heart's generic damage and Bloodstained Chivalry's Charged Attack bonus correctly omit `reaction`. Archaic Petra grants an elemental bonus selected by a reaction, not a bonus to the reaction's damage; its `elemental_dmg_percent` alternatives remain unchanged, including the existing Lunar-Crystallize blocker. No earlier worked reaction-damage modifier was found in history; no other entity was edited. Paths and source evidence are recorded in history.
+
+#### Rule `fixed-source-bonus-increase`
+
+When a source increases a fixed, source-defined bonus by a ratio of its starting value, store the separate absolute bonus contribution per activation unit, validated against that source expression. Crimson Witch of Flames gives `0.15 * 0.5 = 0.075` additional Pyro damage bonus per stack, distinct from its base `0.15`. This is normalization of fixed source constants, not pre-application of a character stat or a guessed stack count. Keep the original 50%-of-starting-value expression in the description and record its derivation in history. Do not store `0.5` as 50 percentage points of Pyro bonus, pre-apply three stacks, combine the base/additional modifiers, or use a stack count as `hits`/refinement ranks. The validated maximum is represented by `accumulations` under the rule below; actual stack activation/count and duration remain consumer usage. This rule does not approve fixed normalization when the referenced base is a consumer-dependent stat/result.
+
+Retrospective review found no previously worked fixed-base relative-bonus increase. Live Archaic Petra's separate base/activated elemental bonuses are not relative increases; they remain compatible with the separate-contribution contract. The archived Berserker partial-coverage lesson also describes an additional flat CRIT percentage, not an amplification of its starting bonus. No other entity was edited or globally certified.
+
+#### Rule `stackable-bonus-cap`
+
+Owner-approved on 2026-10-14: a bonus that can accumulate uses optional `accumulations` on the affected modifier (or the native bonus upgrade), storing the source-validated maximum stack count as an integer greater than one. It is a static capability/cap, not the number currently active. Omit the field on non-stackable bonuses; do not emit 0/1 placeholders, infer an unspecified maximum, or attach the cap to unrelated bonuses in the same effect. General semantics apply across entity types without bulk edits.
+
+For uniform additive stacks, keep `values` (or native scalar scaling) as one stack's coefficient and let the consumer choose an active count from zero through the cap. Crimson Witch's additional Pyro modifier uses `values: [0.075]`, `accumulations: 3`; neither its base Pyro bonus nor its reaction bonuses receive this field. Do not replace `hits`, `refinementLevels` or `maxValues` with stack counts; those fields have different meanings. This metadata does not approve collapsing tiered/nonlinear or differently valued stacks into a uniform coefficient; such sources still require an explicit mapping. Trigger, expiration, refresh and actual stack state remain consumer usage.
+
+Retrospective live EN/PT review found no stackable bonus among the six previously worked artifact sets (Adventurer, Archaic Petra, Berserker, Blizzard Strayer, Bloodstained Chivalry, Brave Heart): omission is compatible. Historical Calamity Queller is an applicable future candidate, but its live EN/PT records contain only the stacking passive description and no structured `calculation.effects`; its missing stacking modifier/cap requires separately authorized entity work and fresh validation. No prior entity was modified, and no global stacking coverage claim is made; exact paths/outcomes are recorded in history.
+
 ### Stat References and Consumer Usage
 
 `conditional` contains exactly `{ origin, attribute }`. Supported origins are `character`, `weapon`, `artifact`; attributes are `hp`, `atk`, `def`, `elemental_mastery`, `energy_recharge`. Coefficients remain in `values`, not in `conditional.coefficient`, `conditional.value` or a retired `per` field.
@@ -82,7 +104,7 @@ This is recovery, not an increase to Max HP (`hp_percent`), healing effectivenes
 
 Retrospective live-record review: Aquila Favonia EN/PT has an unrepresented ATK-referenced healing clause, requiring an individually authorized follow-up; it has no conflicting emitted healing modifier. Baizhu and Noelle EN/PT native healing rows are display-only in the current baseline, so their historical scalar examples are not live coverage certificates and need separate future entity work. No existing healing modifier was rewritten. These findings do not certify global healing coverage; exact paths and outcomes are recorded in the work history.
 
-Activation, stacks, party state, timing, costs, consumption, cooldowns, chance, infusions and deciding whether a bonus applies belong to the consumer. Preserve source descriptions; excluding a timing row from multiplier coverage never authorizes deleting that row. Do not pre-multiply Raiden's coefficient by a fixed Energy cost, Furina's by a fixed Fanfare count, or party-scaled bonuses by a guessed party composition.
+Activation, actual active stacks, party state, timing, costs, consumption, cooldowns, chance, infusions and deciding whether a bonus applies belong to the consumer. A validated maximum stack count is static bonus metadata in `accumulations`, not persisted active state. Preserve source descriptions; excluding a timing row from multiplier coverage never authorizes deleting that row. Do not pre-multiply Raiden's coefficient by a fixed Energy cost, Furina's by a fixed Fanfare count, or party-scaled bonuses by a guessed party composition.
 
 ### Repeated Hits, Fixed Additions and Components
 
@@ -128,6 +150,18 @@ type Vision =
 
 `base_atk`/`base_def` are percentage changes to base attributes before stat composition, not ordinary ATK%/DEF%. Do not infer base-stat mechanics from legacy wording. Resistance changes, ignore/reduction of DEF, attack speed, reaction bonuses, scoped CRIT and flat DEF need an explicit supported contract before import. Healing coefficients can use approved stat-plus-fixed-addition talent rows; this does not approve every possible healing/result schema.
 
+Reaction bonuses covered by `reaction-scoped-damage-bonus` use this initial standardized enum (uppercase serialized identifiers are identical across locales):
+
+```ts
+enum Reaction {
+  OVERLOADED = 'OVERLOADED',
+  BURNING = 'BURNING',
+  BURGEON = 'BURGEON',
+  VAPORIZE = 'VAPORIZE',
+  MELT = 'MELT',
+}
+```
+
 ## Native Containers and Shapes
 
 | Source location                       | Structured destination when individually approved               |
@@ -145,7 +179,9 @@ type Modifier = {
   type: EffectType;
   values: number[];
   bonus?: true;
+  accumulations?: number;
   element?: Vision;
+  reaction?: Reaction[];
   target?:
     | 'normal_attack'
     | 'charged_attack'
@@ -174,6 +210,7 @@ type ScalarUpgrade = {
   damageType?: Vision;
   hits?: number;
   bonus?: true;
+  accumulations?: number;
   target?: Modifier['target'];
   power: Array<{
     level: number;

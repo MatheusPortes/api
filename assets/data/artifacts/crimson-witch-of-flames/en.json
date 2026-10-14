@@ -3,5 +3,46 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "Gain a 15% Pyro DMG Bonus.",
-  "4-piece_bonus": "Increases Overloaded and Burning DMG by 40%. Increases Vaporize and Melt DMG by 15%. Using an Elemental Skill increases 2-Piece Set effects by 50% for 10s. Max 3 stacks."
+  "4-piece_bonus": "Increases Overloaded, Burning, and Burgeon DMG by 40%. Increases Vaporize and Melt DMG by 15%. Using an Elemental Skill increases the 2-Piece Set Bonus by 50% of its starting value for 10s. Max 3 stacks.",
+  "effects": [
+    {
+      "label": "2-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Pyro DMG Bonus",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.15],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "4-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Overloaded, Burning, and Burgeon DMG Bonus",
+          "type": "dmg_percent",
+          "reaction": ["OVERLOADED", "BURNING", "BURGEON"],
+          "values": [0.4],
+          "bonus": true
+        },
+        {
+          "label": "Vaporize and Melt DMG Bonus",
+          "type": "dmg_percent",
+          "reaction": ["VAPORIZE", "MELT"],
+          "values": [0.15],
+          "bonus": true
+        },
+        {
+          "label": "Additional Pyro DMG Bonus per Stack After Using an Elemental Skill",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "accumulations": 3,
+          "values": [0.075],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }

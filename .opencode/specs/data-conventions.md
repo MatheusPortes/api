@@ -37,6 +37,8 @@
 - Use `.opencode/history/entity-work-history.md` for restart context and prior attempts; the old blocker report/archive is historical, not a current pending list. Record scope, patch, source URLs, actual examples, checks and remaining blockers after each stage.
 - This API serves static inputs only; runtime stat/damage calculation and consumer state remain outside it. Do not expose provider IDs or maintenance metadata in entity responses.
 - Individually reviewed artifact set modifiers use optional top-level `effects`, with localized effect/modifier labels and one coefficient in `values` for an unranked bonus; do not invent refinement ranks. `artifacts/adventurer` represents its 2-piece `flat_hp` bonus (`1000`, `bonus: true`) and 4-piece `healing` coefficient (`0.3`, `conditional` referencing `character.hp`, without `bonus`). Preserve both display descriptions. The semantic contract is rule `attribute-referenced-healing` in the calculation workflow.
+- Approved reaction-damage modifiers retain `type: "dmg_percent"` and add a nonempty `reaction` enum array, grouping the reactions that share one source multiplier. Canonical enum values, scope limits and fixed-source bonus normalization are defined only in the calculation workflow. `crimson-witch-of-flames` is the first individually reviewed example; do not add empty reaction arrays or reaction scope to ordinary damage bonuses.
+- Stackable bonuses use optional `accumulations` for a source-validated maximum count, not active consumer state; retain per-stack coefficients. Apply rule `stackable-bonus-cap` from the calculation workflow, omitting the field on non-stackable bonuses and preserving EN/PT mechanical parity.
 
 ## Translations
 

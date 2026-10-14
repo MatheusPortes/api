@@ -3,5 +3,46 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "Bônus de Dano Pyro +15%",
-  "4-piece_bonus": "Aumenta o Dano causado por Sobrecarga, Queimaduras e Germinação em 40%. Aumenta o Dano causado por Vaporização e Fusão em 15%. Usar Habilidades Elementais aumenta o efeito de Bônus de Conjunto de 2 Peças em 50% do seu valor inicial por 10s. Máximo de 3 acúmulos."
+  "4-piece_bonus": "Aumenta o Dano causado por Sobrecarga, Queimaduras e Germinação em 40%. Aumenta o Dano causado por Vaporização e Fusão em 15%. Usar Habilidades Elementais aumenta o efeito de Bônus de Conjunto de 2 Peças em 50% do seu valor inicial por 10s. Máximo de 3 acúmulos.",
+  "effects": [
+    {
+      "label": "Bônus de 2 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Dano Pyro",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.15],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Bônus de 4 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Dano de Sobrecarga, Queimaduras e Germinação",
+          "type": "dmg_percent",
+          "reaction": ["OVERLOADED", "BURNING", "BURGEON"],
+          "values": [0.4],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano de Vaporização e Fusão",
+          "type": "dmg_percent",
+          "reaction": ["VAPORIZE", "MELT"],
+          "values": [0.15],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano Pyro Adicional por Acúmulo Após Usar Habilidade Elemental",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "accumulations": 3,
+          "values": [0.075],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
