@@ -92,6 +92,14 @@ For uniform additive stacks, keep `values` (or native scalar scaling) as one sta
 
 Retrospective live EN/PT review found no stackable bonus among the six previously worked artifact sets (Adventurer, Archaic Petra, Berserker, Blizzard Strayer, Bloodstained Chivalry, Brave Heart): omission is compatible. Historical Calamity Queller is an applicable future candidate, but its live EN/PT records contain only the stacking passive description and no structured `calculation.effects`; its missing stacking modifier/cap requires separately authorized entity work and fresh validation. No prior entity was modified, and no global stacking coverage claim is made; exact paths/outcomes are recorded in history.
 
+#### Rule `enemy-elemental-resistance-reduction`
+
+Owner-approved on 2026-10-14: enemy elemental resistance reductions in `effects[].modifiers[]` use `type: "elemental_res_reduction"`, required `element` (one of the seven elemental Vision identifiers), and a positive ratio in `values` representing the amount subtracted from that enemy's resistance. Deepwood Memories uses `element: "DENDRO"`, `values: [0.3]`: 30 percentage points of resistance reduction, not a 30% relative multiplication of existing resistance, 30% damage bonus, DEF reduction or an increase to the holder's resistance. Keep localized labels explicit about enemy scope and source activation.
+
+Omit `bonus` on this enemy debuff; it is not a supplied character stat/damage bonus. Skill/Burst hits are activation triggers, not restrictions on which subsequent attack categories benefit, so do not emit attack `target` values. Do not invent enemy origins/attributes in `conditional`, precompute a resistance/damage multiplier, or add reaction/stack metadata without validating those mechanics separately. Trigger, affected enemies, 8s duration, off-field applicability and application state remain consumer usage in the preserved source description. This approves only enemy elemental resistance reduction; physical resistance, resistance increases and other DEF/RES mechanics remain outside this contract.
+
+Retrospective live EN/PT review: none of the seven previously worked artifact sets has an elemental resistance-reduction clause; their existing damage/stat/reaction modifiers are not applicable and remain unchanged. The historical Faruzan example is a future candidate: its live Burst description and `skillTalents[2].upgrades[3]` contain an Anemo RES decrease in display-only EN/PT rows, not a normalized conflicting modifier. It requires separately scoped character work and source validation/native-container mapping, not an automatic migration. No other entity was edited; exact paths and outcomes are recorded in history and global resistance coverage is not certified.
+
 ### Stat References and Consumer Usage
 
 `conditional` contains exactly `{ origin, attribute }`. Supported origins are `character`, `weapon`, `artifact`; attributes are `hp`, `atk`, `def`, `elemental_mastery`, `energy_recharge`. Coefficients remain in `values`, not in `conditional.coefficient`, `conditional.value` or a retired `per` field.
@@ -124,6 +132,7 @@ type EffectType =
   | 'base_atk'
   | 'base_def'
   | 'elemental_dmg_percent'
+  | 'elemental_res_reduction'
   | 'physical_dmg_percent'
   | 'dmg_percent'
   | 'def_percent'
@@ -148,7 +157,7 @@ type Vision =
   | 'PHYSICAL';
 ```
 
-`base_atk`/`base_def` are percentage changes to base attributes before stat composition, not ordinary ATK%/DEF%. Do not infer base-stat mechanics from legacy wording. Resistance changes, ignore/reduction of DEF, attack speed, reaction bonuses, scoped CRIT and flat DEF need an explicit supported contract before import. Healing coefficients can use approved stat-plus-fixed-addition talent rows; this does not approve every possible healing/result schema.
+`base_atk`/`base_def` are percentage changes to base attributes before stat composition, not ordinary ATK%/DEF%. Do not infer base-stat mechanics from legacy wording. Resistance changes other than the approved enemy elemental reduction, ignore/reduction of DEF, attack speed, unsupported reaction/scoped-CRIT bonuses and flat DEF need an explicit supported contract before import. Healing coefficients can use approved stat-plus-fixed-addition talent rows; this does not approve every possible healing/result schema.
 
 Reaction bonuses covered by `reaction-scoped-damage-bonus` use this initial standardized enum (uppercase serialized identifiers are identical across locales):
 

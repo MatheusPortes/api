@@ -3,5 +3,30 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "Bônus de Dano Dendro +15%",
-  "4-piece_bonus": "Depois que as Habilidades Elementais ou Supremos acertam os oponentes, a RES Dendro dos alvos serão reduzidas em 30% por 8s. Esse efeito pode ser desencadeado mesmo se o personagem equipando este conjunto não estiver em campo."
+  "4-piece_bonus": "Depois que as Habilidades Elementais ou Supremos acertam os oponentes, a RES Dendro dos alvos serão reduzidas em 30% por 8s. Esse efeito pode ser desencadeado mesmo se o personagem equipando este conjunto não estiver em campo.",
+  "effects": [
+    {
+      "label": "Bônus de 2 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Dano Dendro",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.15],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Bônus de 4 Peças",
+      "modifiers": [
+        {
+          "label": "Redução de RES Dendro dos Inimigos Após Acerto de Habilidade Elemental ou Supremo",
+          "type": "elemental_res_reduction",
+          "element": "DENDRO",
+          "values": [0.3]
+        }
+      ]
+    }
+  ]
 }
