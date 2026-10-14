@@ -3,5 +3,30 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "ATQ +18%.",
-  "4-piece_bonus": "Se o portador deste conjunto de artefato usar uma Espada, Espadão ou Lança, aumenta o Dano de seus Ataques Normais em 35%."
+  "4-piece_bonus": "Se o portador deste conjunto de artefato usar uma Espada, Espadão ou Lança, aumenta o Dano de seus Ataques Normais em 35%.",
+  "effects": [
+    {
+      "label": "Bônus de 2 Peças",
+      "modifiers": [
+        {
+          "label": "Aumento de ATQ",
+          "type": "atk_percent",
+          "values": [0.18],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Bônus de 4 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Dano de Ataque Normal para Portadores de Espada, Espadão ou Lança",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.35],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
