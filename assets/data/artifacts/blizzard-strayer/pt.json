@@ -3,5 +3,36 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "Bônus de Dano Cryo +15%",
-  "4-piece_bonus": "Quando um personagem ataca um inimigo afetado por Cryo, a sua Taxa CRIT aumenta em 20%. Adicionalmente, se o inimigo estiver Congelado, a Taxa CRIT aumenta em mais 20%."
+  "4-piece_bonus": "Quando um personagem ataca um inimigo afetado por Cryo, a sua Taxa CRIT aumenta em 20%. Adicionalmente, se o inimigo estiver Congelado, a Taxa CRIT aumenta em mais 20%.",
+  "effects": [
+    {
+      "label": "Bônus de 2 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Dano Cryo",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.15],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Bônus de 4 Peças",
+      "modifiers": [
+        {
+          "label": "Taxa Crítica contra Inimigos Afetados por Cryo",
+          "type": "crit_rate",
+          "values": [0.2],
+          "bonus": true
+        },
+        {
+          "label": "Taxa Crítica Adicional contra Inimigos Congelados",
+          "type": "crit_rate",
+          "values": [0.2],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }

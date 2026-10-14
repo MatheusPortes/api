@@ -50,7 +50,7 @@ A text rule is not settled merely because it works for the first example. Record
 - A supplied stat/result modifier belongs to `effects[].modifiers[]`; an independent damage proc belongs to `skills[]`.
 - Attached attack additions follow the approved targeted-modifier convention, not the independent-proc convention. Preserve their stat reference with `conditional`.
 - `bonus: true` marks a stat/result bonus on a modifier or talent upgrade. Omit it on ordinary hits and independent procs; do not emit `bonus: false` placeholders.
-- `target` is optional only for genuinely generic damage bonuses. Supported targets are `normal_attack`, `charged_attack`, `plunging_attack`, `elemental_skill`, and `elemental_burst`. Unsupported reaction/scoped-CRIT results must not be disguised as generic damage or global CRIT.
+- `target` is optional only for genuinely generic damage bonuses. Supported targets are `normal_attack`, `charged_attack`, `plunging_attack`, `elemental_skill`, and `elemental_burst`. Unsupported reaction/scoped-CRIT results must not be disguised as generic damage or global CRIT. Target-state CRIT follows the explicitly approved rule below; other unsupported CRIT scopes remain blocked.
 - `elemental_dmg_percent` requires `element`. Expand an all-element bonus into seven modifiers: GEO, ANEMO, CRYO, DENDRO, ELECTRO, HYDRO, PYRO; exclude physical damage.
 - `maxValues` is an optional same-rank numeric cap. Do not pre-apply consumer inputs to stored coefficients.
 
@@ -61,6 +61,14 @@ A bonus for the element selected by a reaction is not an all-element bonus. Repr
 Archaic Petra's ordinary Crystallize branch has four eligible elements (CRYO, ELECTRO, HYDRO, PYRO), each with `values: [0.35]` and `bonus: true`; at most one 4-piece branch is active. Its separate 2-piece Geo bonus remains `0.15`. Do not expand the ordinary branch to Geo/Anemo/Dendro/physical or treat the four variants as four independent source contributions. This rule does not resolve the newer Lunar-Crystallize clause: its affected-element mapping and the differing source descriptions remain pending, so Archaic Petra is partial, not globally complete.
 
 Retrospective review found no applicable earlier worked selector: Adventurer's flat HP and healing effects are not elemental selectors. Inspected live Calamity Queller's all-element passive and Faruzan's Anemo-only talent row; both are counterexamples, not candidates for this mutually exclusive expansion. The all-element seven-modifier rule remains unchanged. Exact paths, sources and limits are recorded in history; no other entity was edited.
+
+#### Rule `target-state-crit-rate`
+
+Owner-approved on 2026-10-14: CRIT Rate bonuses activated by the attacked enemy's state may use separate `crit_rate` modifiers, `bonus: true`, and localized labels explicitly naming each condition. Preserve the original description; the consumer evaluates target state for the eligible hit instead of adding these bonuses unconditionally to the character's global CRIT Rate. Enemy state is not an attribute reference, so do not encode it in `conditional` or invent `target` values. No new runtime or machine-readable predicate schema is introduced.
+
+Blizzard Strayer's 4-piece bonus has two contributions: `values: [0.2]` against Cryo-affected enemies, and a separate additional `values: [0.2]` against Frozen enemies. Never deduplicate the equal coefficients or pre-sum them into a single `0.4`. Example with 30% base CRIT Rate: 30% against an unaffected enemy, 50% with only the Cryo condition, 70% when both conditions apply. This does not claim every Cryo/Frozen transition meets both conditions; source-specific timing and actual target eligibility remain consumer usage. Do not use the `element: "CRYO"` damage-bonus metadata to imply that only Cryo damage can benefit from these CRIT modifiers.
+
+Limits and retrospective review: this approves target-state activation only, not an arbitrary attack-category CRIT scope or a reaction-only CRIT formula. Berserker's live EN/PT 4-piece modifier is compatible with the existing activation contract but is a counterexample to target-state scope: its condition is the holder's HP, not the attacked enemy. No prior worked target-state CRIT modifier was recorded; no other entity was edited or globally certified. Paths and source evidence are recorded in history.
 
 ### Stat References and Consumer Usage
 

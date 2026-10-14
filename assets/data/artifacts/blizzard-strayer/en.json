@@ -3,5 +3,36 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "Cryo DMG Bonus +15%",
-  "4-piece_bonus": "When a character attacks an enemy affected by Cryo, their CRIT Rate is increased by 20%. If the enemy is Frozen, CRIT Rate is increased by an additional 20%."
+  "4-piece_bonus": "When a character attacks an enemy affected by Cryo, their CRIT Rate is increased by 20%. If the enemy is Frozen, CRIT Rate is increased by an additional 20%.",
+  "effects": [
+    {
+      "label": "2-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Cryo DMG Bonus",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.15],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "4-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "CRIT Rate Against Enemies Affected by Cryo",
+          "type": "crit_rate",
+          "values": [0.2],
+          "bonus": true
+        },
+        {
+          "label": "Additional CRIT Rate Against Frozen Enemies",
+          "type": "crit_rate",
+          "values": [0.2],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
