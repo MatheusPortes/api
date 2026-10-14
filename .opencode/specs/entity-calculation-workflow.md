@@ -16,7 +16,7 @@ Read `application-state.md`, `data-conventions.md`, `entity-research.md` and thi
 4. **Map and decide:** map names, categories, component identity, talent levels and refinement ranks explicitly. Reuse approved rules; when a text interpretation establishes or changes a general rule, perform the retrospective compatibility review below before calling the rule settled. Stop unsupported layouts or factual conflicts instead of inventing types or using coincidental coefficients.
 5. **Apply:** edit only the selected entity's English and Portuguese records. Preserve existing display text, profile fields, progression outside the requested scope and every other locale. Missing display levels may be filled from validated localized source templates; do not relabel or delete old rows to make an audit pass.
 6. **Validate:** check JSON, all source levels/ranks, raw unrounded coefficients, supported types, required element metadata, hit counts, additions and bilingual mechanical parity. Inspect the diff for unrelated changes. Run focused formatting, `pnpm run build` and `pnpm run lint` with Node.js 20/pnpm; disclose failures or omitted checks. Do not format unrelated files to conceal baseline failures.
-7. **Record and stop:** append the entity's scope, changes, examples, sources, decisions, checks and remaining blockers to the history. Mark complete only for explicitly reviewed coverage; then wait for the next entity. Do not run a bulk migration or select the next entity automatically.
+7. **Record, commit and stop:** append the entity's scope, changes, examples, sources, decisions, checks and remaining blockers to the history. Mark complete only for explicitly reviewed coverage. Before advancing to another entity, commit the current entity's reviewed changes with `<id> - <what was done>` (exact local ID, English description), following the AI-artifact branch rules in `git-workflow.md`; then wait for the next entity. A commit does not certify unresolved coverage or authorize a push. Do not run a bulk migration or select the next entity automatically.
 
 ### Completion States
 
@@ -58,6 +58,14 @@ A text rule is not settled merely because it works for the first example. Record
 
 `conditional` contains exactly `{ origin, attribute }`. Supported origins are `character`, `weapon`, `artifact`; attributes are `hp`, `atk`, `def`, `elemental_mastery`, `energy_recharge`. Coefficients remain in `values`, not in `conditional.coefficient`, `conditional.value` or a retired `per` field.
 
+#### Rule `attribute-referenced-healing`
+
+Owner-approved on 2026-10-14: stat-referenced HP recovery in an effect uses `type: "healing"`, its source attribute in `conditional`, and the unrounded ratio in `values`. Example: Adventurer's 4-piece "Opening a chest regenerates 30% Max HP over 5s" maps to `{ "label": "HP Recovery from Max HP", "type": "healing", "conditional": { "origin": "character", "attribute": "hp" }, "values": [0.3] }` in top-level `effects[].modifiers[]`. The ratio is the total described recovery, not a guessed per-tick coefficient; trigger and scheduling remain consumer usage.
+
+This is recovery, not an increase to Max HP (`hp_percent`), healing effectiveness (`healing_bonus`) or damage. Omit `bonus`, `target` and damage-element metadata on this recovery coefficient. Do not add a new origin, infer tick counts, pre-apply HP, or extend this scalar rule to fixed or grouped recovery without approving their layouts. Native talent healing rows retain their attribute-scaling contracts; this rule does not migrate talent `power` to modifier `values`.
+
+Retrospective live-record review: Aquila Favonia EN/PT has an unrepresented ATK-referenced healing clause, requiring an individually authorized follow-up; it has no conflicting emitted healing modifier. Baizhu and Noelle EN/PT native healing rows are display-only in the current baseline, so their historical scalar examples are not live coverage certificates and need separate future entity work. No existing healing modifier was rewritten. These findings do not certify global healing coverage; exact paths and outcomes are recorded in the work history.
+
 Activation, stacks, party state, timing, costs, consumption, cooldowns, chance, infusions and deciding whether a bonus applies belong to the consumer. Preserve source descriptions; excluding a timing row from multiplier coverage never authorizes deleting that row. Do not pre-multiply Raiden's coefficient by a fixed Energy cost, Furina's by a fixed Fanfare count, or party-scaled bonuses by a guessed party composition.
 
 ### Repeated Hits, Fixed Additions and Components
@@ -85,6 +93,7 @@ type EffectType =
   | 'crit_dmg'
   | 'energy_recharge'
   | 'healing_bonus'
+  | 'healing'
   | 'elemental_mastery'
   | 'flat_hp'
   | 'flat_atk';

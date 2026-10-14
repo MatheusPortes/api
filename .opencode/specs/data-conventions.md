@@ -31,11 +31,12 @@
 
 ## Calculation Work
 
-- Entity records match the last committed baseline. Previously committed progression snapshots, shared curves and earlier effect examples remain available; uncommitted bulk calculation additions are discarded. Neither field presence nor presentation tables certify full calculation coverage.
+- Entity records restarted from the last committed baseline; subsequent individual changes are recorded in the work history. Previously committed progression snapshots, shared curves and earlier effect examples remain available; uncommitted bulk calculation additions are discarded. Neither field presence nor presentation tables certify full calculation coverage.
 - `.opencode/specs/entity-calculation-workflow.md` is the single authoritative calculation plan and general rulebook: schemas, coefficients, modifiers/procs, `hits`, `add`, `bonus`, `target`, references, supported vocabulary, deferred grouped contributions and source-backed examples are defined there rather than duplicated here.
 - Select one entity and work in explicit research/mapping/application/validation/history stages. Do not run a bulk migration or infer completion from field presence. Keep approved mechanical fields aligned between English and Portuguese, with localized labels and preserved source descriptions.
 - Use `.opencode/history/entity-work-history.md` for restart context and prior attempts; the old blocker report/archive is historical, not a current pending list. Record scope, patch, source URLs, actual examples, checks and remaining blockers after each stage.
 - This API serves static inputs only; runtime stat/damage calculation and consumer state remain outside it. Do not expose provider IDs or maintenance metadata in entity responses.
+- Individually reviewed artifact set modifiers use optional top-level `effects`, with localized effect/modifier labels and one coefficient in `values` for an unranked bonus; do not invent refinement ranks. `artifacts/adventurer` represents its 2-piece `flat_hp` bonus (`1000`, `bonus: true`) and 4-piece `healing` coefficient (`0.3`, `conditional` referencing `character.hp`, without `bonus`). Preserve both display descriptions. The semantic contract is rule `attribute-referenced-healing` in the calculation workflow.
 
 ## Translations
 

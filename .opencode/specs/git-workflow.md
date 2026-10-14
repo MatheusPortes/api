@@ -8,6 +8,8 @@
 
 ## Application Delivery
 
+- Before advancing to another entity, commit the reviewed changes for the current entity with the message format `<id> - <what was done>`. Use the exact local entity ID and an English description. Keep the commit scoped to that entity and its directly affected specs/history; AI artifacts may be included only on `agent`. Disclose unresolved checks and partial coverage before committing; a commit is not a completion certificate. This does not authorize a push or automatic selection of the next entity.
+
 - Use `/push <target-branch>` to perform an application delivery push. The command applies the checks and recovery steps below.
 - Start each application delivery branch from an updated `origin/main`.
 - If the requested branch exists locally, fast-forward it from the updated `main`; otherwise, create it from `main`. Stop if it exists on `origin` or either branch cannot fast-forward, then transfer only non-AI changes.

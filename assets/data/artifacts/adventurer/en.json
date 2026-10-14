@@ -3,5 +3,29 @@
   "max_rarity": 3,
   "min_rarity": 1,
   "2-piece_bonus": "Max HP increased by 1,000.",
-  "4-piece_bonus": "Opening chest regenerates 30% Max HP over 5s."
+  "4-piece_bonus": "Opening chest regenerates 30% Max HP over 5s.",
+  "effects": [
+    {
+      "label": "2-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Max HP Increase",
+          "type": "flat_hp",
+          "values": [1000],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "4-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "HP Recovery from Max HP",
+          "type": "healing",
+          "conditional": { "origin": "character", "attribute": "hp" },
+          "values": [0.3]
+        }
+      ]
+    }
+  ]
 }
