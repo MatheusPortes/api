@@ -3,5 +3,38 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "Hydro DMG Bonus +15%",
-  "4-piece_bonus": "After using Elemental Skill, increases Normal Attack and Charged Attack DMG by 30% for 15s."
+  "4-piece_bonus": "After using Elemental Skill, increases Normal Attack and Charged Attack DMG by 30% for 15s.",
+  "effects": [
+    {
+      "label": "2-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Hydro DMG Bonus",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.15],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "4-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Normal Attack DMG Bonus After Using an Elemental Skill",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.3],
+          "bonus": true
+        },
+        {
+          "label": "Charged Attack DMG Bonus After Using an Elemental Skill",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.3],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
