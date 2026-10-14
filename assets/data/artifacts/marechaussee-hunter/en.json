@@ -3,5 +3,38 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "Normal and Charged Attack DMG +15%.",
-  "4-piece_bonus": "When current HP increases or decreases, CRIT Rate will be increased by 12% for 5s. Max 3 stacks."
+  "4-piece_bonus": "When current HP increases or decreases, CRIT Rate will be increased by 12% for 5s. Max 3 stacks.",
+  "effects": [
+    {
+      "label": "2-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Normal Attack DMG Bonus",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.15],
+          "bonus": true
+        },
+        {
+          "label": "Charged Attack DMG Bonus",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.15],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "4-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "CRIT Rate Bonus per Stack After Current HP Increases or Decreases",
+          "type": "crit_rate",
+          "values": [0.12],
+          "accumulations": 3,
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
