@@ -3,5 +3,29 @@
   "max_rarity": 4,
   "min_rarity": 3,
   "2-piece_bonus": "ATQ +18%.",
-  "4-piece_bonus": "Aumenta o Dano em 30% contra os inimigos com mais de 50% de Vida."
+  "4-piece_bonus": "Aumenta o Dano em 30% contra os inimigos com mais de 50% de Vida.",
+  "effects": [
+    {
+      "label": "Bônus de 2 Peças",
+      "modifiers": [
+        {
+          "label": "Aumento de ATQ",
+          "type": "atk_percent",
+          "values": [0.18],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Bônus de 4 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Dano contra Inimigos com Mais de 50% de Vida",
+          "type": "dmg_percent",
+          "values": [0.3],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }

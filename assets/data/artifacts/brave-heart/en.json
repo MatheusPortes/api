@@ -3,5 +3,29 @@
   "max_rarity": 4,
   "min_rarity": 3,
   "2-piece_bonus": "ATK +18%",
-  "4-piece_bonus": "Increases DMG by 30% against enemies with more than 50% HP."
+  "4-piece_bonus": "Increases DMG by 30% against enemies with more than 50% HP.",
+  "effects": [
+    {
+      "label": "2-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "ATK Increase",
+          "type": "atk_percent",
+          "values": [0.18],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "4-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "DMG Bonus Against Enemies Above 50% HP",
+          "type": "dmg_percent",
+          "values": [0.3],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
