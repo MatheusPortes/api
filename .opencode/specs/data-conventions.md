@@ -51,6 +51,7 @@
 - Language coverage and casing are inconsistent across types. Use the exact local filename convention of the comparable entity.
 - For individual character talent work, a complete `pt.json` is the structural reference for `upgrades` and `power`. Validate numerical mechanics against an approved source before aligning English/Portuguese fields; preserve localized names/descriptions. An incomplete Portuguese record is not a license to guess missing mechanics or change other locales.
 - A translation is a complete served response, not a field-level overlay. Retain every field required by the intended response shape.
+- Standing owner authorization on 2026-10-14 permits EN/PT display-text alignment with corresponding validated source clauses/templates without per-correction approval. Record each correction, preserve other locales/fields and follow source-conflict rules. Commit/advance authorization follows the separately clarified bounded-round Git workflow; text authorization alone does not approve new mechanical schemas.
 - Validate JSON before completing work. Existing translation files can be partial or invalid; do not copy their omissions blindly.
 
 ## Images and Generation

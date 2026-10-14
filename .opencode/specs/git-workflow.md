@@ -8,7 +8,7 @@
 
 ## Application Delivery
 
-- Before advancing to another entity, present the current entity's changes, validation results and remaining blockers, then wait for the owner's explicit approval to commit. Only after that approval, commit with the message format `<id> - <what was done>`. Use the exact local entity ID and an English description. A request to work on the next entity, approval of a schema/mechanic or the standing requirement to commit each entity is not itself commit approval. Keep the commit scoped to that entity and its directly affected specs/history; AI artifacts may be included only on `agent`. A commit is not a completion certificate and does not authorize a push or automatic selection of the next entity.
+- On 2026-10-14 the owner authorized source-validated alphabetical artifact rounds of at most five entities, removed separate approval for each commit/advance, and explicitly restored commit-before-advance. Research/map/apply/validate/record/commit one entity before selecting the next. Use `<id> - <what was done>` (exact local ID, English description), preserving per-entity scope/directly affected specs/history and approved governance changes. Stop earlier for source conflicts or unapproved schema/semantic decisions; standing commit authorization does not approve an invented schema or unresolved mapping. Report round outcomes/known check failures; no push, bulk migration, automatic additional round or edits beyond scope are authorized. AI artifacts may be included only on `agent`; a commit does not certify unresolved coverage.
 
 - Use `/push <target-branch>` to perform an application delivery push. The command applies the checks and recovery steps below.
 - Start each application delivery branch from an updated `origin/main`.
