@@ -3,5 +3,29 @@
   "max_rarity": 4,
   "min_rarity": 3,
   "2-piece_bonus": "Proficiência Elemental +80",
-  "4-piece_bonus": "Após uma Reação Elemental aumenta a Proficiência Elemental de todos os membros da Equipe em 120 por 8s."
+  "4-piece_bonus": "Após uma Reação Elemental aumenta a Proficiência Elemental de todos os membros da Equipe em 120 por 8s.",
+  "effects": [
+    {
+      "label": "Bônus de 2 Peças",
+      "modifiers": [
+        {
+          "label": "Aumento de Proficiência Elemental",
+          "type": "elemental_mastery",
+          "values": [80],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Bônus de 4 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Proficiência Elemental para Todos os Membros da Equipe Após Desencadear uma Reação Elemental",
+          "type": "elemental_mastery",
+          "values": [120],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
