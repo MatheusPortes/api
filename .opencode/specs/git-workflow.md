@@ -8,7 +8,7 @@
 
 ## Application Delivery
 
-- Before advancing to another entity, commit the reviewed changes for the current entity with the message format `<id> - <what was done>`. Use the exact local entity ID and an English description. Keep the commit scoped to that entity and its directly affected specs/history; AI artifacts may be included only on `agent`. Disclose unresolved checks and partial coverage before committing; a commit is not a completion certificate. This does not authorize a push or automatic selection of the next entity.
+- Before advancing to another entity, present the current entity's changes, validation results and remaining blockers, then wait for the owner's explicit approval to commit. Only after that approval, commit with the message format `<id> - <what was done>`. Use the exact local entity ID and an English description. A request to work on the next entity, approval of a schema/mechanic or the standing requirement to commit each entity is not itself commit approval. Keep the commit scoped to that entity and its directly affected specs/history; AI artifacts may be included only on `agent`. A commit is not a completion certificate and does not authorize a push or automatic selection of the next entity.
 
 - Use `/push <target-branch>` to perform an application delivery push. The command applies the checks and recovery steps below.
 - Start each application delivery branch from an updated `origin/main`.

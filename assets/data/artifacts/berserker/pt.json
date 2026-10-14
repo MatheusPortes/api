@@ -3,5 +3,29 @@
   "max_rarity": 4,
   "min_rarity": 3,
   "2-piece_bonus": "Taxa Crítica +12%",
-  "4-piece_bonus": "Quando a Vida estiver abaixo de 70%, a Taxa Crítica aumenta 24%."
+  "4-piece_bonus": "Quando a Vida estiver abaixo de 70%, a Taxa Crítica aumenta 24%.",
+  "effects": [
+    {
+      "label": "Bônus de 2 Peças",
+      "modifiers": [
+        {
+          "label": "Aumento de Taxa Crítica",
+          "type": "crit_rate",
+          "values": [0.12],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Bônus de 4 Peças",
+      "modifiers": [
+        {
+          "label": "Taxa Crítica Adicional com Vida Abaixo de 70%",
+          "type": "crit_rate",
+          "values": [0.24],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
