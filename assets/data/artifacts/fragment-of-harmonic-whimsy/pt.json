@@ -3,5 +3,30 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "ATQ +18%",
-  "4-piece_bonus": "Quando o valor de um Vínculo de Vida aumenta ou diminui, o Dano causado pelo personagem aumenta em 18% por 6s. Máximo de 3 acúmulos."
+  "4-piece_bonus": "Quando o valor de um Vínculo de Vida aumenta ou diminui, o Dano causado pelo personagem aumenta em 18% por 6s. Máximo de 3 acúmulos.",
+  "effects": [
+    {
+      "label": "Bônus de 2 Peças",
+      "modifiers": [
+        {
+          "label": "Aumento de ATQ",
+          "type": "atk_percent",
+          "values": [0.18],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Bônus de 4 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Dano por Acúmulo Após Aumento ou Diminuição do Vínculo de Vida",
+          "type": "dmg_percent",
+          "values": [0.18],
+          "accumulations": 3,
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }

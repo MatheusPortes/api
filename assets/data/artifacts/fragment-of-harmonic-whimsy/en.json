@@ -3,5 +3,30 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "ATK +18%",
-  "4-piece_bonus": "When the value of a Bond of Life increases or decreases, this character deals 18% increased DMG for 6s. Max 3 stacks."
+  "4-piece_bonus": "When the value of a Bond of Life increases or decreases, this character deals 18% increased DMG for 6s. Max 3 stacks.",
+  "effects": [
+    {
+      "label": "2-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "ATK Increase",
+          "type": "atk_percent",
+          "values": [0.18],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "4-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "DMG Bonus per Stack After Bond of Life Increases or Decreases",
+          "type": "dmg_percent",
+          "values": [0.18],
+          "accumulations": 3,
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
