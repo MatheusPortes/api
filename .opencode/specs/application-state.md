@@ -13,10 +13,14 @@ This repository is a static-data API for Genshin Impact entities, including char
 
 ## Data Model
 
+- The owner retired the uncommitted bulk calculation migration and requested an individual-entity restart. On 2026-10-14 all pending entity changes, including the prior removal of committed calculation fields, were restored to Git HEAD `0b2f887d6d2d2953d9a6896002c06044454434ff`. `assets/data` has no tracked changes from that baseline. Future maintenance is English/Portuguese only.
+- Previously committed character/weapon `calculation` data, shared `assets/data/calculation/curves/en.json` (served at `/calculation/curves`), and earlier Aquila Favonia effect/proc examples remain present. The uncommitted bulk talent/effect extensions were not restored. Existing fields do not certify complete coverage under the new workflow; inspect the selected record before reusing any historical example.
+- `.opencode/specs/entity-calculation-workflow.md` is the single active calculation plan/rulebook, including general rules, examples, deferred schemas and the staged per-entity workflow. `.opencode/history/entity-work-history.md` retains reusable examples/references and future individual work entries; the discarded migration's inventory/counts are no longer retained there. The preserved backup/frozen report is optional historical evidence, not a current completion list.
+- The three experimental Python bulk migration/audit scripts were retired. Do not invoke archived bulk commands or regenerate the old blocker report. No next entity is selected automatically.
+
 - Entity data is stored at `assets/data/<type>/<lowercase-hyphenated-id>/en.json`.
 - Translation files use language-code names such as `pt.json`. The API serves the requested file as a complete record; it does not merge it with `en.json` or fall back to English.
-- Calculation data is static only: this service does not resolve progression, compose stats, or calculate damage. Character and weapon mechanical data is stored in the English entity record after validation.
-- Shared growth curves are stored once at `assets/data/calculation/curves/en.json` and are served at `/calculation/curves`. The document declares the patch that its curves support.
+- This service exposes static records; it does not resolve progression, compose stats or calculate damage. Future calculation inputs must be added and validated one selected entity at a time under the consolidated workflow.
 - Images are stored at `assets/images/<type>/<id>/<image-name>` without filename extensions.
 - Character `icon` files are generated from `icon-big` by `pnpm run gen` and are ignored by Git.
 - Read `data-conventions.md` before changing entity data or images, and `entity-research.md` before using external factual information.

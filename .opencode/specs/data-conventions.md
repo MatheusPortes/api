@@ -2,20 +2,21 @@
 
 ## Lookup Rules
 
+- Active individual-entity maintenance targets `en.json` and `pt.json` only. Preserve every other locale. On 2026-10-14 entity records were restored exactly to Git HEAD, including previously committed calculation fields in all locales. The uncommitted bulk migration remains discarded. The runtime continues serving existing locales.
+
 - API paths resolve directly from the directory tree under `assets/data/`; nested directories are part of the entity type path.
 - Data lookup lowercases entity IDs, then reads the requested language file exactly. It adds or overwrites the top-level `id` with the directory ID at response time.
 - Do not assume an image exists for every data record. Image coverage is incomplete for several types.
 
 ## Storage Layouts
 
-| Data area         | Layout                                                   | Notes                                                                                   |
-| ----------------- | -------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| Standard entities | `<type>/<id>/en.json`                                    | Artifacts, characters, domains, elements, legacy enemies, nations, and weapons.         |
-| Bosses            | `boss/weekly-boss/<id>/en.json`                          | `weekly-boss` is part of the route and image path.                                      |
-| Living beings     | `living-being/{enemies,groups,families,types}/...`       | Individual enemies and classification records use different schemas.                    |
-| Materials         | Root category catalogs and `materials/drop/<id>/en.json` | Only `drop` records are individually addressable.                                       |
-| Consumables       | `consumables/{food,potions}/en.json`                     | Each file is a catalog keyed by item ID, not per-item directories.                      |
-| Growth curves     | `calculation/curves/en.json`                             | One shared dataset with a top-level `patch`; do not duplicate curve tables in entities. |
+| Data area         | Layout                                                   | Notes                                                                           |
+| ----------------- | -------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| Standard entities | `<type>/<id>/en.json`                                    | Artifacts, characters, domains, elements, legacy enemies, nations, and weapons. |
+| Bosses            | `boss/weekly-boss/<id>/en.json`                          | `weekly-boss` is part of the route and image path.                              |
+| Living beings     | `living-being/{enemies,groups,families,types}/...`       | Individual enemies and classification records use different schemas.            |
+| Materials         | Root category catalogs and `materials/drop/<id>/en.json` | Only `drop` records are individually addressable.                               |
+| Consumables       | `consumables/{food,potions}/en.json`                     | Each file is a catalog keyed by item ID, not per-item directories.              |
 
 ## Record Shapes
 
@@ -28,21 +29,18 @@
 | Legacy enemies       | Region, type, family, elements, and drops                                                                                      | This schema is incompatible with `living-being/enemies`.                           |
 | Living-being enemies | `id`, `name`, optional resistance, element, damage type, category, faction, and drop                                           | Groups, families, and types are separate classification records.                   |
 
-## Calculation Data
+## Calculation Work
 
-- This API exposes calculation inputs only; it does not calculate character stats or damage.
-- Add validated character and weapon mechanical data under a top-level `calculation` field in `en.json` first. After the English contract is approved, copy its exact mechanical fields to every existing localized record for that entity; localize human-readable labels alongside the served locale.
-- Entity calculation data contains only values unique to that entity, such as initial properties, curve identifiers, ascension bonuses, talent multipliers, and structured effects.
-- Structured passive modifiers are stored in `calculation.effects`. An effect can map its values to refinement levels with `refinementLevels` and contains `modifiers`.
-- Weapon damage procs are stored separately in `calculation.skills`. A weapon skill has optional `refinementLevels`, a `damageType` using the uppercase `Vision` enum, and `scalings`. Each scaling identifies its normalized status `type` and decimal-ratio `values` (`2` for 200% of ATK).
-- Each effect modifier has a `label`, a normalized `type`, and decimal-ratio `values` (`0.2` for 20%). Use a name supplied by the effect text when available; otherwise create a concise, meaningful label in the record's locale. `elemental_dmg_percent` requires `element` using the uppercase `Vision` value.
-- The supported normalized effect types are `hp_percent`, `atk_percent`, `elemental_dmg_percent`, `physical_dmg_percent`, `def_percent`, `crit_rate`, `crit_dmg`, `energy_recharge`, `healing_bonus`, `elemental_mastery`, `flat_hp`, and `flat_atk`. Keep the source text even when a number does not yet have a supported type.
-- Shared curve tables belong only in `calculation/curves/en.json`. Its top-level `patch` identifies the game patch for every included table.
-- Do not expose upstream provider IDs in entity responses. They may be used in import and validation tooling only.
+- Entity records match the last committed baseline. Previously committed progression snapshots, shared curves and earlier effect examples remain available; uncommitted bulk calculation additions are discarded. Neither field presence nor presentation tables certify full calculation coverage.
+- `.opencode/specs/entity-calculation-workflow.md` is the single authoritative calculation plan and general rulebook: schemas, coefficients, modifiers/procs, `hits`, `add`, `bonus`, `target`, references, supported vocabulary, deferred grouped contributions and source-backed examples are defined there rather than duplicated here.
+- Select one entity and work in explicit research/mapping/application/validation/history stages. Do not run a bulk migration or infer completion from field presence. Keep approved mechanical fields aligned between English and Portuguese, with localized labels and preserved source descriptions.
+- Use `.opencode/history/entity-work-history.md` for restart context and prior attempts; the old blocker report/archive is historical, not a current pending list. Record scope, patch, source URLs, actual examples, checks and remaining blockers after each stage.
+- This API serves static inputs only; runtime stat/damage calculation and consumer state remain outside it. Do not expose provider IDs or maintenance metadata in entity responses.
 
 ## Translations
 
 - Language coverage and casing are inconsistent across types. Use the exact local filename convention of the comparable entity.
+- For individual character talent work, a complete `pt.json` is the structural reference for `upgrades` and `power`. Validate numerical mechanics against an approved source before aligning English/Portuguese fields; preserve localized names/descriptions. An incomplete Portuguese record is not a license to guess missing mechanics or change other locales.
 - A translation is a complete served response, not a field-level overlay. Retain every field required by the intended response shape.
 - Validate JSON before completing work. Existing translation files can be partial or invalid; do not copy their omissions blindly.
 

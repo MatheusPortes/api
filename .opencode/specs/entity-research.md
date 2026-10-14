@@ -4,22 +4,30 @@
 
 Apply this policy before using external factual information to create, correct, or edit an entity, translation, image label, relationship, or entity calculation data.
 
-## Required Validation
+## Validation Sources
 
-1. Research the exact entity in all three required community sources:
+1. Prefer the three primary community sources for the exact entity:
    - Game8: `https://game8.co/games/Genshin-Impact`
    - HoYoWiki: `https://wiki.hoyolab.com/`
    - Genshin Impact Wiki: `https://genshin-impact.fandom.com/`
-2. Use entity-specific pages, not source homepages, and compare each factual field being changed.
-3. Treat a fact as validated only when all three sources agree or an official Genshin source resolves a documented disagreement.
-4. Do not edit factual data when any required source is unavailable, lacks the entity, or has an unresolved conflict. Report the blocker instead.
+2. Approved supplementary sources for numerical mechanics, discovery, and cross-validation are:
+   - KQM Theorycrafting Library: `https://library.keqingmains.com/`
+   - Yatta: `https://gi.yatta.moe/`
+   - Honey Hunter: `https://gensh.honeyhunterworld.com/`
+   - Nanoka: `https://gi.nanoka.cc/`
+   - GenshinDB: `https://genshindb.com/`
+   - Akademiya: `https://genshin.akademiya.app/`
+   - Genshin-Builds: `https://genshin-builds.com/`
+3. Use entity-specific pages, not source homepages, and compare each factual field being changed. Dynamic pages may be validated from their server-rendered content or data exposed by their page requests; do not automate browser-only interactions that cannot be independently inspected.
+4. Treat a mechanical fact as validated when two independent accessible sources agree, with at least one primary source when one is available. Record unavailable primary sources and any disagreement in the final report.
+5. Do not edit factual data when accessible sources conflict without an official Genshin tie-breaker. Report the blocker instead.
 
 ## Calculation Data Exception
 
-- Character and weapon calculation data may use Yatta as the structured entity source and KQM TCL as the shared growth-curve source.
+- Character and weapon calculation data may use Yatta as the structured entity source and KQM TCL as the shared growth-curve source and passive-multiplier reference.
 - Validate that the Yatta entity name, type, and element or weapon type match the local record before importing values.
 - Keep upstream IDs and source metadata out of public entity responses.
-- This exception applies only to numerical progression and calculation fields. The required community-source validation remains in effect for all other entity facts.
+- This exception applies only to numerical progression and calculation fields. Other entity facts still require the validation sources above.
 
 ## References
 
