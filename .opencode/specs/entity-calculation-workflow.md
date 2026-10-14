@@ -138,11 +138,17 @@ Retrospective live EN/PT review of all nine earlier individually worked artifact
 
 Owner-approved on 2026-10-14: stat-referenced HP recovery in an effect uses `type: "healing"`, its source attribute in `conditional`, and the unrounded ratio in `values`. Example: Adventurer's 4-piece "Opening a chest regenerates 30% Max HP over 5s" maps to `{ "label": "HP Recovery from Max HP", "type": "healing", "conditional": { "origin": "character", "attribute": "hp" }, "values": [0.3] }` in top-level `effects[].modifiers[]`. The ratio is the total described recovery, not a guessed per-tick coefficient; trigger and scheduling remain consumer usage.
 
-This is recovery, not an increase to Max HP (`hp_percent`), healing effectiveness (`healing_bonus`) or damage. Omit `bonus`, `target` and damage-element metadata on this recovery coefficient. Do not add a new origin, infer tick counts, pre-apply HP, or extend this scalar rule to fixed or grouped recovery without approving their layouts. Native talent healing rows retain their attribute-scaling contracts; this rule does not migrate talent `power` to modifier `values`.
+This is recovery, not an increase to Max HP (`hp_percent`), healing effectiveness (`healing_bonus`) or damage. Omit `bonus`, `target` and damage-element metadata on this recovery coefficient. Do not add a new origin, infer tick counts or pre-apply HP. Fixed recovery follows the separately approved rule below; grouped recovery still requires its own layout. Native talent healing rows retain their attribute-scaling contracts; this rule does not migrate talent `power` to modifier `values`.
 
 Retrospective live-record review: Aquila Favonia EN/PT has an unrepresented ATK-referenced healing clause, requiring an individually authorized follow-up; it has no conflicting emitted healing modifier. Baizhu and Noelle EN/PT native healing rows are display-only in the current baseline, so their historical scalar examples are not live coverage certificates and need separate future entity work. No existing healing modifier was rewritten. These findings do not certify global healing coverage; exact paths and outcomes are recorded in the work history.
 
 Activation, actual active stacks, party state, timing, costs, consumption, cooldowns, chance, infusions and deciding whether a bonus applies belong to the consumer. A validated maximum stack count is static bonus metadata in `accumulations`, not persisted active state. Preserve source descriptions; excluding a timing row from multiplier coverage never authorizes deleting that row. Do not pre-multiply Raiden's coefficient by a fixed Energy cost, Furina's by a fixed Fanfare count, or party-scaled bonuses by a guessed party composition.
+
+#### Rules `flat-defense-bonus` and `fixed-hp-recovery`
+
+Owner-approved on 2026-10-14 for Lucky Dog: direct DEF grants use `flat_def`, direct unnormalized `values` and `bonus: true`; `[100]` is 100 DEF, not 100% or a base-DEF percentage. Fixed HP recovery uses `healing`, direct HP units in `values` (`[300]`), and no `conditional` or `bonus`. A `healing` modifier with a validated attribute reference stores a ratio; an approved fixed-healing modifier without it stores HP units. Do not invent a reference, convert fixed units to percentages, grant Max HP or disguise recovery as healing effectiveness. Trigger/delivery/timing remain consumer usage; this does not approve mixed fixed-plus-variable effect layouts, grouped healing, tick counts or new talent shapes.
+
+Retrospective live EN/PT review: Adventurer's flat HP `[1000]` and HP-referenced healing `[0.3]` remain compatible and distinct; do not remove its `conditional`. Defender's Will/Husk DEF percentages remain `def_percent`, not `flat_def`. Aquila Favonia's ATK-referenced healing clause remains unrepresented and requires future selected work; it is not fixed healing. No incompatible prior emitted modifier found, no other entity edited and no global fixed-recovery/DEF coverage claim. Exact paths/outcomes are recorded in history.
 
 ### Repeated Hits, Fixed Additions and Components
 
@@ -175,7 +181,8 @@ type EffectType =
   | 'healing'
   | 'elemental_mastery'
   | 'flat_hp'
-  | 'flat_atk';
+  | 'flat_atk'
+  | 'flat_def';
 
 type Vision =
   | 'GEO'
@@ -189,7 +196,7 @@ type Vision =
   | 'PHYSICAL';
 ```
 
-`base_atk`/`base_def` are percentage changes to base attributes before stat composition, not ordinary ATK%/DEF%. Do not infer base-stat mechanics from legacy wording. Resistance changes other than the approved enemy elemental reduction and wearer elemental bonus, ignore/reduction of DEF, unsupported speed mechanics outside `attack-scoped-speed-bonus`, unsupported reaction/scoped-CRIT bonuses and flat DEF need an explicit supported contract before import. Healing coefficients can use approved stat-plus-fixed-addition talent rows; this does not approve every possible healing/result schema.
+`base_atk`/`base_def` are percentage changes to base attributes before stat composition, not ordinary ATK%/DEF%. Do not infer base-stat mechanics from legacy wording. Resistance changes other than the approved enemy elemental reduction and wearer elemental bonus, ignore/reduction of DEF, unsupported speed mechanics outside `attack-scoped-speed-bonus` and unsupported reaction/scoped-CRIT bonuses need an explicit supported contract before import. Flat DEF and fixed recovery follow the approved rules above. Healing coefficients can use approved stat-plus-fixed-addition talent rows; this does not approve every possible healing/result schema.
 
 Reaction bonuses covered by `reaction-scoped-damage-bonus` use this standardized enum (uppercase serialized identifiers are identical across locales):
 

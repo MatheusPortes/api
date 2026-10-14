@@ -3,5 +3,28 @@
   "max_rarity": 3,
   "min_rarity": 1,
   "2-piece_bonus": "DEF increased by 100.",
-  "4-piece_bonus": "Picking up Mora restores 300 HP."
+  "4-piece_bonus": "Picking up Mora restores 300 HP.",
+  "effects": [
+    {
+      "label": "2-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Flat DEF Increase",
+          "type": "flat_def",
+          "values": [100],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "4-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Fixed HP Recovery on Picking Up Mora",
+          "type": "healing",
+          "values": [300]
+        }
+      ]
+    }
+  ]
 }

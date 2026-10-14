@@ -48,6 +48,8 @@
 
 ## Translations
 
+- Lucky Dog's owner-approved `flat_def` uses direct DEF units; fixed `healing` uses direct HP units without `conditional`/`bonus`. Attribute-referenced recovery retains its ratio and `conditional` (Adventurer); apply the calculation workflow's `flat-defense-bonus` and `fixed-hp-recovery` rules, not guessed percentages.
+
 - Language coverage and casing are inconsistent across types. Use the exact local filename convention of the comparable entity.
 - For individual character talent work, a complete `pt.json` is the structural reference for `upgrades` and `power`. Validate numerical mechanics against an approved source before aligning English/Portuguese fields; preserve localized names/descriptions. An incomplete Portuguese record is not a license to guess missing mechanics or change other locales.
 - A translation is a complete served response, not a field-level overlay. Retain every field required by the intended response shape.

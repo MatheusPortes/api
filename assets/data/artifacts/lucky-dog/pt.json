@@ -3,5 +3,28 @@
   "max_rarity": 3,
   "min_rarity": 1,
   "2-piece_bonus": "DEF +100",
-  "4-piece_bonus": "Ao coletar Mora, restaura 300 de Vida."
+  "4-piece_bonus": "Ao coletar Mora, restaura 300 de Vida.",
+  "effects": [
+    {
+      "label": "Bônus de 2 Peças",
+      "modifiers": [
+        {
+          "label": "Aumento Fixo de DEF",
+          "type": "flat_def",
+          "values": [100],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Bônus de 4 Peças",
+      "modifiers": [
+        {
+          "label": "Recuperação Fixa de Vida ao Coletar Mora",
+          "type": "healing",
+          "values": [300]
+        }
+      ]
+    }
+  ]
 }
