@@ -3,5 +3,52 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "Obtém 15% de Bônus de Dano Geo.",
-  "4-piece_bonus": "Ao obter um Fragmento Elemental por meio de uma Reação de Cristalização, todos os personagens na equipe ganham 35% de DMG para esse elemento em particular por 10s. Somente uma forma de Dano Elemental pode ser obtida dessa maneira a qualquer momento."
+  "4-piece_bonus": "Ao obter um Fragmento Elemental por meio de uma Reação de Cristalização, todos os personagens na equipe ganham 35% de DMG para esse elemento em particular por 10s. Somente uma forma de Dano Elemental pode ser obtida dessa maneira a qualquer momento.",
+  "effects": [
+    {
+      "label": "Bônus de 2 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Dano Geo",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.15],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Bônus de 4 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Dano Cryo de um Fragmento Cryo de Cristalização",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.35],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano Electro de um Fragmento Electro de Cristalização",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.35],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano Hydro de um Fragmento Hydro de Cristalização",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.35],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano Pyro de um Fragmento Pyro de Cristalização",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.35],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }

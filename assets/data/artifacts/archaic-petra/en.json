@@ -3,5 +3,52 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "Gain a 15% Geo DMG Bonus.",
-  "4-piece_bonus": "Upon obtaining an Elemental Shard created through a Crystallize Reaction, all party members gain a 35% DMG Bonus for that particular element for 10s. Only one form of Elemental DMG Bonus can be gained in this manner at any one time."
+  "4-piece_bonus": "Upon obtaining an Elemental Shard created through a Crystallize Reaction, all party members gain a 35% DMG Bonus for that particular element for 10s. Only one form of Elemental DMG Bonus can be gained in this manner at any one time.",
+  "effects": [
+    {
+      "label": "2-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Geo DMG Bonus",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.15],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "4-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Cryo DMG Bonus from a Cryo Crystallize Shard",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.35],
+          "bonus": true
+        },
+        {
+          "label": "Electro DMG Bonus from an Electro Crystallize Shard",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.35],
+          "bonus": true
+        },
+        {
+          "label": "Hydro DMG Bonus from a Hydro Crystallize Shard",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.35],
+          "bonus": true
+        },
+        {
+          "label": "Pyro DMG Bonus from a Pyro Crystallize Shard",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.35],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }

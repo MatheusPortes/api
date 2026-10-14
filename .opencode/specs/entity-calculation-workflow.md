@@ -54,6 +54,14 @@ A text rule is not settled merely because it works for the first example. Record
 - `elemental_dmg_percent` requires `element`. Expand an all-element bonus into seven modifiers: GEO, ANEMO, CRYO, DENDRO, ELECTRO, HYDRO, PYRO; exclude physical damage.
 - `maxValues` is an optional same-rank numeric cap. Do not pre-apply consumer inputs to stored coefficients.
 
+#### Rule `reaction-selected-elemental-bonus`
+
+A bonus for the element selected by a reaction is not an all-element bonus. Represent the source-validated eligible elements as separate `elemental_dmg_percent` modifiers with explicit `element`, the same source ratio and localized labels identifying the branch. These are activation alternatives, not simultaneous grants: the consumer selects the applicable branch using the preserved description and source mechanic. Do not add reaction state to `conditional`, which is only an attribute reference. No new target or selector field is introduced.
+
+Archaic Petra's ordinary Crystallize branch has four eligible elements (CRYO, ELECTRO, HYDRO, PYRO), each with `values: [0.35]` and `bonus: true`; at most one 4-piece branch is active. Its separate 2-piece Geo bonus remains `0.15`. Do not expand the ordinary branch to Geo/Anemo/Dendro/physical or treat the four variants as four independent source contributions. This rule does not resolve the newer Lunar-Crystallize clause: its affected-element mapping and the differing source descriptions remain pending, so Archaic Petra is partial, not globally complete.
+
+Retrospective review found no applicable earlier worked selector: Adventurer's flat HP and healing effects are not elemental selectors. Inspected live Calamity Queller's all-element passive and Faruzan's Anemo-only talent row; both are counterexamples, not candidates for this mutually exclusive expansion. The all-element seven-modifier rule remains unchanged. Exact paths, sources and limits are recorded in history; no other entity was edited.
+
 ### Stat References and Consumer Usage
 
 `conditional` contains exactly `{ origin, attribute }`. Supported origins are `character`, `weapon`, `artifact`; attributes are `hp`, `atk`, `def`, `elemental_mastery`, `energy_recharge`. Coefficients remain in `values`, not in `conditional.coefficient`, `conditional.value` or a retired `per` field.
