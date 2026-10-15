@@ -1,0 +1,172 @@
+{
+  "name": "Dádiva Celestial",
+  "max_rarity": 5,
+  "min_rarity": 4,
+  "2-piece_bonus": "Recarga de Energia +20%",
+  "4-piece_bonus": "Se o portador já completou a Tarefa da Bruxa, após usar uma Habilidade Elemental, obtém \"Orientação da Luz Celestial\" por 20s: todos os personagens próximos da equipe obtêm 20% de Bônus de Dano Elemental correspondente ao Tipo Elemental do portador. Esse efeito pode ser desencadeado mesmo se o portador estiver fora de campo. Bônus de Dano fornecidos por Conjuntos de Artefatos com o mesmo nome não acumulam.\n· Quando a equipe possui o efeito \"Mágico: Ritual Secreto\", \"Orientação da Luz Celestial\" é elevada para \"Cântico do Mundo Mortal\": todos os personagens próximos da equipe passam a obter 40% de Bônus de Dano Elemental correspondente tanto ao Tipo Elemental do portador quanto ao Tipo Elemental do personagem ativo atual da equipe. Se ambos os personagens tiverem o mesmo Tipo Elemental, esses bônus não acumulam.",
+  "effects": [
+    {
+      "label": "Bônus de 2 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Recarga de Energia",
+          "type": "energy_recharge",
+          "values": [0.2],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Bônus de 4 Peças",
+      "modifiers": [
+        {
+          "label": "Orientação da Luz Celestial: Bônus de Dano Elemental Correspondente ao Tipo Elemental do Portador",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.2],
+          "bonus": true
+        },
+        {
+          "label": "Orientação da Luz Celestial: Bônus de Dano Elemental Correspondente ao Tipo Elemental do Portador",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.2],
+          "bonus": true
+        },
+        {
+          "label": "Orientação da Luz Celestial: Bônus de Dano Elemental Correspondente ao Tipo Elemental do Portador",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.2],
+          "bonus": true
+        },
+        {
+          "label": "Orientação da Luz Celestial: Bônus de Dano Elemental Correspondente ao Tipo Elemental do Portador",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.2],
+          "bonus": true
+        },
+        {
+          "label": "Orientação da Luz Celestial: Bônus de Dano Elemental Correspondente ao Tipo Elemental do Portador",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.2],
+          "bonus": true
+        },
+        {
+          "label": "Orientação da Luz Celestial: Bônus de Dano Elemental Correspondente ao Tipo Elemental do Portador",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.2],
+          "bonus": true
+        },
+        {
+          "label": "Orientação da Luz Celestial: Bônus de Dano Elemental Correspondente ao Tipo Elemental do Portador",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.2],
+          "bonus": true
+        },
+        {
+          "label": "Cântico do Mundo Mortal: Bônus de Dano Elemental Correspondente ao Tipo Elemental do Portador",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.4],
+          "bonus": true
+        },
+        {
+          "label": "Cântico do Mundo Mortal: Bônus de Dano Elemental Correspondente ao Tipo Elemental do Portador",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.4],
+          "bonus": true
+        },
+        {
+          "label": "Cântico do Mundo Mortal: Bônus de Dano Elemental Correspondente ao Tipo Elemental do Portador",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.4],
+          "bonus": true
+        },
+        {
+          "label": "Cântico do Mundo Mortal: Bônus de Dano Elemental Correspondente ao Tipo Elemental do Portador",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.4],
+          "bonus": true
+        },
+        {
+          "label": "Cântico do Mundo Mortal: Bônus de Dano Elemental Correspondente ao Tipo Elemental do Portador",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.4],
+          "bonus": true
+        },
+        {
+          "label": "Cântico do Mundo Mortal: Bônus de Dano Elemental Correspondente ao Tipo Elemental do Portador",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.4],
+          "bonus": true
+        },
+        {
+          "label": "Cântico do Mundo Mortal: Bônus de Dano Elemental Correspondente ao Tipo Elemental do Portador",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.4],
+          "bonus": true
+        },
+        {
+          "label": "Cântico do Mundo Mortal: Bônus de Dano Elemental Correspondente ao Tipo Elemental do Personagem Ativo",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.4],
+          "bonus": true
+        },
+        {
+          "label": "Cântico do Mundo Mortal: Bônus de Dano Elemental Correspondente ao Tipo Elemental do Personagem Ativo",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.4],
+          "bonus": true
+        },
+        {
+          "label": "Cântico do Mundo Mortal: Bônus de Dano Elemental Correspondente ao Tipo Elemental do Personagem Ativo",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.4],
+          "bonus": true
+        },
+        {
+          "label": "Cântico do Mundo Mortal: Bônus de Dano Elemental Correspondente ao Tipo Elemental do Personagem Ativo",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.4],
+          "bonus": true
+        },
+        {
+          "label": "Cântico do Mundo Mortal: Bônus de Dano Elemental Correspondente ao Tipo Elemental do Personagem Ativo",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.4],
+          "bonus": true
+        },
+        {
+          "label": "Cântico do Mundo Mortal: Bônus de Dano Elemental Correspondente ao Tipo Elemental do Personagem Ativo",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.4],
+          "bonus": true
+        },
+        {
+          "label": "Cântico do Mundo Mortal: Bônus de Dano Elemental Correspondente ao Tipo Elemental do Personagem Ativo",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.4],
+          "bonus": true
+        }
+      ]
+    }
+  ]
+}
