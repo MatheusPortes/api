@@ -3,5 +3,37 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "Increases Shield Strength by 35%.",
-  "4-piece_bonus": "While protected by a shield, gain an additional 40% Normal and Charged Attack DMG."
+  "4-piece_bonus": "While protected by a shield, gain an additional 40% Normal and Charged Attack DMG.",
+  "effects": [
+    {
+      "label": "2-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Wearer Shield Strength Bonus",
+          "type": "shield_strength_percent",
+          "values": [0.35],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "4-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Normal Attack DMG Bonus While Protected by a Shield",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.4],
+          "bonus": true
+        },
+        {
+          "label": "Charged Attack DMG Bonus While Protected by a Shield",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.4],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }

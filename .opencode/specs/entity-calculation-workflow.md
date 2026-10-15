@@ -158,6 +158,14 @@ Speed is distinct from ATK, damage bonuses and a damage-per-second multiplier: d
 
 Retrospective live EN/PT review of all nine earlier individually worked artifacts found no attack-speed clause or conflicting speed representation. Bloodstained Chivalry's Charged Attack damage modifier is compatible with attack targeting but is not speed; its 10s/zero-Stamina usage is not a speed coefficient. The historical examples in the work history identify no prior speed representation. No other entity edited or globally certified; exact paths/outcomes are recorded in history.
 
+#### Rule `wearer-shield-strength-bonus`
+
+Owner-approved on 2026-10-15 for Retracing Bolide: a supplied wearer Shield Strength bonus uses `type: "shield_strength_percent"`, positive ratio `values` and `bonus: true`. Retracing's 2-piece is `[0.35]` (35 percentage points of wearer Shield Strength), with localized labels identifying the wearer. This is not fixed shield HP, HP/DEF scaling for shield creation, outgoing shield generation, healing effectiveness, elemental resistance or a fixed 35% incoming-damage reduction. The effect applies to the set wearer, not automatically to the shield creator or every shield recipient. Do not attach an attack target, attribute-reference conditional, damage element, reaction or stack cap absent separate source validation.
+
+Shield ownership/recipient state, actual shield absorption, damage handling and active eligibility remain consumer work. Retracing's 4-piece has separate Normal/Charged `dmg_percent` `[0.4]` modifiers with the respective targets and shield-condition labels, not one 80% per-hit grant; this does not condition the 2-piece stat on an attack category. No shield engine, absorption-efficiency formula, shield-creation schema or runtime change is approved.
+
+Retrospective live EN/PT review: Nighttime Whispers `effects[1].modifiers[1]` uses a Crystallize shield or nearby Moondrifts to activate additional Geo damage, not Shield Strength; retain its type/element and owner-selected source resolution. Baizhu `skillTalents[2].upgrades[0]` and Noelle `skillTalents[1].upgrades[1]` are display-only shield absorption/creation rows referencing HP or DEF, not wearer Shield Strength bonuses; no type migration or numerical recertification. Their separate duration/healing/elemental efficiency text is not a new Shield Strength modifier. No prior individually emitted Shield Strength modifier conflict found in this inspected history/scope; other records and unresolved character display/numerical coverage stay unchanged. Exact references and limits are recorded in history.
+
 ### Stat References and Consumer Usage
 
 `conditional` contains exactly `{ origin, attribute }`. Supported origins are `character`, `weapon`, `artifact`; attributes are `hp`, `atk`, `def`, `elemental_mastery`, `energy_recharge`. Coefficients remain in `values`, not in `conditional.coefficient`, `conditional.value` or a retired `per` field.
@@ -216,6 +224,7 @@ type EffectType =
   | 'crit_dmg'
   | 'energy_recharge'
   | 'healing_bonus'
+  | 'shield_strength_percent'
   | 'healing'
   | 'accumulated_healing_percent'
   | 'elemental_mastery'

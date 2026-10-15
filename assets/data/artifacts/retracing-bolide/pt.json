@@ -3,5 +3,37 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "Aumenta a efetividade de escudos em 35%",
-  "4-piece_bonus": "Ganha um adicional de 40% de Dano Normal e Carregado enquanto estiver sob a proteção de um escudo."
+  "4-piece_bonus": "Ganha um adicional de 40% de Dano Normal e Carregado enquanto estiver sob a proteção de um escudo.",
+  "effects": [
+    {
+      "label": "Bônus de 2 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Força do Escudo do Portador",
+          "type": "shield_strength_percent",
+          "values": [0.35],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Bônus de 4 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Dano de Ataque Normal Enquanto Protegido por um Escudo",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.4],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano de Ataque Carregado Enquanto Protegido por um Escudo",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.4],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
