@@ -3,5 +3,43 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "Gain a 15% Electro DMG Bonus.",
-  "4-piece_bonus": "Increases damage caused by Overloaded, Electro-Charged, and Superconduct DMG by 40%. Triggering such effects decreases Elemental Skill CD by 1s. Can only occur once every 0.8s."
+  "4-piece_bonus": "Increases the DMG caused by Overloaded, Electro-Charged, Superconduct, and Hyperbloom by 40%, the DMG Bonus conferred by Aggravate by 20%, and the DMG caused by Lunar-Charged and Stellar-Conduct by 20%. When Quicken or the aforementioned Elemental Reactions are triggered, Elemental Skill CD is decreased by 1s. Can only occur once every 0.8s.",
+  "effects": [
+    {
+      "label": "2-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Electro DMG Bonus",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.15],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "4-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Overloaded, Electro-Charged, Superconduct, and Hyperbloom DMG Bonus",
+          "type": "dmg_percent",
+          "reaction": [
+            "OVERLOADED",
+            "ELECTRO_CHARGED",
+            "SUPERCONDUCT",
+            "HYPERBLOOM"
+          ],
+          "values": [0.4],
+          "bonus": true
+        },
+        {
+          "label": "Aggravate-Conferred DMG Bonus and Lunar-Charged and Stellar-Conduct DMG Bonus",
+          "type": "dmg_percent",
+          "reaction": ["AGGRAVATE", "LUNAR_CHARGED", "STELLAR_CONDUCT"],
+          "values": [0.2],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }

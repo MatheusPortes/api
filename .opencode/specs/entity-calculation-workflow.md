@@ -108,6 +108,14 @@ Retrospective live EN/PT review: Brave Heart's generic damage and Bloodstained C
 
 Flower of Paradise Lost's approved extension preserves one modifier per shared source multiplier: BLOOM/HYPERBLOOM/BURGEON share base `[0.4]` and a separate `[0.1]` per stack; LUNAR_BLOOM has base `[0.1]` and separate `[0.025]` per stack. The two additional modifiers carry `accumulations: 4`; they share source activation/count but have unequal coefficients and must not be merged into `[0.025]` for all reactions. Retrospective live EN/PT Crimson Witch reaction groups/per-stack Pyro bonus remain compatible and unchanged. Archaic Petra's reaction-selected damage and Emblem's ER conversion are counterexamples, not candidates for the new enum values. No new Lunar-Crystallize mapping or reaction engine is approved; exact paths/results are in history.
 
+Owner-approved on 2026-10-15 for Thundering Fury: extend `Reaction` with ELECTRO_CHARGED, SUPERCONDUCT, AGGRAVATE, LUNAR_CHARGED and STELLAR_CONDUCT after source validation. Four reactions OVERLOADED/ELECTRO_CHARGED/SUPERCONDUCT/HYPERBLOOM share `[0.4]`; the owner explicitly grouped AGGRAVATE/LUNAR_CHARGED/STELLAR_CONDUCT into one `[0.2]` modifier, superseding the proposed separate 20% entries. Preserve localized labels and source descriptions distinguishing the damage bonus conferred by Aggravate from the other reaction damage clauses. Consumer formula placement is keyed by the reaction: this is not a generic final-damage multiplier, all-Electro grant or shared reaction formula. Quicken only triggers consumer cooldown handling here and is not added as a damage-bonus reaction.
+
+#### Rule `equal-coefficient-reaction-alternatives`
+
+The Thundering Fury decision establishes that equal reaction-bonus coefficients from the same source effect may share one `dmg_percent` modifier with the union of their reaction alternatives when they represent the same nonstacked contribution for each listed reaction and have no differing activation, reference, cap or stack metadata. Distinct source sentences and reaction-specific consumer formulas alone do not require separate equal-value entries; preserve their wording/meaning in descriptions and labels. This does not authorize deduplicating overlapping independent grants, merging base/per-stack bonuses, erasing differing conditions/references/caps or summing different reactions as one event. Validate applicability individually before grouping; no automatic migration.
+
+Retrospective live EN/PT review: Crimson Witch `effects[1].modifiers[0..1]` is compatible existing grouping with unequal `[0.4]`/`[0.15]` groups; retain both. Flower `effects[1].modifiers[0..3]` retains unequal groups and separate base/stack contributions; its equal `[0.1]` entries have different stack/activation semantics and must not merge. Golden Troupe `effects[1].modifiers[0..1]` and Blizzard Strayer `effects[1].modifiers[0..1]` are counterexamples: independent overlapping conditional grants remain separate despite equal values, not reaction alternatives. Archaic Petra's elemental selector is not reaction damage and its Lunar-Crystallize blocker is unchanged. No incompatible earlier equal reaction-alternative grouping found in this inspected history/scope, no other entity edited or global reaction coverage certified; exact references in history.
+
 #### Rule `fixed-source-bonus-increase`
 
 When a source increases a fixed, source-defined bonus by a ratio of its starting value, store the separate absolute bonus contribution per activation unit, validated against that source expression. Crimson Witch of Flames gives `0.15 * 0.5 = 0.075` additional Pyro damage bonus per stack, distinct from its base `0.15`. This is normalization of fixed source constants, not pre-application of a character stat or a guessed stack count. Keep the original 50%-of-starting-value expression in the description and record its derivation in history. Do not store `0.5` as 50 percentage points of Pyro bonus, pre-apply three stacks, combine the base/additional modifiers, or use a stack count as `hits`/refinement ranks. The validated maximum is represented by `accumulations` under the rule below; actual stack activation/count and duration remain consumer usage. This rule does not approve fixed normalization when the referenced base is a consumer-dependent stat/result.
@@ -269,11 +277,16 @@ Reaction bonuses covered by `reaction-scoped-damage-bonus` use this standardized
 ```ts
 enum Reaction {
   OVERLOADED = 'OVERLOADED',
+  ELECTRO_CHARGED = 'ELECTRO_CHARGED',
+  SUPERCONDUCT = 'SUPERCONDUCT',
   BURNING = 'BURNING',
   BURGEON = 'BURGEON',
   BLOOM = 'BLOOM',
   HYPERBLOOM = 'HYPERBLOOM',
   LUNAR_BLOOM = 'LUNAR_BLOOM',
+  AGGRAVATE = 'AGGRAVATE',
+  LUNAR_CHARGED = 'LUNAR_CHARGED',
+  STELLAR_CONDUCT = 'STELLAR_CONDUCT',
   VAPORIZE = 'VAPORIZE',
   MELT = 'MELT',
 }
