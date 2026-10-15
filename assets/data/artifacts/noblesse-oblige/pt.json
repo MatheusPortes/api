@@ -3,5 +3,30 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "Dano do Supremo +20%",
-  "4-piece_bonus": "Usar o Supremo aumenta o ATQ de todos os membros da equipe em 20% por 12s. Este efeito não pode ser acumulado."
+  "4-piece_bonus": "Usar o Supremo aumenta o ATQ de todos os membros da equipe em 20% por 12s. Este efeito não pode ser acumulado.",
+  "effects": [
+    {
+      "label": "Bônus de 2 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Dano do Supremo",
+          "type": "dmg_percent",
+          "target": "elemental_burst",
+          "values": [0.2],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Bônus de 4 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de ATQ para Todos os Membros da Equipe Após Usar o Supremo (Não Acumula)",
+          "type": "atk_percent",
+          "values": [0.2],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }

@@ -3,5 +3,30 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "Elemental Burst DMG +20%",
-  "4-piece_bonus": "Using an Elemental Burst increase all party members' ATK by 20% for 12s. This effect cannot stack."
+  "4-piece_bonus": "Using an Elemental Burst increases all party members' ATK by 20% for 12s. This effect cannot stack.",
+  "effects": [
+    {
+      "label": "2-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Elemental Burst DMG Bonus",
+          "type": "dmg_percent",
+          "target": "elemental_burst",
+          "values": [0.2],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "4-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "ATK Bonus for All Party Members After Using an Elemental Burst (Does Not Stack)",
+          "type": "atk_percent",
+          "values": [0.2],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
