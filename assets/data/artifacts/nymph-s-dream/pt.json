@@ -3,5 +3,63 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "Bônus de Dano Hydro +15%",
-  "4-piece_bonus": "Quando um Ataque Normal, Carregado, Imersivo, Habilidade Elemental ou Supremo atingem um inimigo, gerarão um acúmulo do efeito \"Ninfa Espelhada\" por 8s. Quando possuir 1/2/3 acúmulos ou mais do efeito \"Ninfa Espelhada\", aumentará o ATQ em 7%/16%/25, e aumentará o Bônus de Dano Hydro em 4%/9%/15%. Os acúmulos de \"Ninfa Espelhada\" gerados por Ataques Normais, Carregados, Imersivos, Habilidade Elemental ou Supremos existem independentemente."
+  "4-piece_bonus": "Quando um Ataque Normal, Carregado, Imersivo, Habilidade Elemental ou Supremo atingem um inimigo, gerarão um acúmulo do efeito \"Ninfa Espelhada\" por 8s. Quando possuir 1/2/3 acúmulos ou mais do efeito \"Ninfa Espelhada\", aumentará o ATQ em 7%/16%/25%, e aumentará o Bônus de Dano Hydro em 4%/9%/15%. Os acúmulos de \"Ninfa Espelhada\" gerados por Ataques Normais, Carregados, Imersivos, Habilidade Elemental ou Supremos existem independentemente.",
+  "effects": [
+    {
+      "label": "Bônus de 2 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Dano Hydro",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.15],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Bônus de 4 Peças",
+      "modifiers": [
+        {
+          "label": "Ninfa Espelhada: Bônus Total de ATQ com Exatamente 1 Acúmulo",
+          "type": "atk_percent",
+          "values": [0.07],
+          "bonus": true
+        },
+        {
+          "label": "Ninfa Espelhada: Bônus Total de Dano Hydro com Exatamente 1 Acúmulo",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.04],
+          "bonus": true
+        },
+        {
+          "label": "Ninfa Espelhada: Bônus Total de ATQ com Exatamente 2 Acúmulos",
+          "type": "atk_percent",
+          "values": [0.16],
+          "bonus": true
+        },
+        {
+          "label": "Ninfa Espelhada: Bônus Total de Dano Hydro com Exatamente 2 Acúmulos",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.09],
+          "bonus": true
+        },
+        {
+          "label": "Ninfa Espelhada: Bônus Total de ATQ com 3 ou Mais Acúmulos",
+          "type": "atk_percent",
+          "values": [0.25],
+          "bonus": true
+        },
+        {
+          "label": "Ninfa Espelhada: Bônus Total de Dano Hydro com 3 ou Mais Acúmulos",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.15],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
