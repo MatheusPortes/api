@@ -3,5 +3,63 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "Bônus de Cura +15%",
-  "4-piece_bonus": "Quando o personagem que equipa este conjunto curar um membro da equipe, criará o efeito Desejo por 6s, que registra a quantidade total de cura concedida, incluindo cura excedente. Quando a duração terminar, o efeito Desejo se transformará em \"Ondas de Dias Passados\": quando o personagem ativo acertar um oponente com Ataque Normal, Ataque Carregado, Ataque Imersivo, Habilidade Elemental ou Supremo, o Dano causado aumentará em 8% da quantidade total de cura registrada pelo efeito Desejo. O efeito \"Ondas de Dias Passados\" é removido após surtir efeito 5 vezes ou após 10s. Uma única instância do efeito Desejo pode registrar até 15.000 de cura, e apenas uma instância pode existir por vez, mas ela pode registrar a cura de vários personagens equipados. Personagens equipados fora de campo ainda podem ativar este efeito."
+  "4-piece_bonus": "Quando o personagem que equipa este conjunto curar um membro da equipe, criará o efeito Desejo por 6s, que registra a quantidade total de cura concedida, incluindo cura excedente. Quando a duração terminar, o efeito Desejo se transformará em \"Ondas de Dias Passados\": quando o personagem ativo acertar um oponente com Ataque Normal, Ataque Carregado, Ataque Imersivo, Habilidade Elemental ou Supremo, o Dano causado aumentará em 8% da quantidade total de cura registrada pelo efeito Desejo. O efeito \"Ondas de Dias Passados\" é removido após surtir efeito 5 vezes ou após 10s. Uma única instância do efeito Desejo pode registrar até 15.000 de cura, e apenas uma instância pode existir por vez, mas ela pode registrar a cura de vários personagens equipados. Personagens equipados fora de campo ainda podem ativar este efeito.",
+  "effects": [
+    {
+      "label": "Bônus de 2 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Cura Realizada",
+          "type": "healing_bonus",
+          "values": [0.15],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Bônus de 4 Peças",
+      "modifiers": [
+        {
+          "label": "Ondas de Dias Passados: Dano Adicional de Ataque Normal do Personagem Ativo baseado na Cura Registrada",
+          "type": "accumulated_healing_percent",
+          "target": "normal_attack",
+          "values": [0.08],
+          "maxValues": [15000],
+          "bonus": true
+        },
+        {
+          "label": "Ondas de Dias Passados: Dano Adicional de Ataque Carregado do Personagem Ativo baseado na Cura Registrada",
+          "type": "accumulated_healing_percent",
+          "target": "charged_attack",
+          "values": [0.08],
+          "maxValues": [15000],
+          "bonus": true
+        },
+        {
+          "label": "Ondas de Dias Passados: Dano Adicional de Ataque Imersivo do Personagem Ativo baseado na Cura Registrada",
+          "type": "accumulated_healing_percent",
+          "target": "plunging_attack",
+          "values": [0.08],
+          "maxValues": [15000],
+          "bonus": true
+        },
+        {
+          "label": "Ondas de Dias Passados: Dano Adicional da Habilidade Elemental do Personagem Ativo baseado na Cura Registrada",
+          "type": "accumulated_healing_percent",
+          "target": "elemental_skill",
+          "values": [0.08],
+          "maxValues": [15000],
+          "bonus": true
+        },
+        {
+          "label": "Ondas de Dias Passados: Dano Adicional do Supremo do Personagem Ativo baseado na Cura Registrada",
+          "type": "accumulated_healing_percent",
+          "target": "elemental_burst",
+          "values": [0.08],
+          "maxValues": [15000],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
