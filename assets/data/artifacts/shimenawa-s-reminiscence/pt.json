@@ -3,5 +3,44 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "ATQ +18%.",
-  "4-piece_bonus": "Ao lançar sua Habilidade Elemental, se a Energia Elemental do Personagem for maior ou igual a 15, ele perderá 15 pontos de Energia Elemental e nos próximos 10s, seus Ataques Normais, Ataques Carregados, Ataques Imersivos terão um aumento de 50% de Dano. Esse efeito só pode ser desencadeado uma vez dentro desse intervalo de tempo."
+  "4-piece_bonus": "Ao lançar sua Habilidade Elemental, se a Energia Elemental do Personagem for maior ou igual a 15, ele perderá 15 pontos de Energia Elemental e nos próximos 10s, seus Ataques Normais, Ataques Carregados, Ataques Imersivos terão um aumento de 50% de Dano. Esse efeito só pode ser desencadeado uma vez dentro desse intervalo de tempo.",
+  "effects": [
+    {
+      "label": "Bônus de 2 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de ATQ",
+          "type": "atk_percent",
+          "values": [0.18],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Bônus de 4 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Dano de Ataque Normal Após Usar uma Habilidade Elemental e Consumir 15 de Energia",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.5],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano de Ataque Carregado Após Usar uma Habilidade Elemental e Consumir 15 de Energia",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.5],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano de Ataque Imersivo Após Usar uma Habilidade Elemental e Consumir 15 de Energia",
+          "type": "dmg_percent",
+          "target": "plunging_attack",
+          "values": [0.5],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
