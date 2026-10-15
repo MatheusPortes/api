@@ -52,7 +52,7 @@ A text rule is not settled merely because it works for the first example. Record
 - `bonus: true` marks a stat/result bonus on a modifier or talent upgrade. Omit it on ordinary hits and independent procs; do not emit `bonus: false` placeholders.
 - An attack-scoped damage modifier requires its supported `target`: `normal_attack`, `charged_attack`, `plunging_attack`, `elemental_skill`, or `elemental_burst`. Genuinely generic damage bonuses omit it; approved reaction-scoped bonuses use `reaction` instead. Unsupported reaction/scoped-CRIT results must not be disguised as generic damage or global CRIT. Reaction damage and target-state CRIT follow the explicitly approved rules below; other unsupported scopes remain blocked.
 - `elemental_dmg_percent` requires `element`. Expand an all-element bonus into seven modifiers: GEO, ANEMO, CRYO, DENDRO, ELECTRO, HYDRO, PYRO; exclude physical damage.
-- `maxValues` is an optional same-rank numeric cap. Do not pre-apply consumer inputs to stored coefficients.
+- `maxValues` is an optional same-rank numeric cap. On existing modifiers it caps the supplied result (Emblem's damage bonus), not the referenced attribute. The separately approved `accumulated-healing-independent-damage` skill scaling below uses it for a recorded-healing input cap in HP units before multiplying; do not transfer that meaning to modifiers or unvalidated scaling types. Do not pre-apply consumer inputs to stored coefficients.
 
 #### Rule `reaction-selected-elemental-bonus`
 
@@ -158,6 +158,16 @@ Owner-approved on 2026-10-14 for Lucky Dog: direct DEF grants use `flat_def`, di
 
 Retrospective live EN/PT review: Adventurer's flat HP `[1000]` and HP-referenced healing `[0.3]` remain compatible and distinct; do not remove its `conditional`. Defender's Will/Husk DEF percentages remain `def_percent`, not `flat_def`. Aquila Favonia's ATK-referenced healing clause remains unrepresented and requires future selected work; it is not fixed healing. No incompatible prior emitted modifier found, no other entity edited and no global fixed-recovery/DEF coverage claim. Exact paths/outcomes are recorded in history.
 
+#### Rule `accumulated-healing-independent-damage`
+
+Owner-approved on 2026-10-15 after explicitly choosing the existing independent-`skills` layout over a proposed new conditional/input-cap shape: damage that independently results from recorded healing uses `skills[].scalings[]` with `type: "accumulated_healing_percent"` and the scalar ratio in `values`. Ocean-Hued Clam uses `{ "type": "accumulated_healing_percent", "values": [0.9], "maxValues": [30000] }`. The owner additionally approved `maxValues` here: it caps the corresponding accumulated-healing input in direct HP units before applying the coefficient, not the resulting damage or the coefficient itself. Arrays align by source rank; this unranked set uses singletons with no invented refinement map. With consumer input H, the base result is `0.9 * min(H, 30000)`; H includes the source-eligible overflow healing. This is a base result, not a final hit or ordinary ATK-based damage formula.
+
+Use the native independent skill container (top-level `skills` for artifacts, existing `calculation.skills` elsewhere), not a character-attack damage modifier. The associated 4-piece `effects` entry has `modifiers: []` because its result is represented by `skills`, not because its damage clause was unreviewed. Omit `bonus`, `conditional`, `accumulations`, attack target and reaction scope on the independent scaling; do not add `maxInputValues`, extend the conditional attribute enum, call this `healing` recovery/`healing_bonus` effectiveness, use `hp_percent` or pre-store 27,000 as fixed damage. `accumulated_healing_percent` is approved as an independent-damage scaling reference, not a generic modifier/talent type or an engine for arbitrary recorded events. Other input/result caps still require explicit source-backed mapping.
+
+Actual healing recording, eligible heals, overflow, 3s collection, 3.5s interval, one active Foam and off-field triggering remain consumer usage in the preserved/corrected descriptions. Preserve the explicit EM/level/reaction-bonus exclusions; no reaction enum extension or complete special-damage formula is introduced. Omit independently unverified damage classification rather than guessing from similar procs; optional `damageType` is not proof of ordinary DEF/CRIT/damage-bonus behavior. Modifier `maxValues` retains its existing result-cap meaning, notably Emblem's `min(0.25 * ER_ratio, 0.75)`.
+
+Retrospective live EN/PT review: Aquila Favonia's `calculation.skills` is a compatible independent ATK proc with no recorded-healing reference/cap; its separate missing ATK-referenced healing remains a future selected follow-up, not a conflict. Maiden Beloved's outgoing/incoming healing effectiveness, Adventurer's HP-referenced recovery and Lucky Dog's fixed recovery are counterexamples, not damage from recorded healing. Emblem's live `[0.75]` modifier result cap remains unchanged and must not be reinterpreted as an ER input cap. No prior emitted recorded-healing scaling found in individually worked history; no other entity edited or global healing/cap coverage certified. Exact paths and references are in history.
+
 ### Repeated Hits, Fixed Additions and Components
 
 - `hits` is an optional positive integer for repeated identical coefficients. Store one hit's coefficient, not a pre-summed total. Do not use it for unequal hit components.
@@ -187,6 +197,7 @@ type EffectType =
   | 'energy_recharge'
   | 'healing_bonus'
   | 'healing'
+  | 'accumulated_healing_percent'
   | 'elemental_mastery'
   | 'flat_hp'
   | 'flat_atk'
@@ -261,7 +272,11 @@ type Effect = {
 type IndependentSkill = {
   refinementLevels?: number[];
   damageType?: Vision;
-  scalings: Array<{ type: EffectType; values: number[] }>;
+  scalings: Array<{
+    type: EffectType;
+    values: number[];
+    maxValues?: number[];
+  }>;
 };
 type ScalarUpgrade = {
   name: string;
@@ -280,7 +295,7 @@ type ScalarUpgrade = {
 };
 ```
 
-`refinementLevels` explicitly maps each coefficient position to a rank. Talent `power[*].scalings` is always scalar, never an array. An independent skill's `scalings` array holds attribute contributions, not talent-level entries. Omit unknown proc damage type instead of guessing it. Labels identify the source and supplied result in the served locale; use a concise localized label when the source has no name.
+`refinementLevels` explicitly maps each coefficient position to a rank. Talent `power[*].scalings` is always scalar, never an array. An independent skill's `scalings` array holds attribute contributions or an explicitly approved result reference (`accumulated_healing_percent`), not talent-level entries. Its optional `maxValues` currently has an approved mapping only for that recorded-healing input cap; do not emit it on other skill scaling types without validation/approval. The shared vocabulary does not authorize `accumulated_healing_percent` in modifier/talent containers. Omit unknown proc damage type instead of guessing it. Labels identify the source and supplied result in the served locale; use a concise localized label when the source has no name.
 
 Map normal/skill/burst by category, not total talent count; alternate sprint/passive display blocks must not shift indexing. A complete Portuguese table is a structural reference, not numerical authority. Verify source name, weapon type, element, corresponding locale labels and every source parameter. Traveler stays `traveler-<element>`; prior tooling used the element-specific male Yatta variant and did not guess unmapped gender-specific rows.
 
