@@ -3,5 +3,30 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "RES Electro +40%",
-  "4-piece_bonus": "Aumenta o Dano contra inimigos afetados por Electro em 35%."
+  "4-piece_bonus": "Aumenta o Dano contra inimigos afetados por Electro em 35%.",
+  "effects": [
+    {
+      "label": "Bônus de 2 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de RES Electro do Portador",
+          "type": "elemental_res_percent",
+          "element": "ELECTRO",
+          "values": [0.4],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Bônus de 4 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Dano contra Inimigos Afetados por Electro",
+          "type": "dmg_percent",
+          "values": [0.35],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }

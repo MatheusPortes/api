@@ -3,5 +3,30 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "Electro RES increased by 40%",
-  "4-piece_bonus": "Increases DMG against enemies affected by Electro by 35%."
+  "4-piece_bonus": "Increases DMG against enemies affected by Electro by 35%.",
+  "effects": [
+    {
+      "label": "2-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Wearer Electro RES Bonus",
+          "type": "elemental_res_percent",
+          "element": "ELECTRO",
+          "values": [0.4],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "4-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "DMG Bonus Against Enemies Affected by Electro",
+          "type": "dmg_percent",
+          "values": [0.35],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
