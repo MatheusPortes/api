@@ -85,6 +85,12 @@ On 2026-10-15 the owner closed the remaining artifact review items: Archaic Petr
 
 The owner explicitly dismissed the other reported follow-ups: detailed special-damage formula certification, artifact main/substat progression review, consumer activation/timer/state implementation and repairs to baseline build/lint issues are not active tasks from this review. This does not claim they were implemented, independently certified or fixed, and does not remove normal validation requirements for future changes. Preserve historical check results and source limits; do not reopen dismissed work automatically or change unrelated runtime/dependencies/data.
 
+## Missing Artifact Catalog Maintenance
+
+On 2026-10-15, a read-only comparison found 51 local artifact sets, all with EN/PT records, and 12 additional candidate names in the accessible Yatta/Game8 catalogs: A Day Carved From Rising Winds, Aubade of Morningstar and Moon, Celestial Gift, Disenchantment in Deep Shadow (Game8: Deep Shadows), Finale of the Deep Galleries, Heart of the Furnace, Long Night's Oath, Night of the Sky's Unveiling, Obsidian Codex, Scarlet Proof, Scroll of the Hero of Cinder City and Silken Moon's Serenade. Discovery alone does not certify release or effect coverage. Maintain these sequentially, at most five per requested round, stopping for source/schema decisions; do not reopen the closed earlier artifact review.
+
+First selected addition `artifacts/a-day-carved-from-rising-winds` has complete EN/PT set-bonus records using existing `effects` contracts: base ATK `[0.18]`, hit-activated ATK `[0.25]`, and additional holder CRIT Rate `[0.2]` conditional on completing Witch's Homework. Localized labels/descriptions retain activation, upgrade and off-field semantics; the two buff names do not grant duplicate ATK. No attack target, new conditional/predicate, stack metadata or runtime behavior is introduced. Game8 confirms release on January 14, 2026 (6.3); Game8/KQM/Yatta agree on coefficients. Portuguese name/descriptions use Yatta's locale. No images or other locales added; image coverage is separate. Individual checks/history and commit precede next selection.
+
 ## Build and Delivery
 
 - `pnpm run build` compiles TypeScript from `src/` to `dist/`.

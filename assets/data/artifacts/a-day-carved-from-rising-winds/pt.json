@@ -1,0 +1,37 @@
+{
+  "name": "Ascensão Zéfira",
+  "max_rarity": 5,
+  "min_rarity": 4,
+  "2-piece_bonus": "ATQ +18%",
+  "4-piece_bonus": "Quando o Ataque Normal, Carregado, Habilidade Elemental ou Supremo atingem o inimigo, obtém o efeito Piedade do Vento e Pastoreio por 6s: aumenta o ATQ em 25%. Se o portador já tiver concluído a Tarefa da Bruxa, Piedade do Vento e Pastoreio será elevado para Determinação do Vento e Pastoreio, aumentando a Taxa CRIT do portador que passou pelo teste em 20%. Esse efeito pode ser desencadeado mesmo quando o portador não é o personagem ativo.",
+  "effects": [
+    {
+      "label": "Bônus de 2 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de ATQ",
+          "type": "atk_percent",
+          "values": [0.18],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Bônus de 4 Peças",
+      "modifiers": [
+        {
+          "label": "Piedade ou Determinação do Vento e Pastoreio: Bônus de ATQ Após Acertar Ataque Normal/Carregado, Habilidade Elemental ou Supremo",
+          "type": "atk_percent",
+          "values": [0.25],
+          "bonus": true
+        },
+        {
+          "label": "Determinação do Vento e Pastoreio: Taxa CRIT Adicional Após um Acerto Elegível se o Portador Concluiu a Tarefa da Bruxa",
+          "type": "crit_rate",
+          "values": [0.2],
+          "bonus": true
+        }
+      ]
+    }
+  ]
+}

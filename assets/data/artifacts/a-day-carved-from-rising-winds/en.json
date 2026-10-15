@@ -1,0 +1,37 @@
+{
+  "name": "A Day Carved From Rising Winds",
+  "max_rarity": 5,
+  "min_rarity": 4,
+  "2-piece_bonus": "ATK +18%.",
+  "4-piece_bonus": "After a Normal Attack, Charged Attack, Elemental Skill, or Elemental Burst hits an opponent, gain the Blessing of Pastoral Winds effect for 6s: ATK is increased by 25%. If the equipping character has completed Witch's Homework, Blessing of Pastoral Winds will be upgraded to Resolve of Pastoral Winds, which additionally increases the CRIT Rate of the equipping character by 20%. This effect can be triggered even when the character is off-field.",
+  "effects": [
+    {
+      "label": "2-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "ATK Bonus",
+          "type": "atk_percent",
+          "values": [0.18],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "4-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Blessing or Resolve of Pastoral Winds: ATK Bonus After a Normal/Charged Attack, Elemental Skill or Burst Hit",
+          "type": "atk_percent",
+          "values": [0.25],
+          "bonus": true
+        },
+        {
+          "label": "Resolve of Pastoral Winds: Additional CRIT Rate After a Qualifying Hit if the Wearer Has Completed Witch's Homework",
+          "type": "crit_rate",
+          "values": [0.2],
+          "bonus": true
+        }
+      ]
+    }
+  ]
+}
