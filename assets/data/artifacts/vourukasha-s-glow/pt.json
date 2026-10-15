@@ -3,5 +3,53 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "Aumenta a vida em 20%.",
-  "4-piece_bonus": "Aumenta o Dano da Habilidade Elemental e do Supremo em 10%. Nos 5s após o personagem que tem este artefato equipado sofrer Dano, o efeito de aumento de Dano mencionado acima será de 80%. Esse efeito de aumento pode ser acumulado até 5 vezes, com cada acúmulo tendo sua duração contada independentemente. Esse efeito pode ser desencadeado mesmo se o personagem não estiver ativo no campo de batalha."
+  "4-piece_bonus": "Aumenta o Dano da Habilidade Elemental e do Supremo em 10%. Nos 5s após o personagem que tem este artefato equipado sofrer Dano, o efeito de aumento de Dano mencionado acima aumentará em 80% do seu valor inicial. Esse efeito de aumento pode ser acumulado até 5 vezes, com cada acúmulo tendo sua duração contada independentemente. Esse efeito pode ser desencadeado mesmo se o personagem não estiver ativo no campo de batalha.",
+  "effects": [
+    {
+      "label": "Bônus de 2 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Vida Máxima",
+          "type": "hp_percent",
+          "values": [0.2],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Bônus de 4 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Dano da Habilidade Elemental",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.1],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano do Supremo",
+          "type": "dmg_percent",
+          "target": "elemental_burst",
+          "values": [0.1],
+          "bonus": true
+        },
+        {
+          "label": "Bônus Adicional de Dano da Habilidade Elemental por Acúmulo Após Sofrer Dano",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.08],
+          "accumulations": 5,
+          "bonus": true
+        },
+        {
+          "label": "Bônus Adicional de Dano do Supremo por Acúmulo Após Sofrer Dano",
+          "type": "dmg_percent",
+          "target": "elemental_burst",
+          "values": [0.08],
+          "accumulations": 5,
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }

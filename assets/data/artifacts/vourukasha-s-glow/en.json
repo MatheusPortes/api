@@ -3,5 +3,53 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "HP +20%",
-  "4-piece_bonus": "Elemental Skill and Elemental Burst DMG will be increased by 10%. After the equipping character takes DMG, the aforementioned DMG bonus is increased by 80% for 5s. This effect increase can have 5 stacks. The duration of each stack is counted independently. These effects can be triggered even when the equipping character is not on the field."
+  "4-piece_bonus": "Elemental Skill and Elemental Burst DMG will be increased by 10%. After the equipping character takes DMG, the aforementioned DMG bonus is increased by 80% for 5s. This effect increase can have 5 stacks. The duration of each stack is counted independently. These effects can be triggered even when the equipping character is not on the field.",
+  "effects": [
+    {
+      "label": "2-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Max HP Bonus",
+          "type": "hp_percent",
+          "values": [0.2],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "4-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Elemental Skill DMG Bonus",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.1],
+          "bonus": true
+        },
+        {
+          "label": "Elemental Burst DMG Bonus",
+          "type": "dmg_percent",
+          "target": "elemental_burst",
+          "values": [0.1],
+          "bonus": true
+        },
+        {
+          "label": "Additional Elemental Skill DMG Bonus per Stack After Taking DMG",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.08],
+          "accumulations": 5,
+          "bonus": true
+        },
+        {
+          "label": "Additional Elemental Burst DMG Bonus per Stack After Taking DMG",
+          "type": "dmg_percent",
+          "target": "elemental_burst",
+          "values": [0.08],
+          "accumulations": 5,
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
