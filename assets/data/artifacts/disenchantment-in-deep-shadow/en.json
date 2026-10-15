@@ -1,0 +1,45 @@
+{
+  "name": "Disenchantment in Deep Shadow",
+  "max_rarity": 5,
+  "min_rarity": 4,
+  "2-piece_bonus": "ATK +18%.",
+  "4-piece_bonus": "Increases Superconduct Reaction DMG by 80% and Stellar-Conduct Reaction DMG by 40%. When the wielder attacks opponents affected by Superconduct or Stellar-Conduct, this attack's CRIT Rate is increased by 16%.",
+  "effects": [
+    {
+      "label": "2-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "ATK Bonus",
+          "type": "atk_percent",
+          "values": [0.18],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "4-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Superconduct Reaction DMG Bonus",
+          "type": "dmg_percent",
+          "reaction": ["SUPERCONDUCT"],
+          "values": [0.8],
+          "bonus": true
+        },
+        {
+          "label": "Stellar-Conduct Reaction DMG Bonus",
+          "type": "dmg_percent",
+          "reaction": ["STELLAR_CONDUCT"],
+          "values": [0.4],
+          "bonus": true
+        },
+        {
+          "label": "CRIT Rate Against Opponents Affected by Superconduct or Stellar-Conduct",
+          "type": "crit_rate",
+          "values": [0.16],
+          "bonus": true
+        }
+      ]
+    }
+  ]
+}
