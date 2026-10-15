@@ -105,6 +105,8 @@ Second entity `artifacts/long-night-s-oath` (PT: Juramento da Noite Eterna) is c
 
 Third entity `artifacts/night-of-the-sky-s-unveiling` (PT: Noite da Revelação do Céu) is complete with full EN/PT records using existing contracts: 2-piece `elemental_mastery` `[80]` bonus true; 4-piece `crit_rate` `[0.15]` bonus true (CRIT Rate 15%/30% based on Moonsign Nascent/Ascendant Gleam, wearer on-field, 4s; consumer selects value from Moonsign state) and `dmg_percent` `[0.1]` with `reaction: ["LUNAR_CHARGED","LUNAR_BLOOM","LUNAR_CRYSTALLIZE"]` bonus true (Lunar Reaction DMG +10% per different party-member Gleaming Moon effect, count consumer state). Game8 confirms release September 10, 2025 (6.0 Luna I); Game8/Yatta EN/PT agree on coefficients and localized text. No new enum value/schema; no images/other locales/runtime changes.
 
+Fourth entity `artifacts/obsidian-codex` (PT: Códice de Obsidiana) is complete with full EN/PT records using existing contracts: 2-piece `dmg_percent` `[0.15]` bonus true (generic DMG while in Nightsoul's Blessing and on field, no target); 4-piece `crit_rate` `[0.4]` bonus true (CRIT Rate after consuming 1 Nightsoul point while on field, 6s, once per second; Nightsoul state/consumer trigger). Nightsoul's Blessing state remains consumer usage. Game8 confirms release August 28, 2024 (5.0); Game8/Yatta EN/PT agree on coefficients and localized text. No new enum value/schema; no images/other locales/runtime changes.
+
 ## Build and Delivery
 
 - `pnpm run build` compiles TypeScript from `src/` to `dist/`.

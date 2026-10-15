@@ -1,0 +1,31 @@
+{
+  "name": "Códice de Obsidiana",
+  "max_rarity": 5,
+  "min_rarity": 4,
+  "2-piece_bonus": "Enquanto o personagem que está com esse conjunto equipado estiver sob a Bênção do Espírito da Noite e estiver ativo, o Dano causado por ele é aumentado em 15%.",
+  "4-piece_bonus": "Enquanto estiver ativo, após o personagem que está com esse conjunto equipado consumir 1 ponto de Espírito da Noite, a Taxa CRIT aumenta em 40% por 6s. Este efeito pode ser ativado no máximo uma vez a cada segundo.",
+  "effects": [
+    {
+      "label": "Bônus de 2 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Dano Sob a Bênção do Espírito da Noite e em Campo",
+          "type": "dmg_percent",
+          "values": [0.15],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Bônus de 4 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Taxa CRIT Após Consumir 1 Ponto de Espírito da Noite em Campo",
+          "type": "crit_rate",
+          "values": [0.4],
+          "bonus": true
+        }
+      ]
+    }
+  ]
+}
