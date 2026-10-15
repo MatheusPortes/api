@@ -3,5 +3,32 @@
   "max_rarity": 3,
   "min_rarity": 1,
   "2-piece_bonus": "Increases incoming healing by 20%.",
-  "4-piece_bonus": "Using Elemental Burst restores 20% HP."
+  "4-piece_bonus": "Using Elemental Burst restores 20% HP.",
+  "effects": [
+    {
+      "label": "2-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Incoming Healing Bonus",
+          "type": "healing_bonus",
+          "values": [0.2],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "4-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "HP Recovery from Max HP After Using an Elemental Burst",
+          "type": "healing",
+          "conditional": {
+            "origin": "character",
+            "attribute": "hp"
+          },
+          "values": [0.2]
+        }
+      ]
+    }
+  ]
 }

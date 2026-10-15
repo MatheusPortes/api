@@ -2,6 +2,33 @@
   "name": "O Doutor viajante",
   "max_rarity": 3,
   "min_rarity": 1,
-  "2-piece_bonus": "Aumenta o efeito de cura em 20%.",
-  "4-piece_bonus": "Após usar o Supremo, restaura 20% de Vida."
+  "2-piece_bonus": "Aumenta a cura recebida em 20%.",
+  "4-piece_bonus": "Após usar o Supremo, restaura 20% de Vida.",
+  "effects": [
+    {
+      "label": "Bônus de 2 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Cura Recebida",
+          "type": "healing_bonus",
+          "values": [0.2],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Bônus de 4 Peças",
+      "modifiers": [
+        {
+          "label": "Recuperação de Vida baseada na Vida Máxima Após Usar o Supremo",
+          "type": "healing",
+          "conditional": {
+            "origin": "character",
+            "attribute": "hp"
+          },
+          "values": [0.2]
+        }
+      ]
+    }
+  ]
 }
