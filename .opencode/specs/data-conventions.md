@@ -59,6 +59,8 @@
 
 ## Translations
 
+- General Lunar Reaction damage can use `dmg_percent` with the source-validated Lunar-Charged/Lunar-Bloom/Lunar-Crystallize alternatives under `lunar-reaction-damage-family`. Aubade retains separate `[0.2]` and additional `[0.4]` contributions, localized off-field/Moonsign labels and consumer timing; the enum extension does not broaden earlier source-specific reaction lists or migrate elemental bonuses.
+
 - Lucky Dog's owner-approved `flat_def` uses direct DEF units; fixed `healing` uses direct HP units without `conditional`/`bonus`. Attribute-referenced recovery retains its ratio and `conditional` (Adventurer); apply the calculation workflow's `flat-defense-bonus` and `fixed-hp-recovery` rules, not guessed percentages.
 
 - Language coverage and casing are inconsistent across types. Use the exact local filename convention of the comparable entity.

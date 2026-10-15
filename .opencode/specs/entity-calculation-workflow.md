@@ -112,6 +112,12 @@ Owner-approved on 2026-10-15 for Thundering Fury: extend `Reaction` with ELECTRO
 
 Owner-approved on 2026-10-15 for Viridescent Venerer: Reaction additionally includes SWIRL/STELLAR_SWIRL. Their `[0.6]`/`[0.2]` damage bonuses remain separate because ratios differ. Element-selected enemy resistance debuffs use the existing enemy reduction type and the alternative-trigger rule below, not reaction-damage metadata or Anemo damage. No complete reaction formula or migration of previous reaction groups implied.
 
+#### Rule `lunar-reaction-damage-family`
+
+Owner-approved on 2026-10-15 after the missing-vocabulary stop for Aubade of Morningstar and Moon: extend `Reaction` with `LUNAR_CRYSTALLIZE`. A source's general Lunar Reaction damage bonus uses the existing `dmg_percent`/`bonus: true`/`reaction` contract with `["LUNAR_CHARGED", "LUNAR_BLOOM", "LUNAR_CRYSTALLIZE"]` when all three are eligible. These are reaction alternatives, not ordinary Bloom/Crystallize, generic damage, elemental damage or Stellar reactions. Validate the source's scope individually; naming one Lunar reaction never grants the whole family. Game8's Aubade/Lunar-Crystallize pages plus Yatta Columbina's explicit Lunar-family clauses support this mapping; no reaction formula or new runtime enum is implemented by this static API.
+
+Aubade keeps flat 80 EM, off-field `[0.2]` and a separate additional `[0.4]` at at least Ascendant Gleam. The latter requires the same off-field buff eligibility; consumer handles Moonsign, activation and 3s removal after taking the field. Do not store `[0.6]`, use accumulations/ranks/conditional for Moonsign, or infer party-wide delivery from a party eligibility condition. No attack target/element/independent skill. Live EN/PT retrospective inspection: Flower's `effects[1].modifiers[1,3]` remains Lunar-Bloom only with separate base/per-stack values/caps; Thundering Fury's `effects[1].modifiers[1]` remains the source-listed Aggravate/Lunar-Charged/Stellar-Conduct alternatives; Viridescent's `effects[1].modifiers[0,1]` remains Swirl/Stellar Swirl, neither Lunar. Archaic Petra and Nighttime Whispers `effects[1].modifiers` grant elemental damage selected/activated by reaction state, not Lunar reaction damage, and retain their owner-closed mappings unchanged. Golden Troupe's off-field Skill modifier remains attack-scoped, not Lunar. No incompatible prior family modifier found in inspected scope, no prior entity edited or global coverage certified; exact paths/references in history.
+
 #### Rule `equal-coefficient-reaction-alternatives`
 
 The Thundering Fury decision establishes that equal reaction-bonus coefficients from the same source effect may share one `dmg_percent` modifier with the union of their reaction alternatives when they represent the same nonstacked contribution for each listed reaction and have no differing activation, reference, cap or stack metadata. Distinct source sentences and reaction-specific consumer formulas alone do not require separate equal-value entries; preserve their wording/meaning in descriptions and labels. This does not authorize deduplicating overlapping independent grants, merging base/per-stack bonuses, erasing differing conditions/references/caps or summing different reactions as one event. Validate applicability individually before grouping; no automatic migration.
@@ -304,6 +310,7 @@ enum Reaction {
   LUNAR_BLOOM = 'LUNAR_BLOOM',
   AGGRAVATE = 'AGGRAVATE',
   LUNAR_CHARGED = 'LUNAR_CHARGED',
+  LUNAR_CRYSTALLIZE = 'LUNAR_CRYSTALLIZE',
   STELLAR_CONDUCT = 'STELLAR_CONDUCT',
   VAPORIZE = 'VAPORIZE',
   MELT = 'MELT',
