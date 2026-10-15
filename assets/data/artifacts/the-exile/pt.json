@@ -3,5 +3,22 @@
   "max_rarity": 4,
   "min_rarity": 3,
   "2-piece_bonus": "Recarga de Energia +20%",
-  "4-piece_bonus": "Ao usar o Supremo, regenera 2 de Energia a todos os personagens da equipe (excluindo o portador) a cada 2s por 6s. Este efeito não pode ser acumulado."
+  "4-piece_bonus": "Ao usar o Supremo, regenera 2 de Energia a todos os personagens da equipe (excluindo o portador) a cada 2s por 6s. Este efeito não pode ser acumulado.",
+  "effects": [
+    {
+      "label": "Bônus de 2 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Recarga de Energia",
+          "type": "energy_recharge",
+          "values": [0.2],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Bônus de 4 Peças",
+      "modifiers": []
+    }
+  ]
 }
