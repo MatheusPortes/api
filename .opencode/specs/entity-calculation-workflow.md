@@ -47,12 +47,18 @@ A text rule is not settled merely because it works for the first example. Record
 
 ### Modifier Versus Independent Proc
 
-- A supplied stat/result modifier belongs to `effects[].modifiers[]`; an independent damage proc belongs to `skills[]`.
+- A supplied stat/result modifier belongs to `effects[].modifiers[]`; an independent damage proc belongs to the native `skills[]` container. For artifact set bonuses, nest `skills` in the corresponding effect beside `label` and `modifiers` to identify the source piece bonus; do not place the proc at the artifact root. Existing character/weapon `calculation.skills` containers remain unchanged unless individually remapped with approval.
 - Attached attack additions follow the approved targeted-modifier convention, not the independent-proc convention. Preserve their stat reference with `conditional`.
 - `bonus: true` marks a stat/result bonus on a modifier or talent upgrade. Omit it on ordinary hits and independent procs; do not emit `bonus: false` placeholders.
 - An attack-scoped damage modifier requires its supported `target`: `normal_attack`, `charged_attack`, `plunging_attack`, `elemental_skill`, or `elemental_burst`. Genuinely generic damage bonuses omit it; approved reaction-scoped bonuses use `reaction` instead. Unsupported reaction/scoped-CRIT results must not be disguised as generic damage or global CRIT. Reaction damage and target-state CRIT follow the explicitly approved rules below; other unsupported scopes remain blocked.
 - `elemental_dmg_percent` requires `element`. Expand an all-element bonus into seven modifiers: GEO, ANEMO, CRYO, DENDRO, ELECTRO, HYDRO, PYRO; exclude physical damage.
 - `maxValues` is an optional same-rank numeric cap. On existing modifiers it caps the supplied result (Emblem's damage bonus), not the referenced attribute. The separately approved `accumulated-healing-independent-damage` skill scaling below uses it for a recorded-healing input cap in HP units before multiplying; do not transfer that meaning to modifiers or unvalidated scaling types. Do not pre-apply consumer inputs to stored coefficients.
+
+#### Rule `artifact-source-effect-skills`
+
+Owner-approved structural correction on 2026-10-15: an artifact set's independent damage proc is an optional `skills` array inside the corresponding source `effects[]` object, at the same level as `label` and `modifiers`. Ocean-Hued Clam's 4-piece proc moves from root `skills` to `effects[1].skills`; keep `modifiers: []` and the entire skill/scaling data unchanged. Do not duplicate it at both paths, place it in the unrelated 2-piece effect or emit empty `skills` placeholders for effects without a proc. Consumers of the earlier root path must adapt; this API serves the new nesting directly, without a compatibility alias.
+
+This associates the independent result with the originating set bonus; it does not turn the proc into a character Skill-targeted modifier, change cap semantics or alter existing character/weapon native `calculation.skills` layouts. Retrospective live EN/PT inspection of Aquila Favonia confirms the intentional weapon-container difference, not a migration target; Gambler's empty 4-piece modifier list remains reset-only consumer usage without a damage proc and correctly omits `skills`. An English artifact root-skill inventory found only Ocean-Hued Clam; that discovery is not global locale/entity certification. No other entity edited, numeric source changed or broader container migration authorized. Exact scope/checks are in history.
 
 #### Rule `reaction-selected-elemental-bonus`
 
@@ -162,7 +168,7 @@ Retrospective live EN/PT review: Adventurer's flat HP `[1000]` and HP-referenced
 
 Owner-approved on 2026-10-15 after explicitly choosing the existing independent-`skills` layout over a proposed new conditional/input-cap shape: damage that independently results from recorded healing uses `skills[].scalings[]` with `type: "accumulated_healing_percent"` and the scalar ratio in `values`. Ocean-Hued Clam uses `{ "type": "accumulated_healing_percent", "values": [0.9], "maxValues": [30000] }`. The owner additionally approved `maxValues` here: it caps the corresponding accumulated-healing input in direct HP units before applying the coefficient, not the resulting damage or the coefficient itself. Arrays align by source rank; this unranked set uses singletons with no invented refinement map. With consumer input H, the base result is `0.9 * min(H, 30000)`; H includes the source-eligible overflow healing. This is a base result, not a final hit or ordinary ATK-based damage formula.
 
-Use the native independent skill container (top-level `skills` for artifacts, existing `calculation.skills` elsewhere), not a character-attack damage modifier. The associated 4-piece `effects` entry has `modifiers: []` because its result is represented by `skills`, not because its damage clause was unreviewed. Omit `bonus`, `conditional`, `accumulations`, attack target and reaction scope on the independent scaling; do not add `maxInputValues`, extend the conditional attribute enum, call this `healing` recovery/`healing_bonus` effectiveness, use `hp_percent` or pre-store 27,000 as fixed damage. `accumulated_healing_percent` is approved as an independent-damage scaling reference, not a generic modifier/talent type or an engine for arbitrary recorded events. Other input/result caps still require explicit source-backed mapping.
+Use the native independent skill container (`effects[].skills` for artifact set bonuses, existing `calculation.skills` elsewhere), not a character-attack damage modifier. The owner corrected Ocean-Hued Clam's initial root-level placement on 2026-10-15: the 4-piece effect has `label`, `modifiers: []` and `skills` as siblings, with the scaling at `effects[1].skills[0].scalings[0]`; omit root-level `skills`. This associates the proc with its source set bonus without changing independent-damage semantics. An empty modifier list means the result is represented by that effect's `skills`, not that its damage clause was unreviewed. Omit `bonus`, `conditional`, `accumulations`, attack target and reaction scope on the independent scaling; do not add `maxInputValues`, extend the conditional attribute enum, call this `healing` recovery/`healing_bonus` effectiveness, use `hp_percent` or pre-store 27,000 as fixed damage. `accumulated_healing_percent` is approved as an independent-damage scaling reference, not a generic modifier/talent type or an engine for arbitrary recorded events. Other input/result caps still require explicit source-backed mapping.
 
 Actual healing recording, eligible heals, overflow, 3s collection, 3.5s interval, one active Foam and off-field triggering remain consumer usage in the preserved/corrected descriptions. Preserve the explicit EM/level/reaction-bonus exclusions; no reaction enum extension or complete special-damage formula is introduced. Omit independently unverified damage classification rather than guessing from similar procs; optional `damageType` is not proof of ordinary DEF/CRIT/damage-bonus behavior. Modifier `maxValues` retains its existing result-cap meaning, notably Emblem's `min(0.25 * ER_ratio, 0.75)`.
 
@@ -240,7 +246,7 @@ enum Reaction {
 | Character talent level tables         | `skillTalents[*].upgrades[*].power[*]`                          |
 | Character passive or constellation    | That source item's `calculation.effects` / `calculation.skills` |
 | Weapon passive / independent proc     | `calculation.effects` / `calculation.skills`                    |
-| Artifact set bonus / independent proc | Top-level `effects` / `skills`                                  |
+| Artifact set bonus / independent proc | Top-level `effects` / source effect's `effects[].skills`        |
 | Shared progression curves             | Dedicated shared dataset, not duplicated inside entities        |
 
 ```ts
@@ -268,6 +274,7 @@ type Effect = {
   label: string;
   refinementLevels?: number[];
   modifiers: Modifier[];
+  skills?: IndependentSkill[];
 };
 type IndependentSkill = {
   refinementLevels?: number[];
