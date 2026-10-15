@@ -3,5 +3,30 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "Proficiência Elemental +80",
-  "4-piece_bonus": "Aumenta o Dano do Ataque Carregado em 35% se o personagem estiver usando Catalisador ou Arco."
+  "4-piece_bonus": "Aumenta o Dano do Ataque Carregado em 35% se o personagem estiver usando Catalisador ou Arco.",
+  "effects": [
+    {
+      "label": "Bônus de 2 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Proficiência Elemental",
+          "type": "elemental_mastery",
+          "values": [80],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Bônus de 4 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Dano de Ataque Carregado para Portadores de Catalisador ou Arco",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.35],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
