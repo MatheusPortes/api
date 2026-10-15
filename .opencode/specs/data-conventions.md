@@ -4,6 +4,7 @@
 
 - Active individual-entity maintenance targets `en.json` and `pt.json` only. Preserve every other locale. On 2026-10-14 entity records were restored exactly to Git HEAD, including previously committed calculation fields in all locales. The uncommitted bulk migration remains discarded. The runtime continues serving existing locales.
 - Explicit exception on 2026-10-14: the owner requested removing the entire unreleased `artifacts/glacier-and-snowfield` entity, including its six locale files. This entity-specific deletion does not authorize removing other records, changing other locales or broadening ordinary EN/PT maintenance; its scope/outcome is recorded in history.
+- Explicit exception on 2026-10-15: the owner stated `artifacts/prayers-to-the-firmament` was not released and requested removing the item. Delete only this entity's five locale files (en/fr/jp/pt/zh-CN) and empty data directory; no matching images were found. This does not authorize removing other entities/locales; external validation limits and the owner decision remain in history.
 
 - API paths resolve directly from the directory tree under `assets/data/`; nested directories are part of the entity type path.
 - Data lookup lowercases entity IDs, then reads the requested language file exactly. It adds or overwrites the top-level `id` with the directory ID at response time.
