@@ -3,5 +3,115 @@
   "max_rarity": 4,
   "min_rarity": 3,
   "2-piece_bonus": "All Elemental RES increased by 20%",
-  "4-piece_bonus": "Incoming elemental DMG increases corresponding Elemental RES by 30% for 10s. Can only occur once every 10s."
+  "4-piece_bonus": "Incoming elemental DMG increases corresponding Elemental RES by 30% for 10s. Can only occur once every 10s.",
+  "effects": [
+    {
+      "label": "2-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Wearer Geo RES Bonus",
+          "type": "elemental_res_percent",
+          "element": "GEO",
+          "values": [0.2],
+          "bonus": true
+        },
+        {
+          "label": "Wearer Anemo RES Bonus",
+          "type": "elemental_res_percent",
+          "element": "ANEMO",
+          "values": [0.2],
+          "bonus": true
+        },
+        {
+          "label": "Wearer Cryo RES Bonus",
+          "type": "elemental_res_percent",
+          "element": "CRYO",
+          "values": [0.2],
+          "bonus": true
+        },
+        {
+          "label": "Wearer Dendro RES Bonus",
+          "type": "elemental_res_percent",
+          "element": "DENDRO",
+          "values": [0.2],
+          "bonus": true
+        },
+        {
+          "label": "Wearer Electro RES Bonus",
+          "type": "elemental_res_percent",
+          "element": "ELECTRO",
+          "values": [0.2],
+          "bonus": true
+        },
+        {
+          "label": "Wearer Hydro RES Bonus",
+          "type": "elemental_res_percent",
+          "element": "HYDRO",
+          "values": [0.2],
+          "bonus": true
+        },
+        {
+          "label": "Wearer Pyro RES Bonus",
+          "type": "elemental_res_percent",
+          "element": "PYRO",
+          "values": [0.2],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "4-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Additional Wearer Geo RES After Taking Geo DMG",
+          "type": "elemental_res_percent",
+          "element": "GEO",
+          "values": [0.3],
+          "bonus": true
+        },
+        {
+          "label": "Additional Wearer Anemo RES After Taking Anemo DMG",
+          "type": "elemental_res_percent",
+          "element": "ANEMO",
+          "values": [0.3],
+          "bonus": true
+        },
+        {
+          "label": "Additional Wearer Cryo RES After Taking Cryo DMG",
+          "type": "elemental_res_percent",
+          "element": "CRYO",
+          "values": [0.3],
+          "bonus": true
+        },
+        {
+          "label": "Additional Wearer Dendro RES After Taking Dendro DMG",
+          "type": "elemental_res_percent",
+          "element": "DENDRO",
+          "values": [0.3],
+          "bonus": true
+        },
+        {
+          "label": "Additional Wearer Electro RES After Taking Electro DMG",
+          "type": "elemental_res_percent",
+          "element": "ELECTRO",
+          "values": [0.3],
+          "bonus": true
+        },
+        {
+          "label": "Additional Wearer Hydro RES After Taking Hydro DMG",
+          "type": "elemental_res_percent",
+          "element": "HYDRO",
+          "values": [0.3],
+          "bonus": true
+        },
+        {
+          "label": "Additional Wearer Pyro RES After Taking Pyro DMG",
+          "type": "elemental_res_percent",
+          "element": "PYRO",
+          "values": [0.3],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
