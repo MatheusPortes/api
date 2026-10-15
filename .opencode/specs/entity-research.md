@@ -28,6 +28,7 @@ Apply this policy before using external factual information to create, correct, 
 ## Calculation Data Exception
 
 - Owner resolution on 2026-10-15 for `artifacts/archaic-petra`: existing EN/PT modifiers are accepted as correct and must remain unchanged. The owner authorized resolving the description difference using matching KQM/Yatta Lunar-Crystallize clauses despite Game8's older clause. Close the element-mapping follow-up by owner decision, not a newly independently certified Lunar element or blanket source override. Exact evidence and scope remain in history.
+- Owner confirmation on 2026-10-15 for `artifacts/ocean-hued-clam`: the proc deals physical damage; set its existing independent skill's `damageType` to `PHYSICAL`. KQM also explicitly identifies physical damage, while the inspected Game8/Yatta set clauses do not classify it. Record the owner confirmation and that evidence limit, not two-source classification certification or a standard DEF/CRIT damage formula. Other previously reported artifact follow-ups were dismissed by the owner, not silently validated.
 
 - Character and weapon calculation data may use Yatta as the structured entity source and KQM TCL as the shared growth-curve source and passive-multiplier reference.
 - Validate that the Yatta entity name, type, and element or weapon type match the local record before importing values.
