@@ -3,5 +3,35 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "HP +20%",
-  "4-piece_bonus": "When an Elemental Skill hits an opponent, the ATK of all nearby party members is increased by 20% and their Shield Strength is increased by 30% for 3s. This effect can be triggered once every 0.5s. This effect can still be triggered even when the character who is using this artifact set is not on the field."
+  "4-piece_bonus": "When an Elemental Skill hits an opponent, the ATK of all nearby party members is increased by 20% and their Shield Strength is increased by 30% for 3s. This effect can be triggered once every 0.5s. This effect can still be triggered even when the character who is using this artifact set is not on the field.",
+  "effects": [
+    {
+      "label": "2-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Max HP Bonus",
+          "type": "hp_percent",
+          "values": [0.2],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "4-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "ATK Bonus for All Nearby Party Members After an Elemental Skill Hits an Opponent",
+          "type": "atk_percent",
+          "values": [0.2],
+          "bonus": true
+        },
+        {
+          "label": "Shield Strength Bonus for All Nearby Party Members After an Elemental Skill Hits an Opponent",
+          "type": "shield_strength_percent",
+          "values": [0.3],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
