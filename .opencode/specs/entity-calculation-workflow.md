@@ -28,6 +28,14 @@ Owner-approved on 2026-10-15 for Prayers for Destiny: a source that reduces the 
 
 This rule is limited to status-duration reduction with no approved structured result; it does not make sourced stat/damage/recovery coefficients empty merely because activation/timing is consumer work. Adventurer's healing, Gambler's cooldown reset and Ocean-Hued Clam's source-effect skill are counterexamples with their established layouts. Other Prayers sets and status mechanics require individual source validation/selection; no automatic migration or global status-duration coverage claim is authorized. Exact review scope and references are in history.
 
+#### Rule `consumer-only-fixed-energy-restoration`
+
+Owner-approved on 2026-10-15 for Scholar: a source's fixed direct Energy restoration, without an approved structured Energy-result contract, is reviewed consumer-only. Scholar's 4-piece uses a localized native effect with `modifiers: []`; preserve 3 Energy, bow/catalyst recipients, Elemental Particle/Orb trigger and 3s interval in the description for consumer handling. Do not create `energy_restore`, emit `[3]` as `energy_recharge`/healing/damage, add a guessed reference/bonus/recipient selector or claim an executable Energy engine. The owner also authorized aligning Scholar EN to the KQM/Yatta Particle/Orb wording despite Game8's generic Energy-gain wording; this is the selected resolution for Scholar, not a universal source override.
+
+The separate 2-piece ER stat remains structured `energy_recharge`, `[0.2]`, `bonus: true`. This consumer-only decision does not remove stat/damage/recovery coefficients already covered by approved contracts, redefine ER, or approve arbitrary proportional/mixed Energy layouts; each future entity still requires individual research/selection and explicit mapping of unsupported outcomes. Resource costs and activation state remain consumer usage under the existing rule.
+
+Retrospective live EN/PT inspection: Gambler `effects[1]` and Prayers for Destiny `effects[0]` are compatible reviewed-empty consumer outcomes (cooldown reset/status duration), not Energy grants. Lucky Dog `effects[1].modifiers[0]` is a counterexample: fixed HP restoration remains supported `healing` `[300]`, not empty or Energy. Emblem `effects[0].modifiers[0]` and `[1].modifiers[0]` are ER stat/ER-referenced damage, not direct Energy restoration; retain coefficients/references/result cap. No earlier individually emitted fixed Energy-restoration contract/conflict found in reviewed history; no other entity edited or global Energy coverage claimed. Exact references/limits in history.
+
 ### New Text Rules and Retrospective Compatibility
 
 Whenever resolving a specific source text establishes or revises how a mechanical idea is represented, treat that decision as a general semantic rule, not an exception limited to the current entity or entity type. Apply the following process:
