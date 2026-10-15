@@ -22,6 +22,12 @@ Read `application-state.md`, `data-conventions.md`, `entity-research.md` and thi
 
 Use `not-started`, `in-progress`, `partial`, `blocked`, `complete` and `reviewed-not-applicable`. Historical reset entries are `archived-reset`, never current completion claims. A character cannot be declared entirely complete from core talents alone; passives and constellations require their own inventory. An empty modifier array means reviewed non-applicability, not an unreviewed source. Usage mechanics alone do not keep multiplier coverage pending.
 
+#### Rule `consumer-only-status-duration-reduction`
+
+Owner-approved on 2026-10-15 for Prayers for Destiny: a source that reduces the duration of an elemental status on the wearer is reviewed-not-applicable to the current structured stat/damage/proc vocabulary. Represent its native artifact effect with `modifiers: []` and preserve the source description; the consumer applies status-duration reduction. Prayers for Destiny's one-piece Hydro clause remains exactly "Affected by Hydro for 40% less time." in EN and equivalent PT text. Do not create `elemental_status_duration_reduction`, repurpose elemental resistance/damage, store `[0.4]` as a modifier, derive the remaining `[0.6]`, add an element/bonus/conditional/target, or claim a duration/aura engine.
+
+This rule is limited to status-duration reduction with no approved structured result; it does not make sourced stat/damage/recovery coefficients empty merely because activation/timing is consumer work. Adventurer's healing, Gambler's cooldown reset and Ocean-Hued Clam's source-effect skill are counterexamples with their established layouts. Other Prayers sets and status mechanics require individual source validation/selection; no automatic migration or global status-duration coverage claim is authorized. Exact review scope and references are in history.
+
 ### New Text Rules and Retrospective Compatibility
 
 Whenever resolving a specific source text establishes or revises how a mechanical idea is represented, treat that decision as a general semantic rule, not an exception limited to the current entity or entity type. Apply the following process:
