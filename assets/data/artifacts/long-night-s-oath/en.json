@@ -1,0 +1,34 @@
+{
+  "name": "Long Night's Oath",
+  "max_rarity": 5,
+  "min_rarity": 4,
+  "2-piece_bonus": "Plunging Attack DMG increased by 25%.",
+  "4-piece_bonus": "After the equipping character's Plunging Attack/Charged Attack/Elemental Skill hits an opponent, they will gain 1/2/2 stack(s) of \"Radiance Everlasting.\" Plunging Attacks, Charged Attacks, or Elemental Skills can each trigger this effect once every 1s. Radiance Everlasting: Plunging Attacks deal 15% increased DMG for 6s. Max 5 stacks. Each stack's duration is counted independently.",
+  "effects": [
+    {
+      "label": "2-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Plunging Attack DMG Bonus",
+          "type": "dmg_percent",
+          "target": "plunging_attack",
+          "values": [0.25],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "4-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Radiance Everlasting: Plunging Attack DMG Bonus per Stack (Max 5 Stacks)",
+          "type": "dmg_percent",
+          "target": "plunging_attack",
+          "values": [0.15],
+          "accumulations": 5,
+          "bonus": true
+        }
+      ]
+    }
+  ]
+}

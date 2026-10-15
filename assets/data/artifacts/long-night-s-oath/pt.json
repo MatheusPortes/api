@@ -1,0 +1,34 @@
+{
+  "name": "Juramento da Noite Eterna",
+  "max_rarity": 5,
+  "min_rarity": 4,
+  "2-piece_bonus": "Dano do Ataque Imersivo aumenta em 25%.",
+  "4-piece_bonus": "Quando o personagem que está com esse conjunto equipado atinge um Ataque Imersivo/Carregado/Habilidade Elemental no inimigo, obtém 1/2/2 acúmulo(s) de Brilho Eterno. Ataques Imersivos, Carregados ou Habilidades Elementais podem gerar esse efeito uma vez por segundo. Brilho Eterno: aumenta o Dano causado por Ataques Imersivos em 15% por 6s, acumula até 5 vezes. A duração de cada acúmulo é contada independentemente.",
+  "effects": [
+    {
+      "label": "Bônus de 2 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Dano de Ataque Imersivo",
+          "type": "dmg_percent",
+          "target": "plunging_attack",
+          "values": [0.25],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Bônus de 4 Peças",
+      "modifiers": [
+        {
+          "label": "Brilho Eterno: Bônus de Dano de Ataque Imersivo por Acúmulo (Máximo 5 Acúmulos)",
+          "type": "dmg_percent",
+          "target": "plunging_attack",
+          "values": [0.15],
+          "accumulations": 5,
+          "bonus": true
+        }
+      ]
+    }
+  ]
+}

@@ -101,6 +101,8 @@ Fifth and final entity of the round `artifacts/finale-of-the-deep-galleries` (PT
 
 New round (max 5) started after finale-of-the-deep-galleries commit `e4bb73e3`. First entity `artifacts/heart-of-the-furnace` (PT: Coração Forjado) is complete with full EN/PT records using existing contracts plus the approved `STELLAR_GLIMMER` Reaction value: 2-piece `atk_percent` `[0.18]` bonus true; 4-piece `atk_percent` `[0.12]` bonus true (ATK for 12s after triggering/dealing Stellar Glimmer, activation consumer state) and `dmg_percent` `[0.5]` with `reaction: ["STELLAR_GLIMMER"]` bonus true (Stellar Glimmer reaction DMG for nearby party members). Off-field activation and non-stacking of same-name sets remain consumer usage in the preserved descriptions. Game8 confirms release August 12, 2026 (7.0); Game8/Yatta EN/PT agree on coefficients and localized text. Reaction enum extended with `STELLAR_GLIMMER` under reaction-scoped damage contracts; no runtime engine. No images/other locales/runtime changes.
 
+Second entity `artifacts/long-night-s-oath` (PT: Juramento da Noite Eterna) is complete with full EN/PT records using existing contracts: 2-piece `dmg_percent` `[0.25]` with `target: "plunging_attack"` bonus true; 4-piece `dmg_percent` `[0.15]` with `target: "plunging_attack"` and `accumulations: 5` bonus true (Radiance Everlasting per-stack Plunging DMG, max 5 stacks; stack trigger 1/2/2 and independent durations are consumer state). Game8 confirms release March 26, 2025 (5.5); Game8/Yatta EN/PT agree on coefficients and localized text. No new schema/enum value; no images/other locales/runtime changes.
+
 ## Build and Delivery
 
 - `pnpm run build` compiles TypeScript from `src/` to `dist/`.
