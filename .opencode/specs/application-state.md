@@ -107,6 +107,8 @@ Third entity `artifacts/night-of-the-sky-s-unveiling` (PT: Noite da Revelação 
 
 Fourth entity `artifacts/obsidian-codex` (PT: Códice de Obsidiana) is complete with full EN/PT records using existing contracts: 2-piece `dmg_percent` `[0.15]` bonus true (generic DMG while in Nightsoul's Blessing and on field, no target); 4-piece `crit_rate` `[0.4]` bonus true (CRIT Rate after consuming 1 Nightsoul point while on field, 6s, once per second; Nightsoul state/consumer trigger). Nightsoul's Blessing state remains consumer usage. Game8 confirms release August 28, 2024 (5.0); Game8/Yatta EN/PT agree on coefficients and localized text. No new enum value/schema; no images/other locales/runtime changes.
 
+Fifth and final entity of the round `artifacts/scarlet-proof` (PT: Prova Escarlate) is complete with full EN/PT records using existing contracts: 2-piece `atk_percent` `[0.18]` bonus true; 4-piece `crit_rate` `[0.16]` bonus true and `dmg_percent` `[0.4]` with `reaction: ["STELLAR_SWIRL"]` bonus true, both for 10s after triggering a Stellar Swirl reaction (trigger/duration consumer state). STELLAR_SWIRL already exists in the approved `Reaction` enum; no new enum value needed. Game8 confirms release August 12, 2026 (7.0); Game8/Yatta EN/PT agree on coefficients and localized text. No images/other locales/runtime changes. This completes the five-entity round; stop/report round outcomes, no push, no automatic additional round.
+
 ## Build and Delivery
 
 - `pnpm run build` compiles TypeScript from `src/` to `dist/`.

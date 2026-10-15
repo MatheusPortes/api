@@ -1,0 +1,38 @@
+{
+  "name": "Scarlet Proof",
+  "max_rarity": 5,
+  "min_rarity": 4,
+  "2-piece_bonus": "ATK +18%.",
+  "4-piece_bonus": "Increases the equipping character's CRIT Rate by 16%, and their Stellar Swirl reaction DMG dealt by 40%, for 10s after they trigger a Stellar Swirl reaction.",
+  "effects": [
+    {
+      "label": "2-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "ATK Bonus",
+          "type": "atk_percent",
+          "values": [0.18],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "4-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "CRIT Rate Bonus for 10s After Triggering a Stellar Swirl Reaction",
+          "type": "crit_rate",
+          "values": [0.16],
+          "bonus": true
+        },
+        {
+          "label": "Stellar Swirl Reaction DMG Bonus for 10s After Triggering a Stellar Swirl Reaction",
+          "type": "dmg_percent",
+          "reaction": ["STELLAR_SWIRL"],
+          "values": [0.4],
+          "bonus": true
+        }
+      ]
+    }
+  ]
+}

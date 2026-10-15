@@ -1,0 +1,38 @@
+{
+  "name": "Prova Escarlate",
+  "max_rarity": 5,
+  "min_rarity": 4,
+  "2-piece_bonus": "ATQ +18%",
+  "4-piece_bonus": "Ao desencadear uma Reação de Redemoinho Estelar, aumenta a Taxa CRIT do portador em 16% e o Dano da Reação de Redemoinho Estelar causada por ele em 40% por 10s.",
+  "effects": [
+    {
+      "label": "Bônus de 2 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de ATQ",
+          "type": "atk_percent",
+          "values": [0.18],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Bônus de 4 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Taxa CRIT por 10s Após Desencadear uma Reação de Redemoinho Estelar",
+          "type": "crit_rate",
+          "values": [0.16],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano de Reação de Redemoinho Estelar por 10s Após Desencadear uma Reação de Redemoinho Estelar",
+          "type": "dmg_percent",
+          "reaction": ["STELLAR_SWIRL"],
+          "values": [0.4],
+          "bonus": true
+        }
+      ]
+    }
+  ]
+}
