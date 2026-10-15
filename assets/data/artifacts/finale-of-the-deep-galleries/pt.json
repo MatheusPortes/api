@@ -1,0 +1,40 @@
+{
+  "name": "Epílogo do Corredor",
+  "max_rarity": 5,
+  "min_rarity": 4,
+  "2-piece_bonus": "Bônus de Dano Cryo +15%",
+  "4-piece_bonus": "Quando a Energia Elemental do personagem que está com esse conjunto equipado for 0, aumenta o Dano causado por seu Ataque Normal em 60%, e o Dano causado pelo Supremo em 60%. Depois que o personagem que está com esse conjunto equipado causar Dano de Ataque Normal, o efeito de aumento de Dano de Supremo desaparecerá por 6s, e o efeito de aumento de Dano de Ataque Normal também desaparecerá por 6s. Esse efeito pode ser desencadeado, ainda que o personagem não esteja ativo.",
+  "effects": [
+    {
+      "label": "Bônus de 2 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Dano Cryo",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.15],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Bônus de 4 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Dano de Ataque Normal com 0 de Energia Elemental",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.6],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano de Supremo com 0 de Energia Elemental",
+          "type": "dmg_percent",
+          "target": "elemental_burst",
+          "values": [0.6],
+          "bonus": true
+        }
+      ]
+    }
+  ]
+}
