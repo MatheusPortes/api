@@ -1,0 +1,38 @@
+{
+  "name": "Coração Forjado",
+  "max_rarity": 5,
+  "min_rarity": 4,
+  "2-piece_bonus": "ATQ +18%",
+  "4-piece_bonus": "Nos 12s após o portador desencadear Brilho Estelar ou causar Dano de Brilho Estelar, aumenta o ATQ em 12% e o Dano de Brilho Estelar de todos os membros próximos da equipe em 50%. Esse efeito pode ser desencadeado mesmo quando o portador não for o personagem ativo. O efeito de bônus de Dano de conjuntos de Artefatos iguais não acumula.",
+  "effects": [
+    {
+      "label": "Bônus de 2 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de ATQ",
+          "type": "atk_percent",
+          "values": [0.18],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Bônus de 4 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de ATQ por 12s Após Desencadear Reação de Brilho Estelar ou Causar Dano de Brilho Estelar",
+          "type": "atk_percent",
+          "values": [0.12],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano de Reação de Brilho Estelar para Membros Próximos da Equipe",
+          "type": "dmg_percent",
+          "reaction": ["STELLAR_GLIMMER"],
+          "values": [0.5],
+          "bonus": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "Heart of the Furnace",
+  "max_rarity": 5,
+  "min_rarity": 4,
+  "2-piece_bonus": "ATK +18%.",
+  "4-piece_bonus": "Increases the equipping character's ATK by 12% for 12s when they trigger a Stellar Glimmer reaction or deal Stellar Glimmer reaction DMG. Also increases Stellar Glimmer reaction DMG dealt by all nearby party members by 50%. The above effects can trigger even when the equipping character is not on the field, and the DMG bonus from multiple Artifact Sets with the same name do not stack.",
+  "effects": [
+    {
+      "label": "2-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "ATK Bonus",
+          "type": "atk_percent",
+          "values": [0.18],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "4-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "ATK Bonus for 12s After Triggering a Stellar Glimmer Reaction or Dealing Stellar Glimmer Reaction DMG",
+          "type": "atk_percent",
+          "values": [0.12],
+          "bonus": true
+        },
+        {
+          "label": "Stellar Glimmer Reaction DMG Bonus for Nearby Party Members",
+          "type": "dmg_percent",
+          "reaction": ["STELLAR_GLIMMER"],
+          "values": [0.5],
+          "bonus": true
+        }
+      ]
+    }
+  ]
+}
