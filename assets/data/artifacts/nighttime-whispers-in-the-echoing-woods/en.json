@@ -3,5 +3,37 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "ATK +18%",
-  "4-piece_bonus": "After using an Elemental Skill, gain a 20% Geo DMG Bonus for 10s. While under a shield granted by the Crystallize reaction, the above effect will be increased by 150%, and this additional increase disappears 1s after that shield is lost."
+  "4-piece_bonus": "After using an Elemental Skill, gain a 20% Geo DMG Bonus for 10s. When under a shield granted by the Crystallize reaction, or when Moondrifts formed by Lunar-Crystallize reactions are nearby, the above effect is increased by 150%. When these conditions are no longer met, this additional increase disappears after 1s.",
+  "effects": [
+    {
+      "label": "2-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "ATK Increase",
+          "type": "atk_percent",
+          "values": [0.18],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "4-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Geo DMG Bonus After Using an Elemental Skill",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.2],
+          "bonus": true
+        },
+        {
+          "label": "Additional Geo DMG Bonus with a Crystallize Shield or Nearby Lunar-Crystallize Moondrifts (Expires 1s After Neither Condition Is Met)",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.3],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }

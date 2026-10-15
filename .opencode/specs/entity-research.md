@@ -21,6 +21,7 @@ Apply this policy before using external factual information to create, correct, 
 3. Use entity-specific pages, not source homepages, and compare each factual field being changed. Dynamic pages may be validated from their server-rendered content or data exposed by their page requests; do not automate browser-only interactions that cannot be independently inspected.
 4. Treat a mechanical fact as validated when two independent accessible sources agree, with at least one primary source when one is available. Record unavailable primary sources and any disagreement in the final report.
 5. Do not edit factual data when accessible sources conflict without an official Genshin tie-breaker. Report the blocker instead.
+   - Explicit owner decision on 2026-10-15 for `artifacts/nighttime-whispers-in-the-echoing-woods` only: use the matching KQM/Yatta description including nearby Lunar-Crystallize Moondrifts, despite Game8's older shield-only table. Record this as an owner-selected source resolution, not an official tie-breaker or permission to bypass future conflicts. This does not resolve Archaic Petra's separate affected-element question.
 
 ## Calculation Data Exception
 

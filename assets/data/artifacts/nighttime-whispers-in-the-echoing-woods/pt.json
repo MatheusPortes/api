@@ -3,5 +3,37 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "ATQ +18%",
-  "4-piece_bonus": "Após usar uma Habilidade Elemental, obtém 20% de Bônus de Dano Geo por 10s. Enquanto estiver protegido por um escudo criado pela reação de Cristalização, o efeito acima aumentará em 150%, e esse aumento adicional desaparecerá 1s após perder o escudo."
+  "4-piece_bonus": "Após usar uma Habilidade Elemental, obtém 20% de Bônus de Dano Geo por 10s. Enquanto estiver protegido por um escudo criado pela reação de Cristalização, ou houver Jaulas Lunares próximas formadas por reações de Cristalização Lunar, o efeito acima aumentará em 150%. Quando essas condições não forem mais atendidas, esse aumento adicional desaparecerá após 1s.",
+  "effects": [
+    {
+      "label": "Bônus de 2 Peças",
+      "modifiers": [
+        {
+          "label": "Aumento de ATQ",
+          "type": "atk_percent",
+          "values": [0.18],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Bônus de 4 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Dano Geo Após Usar uma Habilidade Elemental",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.2],
+          "bonus": true
+        },
+        {
+          "label": "Bônus Adicional de Dano Geo com Escudo de Cristalização ou Jaulas Lunares Próximas de Cristalização Lunar (Expira 1s Após Nenhuma Condição Ser Atendida)",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.3],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
