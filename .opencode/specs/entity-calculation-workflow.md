@@ -110,6 +110,8 @@ Flower of Paradise Lost's approved extension preserves one modifier per shared s
 
 Owner-approved on 2026-10-15 for Thundering Fury: extend `Reaction` with ELECTRO_CHARGED, SUPERCONDUCT, AGGRAVATE, LUNAR_CHARGED and STELLAR_CONDUCT after source validation. Four reactions OVERLOADED/ELECTRO_CHARGED/SUPERCONDUCT/HYPERBLOOM share `[0.4]`; the owner explicitly grouped AGGRAVATE/LUNAR_CHARGED/STELLAR_CONDUCT into one `[0.2]` modifier, superseding the proposed separate 20% entries. Preserve localized labels and source descriptions distinguishing the damage bonus conferred by Aggravate from the other reaction damage clauses. Consumer formula placement is keyed by the reaction: this is not a generic final-damage multiplier, all-Electro grant or shared reaction formula. Quicken only triggers consumer cooldown handling here and is not added as a damage-bonus reaction.
 
+Owner-approved on 2026-10-15 for Viridescent Venerer: Reaction additionally includes SWIRL/STELLAR_SWIRL. Their `[0.6]`/`[0.2]` damage bonuses remain separate because ratios differ. Element-selected enemy resistance debuffs use the existing enemy reduction type and the alternative-trigger rule below, not reaction-damage metadata or Anemo damage. No complete reaction formula or migration of previous reaction groups implied.
+
 #### Rule `equal-coefficient-reaction-alternatives`
 
 The Thundering Fury decision establishes that equal reaction-bonus coefficients from the same source effect may share one `dmg_percent` modifier with the union of their reaction alternatives when they represent the same nonstacked contribution for each listed reaction and have no differing activation, reference, cap or stack metadata. Distinct source sentences and reaction-specific consumer formulas alone do not require separate equal-value entries; preserve their wording/meaning in descriptions and labels. This does not authorize deduplicating overlapping independent grants, merging base/per-stack bonuses, erasing differing conditions/references/caps or summing different reactions as one event. Validate applicability individually before grouping; no automatic migration.
@@ -165,6 +167,12 @@ Owner-approved on 2026-10-14: enemy elemental resistance reductions in `effects[
 Omit `bonus` on this enemy debuff; it is not a supplied character stat/damage bonus. Skill/Burst hits are activation triggers, not restrictions on which subsequent attack categories benefit, so do not emit attack `target` values. Do not invent enemy origins/attributes in `conditional`, precompute a resistance/damage multiplier, or add reaction/stack metadata without validating those mechanics separately. Trigger, affected enemies, 8s duration, off-field applicability and application state remain consumer usage in the preserved source description. This approves only enemy elemental resistance reduction; physical resistance, resistance increases and other DEF/RES mechanics remain outside this contract.
 
 Retrospective live EN/PT review: none of the seven previously worked artifact sets has an elemental resistance-reduction clause; their existing damage/stat/reaction modifiers are not applicable and remain unchanged. The historical Faruzan example is a future candidate: its live Burst description and `skillTalents[2].upgrades[3]` contain an Anemo RES decrease in display-only EN/PT rows, not a normalized conflicting modifier. It requires separately scoped character work and source validation/native-container mapping, not an automatic migration. No other entity was edited; exact paths and outcomes are recorded in history and global resistance coverage is not certified.
+
+#### Rule `nonstacking-same-element-res-alternative-triggers`
+
+Owner-approved on 2026-10-15 for Viridescent Venerer after full example review: when one source grants the same nonstacking elemental enemy RES reduction through alternative triggers, retain one `elemental_res_reduction` modifier for that element, with positive ratio and a localized OR/nonstack label, rather than duplicate summable grants. Viridescent uses one CRYO `[0.4]` for Cryo Swirl or Stellar Swirl; three further ELECTRO/HYDRO/PYRO `[0.4]` modifiers require their corresponding ordinary Swirl. Omit bonus/target/conditional/reaction on these enemy debuffs; activation/timers remain consumer state. Ordinary eligible elements validated separately from Game8/KQM Swirl pages. No Anemo/Geo/Dendro/physical reduction or arbitrary all-element grant. Same-element overlap stays 40 points, not 80; this does not impose mutual exclusivity across different elements or approve a resistance engine.
+
+Live EN/PT Deepwood `effects[1].modifiers[0]` is compatible single-element reduction with Skill/Burst alternative triggers, no duplicate. Thundering Fury's two reaction groups retain their distinct ratios; no RES duplication. Archaic Petra's selector grants elemental damage, not enemy RES, with its separate modern blocker unchanged. No prior incompatible source debuff duplication found in reviewed history/scope; no other entity edited/recertified/global coverage claimed. References/checks in history.
 
 #### Rule `wearer-party-element-resistance-bonus`
 
@@ -284,6 +292,8 @@ Reaction bonuses covered by `reaction-scoped-damage-bonus` use this standardized
 
 ```ts
 enum Reaction {
+  SWIRL = 'SWIRL',
+  STELLAR_SWIRL = 'STELLAR_SWIRL',
   OVERLOADED = 'OVERLOADED',
   ELECTRO_CHARGED = 'ELECTRO_CHARGED',
   SUPERCONDUCT = 'SUPERCONDUCT',

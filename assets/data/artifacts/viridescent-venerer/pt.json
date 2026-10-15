@@ -3,5 +3,62 @@
   "max_rarity": 5,
   "min_rarity": 4,
   "2-piece_bonus": "Bônus de Dano Anemo +15%",
-  "4-piece_bonus": "Aumenta o Dano do Redemoinho em 60%. Dependendo do tipo elemento infundido, diminui a RES Elemental correspondente do oponente em 40% por 10s."
+  "4-piece_bonus": "Aumenta o Dano causado por Redemoinho em 60% e aumenta o Dano causado por Redemoinho Estelar em 20%. De acordo com o Tipo Elemental do Redemoinho, reduz a RES Elemental correspondente do inimigo afetado em 40% por 10s. Ao desencadear Redemoinho Estelar, também reduz sua RES Cryo em 40%. Efeitos de redução de RES de mesmo Tipo Elemental não acumulam.",
+  "effects": [
+    {
+      "label": "Bônus de 2 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Dano Anemo",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.15],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Bônus de 4 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Dano de Redemoinho",
+          "type": "dmg_percent",
+          "reaction": ["SWIRL"],
+          "values": [0.6],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano de Redemoinho Estelar",
+          "type": "dmg_percent",
+          "reaction": ["STELLAR_SWIRL"],
+          "values": [0.2],
+          "bonus": true
+        },
+        {
+          "label": "Redução de RES Cryo do Inimigo por Redemoinho Cryo ou Redemoinho Estelar (Não Acumula)",
+          "type": "elemental_res_reduction",
+          "element": "CRYO",
+          "values": [0.4]
+        },
+        {
+          "label": "Redução de RES Electro do Inimigo por Redemoinho Electro",
+          "type": "elemental_res_reduction",
+          "element": "ELECTRO",
+          "values": [0.4]
+        },
+        {
+          "label": "Redução de RES Hydro do Inimigo por Redemoinho Hydro",
+          "type": "elemental_res_reduction",
+          "element": "HYDRO",
+          "values": [0.4]
+        },
+        {
+          "label": "Redução de RES Pyro do Inimigo por Redemoinho Pyro",
+          "type": "elemental_res_reduction",
+          "element": "PYRO",
+          "values": [0.4]
+        }
+      ]
+    }
+  ]
 }
