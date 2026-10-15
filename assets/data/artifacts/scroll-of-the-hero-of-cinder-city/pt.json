@@ -1,0 +1,116 @@
+{
+  "name": "Pergaminho do Herói da Cidade Incandescente",
+  "max_rarity": 5,
+  "min_rarity": 4,
+  "2-piece_bonus": "Quando um membro da equipe próximo desencadeia uma Explosão do Espírito da Noite, o personagem que está com esse conjunto equipado regenera 6 de Energia Elemental.",
+  "4-piece_bonus": "Quando o personagem que está com esse conjunto equipado desencadeia uma Reação Elemental que envolve seu Tipo Elemental, todos os membros próximos da equipe ganham 12% de Bônus de Dano Elemental relacionado à reação por 15s. Caso o personagem que está com esse conjunto equipado estiver no estado Bênção do Espírito da Noite ao desencadear esse efeito, todos os membros próximos da equipe ganham mais 28% de Bônus de Dano Elemental relacionado à reação por 20s. Esse efeito pode ser ativado mesmo quando o personagem que está com esse conjunto equipado está fora de campo. Bônus de Dano fornecidos por conjuntos de Artefatos com o mesmo nome não acumularão.",
+  "effects": [
+    {
+      "label": "Bônus de 2 Peças",
+      "modifiers": []
+    },
+    {
+      "label": "Bônus de 4 Peças",
+      "modifiers": [
+        {
+          "label": "Bônus de Dano Elemental pelos Tipos de Elemento da Reação (Sem a Bênção do Espírito da Noite)",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.12],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano Elemental pelos Tipos de Elemento da Reação (Sem a Bênção do Espírito da Noite)",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.12],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano Elemental pelos Tipos de Elemento da Reação (Sem a Bênção do Espírito da Noite)",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.12],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano Elemental pelos Tipos de Elemento da Reação (Sem a Bênção do Espírito da Noite)",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.12],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano Elemental pelos Tipos de Elemento da Reação (Sem a Bênção do Espírito da Noite)",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.12],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano Elemental pelos Tipos de Elemento da Reação (Sem a Bênção do Espírito da Noite)",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.12],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano Elemental pelos Tipos de Elemento da Reação (Sem a Bênção do Espírito da Noite)",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.12],
+          "bonus": true
+        },
+        {
+          "label": "Bônus Adicional de Dano Elemental pelos Tipos de Elemento da Reação com a Bênção do Espírito da Noite",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.28],
+          "bonus": true
+        },
+        {
+          "label": "Bônus Adicional de Dano Elemental pelos Tipos de Elemento da Reação com a Bênção do Espírito da Noite",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.28],
+          "bonus": true
+        },
+        {
+          "label": "Bônus Adicional de Dano Elemental pelos Tipos de Elemento da Reação com a Bênção do Espírito da Noite",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.28],
+          "bonus": true
+        },
+        {
+          "label": "Bônus Adicional de Dano Elemental pelos Tipos de Elemento da Reação com a Bênção do Espírito da Noite",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.28],
+          "bonus": true
+        },
+        {
+          "label": "Bônus Adicional de Dano Elemental pelos Tipos de Elemento da Reação com a Bênção do Espírito da Noite",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.28],
+          "bonus": true
+        },
+        {
+          "label": "Bônus Adicional de Dano Elemental pelos Tipos de Elemento da Reação com a Bênção do Espírito da Noite",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.28],
+          "bonus": true
+        },
+        {
+          "label": "Bônus Adicional de Dano Elemental pelos Tipos de Elemento da Reação com a Bênção do Espírito da Noite",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.28],
+          "bonus": true
+        }
+      ]
+    }
+  ]
+}

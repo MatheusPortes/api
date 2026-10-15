@@ -109,6 +109,10 @@ Fourth entity `artifacts/obsidian-codex` (PT: Códice de Obsidiana) is complete 
 
 Fifth and final entity of the round `artifacts/scarlet-proof` (PT: Prova Escarlate) is complete with full EN/PT records using existing contracts: 2-piece `atk_percent` `[0.18]` bonus true; 4-piece `crit_rate` `[0.16]` bonus true and `dmg_percent` `[0.4]` with `reaction: ["STELLAR_SWIRL"]` bonus true, both for 10s after triggering a Stellar Swirl reaction (trigger/duration consumer state). STELLAR_SWIRL already exists in the approved `Reaction` enum; no new enum value needed. Game8 confirms release August 12, 2026 (7.0); Game8/Yatta EN/PT agree on coefficients and localized text. No images/other locales/runtime changes. This completes the five-entity round; stop/report round outcomes, no push, no automatic additional round.
 
+New round (max 5) started after scarlet-proof commit `64eff4f9`. First entity `artifacts/scroll-of-the-hero-of-cinder-city` (PT: Pergaminho do Herói da Cidade Incandescente) is complete with full EN/PT records using existing contracts: 2-piece `modifiers: []` (consumer-only fixed Energy restoration: 6 Energy when a nearby party member triggers Nightsoul Burst); 4-piece fourteen `elemental_dmg_percent` `[0.12]` (seven Vision elements) plus fourteen `elemental_dmg_percent` `[0.28]` (additional while in Nightsoul's Blessing), all bonus true, for reaction-selected elemental damage; Nightsoul state and involved-element selection remain consumer usage. No accumulations, conditional, independent proc or runtime engine. Game8 confirms release August 28, 2024 (5.0); Game8/Yatta EN/PT agree on coefficients and localized text. No new enum value/schema; no images/other locales/runtime changes.
+
+Second entity `artifacts/silken-moon-s-serenade` (PT: Serenata da Lua de Seda) — not researched yet; stop for source/schema decisions before emission, no automatic second entity/push.
+
 ## Build and Delivery
 
 - `pnpm run build` compiles TypeScript from `src/` to `dist/`.

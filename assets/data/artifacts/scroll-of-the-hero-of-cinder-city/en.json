@@ -1,0 +1,116 @@
+{
+  "name": "Scroll of the Hero of Cinder City",
+  "max_rarity": 5,
+  "min_rarity": 4,
+  "2-piece_bonus": "When a nearby party member triggers a Nightsoul Burst, the equipping character regenerates 6 Elemental Energy.",
+  "4-piece_bonus": "After the equipping character triggers a reaction related to their Elemental Type, all nearby party members gain a 12% Elemental DMG Bonus for the Elemental Types involved in the elemental reaction for 15s. If the equipping character is in the Nightsoul's Blessing state when triggering this effect, all nearby party members gain an additional 28% Elemental DMG Bonus for the Elemental Types involved in the elemental reaction for 20s. The equipping character can trigger this effect while off-field, and the DMG bonus from Artifact Sets with the same name do not stack.",
+  "effects": [
+    {
+      "label": "2-Piece Bonus",
+      "modifiers": []
+    },
+    {
+      "label": "4-Piece Bonus",
+      "modifiers": [
+        {
+          "label": "Elemental DMG Bonus for Reaction Element Types (Nightsoul's Blessing Off)",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.12],
+          "bonus": true
+        },
+        {
+          "label": "Elemental DMG Bonus for Reaction Element Types (Nightsoul's Blessing Off)",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.12],
+          "bonus": true
+        },
+        {
+          "label": "Elemental DMG Bonus for Reaction Element Types (Nightsoul's Blessing Off)",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.12],
+          "bonus": true
+        },
+        {
+          "label": "Elemental DMG Bonus for Reaction Element Types (Nightsoul's Blessing Off)",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.12],
+          "bonus": true
+        },
+        {
+          "label": "Elemental DMG Bonus for Reaction Element Types (Nightsoul's Blessing Off)",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.12],
+          "bonus": true
+        },
+        {
+          "label": "Elemental DMG Bonus for Reaction Element Types (Nightsoul's Blessing Off)",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.12],
+          "bonus": true
+        },
+        {
+          "label": "Elemental DMG Bonus for Reaction Element Types (Nightsoul's Blessing Off)",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.12],
+          "bonus": true
+        },
+        {
+          "label": "Additional Elemental DMG Bonus for Reaction Element Types While in Nightsoul's Blessing",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.28],
+          "bonus": true
+        },
+        {
+          "label": "Additional Elemental DMG Bonus for Reaction Element Types While in Nightsoul's Blessing",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.28],
+          "bonus": true
+        },
+        {
+          "label": "Additional Elemental DMG Bonus for Reaction Element Types While in Nightsoul's Blessing",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.28],
+          "bonus": true
+        },
+        {
+          "label": "Additional Elemental DMG Bonus for Reaction Element Types While in Nightsoul's Blessing",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.28],
+          "bonus": true
+        },
+        {
+          "label": "Additional Elemental DMG Bonus for Reaction Element Types While in Nightsoul's Blessing",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.28],
+          "bonus": true
+        },
+        {
+          "label": "Additional Elemental DMG Bonus for Reaction Element Types While in Nightsoul's Blessing",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.28],
+          "bonus": true
+        },
+        {
+          "label": "Additional Elemental DMG Bonus for Reaction Element Types While in Nightsoul's Blessing",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.28],
+          "bonus": true
+        }
+      ]
+    }
+  ]
+}
