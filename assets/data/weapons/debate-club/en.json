@@ -8,5 +8,19 @@
   "passiveDesc": "After using an Elemental Skill, Normal or Charged Attacks, on hit, deal an additional 60/75/90/105/120% ATK DMG in a small area. Effect lasts 15s. DMG can only occur once every 3s.",
   "location": "Gacha",
   "ascensionMaterial": "elixir",
-  "weapon_type": "CLAYMORE"
+  "weapon_type": "CLAYMORE",
+  "calculation": {
+    "skills": [
+      {
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [0.6, 0.75, 0.9, 1.05, 1.2],
+            "conditional": { "origin": "character", "attribute": "atk" }
+          }
+        ]
+      }
+    ]
+  }
 }
