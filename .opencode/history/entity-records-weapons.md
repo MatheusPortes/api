@@ -155,3 +155,34 @@ Amenoma Kageuchi research (2026-10-16): KQM and Yatta EN/PT agree on its release
 - Display EN/PT now includes the omitted Stellar-Conduct clause from matching KQM/Yatta; PT uses Yatta's `Supercondutor Estelar`. Other fields/progression/locales preserved. Source consensus applies; no accessible disagreeing clause.
 - References (2026-10-16): https://library.keqingmains.com/equipment/weapons/catalysts#cashflow-supervision ; https://gi.yatta.moe/api/v2/en/weapon/14513 ; https://gi.yatta.moe/api/v2/pt/weapon/14513 ; https://genshin-impact.fandom.com/wiki/Cashflow_Supervision (403). Game8/HoYoWiki discovery unavailable. Additional inspected https://library.keqingmains.com/characters/cryo/wriothesley did not establish an attack-speed category; attempted `/combat-mechanics/attack-speed` returned 404 and supplied no evidence. Responses retained in transcript.
 - Checks: exact ranks/values/types/reaction/targets/three-stack caps, threshold speed semantics, source text clauses, JSON/parity, preserved baseline, focused format/diff passed. Node 20/pnpm build/lint reproduce baseline failures, `/tmp/opencode/cashflow-supervision-{build,lint}.log`. Commit/mirror before `chain-breaker`, the twentieth local ID counting the requested `apprentice-s-notes` starting point; no push or automatic further round.
+
+## 2026-10-16 — chain-breaker — blocked (holder-inclusive contributor semantics)
+
+- Selected at baseline `5c0922a1`, after Cashflow's delivery commit. Released four-star Bow: KQM/Yatta/Fandom agree on per-eligible-party-member ATK [.048,.06,.072,.084,.096], R1–R5, with eligibility **from Natlan OR different Elemental Type from the wearer**, and one direct EM [24,30,36,42,48] grant when at least three members qualify. Count a member satisfying both alternatives only once. Fandom explicitly states a Natlan wearer also counts and confirms release 2024-08-28 (5.0).
+- Schema/semantic stop, not a source disagreement: approved `party-member-counted-bonus` currently explicitly excludes the holder. Do not silently apply its cap-3/exclusion semantics to Chain Breaker or extend the contract without owner approval. Proposal for evaluation: source-specific eligible-holder inclusion, `atk_percent` per-member values and `accumulations: 4`, with the same eligible-member count controlling the separate EM threshold. No target-state/party-selector fields are proposed; text/labels would preserve Natlan-or-different-element eligibility and single counting.
+- No mapping applied, EN/PT and all other served records for this entity unchanged. Resolving the previous Astral source disagreement by consensus does not approve this separate contributor-contract expansion. Before any approved general rule change, perform its required read-only compatibility review; do not edit prior entities automatically.
+- References (2026-10-16): https://library.keqingmains.com/equipment/weapons/bows#chain-breaker ; https://gi.yatta.moe/api/v2/en/weapon/15431 ; https://genshin-impact.fandom.com/wiki/Chain_Breaker (includes the explicit Natlan-holder gameplay note). Game8/HoYoWiki discovery unavailable. No accessible source conflict; coefficients and reference clauses agree. Fandom response retained in tool-output `tool_146123b0e0015Da4ZrXuxC2YhI`, other responses in transcript.
+- Checks: selected EN/PT JSON/absence of newly added effects and unchanged served paths; focused history formatting/diff and final round parity/scope checks. No build/lint rerun for this history-only stop; each preceding data change ran Node 20/pnpm checks and retained the baseline failures. No delivery commit because there is no publishable change; no push.
+
+### Resumed round summary and coordinated commits
+
+The bounded local-ID window is `apprentice-s-notes` through `chain-breaker` (20 IDs): 17 passive mappings complete, two no-passive reviews (`apprentice-s-notes`, already recorded, and `beginner-s-protector`), one semantic stop (`chain-breaker`). This resumption also corrects Ash-Graven's explicit reference and resolves Astral's former source stop; it does not start an additional round. Aquila's explicit independent ATK-reference compatibility finding remains outside the selected correction scope.
+
+- `ash-graven-drinking-horn` reference correction: agent `52dcfb0f`, delivery `8fdfcd7f`.
+- `astral-vulture-s-crimson-plumage`: agent `d67ba194`, delivery `b8668a5f`.
+- `ballad-of-the-boundless-blue`: agent `d7d0dce2`, delivery `f8092e9d`.
+- `ballad-of-the-fjords`: agent `8986ef20`, delivery `5281b571`.
+- `beacon-of-the-reed-sea`: agent `c169488e`, delivery `c9f12744`.
+- `beginner-s-protector` review only: agent `1cdfe453`, no data change to deliver.
+- `black-tassel`: agent `2cdca5e0`, delivery `69a9374f`.
+- `blackcliff-agate`: agent `12bb6f5e`, delivery `47c506e6`.
+- `blackcliff-longsword`: agent `4167b09e`, delivery `e2b9c5d1`.
+- `blackcliff-pole`: agent `2aa51d6c`, delivery `b4d5019c`.
+- `blackcliff-slasher`: agent `75610897`, delivery `b5ba2bae`.
+- `blackcliff-warbow`: agent `531584f7`, delivery `6f7e6aae`.
+- `bloodtainted-greatsword`: agent `b8771cbc`, delivery `b0badf9f`.
+- `calamity-of-eshu`: agent `0d11089f`, delivery `7ddb6846`.
+- `calamity-queller`: agent `e046cbf0`, delivery `bbc055e8`.
+- `cashflow-supervision`: agent `5c0922a1`, delivery `bb40931b`.
+
+Final checks cover selected EN/PT mechanical parity, matching delivered changed fields, other-locale preservation, per-entity commit order/scope, and the absence of AI artifacts from delivery changes. Whole-file equality between branches is intentionally not asserted: delivery does not import unreviewed baseline progression or native Aquila proc snapshots. The last data commit is Cashflow; this history-only Chain Breaker stop closes the round pending owner evaluation. No next entity or push authorized.
