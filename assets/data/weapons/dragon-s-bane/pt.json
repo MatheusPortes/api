@@ -13,6 +13,20 @@
   },
   "description": "Uma lança decorada com um dragão dourado entrelaçado. Leve e afiada, esta arma pode muito bem matar dragões com facilidade.",
   "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Destruição das Chamas e Água",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano contra inimigos afetados por Hydro ou Pyro",
+          "type": "dmg_percent",
+          "values": [0.2, 0.24, 0.28, 0.32, 0.36],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 41.0671,
