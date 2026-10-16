@@ -8,5 +8,24 @@
   "passiveDesc": "Elemental Skill DMG is increased by 40/50/60/70/80% of DEF. The effect will be triggered no more than once every 1.5s and will be cleared 0.1s after the Elemental Skill deals DMG.",
   "location": "Shadows Amidst Snowstorms Event",
   "ascensionMaterial": "decarabian",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Spotless Heart",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Additional Elemental Skill DMG from DEF",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          },
+          "values": [0.4, 0.5, 0.6, 0.7, 0.8],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
