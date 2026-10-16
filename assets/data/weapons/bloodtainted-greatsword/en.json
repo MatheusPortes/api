@@ -8,5 +8,19 @@
   "passiveDesc": "Increases DMG against enemies affected by Pyro or Electro by 12/15/18/21/24%.",
   "location": "Gacha",
   "ascensionMaterial": "boreal",
-  "weapon_type": "CLAYMORE"
+  "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Bane of Fire and Thunder",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "DMG Bonus against opponents affected by Pyro or Electro",
+          "type": "dmg_percent",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
