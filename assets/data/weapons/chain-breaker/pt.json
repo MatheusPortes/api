@@ -9,5 +9,26 @@
   "location": "Arco",
   "baseDamage": { "attack": 44, "subStat": 60 },
   "description": "Um arco longo adornado com jade, cujas cordas parecem estar sempre envoltas por uma brisa suave. Reza a lenda que foi forjado por artesãos Saurianos em tempos muito antigos.",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Canção da Flor de Penas",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATQ por membro de Natlan ou de Tipo Elemental diferente (conta uma vez; inclui o portador de Natlan)",
+          "type": "atk_percent",
+          "values": [0.048, 0.06, 0.072, 0.084, 0.096],
+          "bonus": true,
+          "accumulations": 4
+        },
+        {
+          "label": "Proficiência Elemental com pelo menos 3 desses membros elegíveis",
+          "type": "elemental_mastery",
+          "values": [24, 30, 36, 42, 48],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
