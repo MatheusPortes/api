@@ -5,9 +5,24 @@
   "baseAttack": 44,
   "subStat": "Bônus de Dano Físico",
   "passiveName": "Agulha Energética",
-  "passiveDesc": "Após obter um Orbe Elemental/Partícula Elemental, os Ataques Normais e Ataques Carregados causam um adicional de 20%/25%/30%/35%/40% de Dano Físico por 5s.",
+  "passiveDesc": "Após obter um Orbe Elemental/Partícula Elemental, os Ataques Normais e Ataques Carregados causam Dano Físico adicional equivalente a 20%/25%/30%/35%/40% do ATQ por 5s.",
   "location": "Liyue",
   "baseDamage": { "attack": 44, "subStat": 75 },
   "description": "Uma arma exótica com uma lâmina extremamente comprida no topo e uma lâmina crescente na parte de baixo. Foi parar em Liyue através de comerciantes estrangeiros. Com prática, pode causar grandes danos.",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "calculation": {
+    "skills": [
+      {
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "damageType": "PHYSICAL",
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+            "conditional": { "origin": "character", "attribute": "atk" }
+          }
+        ]
+      }
+    ]
+  }
 }
