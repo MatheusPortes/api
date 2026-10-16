@@ -12,6 +12,7 @@ Each complete entry is EN/PT passive scope only, committed/mirrored individually
 | amber-catalyst             | removed: owner-authorized deletion of the unreleased CBT3 record/icon; delivery removes only the served EN JSON.                                                                         |
 | amenoma-kageuchi           | complete: root consumer-only effect with empty modifiers; fixed 6/7.5/9/10.5/12 Energy per consumed Seed (cap 3) stays in localized text.                                                |
 | amos-bow                   | complete: Normal/Charged DMG .12–.24 plus separate arrow-flight .08–.16 per .1s, cap 5.                                                                                                  |
+| apprentice-s-notes         | reviewed-not-applicable: one-star Catalyst has no passive; progression and display fields unchanged.                                                                                     |
 
 For completed records, JSON/parity/source/diff/format checks passed. `pnpm run build` failed on baseline TypeScript 4.9/current Node declarations; lint had unrelated Prettier failures. No push was authorized.
 
