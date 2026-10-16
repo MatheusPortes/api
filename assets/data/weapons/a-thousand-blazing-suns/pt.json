@@ -22,37 +22,6 @@
       "baseAttack": "ATK 3.3",
       "critRate": "C3"
     },
-    "effects": [
-      {
-        "refinementLevels": [1, 2, 3, 4, 5],
-        "modifiers": [
-          {
-            "label": "Bônus de Dano CRIT de Brilho Escaldante",
-            "type": "crit_dmg",
-            "values": [0.2, 0.25, 0.3, 0.35, 0.4],
-            "bonus": true
-          },
-          {
-            "label": "Bônus de ATQ de Brilho Escaldante",
-            "type": "atk_percent",
-            "values": [0.28, 0.35, 0.42, 0.49, 0.56],
-            "bonus": true
-          },
-          {
-            "label": "Bônus adicional de Dano CRIT de Brilho Escaldante na Bênção do Espírito da Noite",
-            "type": "crit_dmg",
-            "values": [0.15, 0.1875, 0.225, 0.2625, 0.3],
-            "bonus": true
-          },
-          {
-            "label": "Bônus adicional de ATQ de Brilho Escaldante na Bênção do Espírito da Noite",
-            "type": "atk_percent",
-            "values": [0.21, 0.2625, 0.315, 0.3675, 0.42],
-            "bonus": true
-          }
-        ]
-      }
-    ],
     "ascensions": [
       {
         "ascension": 0,
@@ -102,5 +71,36 @@
         }
       }
     ]
-  }
+  },
+  "effects": [
+    {
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Bônus de Dano CRIT de Brilho Escaldante",
+          "type": "crit_dmg",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de ATQ de Brilho Escaldante",
+          "type": "atk_percent",
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "bonus": true
+        },
+        {
+          "label": "Bônus adicional de Dano CRIT de Brilho Escaldante na Bênção do Espírito da Noite",
+          "type": "crit_dmg",
+          "values": [0.15, 0.1875, 0.225, 0.2625, 0.3],
+          "bonus": true
+        },
+        {
+          "label": "Bônus adicional de ATQ de Brilho Escaldante na Bênção do Espírito da Noite",
+          "type": "atk_percent",
+          "values": [0.21, 0.2625, 0.315, 0.3675, 0.42],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
