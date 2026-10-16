@@ -8,5 +8,26 @@
   "passiveDesc": "Normal Attack hits on opponents increase Charged Attack DMG by 16/20/24/28/32% for 6s. Charged Attack hits on opponents increase ATK by 8/10/12/14/16% for 6s.",
   "location": "Midsummer Island Adventure Event",
   "ascensionMaterial": "boreal",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Dodoventure!",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Charged Attack DMG after Normal Attack hits",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "ATK after Charged Attack hits",
+          "type": "atk_percent",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }

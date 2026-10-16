@@ -9,5 +9,26 @@
   "location": "Mondstadt",
   "baseDamage": { "attack": 41, "subStat": 120 },
   "description": "Um livro infantil com uma bela capa. Seu conteúdo é pequenas estórias infantis inofensivas, e quem as ler não poderá evitar rir.Mesmo que seu leitor já seja um adulto, ao ler tais aventuras inocentes, também acabará fascinado por elas.",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Dodo-aventura!",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano de Ataque Carregado após acertar Ataques Normais",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "ATQ após acertar Ataques Carregados",
+          "type": "atk_percent",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
