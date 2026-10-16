@@ -13,6 +13,77 @@
   },
   "description": "Uma arma afiada forjada de algum cristal estranho. Sua luz azul tênue parece murmurar incontáveis histórias do passado.",
   "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Preceito Extinguidor",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Bônus de Dano Geo",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano Anemo",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano Cryo",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano Dendro",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano Electro",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano Hydro",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano Pyro",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de ATQ de Consumação por acúmulo após usar a Habilidade Elemental",
+          "type": "atk_percent",
+          "values": [0.032, 0.04, 0.048, 0.056, 0.064],
+          "bonus": true,
+          "accumulations": 6
+        },
+        {
+          "label": "Bônus adicional de ATQ de Consumação fora de campo por mesmo acúmulo ativo (100% da contribuição base)",
+          "type": "atk_percent",
+          "values": [0.032, 0.04, 0.048, 0.056, 0.064],
+          "bonus": true,
+          "accumulations": 6
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 49.1377,

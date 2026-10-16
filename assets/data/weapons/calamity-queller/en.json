@@ -9,6 +9,77 @@
   "location": "Gacha",
   "ascensionMaterial": "elixir",
   "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Extinguishing Precept",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Geo DMG Bonus",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Anemo DMG Bonus",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Cryo DMG Bonus",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dendro DMG Bonus",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Electro DMG Bonus",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Hydro DMG Bonus",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Pyro DMG Bonus",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Consummation ATK Bonus per stack after using an Elemental Skill",
+          "type": "atk_percent",
+          "values": [0.032, 0.04, 0.048, 0.056, 0.064],
+          "bonus": true,
+          "accumulations": 6
+        },
+        {
+          "label": "Additional off-field Consummation ATK Bonus per same active stack (100% of base contribution)",
+          "type": "atk_percent",
+          "values": [0.032, 0.04, 0.048, 0.056, 0.064],
+          "bonus": true,
+          "accumulations": 6
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 49.1377,
