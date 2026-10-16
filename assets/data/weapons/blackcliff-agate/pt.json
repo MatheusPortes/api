@@ -9,5 +9,20 @@
   "location": "Liyue",
   "baseDamage": { "attack": 42, "subStat": 120 },
   "description": "Um misterioso catalisador feito de pedra preta. Tem um brilho carrancudo ameaçador que parece pulsar em sincronia com os tremores das profundezas da terra.",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "De vitória em vitória",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Bônus de ATQ por acúmulo após derrotar um inimigo",
+          "type": "atk_percent",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true,
+          "accumulations": 3
+        }
+      ]
+    }
+  ]
 }
