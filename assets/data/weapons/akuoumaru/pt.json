@@ -13,6 +13,22 @@
   },
   "description": "A querida espada do lendário \"Akuou\". A lâmina é gigantesca e majestosa, mas é surpreendentemente fácil de brandi-la.",
   "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Bônus de Dano do Supremo por Ponto do Custo de Energia Combinado da Equipe",
+          "type": "dmg_percent",
+          "target": "elemental_burst",
+          "conditional": { "origin": "time", "attribute": "energy_cost" },
+          "values": [0.0012, 0.0015, 0.0018, 0.0021, 0.0024],
+          "maxValues": [0.4, 0.5, 0.6, 0.7, 0.8],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 42.401,

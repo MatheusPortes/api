@@ -206,7 +206,15 @@ Retrospective live EN/PT review: Nighttime Whispers `effects[1].modifiers[1]` us
 
 ### Stat References and Consumer Usage
 
-`conditional` contains exactly `{ origin, attribute }`. Supported origins are `character`, `weapon`, `artifact`; attributes are `hp`, `atk`, `def`, `elemental_mastery`, `energy_recharge`. Coefficients remain in `values`, not in `conditional.coefficient`, `conditional.value` or a retired `per` field.
+`conditional` contains exactly `{ origin, attribute }`. Supported origins are `character`, `weapon`, `artifact`, `time`; attributes are `hp`, `atk`, `def`, `elemental_mastery`, `energy_recharge`, `energy_cost`. `time.energy_cost` is restricted to the owner-approved combined party maximum Energy capacity reference below. Coefficients remain in `values`, not in `conditional.coefficient`, `conditional.value` or a retired `per` field.
+
+#### Rule `combined-party-energy-cost-burst-bonus`
+
+Owner-approved on 2026-10-16 for Akuoumaru: an Elemental Burst DMG bonus granted per point of the entire party's combined maximum Energy capacity uses `dmg_percent`, `target: "elemental_burst"`, `conditional: { origin: "time", attribute: "energy_cost" }`, one per-point ratio in `values`, `maxValues` as the same-refinement cap on the resulting supplied Burst bonus, and `bonus: true`. Akuoumaru stores `[0.0012, 0.0015, 0.0018, 0.0021, 0.0024]` and `[0.4, 0.5, 0.6, 0.7, 0.8]` for refinements 1–5. The consumer sums the Energy Cost display rows of the party's Bursts and applies `min(sum * coefficient, cap)`; it does not use current Energy, Energy Recharge, a fixed party assumption, an individual holder value, a duration or active state.
+
+This `time` origin is an owner-selected serialized reference name for the Energy Cost data input, not a timer, duration, cooldown, timestamp, trigger or general party-state namespace. It does not authorize other `time` attributes or unrelated party references. The condition identifies the reference only; its values remain unrounded ratios and the description/label preserve party scope. Do not omit `conditional`, put the coefficient in the condition, replace the result cap with `accumulations`, apply it as generic damage, include Normal/Skill damage or precompute a team total. Other sources require individual source validation.
+
+Retrospective live EN/PT inspection: Wavebreaker's Fin and Mouun's Moon have identical Watatsumi Wavewalker prose and no existing effects. They are compatible candidates for this rule but remain unedited pending their own individual selection/research; no bulk series migration is approved.
 
 #### Rule `attribute-referenced-healing`
 
@@ -346,8 +354,14 @@ type Modifier = {
     | 'elemental_burst';
   maxValues?: number[];
   conditional?: {
-    origin: 'character' | 'weapon' | 'artifact';
-    attribute: 'hp' | 'atk' | 'def' | 'elemental_mastery' | 'energy_recharge';
+    origin: 'character' | 'weapon' | 'artifact' | 'time';
+    attribute:
+      | 'hp'
+      | 'atk'
+      | 'def'
+      | 'elemental_mastery'
+      | 'energy_recharge'
+      | 'energy_cost';
   };
 };
 type Effect = {
