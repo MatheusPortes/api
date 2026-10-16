@@ -5,10 +5,17 @@
   "baseAttack": 42,
   "subStat": "HP",
   "passiveName": "Principle of Equilibrium",
-  "passiveDesc": "When the wielder performs healing, restore 8 Energy. This effect can be triggered once every 10s and can occur even when the character is not on the field.",
+  "passiveDesc": "When the wielder performs healing, restore 8/10/12/14/16 Energy. This effect can be triggered once every 10s and can occur even when the character is not on the field.",
   "location": "Event: Alchemical Ascension",
   "ascensionMaterial": "talisman",
   "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Principle of Equilibrium",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": []
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 42.401,
