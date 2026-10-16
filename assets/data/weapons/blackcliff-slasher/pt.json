@@ -13,6 +13,21 @@
   },
   "description": "Uma espada extremamente resistente da Forja do Penhasco Obscuro. Tem uma cor carmesim escura ao longo de sua lâmina.",
   "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "De vitória em vitória",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Bônus de ATQ por acúmulo após derrotar um inimigo",
+          "type": "atk_percent",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true,
+          "accumulations": 3
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 42.401,
