@@ -325,7 +325,7 @@ enum Reaction {
 | Entity progression                    | Character/weapon top-level `calculation`                        |
 | Character talent level tables         | `skillTalents[*].upgrades[*].power[*]`                          |
 | Character passive or constellation    | That source item's `calculation.effects` / `calculation.skills` |
-| Weapon passive / independent proc     | `calculation.effects` / `calculation.skills`                    |
+| Weapon passive / independent proc     | Top-level `effects` / `calculation.skills`                      |
 | Artifact set bonus / independent proc | Top-level `effects` / source effect's `effects[].skills`        |
 | Shared progression curves             | Dedicated shared dataset, not duplicated inside entities        |
 
@@ -383,6 +383,8 @@ type ScalarUpgrade = {
 ```
 
 `refinementLevels` explicitly maps each coefficient position to a rank. Talent `power[*].scalings` is always scalar, never an array. An independent skill's `scalings` array holds attribute contributions or an explicitly approved result reference (`accumulated_healing_percent`), not talent-level entries. Its optional `maxValues` currently has an approved mapping only for that recorded-healing input cap; do not emit it on other skill scaling types without validation/approval. `accumulated_healing_percent` is also approved for targeted attached-damage modifiers under its explicit rule, but not talent upgrades. Omit unknown proc damage type instead of guessing it. Labels identify the source and supplied result in the served locale; use a concise localized label when the source has no name.
+
+Weapon passive modifiers use the optional top-level `effects` array. Weapon progression (`initialStats`, `growthCurves`, `ascensions`) remains in `calculation`, and an individually approved weapon independent proc remains in its native `calculation.skills` container. This separates public passive effects from progression without changing modifier semantics. Do not migrate unselected legacy weapons solely because their effects remain under `calculation`.
 
 Map normal/skill/burst by category, not total talent count; alternate sprint/passive display blocks must not shift indexing. A complete Portuguese table is a structural reference, not numerical authority. Verify source name, weapon type, element, corresponding locale labels and every source parameter. Traveler stays `traveler-<element>`; prior tooling used the element-specific male Yatta variant and did not guess unmapped gender-specific rows.
 
