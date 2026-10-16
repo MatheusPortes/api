@@ -5,9 +5,51 @@
   "baseAttack": 46,
   "subStat": "Dano Crítico",
   "passiveName": "Vista do Brinco da Lua",
-  "passiveDesc": "Após desencadear uma reação de Redemoinho, o ATQ aumenta em 24%/30%/34%/38%/42% por 12s. Além disso, se houver pelo menos 1/2 personagens na equipe com um Tipo Elemental diferente do personagem que está com essa arma equipada, o Dano causado por Ataques Carregados do personagem que está com essa arma equipada aumenta em 20%/48% | 25%/60% | 30%/72% | 35%/84% | 40%/96%, e o Dano causado pelo Supremo aumenta em 10%/24% | 12.5%/30% | 15%/36% | 17.5%/42% | 20%/48%.",
+  "passiveDesc": "Após desencadear uma reação de Redemoinho ou Redemoinho Estelar, o ATQ aumenta em 24%/30%/36%/42%/48% por 12s. Além disso, se houver pelo menos 1/2 personagens na equipe com um Tipo Elemental diferente do personagem que está com essa arma equipada, o Dano causado por Ataques Carregados do personagem que está com essa arma equipada aumenta em 20%/48% | 25%/60% | 30%/72% | 35%/84% | 40%/96%, e o Dano causado pelo Supremo aumenta em 10%/24% | 12.5%/30% | 15%/36% | 17.5%/42% | 20%/48%.",
   "location": "Oração de Evento de Arma",
   "baseDamage": { "attack": 46, "subStat": 144 },
   "description": "Um arco antigo com penas vermelhas. É uma relíquia sagrada do Clã das Plumas de Flores que passou de geração em geração.",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Vista do Brinco da Lua",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Bônus de ATQ por 12s após Redemoinho ou Redemoinho Estelar",
+          "type": "atk_percent",
+          "values": [0.24, 0.3, 0.36, 0.42, 0.48],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano de Ataque Carregado com exatamente 1 membro de Tipo Elemental diferente",
+          "type": "dmg_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true,
+          "target": "charged_attack"
+        },
+        {
+          "label": "Bônus de Dano de Ataque Carregado com 2+ membros de Tipo Elemental diferente (substitui o total de 1 membro)",
+          "type": "dmg_percent",
+          "values": [0.48, 0.6, 0.72, 0.84, 0.96],
+          "bonus": true,
+          "target": "charged_attack"
+        },
+        {
+          "label": "Bônus de Dano do Supremo com exatamente 1 membro de Tipo Elemental diferente",
+          "type": "dmg_percent",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true,
+          "target": "elemental_burst"
+        },
+        {
+          "label": "Bônus de Dano do Supremo com 2+ membros de Tipo Elemental diferente (substitui o total de 1 membro)",
+          "type": "dmg_percent",
+          "values": [0.24, 0.3, 0.36, 0.42, 0.48],
+          "bonus": true,
+          "target": "elemental_burst"
+        }
+      ]
+    }
+  ]
 }
