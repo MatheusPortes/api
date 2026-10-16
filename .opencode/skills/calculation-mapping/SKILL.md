@@ -7,7 +7,7 @@ Use this skill when a selected entity needs calculation fields, a new modifier m
 
 1. Read `../../specs/entity-calculation-workflow.md`, `../../specs/data-conventions.md`, and `../../specs/entity-research.md`.
 2. Identify the exact entity, source clause, affected JSON paths, units, result type, scope, activation, and consumer-only parts before editing.
-3. Search `../../history/entity-work-history.md` for the entity ID and the relevant rule key. Read archived examples only when the active rulebook points to them.
+3. Read `../../history/entity-work-history.md`, then search the linked entity-record and rule-decision file for the ID and rule key. Read pre-reset examples only when needed.
 4. Reuse an approved rule only when the mechanic's semantics match. Do not infer a schema from similar wording or equal coefficients.
 5. For a new or revised general semantic rule, perform the rulebook's retrospective compatibility review before declaring it settled.
 6. Preserve native container differences, EN/PT parity, source descriptions, and unsupported mechanics as consumer usage or explicit blockers.

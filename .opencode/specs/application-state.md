@@ -33,8 +33,7 @@ This repository is a static-data API for Genshin Impact entities and images.
 - Active calculation rules and workflow: `entity-calculation-workflow.md`.
 - External research requirements: `entity-research.md`.
 - Delivery/branch requirements: `git-workflow.md`.
-- Completed entity summaries and closed decisions: `.opencode/history/entity-work-history.md`.
-- Former verbose application-state summaries: `.opencode/history/application-state-archive.md`.
+- Completed entity summaries, rule decisions, and closed decisions: `.opencode/history/entity-work-history.md` (the compact history index and links).
 
 ## Build and Delivery
 

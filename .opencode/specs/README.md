@@ -9,13 +9,13 @@ Read this file first. It is the always-loaded routing layer; read only the addit
 
 ## Task-Based Loading
 
-| Task | Read before acting |
-| --- | --- |
-| Any served data or image change | `data-conventions.md` |
-| External factual research or release status | `entity-research.md` |
-| Calculation fields, effects, modifiers, progression, or artifact mechanics | `entity-calculation-workflow.md` and the relevant history entries |
-| Commit, delivery branch, worktree, or push | `git-workflow.md` |
-| A prior entity decision, source conflict, or closed follow-up | the matching section of `.opencode/history/entity-work-history.md` |
+| Task                                                                       | Read before acting                                                                |
+| -------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| Any served data or image change                                            | `data-conventions.md`                                                             |
+| External factual research or release status                                | `entity-research.md`                                                              |
+| Calculation fields, effects, modifiers, progression, or artifact mechanics | `entity-calculation-workflow.md` and the relevant history entries                 |
+| Commit, delivery branch, worktree, or push                                 | `git-workflow.md`                                                                 |
+| A prior entity decision, source conflict, or closed follow-up              | `.opencode/history/entity-work-history.md`, then the matching linked history file |
 
 ## Project Skills
 

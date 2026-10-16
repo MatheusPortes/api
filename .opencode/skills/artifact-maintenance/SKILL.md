@@ -7,7 +7,7 @@ Use this skill only for one explicitly selected artifact entity.
 
 1. Read `../../specs/data-conventions.md` and `../../specs/entity-research.md`.
 2. Read `../../specs/entity-calculation-workflow.md` only when the task changes effects, modifiers, calculations, or mechanics.
-3. Search `../../history/entity-work-history.md` by the exact entity ID and by relevant rule keys; do not load the full history.
+3. Read `../../history/entity-work-history.md`, then search the linked artifact-record and rule-decision file by exact entity ID and rule key; do not load unrelated history.
 4. Inspect the current EN/PT records before researching or editing. Preserve all other locales and unrelated fields.
 5. Validate factual changes with the required entity-specific sources. Stop for source conflicts, missing release validation, or an unapproved schema decision.
 6. Apply only the selected entity's source-backed changes. Keep EN/PT mechanical fields aligned and localize labels/descriptions.
