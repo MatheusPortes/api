@@ -7,7 +7,145 @@
   "passiveName": "Canção das Mil Noites",
   "passiveDesc": "Os personagens da equipe além do personagem com esta arma equipada darão bônus ao personagem com esta arma equipada baseado no seu Tipo Elemental. Se o Tipo Elemental for o mesmo do personagem com esta arma equipada, aumentarão a Proficiência Elemental em 32/40/48/56/64. Se o Tipo Elemental for diferente do personagem com esta arma equipada, aumentarão o Bônus de Dano Elemental do Tipo Elemental do personagem com esta arma equipada em 10%/14%/18%/22%/26%. Os efeitos mencionados acima podem acumular até 3 vezes. Além disso, todos os aliados próximos além do personagem com esta arma equipada terão sua Proficiência Elemental aumentada em 40/42/44/46/48. Os efeitos de várias armas com este mesmo nome podem ser acumulados.",
   "location": "Oração de Evento de Arma",
-  "baseDamage": { "attack": 44, "subStat": 58 },
+  "baseDamage": {
+    "attack": 44,
+    "subStat": 58
+  },
   "description": "Essa lanterna ilumina os sonhos que flutuam sobre as mil noites, e a sua luz esmeralda flui de dias antigos.",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 44.3358,
+      "elementalMastery": 57.6
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.4",
+      "elementalMastery": "C3"
+    },
+    "effects": [
+      {
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "modifiers": [
+          {
+            "label": "Proficiência Elemental por Outro Membro da Equipe com o Mesmo Tipo Elemental",
+            "type": "elemental_mastery",
+            "values": [32, 40, 48, 56, 64],
+            "bonus": true,
+            "accumulations": 3
+          },
+          {
+            "label": "Bônus de Dano Elemental por Outro Membro da Equipe com Tipo Elemental Diferente",
+            "type": "elemental_dmg_percent",
+            "element": "GEO",
+            "values": [0.1, 0.14, 0.18, 0.22, 0.26],
+            "bonus": true,
+            "accumulations": 3
+          },
+          {
+            "label": "Bônus de Dano Elemental por Outro Membro da Equipe com Tipo Elemental Diferente",
+            "type": "elemental_dmg_percent",
+            "element": "ANEMO",
+            "values": [0.1, 0.14, 0.18, 0.22, 0.26],
+            "bonus": true,
+            "accumulations": 3
+          },
+          {
+            "label": "Bônus de Dano Elemental por Outro Membro da Equipe com Tipo Elemental Diferente",
+            "type": "elemental_dmg_percent",
+            "element": "CRYO",
+            "values": [0.1, 0.14, 0.18, 0.22, 0.26],
+            "bonus": true,
+            "accumulations": 3
+          },
+          {
+            "label": "Bônus de Dano Elemental por Outro Membro da Equipe com Tipo Elemental Diferente",
+            "type": "elemental_dmg_percent",
+            "element": "DENDRO",
+            "values": [0.1, 0.14, 0.18, 0.22, 0.26],
+            "bonus": true,
+            "accumulations": 3
+          },
+          {
+            "label": "Bônus de Dano Elemental por Outro Membro da Equipe com Tipo Elemental Diferente",
+            "type": "elemental_dmg_percent",
+            "element": "ELECTRO",
+            "values": [0.1, 0.14, 0.18, 0.22, 0.26],
+            "bonus": true,
+            "accumulations": 3
+          },
+          {
+            "label": "Bônus de Dano Elemental por Outro Membro da Equipe com Tipo Elemental Diferente",
+            "type": "elemental_dmg_percent",
+            "element": "HYDRO",
+            "values": [0.1, 0.14, 0.18, 0.22, 0.26],
+            "bonus": true,
+            "accumulations": 3
+          },
+          {
+            "label": "Bônus de Dano Elemental por Outro Membro da Equipe com Tipo Elemental Diferente",
+            "type": "elemental_dmg_percent",
+            "element": "PYRO",
+            "values": [0.1, 0.14, 0.18, 0.22, 0.26],
+            "bonus": true,
+            "accumulations": 3
+          },
+          {
+            "label": "Bônus de Proficiência Elemental para Outros Membros Próximos da Equipe",
+            "type": "elemental_mastery",
+            "values": [40, 42, 44, 46, 48],
+            "bonus": true
+          }
+        ]
+      }
+    ],
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }

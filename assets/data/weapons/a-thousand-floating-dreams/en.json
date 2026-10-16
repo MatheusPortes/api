@@ -5,8 +5,143 @@
   "baseAttack": 44,
   "subStat": "Elemental Mastery",
   "passiveName": "A Thousand Nights' Dawnsong",
-  "passiveDesc": "Party members other than the equipping character will provide the equipping character with buffs based on whether their Elemental Type is the same as the latter or not. If their Elemental Types are the same, increase Elemental Mastery by 32. If not, increase the equipping character's DMG Bonus from their Elemental Type by 10%. Each of the aforementioned effects can have up to 3 stacks. Additionally, all nearby party members other than the equipping character will have their Elemental Mastery increased by 40. Multiple such effects from multiple such weapons can stack.",
+  "passiveDesc": "Party members other than the equipping character will provide the equipping character with buffs based on whether their Elemental Type is the same as the latter or not. If their Elemental Types are the same, increase Elemental Mastery by 32/40/48/56/64. If not, increase the equipping character's DMG Bonus from their Elemental Type by 10%/14%/18%/22%/26%. Each of the aforementioned effects can have up to 3 stacks. Additionally, all nearby party members other than the equipping character will have their Elemental Mastery increased by 40/42/44/46/48. Multiple such effects from multiple such weapons can stack.",
   "location": "Gacha",
   "ascensionMaterial": "oasis",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 44.3358,
+      "elementalMastery": 57.6
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.4",
+      "elementalMastery": "C3"
+    },
+    "effects": [
+      {
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "modifiers": [
+          {
+            "label": "Elemental Mastery per Other Party Member with the Same Elemental Type",
+            "type": "elemental_mastery",
+            "values": [32, 40, 48, 56, 64],
+            "bonus": true,
+            "accumulations": 3
+          },
+          {
+            "label": "Elemental DMG Bonus per Other Party Member with a Different Elemental Type",
+            "type": "elemental_dmg_percent",
+            "element": "GEO",
+            "values": [0.1, 0.14, 0.18, 0.22, 0.26],
+            "bonus": true,
+            "accumulations": 3
+          },
+          {
+            "label": "Elemental DMG Bonus per Other Party Member with a Different Elemental Type",
+            "type": "elemental_dmg_percent",
+            "element": "ANEMO",
+            "values": [0.1, 0.14, 0.18, 0.22, 0.26],
+            "bonus": true,
+            "accumulations": 3
+          },
+          {
+            "label": "Elemental DMG Bonus per Other Party Member with a Different Elemental Type",
+            "type": "elemental_dmg_percent",
+            "element": "CRYO",
+            "values": [0.1, 0.14, 0.18, 0.22, 0.26],
+            "bonus": true,
+            "accumulations": 3
+          },
+          {
+            "label": "Elemental DMG Bonus per Other Party Member with a Different Elemental Type",
+            "type": "elemental_dmg_percent",
+            "element": "DENDRO",
+            "values": [0.1, 0.14, 0.18, 0.22, 0.26],
+            "bonus": true,
+            "accumulations": 3
+          },
+          {
+            "label": "Elemental DMG Bonus per Other Party Member with a Different Elemental Type",
+            "type": "elemental_dmg_percent",
+            "element": "ELECTRO",
+            "values": [0.1, 0.14, 0.18, 0.22, 0.26],
+            "bonus": true,
+            "accumulations": 3
+          },
+          {
+            "label": "Elemental DMG Bonus per Other Party Member with a Different Elemental Type",
+            "type": "elemental_dmg_percent",
+            "element": "HYDRO",
+            "values": [0.1, 0.14, 0.18, 0.22, 0.26],
+            "bonus": true,
+            "accumulations": 3
+          },
+          {
+            "label": "Elemental DMG Bonus per Other Party Member with a Different Elemental Type",
+            "type": "elemental_dmg_percent",
+            "element": "PYRO",
+            "values": [0.1, 0.14, 0.18, 0.22, 0.26],
+            "bonus": true,
+            "accumulations": 3
+          },
+          {
+            "label": "Elemental Mastery Bonus for Other Nearby Party Members",
+            "type": "elemental_mastery",
+            "values": [40, 42, 44, 46, 48],
+            "bonus": true
+          }
+        ]
+      }
+    ],
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }
