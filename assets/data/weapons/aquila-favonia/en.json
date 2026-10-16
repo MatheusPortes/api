@@ -8,5 +8,25 @@
   "passiveDesc": "ATK is increased by 20/25/30/35/40%. Triggers on taking DMG: the soul of the Falcon of the West awakens, holding the banner of the resistance aloft, regenerating HP equal to 100/115/130/145/160% of ATK and dealing 200/230/260/290/320% of ATK as DMG to surrounding enemies. This effect can only occur once every 15s.",
   "location": "Gacha",
   "ascensionMaterial": "decarabian",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Falcon's Defiance",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATK Increase",
+          "type": "atk_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "HP recovery on taking DMG based on ATK",
+          "type": "healing",
+          "values": [1, 1.15, 1.3, 1.45, 1.6],
+          "conditional": { "origin": "character", "attribute": "atk" }
+        }
+      ]
+    }
+  ]
 }
