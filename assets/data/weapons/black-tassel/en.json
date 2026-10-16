@@ -8,5 +8,19 @@
   "passiveDesc": "Increases DMG against slimes by 40/50/60/70/80%.",
   "location": "Gacha",
   "ascensionMaterial": "guyun",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Bane of the Soft",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "DMG Bonus against Slimes only",
+          "type": "dmg_percent",
+          "values": [0.4, 0.5, 0.6, 0.7, 0.8],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }

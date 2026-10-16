@@ -4,8 +4,24 @@
   "rarity": 3,
   "baseAttack": 38,
   "subStat": "Porcentagem de Vida",
+  "passiveName": "Atacante Pesado",
+  "passiveDesc": "Aumenta o Dano contra os Slimes em 40%/50%/60%/70%/80%.",
   "location": "Liyue",
   "baseDamage": { "attack": 38, "subStat": 102 },
   "description": "Bem, isso resolve o problema das borlas brancas que se mancham facilmente.",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Atacante Pesado",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Bônus de Dano apenas contra Slimes",
+          "type": "dmg_percent",
+          "values": [0.4, 0.5, 0.6, 0.7, 0.8],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
