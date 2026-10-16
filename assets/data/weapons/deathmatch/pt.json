@@ -5,9 +5,35 @@
   "baseAttack": 41,
   "subStat": "Taxa Crítica",
   "passiveName": "Gladiador",
-  "passiveDesc": "Se houver 2 inimigos ao redor, o ATQ é aumentado em 16%/20%/24%/28%/32% e a DEF é aumentada em 16%/20%/24%/28%/32%. Se houver menos que 2 inimigos ao redor, o ATQ é aumentado em 24%/30%/36%/42%/48%.",
+  "passiveDesc": "Se houver pelo menos 2 inimigos ao redor, o ATQ é aumentado em 16%/20%/24%/28%/32% e a DEF é aumentada em 16%/20%/24%/28%/32%. Se houver menos que 2 inimigos ao redor, o ATQ é aumentado em 24%/30%/36%/42%/48%.",
   "location": "Mondstadt",
   "baseDamage": { "attack": 41, "subStat": 80 },
   "description": "Uma lança afiada vermelho-sangue que era inestimável para um gladiador no passado. Sua ponta está manchada com o sangue de inúmeras bestas e pessoas.",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Gladiador",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATQ com pelo menos 2 inimigos próximos",
+          "type": "atk_percent",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "DEF com pelo menos 2 inimigos próximos",
+          "type": "def_percent",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "ATQ com menos de 2 inimigos próximos (alternativa ao outro bônus de ATQ)",
+          "type": "atk_percent",
+          "values": [0.24, 0.3, 0.36, 0.42, 0.48],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
