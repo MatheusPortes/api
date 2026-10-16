@@ -8,5 +8,29 @@
   "passiveDesc": "Within 6s after Normal or Charged Attacks hit an opponent, Normal Attack DMG will be increased by 8/10/12/14/16% and Charged Attack DMG will be increased by 6/7.5/9/10.5/12%. Max 3 stacks. This effect can be triggered once every 0.3s.",
   "location": "Event: Waterborne Poetry",
   "ascensionMaterial": "boreal",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Azure Skies",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Normal Attack DMG Bonus per stack",
+          "type": "dmg_percent",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true,
+          "target": "normal_attack",
+          "accumulations": 3
+        },
+        {
+          "label": "Charged Attack DMG Bonus per stack",
+          "type": "dmg_percent",
+          "values": [0.06, 0.075, 0.09, 0.105, 0.12],
+          "bonus": true,
+          "target": "charged_attack",
+          "accumulations": 3
+        }
+      ]
+    }
+  ]
 }

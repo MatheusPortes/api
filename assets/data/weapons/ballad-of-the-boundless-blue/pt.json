@@ -9,5 +9,29 @@
   "location": "Evento da Versão 4.1 - Poesias Aquáticas",
   "baseDamage": { "attack": 44, "subStat": 67 },
   "description": "Uma coleção de poesia requintada. Contém algumas poesias sobre os céus, Dandelions e outros tópicos amados pelas pessoas de Mondstadt.",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Céu Azul",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Bônus de Dano de Ataque Normal por acúmulo",
+          "type": "dmg_percent",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true,
+          "target": "normal_attack",
+          "accumulations": 3
+        },
+        {
+          "label": "Bônus de Dano de Ataque Carregado por acúmulo",
+          "type": "dmg_percent",
+          "values": [0.06, 0.075, 0.09, 0.105, 0.12],
+          "bonus": true,
+          "target": "charged_attack",
+          "accumulations": 3
+        }
+      ]
+    }
+  ]
 }
