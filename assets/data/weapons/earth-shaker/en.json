@@ -13,6 +13,21 @@
   },
   "description": "A heavy blade that people claim was beloved by the hero known as the Firethief. They say that even the Lord of Cinder Keep's flames could not burn it away.",
   "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Oath of Qhapaq Nan",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Elemental Skill DMG after a party member triggers a Pyro-related reaction",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 43.7349,

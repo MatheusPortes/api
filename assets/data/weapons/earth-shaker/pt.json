@@ -9,6 +9,21 @@
   "baseDamage": {},
   "description": "A espada preferida do Ladrão das Chamas. Dizem que nem mesmo as chamas do Rei da Cidade das Cinzas foram capazes de quebrá-la.",
   "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Juramento de Qhapaq Nan",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano da Habilidade Elemental após um membro da equipe desencadear uma reação relacionada ao Pyro",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 43.7349,
