@@ -9,7 +9,7 @@
 
 ## Working Style
 
-- Read all applicable AI specs before investigating, planning, editing, or validating work.
+- Read `.opencode/specs/README.md` first, then load only the task-applicable specs it names before investigating, planning, editing, or validating work.
 - State discoveries, tradeoffs, blockers, file changes, and validation results directly.
 - Do not claim validation that was not run. State omitted checks and the reason.
 - Ask only for information that cannot be determined from repository sources.

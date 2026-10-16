@@ -2,7 +2,7 @@
 
 ## AI specs
 
-- Read all applicable `.opencode/specs/` files before investigating, planning, editing, or validating work.
+- Read `.opencode/specs/README.md` first, then load only the task-applicable specs it names before investigating, planning, editing, or validating work.
 - Treat these files as the AI-readable application schema. Update the affected spec in the same change whenever application state, behavior, architecture, data layout, generation, or delivery changes.
 - Calculation work uses `.opencode/specs/entity-calculation-workflow.md`: one explicitly selected entity, staged source validation, no bulk migration. Consult `.opencode/history/entity-work-history.md` on demand and append the outcome after each stage; archived examples are not current completion certificates.
 - Version AI artifacts only on the `agent` branch. Do not transfer `AGENTS.md`, `opencode.json`, or `.opencode/` files to application delivery branches.
