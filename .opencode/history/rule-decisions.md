@@ -30,3 +30,9 @@ Read a section only for the matching active rule. Live records remain authoritat
 - Curves: `https://raw.githubusercontent.com/KQM-git/TCL/master/src/data/character_curves.json` and `weapon_curves.json`.
 
 These are historical evidence, never fresh validation or a permission to migrate.
+
+## 2026-10-16 — attribute-referenced-independent-scaling
+
+- Owner correction: Ash-Graven Drinking Horn must explicitly identify `character.hp` as the independent scaling reference. Extend `IndependentSkill.scalings[]` with the existing `conditional` shape; keep the selected scaling's native `hp_percent`, values [.4,.5,.6,.7,.8], native container and unknown damage type unchanged. This does not convert a proc to an HP stat grant.
+- Read-only compatibility review of live EN/PT independent skills: `assets/data/weapons/ash-graven-drinking-horn/{en,pt}.json`, `calculation.skills[0].scalings[0]`: correction-required, corrected in this change; `assets/data/weapons/aquila-favonia/{en,pt}.json`, same path: correction-required for the missing explicit `character.atk` reference, not edited because this correction request selects Ash-Graven and Astral only; `assets/data/artifacts/ocean-hued-clam/{en,pt}.json`, `effects[1].skills[0].scalings[0]`: not-applicable, its recorded-healing input follows a separate approved contract rather than a character attribute. No other live EN independent-skill containers were found. Other locales remain outside maintenance scope.
+- Evidence: owner instruction and the already inspected KQM/Yatta Max HP clauses at https://library.keqingmains.com/equipment/weapons/catalysts#ash-graven-drinking-horn and https://gi.yatta.moe/api/v2/en/weapon/14427 (PT: `/api/v2/pt/weapon/14427`). No claim of global reference consistency while Aquila remains uncorrected.

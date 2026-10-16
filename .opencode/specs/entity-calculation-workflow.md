@@ -59,6 +59,10 @@ States: `not-started`, `in-progress`, `partial`, `blocked`, `complete`, `reviewe
 
 `maxValues` otherwise caps the supplied result, not the reference. No rule authorizes formulas, timers, recipient selectors, state engines, unsupported scopes, or automatic migrations.
 
+### Attribute-referenced independent scaling
+
+Rule `attribute-referenced-independent-scaling`: an individually reviewed independent skill's attribute-referenced scaling carries `conditional` beside `type`/`values`. Use the source's reference, not activation state. Ash-Graven retains `hp_percent`, R1–R5 .4–.8, with `character.hp` (Max HP). Do not infer the reference from the type alone or migrate other entities automatically.
+
 ### Reactions
 
 `reaction` is required only for reaction-scoped `dmg_percent`; omit it elsewhere. Valid values:
@@ -156,7 +160,12 @@ type Effect = {
 type IndependentSkill = {
   refinementLevels?: number[];
   damageType?: Vision;
-  scalings: Array<{ type: EffectType; values: number[]; maxValues?: number[] }>;
+  scalings: Array<{
+    type: EffectType;
+    values: number[];
+    maxValues?: number[];
+    conditional?: Modifier['conditional'];
+  }>;
 };
 type ScalarUpgrade = {
   name: string;
