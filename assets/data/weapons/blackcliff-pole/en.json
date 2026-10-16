@@ -8,5 +8,20 @@
   "passiveDesc": "After defeating an enemy, ATK is increased by 12/15/18/21/24% for 30s. This effect has a maximum of 3 stacks, and the duration of each stack is independent of the others.",
   "location": "Starglitter Exchange",
   "ascensionMaterial": "elixir",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Press the Advantage",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATK Bonus per stack after defeating an enemy",
+          "type": "atk_percent",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true,
+          "accumulations": 3
+        }
+      ]
+    }
+  ]
 }

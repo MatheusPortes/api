@@ -9,5 +9,20 @@
   "location": "Liyue",
   "baseDamage": { "attack": 42, "subStat": 120 },
   "description": "Uma arma afiada e carmesim que já foi o tesouro inestimável de um gladiador. Seu furador foi manchado pelo sangue de incontáveis bestas e homens. Uma arma feita de pedra preta e aerossiderita. Há um brilho vermelho-escuro em seu brilho frio e preto.",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "De vitória em vitória",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Bônus de ATQ por acúmulo após derrotar um inimigo",
+          "type": "atk_percent",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true,
+          "accumulations": 3
+        }
+      ]
+    }
+  ]
 }
