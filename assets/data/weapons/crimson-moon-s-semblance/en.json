@@ -9,5 +9,25 @@
   "location": "Event Wish Exclusive",
   "baseDamage": { "attack": 48, "subStat": 48 },
   "description": "A keen-edged weapon, luster dazzling as the crimson moon. It is said that an ancient dynasty once regarded it as a ritual object that could bridge two worlds, but none still remember the beliefs and ceremonies of that bygone age.",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Ashen Sun's Shadow",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "DMG while the wearer has a Bond of Life",
+          "type": "dmg_percent",
+          "values": [0.12, 0.16, 0.2, 0.24, 0.28],
+          "bonus": true
+        },
+        {
+          "label": "Additional DMG while the wearer's Bond of Life is at least 30% of Max HP",
+          "type": "dmg_percent",
+          "values": [0.24, 0.32, 0.4, 0.48, 0.56],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
