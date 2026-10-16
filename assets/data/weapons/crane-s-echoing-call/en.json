@@ -5,10 +5,25 @@
   "baseAttack": 49,
   "subStat": "ATK",
   "passiveName": "Cloudfall Axiom",
-  "passiveDesc": "After the equipping character hits an opponent with a Plunging Attack, all nearby party members' Plunging Attacks will deal 28% increased DMG for 20s. When nearby party members hit opponents with Plunging Attacks, they will restore 2.5/2.75/3/3.25/3.5 Energy to the equipping character. Energy can restored this way every 0.7s. This energy regain effect can be triggered even if the equipping character is not on the field.",
+  "passiveDesc": "After the equipping character hits an opponent with a Plunging Attack, all nearby party members' Plunging Attacks will deal 28%/41%/54%/67%/80% increased DMG for 20s. When nearby party members hit opponents with Plunging Attacks, they will restore 2.5/2.75/3/3.25/3.5 Energy to the equipping character. Energy can be restored this way every 0.7s. This energy regain effect can be triggered even if the equipping character is not on the field.",
   "location": "Gacha",
   "ascensionMaterial": "elixir",
   "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Cloudfall Axiom",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Nearby party members' Plunging Attack DMG after the wearer lands a Plunging Attack",
+          "type": "dmg_percent",
+          "target": "plunging_attack",
+          "values": [0.28, 0.41, 0.54, 0.67, 0.8],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 49.1377,
