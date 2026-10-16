@@ -9,6 +9,20 @@
   "location": "Gacha",
   "ascensionMaterial": "decarabian",
   "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Bane of Water and Ice",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "DMG against opponents affected by Hydro or Cryo",
+          "type": "dmg_percent",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 38.7413,
