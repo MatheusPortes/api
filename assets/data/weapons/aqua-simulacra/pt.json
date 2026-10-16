@@ -9,5 +9,25 @@
   "location": "Liyue",
   "baseDamage": { "attack": 44, "subStat": 194 },
   "description": "A cor desse arco longo muda imprevisivelmente. Sob a luz, possui um brilho azulado como água.",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Forma Purificadora",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Bônus de Vida",
+          "type": "hp_percent",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano com inimigos próximos (em campo ou fora dele)",
+          "type": "dmg_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
