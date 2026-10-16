@@ -13,6 +13,21 @@
   },
   "description": "A prototype for a standard-issue weapon the Yuheng commissioned from Blackcliff Forge after having analyzed the ancient mechanisms that protected the adeptal abode upon Tianheng.",
   "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Crag-Chiseled Forge",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Elemental Mastery per stack after Elemental Energy decreases",
+          "type": "elemental_mastery",
+          "values": [40, 50, 60, 70, 80],
+          "bonus": true,
+          "accumulations": 2
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 42.401,
