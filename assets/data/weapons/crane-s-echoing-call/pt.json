@@ -9,5 +9,20 @@
   "location": "Oração de Evento de Arma",
   "baseDamage": { "attack": 49, "subStat": 36 },
   "description": "Um leque esculpido em jade puro, ao redor do qual circula uma antiga aura de Força Adepti.",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Axioma da Queda da Nuvem",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano de Ataque Imersivo dos membros próximos da equipe após o portador acertar um Ataque Imersivo",
+          "type": "dmg_percent",
+          "target": "plunging_attack",
+          "values": [0.28, 0.41, 0.54, 0.67, 0.8],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
