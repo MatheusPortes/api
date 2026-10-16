@@ -5,7 +5,7 @@
   "baseAttack": 39,
   "subStat": "Porcentagem de ATQ",
   "passiveName": "Convencer",
-  "passiveDesc": "Após usar e acertar uma Habilidade Elemental, Normal ou Ataque Carregado, causa Dano de ATQ adicional de 60%/75%/90%/105%/120% em uma área pequena por 15s. Pode ser ativado uma vez a cada 3s.",
+  "passiveDesc": "Após usar uma Habilidade Elemental, os Ataques Normais e Carregados, ao acertar, causam Dano adicional equivalente a 60%/75%/90%/105%/120% do ATQ em uma pequena AdE. O efeito dura 15s. Esse Dano só pode ocorrer uma vez a cada 3s.",
   "location": "Liyue",
   "baseDamage": {
     "attack": 39,
@@ -22,6 +22,18 @@
       "baseAttack": "ATK 1.1",
       "attackPercent": "C1"
     },
+    "skills": [
+      {
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [0.6, 0.75, 0.9, 1.05, 1.2],
+            "conditional": { "origin": "character", "attribute": "atk" }
+          }
+        ]
+      }
+    ],
     "ascensions": [
       {
         "ascension": 0,

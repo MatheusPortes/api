@@ -18,6 +18,18 @@
       "baseAttack": "ATK 1.1",
       "attackPercent": "C1"
     },
+    "skills": [
+      {
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [0.6, 0.75, 0.9, 1.05, 1.2],
+            "conditional": { "origin": "character", "attribute": "atk" }
+          }
+        ]
+      }
+    ],
     "ascensions": [
       {
         "ascension": 0,
