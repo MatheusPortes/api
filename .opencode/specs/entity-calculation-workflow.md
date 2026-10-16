@@ -8,10 +8,10 @@ Read `application-state.md`, `data-conventions.md`, `entity-research.md`, this f
 
 ## Per-Entity Process
 
-1. **Select:** record exact local ID, requested scope, baseline, patch and source items. Authorized rounds are sequential alphabetical artifacts (max 5) or weapons (max 20); stop at the limit, source conflict, or unapproved semantic/schema decision.
+1. **Select:** record exact local ID, requested scope, baseline, patch and source items. Authorized rounds are sequential alphabetical artifacts (max 5) or weapons (max 20); stop at the limit, unresolved source conflict under `entity-research.md`, or unapproved semantic/schema decision.
 2. **Inventory and research:** classify every source clause (stat/result, proc, hit, fixed addition, reference, stack/tier, consumer usage, unsupported); identify JSON paths. Validate identity and numbers under `entity-research.md`; retain URLs/access date/revision/raw responses outside served data.
 3. **Map:** reuse only an approved contract below. Map levels/ranks, references, targets, elements, caps and independent components explicitly. Do not infer a type from matching wording or numbers.
-4. **Apply:** change only selected EN/PT records; preserve other locales and unrelated fields. Validated EN/PT display alignment is standing-authorized, but source conflicts remain blockers.
+4. **Apply:** change only selected EN/PT records; preserve other locales and unrelated fields. Validated EN/PT display alignment is standing-authorized; resolve source differences under `entity-research.md` before applying.
 5. **Validate:** JSON; raw coefficients; levels/ranks; types/metadata; hit/add/cap semantics; EN/PT parity; focused diff/format; `pnpm run build` and `pnpm run lint` with Node 20/pnpm. Report failures or omissions; never repair unrelated baseline failures.
 6. **Record and deliver:** append the concise outcome to the appropriate history file, then commit on `agent` as `<id> - <what was done>`. For a bounded round, independently mirror only that entity's served JSON to the configured delivery branch before selecting the next item. Follow `git-workflow.md`; do not transfer `.opencode/`, push, or start a further round without authorization.
 

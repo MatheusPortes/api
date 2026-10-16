@@ -10,6 +10,7 @@ Read a section only for the matching active rule. Live records remain authoritat
 - **Traveling Doctor:** Max HP is the recovery reference; owner-confirmed because accessible clauses omitted the denominator.
 - **Ocean-Hued Clam:** proc is Physical; owner-confirmed with KQM support. Detailed formula certification was dismissed.
 - **Akuoumaru:** `time.energy_cost` means combined party maximum Burst Energy Cost only; never a timer/general state namespace.
+- **Source consensus (2026-10-16):** owner replaced the blanket conflict stop with corroborated independent-source consensus; the current rule is in `entity-research.md`. Astral Vulture uses matching KQM/Yatta Swirl-or-Stellar-Swirl wording over Fandom's Swirl-only clause. Unlike earlier entity-specific resolutions above, this instruction is standing authorization for subsequent research.
 
 ## Compatibility findings
 

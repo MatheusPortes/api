@@ -3,7 +3,7 @@
 Historical evidence is split to avoid loading unrelated entity narratives:
 
 - `entity-records-artifacts.md` — compact EN/PT artifact outcomes and catalog additions.
-- `entity-records-weapons.md` — compact weapon outcomes and the current blocked stop.
+- `entity-records-weapons.md` — compact weapon outcomes, corrections, and source resolutions.
 - `rule-decisions.md` — owner-selected semantics, compatibility reviews, and reusable source links.
 - `closed-decisions.md` — removals, dismissed follow-ups, and retired-workflow facts.
 - `calculation-workflow-archive.md` — short pre-reset examples and deferred work only.

@@ -23,7 +23,7 @@ This repository is a static-data API for Genshin Impact entities and images.
 
 - Entity calculation work is individual and source-validated; never run a bulk migration or restore archived bulk results.
 - Normal maintenance changes only EN/PT and preserves other locales. Entity-specific deletions require explicit owner authorization.
-- For an authorized bounded artifact round (up to five entities) or weapon round (up to 20 entities), work sequentially by local ID, fully complete and commit one entity before advancing, stop at the requested limit or on a source/schema conflict, and do not push unless explicitly requested. Mirror each completed weapon's publishable JSON in its separate `weapons-specifications` delivery-branch commit before selecting the next weapon.
+- For an authorized bounded artifact round (up to five entities) or weapon round (up to 20 entities), work sequentially by local ID, fully complete and commit one entity before advancing, stop at the requested limit, an unresolved source conflict under `entity-research.md`, or a schema conflict, and do not push unless explicitly requested. Mirror each completed weapon's publishable JSON in its separate `weapons-specifications` delivery-branch commit before selecting the next weapon.
 - EN/PT display text may be aligned with validated sources; new mechanical schemas still require a deliberate decision.
 - The prior artifact review has no active follow-up. Dismissed topics (full damage engines, artifact main/substat progression, consumer state/timers, and unrelated baseline check repairs) must not be reopened automatically.
 

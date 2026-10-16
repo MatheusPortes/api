@@ -5,7 +5,7 @@
   "baseAttack": 46,
   "subStat": "CRIT DMG",
   "passiveName": "The Moonring Sighted",
-  "passiveDesc": "For 12s after triggering a Swirl reaction, ATK increases by 24%/30%/36%/42%/48%. In addition, when 1/2 or more characters in the party are of a different Elemental Type from the equipping character, the DMG dealt by the equipping character's Charged Attacks is increased by 20%/48% | 25%/60% | 30%/72% | 35%/84% | 40%/96% and Elemental Burst DMG dealt is increased by 10%/24% | 12.5%/30% | 15%/36% | 17.5%/42% | 20%/48%.",
+  "passiveDesc": "For 12s after triggering a Swirl or Stellar Swirl reaction, ATK increases by 24%/30%/36%/42%/48%. In addition, when 1/2 or more characters in the party are of a different Elemental Type from the equipping character, the DMG dealt by the equipping character's Charged Attacks is increased by 20%/48% | 25%/60% | 30%/72% | 35%/84% | 40%/96% and Elemental Burst DMG dealt is increased by 10%/24% | 12.5%/30% | 15%/36% | 17.5%/42% | 20%/48%.",
   "location": "Event Wish Exclusive",
   "baseDamage": {
     "attack": 46,
@@ -13,6 +13,48 @@
   },
   "description": "An ancient longbow crested with red feathers, a sacred relic of the Flower-Feather Clan that has been passed down from generation to generation.",
   "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "The Moonring Sighted",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATK Bonus for 12s after Swirl or Stellar Swirl",
+          "type": "atk_percent",
+          "values": [0.24, 0.3, 0.36, 0.42, 0.48],
+          "bonus": true
+        },
+        {
+          "label": "Charged Attack DMG Bonus with exactly 1 different-element party member",
+          "type": "dmg_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true,
+          "target": "charged_attack"
+        },
+        {
+          "label": "Charged Attack DMG Bonus with 2+ different-element party members (replaces the 1-member total)",
+          "type": "dmg_percent",
+          "values": [0.48, 0.6, 0.72, 0.84, 0.96],
+          "bonus": true,
+          "target": "charged_attack"
+        },
+        {
+          "label": "Elemental Burst DMG Bonus with exactly 1 different-element party member",
+          "type": "dmg_percent",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true,
+          "target": "elemental_burst"
+        },
+        {
+          "label": "Elemental Burst DMG Bonus with 2+ different-element party members (replaces the 1-member total)",
+          "type": "dmg_percent",
+          "values": [0.24, 0.3, 0.36, 0.42, 0.48],
+          "bonus": true,
+          "target": "elemental_burst"
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 45.9364,
