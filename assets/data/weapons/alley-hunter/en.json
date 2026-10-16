@@ -5,7 +5,7 @@
   "baseAttack": 41,
   "subStat": "Attack",
   "passiveName": "Urban Guerrilla",
-  "passiveDesc": "Every 4s a character is on the field, their ATK increases by 4/5/6/7/8% and their CRIT DMG increases by 4/5/6/7/8%. This effect has a maximum of 5 stacks and will not be reset if the character leaves the field, but will be cleared when the character takes DMG.",
+  "passiveDesc": "While the character equipped with this weapon is in the party but not on the field, their DMG increases by 2/2.5/3/3.5/4% every second up to a max of 20/25/30/35/40%. When the character is on the field for more than 4s, the aforementioned DMG buff decreases by 4/5/6/7/8% per second until it reaches 0%.",
   "location": "Gacha",
   "ascensionMaterial": "dandelion",
   "weapon_type": "BOW",
@@ -67,5 +67,19 @@
         }
       }
     ]
-  }
+  },
+  "effects": [
+    {
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Off-Field DMG Bonus per Second (up to 10 Units)",
+          "type": "dmg_percent",
+          "values": [0.02, 0.025, 0.03, 0.035, 0.04],
+          "accumulations": 10,
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }

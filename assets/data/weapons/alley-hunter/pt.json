@@ -71,5 +71,19 @@
         }
       }
     ]
-  }
+  },
+  "effects": [
+    {
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Bônus de Dano Fora de Campo por Segundo (até 10 Unidades)",
+          "type": "dmg_percent",
+          "values": [0.02, 0.025, 0.03, 0.035, 0.04],
+          "accumulations": 10,
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
