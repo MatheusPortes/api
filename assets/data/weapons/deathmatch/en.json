@@ -5,10 +5,36 @@
   "baseAttack": 41,
   "subStat": "CRIT Rate",
   "passiveName": "Gladiator",
-  "passiveDesc": "If there are at least 2 opponents nearby, ATK is increased by 16% and DEF is increased by 16%. If there are less than 2 enemies nearby, ATK is increased by 24%.",
+  "passiveDesc": "If there are at least 2 opponents nearby, ATK is increased by 16%/20%/24%/28%/32% and DEF is increased by 16%/20%/24%/28%/32%. If there are fewer than 2 opponents nearby, ATK is increased by 24%/30%/36%/42%/48%.",
   "location": "BP Bounty",
   "ascensionMaterial": "boreal",
   "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Gladiator",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATK with at least 2 opponents nearby",
+          "type": "atk_percent",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "DEF with at least 2 opponents nearby",
+          "type": "def_percent",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "ATK with fewer than 2 opponents nearby (alternative to the other ATK bonus)",
+          "type": "atk_percent",
+          "values": [0.24, 0.3, 0.36, 0.42, 0.48],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 41.0671,
