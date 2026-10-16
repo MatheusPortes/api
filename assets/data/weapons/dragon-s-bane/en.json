@@ -8,5 +8,19 @@
   "passiveDesc": "Increases DMG against enemies affected by Hydro or Pyro by 20/24/28/32/36%.",
   "location": "Gacha",
   "ascensionMaterial": "elixir",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Bane of Flame and Water",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "DMG against opponents affected by Hydro or Pyro",
+          "type": "dmg_percent",
+          "values": [0.2, 0.24, 0.28, 0.32, 0.36],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
