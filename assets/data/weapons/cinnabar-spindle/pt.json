@@ -13,6 +13,25 @@
   },
   "description": "Uma espada feita de materiais que não pertencem a este mundo. O poder dentro dela pode até mesmo ser capaz de resistir à corrupção de um veneno que poderia corroer um poderoso dragão.",
   "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Coração Imaculado",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano adicional da Habilidade Elemental com base na DEF",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          },
+          "values": [0.4, 0.5, 0.6, 0.7, 0.8],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 41.0671,

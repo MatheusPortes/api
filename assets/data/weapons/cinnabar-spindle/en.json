@@ -9,6 +9,25 @@
   "location": "Shadows Amidst Snowstorms Event",
   "ascensionMaterial": "decarabian",
   "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Spotless Heart",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Additional Elemental Skill DMG from DEF",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          },
+          "values": [0.4, 0.5, 0.6, 0.7, 0.8],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 41.0671,
