@@ -2,12 +2,105 @@
   "name": "Mil Sóis Ardentes",
   "type": "Espadão",
   "rarity": 5,
-  "baseAttack": null,
+  "baseAttack": 49,
   "subStat": "Taxa Crítica",
   "passiveName": "O Poente Reacende o Amanhecer",
   "passiveDesc": "Obtém o efeito \"Brilho Escaldante\" ao usar uma Habilidade Elemental ou Supremo: Dano CRIT aumentado em 20%/25%/30%/35%/40% e ATQ aumentado em 28%/35%/42%/49%/56% por 6s. Este efeito pode ser ativado uma vez a cada 10s.Enquanto uma instância de \"Brilho Escaldante\" estiver ativa, sua duração é aumentada em 2s após ataques Normais ou Carregados causarem Dano Elemental. Este efeito pode ser ativado uma vez por segundo, e o aumento máximo de duração é de 6s.Além disso, quando o personagem estiver no estado Bênção do Espírito da Noite, aumenta o efeito \"Brilho Escaldante\" em 75%, e esse efeito não terá sua contagem regressiva quando o personagem que estiver com essa arma equipada não estiver ativo.",
   "location": "Oração de Evento de Arma",
-  "baseDamage": { "attack": null, "subStat": 0 },
+  "baseDamage": {
+    "attack": 49,
+    "subStat": 24
+  },
   "description": "Uma espada grande que brilha como o sol nascente. Ela testemunhou o apagar e o reacender de inúmeros sóis.",
-  "weapon_type": "CLAYMORE"
+  "weapon_type": "CLAYMORE",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 49.1377,
+      "critRate": 0.024
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 3.3",
+      "critRate": "C3"
+    },
+    "effects": [
+      {
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "modifiers": [
+          {
+            "label": "Bônus de Dano CRIT de Brilho Escaldante",
+            "type": "crit_dmg",
+            "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+            "bonus": true
+          },
+          {
+            "label": "Bônus de ATQ de Brilho Escaldante",
+            "type": "atk_percent",
+            "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+            "bonus": true
+          },
+          {
+            "label": "Bônus adicional de Dano CRIT de Brilho Escaldante na Bênção do Espírito da Noite",
+            "type": "crit_dmg",
+            "values": [0.15, 0.1875, 0.225, 0.2625, 0.3],
+            "bonus": true
+          },
+          {
+            "label": "Bônus adicional de ATQ de Brilho Escaldante na Bênção do Espírito da Noite",
+            "type": "atk_percent",
+            "values": [0.21, 0.2625, 0.315, 0.3675, 0.42],
+            "bonus": true
+          }
+        ]
+      }
+    ],
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 31.1
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 62.2
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 93.4
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 124.5
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 186.7
+        }
+      }
+    ]
+  }
 }
