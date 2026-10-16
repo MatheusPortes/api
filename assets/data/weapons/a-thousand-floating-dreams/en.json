@@ -18,82 +18,6 @@
       "baseAttack": "ATK 3.4",
       "elementalMastery": "C3"
     },
-    "effects": [
-      {
-        "refinementLevels": [1, 2, 3, 4, 5],
-        "modifiers": [
-          {
-            "label": "Elemental Mastery per Other Party Member with the Same Elemental Type",
-            "type": "elemental_mastery",
-            "values": [32, 40, 48, 56, 64],
-            "bonus": true,
-            "accumulations": 3
-          },
-          {
-            "label": "Elemental DMG Bonus per Other Party Member with a Different Elemental Type",
-            "type": "elemental_dmg_percent",
-            "element": "GEO",
-            "values": [0.1, 0.14, 0.18, 0.22, 0.26],
-            "bonus": true,
-            "accumulations": 3
-          },
-          {
-            "label": "Elemental DMG Bonus per Other Party Member with a Different Elemental Type",
-            "type": "elemental_dmg_percent",
-            "element": "ANEMO",
-            "values": [0.1, 0.14, 0.18, 0.22, 0.26],
-            "bonus": true,
-            "accumulations": 3
-          },
-          {
-            "label": "Elemental DMG Bonus per Other Party Member with a Different Elemental Type",
-            "type": "elemental_dmg_percent",
-            "element": "CRYO",
-            "values": [0.1, 0.14, 0.18, 0.22, 0.26],
-            "bonus": true,
-            "accumulations": 3
-          },
-          {
-            "label": "Elemental DMG Bonus per Other Party Member with a Different Elemental Type",
-            "type": "elemental_dmg_percent",
-            "element": "DENDRO",
-            "values": [0.1, 0.14, 0.18, 0.22, 0.26],
-            "bonus": true,
-            "accumulations": 3
-          },
-          {
-            "label": "Elemental DMG Bonus per Other Party Member with a Different Elemental Type",
-            "type": "elemental_dmg_percent",
-            "element": "ELECTRO",
-            "values": [0.1, 0.14, 0.18, 0.22, 0.26],
-            "bonus": true,
-            "accumulations": 3
-          },
-          {
-            "label": "Elemental DMG Bonus per Other Party Member with a Different Elemental Type",
-            "type": "elemental_dmg_percent",
-            "element": "HYDRO",
-            "values": [0.1, 0.14, 0.18, 0.22, 0.26],
-            "bonus": true,
-            "accumulations": 3
-          },
-          {
-            "label": "Elemental DMG Bonus per Other Party Member with a Different Elemental Type",
-            "type": "elemental_dmg_percent",
-            "element": "PYRO",
-            "values": [0.1, 0.14, 0.18, 0.22, 0.26],
-            "bonus": true,
-            "accumulations": 3
-          },
-          {
-            "label": "Elemental Mastery Bonus for Other Nearby Party Members",
-            "type": "elemental_mastery",
-            "values": [40, 42, 44, 46, 48],
-            "bonus": true
-          }
-        ]
-      }
-    ],
     "ascensions": [
       {
         "ascension": 0,
@@ -143,5 +67,81 @@
         }
       }
     ]
-  }
+  },
+  "effects": [
+    {
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Elemental Mastery per Other Party Member with the Same Elemental Type",
+          "type": "elemental_mastery",
+          "values": [32, 40, 48, 56, 64],
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "Elemental DMG Bonus per Other Party Member with a Different Elemental Type",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.1, 0.14, 0.18, 0.22, 0.26],
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "Elemental DMG Bonus per Other Party Member with a Different Elemental Type",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.1, 0.14, 0.18, 0.22, 0.26],
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "Elemental DMG Bonus per Other Party Member with a Different Elemental Type",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.1, 0.14, 0.18, 0.22, 0.26],
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "Elemental DMG Bonus per Other Party Member with a Different Elemental Type",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.1, 0.14, 0.18, 0.22, 0.26],
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "Elemental DMG Bonus per Other Party Member with a Different Elemental Type",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.1, 0.14, 0.18, 0.22, 0.26],
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "Elemental DMG Bonus per Other Party Member with a Different Elemental Type",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.1, 0.14, 0.18, 0.22, 0.26],
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "Elemental DMG Bonus per Other Party Member with a Different Elemental Type",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.1, 0.14, 0.18, 0.22, 0.26],
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "Elemental Mastery Bonus for Other Nearby Party Members",
+          "type": "elemental_mastery",
+          "values": [40, 42, 44, 46, 48],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }

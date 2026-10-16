@@ -22,82 +22,6 @@
       "baseAttack": "ATK 3.4",
       "elementalMastery": "C3"
     },
-    "effects": [
-      {
-        "refinementLevels": [1, 2, 3, 4, 5],
-        "modifiers": [
-          {
-            "label": "Proficiência Elemental por Outro Membro da Equipe com o Mesmo Tipo Elemental",
-            "type": "elemental_mastery",
-            "values": [32, 40, 48, 56, 64],
-            "bonus": true,
-            "accumulations": 3
-          },
-          {
-            "label": "Bônus de Dano Elemental por Outro Membro da Equipe com Tipo Elemental Diferente",
-            "type": "elemental_dmg_percent",
-            "element": "GEO",
-            "values": [0.1, 0.14, 0.18, 0.22, 0.26],
-            "bonus": true,
-            "accumulations": 3
-          },
-          {
-            "label": "Bônus de Dano Elemental por Outro Membro da Equipe com Tipo Elemental Diferente",
-            "type": "elemental_dmg_percent",
-            "element": "ANEMO",
-            "values": [0.1, 0.14, 0.18, 0.22, 0.26],
-            "bonus": true,
-            "accumulations": 3
-          },
-          {
-            "label": "Bônus de Dano Elemental por Outro Membro da Equipe com Tipo Elemental Diferente",
-            "type": "elemental_dmg_percent",
-            "element": "CRYO",
-            "values": [0.1, 0.14, 0.18, 0.22, 0.26],
-            "bonus": true,
-            "accumulations": 3
-          },
-          {
-            "label": "Bônus de Dano Elemental por Outro Membro da Equipe com Tipo Elemental Diferente",
-            "type": "elemental_dmg_percent",
-            "element": "DENDRO",
-            "values": [0.1, 0.14, 0.18, 0.22, 0.26],
-            "bonus": true,
-            "accumulations": 3
-          },
-          {
-            "label": "Bônus de Dano Elemental por Outro Membro da Equipe com Tipo Elemental Diferente",
-            "type": "elemental_dmg_percent",
-            "element": "ELECTRO",
-            "values": [0.1, 0.14, 0.18, 0.22, 0.26],
-            "bonus": true,
-            "accumulations": 3
-          },
-          {
-            "label": "Bônus de Dano Elemental por Outro Membro da Equipe com Tipo Elemental Diferente",
-            "type": "elemental_dmg_percent",
-            "element": "HYDRO",
-            "values": [0.1, 0.14, 0.18, 0.22, 0.26],
-            "bonus": true,
-            "accumulations": 3
-          },
-          {
-            "label": "Bônus de Dano Elemental por Outro Membro da Equipe com Tipo Elemental Diferente",
-            "type": "elemental_dmg_percent",
-            "element": "PYRO",
-            "values": [0.1, 0.14, 0.18, 0.22, 0.26],
-            "bonus": true,
-            "accumulations": 3
-          },
-          {
-            "label": "Bônus de Proficiência Elemental para Outros Membros Próximos da Equipe",
-            "type": "elemental_mastery",
-            "values": [40, 42, 44, 46, 48],
-            "bonus": true
-          }
-        ]
-      }
-    ],
     "ascensions": [
       {
         "ascension": 0,
@@ -147,5 +71,81 @@
         }
       }
     ]
-  }
+  },
+  "effects": [
+    {
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Proficiência Elemental por Outro Membro da Equipe com o Mesmo Tipo Elemental",
+          "type": "elemental_mastery",
+          "values": [32, 40, 48, 56, 64],
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "Bônus de Dano Elemental por Outro Membro da Equipe com Tipo Elemental Diferente",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.1, 0.14, 0.18, 0.22, 0.26],
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "Bônus de Dano Elemental por Outro Membro da Equipe com Tipo Elemental Diferente",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.1, 0.14, 0.18, 0.22, 0.26],
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "Bônus de Dano Elemental por Outro Membro da Equipe com Tipo Elemental Diferente",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.1, 0.14, 0.18, 0.22, 0.26],
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "Bônus de Dano Elemental por Outro Membro da Equipe com Tipo Elemental Diferente",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.1, 0.14, 0.18, 0.22, 0.26],
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "Bônus de Dano Elemental por Outro Membro da Equipe com Tipo Elemental Diferente",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.1, 0.14, 0.18, 0.22, 0.26],
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "Bônus de Dano Elemental por Outro Membro da Equipe com Tipo Elemental Diferente",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.1, 0.14, 0.18, 0.22, 0.26],
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "Bônus de Dano Elemental por Outro Membro da Equipe com Tipo Elemental Diferente",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.1, 0.14, 0.18, 0.22, 0.26],
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "Bônus de Proficiência Elemental para Outros Membros Próximos da Equipe",
+          "type": "elemental_mastery",
+          "values": [40, 42, 44, 46, 48],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
