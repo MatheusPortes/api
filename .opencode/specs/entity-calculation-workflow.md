@@ -49,7 +49,7 @@ States: `not-started`, `in-progress`, `partial`, `blocked`, `complete`, `reviewe
 | `stackable-bonus-cap`                               | Uniform per-stack value + integer `accumulations > 1`; actual count is consumer state.                                                                                                         |
 | `bounded-bonus-step-count`                          | Uniform bounded absolute bonus steps may use per-step value + cap; do not create a separate total/base grant.                                                                                  |
 | `nonuniform-stack-tier-totals`                      | Separate condition-labeled mutually exclusive total modifiers; omit `accumulations`, never sum tiers.                                                                                          |
-| `party-member-counted-bonus`                        | Per-eligible-member value + contributor cap. Exclude holder and preserve mutually constrained counts.                                                                                          |
+| `party-member-counted-bonus`                        | Per-eligible-member value + contributor cap; holder eligibility follows the source. Count each member once and preserve mutually constrained counts.                                           |
 | `enemy-elemental-resistance-reduction`              | `elemental_res_reduction`, element, positive amount; omit `bonus`, target, conditional and reaction.                                                                                           |
 | `nonstacking-same-element-res-alternative-triggers` | One same-element RES reduction for alternative nonstacking triggers; no duplicate summable entries.                                                                                            |
 | `wearer-party-element-resistance-bonus`             | `elemental_res_percent`, element, positive value, `bonus: true`; represented elements may coexist, repeats do not stack.                                                                       |
@@ -58,6 +58,10 @@ States: `not-started`, `in-progress`, `partial`, `blocked`, `complete`, `reviewe
 | `combined-party-energy-cost-burst-bonus`            | Burst `dmg_percent`, target `elemental_burst`, `conditional: time.energy_cost`, per-point values and same-rank result `maxValues`; consumer applies `min(sum party Burst costs × value, cap)`. |
 
 `maxValues` otherwise caps the supplied result, not the reference. No rule authorizes formulas, timers, recipient selectors, state engines, unsupported scopes, or automatic migrations.
+
+### Party-member eligibility and thresholds
+
+Under `party-member-counted-bonus`, the source determines whether the holder is eligible; inclusion is not universal. Chain Breaker counts a Natlan member OR a member whose Elemental Type differs from the wearer, counting each once, including a Natlan wearer. Its per-member ATK uses `accumulations: 4`; the separate EM grant requires at least three eligible members and is supplied once, without `accumulations`. Actual eligible-member count and party selection remain consumer state in localized labels/descriptions, not `conditional`. Gilded Dreams and A Thousand Floating Dreams still exclude the holder and retain their validated cap-3 constraints. This source-specific extension does not authorize automatic edits to other entities.
 
 ### Attribute-referenced independent scaling
 

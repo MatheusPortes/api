@@ -13,6 +13,27 @@
   },
   "description": "A jade-adorned longbow. The gentle winds always seem to swirl gently about its string. Legends claim that this weapon was made in a far more ancient era by a dragon artisan.",
   "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Flower-Feather Song",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATK per party member from Natlan or of a different Elemental Type (count once; includes a Natlan wearer)",
+          "type": "atk_percent",
+          "values": [0.048, 0.06, 0.072, 0.084, 0.096],
+          "bonus": true,
+          "accumulations": 4
+        },
+        {
+          "label": "Elemental Mastery with at least 3 such eligible party members",
+          "type": "elemental_mastery",
+          "values": [24, 30, 36, 42, 48],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 43.7349,
