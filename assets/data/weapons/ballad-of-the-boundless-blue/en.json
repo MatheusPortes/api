@@ -9,6 +9,30 @@
   "location": "Event: Waterborne Poetry",
   "ascensionMaterial": "boreal",
   "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Azure Skies",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Normal Attack DMG Bonus per stack",
+          "type": "dmg_percent",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true,
+          "target": "normal_attack",
+          "accumulations": 3
+        },
+        {
+          "label": "Charged Attack DMG Bonus per stack",
+          "type": "dmg_percent",
+          "values": [0.06, 0.075, 0.09, 0.105, 0.12],
+          "bonus": true,
+          "target": "charged_attack",
+          "accumulations": 3
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 43.7349,
