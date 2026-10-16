@@ -4,7 +4,7 @@
   "rarity": 5,
   "baseAttack": 46,
   "subStat": "Taxa Crítica",
-  "passiveName": "Materiais de Refinamento",
+  "passiveName": "Guarda do Mar de Areia",
   "passiveDesc": "Quando a Habilidade Elemental atinge um inimigo, aumenta o ATQ em 20%/25%/30%/35%/40% por 8s. Ao sofrer Dano, aumenta o ATQ em 20%/25%/30%/35%/40% por 8s. Os dois efeitos descritos acima podem ser desencadeados mesmo se o personagem não estiver ativo no campo de batalha. Além disso, personagens que não estiverem sob a proteção de um Escudo terão sua Vida Máxima aumentada em 32%/40%/48%/56%/64%.",
   "location": "Oração de Evento de Arma",
   "baseDamage": {
@@ -13,6 +13,32 @@
   },
   "description": "Um Espadão longo antiquado com uma ponta semicircular. Parece ser uma arma usada pela realeza para certas cerimônias.",
   "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Guarda do Mar de Areia",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Bônus de ATQ após a Habilidade Elemental atingir um inimigo (em campo ou fora dele)",
+          "type": "atk_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de ATQ após sofrer Dano (em campo ou fora dele)",
+          "type": "atk_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Vida Máxima sem a proteção de um Escudo",
+          "type": "hp_percent",
+          "values": [0.32, 0.4, 0.48, 0.56, 0.64],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 45.9364,

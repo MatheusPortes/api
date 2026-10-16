@@ -9,6 +9,32 @@
   "location": "Gacha",
   "ascensionMaterial": "scorching",
   "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Desert Watch",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATK Bonus after Elemental Skill hits (on-field or off-field)",
+          "type": "atk_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "ATK Bonus after taking DMG (on-field or off-field)",
+          "type": "atk_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "Max HP Bonus while not protected by a shield",
+          "type": "hp_percent",
+          "values": [0.32, 0.4, 0.48, 0.56, 0.64],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 45.9364,
