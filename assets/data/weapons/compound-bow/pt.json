@@ -13,6 +13,29 @@
   },
   "description": "Um arco de liga de metal, com rodas que esticam a corda. De difícil manuseio, mas consegue acertar o alvo com uma força incrível.",
   "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Flecha Infundida",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATQ por acúmulo ao acertar Ataques Normais ou Carregados",
+          "type": "atk_percent",
+          "values": [0.04, 0.05, 0.06, 0.07, 0.08],
+          "bonus": true,
+          "accumulations": 4
+        },
+        {
+          "label": "VEL de Ataque Normal por acúmulo ao acertar Ataques Normais ou Carregados",
+          "type": "atk_speed_percent",
+          "target": "normal_attack",
+          "values": [0.012, 0.015, 0.018, 0.021, 0.024],
+          "bonus": true,
+          "accumulations": 4
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 41.0671,
