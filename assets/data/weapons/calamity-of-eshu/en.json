@@ -13,6 +13,42 @@
   },
   "description": "A ceremonial blade forged by Sanhaj, the great high priest of the Masters of the Night-Wind. In tales of bygone days, Sanhaj could use this curved blade to perform rituals, blurring the boundary between the Night Kingdom and the present world.",
   "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Diffusing Boundary",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Normal Attack DMG Bonus while shielded",
+          "type": "dmg_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true,
+          "target": "normal_attack"
+        },
+        {
+          "label": "Charged Attack DMG Bonus while shielded",
+          "type": "dmg_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true,
+          "target": "charged_attack"
+        },
+        {
+          "label": "Normal Attack CRIT Rate while shielded",
+          "type": "crit_rate",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true,
+          "target": "normal_attack"
+        },
+        {
+          "label": "Charged Attack CRIT Rate while shielded",
+          "type": "crit_rate",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true,
+          "target": "charged_attack"
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 43.7349,

@@ -13,6 +13,42 @@
   },
   "description": "Uma lâmina cerimonial forjada por Sanhaj, o sumo-sacerdote dos Mestres do Vento Noturno. Nas histórias do passado, Sanhaj podia usar essa lâmina curva para realizar rituais, apagando a linha entre o Reino da Noite e o mundo.",
   "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Fronteira Permeante",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Bônus de Dano de Ataque Normal sob proteção de Escudo",
+          "type": "dmg_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true,
+          "target": "normal_attack"
+        },
+        {
+          "label": "Bônus de Dano de Ataque Carregado sob proteção de Escudo",
+          "type": "dmg_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true,
+          "target": "charged_attack"
+        },
+        {
+          "label": "Taxa CRIT de Ataque Normal sob proteção de Escudo",
+          "type": "crit_rate",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true,
+          "target": "normal_attack"
+        },
+        {
+          "label": "Taxa CRIT de Ataque Carregado sob proteção de Escudo",
+          "type": "crit_rate",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true,
+          "target": "charged_attack"
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 43.7349,
