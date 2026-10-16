@@ -5,10 +5,54 @@
   "baseAttack": 48,
   "subStat": "CRIT Rate",
   "passiveName": "Golden Blood-Tide",
-  "passiveDesc": "ATK is increased by 16/20/24/28/32%. When current HP increases or decreases, Normal Attack DMG will be increased by 16/20/24/28/32% and Charged Attack DMG will be increased by 14/17.5/21/24.5/28% for 4s. Max 3 stacks. This effect can be triggered once every 0.3s. When the wielder has 3 stacks, ATK SPD will be increased by 8/10/12/14/16%.",
+  "passiveDesc": "ATK is increased by 16/20/24/28/32%. When current HP increases or decreases, Normal Attack DMG is increased by 16/20/24/28/32%, Charged Attack DMG is increased by 14/17.5/21/24.5/28%, and Stellar-Conduct DMG is increased by 14/17.5/21/24.5/28% for 4s. Max 3 stacks. This effect can be triggered once every 0.3s. When the wielder has 3 stacks, ATK SPD will be increased by 8/10/12/14/16%.",
   "location": "Gacha",
   "ascensionMaterial": "pristine-sea",
   "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Golden Blood-Tide",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATK Bonus",
+          "type": "atk_percent",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "Normal Attack DMG Bonus per HP-change stack",
+          "type": "dmg_percent",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true,
+          "target": "normal_attack",
+          "accumulations": 3
+        },
+        {
+          "label": "Charged Attack DMG Bonus per HP-change stack",
+          "type": "dmg_percent",
+          "values": [0.14, 0.175, 0.21, 0.245, 0.28],
+          "bonus": true,
+          "target": "charged_attack",
+          "accumulations": 3
+        },
+        {
+          "label": "Stellar-Conduct DMG Bonus per same HP-change stack",
+          "type": "dmg_percent",
+          "values": [0.14, 0.175, 0.21, 0.245, 0.28],
+          "bonus": true,
+          "reaction": ["STELLAR_CONDUCT"],
+          "accumulations": 3
+        },
+        {
+          "label": "ATK SPD Bonus while 3 HP-change stacks are active",
+          "type": "atk_speed_percent",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 47.537,
