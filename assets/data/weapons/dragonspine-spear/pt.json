@@ -5,7 +5,7 @@
   "baseAttack": 41,
   "subStat": "Bônus de Dano Físico",
   "passiveName": "Enterro Congelante",
-  "passiveDesc": "Atingir um inimigo com um Ataque Normal e Ataque Carregado possui uma chance de 60%/70%/80%/90%/100% de formar e dropar um Núcleo de Cristal Eterno sobre eles, causando 80%/95%/110%/125%/140% de Dano de ATQ em uma AdE. Inimigos afetados por Cryo recebem 200%/240%/280%/320%/360% de Dano de ATQ. Pode ocorrer apenas uma vez a cada 10s.",
+  "passiveDesc": "Atingir um inimigo com um Ataque Normal e Ataque Carregado possui uma chance de 60%/70%/80%/90%/100% de formar e dropar um Núcleo de Cristal Eterno sobre eles, causando 80%/95%/110%/125%/140% de Dano de ATQ em uma AdE. Em vez desse Dano, inimigos afetados por Cryo recebem Dano equivalente a 200%/240%/280%/320%/360% do ATQ. Pode ocorrer apenas uma vez a cada 10s.",
   "location": "Mondstadt",
   "baseDamage": {
     "attack": 41,
@@ -22,6 +22,30 @@
       "baseAttack": "ATK 2.4",
       "physicalDamageBonus": "C2"
     },
+    "skills": [
+      {
+        "label": "Núcleo de Cristal Eterno contra inimigos sem Cryo (alternativa à variante com Cryo)",
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [0.8, 0.95, 1.1, 1.25, 1.4],
+            "conditional": { "origin": "character", "attribute": "atk" }
+          }
+        ]
+      },
+      {
+        "label": "Núcleo de Cristal Eterno contra inimigos com Cryo (substitui a variante comum)",
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [2, 2.4, 2.8, 3.2, 3.6],
+            "conditional": { "origin": "character", "attribute": "atk" }
+          }
+        ]
+      }
+    ],
     "ascensions": [
       {
         "ascension": 0,

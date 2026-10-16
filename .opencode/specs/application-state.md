@@ -25,6 +25,7 @@ This repository is a static-data API for Genshin Impact entities and images.
 - Normal maintenance changes only EN/PT and preserves other locales. Entity-specific deletions require explicit owner authorization.
 - For an authorized bounded artifact round (up to five entities) or weapon round (up to 20 entities), work sequentially by local ID, fully complete and commit one entity before advancing, stop at the requested limit, an unresolved source conflict under `entity-research.md`, or a schema conflict, and do not push unless explicitly requested. Mirror each completed weapon's publishable JSON in its separate `weapons-specifications` delivery-branch commit before selecting the next weapon.
 - EN/PT display text may be aligned with validated sources; new mechanical schemas still require a deliberate decision.
+- Every existing independent skill now requires a localized nonempty `label`; approved alternative proc totals remain labeled, mutually exclusive native skills. The owner-authorized `dragonspine-spear` adjustment includes label-only backfill across existing skill records/locales, without changing their mechanics or importing branch-specific calculations.
 - The prior artifact review has no active follow-up. Dismissed topics (full damage engines, artifact main/substat progression, consumer state/timers, and unrelated baseline check repairs) must not be reopened automatically.
 
 ## Where to Find Detail

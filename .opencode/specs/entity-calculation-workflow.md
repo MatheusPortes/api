@@ -69,6 +69,10 @@ Rule `attribute-referenced-independent-scaling`: an individually reviewed indepe
 
 Rule `independent-triggered-weapon-damage`: a source-validated separate weapon proc uses native `calculation.skills`, even when Normal/Charged attacks trigger it. Keep its attribute reference explicit; trigger categories remain consumer text, not duplicated targeted modifiers. Crescent Pike's owner-approved Physical ATK-referenced proc is independent, unlike Echoes of an Offering's attached damage. This does not reclassify other weapons or restore archived mappings.
 
+Rule `required-independent-skill-label`: every `IndependentSkill` requires a nonempty localized `label`, including single-output skills and artifact-nested skills. Reuse established localized passive/proc names where applicable. This does not add labels to separate character talent-table schemas that already use names.
+
+Rule `independent-proc-alternative-totals`: source-validated mutually exclusive proc totals use separate labeled native skills; each label identifies eligibility and replacement. Choose exactly one applicable variant per proc/target, never sum alternatives or multiply by trigger chance. Dragonspine Spear uses ordinary ATK [.8,.95,1.1,1.25,1.4] versus Cryo-affected replacement [2,2.4,2.8,3.2,3.6], with `character.atk`; timing/chance/target state remain consumer text, not attribute references or new state fields. Do not infer damage type from an icicle name or weapon substat.
+
 ### Reactions
 
 `reaction` is required only for reaction-scoped `dmg_percent`; omit it elsewhere. Valid values:
@@ -164,6 +168,7 @@ type Effect = {
   skills?: IndependentSkill[];
 };
 type IndependentSkill = {
+  label: string;
   refinementLevels?: number[];
   damageType?: Vision;
   scalings: Array<{
