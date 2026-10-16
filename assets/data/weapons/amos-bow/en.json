@@ -9,6 +9,44 @@
   "location": "Gacha",
   "ascensionMaterial": "dandelion",
   "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Strong-Willed",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Normal Attack DMG Bonus",
+          "type": "dmg_percent",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true,
+          "target": "normal_attack"
+        },
+        {
+          "label": "Charged Attack DMG Bonus",
+          "type": "dmg_percent",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true,
+          "target": "charged_attack"
+        },
+        {
+          "label": "Normal Attack Arrow Flight DMG Bonus",
+          "type": "dmg_percent",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true,
+          "accumulations": 5,
+          "target": "normal_attack"
+        },
+        {
+          "label": "Charged Attack Arrow Flight DMG Bonus",
+          "type": "dmg_percent",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true,
+          "accumulations": 5,
+          "target": "charged_attack"
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 45.9364,
