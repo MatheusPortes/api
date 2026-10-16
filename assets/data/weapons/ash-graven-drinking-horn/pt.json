@@ -8,5 +8,18 @@
   "passiveDesc": "Quando um ataque acerta um oponente, causa 40%/50%/60%/70%/80% da Vida Máxima como Dano em uma AdE no local do alvo. Este efeito pode ser desencadeado uma vez a cada 15s.",
   "baseDamage": { "attack": 42, "subStat": 90 },
   "description": "Um artefato cerimonial herdado por Meztli, dizem que é um tesouro amado, mas nunca usado pelo herói conhecido como \"Gigante\", Tupac.",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "calculation": {
+    "skills": [
+      {
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "scalings": [
+          {
+            "type": "hp_percent",
+            "values": [0.4, 0.5, 0.6, 0.7, 0.8]
+          }
+        ]
+      }
+    ]
+  }
 }
