@@ -67,6 +67,8 @@ Under `party-member-counted-bonus`, the source determines whether the holder is 
 
 Rule `attribute-referenced-independent-scaling`: an individually reviewed independent skill's attribute-referenced scaling carries `conditional` beside `type`/`values`. Use the source's reference, not activation state. Ash-Graven retains `hp_percent`, R1–R5 .4–.8, with `character.hp` (Max HP). Do not infer the reference from the type alone or migrate other entities automatically.
 
+Rule `independent-triggered-weapon-damage`: a source-validated separate weapon proc uses native `calculation.skills`, even when Normal/Charged attacks trigger it. Keep its attribute reference explicit; trigger categories remain consumer text, not duplicated targeted modifiers. Crescent Pike's owner-approved Physical ATK-referenced proc is independent, unlike Echoes of an Offering's attached damage. This does not reclassify other weapons or restore archived mappings.
+
 ### Reactions
 
 `reaction` is required only for reaction-scoped `dmg_percent`; omit it elsewhere. Valid values:

@@ -14,6 +14,8 @@ Read a section only for the matching active rule. Live records remain authoritat
 
 ## Compatibility findings
 
+- **Crescent Pike independent proc (2026-10-16):** owner approved the displayed `calculation.skills` mapping, Physical, `atk_percent` [.2,.25,.3,.35,.4] with `character.atk`, superseding its archived attached-damage note. Rule `independent-triggered-weapon-damage` distinguishes separate proc output from trigger categories. Read-only compatibility: Crescent Pike EN/PT had no live passive mapping and are mapped individually; Ash-Graven EN/PT independent HP-reference shape compatible, unchanged; Aquila EN/PT independent-container shape compatible but previously missing ATK reference remains correction-required/outside scope, unchanged; Echoes EN attached Normal damage remains compatible/unchanged, not migrated. Evidence and source/translation limits are in `entity-records-weapons.md` under this ID. No global completeness claim.
+
 - Artifact independent proc nesting: Clam is the only found artifact root-skill correction; Aquila’s weapon `calculation.skills` is intentionally different.
 - Consumer-empty effects: Gambler cooldown reset, Prayers status duration, Scholar/The Exile/Scroll fixed Energy are not stat/result coefficients. Lucky Dog fixed healing is a counterexample.
 - Input caps: Clam independent and Song attached `accumulated_healing_percent` caps apply to recorded-healing HP input; Emblem’s cap remains a result cap.
