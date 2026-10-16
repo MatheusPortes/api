@@ -9,6 +9,26 @@
   "location": "Gacha",
   "ascensionMaterial": "decarabian",
   "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Falcon's Defiance",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATK Increase",
+          "type": "atk_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "HP recovery on taking DMG based on ATK",
+          "type": "healing",
+          "values": [1, 1.15, 1.3, 1.45, 1.6],
+          "conditional": { "origin": "character", "attribute": "atk" }
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 47.537,
@@ -18,18 +38,6 @@
       "baseAttack": "ATK 3.2",
       "physicalDamageBonus": "C3"
     },
-    "effects": [
-      {
-        "refinementLevels": [1, 2, 3, 4, 5],
-        "modifiers": [
-          {
-            "label": "ATK Increase",
-            "type": "atk_percent",
-            "values": [0.2, 0.25, 0.3, 0.35, 0.4]
-          }
-        ]
-      }
-    ],
     "skills": [
       {
         "refinementLevels": [1, 2, 3, 4, 5],
