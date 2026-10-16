@@ -5,8 +5,81 @@
   "baseAttack": 41,
   "subStat": "Attack",
   "passiveName": "Urban Guerrilla",
-  "passiveDesc": "Every 4s a character is on the field, their ATK increases by 4/5/6/7/8% and their CRIT DMG increases by 4/5/6/7/8%. This effect has a maximum of 5 stacks and will not be reset if the character leaves the field, but will be cleared when the character takes DMG.",
+  "passiveDesc": "While the character equipped with this weapon is in the party but not on the field, their DMG increases by 2/2.5/3/3.5/4% every second up to a max of 20/25/30/35/40%. When the character is on the field for more than 4s, the aforementioned DMG buff decreases by 4/5/6/7/8% per second until it reaches 0%.",
   "location": "Gacha",
   "ascensionMaterial": "dandelion",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "calculation": {
+    "initialStats": {
+      "baseAttack": 43.7349,
+      "attackPercent": 0.06
+    },
+    "growthCurves": {
+      "baseAttack": "ATK 2.2",
+      "attackPercent": "C2"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseAttack": 25.9
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseAttack": 51.9
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseAttack": 77.8
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseAttack": 103.7
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseAttack": 129.7
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseAttack": 155.6
+        }
+      }
+    ]
+  },
+  "effects": [
+    {
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Off-Field DMG Bonus per Second (up to 10 Units)",
+          "type": "dmg_percent",
+          "values": [0.02, 0.025, 0.03, 0.035, 0.04],
+          "accumulations": 10,
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
