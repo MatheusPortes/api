@@ -5,7 +5,7 @@
   "baseAttack": 39,
   "subStat": "Proficiência Elemental",
   "passiveName": "Sobrecarga",
-  "passiveDesc": "Depois de 12s após a ativação da reação de Sobrecarga, Supercondutor, Redemoinho Electro, aumenta o ATQ em 20%/25%/30%/35%/40%.",
+  "passiveDesc": "Após causar uma reação elemental de Sobrecarga, Supercondutor, Supercondutor Estelar, Eletricamente Carregado, Aceleração, Intensificação, Superflorescimento, Carga Lunar ou Redemoinho de Electro, o ATQ é aumentado em 20%/25%/30%/35%/40% por 12s.",
   "location": "Liyue",
   "baseDamage": {
     "attack": 39,
@@ -13,6 +13,20 @@
   },
   "description": "Bem, na verdade é apenas uma espada de ferro um pouco escura.",
   "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Sobrecarga",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATQ após desencadear uma reação elegível",
+          "type": "atk_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 38.7413,
