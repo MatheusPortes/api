@@ -13,6 +13,77 @@
   },
   "description": "Um recipiente ritualístico esculpido de jade que reflete o brilho dos céus e águas cristalinas.",
   "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Presente de Jade Primordial",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Apenas portador Geo: Dano Geo com base na Vida Máxima enquanto Presente de Jade Primordial estiver ativo",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.000003, 0.000005, 0.000007, 0.000009, 0.000011],
+          "maxValues": [0.12, 0.2, 0.28, 0.36, 0.44],
+          "conditional": { "origin": "character", "attribute": "hp" },
+          "bonus": true
+        },
+        {
+          "label": "Apenas portador Anemo: Dano Anemo com base na Vida Máxima enquanto Presente de Jade Primordial estiver ativo",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.000003, 0.000005, 0.000007, 0.000009, 0.000011],
+          "maxValues": [0.12, 0.2, 0.28, 0.36, 0.44],
+          "conditional": { "origin": "character", "attribute": "hp" },
+          "bonus": true
+        },
+        {
+          "label": "Apenas portador Cryo: Dano Cryo com base na Vida Máxima enquanto Presente de Jade Primordial estiver ativo",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.000003, 0.000005, 0.000007, 0.000009, 0.000011],
+          "maxValues": [0.12, 0.2, 0.28, 0.36, 0.44],
+          "conditional": { "origin": "character", "attribute": "hp" },
+          "bonus": true
+        },
+        {
+          "label": "Apenas portador Dendro: Dano Dendro com base na Vida Máxima enquanto Presente de Jade Primordial estiver ativo",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.000003, 0.000005, 0.000007, 0.000009, 0.000011],
+          "maxValues": [0.12, 0.2, 0.28, 0.36, 0.44],
+          "conditional": { "origin": "character", "attribute": "hp" },
+          "bonus": true
+        },
+        {
+          "label": "Apenas portador Electro: Dano Electro com base na Vida Máxima enquanto Presente de Jade Primordial estiver ativo",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.000003, 0.000005, 0.000007, 0.000009, 0.000011],
+          "maxValues": [0.12, 0.2, 0.28, 0.36, 0.44],
+          "conditional": { "origin": "character", "attribute": "hp" },
+          "bonus": true
+        },
+        {
+          "label": "Apenas portador Hydro: Dano Hydro com base na Vida Máxima enquanto Presente de Jade Primordial estiver ativo",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.000003, 0.000005, 0.000007, 0.000009, 0.000011],
+          "maxValues": [0.12, 0.2, 0.28, 0.36, 0.44],
+          "conditional": { "origin": "character", "attribute": "hp" },
+          "bonus": true
+        },
+        {
+          "label": "Apenas portador Pyro: Dano Pyro com base na Vida Máxima enquanto Presente de Jade Primordial estiver ativo",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.000003, 0.000005, 0.000007, 0.000009, 0.000011],
+          "maxValues": [0.12, 0.2, 0.28, 0.36, 0.44],
+          "conditional": { "origin": "character", "attribute": "hp" },
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 45.9364,
