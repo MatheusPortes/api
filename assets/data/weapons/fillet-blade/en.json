@@ -8,5 +8,20 @@
   "passiveDesc": "On hit, has 50% chance to deal 240/280/320/360/400% ATK DMG to a single enemy. Can only occur once every 15/14/13/12/11s.",
   "location": "Chests",
   "ascensionMaterial": "elixir",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "calculation": {
+    "skills": [
+      {
+        "label": "Gash",
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [2.4, 2.8, 3.2, 3.6, 4],
+            "conditional": { "origin": "character", "attribute": "atk" }
+          }
+        ]
+      }
+    ]
+  }
 }
