@@ -9,5 +9,27 @@
   "location": "Liyue",
   "baseDamage": { "attack": 44, "subStat": 60 },
   "description": "Uma lança forjada com pedras da floresta de Guyun. Sua robustez é conhecida por não haver outra igual.",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Axioma de Millelith: Unidade",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATQ por membro da equipe oriundo de Liyue (incluindo portador que cumpra a condição)",
+          "type": "atk_percent",
+          "values": [0.07, 0.08, 0.09, 0.1, 0.11],
+          "bonus": true,
+          "accumulations": 4
+        },
+        {
+          "label": "Taxa CRIT por membro da equipe oriundo de Liyue (mesma contagem válida do ATQ)",
+          "type": "crit_rate",
+          "values": [0.03, 0.04, 0.05, 0.06, 0.07],
+          "bonus": true,
+          "accumulations": 4
+        }
+      ]
+    }
+  ]
 }
