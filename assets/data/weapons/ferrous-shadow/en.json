@@ -9,6 +9,21 @@
   "location": "Gacha",
   "ascensionMaterial": "decarabian",
   "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Unbending",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Charged Attack DMG while HP is below 70%/75%/80%/85%/90% (R1-R5)",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.3, 0.35, 0.4, 0.45, 0.5],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 38.7413,
