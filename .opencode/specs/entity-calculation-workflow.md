@@ -61,6 +61,8 @@ States: `not-started`, `in-progress`, `partial`, `blocked`, `complete`, `reviewe
 
 ### Party-member eligibility and thresholds
 
+Rule `wearer-movement-speed-bonus`: an individually source-validated Movement SPD stat bonus uses `movement_speed_percent`, positive ratio `values`, and `bonus: true`, without an attack target. Lost Prayer supplies [.1,.1,.1,.1,.1] at R1–R5 without conditional/accumulations; its separate elemental bonus retains per-stack coefficients/cap. Movement speed is not attack speed, stamina consumption, Energy, or damage. This static stat input does not encode locomotion, sprinting, current stacks or timers and does not authorize migrations of other entities.
+
 Rule `signed-additive-atk-penalty`: an individually source-validated ATK-percent loss may use negative `atk_percent` values with `bonus: true`; the sign subtracts from the additive ATK-percent contribution, not final ATK or damage. Fruit of Fulfillment uses [-.05,-.05,-.05,-.05,-.05] per stack, `accumulations: 5`, separately from direct EM [24,27,30,33,36] with the same cap. Both use the same consumer-selected active stack count. Do not emit positive ATK, `bonus: false`, an invented reduction type, a precomputed cap total, or a timer/state engine. This approval does not redefine other result types or authorize automatic migrations.
 
 Under `party-member-counted-bonus`, the source determines whether the holder is eligible; inclusion is not universal. Chain Breaker counts a Natlan member OR a member whose Elemental Type differs from the wearer, counting each once, including a Natlan wearer. Its per-member ATK uses `accumulations: 4`; the separate EM grant requires at least three eligible members and is supplied once, without `accumulations`. Actual eligible-member count and party selection remain consumer state in localized labels/descriptions, not `conditional`. Gilded Dreams and A Thousand Floating Dreams still exclude the holder and retain their validated cap-3 constraints. This source-specific extension does not authorize automatic edits to other entities.
@@ -93,6 +95,7 @@ type EffectType =
   | 'hp_percent'
   | 'atk_percent'
   | 'atk_speed_percent'
+  | 'movement_speed_percent'
   | 'base_atk'
   | 'base_def'
   | 'elemental_dmg_percent'

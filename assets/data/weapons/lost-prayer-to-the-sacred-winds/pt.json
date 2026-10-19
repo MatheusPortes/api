@@ -13,6 +13,76 @@
   },
   "description": "Um livro educacional escrito por habitantes anônimos que adoravam o vento. Foi abençoado pelo vento por sua fidelidade e influência ao longo dos milênios.",
   "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Bênção Sem Fronteiras",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Velocidade de Movimento",
+          "type": "movement_speed_percent",
+          "values": [0.1, 0.1, 0.1, 0.1, 0.1],
+          "bonus": true
+        },
+        {
+          "label": "Dano Geo por acúmulo ativo em campo",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true,
+          "accumulations": 4
+        },
+        {
+          "label": "Dano Anemo por acúmulo ativo em campo",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true,
+          "accumulations": 4
+        },
+        {
+          "label": "Dano Cryo por acúmulo ativo em campo",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true,
+          "accumulations": 4
+        },
+        {
+          "label": "Dano Dendro por acúmulo ativo em campo",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true,
+          "accumulations": 4
+        },
+        {
+          "label": "Dano Electro por acúmulo ativo em campo",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true,
+          "accumulations": 4
+        },
+        {
+          "label": "Dano Hydro por acúmulo ativo em campo",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true,
+          "accumulations": 4
+        },
+        {
+          "label": "Dano Pyro por acúmulo ativo em campo",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true,
+          "accumulations": 4
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 45.9364,
