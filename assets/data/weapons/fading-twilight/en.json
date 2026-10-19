@@ -5,8 +5,34 @@
   "baseAttack": 42,
   "subStat": "Energy Recharge",
   "passiveName": "Radiance of the Deeps",
-  "passiveDesc": "Has three states, Evengleam, Afterglow, and Dawnblaze, which increase DMG dealt from 6%/10%/14% (R1) to 12%/20%/28% (R5) respectively. When attacks hit opponents, this weapon will switch to the next state. This weapon can change states once every 7s. The character equipping this weapon can still trigger the state switch while not on the field.",
+  "passiveDesc": "Has three states: Evengleam increases DMG dealt by 6%/7.5%/9%/10.5%/12%; Afterglow by 10%/12.5%/15%/17.5%/20%; and Dawnblaze by 14%/17.5%/21%/24.5%/28%. When attacks hit opponents, this weapon will switch to the next state. This weapon can change states once every 7s. The character equipping this weapon can still trigger the state switch while not on the field.",
   "location": "Event: Perilous Trail",
   "ascensionMaterial": "aerosiderite",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Radiance of the Deeps",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Evengleam DMG (select only the current state's total)",
+          "type": "dmg_percent",
+          "values": [0.06, 0.075, 0.09, 0.105, 0.12],
+          "bonus": true
+        },
+        {
+          "label": "Afterglow DMG (alternative to Evengleam and Dawnblaze)",
+          "type": "dmg_percent",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true
+        },
+        {
+          "label": "Dawnblaze DMG (alternative to Evengleam and Afterglow)",
+          "type": "dmg_percent",
+          "values": [0.14, 0.175, 0.21, 0.245, 0.28],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
