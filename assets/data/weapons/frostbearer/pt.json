@@ -9,5 +9,31 @@
   "location": "Mondstadt",
   "baseDamage": { "attack": 42, "subStat": 90 },
   "description": "Uma fruta que possui uma aura estranha e gélida. Uma leve sensação de agonia emana dela.",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "calculation": {
+    "skills": [
+      {
+        "label": "Enterro Congelante: total comum do Núcleo (não a substituição contra inimigos afetados por Cryo)",
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [0.8, 0.95, 1.1, 1.25, 1.4],
+            "conditional": { "origin": "character", "attribute": "atk" }
+          }
+        ]
+      },
+      {
+        "label": "Enterro Congelante: total substituto contra inimigos afetados por Cryo (em vez do Núcleo comum)",
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [2, 2.4, 2.8, 3.2, 3.6],
+            "conditional": { "origin": "character", "attribute": "atk" }
+          }
+        ]
+      }
+    ]
+  }
 }
