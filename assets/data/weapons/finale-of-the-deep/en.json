@@ -5,10 +5,35 @@
   "baseAttack": 44,
   "subStat": "ATK",
   "passiveName": "An End Sublime",
-  "passiveDesc": "When using an Elemental Skill, ATK will be increased by 12% for 15s, and a Bond of Life worth 25% of Max HP will be granted. This effect can be triggered once every 10s. When the Bond of Life is cleared, a maximum of 150 ATK will be gained based on 2.4% of the Bond when cleared for 15s. Bond of Life: Absorbs healing for the character based on its base value, and clears after healing equal to this value is obtained.",
+  "passiveDesc": "When using an Elemental Skill, ATK will be increased by 12%/15%/18%/21%/24% for 15s, and a Bond of Life worth 25% of Max HP will be granted. This effect can be triggered once every 10s. When the Bond of Life is cleared, a maximum of 150/187.5/225/262.5/300 ATK will be gained based on 2.4%/3%/3.6%/4.2%/4.8% of the total amount of the Life Bond cleared, lasting for 15s. Bond of Life: Absorbs healing for the character based on its base value, and clears after healing equal to this value is obtained.",
   "location": "BP Bounty",
   "ascensionMaterial": "pure-sacred-dewdrop",
   "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "An End Sublime",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATK after using an Elemental Skill",
+          "type": "atk_percent",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "ATK from the total Bond of Life cleared",
+          "type": "flat_atk",
+          "conditional": {
+            "origin": "character",
+            "attribute": "cleared_bond_of_life"
+          },
+          "values": [0.024, 0.03, 0.036, 0.042, 0.048],
+          "maxValues": [150, 187.5, 225, 262.5, 300],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 43.7349,

@@ -14,6 +14,10 @@ Read a section only for the matching active rule. Live records remain authoritat
 
 ## Compatibility findings
 
+- **Cleared Bond of Life input (2026-10-19):** owner approved the displayed Finale of the Deep mapping and new `conditional.attribute: cleared_bond_of_life`, origin character, HP-unit total cleared supplied by the consumer. Rule `cleared-bond-of-life-reference` separates the flat-ATK result/normal result cap from the event reference and initial ATK-percent grant; resource state/timers remain outside the API.
+
+  - Read-only live conditional inventory before application found no Bond reference in character/weapon/artifact data. `weapons/crimson-moon-s-semblance/{en,pt}.json`, `effects[0].modifiers[0..1]`, compatible unchanged as label-gated current-Bond DMG, not cleared-amount scaling; no new reference added there. Engulfing ER offset and Emblem full-total ER remain compatible unchanged, no migration. Finale EN/PT had no passive mapping and are mapped individually. Existing vocabulary/other attributes remain unchanged; no full calculation-coverage claim or unrelated correction.
+
 - **Above-baseline attribute reference (2026-10-19):** owner approved optional `conditional.offset` as displayed for Engulfing Lightning. Rule `attribute-reference-baseline-offset` subtracts the finite nonnegative baseline in attribute units, floors the input at zero, then applies the coefficient and normal result cap. Omission retains the full original reference. This does not encode activation or introduce a runtime engine.
 
   - Read-only live ER-reference inventory: `artifacts/emblem-of-severed-fate/{en,pt}.json`, `effects[1].modifiers[0]`, compatible/unchanged with full ER [.25] and result cap [.75], no offset; no other live artifact/weapon/character `conditional.attribute: energy_recharge` found before this change. Engulfing EN/PT previously had no passive mapping and are mapped with `offset: 1`; other existing conditional objects remain compatible by omission, without field additions or a full recalculation audit. Unknown/unrelated prior coverage remains uncertified.
