@@ -18,6 +18,19 @@
       "baseAttack": "ATK 2.4",
       "attackPercent": "C2"
     },
+    "skills": [
+      {
+        "label": "Bolt of Perception",
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [2.4, 2.7, 3, 3.3, 3.6],
+            "conditional": { "origin": "character", "attribute": "atk" }
+          }
+        ]
+      }
+    ],
     "ascensions": [
       {
         "ascension": 0,
