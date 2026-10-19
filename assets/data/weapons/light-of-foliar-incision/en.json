@@ -5,10 +5,46 @@
   "baseAttack": 44,
   "subStat": "CRIT DMG",
   "passiveName": "Whitemoon Bristle",
-  "passiveDesc": "CRIT Rate is increased by 4%. After Normal Attacks deal Elemental DMG, the Foliar Incision effect will be obtained, increasing DMG dealt by Normal Attacks and Elemental Skills by 120% of Elemental Mastery.",
+  "passiveDesc": "CRIT Rate is increased by 4%/5%/6%/7%/8%. After Normal Attacks deal Elemental DMG, the Foliar Incision effect will be obtained, increasing DMG dealt by Normal Attacks and Elemental Skills by 120%/150%/180%/210%/240% of Elemental Mastery. This effect will disappear after 28 DMG instances or 12s. You can obtain Foliar Incision once every 12s.",
   "location": "Gacha",
   "ascensionMaterial": "talisman",
   "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Whitemoon Bristle",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "CRIT Rate",
+          "type": "crit_rate",
+          "values": [0.04, 0.05, 0.06, 0.07, 0.08],
+          "bonus": true
+        },
+        {
+          "label": "Foliar Incision: additional Normal Attack DMG from Elemental Mastery while active",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [1.2, 1.5, 1.8, 2.1, 2.4],
+          "conditional": {
+            "origin": "character",
+            "attribute": "elemental_mastery"
+          },
+          "bonus": true
+        },
+        {
+          "label": "Foliar Incision: additional Elemental Skill DMG from Elemental Mastery while active",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [1.2, 1.5, 1.8, 2.1, 2.4],
+          "conditional": {
+            "origin": "character",
+            "attribute": "elemental_mastery"
+          },
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 44.3358,
