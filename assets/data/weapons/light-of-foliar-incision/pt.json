@@ -5,9 +5,45 @@
   "baseAttack": 44,
   "subStat": "Dano Crítico",
   "passiveName": "Ponta do Galho da Lua Branca",
-  "passiveDesc": "Aumenta a Taxa CRIT em 4%/5%/6%/7%8%. Quando o Ataque Normal causa Dano elemental, obtém o efeito \"Poda\": aumenta o Dano causado pelos Ataques Normais e pela Habilidade Elemental. O aumento de Dano é equivalente a 120%/150%/180%/210%/240% da Proficiência Elemental. Esse efeito desaparecerá depois de ser ativado 28 vezes ou após 12s. Só é possível desencadear o efeito \"Poda\" uma vez a cada 12s.",
+  "passiveDesc": "Aumenta a Taxa CRIT em 4%/5%/6%/7%/8%; quando o Ataque Normal causa Dano elemental, obtém o efeito \"Poda\": aumenta o Dano causado pelos Ataques Normais e pela Habilidade Elemental. O aumento de Dano é equivalente a 120%/150%/180%/210%/240% da Proficiência Elemental. Esse efeito desaparecerá depois de ser ativado 28 vezes ou após 12s. Só é possível desencadear o efeito \"Poda\" uma vez a cada 12s.",
   "location": "Oração de Evento de Arma",
   "baseDamage": { "attack": 44, "subStat": 192 },
   "description": "Uma lâmina ornamentada feita de preciosos ramos brancos. No passado cortou incontáveis sujeiras que percorreram a floresta contaminada.",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Ponta do Galho da Lua Branca",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Taxa CRIT",
+          "type": "crit_rate",
+          "values": [0.04, 0.05, 0.06, 0.07, 0.08],
+          "bonus": true
+        },
+        {
+          "label": "Poda: Dano adicional de Ataque Normal com base na Proficiência Elemental enquanto ativo",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [1.2, 1.5, 1.8, 2.1, 2.4],
+          "conditional": {
+            "origin": "character",
+            "attribute": "elemental_mastery"
+          },
+          "bonus": true
+        },
+        {
+          "label": "Poda: Dano adicional de Habilidade Elemental com base na Proficiência Elemental enquanto ativo",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [1.2, 1.5, 1.8, 2.1, 2.4],
+          "conditional": {
+            "origin": "character",
+            "attribute": "elemental_mastery"
+          },
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
