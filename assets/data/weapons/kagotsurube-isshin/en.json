@@ -9,7 +9,34 @@
   "location": "Quest: Ere the End, a Glance Back",
   "ascensionMaterial": "mask",
   "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Isshin Art Clarity",
+      "refinementLevels": [1],
+      "modifiers": [
+        {
+          "label": "ATK for 8s after triggering Hewing Gale",
+          "type": "atk_percent",
+          "values": [0.15],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
+    "skills": [
+      {
+        "label": "Hewing Gale",
+        "refinementLevels": [1],
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [1.8],
+            "conditional": { "origin": "character", "attribute": "atk" }
+          }
+        ]
+      }
+    ],
     "initialStats": {
       "baseAttack": 42.401,
       "attackPercent": 0.09
