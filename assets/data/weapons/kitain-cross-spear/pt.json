@@ -13,6 +13,21 @@
   },
   "description": "Uma lança especial que foi usada por um guerreiro famoso que guardava o Tatarigami da Ilha Yashiori.",
   "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Conduta do Samurai",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano de Habilidade Elemental",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.06, 0.075, 0.09, 0.105, 0.12],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 43.7349,

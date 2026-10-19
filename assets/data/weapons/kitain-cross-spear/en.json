@@ -9,6 +9,21 @@
   "location": "Crafting",
   "ascensionMaterial": "mask",
   "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Samurai Conduct",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Elemental Skill DMG",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.06, 0.075, 0.09, 0.105, 0.12],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 43.7349,
