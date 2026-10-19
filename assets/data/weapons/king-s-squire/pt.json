@@ -9,5 +9,34 @@
   "location": "Forja",
   "baseDamage": { "attack": 41, "subStat": 120 },
   "description": "Uma arma obtida através de uma das histórias dos Aranara. Ela tomou a forma de um arco que é capaz de perfurar os inimigos da floresta.",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Instruções do Rei do Labirinto",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Ensinamentos da Floresta: Proficiência Elemental enquanto ativo",
+          "type": "elemental_mastery",
+          "values": [60, 80, 100, 120, 140],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "skills": [
+      {
+        "label": "Ensinamentos da Floresta: Dano quando o efeito termina ou é removido",
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [1, 1.2, 1.4, 1.6, 1.8],
+            "conditional": { "origin": "character", "attribute": "atk" }
+          }
+        ]
+      }
+    ]
+  }
 }
