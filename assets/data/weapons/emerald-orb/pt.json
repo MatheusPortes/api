@@ -5,9 +5,23 @@
   "baseAttack": 40,
   "subStat": "Proficiência Elemental",
   "passiveName": "Corrente Torrencial",
-  "passiveDesc": "Depois de 12s após a ativação da reação de Vaporização, Eletricamente Carregado, Congelamento ou Redemoinho Hydro, aumenta o ATQ em 20%/25%/30%/35%/40%.",
+  "passiveDesc": "Após causar uma reação elemental de Vaporização, Eletricamente Carregado, Congelamento, Florescimento, Carga Lunar, Florescimento Lunar ou Redemoinho de Hydro, o ATQ é aumentado em 20%/25%/30%/35%/40% por 12s.",
   "location": "Liyue",
   "baseDamage": { "attack": 40, "subStat": 20 },
   "description": "Um catalisador esculpido com uma jade rígida de Relevo de Jueyun, norte de Liyue. É pequena, leve e durável.",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Corrente Torrencial",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATQ após desencadear uma reação elegível",
+          "type": "atk_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
