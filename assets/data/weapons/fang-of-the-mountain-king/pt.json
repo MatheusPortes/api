@@ -13,6 +13,30 @@
   },
   "description": "Uma espada gigante forjada de turquesa pura. Recebeu o nome de Rei da Montanha pelo seu peso considerável e tamanho muito maior do que uma lâmina comum.",
   "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Caça à Turquesa",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Favor da Copa: Dano da Habilidade Elemental por acúmulo",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true,
+          "accumulations": 6
+        },
+        {
+          "label": "Favor da Copa: Dano do Supremo por acúmulo",
+          "type": "dmg_percent",
+          "target": "elemental_burst",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true,
+          "accumulations": 6
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 49.1377,
