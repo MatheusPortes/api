@@ -9,5 +9,34 @@
   "location": "Inazuma",
   "baseDamage": { "attack": 42, "subStat": 90 },
   "description": "Esta lâmina famosa foi forjada em uma nação distante do norte. Contudo, o nome \"Isshin\" foi manchado com muitos atos sombrios em sua jornada para casa.",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Claridade da Arte Isshin",
+      "refinementLevels": [1],
+      "modifiers": [
+        {
+          "label": "ATQ por 8s após desencadear Vento Cortador",
+          "type": "atk_percent",
+          "values": [0.15],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "skills": [
+      {
+        "label": "Vento Cortador",
+        "refinementLevels": [1],
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [1.8],
+            "conditional": { "origin": "character", "attribute": "atk" }
+          }
+        ]
+      }
+    ]
+  }
 }
