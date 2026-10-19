@@ -5,9 +5,35 @@
   "baseAttack": 46,
   "subStat": "Recarga de Energia",
   "passiveName": "Canção de Despedida",
-  "passiveDesc": "Uma parte do Concerto Milenar que flutua no vento. Aumenta a Proficiência Elemental em 60%/75%/90%/105%/120% pontos. Quando a Habilidade Elemental ou o Supremo atingir os inimigos, o personagem obterá um Símbolo das Lembranças, que pode ser ativado uma vez a cada 0.2s, mesmo quando o personagem não está no campo de batalha. Possuir 4 Símbolos das Lembranças faz consumir todos eles, e faz todos os personagens da equipe obterem o efeito de \"Concerto Milenar: Música da Despedida\" por 12s: A Proficiência Elemental será aumentada em 100/125/150/175/200 pontos, além disso, o ATQ será aumentado em 20%/25%/30%/35%/40%. Dentro de 20s depois da ativação, não é possível obter os Símbolos das Lembranças de novo. Entre todos os efeitos de vários valores, os efeitos do mesmo valor não podem ser acumulados.",
+  "passiveDesc": "Uma parte do Concerto Milenar que flutua no vento. Aumenta a Proficiência Elemental em 60/75/90/105/120 pontos. Quando a Habilidade Elemental ou o Supremo atingir os inimigos, o personagem obterá um Símbolo das Lembranças, que pode ser ativado uma vez a cada 0.2s, mesmo quando o personagem não está no campo de batalha. Possuir 4 Símbolos das Lembranças faz consumir todos eles, e faz todos os personagens próximos da equipe obterem o efeito de \"Concerto Milenar: Música da Despedida\" por 12s: A Proficiência Elemental será aumentada em 100/125/150/175/200 pontos, além disso, o ATQ será aumentado em 20%/25%/30%/35%/40%. Dentro de 20s depois da ativação, não é possível obter os Símbolos das Lembranças de novo. Entre os vários efeitos do Concerto Milenar, bônus do mesmo tipo não podem ser acumulados.",
   "location": "Mondstadt",
   "baseDamage": { "attack": 46, "subStat": 120 },
   "description": "Um arco tão adorável quanto a lira de qualquer bardo, suas flechas perfuram o coração como um suspiro lamentável.",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Canção de Despedida",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Proficiência Elemental do portador",
+          "type": "elemental_mastery",
+          "values": [60, 75, 90, 105, 120],
+          "bonus": true
+        },
+        {
+          "label": "Música da Despedida: Proficiência Elemental adicional dos membros próximos da equipe após consumir 4 Símbolos",
+          "type": "elemental_mastery",
+          "values": [100, 125, 150, 175, 200],
+          "bonus": true
+        },
+        {
+          "label": "Música da Despedida: ATQ dos membros próximos da equipe após consumir 4 Símbolos",
+          "type": "atk_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
