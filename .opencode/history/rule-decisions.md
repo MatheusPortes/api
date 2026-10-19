@@ -14,6 +14,10 @@ Read a section only for the matching active rule. Live records remain authoritat
 
 ## Compatibility findings
 
+- **Signed additive ATK penalty (2026-10-19):** owner approved the displayed Fruit of Fulfillment representation: `atk_percent` [-.05,-.05,-.05,-.05,-.05], `bonus: true`, `accumulations: 5`. Rule `signed-additive-atk-penalty` extends the flag to a signed additive stat contribution; negative ATK is a penalty, not a positive grant or multiplicative final-ATK reduction. Separate EM retains the same consumer-selected stack count.
+
+  - Read-only recursive EN weapon inventory found no negative `values` records; no existing signed coefficient requires migration. Relevant live `weapons/fruit-of-fulfillment/{en,pt}.json` had no root effects (not-applicable before individual mapping); `weapons/blackcliff-agate/{en,pt}.json` positive per-stack ATK effects remain compatible/unchanged; `weapons/engulfing-lightning/{en,pt}.json` positive attribute-referenced ATK/result caps remain compatible/unchanged. No other entities/locales are edited or newly certified.
+
 - **Cleared Bond of Life input (2026-10-19):** owner approved the displayed Finale of the Deep mapping and new `conditional.attribute: cleared_bond_of_life`, origin character, HP-unit total cleared supplied by the consumer. Rule `cleared-bond-of-life-reference` separates the flat-ATK result/normal result cap from the event reference and initial ATK-percent grant; resource state/timers remain outside the API.
 
   - Read-only live conditional inventory before application found no Bond reference in character/weapon/artifact data. `weapons/crimson-moon-s-semblance/{en,pt}.json`, `effects[0].modifiers[0..1]`, compatible unchanged as label-gated current-Bond DMG, not cleared-amount scaling; no new reference added there. Engulfing ER offset and Emblem full-total ER remain compatible unchanged, no migration. Finale EN/PT had no passive mapping and are mapped individually. Existing vocabulary/other attributes remain unchanged; no full calculation-coverage claim or unrelated correction.

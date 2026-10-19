@@ -23,7 +23,7 @@ States: `not-started`, `in-progress`, `partial`, `blocked`, `complete`, `reviewe
 - Keep each source contribution distinct; never deduplicate equal values or pre-sum base/additional clauses.
 - `type` describes the supplied stat/result, not its scaling attribute. Keep provider metadata and sources out of served JSON.
 - A stat/result modifier is `effects[].modifiers[]`; an independent proc uses its native `skills` container. Artifact procs nest at their originating `effects[].skills`; character/weapon native containers remain unless individually approved.
-- `bonus: true` marks a supplied bonus; omit `bonus: false`. An independent hit normally omits it.
+- `bonus: true` marks a supplied additive stat/bonus contribution; omit `bonus: false`. Signed ATK penalties follow `signed-additive-atk-penalty` below. An independent hit normally omits it.
 - Supported attack targets are `normal_attack`, `charged_attack`, `plunging_attack`, `elemental_skill`, `elemental_burst`. Generic bonuses omit target. `elemental_dmg_percent` requires `element`; all-element grants expand to GEO/ANEMO/CRYO/DENDRO/ELECTRO/HYDRO/PYRO, never Physical.
 - `conditional` is `{ origin, attribute, offset? }`; origins: `character`, `weapon`, `artifact`, `time`; attributes: `hp`, `atk`, `def`, `elemental_mastery`, `energy_recharge`, `energy_cost`, `cleared_bond_of_life`. Optional `offset` follows `attribute-reference-baseline-offset` below. `time.energy_cost` is exclusively combined party maximum Burst Energy Cost; `character.cleared_bond_of_life` follows `cleared-bond-of-life-reference`. Coefficients stay in `values`.
 - Activation, timing, resource use, chance, stacks currently active, party composition, target state, infusions and formula execution are consumer state. Preserve them in localized text.
@@ -60,6 +60,8 @@ States: `not-started`, `in-progress`, `partial`, `blocked`, `complete`, `reviewe
 `maxValues` otherwise caps the supplied result, not the reference. No rule authorizes formulas, timers, recipient selectors, state engines, unsupported scopes, or automatic migrations.
 
 ### Party-member eligibility and thresholds
+
+Rule `signed-additive-atk-penalty`: an individually source-validated ATK-percent loss may use negative `atk_percent` values with `bonus: true`; the sign subtracts from the additive ATK-percent contribution, not final ATK or damage. Fruit of Fulfillment uses [-.05,-.05,-.05,-.05,-.05] per stack, `accumulations: 5`, separately from direct EM [24,27,30,33,36] with the same cap. Both use the same consumer-selected active stack count. Do not emit positive ATK, `bonus: false`, an invented reduction type, a precomputed cap total, or a timer/state engine. This approval does not redefine other result types or authorize automatic migrations.
 
 Under `party-member-counted-bonus`, the source determines whether the holder is eligible; inclusion is not universal. Chain Breaker counts a Natlan member OR a member whose Elemental Type differs from the wearer, counting each once, including a Natlan wearer. Its per-member ATK uses `accumulations: 4`; the separate EM grant requires at least three eligible members and is supplied once, without `accumulations`. Actual eligible-member count and party selection remain consumer state in localized labels/descriptions, not `conditional`. Gilded Dreams and A Thousand Floating Dreams still exclude the holder and retain their validated cap-3 constraints. This source-specific extension does not authorize automatic edits to other entities.
 

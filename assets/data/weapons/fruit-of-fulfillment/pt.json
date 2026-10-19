@@ -4,8 +4,8 @@
   "rarity": 4,
   "baseAttack": 42,
   "subStat": "Recarga de Energia",
-  "passiveName": "Bênção da Floresta",
-  "passiveDesc": "Ao causar uma Reação Elemental, obtém o efeito \"Excesso de Falta\", que aumenta a Proficiência Elemental em 24/27/30/33/36 e reduz o ATQ em 5%. Apenas 1 acúmulo de Excesso de Falta poderá ser obitido a cada 0.3s. Máximo de 5 acúmulos. 1 acúmulo será perdido a cada 6s que passar sem que uma Reação Elemental seja desencadeada. Esse efeito pode ser desencadeado mesmo se o personagem estiver fora de campo.",
+  "passiveName": "Círculo Completo",
+  "passiveDesc": "Ao causar uma Reação Elemental, obtém o efeito \"Excesso e Falta\", que aumenta a Proficiência Elemental em 24/27/30/33/36 e reduz o ATQ em 5%. Apenas 1 acúmulo de Excesso e Falta poderá ser obtido a cada 0.3s. Máximo de 5 acúmulos. 1 acúmulo será perdido a cada 6s que se passar sem que uma Reação Elemental seja desencadeada. Esse efeito pode ser desencadeado mesmo se o personagem estiver fora de campo.",
   "location": "Forja",
   "baseDamage": {
     "attack": 42,
@@ -13,6 +13,28 @@
   },
   "description": "Uma fruta obtida através de uma das histórias dos Aranara. Ela tem o poder de conquistar qualquer crise.",
   "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Círculo Completo",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Excesso e Falta: Proficiência Elemental por acúmulo",
+          "type": "elemental_mastery",
+          "values": [24, 27, 30, 33, 36],
+          "bonus": true,
+          "accumulations": 5
+        },
+        {
+          "label": "Excesso e Falta: penalidade de ATQ por acúmulo (mesma contagem ativa da Proficiência Elemental)",
+          "type": "atk_percent",
+          "values": [-0.05, -0.05, -0.05, -0.05, -0.05],
+          "bonus": true,
+          "accumulations": 5
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 42.401,
