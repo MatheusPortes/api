@@ -5,9 +5,24 @@
   "baseAttack": 39,
   "subStat": "Porcentagem de Vida",
   "passiveName": "Implacável",
-  "passiveDesc": "Quando a Vida estiver inferior a 70%/75%/80%/85%/90%, Ataques Carregados raramente são interrompidos e aumenta 30%/35%/40%/45%/50% do Ataque Carregado.",
+  "passiveDesc": "Quando a Vida estiver inferior a 70%/75%/80%/85%/90%, aumenta o Dano do Ataque Carregado em 30%/35%/40%/45%/50% e os Ataques Carregados se tornam mais difíceis de interromper.",
   "location": "Mondstadt",
   "baseDamage": { "attack": 39, "subStat": 77 },
   "description": "Uma réplica da espada famosa de Arundolyn, o Leão da Luz. Maneje-a e sinta o poder de um herói lendário! Aviso: Sonhar demais pode ser prejudicial para você.",
-  "weapon_type": "CLAYMORE"
+  "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Implacável",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano de Ataque Carregado com Vida abaixo de 70%/75%/80%/85%/90% (R1-R5)",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.3, 0.35, 0.4, 0.45, 0.5],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
