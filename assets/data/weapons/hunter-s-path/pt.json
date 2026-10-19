@@ -5,7 +5,7 @@
   "baseAttack": 44,
   "subStat": "Taxa Crítica",
   "passiveName": "O Destino da Besta",
-  "passiveDesc": "Ganha 12%/15%/18%/21%/24% de Bônus de Dano de todos os Elementos. Obtém o efeito“Caça Incansável”ao acertar um oponente com um Ataque Carregado. Esse efeito aumenta o Dano do Ataque Carregado em 160%/200%/240%/280%/320% da Proficiência Elemental. Esse efeito será removido depois 12 Ataques Carregados ou após 10s. Só é possível obter 1 efeito de Caça Incansável a cada 12s.",
+  "passiveDesc": "Ganha 12%/15%/18%/21%/24% de Bônus de Dano de todos os Elementos. Obtém o efeito \"Caça Incansável\" ao acertar um oponente com um Ataque Carregado. Esse efeito aumenta o Dano do Ataque Carregado em 160%/200%/240%/280%/320% da Proficiência Elemental. Esse efeito será removido depois de 12 Ataques Carregados ou após 10s. Só é possível obter 1 efeito de Caça Incansável a cada 12s.",
   "location": "Oração de Evento de Arma",
   "baseDamage": {
     "attack": 44,
@@ -13,6 +13,74 @@
   },
   "description": "Este arco adornado foi feito usando galhos brancos preciosos. Ele já derrotou inúmeras bestas malignas que tentaram infiltrar a floresta.",
   "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "O Destino da Besta",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano Geo",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dano Anemo",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dano Cryo",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dano Dendro",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dano Electro",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dano Hydro",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dano Pyro",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Caça Incansável: Dano adicional de Ataque Carregado com base na Proficiência Elemental enquanto ativo",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [1.6, 2, 2.4, 2.8, 3.2],
+          "conditional": {
+            "origin": "character",
+            "attribute": "elemental_mastery"
+          },
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 44.3358,

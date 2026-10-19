@@ -5,10 +5,78 @@
   "baseAttack": 44,
   "subStat": "CRIT Rate",
   "passiveName": "At the End of the Beast-Paths",
-  "passiveDesc": "Gain 12% All Elemental DMG Bonus. Obtain the Tireless Hunt effect after hitting an opponent with a Charged Attack. This effect increases Charged Attack DMG by 160% of Elemental Mastery. This effect will be removed after 12 Charged Attacks or 10s. Only 1 instance of Tireless Hunt can be gained every 12s.",
+  "passiveDesc": "Gain 12%/15%/18%/21%/24% All Elemental DMG Bonus. Obtain the Tireless Hunt effect after hitting an opponent with a Charged Attack. This effect increases Charged Attack DMG by 160%/200%/240%/280%/320% of Elemental Mastery. This effect will be removed after 12 Charged Attacks or 10s. Only 1 instance of Tireless Hunt can be gained every 12s.",
   "location": "Gacha Banner",
   "ascensionMaterial": "scorching",
   "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "At the End of the Beast-Paths",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Geo DMG",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Anemo DMG",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Cryo DMG",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dendro DMG",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Electro DMG",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Hydro DMG",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Pyro DMG",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Tireless Hunt: additional Charged Attack DMG from Elemental Mastery while active",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [1.6, 2, 2.4, 2.8, 3.2],
+          "conditional": {
+            "origin": "character",
+            "attribute": "elemental_mastery"
+          },
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 44.3358,
