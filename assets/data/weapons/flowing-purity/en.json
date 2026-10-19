@@ -5,8 +5,149 @@
   "baseAttack": 44,
   "subStat": "ATK",
   "passiveName": "Unfinished Masterpiece",
-  "passiveDesc": "When using an Elemental Skill, All Elemental DMG Bonus will be increased by 8% for 15s, and a Bond of Life worth 24% of Max HP will be granted. This effect can be triggered once every 10s. When the Bond of Life is cleared, every 1,000 HP cleared in the process will provide 2% All Elemental DMG Bonus. Up to a maximum of 12% All Elemental DMG can be gained this way. This effect lasts 15s. Bond of Life: Absorbs healing for the character based on its base value, and clears after healing equal to this value is obtained.",
+  "passiveDesc": "When using an Elemental Skill, All Elemental DMG Bonus will be increased by 8%/10%/12%/14%/16% for 15s, and a Bond of Life worth 24% of Max HP will be granted. This effect can be triggered once every 10s. When the Bond of Life is cleared, every 1,000 HP cleared in the process will provide 2%/2.5%/3%/3.5%/4% All Elemental DMG Bonus, up to a maximum of 12%/15%/18%/21%/24%. This effect lasts 15s. Bond of Life: Absorbs healing for the character based on its base value, and clears after healing equal to this value is obtained.",
   "location": "BP Bounty",
   "ascensionMaterial": "pure-sacred-dewdrop",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Unfinished Masterpiece",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Elemental DMG after Skill use",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true
+        },
+        {
+          "label": "Elemental DMG after Skill use",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true
+        },
+        {
+          "label": "Elemental DMG after Skill use",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true
+        },
+        {
+          "label": "Elemental DMG after Skill use",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true
+        },
+        {
+          "label": "Elemental DMG after Skill use",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true
+        },
+        {
+          "label": "Elemental DMG after Skill use",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true
+        },
+        {
+          "label": "Elemental DMG after Skill use",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true
+        },
+        {
+          "label": "Additional Elemental DMG from cleared Bond",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.00002, 0.000025, 0.00003, 0.000035, 0.00004],
+          "conditional": {
+            "origin": "character",
+            "attribute": "cleared_bond_of_life"
+          },
+          "maxValues": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Additional Elemental DMG from cleared Bond",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.00002, 0.000025, 0.00003, 0.000035, 0.00004],
+          "conditional": {
+            "origin": "character",
+            "attribute": "cleared_bond_of_life"
+          },
+          "maxValues": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Additional Elemental DMG from cleared Bond",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.00002, 0.000025, 0.00003, 0.000035, 0.00004],
+          "conditional": {
+            "origin": "character",
+            "attribute": "cleared_bond_of_life"
+          },
+          "maxValues": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Additional Elemental DMG from cleared Bond",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.00002, 0.000025, 0.00003, 0.000035, 0.00004],
+          "conditional": {
+            "origin": "character",
+            "attribute": "cleared_bond_of_life"
+          },
+          "maxValues": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Additional Elemental DMG from cleared Bond",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.00002, 0.000025, 0.00003, 0.000035, 0.00004],
+          "conditional": {
+            "origin": "character",
+            "attribute": "cleared_bond_of_life"
+          },
+          "maxValues": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Additional Elemental DMG from cleared Bond",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.00002, 0.000025, 0.00003, 0.000035, 0.00004],
+          "conditional": {
+            "origin": "character",
+            "attribute": "cleared_bond_of_life"
+          },
+          "maxValues": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Additional Elemental DMG from cleared Bond",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.00002, 0.000025, 0.00003, 0.000035, 0.00004],
+          "conditional": {
+            "origin": "character",
+            "attribute": "cleared_bond_of_life"
+          },
+          "maxValues": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
