@@ -4,9 +4,31 @@
   "rarity": 4,
   "baseAttack": 42,
   "subStat": "Energy Recharge",
-  "passiveName": "",
+  "passiveName": "Undying Admiration",
   "passiveDesc": "Increases Elemental Skill DMG by 16/20/24/28/32% and Elemental Skill CRIT Rate by 6/7.5/9/10.5/12%.",
   "location": "Story Quest",
   "ascensionMaterial": "dandelion",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Undying Admiration",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Elemental Skill DMG",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "Elemental Skill CRIT Rate",
+          "type": "crit_rate",
+          "target": "elemental_skill",
+          "values": [0.06, 0.075, 0.09, 0.105, 0.12],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
