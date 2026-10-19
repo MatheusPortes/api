@@ -8,5 +8,41 @@
   "passiveDesc": "Increases Normal Attack DMG by 16/20/24/28/32% and Charged Attack DMG by 12/15/18/21/24%. When the equipping character's Energy reaches 100%, this effect is increased by 100%.",
   "location": "Crafting",
   "ascensionMaterial": "narukami",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Full Draw",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Base Normal Attack DMG",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "Base Charged Attack DMG",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Additional Normal Attack DMG at 100% Energy",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "Additional Charged Attack DMG at 100% Energy",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }

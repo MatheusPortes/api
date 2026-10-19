@@ -9,5 +9,41 @@
   "location": "Inazuma",
   "baseDamage": { "attack": 41, "subStat": 120 },
   "description": "Uma certa bruxa do templo tinha este arco de guerra. Foi feito com uma excelente habilidade, e ele é complexo e robusto.",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Grande Jogada",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano base de Ataque Normal",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "Dano base de Ataque Carregado",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dano adicional de Ataque Normal com 100% de Energia",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "Dano adicional de Ataque Carregado com 100% de Energia",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
