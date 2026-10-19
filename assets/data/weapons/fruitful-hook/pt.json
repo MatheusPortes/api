@@ -13,6 +13,42 @@
   },
   "description": "O audacioso Burkina, dos Descendentes das Copas, construiu esta arma com a ajuda do herói Tenoch — tudo para obter Fogorromãs incomparáveis em Natlan.",
   "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Peso dos Galhos Caídos",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Taxa CRIT de Ataque Imersivo",
+          "type": "crit_rate",
+          "target": "plunging_attack",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "Dano de Ataque Normal por 10s após um Ataque Imersivo atingir um inimigo",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "Dano de Ataque Carregado por 10s após um Ataque Imersivo atingir um inimigo",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "Dano de Ataque Imersivo por 10s após um Ataque Imersivo atingir um inimigo",
+          "type": "dmg_percent",
+          "target": "plunging_attack",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 43.7349,
