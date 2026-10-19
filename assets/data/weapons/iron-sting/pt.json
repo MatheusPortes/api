@@ -5,9 +5,24 @@
   "baseAttack": 42,
   "subStat": "Proficiência Elemental",
   "passiveName": "Ferrão Energético",
-  "passiveDesc": "6s após ao causar Dano Elemental, aumenta todos os Danos em 6%/7.5%/9%/10.5%/12%. Este efeito pode acumular até 2 vezes e pode ser ativado uma vez a cada 1s.",
+  "passiveDesc": "Após causar Dano Elemental, aumenta todos os Danos em 6%/7.5%/9%/10.5%/12% por 6s. Este efeito pode acumular até 2 vezes e pode ser ativado uma vez a cada 1s.",
   "location": "Liyue",
   "baseDamage": { "attack": 42, "subStat": 36 },
   "description": "Espada exótica que de alguma forma acabou nas mãos dos comerciantes de Liyue. É leve, ágil e afiada.",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Ferrão Energético",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Todos os Danos por acúmulo após causar Dano Elemental",
+          "type": "dmg_percent",
+          "values": [0.06, 0.075, 0.09, 0.105, 0.12],
+          "bonus": true,
+          "accumulations": 2
+        }
+      ]
+    }
+  ]
 }
