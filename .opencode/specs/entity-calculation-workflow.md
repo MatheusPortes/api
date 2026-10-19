@@ -25,7 +25,7 @@ States: `not-started`, `in-progress`, `partial`, `blocked`, `complete`, `reviewe
 - A stat/result modifier is `effects[].modifiers[]`; an independent proc uses its native `skills` container. Artifact procs nest at their originating `effects[].skills`; character/weapon native containers remain unless individually approved.
 - `bonus: true` marks a supplied bonus; omit `bonus: false`. An independent hit normally omits it.
 - Supported attack targets are `normal_attack`, `charged_attack`, `plunging_attack`, `elemental_skill`, `elemental_burst`. Generic bonuses omit target. `elemental_dmg_percent` requires `element`; all-element grants expand to GEO/ANEMO/CRYO/DENDRO/ELECTRO/HYDRO/PYRO, never Physical.
-- `conditional` is exactly `{ origin, attribute }`; origins: `character`, `weapon`, `artifact`, `time`; attributes: `hp`, `atk`, `def`, `elemental_mastery`, `energy_recharge`, `energy_cost`. `time.energy_cost` is exclusively combined party maximum Burst Energy Cost. Coefficients stay in `values`.
+- `conditional` is `{ origin, attribute, offset? }`; origins: `character`, `weapon`, `artifact`, `time`; attributes: `hp`, `atk`, `def`, `elemental_mastery`, `energy_recharge`, `energy_cost`. Optional `offset` follows `attribute-reference-baseline-offset` below. `time.energy_cost` is exclusively combined party maximum Burst Energy Cost. Coefficients stay in `values`.
 - Activation, timing, resource use, chance, stacks currently active, party composition, target state, infusions and formula execution are consumer state. Preserve them in localized text.
 - `hits` is a positive count of identical subhits; store one-hit value. `add` is a separate fixed value in talent `power`; never use either for stacks. Do not split multi-attribute one-result mechanics; grouped schema is deferred.
 
@@ -63,7 +63,9 @@ States: `not-started`, `in-progress`, `partial`, `blocked`, `complete`, `reviewe
 
 Under `party-member-counted-bonus`, the source determines whether the holder is eligible; inclusion is not universal. Chain Breaker counts a Natlan member OR a member whose Elemental Type differs from the wearer, counting each once, including a Natlan wearer. Its per-member ATK uses `accumulations: 4`; the separate EM grant requires at least three eligible members and is supplied once, without `accumulations`. Actual eligible-member count and party selection remain consumer state in localized labels/descriptions, not `conditional`. Gilded Dreams and A Thousand Floating Dreams still exclude the holder and retain their validated cap-3 constraints. This source-specific extension does not authorize automatic edits to other entities.
 
-### Attribute-referenced independent scaling
+### Attribute references and independent skills
+
+Rule `attribute-reference-baseline-offset`: an individually source-validated above-baseline reference may supply optional finite nonnegative `conditional.offset`, in the referenced attribute's native units. The consumer uses `max(attributeValue - offset, 0)` before multiplying by `values`; `maxValues` retains its existing result-cap meaning. Omission preserves the original unmodified reference; never infer a baseline globally. Engulfing Lightning uses offset `1` for ER above 100% (ratio units), ATK coefficients [.28,.35,.42,.49,.56] and result caps [.8,.9,1,1.1,1.2]. Emblem of Severed Fate continues using full total ER without an offset. This supplies static inputs, not runtime formulas or automatic migrations.
 
 Rule `attribute-referenced-independent-scaling`: an individually reviewed independent skill's attribute-referenced scaling carries `conditional` beside `type`/`values`. Use the source's reference, not activation state. Ash-Graven retains `hp_percent`, R1–R5 .4–.8, with `character.hp` (Max HP). Do not infer the reference from the type alone or migrate other entities automatically.
 
@@ -159,6 +161,7 @@ type Modifier = {
       | 'elemental_mastery'
       | 'energy_recharge'
       | 'energy_cost';
+    offset?: number;
   };
 };
 type Effect = {
