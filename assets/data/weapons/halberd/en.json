@@ -5,11 +5,24 @@
   "baseAttack": 40,
   "subStat": "ATK",
   "passiveName": "Heavy",
-  "passiveDesc": "Normal Attacks deal an additional 160/200/240/280/320% DMG. Can only occur once every 10s.",
+  "passiveDesc": "Normal Attacks deal an additional 160%/200%/240%/280%/320% ATK as DMG. Can only occur once every 10s.",
   "location": "Chests",
   "ascensionMaterial": "elixir",
   "weapon_type": "POLEARM",
   "calculation": {
+    "skills": [
+      {
+        "label": "Heavy",
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [1.6, 2, 2.4, 2.8, 3.2],
+            "conditional": { "origin": "character", "attribute": "atk" }
+          }
+        ]
+      }
+    ],
     "initialStats": {
       "baseAttack": 39.8751,
       "attackPercent": 0.051067

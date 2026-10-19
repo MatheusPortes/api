@@ -5,7 +5,7 @@
   "baseAttack": 40,
   "subStat": "Porcentagem de ATQ",
   "passiveName": "Pesado",
-  "passiveDesc": "Ataques Normais causam um adicional de 200%/240%/280%/320% de Dano ao oponente atingido. Este efeito pode ser ativado uma vez a cada 10s.",
+  "passiveDesc": "Ataques Normais causam um adicional de 160%/200%/240%/280%/320% do ATQ como Dano ao oponente atingido. Este efeito pode ser ativado uma vez a cada 10s.",
   "location": "Liyue",
   "baseDamage": {
     "attack": 40,
@@ -14,6 +14,19 @@
   "description": "Uma arma de fogo com uma lâmina de machado montada no topo que pode causar muito dano. É a arma preferida entre os Oficiais de Millelith.",
   "weapon_type": "POLEARM",
   "calculation": {
+    "skills": [
+      {
+        "label": "Pesado",
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [1.6, 2, 2.4, 2.8, 3.2],
+            "conditional": { "origin": "character", "attribute": "atk" }
+          }
+        ]
+      }
+    ],
     "initialStats": {
       "baseAttack": 39.8751,
       "attackPercent": 0.051067
