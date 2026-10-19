@@ -9,5 +9,34 @@
   "location": "Oração de Evento de Arma",
   "baseDamage": { "attack": 44, "subStat": 14.4 },
   "description": "Um dos pares de cetros feitos com obsidiana. Dizem que pode ser usado como chave para abrir a porta do paraíso escondido sob o mar de areia.",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Canção Sepultada nas Areias",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Vida do portador",
+          "type": "hp_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "Grande Poema: Proficiência Elemental do portador por acúmulo com base na Vida Máxima do portador",
+          "type": "elemental_mastery",
+          "values": [0.0012, 0.0015, 0.0018, 0.0021, 0.0024],
+          "conditional": { "origin": "character", "attribute": "hp" },
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "Com 3 acúmulos ou renovação do terceiro: Proficiência Elemental adicional da equipe próxima (incluindo portador) com base na Vida Máxima do portador",
+          "type": "elemental_mastery",
+          "values": [0.002, 0.0025, 0.003, 0.0035, 0.004],
+          "conditional": { "origin": "character", "attribute": "hp" },
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
