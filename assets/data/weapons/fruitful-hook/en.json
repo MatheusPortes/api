@@ -9,5 +9,41 @@
   "location": "Event Wish Exclusive",
   "baseDamage": { "attack": 44, "subStat": 6 },
   "description": "Bold Burkina from the Scions of the Canopy once made this weapon with the hero Tenoch's help — all for the sake of obtaining Flamegranates unmatched throughout Natlan.",
-  "weapon_type": "CLAYMORE"
+  "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "The Weight of Falling Branches",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Plunging Attack CRIT Rate",
+          "type": "crit_rate",
+          "target": "plunging_attack",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "Normal Attack DMG for 10s after a Plunging Attack hits",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "Charged Attack DMG for 10s after a Plunging Attack hits",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "Plunging Attack DMG for 10s after a Plunging Attack hits",
+          "type": "dmg_percent",
+          "target": "plunging_attack",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
