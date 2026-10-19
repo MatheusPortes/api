@@ -4,12 +4,36 @@
   "rarity": 4,
   "baseAttack": 42,
   "subStat": "ATK",
-  "passiveName": "",
-  "passiveDesc": "Hitting an opponent with Normal and Charged Attacks has a 60% chance of forming and dropping an Everfrost Icicle above them, dealing 80% AoE ATK DMG. Opponents affected by Cryo are dealt 200% ATK DMG. Can only occur once every 10s.",
+  "passiveName": "Frost Burial",
+  "passiveDesc": "Hitting an opponent with Normal and Charged Attacks has a 60%/70%/80%/90%/100% chance of forming and dropping an Everfrost Icicle above them, dealing AoE DMG equal to 80%/95%/110%/125%/140% of ATK. Opponents affected by Cryo are instead dealt DMG equal to 200%/240%/280%/320%/360% of ATK. Can only occur once every 10s.",
   "location": "Crafting",
   "ascensionMaterial": "dandelion",
   "weapon_type": "CATALYST",
   "calculation": {
+    "skills": [
+      {
+        "label": "Frost Burial: ordinary Icicle total (not the Cryo-affected replacement)",
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [0.8, 0.95, 1.1, 1.25, 1.4],
+            "conditional": { "origin": "character", "attribute": "atk" }
+          }
+        ]
+      },
+      {
+        "label": "Frost Burial: Cryo-affected target replacement total (instead of the ordinary Icicle)",
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [2, 2.4, 2.8, 3.2, 3.6],
+            "conditional": { "origin": "character", "attribute": "atk" }
+          }
+        ]
+      }
+    ],
     "initialStats": {
       "baseAttack": 42.401,
       "attackPercent": 0.09
