@@ -8,5 +8,19 @@
   "passiveDesc": "Increases DMG against enemies affected by Pyro or Electro by 20/24/28/32/36%.",
   "location": "Gacha",
   "ascensionMaterial": "guyun",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Bane of Fire and Thunder",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "DMG against opponents affected by Pyro or Electro (one nonstacking bonus)",
+          "type": "dmg_percent",
+          "values": [0.2, 0.24, 0.28, 0.32, 0.36],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
