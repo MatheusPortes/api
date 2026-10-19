@@ -9,6 +9,42 @@
   "location": "Crafting",
   "ascensionMaterial": "narukami",
   "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Full Draw",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Base Normal Attack DMG",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "Base Charged Attack DMG",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Additional Normal Attack DMG at 100% Energy",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "Additional Charged Attack DMG at 100% Energy",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 41.0671,
