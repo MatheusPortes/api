@@ -8,5 +8,20 @@
   "passiveDesc": "Normal and Charged Attacks have a 50% chance to fire a Bolt of Perception, dealing 240/270/300/330/360% ATK as DMG. This bolt can bounce between enemies a maximum of 4 times. This effect can occur once every 12/11/10/9/8s.",
   "location": "Gacha",
   "ascensionMaterial": "elixir",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "calculation": {
+    "skills": [
+      {
+        "label": "Bolt of Perception",
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [2.4, 2.7, 3, 3.3, 3.6],
+            "conditional": { "origin": "character", "attribute": "atk" }
+          }
+        ]
+      }
+    ]
+  }
 }

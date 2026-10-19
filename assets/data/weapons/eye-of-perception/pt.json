@@ -9,5 +9,20 @@
   "location": "Liyue",
   "baseDamage": { "attack": 41, "subStat": 120 },
   "description": "Uma pérola negra esmaltada que se diz ter o poder de ler a pureza do coração.",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "calculation": {
+    "skills": [
+      {
+        "label": "Bola da Percepção",
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [2.4, 2.7, 3, 3.3, 3.6],
+            "conditional": { "origin": "character", "attribute": "atk" }
+          }
+        ]
+      }
+    ]
+  }
 }
