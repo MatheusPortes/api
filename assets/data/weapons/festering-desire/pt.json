@@ -13,6 +13,28 @@
   },
   "description": "Uma espada reta assustadora que parece ansiar pela vida. Ela verte um veneno enfraquecedor que poderia corromper até mesmo um dragão poderoso.",
   "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Admiração Inabalável",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano da Habilidade Elemental",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "Taxa CRIT da Habilidade Elemental",
+          "type": "crit_rate",
+          "target": "elemental_skill",
+          "values": [0.06, 0.075, 0.09, 0.105, 0.12],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 42.401,
