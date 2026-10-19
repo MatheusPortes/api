@@ -9,5 +9,29 @@
   "location": "Event Wish Exclusive",
   "baseDamage": { "attack": 49, "subStat": 24 },
   "description": "A giant sword forged from pure turquoise. Due to its greater weight than most ordinary weapons, it was named for Kongomato the Mountain King.",
-  "weapon_type": "CLAYMORE"
+  "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Turquoise Hunt",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Canopy's Favor: Elemental Skill DMG per stack",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true,
+          "accumulations": 6
+        },
+        {
+          "label": "Canopy's Favor: Elemental Burst DMG per stack",
+          "type": "dmg_percent",
+          "target": "elemental_burst",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true,
+          "accumulations": 6
+        }
+      ]
+    }
+  ]
 }
