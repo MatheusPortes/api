@@ -4,10 +4,25 @@
   "rarity": 4,
   "baseAttack": 44,
   "subStat": "Porcentagem de ATQ",
-  "passiveName": "Secret Wisdom's Favor",
+  "passiveName": "Favor da Sabedoria Secreta",
   "passiveDesc": "Nos 6s após um Ataque Carregado atingir um inimigo, aumenta a Proficiência Elemental do personagem em 40/50/60/70/80. Esse efeito pode ser acumulado até 2 vezes e desencadeado uma vez a cada 0.5s.",
   "location": "Obtido no Evento \"Duelo das Invocações!\" na versão 3.7",
   "baseDamage": { "attack": 44, "subStat": 60 },
   "description": "Um arco dourado forjado a partir da descrição de uma história. Se você usá-lo como uma arma comum, também pode pensar nele como parte de um mundo fictício extraído de suas páginas.",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Favor da Sabedoria Secreta",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Proficiência Elemental por acúmulo após Ataques Carregados atingirem um inimigo",
+          "type": "elemental_mastery",
+          "values": [40, 50, 60, 70, 80],
+          "bonus": true,
+          "accumulations": 2
+        }
+      ]
+    }
+  ]
 }
