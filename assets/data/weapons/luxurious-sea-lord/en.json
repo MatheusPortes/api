@@ -8,5 +8,35 @@
   "passiveDesc": "Increases Elemental Burst DMG by 12/15/18/21/24%. When Elemental Burst hits opponents, there is a 100% chance of summoning a huge onrush of tuna that charges and deals 100/125/150/175/200% ATK as AoE DMG. This effect can occur once every 15s.",
   "location": "Moonlight Merriment Event",
   "ascensionMaterial": "aerosiderite",
-  "weapon_type": "CLAYMORE"
+  "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Oceanic Victory",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Elemental Burst DMG",
+          "type": "dmg_percent",
+          "target": "elemental_burst",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "skills": [
+      {
+        "label": "Oceanic Victory: onrush of tuna",
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [1, 1.25, 1.5, 1.75, 2],
+            "conditional": { "origin": "character", "attribute": "atk" }
+          }
+        ]
+      }
+    ]
+  }
 }
