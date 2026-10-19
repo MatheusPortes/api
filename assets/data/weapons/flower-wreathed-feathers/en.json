@@ -13,6 +13,22 @@
   },
   "description": "A longbow that burns like a flame. The feathers that adorn it are said to have come from the ancient tyrant Ngoubou.",
   "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Inflorescence Unattainable",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Charged Attack DMG per stack gained in Aiming Mode",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.06, 0.075, 0.09, 0.105, 0.12],
+          "bonus": true,
+          "accumulations": 6
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 42.401,
