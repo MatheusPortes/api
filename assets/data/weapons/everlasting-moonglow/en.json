@@ -9,6 +9,28 @@
   "location": "Gacha",
   "ascensionMaterial": "distant-sea",
   "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Byakuya Kougetsu",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Healing Bonus",
+          "type": "healing_bonus",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true
+        },
+        {
+          "label": "Additional Normal Attack DMG from Max HP",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "conditional": { "origin": "character", "attribute": "hp" },
+          "values": [0.01, 0.015, 0.02, 0.025, 0.03],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 45.9364,
