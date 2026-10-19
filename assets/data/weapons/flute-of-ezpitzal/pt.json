@@ -9,5 +9,19 @@
   "location": "Ferreiro",
   "baseDamage": { "attack": 41, "subStat": 150 },
   "description": "Uma lâmina de jade feita de forma peculiar. Nas lendas dos Mestres do Vento Noturno, ela é conhecida como a ritualística \"Flauta do Sacerdote\".",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Mistério da Fumaça e do Espelho",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "DEF por 15s após usar uma Habilidade Elemental",
+          "type": "def_percent",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
