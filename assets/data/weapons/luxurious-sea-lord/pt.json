@@ -13,7 +13,35 @@
   },
   "description": "O grande rei do oceano. Após ter sido desidratado, serve como uma boa arma, bem como um alimento de emergência.",
   "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Vitória Oceânica",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano do Supremo",
+          "type": "dmg_percent",
+          "target": "elemental_burst",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
+    "skills": [
+      {
+        "label": "Vitória Oceânica: tuna titânica",
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [1, 1.25, 1.5, 1.75, 2],
+            "conditional": { "origin": "character", "attribute": "atk" }
+          }
+        ]
+      }
+    ],
     "initialStats": {
       "baseAttack": 41.0671,
       "attackPercent": 0.12
