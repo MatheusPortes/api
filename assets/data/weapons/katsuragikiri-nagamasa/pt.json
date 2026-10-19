@@ -9,5 +9,20 @@
   "location": "Inazuma",
   "baseDamage": { "attack": 42, "subStat": 10 },
   "description": "Uma espada forjada em Tatarasuna. Pesada e resistente.",
-  "weapon_type": "CLAYMORE"
+  "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Conduta do Samurai",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano de Habilidade Elemental",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.06, 0.075, 0.09, 0.105, 0.12],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
