@@ -8,5 +8,76 @@
   "passiveDesc": "For 3s after using an Elemental Burst or creating a shield, the equipping character can gain the Primordial Jade Regalia effect: Restore 4.5/5/5.5/6/6.5 Energy every 2.5s, and gain 0.3/0.5/0.7/0.9/1.1% Elemental DMG Bonus for their corresponding Elemental Type for every 1,000 Max HP they possess, up to 12/20/28/36/44%. Primordial Jade Regalia will still take effect even if the equipping character is not on the field.",
   "location": "Gacha",
   "ascensionMaterial": "guyun",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Primordial Jade Regalia",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Geo wearer only: Geo DMG from Max HP while Primordial Jade Regalia is active",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.000003, 0.000005, 0.000007, 0.000009, 0.000011],
+          "maxValues": [0.12, 0.2, 0.28, 0.36, 0.44],
+          "conditional": { "origin": "character", "attribute": "hp" },
+          "bonus": true
+        },
+        {
+          "label": "Anemo wearer only: Anemo DMG from Max HP while Primordial Jade Regalia is active",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.000003, 0.000005, 0.000007, 0.000009, 0.000011],
+          "maxValues": [0.12, 0.2, 0.28, 0.36, 0.44],
+          "conditional": { "origin": "character", "attribute": "hp" },
+          "bonus": true
+        },
+        {
+          "label": "Cryo wearer only: Cryo DMG from Max HP while Primordial Jade Regalia is active",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.000003, 0.000005, 0.000007, 0.000009, 0.000011],
+          "maxValues": [0.12, 0.2, 0.28, 0.36, 0.44],
+          "conditional": { "origin": "character", "attribute": "hp" },
+          "bonus": true
+        },
+        {
+          "label": "Dendro wearer only: Dendro DMG from Max HP while Primordial Jade Regalia is active",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.000003, 0.000005, 0.000007, 0.000009, 0.000011],
+          "maxValues": [0.12, 0.2, 0.28, 0.36, 0.44],
+          "conditional": { "origin": "character", "attribute": "hp" },
+          "bonus": true
+        },
+        {
+          "label": "Electro wearer only: Electro DMG from Max HP while Primordial Jade Regalia is active",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.000003, 0.000005, 0.000007, 0.000009, 0.000011],
+          "maxValues": [0.12, 0.2, 0.28, 0.36, 0.44],
+          "conditional": { "origin": "character", "attribute": "hp" },
+          "bonus": true
+        },
+        {
+          "label": "Hydro wearer only: Hydro DMG from Max HP while Primordial Jade Regalia is active",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.000003, 0.000005, 0.000007, 0.000009, 0.000011],
+          "maxValues": [0.12, 0.2, 0.28, 0.36, 0.44],
+          "conditional": { "origin": "character", "attribute": "hp" },
+          "bonus": true
+        },
+        {
+          "label": "Pyro wearer only: Pyro DMG from Max HP while Primordial Jade Regalia is active",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.000003, 0.000005, 0.000007, 0.000009, 0.000011],
+          "maxValues": [0.12, 0.2, 0.28, 0.36, 0.44],
+          "conditional": { "origin": "character", "attribute": "hp" },
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
