@@ -13,6 +13,20 @@
   },
   "description": "Uma espada que, uma vez, brilhou como o sol. O portador desta espada será abençoado com um bônus de \"boa sensação\". O material refletivo em sua lâmina já se desgastou há muito tempo.",
   "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Vigoroso",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Taxa Crítica enquanto a Vida do portador estiver acima de 90%",
+          "type": "crit_rate",
+          "values": [0.14, 0.175, 0.21, 0.245, 0.28],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 38.7413,
