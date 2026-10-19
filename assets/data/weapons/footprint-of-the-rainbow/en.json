@@ -4,8 +4,24 @@
   "rarity": 4,
   "baseAttack": 42,
   "subStat": "DEF Percentage",
+  "passiveName": "Pact of Flowing Springs",
+  "passiveDesc": "Using an Elemental Skill increases DEF by 16%/20%/24%/28%/32% for 15s.",
   "location": "Forged",
   "baseDamage": { "attack": 42, "subStat": 113 },
   "description": "A keen polearm forged from jade. It gives off rainbow-hued light when exposed to sunlight.",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Pact of Flowing Springs",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "DEF for 15s after using an Elemental Skill",
+          "type": "def_percent",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
