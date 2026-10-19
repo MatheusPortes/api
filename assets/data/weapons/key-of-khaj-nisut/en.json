@@ -5,10 +5,39 @@
   "baseAttack": 44,
   "subStat": "HP",
   "passiveName": "Sunken Song of the Sands",
-  "passiveDesc": "HP increased by 20%. When an Elemental Skill hits opponents, you gain the Grand Hymn effect for 20s. This effect increases the equipping character's Elemental Mastery by 0.12% of their Max HP. This effect can trigger once every 0.3s. Max 3 stacks. When this effect gains 3 stacks, or when the third stack's duration is refreshed, the Elemental Mastery of all nearby party members will be increased by 0.2% of the equipping character's max HP for 20s.",
+  "passiveDesc": "HP increased by 20%/25%/30%/35%/40%. When an Elemental Skill hits opponents, you gain the Grand Hymn effect for 20s. This effect increases the equipping character's Elemental Mastery by 0.12%/0.15%/0.18%/0.21%/0.24% of their Max HP. This effect can trigger once every 0.3s. Max 3 stacks. When this effect gains 3 stacks, or when the third stack's duration is refreshed, the Elemental Mastery of all nearby party members will be increased by 0.2%/0.25%/0.3%/0.35%/0.4% of the equipping character's max HP for 20s.",
   "location": "Gacha",
   "ascensionMaterial": "talisman",
   "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Sunken Song of the Sands",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Wearer's HP",
+          "type": "hp_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "Grand Hymn: wearer's Elemental Mastery per stack from the wearer's Max HP",
+          "type": "elemental_mastery",
+          "values": [0.0012, 0.0015, 0.0018, 0.0021, 0.0024],
+          "conditional": { "origin": "character", "attribute": "hp" },
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "At 3 stacks or third-stack refresh: nearby party's additional Elemental Mastery (including wearer) from the wearer's Max HP",
+          "type": "elemental_mastery",
+          "values": [0.002, 0.0025, 0.003, 0.0035, 0.004],
+          "conditional": { "origin": "character", "attribute": "hp" },
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 44.3358,
