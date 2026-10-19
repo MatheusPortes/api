@@ -2,13 +2,35 @@
   "name": "Lithic Blade",
   "type": "Claymore",
   "rarity": 4,
-  "baseAttack": 41,
-  "subStat": "CRIT DMG",
-  "passiveName": "Lithic Axiom - Unity",
-  "passiveDesc": "For every character in the party who hails from Liyue, the character who equips this weapon gains 6/7/8/9/10% ATK increase and 2/3/4/5/6% CRIT Rate increase.",
+  "baseAttack": 42,
+  "subStat": "ATK",
+  "passiveName": "Lithic Axiom: Unity",
+  "passiveDesc": "For every character in the party who hails from Liyue, the character who equips this weapon gains a 7%/8%/9%/10%/11% ATK increase and a 3%/4%/5%/6%/7% CRIT Rate increase. This effect stacks up to 4 times.",
   "location": "Gacha",
   "ascensionMaterial": "guyun",
   "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Lithic Axiom: Unity",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATK per party member hailing from Liyue (including a qualifying wearer)",
+          "type": "atk_percent",
+          "values": [0.07, 0.08, 0.09, 0.1, 0.11],
+          "bonus": true,
+          "accumulations": 4
+        },
+        {
+          "label": "CRIT Rate per party member hailing from Liyue (same qualifying count as ATK)",
+          "type": "crit_rate",
+          "values": [0.03, 0.04, 0.05, 0.06, 0.07],
+          "bonus": true,
+          "accumulations": 4
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 42.401,
