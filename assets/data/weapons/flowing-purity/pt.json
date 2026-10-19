@@ -13,6 +13,147 @@
   },
   "description": "Uma antologia de roteiros com uma forma estranha. Todos os roteiros escritos por Coppelius estão registrados dentro dele.",
   "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Obra-prima Incompleta",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano Elemental após usar uma Habilidade",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true
+        },
+        {
+          "label": "Dano Elemental após usar uma Habilidade",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true
+        },
+        {
+          "label": "Dano Elemental após usar uma Habilidade",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true
+        },
+        {
+          "label": "Dano Elemental após usar uma Habilidade",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true
+        },
+        {
+          "label": "Dano Elemental após usar uma Habilidade",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true
+        },
+        {
+          "label": "Dano Elemental após usar uma Habilidade",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true
+        },
+        {
+          "label": "Dano Elemental após usar uma Habilidade",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true
+        },
+        {
+          "label": "Dano Elemental adicional do Contrato removido",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.00002, 0.000025, 0.00003, 0.000035, 0.00004],
+          "conditional": {
+            "origin": "character",
+            "attribute": "cleared_bond_of_life"
+          },
+          "maxValues": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dano Elemental adicional do Contrato removido",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.00002, 0.000025, 0.00003, 0.000035, 0.00004],
+          "conditional": {
+            "origin": "character",
+            "attribute": "cleared_bond_of_life"
+          },
+          "maxValues": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dano Elemental adicional do Contrato removido",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.00002, 0.000025, 0.00003, 0.000035, 0.00004],
+          "conditional": {
+            "origin": "character",
+            "attribute": "cleared_bond_of_life"
+          },
+          "maxValues": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dano Elemental adicional do Contrato removido",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.00002, 0.000025, 0.00003, 0.000035, 0.00004],
+          "conditional": {
+            "origin": "character",
+            "attribute": "cleared_bond_of_life"
+          },
+          "maxValues": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dano Elemental adicional do Contrato removido",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.00002, 0.000025, 0.00003, 0.000035, 0.00004],
+          "conditional": {
+            "origin": "character",
+            "attribute": "cleared_bond_of_life"
+          },
+          "maxValues": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dano Elemental adicional do Contrato removido",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.00002, 0.000025, 0.00003, 0.000035, 0.00004],
+          "conditional": {
+            "origin": "character",
+            "attribute": "cleared_bond_of_life"
+          },
+          "maxValues": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dano Elemental adicional do Contrato removido",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.00002, 0.000025, 0.00003, 0.000035, 0.00004],
+          "conditional": {
+            "origin": "character",
+            "attribute": "cleared_bond_of_life"
+          },
+          "maxValues": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 43.7349,
