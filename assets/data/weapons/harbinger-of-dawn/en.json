@@ -5,8 +5,22 @@
   "baseAttack": 39,
   "subStat": "CRIT DMG",
   "passiveName": "Vigorous",
-  "passiveDesc": "When HP is above 90%, increases CRIT Rate by 14/18/22/24/28%.",
+  "passiveDesc": "When HP is above 90%, increases CRIT Rate by 14%/17.5%/21%/24.5%/28%.",
   "location": "Gacha",
   "ascensionMaterial": "boreal",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Vigorous",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "CRIT Rate while the wearer's HP is above 90%",
+          "type": "crit_rate",
+          "values": [0.14, 0.175, 0.21, 0.245, 0.28],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
