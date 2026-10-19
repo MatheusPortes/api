@@ -8,5 +8,31 @@
   "passiveDesc": "ATK increased by 28/35/42/49/56% of Energy Recharge over the base 100%. You can gain a maximum bonus of 80/90/100/110/120% ATK. Gain 30/35/40/45/50% Energy Recharge for 12s after using an Elemental Burst.",
   "location": "Gacha",
   "ascensionMaterial": "mask",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Timeless Dream: Eternal Stove",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATK from Energy Recharge above the base 100%",
+          "type": "atk_percent",
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "conditional": {
+            "origin": "character",
+            "attribute": "energy_recharge",
+            "offset": 1
+          },
+          "maxValues": [0.8, 0.9, 1, 1.1, 1.2],
+          "bonus": true
+        },
+        {
+          "label": "Energy Recharge for 12s after using an Elemental Burst",
+          "type": "energy_recharge",
+          "values": [0.3, 0.35, 0.4, 0.45, 0.5],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }

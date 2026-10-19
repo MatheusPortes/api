@@ -9,5 +9,31 @@
   "location": "Inazuma",
   "baseDamage": { "attack": 46, "subStat": 120 },
   "description": "Uma naginata usada para \"cortar grama\". Qualquer exército que esteja diante desta arma provavelmente será igualmente cortado...",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Sonho Atemporal: Fogão Eterno",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATQ com base na Recarga de Energia acima da base de 100%",
+          "type": "atk_percent",
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "conditional": {
+            "origin": "character",
+            "attribute": "energy_recharge",
+            "offset": 1
+          },
+          "maxValues": [0.8, 0.9, 1, 1.1, 1.2],
+          "bonus": true
+        },
+        {
+          "label": "Recarga de Energia por 12s após usar um Supremo",
+          "type": "energy_recharge",
+          "values": [0.3, 0.35, 0.4, 0.45, 0.5],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
