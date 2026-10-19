@@ -9,6 +9,47 @@
   "location": "Gacha",
   "ascensionMaterial": "dandelion",
   "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Revolutionary Chorale",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Wearer's DMG",
+          "type": "dmg_percent",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true
+        },
+        {
+          "label": "Song of Resistance: nearby party members' Normal Attack DMG after consuming 2 Sigils",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "Song of Resistance: nearby party members' Charged Attack DMG after consuming 2 Sigils",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "Song of Resistance: nearby party members' Plunging Attack DMG after consuming 2 Sigils",
+          "type": "dmg_percent",
+          "target": "plunging_attack",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "Song of Resistance: nearby party members' ATK after consuming 2 Sigils",
+          "type": "atk_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 45.9364,
