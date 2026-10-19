@@ -5,10 +5,31 @@
   "baseAttack": 46,
   "subStat": "CRIT Rate",
   "passiveName": "Bright Dawn Overture",
-  "passiveDesc": "ATK increased by 15%. After the equipping character triggers Burning on an opponent or deals Dendro DMG to Burning opponents, the DMG dealt is increased by 18%. This effect lasts for 8s, max 2 stacks. When 2 stacks are reached or when the duration is refreshed at 2 stacks, restore 12 Energy. Energy can be restored this way once every 12s. The 2 aforementioned effects can be triggered even when the character is off-field.",
+  "passiveDesc": "ATK increased by 15%/19%/23%/27%/31%. After the equipping character triggers Burning on an opponent or deals Dendro DMG to Burning opponents, the DMG dealt is increased by 18%/23%/28%/33%/38%. This effect lasts for 8s, max 2 stacks. When 2 stacks are reached or when the duration is refreshed at 2 stacks, restore 12/13/14/15/16 Energy. Energy can be restored this way once every 12s. The 2 aforementioned effects can be triggered even when the character is off-field.",
   "location": "Gacha",
   "ascensionMaterial": "pristine-sea",
   "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Bright Dawn Overture",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATK",
+          "type": "atk_percent",
+          "values": [0.15, 0.19, 0.23, 0.27, 0.31],
+          "bonus": true
+        },
+        {
+          "label": "DMG per stack after triggering Burning or dealing Dendro DMG to Burning opponents",
+          "type": "dmg_percent",
+          "values": [0.18, 0.23, 0.28, 0.33, 0.38],
+          "bonus": true,
+          "accumulations": 2
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 45.9364,
