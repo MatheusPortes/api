@@ -5,9 +5,82 @@
   "baseAttack": 46,
   "subStat": "Dano Crítico",
   "passiveName": "Dança Kagura da Sakura Sagrada",
-  "passiveDesc": "Ao usar a Habilidade Elemental, obtém o efeito de \"Dança Kagura\", o qual aumenta o Dano da Habilidade Elemental em 12%/15%/18%/21%/24% do personagem que tiver esta arma equipada. Este efeito dura 16s e pode ser acumulado em até 3 vezes. Ao obter 3 acúmulos, o personagem obtém 12%/15%/18%/21%/24% de Bônus de Dano de todos os Elementos.",
+  "passiveDesc": "Ao lançar a Habilidade Elemental, obtém o efeito Dança Kagura, que aumenta o Dano da Habilidade Elemental do portador em 12%/15%/18%/21%/24% e o Dano de Supercondutor Estelar em 12%/15%/18%/21%/24% por 24s. Acumulável até 3 vezes. Ao possuir 3 acúmulos, esse personagem obtém 12%/15%/18%/21%/24% de bônus de todos os Danos Elementais.",
   "location": "Inazuma",
   "baseDamage": { "attack": 46, "subStat": 144 },
   "description": "Sino usado para a execução da Dança Kagura, abençoado pela própria Guuji. O cheiro da Sakura Sagrada ainda permanece nele.",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Dança Kagura da Sakura Sagrada",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dança Kagura: Dano de Habilidade Elemental por acúmulo",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "Dança Kagura: Dano de Supercondutor Estelar por acúmulo",
+          "type": "dmg_percent",
+          "reaction": ["STELLAR_CONDUCT"],
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "Dano Geo com 3 acúmulos de Dança Kagura",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dano Anemo com 3 acúmulos de Dança Kagura",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dano Cryo com 3 acúmulos de Dança Kagura",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dano Dendro com 3 acúmulos de Dança Kagura",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dano Electro com 3 acúmulos de Dança Kagura",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dano Hydro com 3 acúmulos de Dança Kagura",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dano Pyro com 3 acúmulos de Dança Kagura",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }

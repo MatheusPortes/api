@@ -5,8 +5,81 @@
   "baseAttack": 46,
   "subStat": "CRIT DMG",
   "passiveName": "Kagura Dance of the Sacred Sakura",
-  "passiveDesc": "Gains the Kagura Dance effect when using an Elemental Skill, causing the Elemental Skill DMG of the character wielding this weapon to increase by 12/15/18/21/24% for 16s. Max 3 stacks. This character will gain 12/15/18/21/24% All Elemental DMG Bonus when they possess 3 stacks.",
+  "passiveDesc": "Using an Elemental Skill grants the Kagura Dance effect, increasing the wielding character's Elemental Skill DMG by 12%/15%/18%/21%/24% as well as their Stellar-Conduct DMG by 12%/15%/18%/21%/24% for 24s. Max 3 stacks. This character will gain a 12%/15%/18%/21%/24% All Elemental DMG Bonus when they possess 3 stacks.",
   "location": "Gacha",
   "ascensionMaterial": "mask",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Kagura Dance of the Sacred Sakura",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Kagura Dance: Elemental Skill DMG per stack",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "Kagura Dance: Stellar-Conduct DMG per stack",
+          "type": "dmg_percent",
+          "reaction": ["STELLAR_CONDUCT"],
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "Geo DMG at 3 Kagura Dance stacks",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Anemo DMG at 3 Kagura Dance stacks",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Cryo DMG at 3 Kagura Dance stacks",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dendro DMG at 3 Kagura Dance stacks",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Electro DMG at 3 Kagura Dance stacks",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Hydro DMG at 3 Kagura Dance stacks",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Pyro DMG at 3 Kagura Dance stacks",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
