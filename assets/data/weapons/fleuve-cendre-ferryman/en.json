@@ -5,8 +5,29 @@
   "baseAttack": 42,
   "subStat": "Energy Recharge",
   "passiveName": "Ironbone",
-  "passiveDesc": "Increases Elemental Skill CRIT Rate by 8%. Additionally, increases Energy Recharge by 16% for 5s after using an Elemental Skill.s",
+  "passiveDesc": "Increases Elemental Skill CRIT Rate by 8%/10%/12%/14%/16%. Additionally, increases Energy Recharge by 16%/20%/24%/28%/32% for 5s after using an Elemental Skill.",
   "location": "Fontaine Fishing Association",
   "ascensionMaterial": "ancient-chord",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Ironbone",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Elemental Skill CRIT Rate",
+          "type": "crit_rate",
+          "target": "elemental_skill",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true
+        },
+        {
+          "label": "Energy Recharge for 5s after using an Elemental Skill",
+          "type": "energy_recharge",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }

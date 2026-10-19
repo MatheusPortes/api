@@ -9,5 +9,26 @@
   "location": "Resgatado na Associação de Pesca de Fontaine",
   "baseDamage": { "attack": 42, "subStat": 100 },
   "description": "Um cano de cobre abandonado que foi usado como arma. Era famoso, ou infame, dependendo de onde estivesse.",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Ossos de Aço",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Taxa CRIT da Habilidade Elemental",
+          "type": "crit_rate",
+          "target": "elemental_skill",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true
+        },
+        {
+          "label": "Recarga de Energia por 5s após usar uma Habilidade Elemental",
+          "type": "energy_recharge",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
