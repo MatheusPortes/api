@@ -22,6 +22,19 @@
       "baseAttack": "ATK 1.1",
       "attackPercent": "C1"
     },
+    "skills": [
+      {
+        "label": "Determinação",
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [2.4, 2.8, 3.2, 3.6, 4],
+            "conditional": { "origin": "character", "attribute": "atk" }
+          }
+        ]
+      }
+    ],
     "ascensions": [
       {
         "ascension": 0,
