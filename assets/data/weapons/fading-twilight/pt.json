@@ -5,7 +5,7 @@
   "baseAttack": 44,
   "subStat": "Recarga de Energia",
   "passiveName": "Brilho Abismal",
-  "passiveDesc": "Possui três estados: Entardecer, Amanhecer e Alvorada. Estes estados aumentam o Dano infligido em 6%/10%/14%/7.5%/12.5%/17.5%/9%/15%/21%/10.5%/17.5%/24.5%/12%/20%/28% respectivamente. Ao atingir um inimigo com um ataque, se trocará para o próximo estado. Essa troca pode acontecer uma vez a cada 7s. Esse efeito também ocorrerá se o personagem que tiver esta arma equipada não estiver ativo no campo de batalha.",
+  "passiveDesc": "Possui três estados: Entardecer aumenta o Dano infligido em 6%/7.5%/9%/10.5%/12%; Amanhecer em 10%/12.5%/15%/17.5%/20%; e Alvorada em 14%/17.5%/21%/24.5%/28%. Ao atingir um inimigo com um ataque, se trocará para o próximo estado. Essa troca pode acontecer uma vez a cada 7s. Esse efeito também ocorrerá se o personagem que tiver esta arma equipada não estiver ativo no campo de batalha.",
   "location": "Liyue",
   "baseDamage": {
     "attack": 44,
@@ -13,6 +13,32 @@
   },
   "description": "Um arco precioso feito de platina, com uma gema incrustada que cintila com o brilho do crepúsculo.",
   "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Brilho Abismal",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano de Entardecer (selecione apenas o total do estado atual)",
+          "type": "dmg_percent",
+          "values": [0.06, 0.075, 0.09, 0.105, 0.12],
+          "bonus": true
+        },
+        {
+          "label": "Dano de Amanhecer (alternativa a Entardecer e Alvorada)",
+          "type": "dmg_percent",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true
+        },
+        {
+          "label": "Dano de Alvorada (alternativa a Entardecer e Amanhecer)",
+          "type": "dmg_percent",
+          "values": [0.14, 0.175, 0.21, 0.245, 0.28],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 43.7349,
