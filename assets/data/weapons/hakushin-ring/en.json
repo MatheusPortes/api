@@ -8,5 +8,62 @@
   "passiveDesc": "After the character equipped with this weapon triggers an Electro elemental reaction, nearby party members of an Elemental Type involved in the elemental reaction receive a 10/12.5/15/17.5/20% Elemental DMG Bonus for their element, lasting 6s. Elemental Bonuses gained in this way cannot be stacked.",
   "location": "Crafting",
   "ascensionMaterial": "distant-sea",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Sakura Saiguu",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Geo recipient's DMG if Geo was involved in the holder's qualifying Electro reaction (nonstacking, 6s)",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true
+        },
+        {
+          "label": "Anemo recipient's DMG if Anemo was involved in the holder's qualifying Electro reaction (nonstacking, 6s)",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true
+        },
+        {
+          "label": "Cryo recipient's DMG if Cryo was involved in the holder's qualifying Electro reaction (nonstacking, 6s)",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true
+        },
+        {
+          "label": "Dendro recipient's DMG if Dendro was involved in the holder's qualifying Electro reaction (nonstacking, 6s)",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true
+        },
+        {
+          "label": "Electro recipient's DMG if Electro was involved in the holder's qualifying Electro reaction (nonstacking, 6s)",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true
+        },
+        {
+          "label": "Hydro recipient's DMG if Hydro was involved in the holder's qualifying Electro reaction (nonstacking, 6s)",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true
+        },
+        {
+          "label": "Pyro recipient's DMG if Pyro was involved in the holder's qualifying Electro reaction (nonstacking, 6s)",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }

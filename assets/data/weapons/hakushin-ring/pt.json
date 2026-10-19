@@ -9,5 +9,62 @@
   "location": "Inazuma",
   "baseDamage": { "attack": 44, "subStat": 67 },
   "description": "Um catalisador que guarda a memória de Kitsune Saiguu dos tempos passados. E, ainda assim, esse dispositivo é apenas um recipiente empobrecido para toda a amplitude do seu pensamento.",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Palácio de Sakura",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano do receptor Geo se Geo participou da reação Electro válida do portador (não acumula, 6s)",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true
+        },
+        {
+          "label": "Dano do receptor Anemo se Anemo participou da reação Electro válida do portador (não acumula, 6s)",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true
+        },
+        {
+          "label": "Dano do receptor Cryo se Cryo participou da reação Electro válida do portador (não acumula, 6s)",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true
+        },
+        {
+          "label": "Dano do receptor Dendro se Dendro participou da reação Electro válida do portador (não acumula, 6s)",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true
+        },
+        {
+          "label": "Dano do receptor Electro se Electro participou da reação Electro válida do portador (não acumula, 6s)",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true
+        },
+        {
+          "label": "Dano do receptor Hydro se Hydro participou da reação Electro válida do portador (não acumula, 6s)",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true
+        },
+        {
+          "label": "Dano do receptor Pyro se Pyro participou da reação Electro válida do portador (não acumula, 6s)",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
