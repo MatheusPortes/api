@@ -7,7 +7,25 @@
   "passiveName": "Foco",
   "passiveDesc": "Ao atingir um oponente, aumenta a Taxa Crítica em 8%/10%/12%/14%/16%, acumulando no máximo 5 vezes. Causar Dano Crítico remove todos os acúmulos.",
   "location": "Mondstadt",
-  "baseDamage": { "attack": 44, "subStat": 6 },
+  "baseDamage": {
+    "attack": 44,
+    "subStat": 6
+  },
   "description": "Esta lança outrora valorizada por um membro da antiga nobreza que governou Mondstadt há muito tempo. Embora nunca tenha visto a luz do dia, ela ainda é incomparavelmente afiada.",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Foco",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Taxa Crítica por acúmulo ativo de Foco; um Acerto Crítico remove todos os acúmulos",
+          "type": "crit_rate",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true,
+          "accumulations": 5
+        }
+      ]
+    }
+  ]
 }
