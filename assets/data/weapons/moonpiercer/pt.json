@@ -5,9 +5,23 @@
   "baseAttack": 44,
   "subStat": "Proficiência Elemental",
   "passiveName": "Sombra da Lua na Floresta",
-  "passiveDesc": "Após desencadear Queimadura, Aceleração, Intensificação, Propagação, Florescimento, Superflorescimento ou Germinação, uma Folha do Renascimento será criada em volta do personagem por no máximo 10s. Quando coletada, a Folha do Renascimento aumentará o ATQ do personagem em 16%/20%/24%/28%/32% por 12s. Apenas 1 Folha pode ser criada dessa forma a cada 20s. Esse efeito ainda pode ser desencadeado mesmo se o personagem não estiver em campo.",
+  "passiveDesc": "Após desencadear Queimadura, Aceleração, Intensificação, Propagação, Florescimento, Florescimento Lunar, Superflorescimento ou Germinação, uma Folha do Renascimento será criada em volta do personagem por no máximo 10s. Quando coletada, a Folha do Renascimento aumentará o ATQ do personagem em 16%/20%/24%/28%/32% por 12s. Apenas 1 Folha do Renascimento pode ser criada dessa forma a cada 20s. Esse efeito ainda pode ser desencadeado mesmo se o personagem não estiver em campo.",
   "location": "Forja",
   "baseDamage": { "attack": 44, "subStat": 24 },
   "description": "Uma arma obtida através de uma das histórias dos Aranara. Ela tomou a forma de uma flecha gigantesca e pode ser usada como uma lança.",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Sombra da Lua na Floresta",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATQ de quem coletar a Folha do Renascimento por 12s após a coleta",
+          "type": "atk_percent",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
