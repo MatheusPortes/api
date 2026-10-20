@@ -9,6 +9,70 @@
   "location": "Crafting",
   "ascensionMaterial": "aerosiderite",
   "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Infusion Scroll",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Geo DMG per stack after triggering an Elemental Reaction",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true,
+          "accumulations": 2
+        },
+        {
+          "label": "Anemo DMG per stack after triggering an Elemental Reaction",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true,
+          "accumulations": 2
+        },
+        {
+          "label": "Cryo DMG per stack after triggering an Elemental Reaction",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true,
+          "accumulations": 2
+        },
+        {
+          "label": "Dendro DMG per stack after triggering an Elemental Reaction",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true,
+          "accumulations": 2
+        },
+        {
+          "label": "Electro DMG per stack after triggering an Elemental Reaction",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true,
+          "accumulations": 2
+        },
+        {
+          "label": "Hydro DMG per stack after triggering an Elemental Reaction",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true,
+          "accumulations": 2
+        },
+        {
+          "label": "Pyro DMG per stack after triggering an Elemental Reaction",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true,
+          "accumulations": 2
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 43.7349,
