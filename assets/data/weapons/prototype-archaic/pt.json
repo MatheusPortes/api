@@ -14,6 +14,22 @@
   "description": "Um espadão antigo descoberto no Penhasco Obscuro. Ao brandi-lo, dá a sensação de como se fosse possível cortar o espaço.",
   "weapon_type": "CLAYMORE",
   "calculation": {
+    "skills": [
+      {
+        "label": "Esmagar",
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [2.4, 3, 3.6, 4.2, 4.8],
+            "conditional": {
+              "origin": "character",
+              "attribute": "atk"
+            }
+          }
+        ]
+      }
+    ],
     "initialStats": {
       "baseAttack": 43.7349,
       "attackPercent": 0.06
