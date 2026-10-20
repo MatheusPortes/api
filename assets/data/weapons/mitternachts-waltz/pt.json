@@ -9,5 +9,27 @@
   "location": "Mondstadt",
   "baseDamage": { "attack": 42, "subStat": 113 },
   "description": "Um arco que possui cores como as da noite de ilusões e de pecados.",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Duelo da Noite",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano de Habilidade Elemental por 5s após um acerto de Ataque Normal",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "Dano de Ataque Normal por 5s após um acerto de Habilidade Elemental",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }

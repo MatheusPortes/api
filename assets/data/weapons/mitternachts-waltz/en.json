@@ -8,5 +8,27 @@
   "passiveDesc": "Normal Attack hits on opponents increase Elemental Skill DMG by 20/25/30/35/40% for 5s. Elemental Skill hits on opponents increase Normal Attack DMG by 20/25/30/35/40% for 5s.",
   "location": "Gacha",
   "ascensionMaterial": "decarabian",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Evernight Duet",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Elemental Skill DMG for 5s after a Normal Attack hit",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "Normal Attack DMG for 5s after an Elemental Skill hit",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
