@@ -13,6 +13,27 @@
   },
   "description": "Uma espada para cerimônias feita com essência de jade puro esculpido delicadamente. O ar que produz quando balança emite um som parecido a um suspiro.",
   "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Pureza do Protetor",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Bônus de Vida Máxima",
+          "type": "hp_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "ATQ fixo baseado na Vida Máxima do portador",
+          "type": "flat_atk",
+          "values": [0.012, 0.015, 0.018, 0.021, 0.024],
+          "conditional": { "origin": "character", "attribute": "hp" },
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 44.3358,

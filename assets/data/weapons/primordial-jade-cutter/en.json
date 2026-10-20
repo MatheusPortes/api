@@ -9,6 +9,27 @@
   "location": "Gacha",
   "ascensionMaterial": "elixir",
   "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Protector's Virtue",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Max HP bonus",
+          "type": "hp_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "Flat ATK from the wearer's Max HP",
+          "type": "flat_atk",
+          "values": [0.012, 0.015, 0.018, 0.021, 0.024],
+          "conditional": { "origin": "character", "attribute": "hp" },
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 44.3358,
