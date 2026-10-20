@@ -13,6 +13,21 @@
   },
   "description": "Esta lança outrora valorizada por um membro da antiga nobreza que governou Mondstadt há muito tempo. Embora nunca tenha visto a luz do dia, ela ainda é incomparavelmente afiada.",
   "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Foco",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Taxa Crítica por acúmulo ativo de Foco; um Acerto Crítico remove todos os acúmulos",
+          "type": "crit_rate",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true,
+          "accumulations": 5
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 43.7349,
