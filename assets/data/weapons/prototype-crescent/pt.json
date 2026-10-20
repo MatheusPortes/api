@@ -7,7 +7,30 @@
   "passiveName": "Sem Retorno",
   "passiveDesc": "Os ataques de Ataques Carregados em pontos fracos aumentam a Veloc. Mov. em 10% e ATQ em 36%/45%/54%/63%/72% por 10s.",
   "location": "Liyue",
-  "baseDamage": { "attack": 42, "subStat": 90 },
+  "baseDamage": {
+    "attack": 42,
+    "subStat": 90
+  },
   "description": "Um arco de protótipo descoberto na Forja do Penhasco Obscuro. A flecha disparada deste arco brilha como um raio de luar.",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Sem Retorno: após Ataques Carregados em pontos fracos por 10s",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Bônus de Velocidade de Movimento",
+          "type": "movement_speed_percent",
+          "values": [0.1, 0.1, 0.1, 0.1, 0.1],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de ATQ",
+          "type": "atk_percent",
+          "values": [0.36, 0.45, 0.54, 0.63, 0.72],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
