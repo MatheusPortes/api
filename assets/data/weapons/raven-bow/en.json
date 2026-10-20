@@ -9,6 +9,20 @@
   "location": "Gacha",
   "ascensionMaterial": "decarabian",
   "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Bane of Flame and Water",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "DMG Bonus against opponents affected by Hydro or Pyro; one nonstacking grant",
+          "type": "dmg_percent",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 39.8751,
