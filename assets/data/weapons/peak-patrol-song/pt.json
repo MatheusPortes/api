@@ -7,7 +7,171 @@
   "passiveName": "Juventude Eterna",
   "passiveDesc": "Quando um Ataque Normal ou Imersivo atinge um inimigo, obtém \"Canção de Glória\": aumenta DEF em 8%/10%/12%/14%/16% e obtém 10%/12.5%/15%/17.5%/20% de bônus de Dano de todos os Elementos por 6s e acumula até 2 vezes. Esse efeito pode ser desencadeado uma vez a cada 0.1s. Quando esse efeito alcançar ou possuir 2 acúmulos, sua duração será redefinida, para então, com base em cada 1.000 de DEF do personagem que está com essa arma equipada, aumentar o bônus de Dano de todos os Elementos para todos os membros da equipe em 8%/10%/12%/14%/16%, podendo aumentar até 25.6%/32%/38.4%/44.8%/51.2% por 15s.",
   "location": "Oração de Evento de Arma",
-  "baseDamage": { "attack": 44, "subStat": 180 },
+  "baseDamage": {
+    "attack": 44,
+    "subStat": 180
+  },
   "description": "Uma lâmina de obsidiana de afiação incomparável, leve como uma canção. Foi modificada por um certo artesão para vir equipada com um dispositivo de Flogisto destacável que toca discos.",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Canção de Glória",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "DEF por acúmulo de Canção de Glória",
+          "type": "def_percent",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true,
+          "accumulations": 2
+        },
+        {
+          "label": "Bônus de Dano Geo por acúmulo de Canção de Glória",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true,
+          "accumulations": 2
+        },
+        {
+          "label": "Bônus de Dano Anemo por acúmulo de Canção de Glória",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true,
+          "accumulations": 2
+        },
+        {
+          "label": "Bônus de Dano Cryo por acúmulo de Canção de Glória",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true,
+          "accumulations": 2
+        },
+        {
+          "label": "Bônus de Dano Dendro por acúmulo de Canção de Glória",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true,
+          "accumulations": 2
+        },
+        {
+          "label": "Bônus de Dano Electro por acúmulo de Canção de Glória",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true,
+          "accumulations": 2
+        },
+        {
+          "label": "Bônus de Dano Hydro por acúmulo de Canção de Glória",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true,
+          "accumulations": 2
+        },
+        {
+          "label": "Bônus de Dano Pyro por acúmulo de Canção de Glória",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true,
+          "accumulations": 2
+        }
+      ]
+    },
+    {
+      "label": "Bônus de Dano Elemental da equipe baseado na DEF do portador ao alcançar ou renovar dois acúmulos",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Bônus de Dano Geo da equipe baseado na DEF do portador",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [8e-5, 0.0001, 0.00012, 0.00014, 0.00016],
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          },
+          "maxValues": [0.256, 0.32, 0.384, 0.448, 0.512],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano Anemo da equipe baseado na DEF do portador",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [8e-5, 0.0001, 0.00012, 0.00014, 0.00016],
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          },
+          "maxValues": [0.256, 0.32, 0.384, 0.448, 0.512],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano Cryo da equipe baseado na DEF do portador",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [8e-5, 0.0001, 0.00012, 0.00014, 0.00016],
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          },
+          "maxValues": [0.256, 0.32, 0.384, 0.448, 0.512],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano Dendro da equipe baseado na DEF do portador",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [8e-5, 0.0001, 0.00012, 0.00014, 0.00016],
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          },
+          "maxValues": [0.256, 0.32, 0.384, 0.448, 0.512],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano Electro da equipe baseado na DEF do portador",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [8e-5, 0.0001, 0.00012, 0.00014, 0.00016],
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          },
+          "maxValues": [0.256, 0.32, 0.384, 0.448, 0.512],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano Hydro da equipe baseado na DEF do portador",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [8e-5, 0.0001, 0.00012, 0.00014, 0.00016],
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          },
+          "maxValues": [0.256, 0.32, 0.384, 0.448, 0.512],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano Pyro da equipe baseado na DEF do portador",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [8e-5, 0.0001, 0.00012, 0.00014, 0.00016],
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          },
+          "maxValues": [0.256, 0.32, 0.384, 0.448, 0.512],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
