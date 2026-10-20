@@ -5,10 +5,24 @@
   "baseAttack": 42,
   "subStat": "Elemental Mastery",
   "passiveName": "Bane of Storm and Tide",
-  "passiveDesc": "Increases DMG against enemies affected by Hydro or Electro by 20/25/30/35/40%.",
+  "passiveDesc": "Increases DMG against opponents affected by Hydro or Electro by 20%/24%/28%/32%/36%.",
   "location": "Gacha",
   "ascensionMaterial": "elixir",
   "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Bane of Storm and Tide",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "DMG Bonus against opponents affected by Hydro or Electro; one nonstacking grant",
+          "type": "dmg_percent",
+          "values": [0.2, 0.24, 0.28, 0.32, 0.36],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 42.401,
