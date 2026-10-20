@@ -13,6 +13,21 @@
   },
   "description": "Uma velha espada longa que pertencia aos antigos governantes de Mondstadt. Requintadamente trabalhada, as esculturas e enfeites testemunham a estatura de seu dono.",
   "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Foco",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Taxa Crítica por acúmulo ativo de Foco; um Acerto Crítico remove todos os acúmulos",
+          "type": "crit_rate",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true,
+          "accumulations": 5
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 42.401,
