@@ -7,7 +7,34 @@
   "passiveName": "Viciado em Magia",
   "passiveDesc": "Após usar uma Habilidade Elemental, aumenta o Dano do Ataque Normal e Ataque Carregado em 8%/10%/12%/14%/16% por 12s, podendo acumular até 2 vezes.",
   "location": "Liyue",
-  "baseDamage": { "attack": 42, "subStat": 100 },
+  "baseDamage": {
+    "attack": 42,
+    "subStat": 100
+  },
   "description": "Um rancor descoberto na Forja do Penhasco Obscuro. Os vislumbres ao longo da borda afiada são como estrelas na noite.",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Viciado em Magia",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano do Ataque Normal por acúmulo após usar a Habilidade Elemental",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true,
+          "accumulations": 2
+        },
+        {
+          "label": "Dano do Ataque Carregado por acúmulo após usar a Habilidade Elemental",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true,
+          "accumulations": 2
+        }
+      ]
+    }
+  ]
 }
