@@ -13,6 +13,77 @@
   },
   "description": "Uma furadeira longa que raramente é vista hoje em dia. Costumava ser usada em exploração e entalhamento de pedras.",
   "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Canção do Pedreiro: Resistência",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATQ por Sinal da União consumido",
+          "type": "atk_percent",
+          "values": [0.03, 0.04, 0.05, 0.06, 0.07],
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "Bônus de Dano Geo por Sinal da União consumido",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.07, 0.085, 0.1, 0.115, 0.13],
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "Bônus de Dano Anemo por Sinal da União consumido",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.07, 0.085, 0.1, 0.115, 0.13],
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "Bônus de Dano Cryo por Sinal da União consumido",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.07, 0.085, 0.1, 0.115, 0.13],
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "Bônus de Dano Dendro por Sinal da União consumido",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.07, 0.085, 0.1, 0.115, 0.13],
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "Bônus de Dano Electro por Sinal da União consumido",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.07, 0.085, 0.1, 0.115, 0.13],
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "Bônus de Dano Hydro por Sinal da União consumido",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.07, 0.085, 0.1, 0.115, 0.13],
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "Bônus de Dano Pyro por Sinal da União consumido",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.07, 0.085, 0.1, 0.115, 0.13],
+          "bonus": true,
+          "accumulations": 3
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 43.7349,
