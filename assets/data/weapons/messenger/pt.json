@@ -4,7 +4,7 @@
   "rarity": 3,
   "baseAttack": 40,
   "subStat": "Dano Crítico",
-  "passiveName": "Messagem da Flecha Voadora",
+  "passiveName": "Mensagem da Flecha Voadora",
   "passiveDesc": "Ao acertar um ponto fraco com Ataque Carregado, causa um adicional de 100%/125%/150%/175%/200% de Dano de ATQ como Dano Crítico. Este efeito pode ser ativado uma vez a cada 10s.",
   "location": "Liyue",
   "baseDamage": {
@@ -13,6 +13,22 @@
   },
   "description": "Um arco básico de madeira. Dizem que ele foi usado para comunicações de longa distância.",
   "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Mensagem da Flecha Voadora",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Ataque Carregado no ponto fraco: Dano adicional com base no ATQ causado como Dano Crítico (uma vez a cada 10s)",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [1, 1.25, 1.5, 1.75, 2],
+          "conditional": { "origin": "character", "attribute": "atk" },
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 39.8751,

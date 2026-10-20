@@ -4,6 +4,8 @@ Read a section only for the matching active rule. Live records remain authoritat
 
 ## Owner-selected resolutions
 
+- **Messenger (2026-10-20):** owner rejected an independent skill and confirmed a weak-point damage bonus. Apply the existing attached targeted `dmg_percent` + `character.atk` representation, Charged target, bonus true, raw ATK ratios [1,1.25,1.5,1.75,2]. Critical/weak-point qualification stays in labels/source text; no `crit_dmg` stat bonus or new runtime state. Read-only compatibility: inspected live Echoes of an Offering EN attached Normal ATK-reference modifier, Hunter's Path EN attached Charged EM-reference modifier, and Light of Foliar Incision EN attached Normal/Skill EM-reference modifiers remain compatible/unchanged. Halberd/Crescent Pike independent skills remain separate entity-specific decisions, unchanged. This resolves classification by owner decision, not newly explicit two-source separation evidence.
+
 - **Archaic Petra:** retain existing four ordinary Crystallize elemental branches; use KQM/Yatta Lunar-Crystallize text over Game8’s older text. No general source override.
 - **Nighttime Whispers:** use KQM/Yatta nearby Lunar-Crystallize Moondrift alternative over Game8 shield-only wording; entity-only resolution.
 - **Scholar:** fixed Energy is consumer-only; use KQM/Yatta Particle/Orb EN wording, not generic Energy-gain wording.
