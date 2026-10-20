@@ -13,6 +13,146 @@
   },
   "description": "An obsidian blade of unparalleled sharpness, light as a song. It was modified by a certain artisan to come equipped with a record-playing detachable Phlogiston Device.",
   "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Ode to Flowers",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "DEF per Ode to Flowers stack",
+          "type": "def_percent",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true,
+          "accumulations": 2
+        },
+        {
+          "label": "Geo DMG Bonus per Ode to Flowers stack",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true,
+          "accumulations": 2
+        },
+        {
+          "label": "Anemo DMG Bonus per Ode to Flowers stack",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true,
+          "accumulations": 2
+        },
+        {
+          "label": "Cryo DMG Bonus per Ode to Flowers stack",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true,
+          "accumulations": 2
+        },
+        {
+          "label": "Dendro DMG Bonus per Ode to Flowers stack",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true,
+          "accumulations": 2
+        },
+        {
+          "label": "Electro DMG Bonus per Ode to Flowers stack",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true,
+          "accumulations": 2
+        },
+        {
+          "label": "Hydro DMG Bonus per Ode to Flowers stack",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true,
+          "accumulations": 2
+        },
+        {
+          "label": "Pyro DMG Bonus per Ode to Flowers stack",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true,
+          "accumulations": 2
+        }
+      ]
+    },
+    {
+      "label": "Party Elemental DMG Bonus from the wearer's DEF after reaching or refreshing two stacks",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Party Geo DMG Bonus from the wearer's DEF",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.00008, 0.0001, 0.00012, 0.00014, 0.00016],
+          "conditional": { "origin": "character", "attribute": "def" },
+          "maxValues": [0.256, 0.32, 0.384, 0.448, 0.512],
+          "bonus": true
+        },
+        {
+          "label": "Party Anemo DMG Bonus from the wearer's DEF",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.00008, 0.0001, 0.00012, 0.00014, 0.00016],
+          "conditional": { "origin": "character", "attribute": "def" },
+          "maxValues": [0.256, 0.32, 0.384, 0.448, 0.512],
+          "bonus": true
+        },
+        {
+          "label": "Party Cryo DMG Bonus from the wearer's DEF",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.00008, 0.0001, 0.00012, 0.00014, 0.00016],
+          "conditional": { "origin": "character", "attribute": "def" },
+          "maxValues": [0.256, 0.32, 0.384, 0.448, 0.512],
+          "bonus": true
+        },
+        {
+          "label": "Party Dendro DMG Bonus from the wearer's DEF",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.00008, 0.0001, 0.00012, 0.00014, 0.00016],
+          "conditional": { "origin": "character", "attribute": "def" },
+          "maxValues": [0.256, 0.32, 0.384, 0.448, 0.512],
+          "bonus": true
+        },
+        {
+          "label": "Party Electro DMG Bonus from the wearer's DEF",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.00008, 0.0001, 0.00012, 0.00014, 0.00016],
+          "conditional": { "origin": "character", "attribute": "def" },
+          "maxValues": [0.256, 0.32, 0.384, 0.448, 0.512],
+          "bonus": true
+        },
+        {
+          "label": "Party Hydro DMG Bonus from the wearer's DEF",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.00008, 0.0001, 0.00012, 0.00014, 0.00016],
+          "conditional": { "origin": "character", "attribute": "def" },
+          "maxValues": [0.256, 0.32, 0.384, 0.448, 0.512],
+          "bonus": true
+        },
+        {
+          "label": "Party Pyro DMG Bonus from the wearer's DEF",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.00008, 0.0001, 0.00012, 0.00014, 0.00016],
+          "conditional": { "origin": "character", "attribute": "def" },
+          "maxValues": [0.256, 0.32, 0.384, 0.448, 0.512],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 44.3358,
