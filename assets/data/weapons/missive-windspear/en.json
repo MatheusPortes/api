@@ -8,5 +8,25 @@
   "passiveDesc": "Within 10s after an Elemental Reaction is triggered, ATK is increased by 12/15/18/21/24% and Elemental Mastery is increased by 48/60/72/84/96.",
   "location": "Event: Of Ballads and Brews",
   "ascensionMaterial": "boreal",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "The Wind Unattained",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATK for 10s after triggering an Elemental Reaction",
+          "type": "atk_percent",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Elemental Mastery for 10s after triggering an Elemental Reaction",
+          "type": "elemental_mastery",
+          "values": [48, 60, 72, 84, 96],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
