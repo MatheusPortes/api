@@ -13,6 +13,26 @@
   },
   "description": "Um arco de protótipo descoberto na Forja do Penhasco Obscuro. A flecha disparada deste arco brilha como um raio de luar.",
   "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Sem Retorno: após Ataques Carregados em pontos fracos por 10s",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Bônus de Velocidade de Movimento",
+          "type": "movement_speed_percent",
+          "values": [0.1, 0.1, 0.1, 0.1, 0.1],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de ATQ",
+          "type": "atk_percent",
+          "values": [0.36, 0.45, 0.54, 0.63, 0.72],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 42.401,
