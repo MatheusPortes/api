@@ -7,7 +7,27 @@
   "passiveName": "Imersão de Energia",
   "passiveDesc": "Coletar um Orbe ou Partícula Elemental restaura 1%/1.25%/1.5%/1.75%/2% da Vida.",
   "location": "Mondstadt",
-  "baseDamage": { "attack": 39, "subStat": 85 },
+  "baseDamage": {
+    "attack": 39,
+    "subStat": 85
+  },
   "description": "Um romance de fantasia barato sem valor referencial. Os seus poderes, obviamente, também servem apenas na sua imaginação.",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Imersão de Energia",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Cura baseada na Vida Máxima do portador ao coletar um Orbe ou Partícula Elemental",
+          "type": "healing",
+          "values": [0.01, 0.0125, 0.015, 0.0175, 0.02],
+          "conditional": {
+            "origin": "character",
+            "attribute": "hp"
+          }
+        }
+      ]
+    }
+  ]
 }

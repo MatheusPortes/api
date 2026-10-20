@@ -8,5 +8,22 @@
   "passiveDesc": "Each Elemental Orb or Particle collected restores 1/1.25/1.5/1.75/2% HP.",
   "location": "Chests",
   "ascensionMaterial": "dandelion",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Energy Shower",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Healing from the wearer's Max HP when collecting an Elemental Orb or Particle",
+          "type": "healing",
+          "values": [0.01, 0.0125, 0.015, 0.0175, 0.02],
+          "conditional": {
+            "origin": "character",
+            "attribute": "hp"
+          }
+        }
+      ]
+    }
+  ]
 }
