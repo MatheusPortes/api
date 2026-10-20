@@ -8,5 +8,41 @@
   "passiveDesc": "DEF is increased by 28/35/42/49/56%. Normal and Charged Attack DMG is increased by 40/50/60/70/80% of DEF.",
   "location": "Gacha",
   "ascensionMaterial": "narukami",
-  "weapon_type": "CLAYMORE"
+  "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Gokadaiou Otogibanashi",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "DEF bonus",
+          "type": "def_percent",
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "bonus": true
+        },
+        {
+          "label": "Attached Normal Attack damage from the wearer's DEF",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.4, 0.5, 0.6, 0.7, 0.8],
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          },
+          "bonus": true
+        },
+        {
+          "label": "Attached Charged Attack damage from the wearer's DEF",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.4, 0.5, 0.6, 0.7, 0.8],
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          },
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
