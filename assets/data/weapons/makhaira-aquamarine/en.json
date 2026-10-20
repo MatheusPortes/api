@@ -5,8 +5,36 @@
   "baseAttack": 42,
   "subStat": "Elemental Mastery",
   "passiveName": "Desert Pavilion",
-  "passiveDesc": "The following effect will trigger every 10s: The equipping character will gain 24% of their Elemental Mastery as bonus ATK for 12s, with nearby party members gaining 30% of this buff for the same duration. Multiple instances of this weapon can allow this buff to stack. This effect will still trigger even if the character is not on the field.",
+  "passiveDesc": "The following effect will trigger every 10s: The equipping character will gain 24%/30%/36%/42%/48% of their Elemental Mastery as bonus ATK for 12s, with nearby party members gaining 30% of this buff for the same duration. Multiple instances of this weapon can allow this buff to stack. This effect will still trigger even if the character is not on the field.",
   "location": "Gacha",
   "ascensionMaterial": "scorching",
-  "weapon_type": "CLAYMORE"
+  "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Desert Pavilion",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Wearer's flat ATK from the wearer's Elemental Mastery",
+          "type": "flat_atk",
+          "values": [0.24, 0.3, 0.36, 0.42, 0.48],
+          "conditional": {
+            "origin": "character",
+            "attribute": "elemental_mastery"
+          },
+          "bonus": true
+        },
+        {
+          "label": "Other nearby party members' flat ATK: 30% share from the wearer's Elemental Mastery",
+          "type": "flat_atk",
+          "values": [0.072, 0.09, 0.108, 0.126, 0.144],
+          "conditional": {
+            "origin": "character",
+            "attribute": "elemental_mastery"
+          },
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
