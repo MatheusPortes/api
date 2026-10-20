@@ -8,5 +8,75 @@
   "passiveDesc": "Elemental Skill and Elemental Burst DMG increased by 12/15/18/21/24%. After a Normal Attack, Charged Attack, Elemental Skill or Elemental Burst hits an opponent, 1 stack of Ashen Nightstar will be gained for 12s. When 1/2/3/4 stacks of Ashen Nightstar are present, ATK is increased by (10/12.5/15/17.5/20)/(20/25/30/35/40)/(30/37.5/45/52.5/60)/(48/60/72/84/96)%. The stack of Ashen Nightstar created by the Normal Attack, Charged Attack, Elemental Skill or Elemental Burst will be counted independently of the others.",
   "location": "Gacha",
   "ascensionMaterial": "mask",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Daylight's Augury",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Elemental Skill DMG Bonus",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Elemental Burst DMG Bonus",
+          "type": "dmg_percent",
+          "target": "elemental_burst",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "ATK with exactly 1 Ashen Nightstar stack; exclusive tier",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Total ATK bonus at 1 stack; do not sum tiers",
+          "type": "atk_percent",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "ATK with exactly 2 Ashen Nightstar stacks; exclusive tier",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Total ATK bonus at 2 stacks; do not sum tiers",
+          "type": "atk_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "ATK with exactly 3 Ashen Nightstar stacks; exclusive tier",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Total ATK bonus at 3 stacks; do not sum tiers",
+          "type": "atk_percent",
+          "values": [0.3, 0.375, 0.45, 0.525, 0.6],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "ATK with 4 Ashen Nightstar stacks; exclusive tier",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Total ATK bonus at 4 stacks; do not sum tiers",
+          "type": "atk_percent",
+          "values": [0.48, 0.6, 0.72, 0.84, 0.96],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
