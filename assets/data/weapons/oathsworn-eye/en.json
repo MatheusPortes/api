@@ -9,6 +9,20 @@
   "location": "Three Realms Gateway Offering Event",
   "ascensionMaterial": "distant-sea",
   "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "People of the Faltering Light",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Energy Recharge for 10s after using an Elemental Skill",
+          "type": "energy_recharge",
+          "values": [0.24, 0.3, 0.36, 0.42, 0.48],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 43.7349,
