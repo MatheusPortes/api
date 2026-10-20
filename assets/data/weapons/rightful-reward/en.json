@@ -5,8 +5,15 @@
   "baseAttack": 44,
   "subStat": "HP",
   "passiveName": "Tip of the Spear",
-  "passiveDesc": "When the wielder is healed, restore 8 Energy. This effect can be triggered once every 10s, and can occur even when the character is not on the field.",
+  "passiveDesc": "When the wielder is healed, restore 8/10/12/14/16 Energy. This effect can be triggered once every 10s, and can occur even when the character is not on the field.",
   "location": "BP Bounty",
   "ascensionMaterial": "pristine-sea",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Tip of the Spear: fixed Energy restoration when healed",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": []
+    }
+  ]
 }
