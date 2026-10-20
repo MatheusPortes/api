@@ -9,6 +9,23 @@
   "location": "Chest",
   "ascensionMaterial": "dandelion",
   "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Cull the Weak",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Healing from the wearer's Max HP after defeating an opponent",
+          "type": "healing",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "conditional": {
+            "origin": "character",
+            "attribute": "hp"
+          }
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 37.6075,

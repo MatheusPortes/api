@@ -4,6 +4,8 @@
   "rarity": 3,
   "baseAttack": 38,
   "subStat": "Porcentagem de Vida",
+  "passiveName": "Colheita",
+  "passiveDesc": "Derrotar um oponente recupera 8%/10%/12%/14%/16% da Vida.",
   "location": "Mondstadt",
   "baseDamage": {
     "attack": 38,
@@ -11,6 +13,23 @@
   },
   "description": "Dizem que é possível caçar águias em pleno voo com este arco, mas, na verdade, depende muito das habilidades do arqueiro também.",
   "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Colheita",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Cura baseada na Vida Máxima do portador após derrotar um oponente",
+          "type": "healing",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "conditional": {
+            "origin": "character",
+            "attribute": "hp"
+          }
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 37.6075,
