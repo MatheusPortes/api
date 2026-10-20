@@ -9,5 +9,33 @@
   "location": "Liyue",
   "baseDamage": { "attack": 46, "subStat": 108 },
   "description": "Uma fechadura de pedra contendo memórias distantes. Suas infinitas transformações revelam seu poder interior.",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Majestade Dourada",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Força do Escudo",
+          "type": "shield_strength_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "ATQ por acúmulo ativo de acertos",
+          "type": "atk_percent",
+          "values": [0.04, 0.05, 0.06, 0.07, 0.08],
+          "bonus": true,
+          "accumulations": 5
+        },
+        {
+          "label": "ATQ adicional enquanto protegido por escudo por mesmo acúmulo ativo de acertos",
+          "type": "atk_percent",
+          "values": [0.04, 0.05, 0.06, 0.07, 0.08],
+          "bonus": true,
+          "accumulations": 5
+        }
+      ]
+    }
+  ]
 }

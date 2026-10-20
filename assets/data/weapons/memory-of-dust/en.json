@@ -8,5 +8,33 @@
   "passiveDesc": "Increase Shield Strength by 20/25/30/35/40%. Scoring hits on opponents increases ATK by 4/5/6/7/8% for 8s. Max 5 stacks. Can only occur once every 0.3s. While protected by a shield, this ATK increase effect is increased by 100%.",
   "location": "Gacha",
   "ascensionMaterial": "aerosiderite",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Golden Majesty",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Shield Strength",
+          "type": "shield_strength_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "ATK per active hit stack",
+          "type": "atk_percent",
+          "values": [0.04, 0.05, 0.06, 0.07, 0.08],
+          "bonus": true,
+          "accumulations": 5
+        },
+        {
+          "label": "Additional ATK while shielded per same active hit stack",
+          "type": "atk_percent",
+          "values": [0.04, 0.05, 0.06, 0.07, 0.08],
+          "bonus": true,
+          "accumulations": 5
+        }
+      ]
+    }
+  ]
 }
