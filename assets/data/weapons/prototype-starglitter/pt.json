@@ -13,6 +13,30 @@
   },
   "description": "Um rancor descoberto na Forja do Penhasco Obscuro. Os vislumbres ao longo da borda afiada são como estrelas na noite.",
   "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Viciado em Magia",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano do Ataque Normal por acúmulo após usar a Habilidade Elemental",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true,
+          "accumulations": 2
+        },
+        {
+          "label": "Dano do Ataque Carregado por acúmulo após usar a Habilidade Elemental",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true,
+          "accumulations": 2
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 42.401,
