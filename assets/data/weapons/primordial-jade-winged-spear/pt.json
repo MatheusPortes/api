@@ -5,9 +5,33 @@
   "baseAttack": 48,
   "subStat": "Taxa Crítica",
   "passiveName": "Lança da Justiça da Águia",
-  "passiveDesc": "Ao acertar, aumenta o Dano em 3.2%/3.9%/4.6%/5.3%/6% por 6s. Pode acumular até 7 vezes. Pode ocorrer uma vez a cada 0.3s. O acúmulo máximo aumenta o Dano em 12%/15%/18%/21%/24%.",
+  "passiveDesc": "Ao acertar, aumenta o ATQ em 3.2%/3.9%/4.6%/5.3%/6% por 6s. Pode acumular até 7 vezes. Pode ocorrer uma vez a cada 0.3s. O acúmulo máximo aumenta o Dano em 12%/15%/18%/21%/24%.",
   "location": "Liyue",
-  "baseDamage": { "attack": 48, "subStat": 48 },
+  "baseDamage": {
+    "attack": 48,
+    "subStat": 48
+  },
   "description": "Uma lança pesada e afiada feita de jade. Usada para derrotar monstros marinhos poderosos e pré-históricos.",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Lança da Justiça da Águia",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATQ por acúmulo ao acertar por 6s",
+          "type": "atk_percent",
+          "values": [0.032, 0.039, 0.046, 0.053, 0.06],
+          "bonus": true,
+          "accumulations": 7
+        },
+        {
+          "label": "Bônus de Dano ao possuir sete acúmulos",
+          "type": "dmg_percent",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
