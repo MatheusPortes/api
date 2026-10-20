@@ -13,6 +13,34 @@
   },
   "description": "Um espadão antigo que brilha como a própria água. Nem mesmo os milhares de anos de erosão da areia conseguiram tirar o fio impecável de sua lâmina.",
   "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Pavilhão do Deserto",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATQ fixo do portador com base na Proficiência Elemental do portador",
+          "type": "flat_atk",
+          "values": [0.24, 0.3, 0.36, 0.42, 0.48],
+          "conditional": {
+            "origin": "character",
+            "attribute": "elemental_mastery"
+          },
+          "bonus": true
+        },
+        {
+          "label": "ATQ fixo dos demais membros próximos da equipe: parcela de 30% com base na Proficiência Elemental do portador",
+          "type": "flat_atk",
+          "values": [0.072, 0.09, 0.108, 0.126, 0.144],
+          "conditional": {
+            "origin": "character",
+            "attribute": "elemental_mastery"
+          },
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 42.401,
