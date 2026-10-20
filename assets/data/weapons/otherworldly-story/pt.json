@@ -13,6 +13,23 @@
   },
   "description": "Um romance de fantasia barato sem valor referencial. Os seus poderes, obviamente, também servem apenas na sua imaginação.",
   "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Imersão de Energia",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Cura baseada na Vida Máxima do portador ao coletar um Orbe ou Partícula Elemental",
+          "type": "healing",
+          "values": [0.01, 0.0125, 0.015, 0.0175, 0.02],
+          "conditional": {
+            "origin": "character",
+            "attribute": "hp"
+          }
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 38.7413,
