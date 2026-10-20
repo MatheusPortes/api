@@ -9,6 +9,21 @@
   "location": "Gacha",
   "ascensionMaterial": "pristine-sea",
   "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Sea Shanty: Roused",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Elemental Mastery per Stoic's Symbol consumed for 10s",
+          "type": "elemental_mastery",
+          "values": [40, 50, 60, 70, 80],
+          "bonus": true,
+          "accumulations": 3
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 41.0671,
