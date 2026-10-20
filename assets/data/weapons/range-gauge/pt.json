@@ -7,7 +7,81 @@
   "passiveName": "Canção do Pedreiro",
   "passiveDesc": "Quando é curado ou cura, concede o Sinal da União por 30s, é possível acumular 3 Sinais da União. Ao lançar uma Habilidade Elemental ou Supremo, consome todos os Sinais da União e gera por 10s o efeito \"Resistência\": para cada Sinal da União consumido, aumenta o ATQ em 3%/4%/5%/6%/7% e o Bônus de Dano Elemental em 7%/8.5%/10%/11.5%/13%. É possível desencadear o efeito \"Resistência\" uma vez a cada 15s. Também é possível obter o Sinal da União quando o personagem não está ativo no campo de batalha.",
   "location": "Oração de Evento de Arma",
-  "baseDamage": { "attack": 44, "subStat": 60 },
+  "baseDamage": {
+    "attack": 44,
+    "subStat": 60
+  },
   "description": "Um instrumento de medida que raramente é visto hoje em dia. É capaz de disparar flechas.",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Canção do Pedreiro: Resistência",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATQ por Sinal da União consumido",
+          "type": "atk_percent",
+          "values": [0.03, 0.04, 0.05, 0.06, 0.07],
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "Bônus de Dano Geo por Sinal da União consumido",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.07, 0.085, 0.1, 0.115, 0.13],
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "Bônus de Dano Anemo por Sinal da União consumido",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.07, 0.085, 0.1, 0.115, 0.13],
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "Bônus de Dano Cryo por Sinal da União consumido",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.07, 0.085, 0.1, 0.115, 0.13],
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "Bônus de Dano Dendro por Sinal da União consumido",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.07, 0.085, 0.1, 0.115, 0.13],
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "Bônus de Dano Electro por Sinal da União consumido",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.07, 0.085, 0.1, 0.115, 0.13],
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "Bônus de Dano Hydro por Sinal da União consumido",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.07, 0.085, 0.1, 0.115, 0.13],
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "Bônus de Dano Pyro por Sinal da União consumido",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.07, 0.085, 0.1, 0.115, 0.13],
+          "bonus": true,
+          "accumulations": 3
+        }
+      ]
+    }
+  ]
 }
