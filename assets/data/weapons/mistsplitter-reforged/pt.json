@@ -9,5 +9,227 @@
   "location": "Inazuma",
   "baseDamage": { "attack": 48, "subStat": 96 },
   "description": "Uma espada que emite uma luz violeta forte. O nome \"reforjada\" é devido a outrora ela estar quebrada.",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Bainha Quebra-nuvens: bônus base de todos os elementos",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano Geo base",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dano Anemo base",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dano Cryo base",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dano Dendro base",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dano Electro base",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dano Hydro base",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dano Pyro base",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "1 Selo: selecionar apenas este patamar e o elemento do portador",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "1 Selo, portador Geo: Dano Geo",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true
+        },
+        {
+          "label": "1 Selo, portador Anemo: Dano Anemo",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true
+        },
+        {
+          "label": "1 Selo, portador Cryo: Dano Cryo",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true
+        },
+        {
+          "label": "1 Selo, portador Dendro: Dano Dendro",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true
+        },
+        {
+          "label": "1 Selo, portador Electro: Dano Electro",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true
+        },
+        {
+          "label": "1 Selo, portador Hydro: Dano Hydro",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true
+        },
+        {
+          "label": "1 Selo, portador Pyro: Dano Pyro",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "2 Selos: selecionar apenas este patamar e o elemento do portador",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "2 Selos, portador Geo: Dano Geo",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "2 Selos, portador Anemo: Dano Anemo",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "2 Selos, portador Cryo: Dano Cryo",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "2 Selos, portador Dendro: Dano Dendro",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "2 Selos, portador Electro: Dano Electro",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "2 Selos, portador Hydro: Dano Hydro",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "2 Selos, portador Pyro: Dano Pyro",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "3 Selos: selecionar apenas este patamar e o elemento do portador",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "3 Selos, portador Geo: Dano Geo",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "bonus": true
+        },
+        {
+          "label": "3 Selos, portador Anemo: Dano Anemo",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "bonus": true
+        },
+        {
+          "label": "3 Selos, portador Cryo: Dano Cryo",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "bonus": true
+        },
+        {
+          "label": "3 Selos, portador Dendro: Dano Dendro",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "bonus": true
+        },
+        {
+          "label": "3 Selos, portador Electro: Dano Electro",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "bonus": true
+        },
+        {
+          "label": "3 Selos, portador Hydro: Dano Hydro",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "bonus": true
+        },
+        {
+          "label": "3 Selos, portador Pyro: Dano Pyro",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
