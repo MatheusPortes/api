@@ -9,6 +9,20 @@
   "location": "Gacha",
   "ascensionMaterial": "decarabian",
   "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Bane of Storm and Tide",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "DMG against opponents affected by Hydro or Electro (one nonstacking bonus)",
+          "type": "dmg_percent",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 37.6075,
