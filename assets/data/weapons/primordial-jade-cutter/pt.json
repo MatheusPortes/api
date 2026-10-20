@@ -7,7 +7,34 @@
   "passiveName": "Pureza do Protetor",
   "passiveDesc": "Aumenta a Vida em 20%/25%/30%/35%/40%. Além disso, o Personagem que equipar esta arma terá um Bônus de ATQ de 1.2%/1.5%/1.8%/2.1%/2.4% com base na Vida Máxima.",
   "location": "Liyue",
-  "baseDamage": { "attack": 44, "subStat": 96 },
+  "baseDamage": {
+    "attack": 44,
+    "subStat": 96
+  },
   "description": "Uma espada para cerimônias feita com essência de jade puro esculpido delicadamente. O ar que produz quando balança emite um som parecido a um suspiro.",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Pureza do Protetor",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Bônus de Vida Máxima",
+          "type": "hp_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "ATQ fixo baseado na Vida Máxima do portador",
+          "type": "flat_atk",
+          "values": [0.012, 0.015, 0.018, 0.021, 0.024],
+          "conditional": {
+            "origin": "character",
+            "attribute": "hp"
+          },
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
