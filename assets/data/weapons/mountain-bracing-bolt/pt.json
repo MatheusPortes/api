@@ -13,6 +13,28 @@
   },
   "description": "Esta arma de haste foi feita por artesãos nas minas como um sacrifício para os espíritos das montanhas.",
   "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Esperança Além dos Picos",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano base de Habilidade Elemental",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dano adicional de Habilidade Elemental por 8s após outro membro próximo da equipe usar Habilidade Elemental",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 43.7349,
