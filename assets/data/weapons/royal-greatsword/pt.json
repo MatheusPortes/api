@@ -13,6 +13,21 @@
   },
   "description": "Uma velha espada grande que pertencia aos antigos governantes de Mondstadt. É fabricado com materiais da melhor qualidade e resistiu a prova do tempo. Uma arma para ser usada apenas pela realeza.",
   "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Foco",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Taxa Crítica por acúmulo ativo de Foco; um Acerto Crítico remove todos os acúmulos",
+          "type": "crit_rate",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true,
+          "accumulations": 5
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 43.7349,
