@@ -9,5 +9,27 @@
   "location": "Event Wish Exclusive",
   "baseDamage": { "attack": 44, "subStat": 67 },
   "description": "This polearm was once jointly forged by the craftsmen in the mines as a sacrifice to the spirits of the mountains.",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Hope Beyond the Peaks",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Base Elemental Skill DMG",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Additional Elemental Skill DMG for 8s after another nearby party member uses an Elemental Skill",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
