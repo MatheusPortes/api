@@ -13,6 +13,23 @@
   },
   "description": "This jade vessel was created by a hero of yesteryear. Legend has it that it once shot the giant dragon that dwelt in the volcano down from the skies.",
   "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Jade-Forged Crown after using an Elemental Skill for 10s",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Normal Attack DMG Bonus from the wearer's Max HP",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.000006, 0.000007, 0.000008, 0.000009, 0.00001],
+          "conditional": { "origin": "character", "attribute": "hp" },
+          "maxValues": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 42.401,

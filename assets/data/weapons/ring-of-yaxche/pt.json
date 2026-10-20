@@ -13,6 +13,23 @@
   },
   "description": "Um artefato de jade dos gêmeos heróis de outrora. Dizem que derrotou o dragão do céu que controlava o vulcão.",
   "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Coroa Forjada em Jade após usar a Habilidade Elemental por 10s",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Bônus de Dano do Ataque Normal baseado na Vida Máxima do portador",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.000006, 0.000007, 0.000008, 0.000009, 0.00001],
+          "conditional": { "origin": "character", "attribute": "hp" },
+          "maxValues": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 42.401,
