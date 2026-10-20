@@ -9,6 +9,23 @@
   "location": "Gacha",
   "ascensionMaterial": "narukami",
   "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Watatsumi Wavewalker",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Elemental Burst DMG per point of combined party maximum Burst Energy Cost",
+          "type": "dmg_percent",
+          "target": "elemental_burst",
+          "values": [0.0012, 0.0015, 0.0018, 0.0021, 0.0024],
+          "maxValues": [0.4, 0.5, 0.6, 0.7, 0.8],
+          "conditional": { "origin": "time", "attribute": "energy_cost" },
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 43.7349,
