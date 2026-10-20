@@ -5,10 +5,25 @@
   "baseAttack": 44,
   "subStat": "ATK",
   "passiveName": "Focus",
-  "passiveDesc": "Upon damaging an enemy, increases CRIT Rate by 8%. Max 5 stacks. A CRIT hit removes all stacks.",
+  "passiveDesc": "Upon damaging an opponent, increases CRIT Rate by 8%/10%/12%/14%/16%. Max 5 stacks. A CRIT Hit removes all stacks.",
   "location": "Starglitter Exchange",
   "ascensionMaterial": "decarabian",
   "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Focus",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "CRIT Rate per active Focus stack; a CRIT Hit clears all stacks",
+          "type": "crit_rate",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true,
+          "accumulations": 5
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 43.7349,
