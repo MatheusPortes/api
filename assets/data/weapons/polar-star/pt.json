@@ -13,6 +13,76 @@
   },
   "description": "Um arco imaculado que é tão afiado quanto as geleiras do extremo norte.",
   "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Pressagiador do Dia",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Bônus de Dano da Habilidade Elemental",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano do Supremo",
+          "type": "dmg_percent",
+          "target": "elemental_burst",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "ATQ com exatamente 1 acúmulo de Estrela Polar da Noite Branca; nível exclusivo",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Bônus total de ATQ com 1 acúmulo; não somar níveis",
+          "type": "atk_percent",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "ATQ com exatamente 2 acúmulos de Estrela Polar da Noite Branca; nível exclusivo",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Bônus total de ATQ com 2 acúmulos; não somar níveis",
+          "type": "atk_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "ATQ com exatamente 3 acúmulos de Estrela Polar da Noite Branca; nível exclusivo",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Bônus total de ATQ com 3 acúmulos; não somar níveis",
+          "type": "atk_percent",
+          "values": [0.3, 0.375, 0.45, 0.525, 0.6],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "ATQ com 4 acúmulos de Estrela Polar da Noite Branca; nível exclusivo",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Bônus total de ATQ com 4 acúmulos; não somar níveis",
+          "type": "atk_percent",
+          "values": [0.48, 0.6, 0.72, 0.84, 0.96],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 45.9364,

@@ -9,6 +9,76 @@
   "location": "Gacha",
   "ascensionMaterial": "mask",
   "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Daylight's Augury",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Elemental Skill DMG Bonus",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Elemental Burst DMG Bonus",
+          "type": "dmg_percent",
+          "target": "elemental_burst",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "ATK with exactly 1 Ashen Nightstar stack; exclusive tier",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Total ATK bonus at 1 stack; do not sum tiers",
+          "type": "atk_percent",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "ATK with exactly 2 Ashen Nightstar stacks; exclusive tier",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Total ATK bonus at 2 stacks; do not sum tiers",
+          "type": "atk_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "ATK with exactly 3 Ashen Nightstar stacks; exclusive tier",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Total ATK bonus at 3 stacks; do not sum tiers",
+          "type": "atk_percent",
+          "values": [0.3, 0.375, 0.45, 0.525, 0.6],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "ATK with 4 Ashen Nightstar stacks; exclusive tier",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Total ATK bonus at 4 stacks; do not sum tiers",
+          "type": "atk_percent",
+          "values": [0.48, 0.6, 0.72, 0.84, 0.96],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 45.9364,
