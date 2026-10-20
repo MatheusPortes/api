@@ -9,6 +9,42 @@
   "location": "Given via the Mail on PS4/PS5 between Version 2.1–2.2, obtainable on PC/Mobile via cross save",
   "ascensionMaterial": "narukami",
   "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Strong Strike: PlayStation Network only",
+      "refinementLevels": [1],
+      "modifiers": [
+        {
+          "label": "Normal Attack DMG per stack after dealing Cryo DMG for 6s",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.1],
+          "bonus": true,
+          "accumulations": 2
+        },
+        {
+          "label": "Charged Attack DMG per stack after dealing Cryo DMG for 6s",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.1],
+          "bonus": true,
+          "accumulations": 2
+        }
+      ]
+    },
+    {
+      "label": "Strong Strike: Aloy only on PlayStation Network",
+      "refinementLevels": [1],
+      "modifiers": [
+        {
+          "label": "Flat ATK when Aloy equips Predator",
+          "type": "flat_atk",
+          "values": [66],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 42.401,
