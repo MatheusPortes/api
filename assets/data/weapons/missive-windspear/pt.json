@@ -13,6 +13,26 @@
   },
   "description": "Um estandarte que pode guiar os ventos. Os ventos que sopram por lugares idílicos nem sempre são suaves.",
   "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Vento Inalcançável",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATQ por 10s após desencadear uma Reação Elemental",
+          "type": "atk_percent",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Proficiência Elemental por 10s após desencadear uma Reação Elemental",
+          "type": "elemental_mastery",
+          "values": [48, 60, 72, 84, 96],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 42.401,
