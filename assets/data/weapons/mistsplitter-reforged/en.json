@@ -5,10 +5,232 @@
   "baseAttack": 48,
   "subStat": "CRIT DMG",
   "passiveName": "Mistsplitter's Edge",
-  "passiveDesc": "Gain a 12% Elemental DMG Bonus for every element and receive the might of Mistsplitter's Emblem. At stack levels 1/2/3, Mistsplitter's Emblem provides a 8/16/28% Elemental DMG Bonus for the character's Elemental Type. The character will obtain 1 stack of Mistsplitter's Emblem in each of the following scenarios: Normal Attack deals Elemental DMG (stack lasts 5s), casting Elemental Burst (stack lasts 10s); Energy is less than 100% (stack disappears when Energy is full). Each stack's duration is calculated independently.",
+  "passiveDesc": "Gain a 12%/15%/18%/21%/24% Elemental DMG Bonus for all elements and receive the might of the Mistsplitter's Emblem. At stack levels 1/2/3, the Mistsplitter's Emblem provides a 8/16/28% / 10/20/35% / 12/24/42% / 14/28/49% / 16/32/56% Elemental DMG Bonus for the character's Elemental Type. The character will obtain 1 stack of Mistsplitter's Emblem in each of the following scenarios: Normal Attack deals Elemental DMG (stack lasts 5s), casting Elemental Burst (stack lasts 10s); Energy is less than 100% (stack disappears when Energy is full). Each stack's duration is calculated independently.",
   "location": "Gacha",
   "ascensionMaterial": "distant-sea",
   "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Mistsplitter's Edge: base all-element bonus",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Base Geo DMG",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Base Anemo DMG",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Base Cryo DMG",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Base Dendro DMG",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Base Electro DMG",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Base Hydro DMG",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Base Pyro DMG",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "1 Emblem: select only this tier and the wearer's element",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "1 Emblem, Geo wearer: Geo DMG",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true
+        },
+        {
+          "label": "1 Emblem, Anemo wearer: Anemo DMG",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true
+        },
+        {
+          "label": "1 Emblem, Cryo wearer: Cryo DMG",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true
+        },
+        {
+          "label": "1 Emblem, Dendro wearer: Dendro DMG",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true
+        },
+        {
+          "label": "1 Emblem, Electro wearer: Electro DMG",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true
+        },
+        {
+          "label": "1 Emblem, Hydro wearer: Hydro DMG",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true
+        },
+        {
+          "label": "1 Emblem, Pyro wearer: Pyro DMG",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "2 Emblems: select only this tier and the wearer's element",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "2 Emblems, Geo wearer: Geo DMG",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "2 Emblems, Anemo wearer: Anemo DMG",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "2 Emblems, Cryo wearer: Cryo DMG",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "2 Emblems, Dendro wearer: Dendro DMG",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "2 Emblems, Electro wearer: Electro DMG",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "2 Emblems, Hydro wearer: Hydro DMG",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "2 Emblems, Pyro wearer: Pyro DMG",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "3 Emblems: select only this tier and the wearer's element",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "3 Emblems, Geo wearer: Geo DMG",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "bonus": true
+        },
+        {
+          "label": "3 Emblems, Anemo wearer: Anemo DMG",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "bonus": true
+        },
+        {
+          "label": "3 Emblems, Cryo wearer: Cryo DMG",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "bonus": true
+        },
+        {
+          "label": "3 Emblems, Dendro wearer: Dendro DMG",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "bonus": true
+        },
+        {
+          "label": "3 Emblems, Electro wearer: Electro DMG",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "bonus": true
+        },
+        {
+          "label": "3 Emblems, Hydro wearer: Hydro DMG",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "bonus": true
+        },
+        {
+          "label": "3 Emblems, Pyro wearer: Pyro DMG",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 47.537,
