@@ -5,10 +5,32 @@
   "baseAttack": 44,
   "subStat": "Physical DMG Bonus",
   "passiveName": "Smashed Stone",
-  "passiveDesc": "On hit, Normal or Charged Attacks increase Base ATK and DEF by 4/4.5/5/5.5/6% for 6s. Max 4 stacks. Can only occur once every 0.3s.",
+  "passiveDesc": "On hit, Normal or Charged Attacks increase ATK and DEF by 4%/5%/6%/7%/8% for 6s. Max 4 stacks. This effect can only occur once every 0.3s.",
   "location": "Crafting",
   "ascensionMaterial": "elixir",
   "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Smashed Stone",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATK per Normal or Charged Attack hit stack",
+          "type": "atk_percent",
+          "values": [0.04, 0.05, 0.06, 0.07, 0.08],
+          "bonus": true,
+          "accumulations": 4
+        },
+        {
+          "label": "DEF per Normal or Charged Attack hit stack",
+          "type": "def_percent",
+          "values": [0.04, 0.05, 0.06, 0.07, 0.08],
+          "bonus": true,
+          "accumulations": 4
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 43.7349,
