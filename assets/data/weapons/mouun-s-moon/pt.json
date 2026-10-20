@@ -9,5 +9,22 @@
   "location": "Inazuma",
   "baseDamage": { "attack": 44, "subStat": 60 },
   "description": "Um arco de guerra adorável feito de conchas e coral. Um brilho lúgubre flui ao longo de seus braços coloridos à luz da lua.",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Dominadora de Ondas Watatsumi",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano do Supremo por ponto da soma do Custo Máximo de Energia dos Supremos da equipe",
+          "type": "dmg_percent",
+          "target": "elemental_burst",
+          "values": [0.0012, 0.0015, 0.0018, 0.0021, 0.0024],
+          "maxValues": [0.4, 0.5, 0.6, 0.7, 0.8],
+          "conditional": { "origin": "time", "attribute": "energy_cost" },
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
