@@ -13,6 +13,23 @@
   },
   "description": "Um catalisador dourado, guardado secretamente na Forja do Penhasco Obscuro. Parece brilhar com a própria luz do céu.",
   "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Chapeamento de Ouro",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Cura da equipe por aplicação, baseada na Vida Máxima de cada destinatário",
+          "type": "healing",
+          "values": [0.04, 0.045, 0.05, 0.055, 0.06],
+          "conditional": {
+            "origin": "character",
+            "attribute": "hp"
+          }
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 42.401,

@@ -9,6 +9,23 @@
   "location": "Crafting",
   "ascensionMaterial": "elixir",
   "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Gilding",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Party healing per tick, based on each recipient's Max HP",
+          "type": "healing",
+          "values": [0.04, 0.045, 0.05, 0.055, 0.06],
+          "conditional": {
+            "origin": "character",
+            "attribute": "hp"
+          }
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 42.401,
