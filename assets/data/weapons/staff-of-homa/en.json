@@ -8,5 +8,39 @@
   "passiveDesc": "HP increased by 20/25/30/35/40%. Additionally, provides an ATK Bonus based on 0.8/1/1.2/1.4/1.6% of the wielder's Max HP. When the wielder's HP is less than 50%, this ATK Bonus is increased by an additional 1/1.2/1.4/1.6/1.8% of Max HP.",
   "location": "Gacha",
   "ascensionMaterial": "aerosiderite",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Reckless Cinnabar",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "HP",
+          "type": "hp_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "ATK based on wearer Max HP",
+          "type": "flat_atk",
+          "values": [0.008, 0.01, 0.012, 0.014, 0.016],
+          "conditional": {
+            "origin": "character",
+            "attribute": "hp"
+          },
+          "bonus": true
+        },
+        {
+          "label": "Additional ATK based on wearer Max HP while below 50% HP",
+          "type": "flat_atk",
+          "values": [0.01, 0.012, 0.014, 0.016, 0.018],
+          "conditional": {
+            "origin": "character",
+            "attribute": "hp"
+          },
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
