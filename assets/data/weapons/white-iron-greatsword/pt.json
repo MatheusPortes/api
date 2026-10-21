@@ -4,6 +4,8 @@
   "rarity": 3,
   "baseAttack": 39,
   "subStat": "Porcentagem de DEF",
+  "passiveName": "Colheita",
+  "passiveDesc": "Derrotar um oponente recupera 8%/10%/12%/14%/16% da Vida.",
   "location": "Mondstadt",
   "baseDamage": {
     "attack": 39,
@@ -11,6 +13,20 @@
   },
   "description": "Um espadão feito com ferro branco que aumenta o poder durante o corte. Adequado até mesmo para as pessoas com forças normais, mas seu poder pode aumentar exponencialmente com a força do seu manejador.",
   "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Colheita",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Recuperação de Vida Máxima do portador após derrotar um oponente",
+          "type": "healing",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "conditional": { "origin": "character", "attribute": "hp" }
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 38.7413,
