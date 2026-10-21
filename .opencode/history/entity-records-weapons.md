@@ -1,5 +1,11 @@
 # Weapon Entity Records
 
+## 2026-10-21 — white-tassel — complete (EN/PT passive)
+
+- Eighteenth ID after White Iron agent `5c6f21c9` / delivery `651a620e`. Released three-star Polearm. Root Normal-targeted dmg_percent [.24,.30,.36,.42,.48], bonus true, no conditional/stacks/proc; universal attack-bonus shape, no new schema. Restore missing PT passiveName Acume and rank-complete passiveDesc from Yatta PT. Preserve EN text/progression/other fields/locales.
+- References inspected 2026-10-21: https://library.keqingmains.com/equipment/weapons/polearms#white-tassel ; https://gi.yatta.moe/api/v2/en/weapon/13301 ; https://gi.yatta.moe/api/v2/pt/weapon/13301 (one provider); https://genshin-impact.fandom.com/api.php?action=parse&page=White_Tassel&prop=wikitext&format=json agree on identity/release/ranks/Normal scope. HoYoWiki exact search shell; Game8 index no exact discovery, not evidence. Bundle `/tmp/opencode/white-tassel-sources/`; no disagreement.
+- Exact ranks/target/no reference/localized labels/PT text, JSON/parity/preservation/format/diff/delivery parity checked before commits. Node20 build/lint `/tmp/opencode/white-tassel-{build,lint}.log` retain declaration/17 unrelated formatting failures. Agent then JSON-only delivery before Whiteblind; no push.
+
 ## 2026-10-21 — white-iron-greatsword — complete (EN/PT passive healing)
 
 - Seventeenth ID after Waveriding agent `3411a68b` / delivery `95e287da`. Released three-star Claymore. Root healing [.08,.10,.12,.14,.16], character.hp wearer Max HP, no bonus/target/stacks/hits/proc. Reuses attribute-referenced-healing and owner-directed unqualified-hp-reference-default: source says HP, Max HP denominator is owner default rather than independently explicit wording. Defeat/active-state usage consumer-only. Restore missing PT passiveName Colheita and rank-complete passiveDesc from Yatta PT; preserve EN text/progression/other fields/locales, no new schema.

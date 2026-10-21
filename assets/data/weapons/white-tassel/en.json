@@ -9,6 +9,21 @@
   "location": "Chest",
   "ascensionMaterial": "guyun",
   "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Sharp",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Normal Attack DMG",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.24, 0.3, 0.36, 0.42, 0.48],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 38.7413,
