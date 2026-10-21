@@ -7,7 +7,85 @@
   "passiveName": "Nuvens Vagantes",
   "passiveDesc": "Aumenta o Bônus do Dano Elemental em 12%/15%/18%/21%/24%. O Ataque normal possui 50% de chance de ganhar a graça das nuvens, que buscam ativamente por inimigos ao redor para atacar por 15s, causando 160%/200%/240%/280%/320% de Dano de ATQ. Este efeito pode ser ativado uma vez a cada 30s.",
   "location": "Mondstadt",
-  "baseDamage": { "attack": 48, "subStat": 72 },
+  "baseDamage": {
+    "attack": 48,
+    "subStat": 72
+  },
   "description": "Um atlas das nuvens que simboliza Dvalin e o Arconte Anemo, seu antigo mestre. Detalha os ventos e as nuvens das regiões do norte e contém o poder dos céus e dos ventos.",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Nuvens Vagantes",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Bônus de Dano Geo",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano Anemo",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano Cryo",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano Dendro",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano Electro",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano Hydro",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano Pyro",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "skills": [
+      {
+        "label": "Nuvens Vagantes — ataque da nuvem",
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [1.6, 2, 2.4, 2.8, 3.2],
+            "conditional": {
+              "origin": "character",
+              "attribute": "atk"
+            }
+          }
+        ]
+      }
+    ]
+  }
 }
