@@ -1,5 +1,11 @@
 # Weapon Entity Records
 
+## 2026-10-21 — waster-greatsword — reviewed-not-applicable (no passive)
+
+- Fourteenth ID after Wandering agent `73b601b5` / delivery `7076408b`. KQM/Yatta/Fandom agree on released one-star Claymore without passive; no modifier/proc to map. EN/PT, progression and all locales remain byte-identical; no invented empty effects or display cleanup. History-only agent commit; no publishable delta and therefore no delivery commit.
+- References inspected 2026-10-21: https://library.keqingmains.com/equipment/weapons/claymores#waster-greatsword ; https://gi.yatta.moe/api/v2/en/weapon/12101 ; https://gi.yatta.moe/api/v2/pt/weapon/12101 (one provider); https://genshin-impact.fandom.com/api.php?action=parse&page=Waster_Greatsword&prop=wikitext&format=json validate identity/release/absent passive. HoYoWiki exact search app shell; Game8 index discovery no exact link, not evidence. Bundle `/tmp/opencode/waster-greatsword-sources/`; no conflict.
+- JSON/parity/preservation/focused history formatting/diff checked. Node20 build/lint `/tmp/opencode/waster-greatsword-{build,lint}.log` retain existing declaration/17 unrelated formatting failures. Advance to Wavebreaker's Fin after history commit; no push.
+
 ## 2026-10-21 — wandering-evenstar — complete (EN/PT passive)
 
 - Thirteenth ID of the authorized Thundering–Windblume round, after Vortex agent `45e19a10` / delivery `52e32472`. Released four-star Catalyst. Separate wearer flat_atk [.24,.30,.36,.42,.48] and other-nearby-member share [.072,.09,.108,.126,.144] = base×.30, both bonus true with character.elemental_mastery referring to wearer EM. Reuses universal attribute-result and fixed-source-bonus-increase contracts, same semantics as read-only live Makhaira EN/PT; no recipient schema, stacks, targets or proc. Consumer routes recipients and handles 10s/12s/off-field/multiple copies. Expand EN R1-only text to validated ranks; preserve progression, other fields/locales.
