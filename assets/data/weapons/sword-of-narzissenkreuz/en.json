@@ -4,12 +4,25 @@
   "rarity": 4,
   "baseAttack": 42,
   "subStat": "ATK",
-  "passiveName": "Holy Sword",
-  "passiveDesc": "In countless stories, the weapon that befits the legendary hero is also the key to opening all gates, required to surpass the climax and reach destiny's denouement.",
+  "passiveName": "Hero's Blade",
+  "passiveDesc": "When the equipping character does not have an Arkhe: When Normal Attacks, Charged Attacks, or Plunging Attacks strike, a Pneuma or Ousia energy blast will be unleashed, dealing 160/200/240/280/320% of ATK as DMG. This effect can be triggered once every 12s. The energy blast type is determined by the current type of the Sword of Narzissenkreuz.",
   "location": "Quest: Waking from the Great Dream",
   "ascensionMaterial": "Fragment of an Ancient Chord",
   "weapon_type": "SWORD",
   "calculation": {
+    "skills": [
+      {
+        "label": "Hero's Blade — Pneuma or Ousia blast, wearer without Arkhe",
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [1.6, 2, 2.4, 2.8, 3.2],
+            "conditional": { "origin": "character", "attribute": "atk" }
+          }
+        ]
+      }
+    ],
     "initialStats": {
       "baseAttack": 42.401,
       "attackPercent": 0.09

@@ -14,6 +14,19 @@
   "description": "Uma espada cujo poder desapareceu quando a história chegou ao fim. Agora, ela partirá em uma nova jornada com o poder que permanece dentro dela, o qual comemora um certo grande sonho.",
   "weapon_type": "SWORD",
   "calculation": {
+    "skills": [
+      {
+        "label": "Espada do Herói — explosão Pneuma ou Ousia, portador sem Arkhe",
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [1.6, 2, 2.4, 2.8, 3.2],
+            "conditional": { "origin": "character", "attribute": "atk" }
+          }
+        ]
+      }
+    ],
     "initialStats": {
       "baseAttack": 42.401,
       "attackPercent": 0.09
