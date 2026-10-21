@@ -7,7 +7,43 @@
   "passiveName": "Dryas's Nocturne",
   "passiveDesc": "The equipping character can gain the Remedy effect. When they possess 1/2/3 Remedy stacks, Max HP will increase by 12%/24%/40% | 15%/30%/50% | 18%/36%/60% | 21%/42%/70% | 24%/48%/80%. 1 stack may be gained when the following conditions are met: 1 stack for 25s when using an Elemental Skill; 1 stack for 25s when the value of a Bond of Life value increases; 1 stack for 20s for performing healing. Stacks can still be triggered when the equipping character is not on the field. Each stack's duration is counted independently. In addition, when 3 stacks are active, Elemental Burst CRIT Rate will be increased by 28%/35%/42%/49%/56%. This effect will be canceled 4s after falling under 3 stacks.",
   "location": "Event Wish Exclusive",
-  "baseDamage": { "attack": 44, "subStat": 144 },
+  "baseDamage": {
+    "attack": 44,
+    "subStat": 144
+  },
   "description": "Legendary bow of the fairies. Whether on the stage or the battlefield, it can easily touch the hearts of the listener.",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Dryas's Nocturne",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Max HP with 1 Remedy stack (exclusive tier)",
+          "type": "hp_percent",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Max HP with 2 Remedy stacks (exclusive tier)",
+          "type": "hp_percent",
+          "values": [0.24, 0.3, 0.36, 0.42, 0.48],
+          "bonus": true
+        },
+        {
+          "label": "Max HP with 3 Remedy stacks (exclusive tier)",
+          "type": "hp_percent",
+          "values": [0.4, 0.5, 0.6, 0.7, 0.8],
+          "bonus": true
+        },
+        {
+          "label": "Elemental Burst CRIT Rate with 3 Remedy stacks; persists for 4s after dropping below 3",
+          "type": "crit_rate",
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "target": "elemental_burst",
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
