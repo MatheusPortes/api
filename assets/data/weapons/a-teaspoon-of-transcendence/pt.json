@@ -1,0 +1,48 @@
+{
+  "name": "Chave da Transcendência",
+  "type": "Espadão",
+  "rarity": 5,
+  "baseAttack": 48,
+  "subStat": "Dano Crítico",
+  "passiveName": "Coroação da Fada Branca",
+  "passiveDesc": "Aumenta o ATQ em 28%/35%/42%/49%/56%. Além disso, toda vez que o Ataque Carregado do portador atingir o inimigo, alcançará temporariamente Transcendência: aumenta o Dano de Supercondutor Estelar e Redemoinho Estelar causado pelo portador em 16%/20%/24%/28%/32% por 5s. Esse efeito pode ser acumulado até 3 vezes, e pode ser acumulado uma vez a cada 0.2s.",
+  "location": "Oração de Evento de Arma",
+  "baseDamage": { "attack": 48, "subStat": 96 },
+  "description": "Um objeto fantástico de incontáveis definições em um mar infinito de histórias. Seja na escala do universo ou dos sonhos, a espada sagrada do herói e a xícara de chá da princesa, a máquina gelada e a chave para abrir a porta da transcendência, no fundo, nada disso possui diferença.",
+  "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Coroação da Fada Branca",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATQ",
+          "type": "atk_percent",
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "bonus": true
+        },
+        {
+          "label": "Dano de Supercondutor Estelar e Redemoinho Estelar por acúmulo de Transcendência após acertos Carregados",
+          "type": "dmg_percent",
+          "reaction": ["STELLAR_CONDUCT", "STELLAR_SWIRL"],
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true,
+          "accumulations": 3
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 47.537, "critDamage": 0.096 },
+    "growthCurves": { "baseAttack": "ATK 3.2", "critDamage": "C3" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 31.1 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 62.2 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 93.4 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 124.5 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 155.6 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 186.7 } }
+    ]
+  }
+}
