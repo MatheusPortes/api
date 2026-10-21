@@ -14,6 +14,21 @@
   "ascensionMaterial": "pure-sacred-dewdrop",
   "description": "A convenient cutting tool that you can rarely find nowadays. You can replace the blades as they are dulled by usage.",
   "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Sea Shanty",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Roused — Elemental Mastery per Stoic's Symbol consumed",
+          "type": "elemental_mastery",
+          "values": [40, 50, 60, 70, 80],
+          "bonus": true,
+          "accumulations": 3
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 42.401,
