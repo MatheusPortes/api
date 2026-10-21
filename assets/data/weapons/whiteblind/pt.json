@@ -5,7 +5,7 @@
   "baseAttack": 42,
   "subStat": "Porcentagem de DEF",
   "passiveName": "Ponta Energética",
-  "passiveDesc": "Após acertar um Ataque Normal e um Ataque Carregado, o ATQ e a DEF aumentam 6%/7.5%/9%/10.5%/12% por 6s, podendo ser acumulado até 4 vezes. Este efeito pode ser ativado uma vez a cada 0.5s.",
+  "passiveDesc": "Após acertar um Ataque Normal ou um Ataque Carregado, o ATQ e a DEF aumentam 6%/7.5%/9%/10.5%/12% por 6s, podendo ser acumulado até 4 vezes. Este efeito pode ser ativado uma vez a cada 0.5s.",
   "location": "Liyue",
   "baseDamage": {
     "attack": 42,
@@ -13,6 +13,28 @@
   },
   "description": "Uma espada exótica com uma lâmina que ficou sem corte. Chegou a Liyue pelas mãos de comerciantes estrangeiros. Incrivelmente poderosa nas mãos de alguém que sabe usá-la.",
   "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Ponta Energética",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATQ por acúmulo após acerto Normal ou Carregado",
+          "type": "atk_percent",
+          "values": [0.06, 0.075, 0.09, 0.105, 0.12],
+          "bonus": true,
+          "accumulations": 4
+        },
+        {
+          "label": "DEF por mesmo acúmulo após acerto Normal ou Carregado",
+          "type": "def_percent",
+          "values": [0.06, 0.075, 0.09, 0.105, 0.12],
+          "bonus": true,
+          "accumulations": 4
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 42.401,

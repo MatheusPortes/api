@@ -1,5 +1,11 @@
 # Weapon Entity Records
 
+## 2026-10-21 — whiteblind — complete (EN/PT passive)
+
+- Nineteenth ID after White Tassel agent `3ece2403` / delivery `69816adb`. Released four-star Claymore. Separate atk_percent and def_percent [.06,.075,.09,.105,.12], bonus true, accumulations4 using same active count. Normal/Charged are alternative hit triggers, not benefiting-stat targets. Reuse stackable-bonus-cap/universal stat rules; 6s/.5s consumer-only. Correct stale EN Base ATK→ATK (ordinary stat bonus, not base_atk), PT trigger e→ou. Preserve progression/other fields/locales; no schema change.
+- References inspected 2026-10-21: https://library.keqingmains.com/equipment/weapons/claymores#whiteblind ; https://gi.yatta.moe/api/v2/en/weapon/12407 ; https://gi.yatta.moe/api/v2/pt/weapon/12407 (one provider); https://genshin-impact.fandom.com/api.php?action=parse&page=Whiteblind&prop=wikitext&format=json agree on release/identity/ranks/ordinary ATK/DEF/cap. Isolated Yatta PT says Normal AND Charged, while KQM/Yatta EN/Fandom say OR; select corroborated OR under owner-authorized consensus, not official correction. HoYoWiki exact search shell; Game8 index no exact discovery, not evidence. Bundle `/tmp/opencode/whiteblind-sources/`.
+- Exact ranks/distinct stats/cap4/no targets/text correction, JSON/parity/preservation/format/diff/delivery parity checked before commits. Node20 build/lint `/tmp/opencode/whiteblind-{build,lint}.log` retain declaration/17 unrelated formatting failures. Agent then JSON-only delivery before final Windblume; no push.
+
 ## 2026-10-21 — white-tassel — complete (EN/PT passive)
 
 - Eighteenth ID after White Iron agent `5c6f21c9` / delivery `651a620e`. Released three-star Polearm. Root Normal-targeted dmg_percent [.24,.30,.36,.42,.48], bonus true, no conditional/stacks/proc; universal attack-bonus shape, no new schema. Restore missing PT passiveName Acume and rank-complete passiveDesc from Yatta PT. Preserve EN text/progression/other fields/locales.
