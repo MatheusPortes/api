@@ -7,7 +7,30 @@
   "passiveName": "Luz de Corrida do Curioso",
   "passiveDesc": "Aumenta o ATQ e a Veloc. Mov. em 20%/25%/30%/35%/40% e 10%, respectivamente, por 10s ao usar uma Habilidade Elemental.",
   "location": "Evento da Versão 5.4 - Contos Encantados do Festival Mikawa",
-  "baseDamage": { "attack": 44, "subStat": 67 },
+  "baseDamage": {
+    "attack": 44,
+    "subStat": 67
+  },
   "description": "No passado, existiu um Youkai que percorria Inazuma em forma de uma lanterna de fogos de artifício. Esta deve ter sido uma das lanternas em que ele habitou.",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Luz de Corrida do Curioso",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATQ após usar Habilidade Elemental",
+          "type": "atk_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "Veloc. Mov. após usar Habilidade Elemental",
+          "type": "movement_speed_percent",
+          "values": [0.1, 0.1, 0.1, 0.1, 0.1],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
