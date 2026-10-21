@@ -5,9 +5,41 @@
   "baseAttack": 42,
   "subStat": "Taxa Crítica",
   "passiveName": "Brilho Celestial",
-  "passiveDesc": "Dentro de 6s após acertar um Ataque Normal, o Dano da Habilidade Elemental e do Supremo aumentam em 20%/25%/30%/35%/40%. Dentro de 6s após acertar uma Habilidade Elemental e o Supremo, o Dano do Ataque Normal aumenta 20%/25%/30%/35%/40%.",
+  "passiveDesc": "Dentro de 6s após acertar um Ataque Normal, o Dano da Habilidade Elemental e do Supremo aumentam em 20%/25%/30%/35%/40%. Dentro de 6s após acertar uma Habilidade Elemental ou o Supremo, o Dano do Ataque Normal aumenta 20%/25%/30%/35%/40%.",
   "location": "Liyue",
-  "baseDamage": { "attack": 42, "subStat": 60 },
+  "baseDamage": {
+    "attack": 42,
+    "subStat": 60
+  },
   "description": "Abriga a luz do sol e da lua, uma pérola feita de materiais desconhecidos pulsa com uma força calorosa.",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Brilho Celestial",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano da Habilidade Elemental após acertar Ataques Normais",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "Dano do Supremo após acertar Ataques Normais",
+          "type": "dmg_percent",
+          "target": "elemental_burst",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "Dano de Ataque Normal após acertar Habilidade Elemental ou Supremo",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
