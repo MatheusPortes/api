@@ -5,11 +5,38 @@
   "baseAttack": 39,
   "subStat": "ATK",
   "passiveName": "Descension",
-  "passiveDesc": "Hitting enemies with Normal or Charged Attacks grants a 50% chance to deal 200% ATK as DMG in a small AoE. This effect can only occur once every 10s. Additionally, if the Traveler equips the Sword of Descension, their ATK is increased by 66.",
+  "passiveDesc": "Effective only on the following platform: \"PlayStation™Network\". Hitting opponents with Normal or Charged Attacks grants a 50% chance to deal 200% ATK as DMG in a small AoE. This effect can only occur once every 10s. Additionally, if the Traveler equips the Sword of Descension, their ATK is increased by 66.",
   "location": "Given via the Mail on PS4/PS5, obtainable on PC/Mobile via cross save",
   "ascensionMaterial": "boreal",
   "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Descension — PlayStation Network only",
+      "refinementLevels": [1],
+      "modifiers": [
+        {
+          "label": "Traveler ATK — PlayStation Network only",
+          "type": "flat_atk",
+          "values": [66],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
+    "skills": [
+      {
+        "label": "Descension — small AoE attack, PlayStation Network only",
+        "refinementLevels": [1],
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [2],
+            "conditional": { "origin": "character", "attribute": "atk" }
+          }
+        ]
+      }
+    ],
     "initialStats": {
       "baseAttack": 38.7413,
       "attackPercent": 0.0766

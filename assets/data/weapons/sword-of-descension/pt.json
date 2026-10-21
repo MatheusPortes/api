@@ -13,7 +13,34 @@
   },
   "description": "Uma espada de artesanato único. Não parece pertencer a este mundo.",
   "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Descensão — apenas PlayStation Network",
+      "refinementLevels": [1],
+      "modifiers": [
+        {
+          "label": "ATQ do Viajante — apenas PlayStation Network",
+          "type": "flat_atk",
+          "values": [66],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
+    "skills": [
+      {
+        "label": "Descensão — pequeno ataque AdE, apenas PlayStation Network",
+        "refinementLevels": [1],
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [2],
+            "conditional": { "origin": "character", "attribute": "atk" }
+          }
+        ]
+      }
+    ],
     "initialStats": {
       "baseAttack": 38.7413,
       "attackPercent": 0.0766
