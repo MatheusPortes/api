@@ -9,6 +9,21 @@
   "location": "Stuck inside a stone in Guyun Stone Forest",
   "ascensionMaterial": "aerosiderite",
   "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Courage",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATK per stack after Normal or Charged Attack hits",
+          "type": "atk_percent",
+          "values": [0.06, 0.07, 0.08, 0.09, 0.1],
+          "bonus": true,
+          "accumulations": 4
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 38.7413,
