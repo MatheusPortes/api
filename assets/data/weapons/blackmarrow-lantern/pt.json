@@ -1,0 +1,55 @@
+{
+  "name": "Lanterna do Tutano Preto",
+  "type": "Catalisador",
+  "rarity": 4,
+  "baseAttack": 41,
+  "subStat": "Proficiência Elemental",
+  "passiveName": "Prova do Contrato",
+  "passiveDesc": "Dano de Florescimento é aumentado em 48%/60%/72%/84%/96%. Dano de Florescimento Lunar é aumentado em 12%/15%/18%/21%/24%. Presságio Lunar: Reluzir Cheio: aumenta o Dano de Florescimento Lunar em mais 12%/15%/18%/21%/24%.",
+  "location": "Forjamento",
+  "baseDamage": { "attack": 41, "subStat": 48 },
+  "description": "Uma lanterna que emite um brilho sutil fantasmagórico, contida por uma liga metálica que lembra ossos interligados. Dizem ter sido venerada como um tesouro precioso por uma certa organização secreta.",
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Prova do Contrato",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano de Florescimento",
+          "type": "dmg_percent",
+          "reaction": ["BLOOM"],
+          "values": [0.48, 0.6, 0.72, 0.84, 0.96],
+          "bonus": true
+        },
+        {
+          "label": "Dano de Florescimento Lunar",
+          "type": "dmg_percent",
+          "reaction": ["LUNAR_BLOOM"],
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dano adicional de Florescimento Lunar com Presságio Lunar: Reluzir Cheio",
+          "type": "dmg_percent",
+          "reaction": ["LUNAR_BLOOM"],
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 41.0671, "elementalMastery": 48 },
+    "growthCurves": { "baseAttack": "ATK 2.4", "elementalMastery": "C2" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 25.9 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 51.9 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 77.8 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 103.7 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 129.7 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 155.6 } }
+    ]
+  }
+}

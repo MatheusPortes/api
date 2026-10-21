@@ -1,0 +1,55 @@
+{
+  "name": "Blackmarrow Lantern",
+  "type": "Catalyst",
+  "rarity": 4,
+  "baseAttack": 41,
+  "subStat": "Elemental Mastery",
+  "passiveName": "Token of Covenant",
+  "passiveDesc": "Bloom DMG is increased by 48/60/72/84/96%, and Lunar-Bloom DMG is increased by 12/15/18/21/24%. Moonsign: Ascendant Gleam: Lunar-Bloom DMG is increased by an additional 12/15/18/21/24%.",
+  "location": "Crafting",
+  "baseDamage": { "attack": 41, "subStat": 48 },
+  "description": "A lantern that emits a faint, ghostly glow, contained by a midnight-black alloy that resembles interlocking bones. It is said to have once been revered as a precious treasure by a certain secret organization.",
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Token of Covenant",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Bloom DMG",
+          "type": "dmg_percent",
+          "reaction": ["BLOOM"],
+          "values": [0.48, 0.6, 0.72, 0.84, 0.96],
+          "bonus": true
+        },
+        {
+          "label": "Lunar-Bloom DMG",
+          "type": "dmg_percent",
+          "reaction": ["LUNAR_BLOOM"],
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Additional Lunar-Bloom DMG with Moonsign: Ascendant Gleam",
+          "type": "dmg_percent",
+          "reaction": ["LUNAR_BLOOM"],
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 41.0671, "elementalMastery": 48 },
+    "growthCurves": { "baseAttack": "ATK 2.4", "elementalMastery": "C2" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 25.9 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 51.9 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 77.8 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 103.7 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 129.7 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 155.6 } }
+    ]
+  }
+}
