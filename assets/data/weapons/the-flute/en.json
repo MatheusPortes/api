@@ -10,6 +10,19 @@
   "ascensionMaterial": "boreal",
   "weapon_type": "SWORD",
   "calculation": {
+    "skills": [
+      {
+        "label": "Chord — music burst after 5 Harmonics",
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [1, 1.25, 1.5, 1.75, 2],
+            "conditional": { "origin": "character", "attribute": "atk" }
+          }
+        ]
+      }
+    ],
     "initialStats": {
       "baseAttack": 42.401,
       "attackPercent": 0.09

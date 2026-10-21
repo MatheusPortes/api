@@ -14,6 +14,19 @@
   "description": "Abaixo da poeira, há uma lâmina fina e luxuosamente decorada. Seus movimentos são suaves como o vento.",
   "weapon_type": "SWORD",
   "calculation": {
+    "skills": [
+      {
+        "label": "Acorde — explosão musical após 5 Acordes",
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [1, 1.25, 1.5, 1.75, 2],
+            "conditional": { "origin": "character", "attribute": "atk" }
+          }
+        ]
+      }
+    ],
     "initialStats": {
       "baseAttack": 42.401,
       "attackPercent": 0.09
