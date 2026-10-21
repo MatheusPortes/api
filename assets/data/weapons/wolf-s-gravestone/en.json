@@ -5,8 +5,28 @@
   "baseAttack": 46,
   "subStat": "ATK",
   "passiveName": "Wolfish Tracker",
-  "passiveDesc": "Increases Base ATK by 20/25/30/35/40%. On hit, attacks against enemies with less than 30% HP increase all party members' Base ATK by 40/50/60/70/80% for 12s. Can only occur once every 30s.",
+  "passiveDesc": "Increases ATK by 20/25/30/35/40%. On hit, attacks against opponents with less than 30% HP increase all party members' ATK by 40/50/60/70/80% for 12s. Can only occur once every 30s.",
   "location": "Gacha",
   "ascensionMaterial": "dandelion",
-  "weapon_type": "CLAYMORE"
+  "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Wolfish Tracker",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Wearer ATK",
+          "type": "atk_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "All party members' ATK after hitting an opponent below 30% HP, including wearer",
+          "type": "atk_percent",
+          "values": [0.4, 0.5, 0.6, 0.7, 0.8],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
