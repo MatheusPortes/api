@@ -1,0 +1,47 @@
+{
+  "name": "Borboleta Transformadora",
+  "type": "Espada",
+  "rarity": 5,
+  "baseAttack": 48,
+  "subStat": "Dano Crítico",
+  "passiveName": "Dança Livre do Casulo",
+  "passiveDesc": "Cada vez que o portador lançar sua Habilidade Elemental ou o Supremo, obtém um desses efeitos na seguinte ordem: Lealdade do Vento: aumenta o Dano CRIT do portador em 56%/72%/88%/104%/120% por 10s. Traição do Vento: aumenta o Dano de Redemoinho Estelar do portador em 36%/45%/54%/63%/72% por 10s. Riqueza do Vento: regenera 5/5.5/6/6.5/7 de Energia Elemental para o portador. É possível regenerar até 5/5.5/6/6.5/7 de Energia Elemental a cada 4s dessa forma. Esse efeito será removido e sua ordem será redefinida quando o portador sair de campo.",
+  "location": "Oração de Evento de Arma",
+  "baseDamage": { "attack": 48, "subStat": 96 },
+  "description": "Uma espada longa repleta de luz e cor, e tão leve quanto uma borboleta ao ser empunhada. Foi usada um dia por alguém para romper laços.",
+  "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Dança Livre do Casulo",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Lealdade do Vento — Dano CRIT enquanto o primeiro bônus da sequência estiver ativo",
+          "type": "crit_dmg",
+          "values": [0.56, 0.72, 0.88, 1.04, 1.2],
+          "bonus": true
+        },
+        {
+          "label": "Traição do Vento — Dano de Redemoinho Estelar enquanto o segundo bônus da sequência estiver ativo",
+          "type": "dmg_percent",
+          "reaction": ["STELLAR_SWIRL"],
+          "values": [0.36, 0.45, 0.54, 0.63, 0.72],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 47.537, "critDamage": 0.096 },
+    "growthCurves": { "baseAttack": "ATK 3.2", "critDamage": "C3" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 31.1 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 62.2 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 93.4 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 124.5 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 155.6 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 186.7 } }
+    ]
+  }
+}
