@@ -8,5 +8,20 @@
   "passiveDesc": "On hit, Normal or Charged Attacks increase ATK by 6/7/8/9/10% for 6s. Max 4 stacks. Can only occur once every 0.5s.",
   "location": "Stuck inside a stone in Guyun Stone Forest",
   "ascensionMaterial": "aerosiderite",
-  "weapon_type": "CLAYMORE"
+  "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Courage",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATK per stack after Normal or Charged Attack hits",
+          "type": "atk_percent",
+          "values": [0.06, 0.07, 0.08, 0.09, 0.1],
+          "bonus": true,
+          "accumulations": 4
+        }
+      ]
+    }
+  ]
 }
