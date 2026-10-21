@@ -5,10 +5,40 @@
   "baseAttack": 48,
   "subStat": "CRIT DMG",
   "passiveName": "Bygone Azure Teardrop",
-  "passiveDesc": "Normal Attack SPD is increased by 10%. After the wielder unleashes an Elemental Skill, Normal Attack DMG will increase by 4.8% every second for 14s. After this character hits an opponent with a Normal Attack during this duration, Normal Attack DMG will be increased by 9.6%. This increase can be triggered once every 0.3s.",
+  "passiveDesc": "Normal Attack SPD is increased by 10/12.5/15/17.5/20%. After the wielder unleashes an Elemental Skill, Normal Attack DMG will increase by 4.8/6/7.2/8.4/9.6% every second for 14s. After hitting an opponent with a Normal Attack during this duration, Normal Attack DMG will be increased by 9.6/12/14.4/16.8/19.2%. This increase can be triggered once every 0.3s. The maximum Normal Attack DMG increase per single duration of the overall effect is 48/60/72/84/96%. The effect will be removed when the wielder leaves the field, and using the Elemental Skill again will reset all DMG buffs.",
   "location": "Gacha",
   "ascensionMaterial": "scorching",
   "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Bygone Azure Teardrop",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Normal Attack SPD",
+          "type": "atk_speed_percent",
+          "target": "normal_attack",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true
+        },
+        {
+          "label": "Normal Attack DMG per elapsed second after Skill; subject to shared cap in passive description",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.048, 0.06, 0.072, 0.084, 0.096],
+          "bonus": true,
+          "accumulations": 10
+        },
+        {
+          "label": "Normal Attack DMG per qualifying hit after Skill; subject to shared cap in passive description",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.096, 0.12, 0.144, 0.168, 0.192],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 47.537,

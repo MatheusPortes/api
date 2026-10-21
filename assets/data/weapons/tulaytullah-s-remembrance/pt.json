@@ -13,6 +13,36 @@
   },
   "description": "Um sino feito de safira e prata pura. Seus ecos são claros, mas distantes.",
   "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Lágrimas de Safira Enterradas",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Velocidade de Ataque Normal",
+          "type": "atk_speed_percent",
+          "target": "normal_attack",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "bonus": true
+        },
+        {
+          "label": "Dano de Ataque Normal por segundo decorrido após Habilidade; sujeito ao teto compartilhado na descrição da passiva",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.048, 0.06, 0.072, 0.084, 0.096],
+          "bonus": true,
+          "accumulations": 10
+        },
+        {
+          "label": "Dano de Ataque Normal por acerto válido após Habilidade; sujeito ao teto compartilhado na descrição da passiva",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.096, 0.12, 0.144, 0.168, 0.192],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 47.537,
