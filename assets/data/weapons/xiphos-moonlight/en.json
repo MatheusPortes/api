@@ -5,8 +5,36 @@
   "baseAttack": 42,
   "subStat": "Elemental Mastery",
   "passiveName": "Jinni's Whisper",
-  "passiveDesc": "The following effect will trigger every 10s: The equipping character will gain 0.036% Energy Recharge for each point of Elemental Mastery they possess for 12s, with nearby party members gaining 30% of this buff for the same duration. Multiple instances of this weapon can allow this buff to stack. This effect will still trigger even if the character is not on the field.",
+  "passiveDesc": "The following effect will trigger every 10s: The equipping character will gain 0.036/0.045/0.054/0.063/0.072% Energy Recharge for each point of Elemental Mastery they possess for 12s, with nearby party members gaining 30% of this buff for the same duration. Multiple instances of this weapon can allow this buff to stack. This effect will still trigger even if the character is not on the field.",
   "location": "Gacha",
   "ascensionMaterial": "talisman",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Jinni's Whisper",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Wearer Energy Recharge per point of wearer's Elemental Mastery",
+          "type": "energy_recharge",
+          "values": [0.00036, 0.00045, 0.00054, 0.00063, 0.00072],
+          "conditional": {
+            "origin": "character",
+            "attribute": "elemental_mastery"
+          },
+          "bonus": true
+        },
+        {
+          "label": "Other nearby party members' Energy Recharge: 30% share from wearer's Elemental Mastery",
+          "type": "energy_recharge",
+          "values": [0.000108, 0.000135, 0.000162, 0.000189, 0.000216],
+          "conditional": {
+            "origin": "character",
+            "attribute": "elemental_mastery"
+          },
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }

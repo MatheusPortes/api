@@ -6,7 +6,38 @@
   "subStat": "Proficiência Elemental",
   "passiveName": "Sussurros do Jinni",
   "passiveDesc": "Os seguintes efeitos serão desencadeados a cada 10s: o personagem com esta arma equipada terá sua Recarga de Energia aumentada em 0.036%/0.045%/0.054%/0.063%/0.072% para cada ponto de Proficiência Elemental que ele possuir, com os membros da equipe próximos ganhando 30% desse bônus, esses efeitos duram 12s. É possível acumular esse efeito ao equipar vários exemplares desta arma. Esse efeito será desencadeado mesmo que o personagem não esteja ativo no campo de batalha.",
-  "baseDamage": { "attack": 42, "subStat": 36 },
+  "baseDamage": {
+    "attack": 42,
+    "subStat": 36
+  },
   "description": "Uma espada de dois gumes que emite um brilho semelhante ao da lua. Segundo as lendas, nela reside um Jinni que aguarda em silêncio.",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Sussurros do Jinni",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Recarga de Energia do portador por ponto de Proficiência Elemental do portador",
+          "type": "energy_recharge",
+          "values": [0.00036, 0.00045, 0.00054, 0.00063, 0.00072],
+          "conditional": {
+            "origin": "character",
+            "attribute": "elemental_mastery"
+          },
+          "bonus": true
+        },
+        {
+          "label": "Recarga de Energia dos demais membros próximos: parcela de 30% baseada na Proficiência Elemental do portador",
+          "type": "energy_recharge",
+          "values": [0.000108, 0.000135, 0.000162, 0.000189, 0.000216],
+          "conditional": {
+            "origin": "character",
+            "attribute": "elemental_mastery"
+          },
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
