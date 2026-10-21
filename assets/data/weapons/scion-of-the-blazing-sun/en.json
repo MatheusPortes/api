@@ -5,8 +5,41 @@
   "baseAttack": 44,
   "subStat": "CRIT Rate",
   "passiveName": "The Way of Sunfire",
-  "passiveDesc": "After a Charged Attack hits an opponent, a Sunfire Arrow will descend upon the opponent hit, dealing 60% ATK as DMG, and applying the Heartsearer effect to the opponent damaged by said Arrow for 10s. Opponents affected by Heartsearer take 28% more Charged Attack DMG from the wielder. A Sunfire Arrow can be triggered once every 10s.",
+  "passiveDesc": "After a Charged Attack hits an opponent, a Sunfire Arrow will descend upon the opponent hit, dealing 60%/75%/90%/105%/120% ATK as DMG, and applying the Heartsearer effect to the opponent damaged by said Arrow for 10s. Opponents affected by Heartsearer take 28%/35%/42%/49%/56% more Charged Attack DMG from the wielder. A Sunfire Arrow can be triggered once every 10s.",
   "location": "BP Bounty",
   "ascensionMaterial": "scorching",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Heartsearer",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Wearer's Charged Attack DMG Bonus against opponents affected by Heartsearer",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "skills": [
+      {
+        "label": "Sunfire Arrow",
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [0.6, 0.75, 0.9, 1.05, 1.2],
+            "conditional": {
+              "origin": "character",
+              "attribute": "atk"
+            }
+          }
+        ]
+      }
+    ]
+  }
 }
