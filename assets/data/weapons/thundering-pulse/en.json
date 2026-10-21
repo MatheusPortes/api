@@ -5,8 +5,43 @@
   "baseAttack": 46,
   "subStat": "CRIT DMG",
   "passiveName": "Rule By Thunder",
-  "passiveDesc": "Increases ATK by 20% and grants the might of the Thunder Emblem. At stack levels 1/2/3, the Thunder Emblem increases Normal Attack DMG by 12/24/40%. The character will obtain 1 stack of Thunder Emblem in each of the following scenarios: Normal Attack deals DMG (stack lasts 5s), casting Elemental Skill (stack lasts 10s); Energy is less than 100% (stack disappears when Energy is full). Each stack's duration is calculated independently.",
+  "passiveDesc": "Increases ATK by 20/25/30/35/40% and grants the might of the Thunder Emblem. At stack levels 1/2/3, the Thunder Emblem increases Normal Attack DMG by 12/24/40% | 15/30/50% | 18/36/60% | 21/42/70% | 24/48/80%. The character will obtain 1 stack of Thunder Emblem in each of the following scenarios: Normal Attack deals DMG (stack lasts 5s), casting Elemental Skill (stack lasts 10s); Energy is less than 100% (stack disappears when Energy is full). Each stack's duration is calculated independently.",
   "location": "Gacha",
   "ascensionMaterial": "narukami",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Rule By Thunder",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATK",
+          "type": "atk_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "Normal Attack DMG at 1 Thunder Emblem stack (exclusive tier)",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Normal Attack DMG at 2 Thunder Emblem stacks (exclusive tier)",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.24, 0.3, 0.36, 0.42, 0.48],
+          "bonus": true
+        },
+        {
+          "label": "Normal Attack DMG at 3 Thunder Emblem stacks (exclusive tier)",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.4, 0.5, 0.6, 0.7, 0.8],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
