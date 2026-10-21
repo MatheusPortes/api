@@ -4,10 +4,35 @@
   "rarity": 4,
   "baseAttack": 42,
   "subStat": "Recarga de Energia",
-  "passiveName": "Materiais de Refinamento",
-  "passiveDesc": "Acará Raimei(3) Fugu(10) Fugu Amargo(10) Recipiente para Saquê de Ako(1)",
+  "passiveName": "Canção Navegante",
+  "passiveDesc": "Aumenta o Dano do Supremo em 16/20/24/28/32% e a Taxa CRIT do Supremo em 6/7.5/9/10.5/12%.",
   "location": "Inazuma",
-  "baseDamage": { "attack": 42, "subStat": 10 },
+  "baseDamage": {
+    "attack": 42,
+    "subStat": 10
+  },
   "description": "Num passado distante, esta era a amada lança de um famoso bandido de Inazuma.",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Canção Navegante",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano do Supremo",
+          "type": "dmg_percent",
+          "target": "elemental_burst",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "Taxa CRIT do Supremo",
+          "type": "crit_rate",
+          "target": "elemental_burst",
+          "values": [0.06, 0.075, 0.09, 0.105, 0.12],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
