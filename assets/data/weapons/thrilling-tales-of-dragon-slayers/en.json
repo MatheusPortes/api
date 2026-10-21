@@ -4,9 +4,23 @@
   "rarity": 3,
   "baseAttack": 39,
   "subStat": "HP",
-  "passiveName": "Legacy",
+  "passiveName": "Heritage",
   "passiveDesc": "When switching characters, the new character taking the field has their ATK increased by 24/30/36/42/48% for 10s. This effect can only occur once every 20s.",
   "location": "Gacha",
   "ascensionMaterial": "boreal",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Heritage",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATK for the new character taking the field after switching from the wearer",
+          "type": "atk_percent",
+          "values": [0.24, 0.3, 0.36, 0.42, 0.48],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
