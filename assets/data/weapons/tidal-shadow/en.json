@@ -5,10 +5,24 @@
   "baseAttack": 42,
   "subStat": "ATK",
   "passiveName": "White Cruising Wave",
-  "passiveDesc": "After the wielder is healed, ATK will be increased by 24% for 8s. This can be triggered even when the character is not on the field.",
+  "passiveDesc": "After the wielder is healed, ATK will be increased by 24/30/36/42/48% for 8s. This can be triggered even when the character is not on the field.",
   "location": "BP Bounty",
   "ascensionMaterial": "pristine-sea",
   "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "White Cruising Wave",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATK after the wielder is healed",
+          "type": "atk_percent",
+          "values": [0.24, 0.3, 0.36, 0.42, 0.48],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 42.401,

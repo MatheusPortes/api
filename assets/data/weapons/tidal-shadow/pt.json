@@ -13,6 +13,20 @@
   },
   "description": "Uma espada modelo padrão intrincada para os oficiais de alto-escalão e capitães da antiga marinha de Fontaine.",
   "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Onda Branca do Cruzamento",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATQ após o portador receber cura",
+          "type": "atk_percent",
+          "values": [0.24, 0.3, 0.36, 0.42, 0.48],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 42.401,
