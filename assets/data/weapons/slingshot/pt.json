@@ -13,6 +13,42 @@
   },
   "description": "Na verdade, é um arco. Depois de incontáveis experimentos e melhorias, o mestre criador de estilingues acabou criando um arco.",
   "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Estilingue",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano de Ataque Normal dentro de 0.3s (bônus exclusivo)",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.36, 0.42, 0.48, 0.54, 0.6],
+          "bonus": true
+        },
+        {
+          "label": "Dano de Ataque Carregado dentro de 0.3s (bônus exclusivo)",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.36, 0.42, 0.48, 0.54, 0.6],
+          "bonus": true
+        },
+        {
+          "label": "Dano de Ataque Normal quando a penalidade se aplica (penalidade exclusiva)",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [-0.1, -0.1, -0.1, -0.1, -0.1],
+          "bonus": true
+        },
+        {
+          "label": "Dano de Ataque Carregado quando a penalidade se aplica (penalidade exclusiva)",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [-0.1, -0.1, -0.1, -0.1, -0.1],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 37.6075,
