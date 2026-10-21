@@ -5,7 +5,7 @@
   "baseAttack": 42,
   "subStat": "Porcentagem de Vida",
   "passiveName": "Guarda da Rebelião",
-  "passiveDesc": "Ao receber dano, cria um escudo que absorve o equivalente a 20%/23%/26%/29%/32% da Vida Máxima por 10s ou até o escudo desparecer. Pode ser ativado uma vez a cada 45/45/45/45/45s. Quando o personagem estiver com o escudo, o Dano causado aumenta 12%/15%/18%/21%/24%.",
+  "passiveDesc": "Ao receber dano, cria um escudo que absorve o equivalente a 20%/23%/26%/29%/32% da Vida Máxima por 10s ou até o escudo desaparecer. Pode ser ativado uma vez a cada 45s. Enquanto protegido por qualquer escudo, o Dano causado pelo personagem aumenta 12%/15%/18%/21%/24%.",
   "location": "Mondstadt",
   "baseDamage": {
     "attack": 42,
@@ -13,6 +13,20 @@
   },
   "description": "Um espadão pesado com um relógio, mas seus mecanismos internos foram danificados.",
   "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Guarda da Rebelião",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano enquanto protegido por qualquer escudo",
+          "type": "dmg_percent",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 42.401,
