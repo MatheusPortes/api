@@ -5,8 +5,44 @@
   "baseAttack": 38,
   "subStat": "CRIT Rate",
   "passiveName": "Slingshot",
-  "passiveDesc": "If a Normal Attack or Aimed Shot hits a target within 0.3s of being fired, increases DMG by 36/42/48/54/60%; otherwise, it decreases DMG by 10%.",
+  "passiveDesc": "If a Normal or Charged Attack hits a target within 0.3s of being fired, increases DMG by 36/42/48/54/60%. Otherwise, decreases DMG by 10%.",
   "location": "Gacha",
   "ascensionMaterial": "guyun",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Slingshot",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Normal Attack DMG within 0.3s (exclusive bonus)",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.36, 0.42, 0.48, 0.54, 0.6],
+          "bonus": true
+        },
+        {
+          "label": "Charged Attack DMG within 0.3s (exclusive bonus)",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.36, 0.42, 0.48, 0.54, 0.6],
+          "bonus": true
+        },
+        {
+          "label": "Normal Attack DMG when penalty applies (exclusive penalty)",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [-0.1, -0.1, -0.1, -0.1, -0.1],
+          "bonus": true
+        },
+        {
+          "label": "Charged Attack DMG when penalty applies (exclusive penalty)",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [-0.1, -0.1, -0.1, -0.1, -0.1],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
