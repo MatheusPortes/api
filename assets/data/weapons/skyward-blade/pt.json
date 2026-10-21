@@ -5,7 +5,7 @@
   "baseAttack": 46,
   "subStat": "Recarga de Energia",
   "passiveName": "Dente Perfurador do Céu",
-  "passiveDesc": "A Taxa Crítica aumenta em 4%/5%/6%/7%/8%. Obtém a Perfuração Celestial ao usar o Supremo: Aumenta a Veloc. Mov. em 10%/10%/10%/10%/10%, aumenta a Velocidade de Ataque em 10%/10%/10%/10%/10%. Quando o Ataque Normal e o Ataque Carregado atingirem, causará um Dano Adicional de 20%/25%/30%/35%/40% por 12s.",
+  "passiveDesc": "A Taxa Crítica aumenta em 4%/5%/6%/7%/8%. Obtém a Perfuração Celestial ao usar o Supremo: Aumenta a Veloc. Mov. em 10%, aumenta a Velocidade de Ataque em 10%, e acertos de Ataques Normais e Carregados causam Dano Adicional equivalente a 20%/25%/30%/35%/40% do ATQ. A Perfuração Celestial dura 12s.",
   "location": "Mondstadt",
   "baseDamage": {
     "attack": 46,
@@ -13,7 +13,46 @@
   },
   "description": "A espada de um cavaleiro que simboliza a honra restaurada de Dvalin. As bênçãos do Arconte Anemo repousam sobre a lâmina mais cheia, imbuindo a espada com os poderes do céu e do vento.",
   "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Dente Perfurador do Céu",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Taxa CRIT",
+          "type": "crit_rate",
+          "values": [0.04, 0.05, 0.06, 0.07, 0.08],
+          "bonus": true
+        },
+        {
+          "label": "Veloc. Mov. durante a Perfuração Celestial",
+          "type": "movement_speed_percent",
+          "values": [0.1, 0.1, 0.1, 0.1, 0.1],
+          "bonus": true
+        },
+        {
+          "label": "Velocidade de Ataque durante a Perfuração Celestial",
+          "type": "atk_speed_percent",
+          "values": [0.1, 0.1, 0.1, 0.1, 0.1],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
+    "skills": [
+      {
+        "label": "Perfuração Celestial — acerto adicional após Ataques Normais ou Carregados",
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+            "conditional": { "origin": "character", "attribute": "atk" }
+          }
+        ]
+      }
+    ],
     "initialStats": {
       "baseAttack": 45.9364,
       "energyRecharge": 0.12

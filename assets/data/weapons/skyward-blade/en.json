@@ -2,14 +2,53 @@
   "name": "Skyward Blade",
   "type": "Sword",
   "rarity": 5,
-  "baseAttack": 44,
+  "baseAttack": 46,
   "subStat": "Energy Recharge",
   "passiveName": "Sky-Piercing Fang",
-  "passiveDesc": "CRIT Rate increased by 4%. Gains Skypiercing Might upon using an Elemental Burst:\nIncreases Movement SPD by 10%, increases ATK SPD by 10%, and increases the DMG of Normal and Charged Attack hits by 20% for 12s.",
+  "passiveDesc": "CRIT Rate increased by 4/5/6/7/8%. Gains Skypiercing Might upon using an Elemental Burst: Increases Movement SPD by 10%, increases ATK SPD by 10%, and Normal and Charged hits deal additional DMG equal to 20/25/30/35/40% of ATK. Skypiercing Might lasts for 12s.",
   "location": "Gacha",
   "ascensionMaterial": "boreal",
   "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Sky-Piercing Fang",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "CRIT Rate",
+          "type": "crit_rate",
+          "values": [0.04, 0.05, 0.06, 0.07, 0.08],
+          "bonus": true
+        },
+        {
+          "label": "Movement SPD during Skypiercing Might",
+          "type": "movement_speed_percent",
+          "values": [0.1, 0.1, 0.1, 0.1, 0.1],
+          "bonus": true
+        },
+        {
+          "label": "ATK SPD during Skypiercing Might",
+          "type": "atk_speed_percent",
+          "values": [0.1, 0.1, 0.1, 0.1, 0.1],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
+    "skills": [
+      {
+        "label": "Skypiercing Might — additional hit after Normal or Charged hits",
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+            "conditional": { "origin": "character", "attribute": "atk" }
+          }
+        ]
+      }
+    ],
     "initialStats": {
       "baseAttack": 45.9364,
       "energyRecharge": 0.12
