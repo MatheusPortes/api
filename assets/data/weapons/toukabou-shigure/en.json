@@ -8,5 +8,19 @@
   "passiveDesc": "After an attack hits opponents, it will inflict an instance of Cursed Parasol upon one of them for 10s. This effect can be triggered once every 15s. If this opponent is defeated during Cursed Parasol's duration, Cursed Parasol's CD will be refreshed immediately. The character wielding this weapon will deal 16/20/24/28/32% more DMG to the opponent affected by Cursed Parasol.",
   "location": "Akitsu Kimodameshi Event",
   "ascensionMaterial": "narukami",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Kaidan: Rainfall Earthbinder",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Wearer DMG to the opponent affected by Cursed Parasol",
+          "type": "dmg_percent",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
