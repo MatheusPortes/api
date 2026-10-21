@@ -7,7 +7,49 @@
   "passiveName": "Asas Negras",
   "passiveDesc": "A Taxa Crítica aumenta 8%/10%/12%/14%/16%, a VEL do Ataque Normal aumenta 12%/12%/12%/12%/12%. Além disso, o Ataque Normal e o Ataque Carregado ao atingir o inimigo possuem 50%/50%/50%/50%/50% de chance de criar uma Lâmina de Vácuo que causa 40%/55%/70%/85%/100% de Dano de ATQ adicional em uma área. Este efeito pode ser ativado uma vez a cada 2s.",
   "location": "Mondstadt",
-  "baseDamage": { "attack": 48, "subStat": 80 },
+  "baseDamage": {
+    "attack": 48,
+    "subStat": 80
+  },
   "description": "Lança que simboliza a determinação firme de Dvalin. O eixo vertical desta arma aponta para o céu, carregado a força do céu e do vento.",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Asas Negras",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Taxa CRIT",
+          "type": "crit_rate",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true
+        },
+        {
+          "label": "Velocidade de Ataque Normal",
+          "type": "atk_speed_percent",
+          "target": "normal_attack",
+          "values": [0.12, 0.12, 0.12, 0.12, 0.12],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "skills": [
+      {
+        "label": "Asas Negras — Lâmina de Vácuo",
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [0.4, 0.55, 0.7, 0.85, 1],
+            "conditional": {
+              "origin": "character",
+              "attribute": "atk"
+            }
+          }
+        ]
+      }
+    ]
+  }
 }
