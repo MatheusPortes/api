@@ -4,11 +4,31 @@
   "rarity": 3,
   "baseAttack": 40,
   "subStat": "CRIT Rate",
-  "passiveName": "Guerilla Tactic",
+  "passiveName": "Guerilla Tactics",
   "passiveDesc": "Defeating an enemy increases Movement SPD and ATK by 12/14/16/18/20% for 15s.",
   "location": "Chests",
   "ascensionMaterial": "elixir",
   "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Guerilla Tactics",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Movement SPD after defeating an opponent",
+          "type": "movement_speed_percent",
+          "values": [0.12, 0.14, 0.16, 0.18, 0.2],
+          "bonus": true
+        },
+        {
+          "label": "ATK after defeating an opponent",
+          "type": "atk_percent",
+          "values": [0.12, 0.14, 0.16, 0.18, 0.2],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 39.8751,
