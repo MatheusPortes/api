@@ -13,6 +13,34 @@
   },
   "description": "Esta lança afiada pode aparentemente perfurar qualquer coisa. Quando balançada, quase se pode ver a fenda que ela rasga no ar.",
   "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Majestade Dourada",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Força do Escudo",
+          "type": "shield_strength_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "ATQ por acúmulo de acerto",
+          "type": "atk_percent",
+          "values": [0.04, 0.05, 0.06, 0.07, 0.08],
+          "bonus": true,
+          "accumulations": 5
+        },
+        {
+          "label": "ATQ adicional por mesmo acúmulo de acerto enquanto protegido por escudo",
+          "type": "atk_percent",
+          "values": [0.04, 0.05, 0.06, 0.07, 0.08],
+          "bonus": true,
+          "accumulations": 5
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 45.9364,
