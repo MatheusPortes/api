@@ -5,10 +5,30 @@
   "baseAttack": 41,
   "subStat": "CRIT Rate",
   "passiveName": "Jade Circulation",
-  "passiveDesc": "When not on the field for more than 5s, Max HP will be increased by 32% and Elemental Mastery will be increased by 40. These effects will be canceled after the wielder has been on the field for 10s.",
+  "passiveDesc": "When not on the field for more than 5s, Max HP will be increased by 32%/40%/48%/56%/64% and Elemental Mastery will be increased by 40/50/60/70/80. These effects will be canceled after the wielder has been on the field for 10s.",
   "location": "BP Bounty",
   "ascensionMaterial": "guyun",
   "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Jade Circulation: after more than 5s off-field until 10s on-field",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Max HP bonus while Jade Circulation is active",
+          "type": "hp_percent",
+          "values": [0.32, 0.4, 0.48, 0.56, 0.64],
+          "bonus": true
+        },
+        {
+          "label": "Elemental Mastery while Jade Circulation is active",
+          "type": "elemental_mastery",
+          "values": [40, 50, 60, 70, 80],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 41.0671,
