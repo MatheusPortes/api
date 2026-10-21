@@ -5,7 +5,7 @@
   "baseAttack": 44,
   "subStat": "Taxa CRIT",
   "passiveName": "Caminho do Fogo Solar",
-  "passiveDesc": "Quando um Ataque Carregado atinge um inimigo, fará cair uma Flecha Solar no inimigo atingido, causando Dano equivalente a 60/75/90/105/120% do ATQ e aplicando o efeito \"Coração Flamejante\" no inimigo atingido pela Flecha Solar por 10s. Aumenta o Dano causado pelo personagem que está com essa arma equipada contra inimigos afetados por \"Coração Flamejante\" em 28/35/42/49/56%. A Flecha Solar pode ser desencadeada uma vez a cada 10s.",
+  "passiveDesc": "Quando um Ataque Carregado atinge um inimigo, fará cair uma Flecha Solar no inimigo atingido, causando Dano equivalente a 60/75/90/105/120% do ATQ e aplicando o efeito \"Coração Flamejante\" no inimigo atingido pela Flecha Solar por 10s. Aumenta o Dano dos Ataques Carregados causado pelo personagem que está com essa arma equipada contra inimigos afetados por \"Coração Flamejante\" em 28/35/42/49/56%. A Flecha Solar pode ser desencadeada uma vez a cada 10s.",
   "location": "Passe de Batalha do Gnóstico",
   "baseDamage": {
     "attack": 44,
@@ -13,7 +13,35 @@
   },
   "description": "Um Arco Longo antigo que é um vestígio da era antiga do Rei Deshret. Um texto antigo indecifrável e padrões solenes foram entalhados nele.",
   "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Coração Flamejante",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Bônus de Dano do Ataque Carregado do portador contra inimigos afetados por Coração Flamejante",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
+    "skills": [
+      {
+        "label": "Flecha Solar",
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [0.6, 0.75, 0.9, 1.05, 1.2],
+            "conditional": { "origin": "character", "attribute": "atk" }
+          }
+        ]
+      }
+    ],
     "initialStats": {
       "baseAttack": 43.7349,
       "critRate": 0.04
