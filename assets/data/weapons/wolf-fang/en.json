@@ -5,8 +5,46 @@
   "baseAttack": 42,
   "subStat": "CRIT Rate",
   "passiveName": "Northwind Wolf",
-  "passiveDesc": "DMG dealt by Elemental Skill and Elemental Burst is increased by 16%. When an Elemental Skill hits an opponent, its CRIT Rate will be increased by 2%. When an Elemental Burst hits an opponent, its CRIT Rate will be increased by 2%. Both of these effects last 10s separately, have 4 max stacks, and can be triggered once every 0.1s.",
+  "passiveDesc": "DMG dealt by Elemental Skill and Elemental Burst is increased by 16/20/24/28/32%. When an Elemental Skill hits an opponent, its CRIT Rate will be increased by 2/2.5/3/3.5/4%. When an Elemental Burst hits an opponent, its CRIT Rate will be increased by 2/2.5/3/3.5/4%. Both of these effects last 10s separately, have 4 max stacks, and can be triggered once every 0.1s.",
   "location": "BP Bounty",
   "ascensionMaterial": "ancient-chord",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Northwind Wolf",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Elemental Skill DMG",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "Elemental Burst DMG",
+          "type": "dmg_percent",
+          "target": "elemental_burst",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "Elemental Skill CRIT Rate per Skill-hit stack",
+          "type": "crit_rate",
+          "target": "elemental_skill",
+          "values": [0.02, 0.025, 0.03, 0.035, 0.04],
+          "bonus": true,
+          "accumulations": 4
+        },
+        {
+          "label": "Elemental Burst CRIT Rate per separate Burst-hit stack",
+          "type": "crit_rate",
+          "target": "elemental_burst",
+          "values": [0.02, 0.025, 0.03, 0.035, 0.04],
+          "bonus": true,
+          "accumulations": 4
+        }
+      ]
+    }
+  ]
 }

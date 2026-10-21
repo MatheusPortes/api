@@ -7,7 +7,48 @@
   "passiveName": "Vento Setentrional do Lobo Azul",
   "passiveDesc": "Aumenta o Dano causado pela Habilidade Elemental e Supremo em 16/20/24/28/32%. Quando a Habilidade Elemental atingir um inimigo, aumenta a Taxa CRIT dela em 2/2.5/3/3.5/4%. Quando o Supremo atingir um inimigo, aumenta a Taxa CRIT dele em 2/2.5/3/3.5/4%. Esses dois efeitos duram 10s cada e podem ser acumulados até 4 vezes, podendo serem desencadeados uma vez a cada 0.1s.",
   "location": "Passe de Batalha do Gnóstico",
-  "baseDamage": { "attack": 42, "subStat": 60 },
+  "baseDamage": {
+    "attack": 42,
+    "subStat": 60
+  },
   "description": "Lendas dizem que essa lâmina foi usada por um cavaleiro andarilho num passado distante.",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Vento Setentrional do Lobo Azul",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano da Habilidade Elemental",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "Dano do Supremo",
+          "type": "dmg_percent",
+          "target": "elemental_burst",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "Taxa CRIT da Habilidade Elemental por acúmulo de acerto da Habilidade",
+          "type": "crit_rate",
+          "target": "elemental_skill",
+          "values": [0.02, 0.025, 0.03, 0.035, 0.04],
+          "bonus": true,
+          "accumulations": 4
+        },
+        {
+          "label": "Taxa CRIT do Supremo por acúmulo separado de acerto do Supremo",
+          "type": "crit_rate",
+          "target": "elemental_burst",
+          "values": [0.02, 0.025, 0.03, 0.035, 0.04],
+          "bonus": true,
+          "accumulations": 4
+        }
+      ]
+    }
+  ]
 }
