@@ -9,6 +9,29 @@
   "location": "Gacha",
   "ascensionMaterial": "pure-sacred-dewdrop",
   "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Dawn and Dusk by the Lake",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Elemental Skill DMG per stack after wearer HP changes",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "Wearer Max HP per stack after other party members' HP changes",
+          "type": "hp_percent",
+          "values": [0.14, 0.175, 0.21, 0.245, 0.28],
+          "bonus": true,
+          "accumulations": 2
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 44.3358,

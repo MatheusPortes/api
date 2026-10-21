@@ -13,6 +13,29 @@
   },
   "description": "Um cetro em torno do qual gira água pura. Em dias passados, ele costumava simbolizar a mais alta autoridade sobre os mares.",
   "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Amanhecer e Crepúsculo à Beira do Lago",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano da Habilidade Elemental por acúmulo após mudanças na Vida do portador",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "Vida Máxima do portador por acúmulo após mudanças na Vida dos outros membros da equipe",
+          "type": "hp_percent",
+          "values": [0.14, 0.175, 0.21, 0.245, 0.28],
+          "bonus": true,
+          "accumulations": 2
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 44.3358,
