@@ -13,6 +13,20 @@
   },
   "description": "Uma espada negra, tão escura quanto a noite. Pertenceu a um ladrão que vagava pelas ruas à noite.",
   "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Herói Itinerante",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano do portador enquanto o efeito estiver ativo; desativado por 5s após sofrer Dano",
+          "type": "dmg_percent",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 45.0687,
