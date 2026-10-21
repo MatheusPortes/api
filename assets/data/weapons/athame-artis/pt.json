@@ -1,0 +1,65 @@
+{
+  "name": "Corrupção Sombria",
+  "type": "Espada",
+  "rarity": 5,
+  "baseAttack": 46,
+  "subStat": "Taxa Crítica",
+  "passiveName": "Esplendor do Rei Diurno",
+  "passiveDesc": "Aumenta o Dano CRIT do Supremo em 16%/20%/24%/28%/32%. Obtém o efeito Lâmina do Dia ao atingir o Supremo no inimigo: aumenta o ATQ em 20%/25%/30%/35%/40%; aumenta o ATQ de personagens ativos próximos que não sejam o portador em 16%/20%/24%/28%/32% por 3s. Além disso, quando a equipe possuir o efeito Mágico: Ritual Secreto, o efeito de Lâmina do Dia será aumentado em mais 75%. Esse efeito pode ser desencadeado mesmo que o portador não seja o personagem ativo.",
+  "location": "Oração de Evento de Arma",
+  "baseDamage": { "attack": 46, "subStat": 72 },
+  "description": "Uma espada preciosa presenteada pelo Rei do Dia para o corajoso herói na história da Bruxa. No final, a Bruxa a roubou e derrotou o herói sozinha.",
+  "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Esplendor do Rei Diurno",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano CRIT do Supremo",
+          "type": "crit_dmg",
+          "target": "elemental_burst",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "ATQ do portador após acerto do Supremo",
+          "type": "atk_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "ATQ dos demais membros ativos próximos após acerto do Supremo",
+          "type": "atk_percent",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "ATQ adicional do portador com Mágico: Ritual Secreto",
+          "type": "atk_percent",
+          "values": [0.15, 0.1875, 0.225, 0.2625, 0.3],
+          "bonus": true
+        },
+        {
+          "label": "ATQ adicional dos demais membros ativos próximos com Mágico: Ritual Secreto",
+          "type": "atk_percent",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 45.9364, "critRate": 0.072 },
+    "growthCurves": { "baseAttack": "ATK 3.1", "critRate": "C3" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 31.1 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 62.2 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 93.4 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 124.5 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 155.6 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 186.7 } }
+    ]
+  }
+}
