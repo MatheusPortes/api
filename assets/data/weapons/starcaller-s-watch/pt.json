@@ -7,7 +7,30 @@
   "passiveName": "Oferenda ao Vento e ao Sol",
   "passiveDesc": "Aumenta a Proficiência Elemental em 100/125/150/175/200. Nos 15s após o personagem que está com essa arma equipada criar um escudo, obtém o efeito \"Espelho da Noite\": aumenta o Dano causado pelo personagem ativo da equipe contra os inimigos próximos em 28%/35%/42%/49%/56%. O efeito \"Espelho da Noite\" pode ser obtido uma vez a cada 14s.",
   "location": "Oração de Evento de Arma",
-  "baseDamage": { "attack": 44, "subStat": 58 },
+  "baseDamage": {
+    "attack": 44,
+    "subStat": 58
+  },
   "description": "Uma estátua esculpida na forma de uma águia. Um relicário sagrado passado de geração em geração entre os Mestres do Vento Noturno.",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Oferenda ao Vento e ao Sol",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Proficiência Elemental do portador",
+          "type": "elemental_mastery",
+          "values": [100, 125, 150, 175, 200],
+          "bonus": true
+        },
+        {
+          "label": "Espelho da Noite — Dano do personagem ativo da equipe contra inimigos próximos",
+          "type": "dmg_percent",
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
