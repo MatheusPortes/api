@@ -7,7 +7,32 @@
   "passiveName": "Reminiscência da Água",
   "passiveDesc": "Aumenta a Vida Máxima em 20%/25%/30%/35%/40%. A cada 15s, o seguinte ocorrerá nos 14s após usar uma Habilidade Elemental: ganha 4 acúmulos de Verão Escaldante. Cada acúmulo aumenta o Dano do Ataque Normal em 12%/15%/18%/21%/24%. Nessa duração, uma vez a cada 1.5s: remove 1 acúmulo após um Ataque Normal acertar um oponente. Uma vez a cada 1.5s: acrescenta 1 acúmulo após desencadear uma reação de Vaporização em um oponente. O efeito Verão Escaldante pode ser acumulado até 4 vezes.",
   "location": "Catalisador",
-  "baseDamage": { "attack": 44, "subStat": 192 },
+  "baseDamage": {
+    "attack": 44,
+    "subStat": 192
+  },
   "description": "Originalmente reservado como lembrança para o campeão do \"Primeiro Campeonato de Corrida de Surfe de Todas as Tribos\". Dado que o evento continua em fase de preparação, o prêmio foi temporariamente armazenado no \"Flutuador Viajante\", sob a guarda do proprietário.",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Reminiscência da Água",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Vida Máxima",
+          "type": "hp_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "Dano de Ataque Normal por acúmulo de Verão Escaldante",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true,
+          "accumulations": 4
+        }
+      ]
+    }
+  ]
 }
