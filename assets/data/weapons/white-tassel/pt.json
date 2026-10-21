@@ -5,7 +5,27 @@
   "baseAttack": 39,
   "subStat": "Taxa Crítica",
   "location": "Liyue",
-  "baseDamage": { "attack": 39, "subStat": 51 },
+  "baseDamage": {
+    "attack": 39,
+    "subStat": 51
+  },
   "description": "Uma arma padrão dos soldados de Millelith. Tem uma ponta bastante afida e resistente. É uma arma confiável.",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Acume",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano de Ataque Normal",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.24, 0.3, 0.36, 0.42, 0.48],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "passiveDesc": "O Dano causado pelo Ataque Normal aumenta 24%/30%/36%/42%/48%.",
+  "passiveName": "Acume"
 }
