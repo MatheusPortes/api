@@ -2,11 +2,44 @@
   "name": "Skyward Pride",
   "type": "Claymore",
   "rarity": 5,
-  "baseAttack": 45,
+  "baseAttack": 48,
   "subStat": "Energy Recharge",
   "passiveName": "Sky-Ripping Dragon Spine",
-  "passiveDesc": "Increases all DMG by 8/10/12/14/16%. After using an Elemental Burst, Normal or Charged Attack, on hit, creates a vacuum blade that does 80/100/120/140/160% Physical DMG to enemies along its path. Lasts for 20s or 8 vacuum blades.",
+  "passiveDesc": "Increases all DMG by 8/10/12/14/16%. After using an Elemental Burst, a vacuum blade that does 80/100/120/140/160% of ATK as Physical DMG to opponents along its path will be created when Normal or Charged Attacks hit. Lasts for 20s or 8 vacuum blades.",
   "location": "Gacha",
   "ascensionMaterial": "boreal",
-  "weapon_type": "CLAYMORE"
+  "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Sky-Ripping Dragon Spine",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "All DMG Bonus",
+          "type": "dmg_percent",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "skills": [
+      {
+        "label": "Sky-Ripping Dragon Spine — vacuum blade",
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "damageType": "PHYSICAL",
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [0.8, 1, 1.2, 1.4, 1.6],
+            "conditional": {
+              "origin": "character",
+              "attribute": "atk"
+            }
+          }
+        ]
+      }
+    ]
+  }
 }
