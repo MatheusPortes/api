@@ -7,7 +7,38 @@
   "passiveName": "Falling Rainbow's Wish",
   "passiveDesc": "ATK is increased by 28%/35%/42%/49%/56%. When you use a Plunging Attack, you will gain the \"Dawn's First Hue\" effect: Plunging Attack CRIT DMG is increased by 28%/35%/42%/49%/56%. When you use an Elemental Skill or Burst, you will gain the \"Twilight's Splendor\" effect: Plunging Attack CRIT DMG is increased by 40%/50%/60%/70%/80%. The two effects above each last for 15s, and will be canceled 0.1s after the ground impact hits a target.",
   "location": "Event Wish Exclusive",
-  "baseDamage": { "attack": 48, "subStat": 96 },
+  "baseDamage": {
+    "attack": 48,
+    "subStat": 96
+  },
   "description": "A trophy made from gemstones from the Collective of Plenty and crystals from the Flower-Feather Clan. It is said to have once belonged to a legendary wrestler.",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Falling Rainbow's Wish",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATK",
+          "type": "atk_percent",
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "bonus": true
+        },
+        {
+          "label": "Dawn's First Hue — Plunging Attack CRIT DMG after using a Plunging Attack",
+          "type": "crit_dmg",
+          "target": "plunging_attack",
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "bonus": true
+        },
+        {
+          "label": "Twilight's Splendor — Plunging Attack CRIT DMG after using Skill or Burst",
+          "type": "crit_dmg",
+          "target": "plunging_attack",
+          "values": [0.4, 0.5, 0.6, 0.7, 0.8],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
