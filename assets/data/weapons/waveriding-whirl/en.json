@@ -7,7 +7,31 @@
   "passiveName": "Fangs Flying To and Fro",
   "passiveDesc": "Decreases Swimming Stamina consumption by 15%. In addition, for 10s after using an Elemental Skill, Max HP is increased by 20%/25%/30%/35%/40%. For every Hydro Elemental Type character in the party, Max HP is increased by another 12%/15%/18%/21%/24%, and the maximum increase that can be achieved in this way is 24%/30%/36%/42%/48%. Can be triggered once every 15s.",
   "location": "Event Wish Exclusive",
-  "baseDamage": { "attack": 41, "subStat": 133 },
+  "baseDamage": {
+    "attack": 41,
+    "subStat": 133
+  },
   "description": "A boomerang made from the fangs of a giant sea serpent. It was a rare weapon indeed that the giant Tupac would call \"trusty.\"",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Fangs Flying To and Fro",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Max HP after using an Elemental Skill",
+          "type": "hp_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "Additional Max HP per Hydro party member, including wearer if Hydro (up to 2)",
+          "type": "hp_percent",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true,
+          "accumulations": 2
+        }
+      ]
+    }
+  ]
 }
