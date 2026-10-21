@@ -13,7 +13,41 @@
   },
   "description": "Lança que simboliza a determinação firme de Dvalin. O eixo vertical desta arma aponta para o céu, carregado a força do céu e do vento.",
   "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Asas Negras",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Taxa CRIT",
+          "type": "crit_rate",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "bonus": true
+        },
+        {
+          "label": "Velocidade de Ataque Normal",
+          "type": "atk_speed_percent",
+          "target": "normal_attack",
+          "values": [0.12, 0.12, 0.12, 0.12, 0.12],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
+    "skills": [
+      {
+        "label": "Asas Negras — Lâmina de Vácuo",
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [0.4, 0.55, 0.7, 0.85, 1],
+            "conditional": { "origin": "character", "attribute": "atk" }
+          }
+        ]
+      }
+    ],
     "initialStats": {
       "baseAttack": 47.537,
       "energyRecharge": 0.08
