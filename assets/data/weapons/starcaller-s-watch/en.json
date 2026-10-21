@@ -13,6 +13,26 @@
   },
   "description": "A statue carved in the shape of an eagle, a sacred relic of the Masters of the Night-Wind that has been passed down from generation to generation.",
   "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Offering Unto Wind and Sun",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Wearer Elemental Mastery",
+          "type": "elemental_mastery",
+          "values": [100, 125, 150, 175, 200],
+          "bonus": true
+        },
+        {
+          "label": "Mirror of Night — current active party member's DMG to nearby opponents",
+          "type": "dmg_percent",
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 44.3358,

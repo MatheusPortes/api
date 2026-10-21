@@ -13,6 +13,26 @@
   },
   "description": "Uma estátua esculpida na forma de uma águia. Um relicário sagrado passado de geração em geração entre os Mestres do Vento Noturno.",
   "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Oferenda ao Vento e ao Sol",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Proficiência Elemental do portador",
+          "type": "elemental_mastery",
+          "values": [100, 125, 150, 175, 200],
+          "bonus": true
+        },
+        {
+          "label": "Espelho da Noite — Dano do personagem ativo da equipe contra inimigos próximos",
+          "type": "dmg_percent",
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 44.3358,
