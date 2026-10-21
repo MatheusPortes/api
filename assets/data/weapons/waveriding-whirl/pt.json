@@ -13,6 +13,27 @@
   },
   "description": "Um bumerangue feito das presas de uma gigantesca serpente do mar. Era uma arma rara que o gigante Tupac se referia como confiável.",
   "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Presas Voando de Lá para Cá",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Vida Máxima após usar Habilidade Elemental",
+          "type": "hp_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "Vida Máxima adicional por membro Hydro da equipe, incluindo o portador se Hydro (até 2)",
+          "type": "hp_percent",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true,
+          "accumulations": 2
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 41.0671,

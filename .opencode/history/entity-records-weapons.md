@@ -1,5 +1,11 @@
 # Weapon Entity Records
 
+## 2026-10-21 — waveriding-whirl — complete (HP coefficients; consumer stamina usage)
+
+- Sixteenth ID after Wavebreaker agent `8060627d` / delivery `16fa6dff`. Released four-star Catalyst. Separate hp_percent base [.2,.25,.3,.35,.4] and per-Hydro-member [.12,.15,.18,.21,.24], accumulations2 (source max/per-member =2 at every rank), bonus true. party-member-counted-bonus includes Hydro wearer because source says every Hydro character, not other members; count at most two credits, not four. No element scope/conditional/target/skills. Swimming Stamina -15% stays resource-usage text under universal consumer boundary (same non-stat treatment as Flower-Wreathed Feathers/Mountain-Bracing Bolt/Sturdy Bone); no new stamina schema. Skill/10s/15s/current party consumer-only. Preserve all descriptions/progression/other fields/locales.
+- References inspected 2026-10-21: https://library.keqingmains.com/equipment/weapons/catalysts#waveriding-whirl ; https://gi.yatta.moe/api/v2/en/weapon/14430 ; https://gi.yatta.moe/api/v2/pt/weapon/14430 (one provider); https://genshin-impact.fandom.com/api.php?action=parse&page=Waveriding_Whirl&prop=wikitext&format=json agree on release/identity/ranks/HP base/member count/max/stamina. HoYoWiki exact search shell; Game8 index no exact discovery, not evidence. Bundle `/tmp/opencode/waveriding-whirl-sources/`; no conflict.
+- Exact ranks/base/additional/cap derivation/member eligibility/labels, JSON/parity/preservation/format/diff/delivery parity checked before commits. Node20 build/lint `/tmp/opencode/waveriding-whirl-{build,lint}.log` reproduce declaration/17 unrelated formatting failures. Agent then JSON-only delivery before White Iron; no push.
+
 ## 2026-10-21 — wavebreaker-s-fin — complete (EN/PT passive)
 
 - Fifteenth ID after Waster history agent `1c6df2e4`, delivery unchanged `7076408b`. Released four-star Polearm. Root Burst dmg_percent [.0012,.0015,.0018,.0021,.0024], bonus true, time.energy_cost combined party maximum Burst-cost reference and result maxValues [.4,.5,.6,.7,.8]. Reuse combined-party-energy-cost-burst-bonus; not current Energy, ER, per-member stacks or input cap. All descriptions/progression/other fields/locales preserved, no schema change.
