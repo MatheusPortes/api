@@ -1,0 +1,56 @@
+{
+  "name": "Angelos' Heptades",
+  "type": "Catalyst",
+  "rarity": 5,
+  "baseAttack": 49,
+  "subStat": "ATK",
+  "passiveName": "Crown of the Final Scion",
+  "passiveDesc": "ATK is increased by 12/15/18/21/24%. After the equipping character creates a Shield, they gain \"Pathfinder's Light\" for 20s: Increases your active party member's DMG by 10/13/16/19/22% for every 1,000 ATK the equipping character has, up to a maximum of 26/34/42/50/58%. Additionally, when the equipping character creates a Shield, they will also gain \"Guide's Contentment\": Restores 14/15/16/17/18 Elemental Energy to the equipping character. The aforementioned effect can trigger once every 14s, and can also be triggered when any type of chest is opened outside of combat. The equipping character may trigger this effect even when they are off-field. Hexerei: Secret Rite: When your own Hexerei character is off-field in the party, they will also gain 50% of the DMG increase from Pathfinder's Light.",
+  "location": "Event Wish Exclusive",
+  "baseDamage": { "attack": 49, "subStat": 36 },
+  "description": "A golden box as splendid as the light of the heavens. According to legend, it once belonged to a divine envoy of the Eternal Court.",
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Crown of the Final Scion",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Wearer ATK",
+          "type": "atk_percent",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Active party member DMG Bonus from wearer ATK after shield creation",
+          "type": "dmg_percent",
+          "values": [0.0001, 0.00013, 0.00016, 0.00019, 0.00022],
+          "maxValues": [0.26, 0.34, 0.42, 0.5, 0.58],
+          "conditional": { "origin": "character", "attribute": "atk" },
+          "bonus": true
+        },
+        {
+          "label": "Off-field own Hexerei member DMG Bonus: alternative 50% share from wearer ATK, not added to active-member grant",
+          "type": "dmg_percent",
+          "values": [0.00005, 0.000065, 0.00008, 0.000095, 0.00011],
+          "maxValues": [0.13, 0.17, 0.21, 0.25, 0.29],
+          "conditional": { "origin": "character", "attribute": "atk" },
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 49.1377, "attackPercent": 0.036 },
+    "growthCurves": { "baseAttack": "ATK 3.3", "attackPercent": "C3" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 31.1 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 62.2 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 93.4 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 124.5 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 155.6 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 186.7 } }
+    ]
+  }
+}
