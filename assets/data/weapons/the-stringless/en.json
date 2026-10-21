@@ -8,5 +8,27 @@
   "passiveDesc": "Increases Elemental Skill and Elemental Burst DMG by 24/30/36/42/48%.",
   "location": "Gacha",
   "ascensionMaterial": "decarabian",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Arrowless Song",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Elemental Skill DMG",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.24, 0.3, 0.36, 0.42, 0.48],
+          "bonus": true
+        },
+        {
+          "label": "Elemental Burst DMG",
+          "type": "dmg_percent",
+          "target": "elemental_burst",
+          "values": [0.24, 0.3, 0.36, 0.42, 0.48],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
