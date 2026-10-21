@@ -1,0 +1,47 @@
+{
+  "name": "Beyond the Chrysalis",
+  "type": "Sword",
+  "rarity": 5,
+  "baseAttack": 48,
+  "subStat": "CRIT DMG",
+  "passiveName": "Dance of Wings Unbound",
+  "passiveDesc": "Each time the equipping character uses their Elemental Skill or Elemental Burst, they gain one of the following three effects in sequence: Winds of Devotion: Increases the equipping character's CRIT DMG by 56/72/88/104/120% for 10s; Winds of Defiance: Increases Stellar Swirl reaction DMG dealt by the equipping character by 36/45/54/63/72% for 10s; and Winds of Plenty: Regenerates 5/5.5/6/6.5/7 Elemental Energy for the equipping character. Up to 5/5.5/6/6.5/7 Elemental Energy can be regenerated in this way every 4s. The aforementioned effects are removed and the sequence is reset when the equipping character leaves the field.",
+  "location": "Event Wish Exclusive",
+  "baseDamage": { "attack": 48, "subStat": 96 },
+  "description": "A longsword brimming with light and color, and as weightless as a butterfly when brandished. It was once used by a certain individual to break bonds.",
+  "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Dance of Wings Unbound",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Winds of Devotion — CRIT DMG while the first sequence buff is active",
+          "type": "crit_dmg",
+          "values": [0.56, 0.72, 0.88, 1.04, 1.2],
+          "bonus": true
+        },
+        {
+          "label": "Winds of Defiance — Stellar Swirl DMG while the second sequence buff is active",
+          "type": "dmg_percent",
+          "reaction": ["STELLAR_SWIRL"],
+          "values": [0.36, 0.45, 0.54, 0.63, 0.72],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 47.537, "critDamage": 0.096 },
+    "growthCurves": { "baseAttack": "ATK 3.2", "critDamage": "C3" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 31.1 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 62.2 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 93.4 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 124.5 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 155.6 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 186.7 } }
+    ]
+  }
+}

@@ -1,5 +1,12 @@
 # Weapon Entity Records
 
+## 2026-10-21 — beyond-the-chrysalis — complete (new EN/PT entity, progression and passive)
+
+- Fifth new ID after Azurelight agent `e658aad0` / delivery `8c104d4a`. Released five-star Sword2026-09-23 (Fandom date/Game8 banner date, already past access date); profile48ATK/9.6%CD/Event Wish. Complete localized EN/PT, Yatta47.537/.096 ATTACK_302→ATK3.2/CRITICAL_301→C3 and ascension0..186.7 at20..90. No images/other entities changed.
+- Separate first-sequence crit_dmg [.56,.72,.88,1.04,1.20] and second-sequence dmg_percent [.36,.45,.54,.63,.72], reaction STELLAR_SWIRL, bonus true/no targets/conditional/stacks/skills. Universal stat/reaction contracts; consumer handles ordered Skill/Burst activations, independent10s buff eligibility, exit removal/reset, not two always-on grants or three stacks. Third-step fixed Energy5/5.5/6/6.5/7 and4s limit stay source text under consumer-only-fixed-energy-restoration. No new sequence/state schema.
+- References inspected 2026-10-21: https://game8.co/games/Genshin-Impact/archives/622063 ; https://library.keqingmains.com/equipment/weapons/swords#beyond-the-chrysalis ; https://gi.yatta.moe/api/v2/en/weapon/11522 ; https://gi.yatta.moe/api/v2/pt/weapon/11522 (one provider); https://genshin-impact.fandom.com/api.php?action=parse&page=Beyond_the_Chrysalis&prop=wikitext&format=json agree on identity/profile/ranks/sequence/duration/removal. Game8 retains prospective expected-release wording for past2026-09-23, corroborated by Fandom release/current Yatta/KQM; its refinement heading mistakenly says Clash of Kings although underlying table matches this entity, not imported. HoYoWiki exact search shell. Bundle `/tmp/opencode/beyond-the-chrysalis-sources/` includes exact Game8 HTML.
+- Exact progression/curves/raw ratios/sequence labels/JSON/parity/focused format/diff/identical delivery checked before commits; Node20 build/lint logs retain declaration/17 unrelated formatting failures. Agent then JSON-only delivery before Blackmarrow Lantern; no push.
+
 ## 2026-10-21 — azurelight — complete (new EN/PT entity, progression and passive)
 
 - Fourth new ID after Athame agent `40c4918d` / delivery `2139a232`. Released five-star Sword2025-06-18 (Fandom); KQM/Yatta corroborate live identity/profile48ATK/4.8%CR/Weapon Event Wish acquisition. Add complete localized EN/PT records; Yatta47.537/.048, ATTACK_302→ATK3.2/CRITICAL_301→C3, ascension0..186.7 at20..90. No images/unrelated records changed.
