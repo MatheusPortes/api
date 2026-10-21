@@ -13,6 +13,41 @@
   },
   "description": "Um Arco Longo que foi dado a alguém pela Shogun. Ele emite raios que nunca se apagam.",
   "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Governo do Trovão",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATQ",
+          "type": "atk_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "Dano de Ataque Normal com 1 carga de Selo da Trovoada (nível exclusivo)",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dano de Ataque Normal com 2 cargas de Selo da Trovoada (nível exclusivo)",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.24, 0.3, 0.36, 0.42, 0.48],
+          "bonus": true
+        },
+        {
+          "label": "Dano de Ataque Normal com 3 cargas de Selo da Trovoada (nível exclusivo)",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.4, 0.5, 0.6, 0.7, 0.8],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 45.9364,
