@@ -1,5 +1,11 @@
 # Weapon Entity Records
 
+## 2026-10-21 — wavebreaker-s-fin — complete (EN/PT passive)
+
+- Fifteenth ID after Waster history agent `1c6df2e4`, delivery unchanged `7076408b`. Released four-star Polearm. Root Burst dmg_percent [.0012,.0015,.0018,.0021,.0024], bonus true, time.energy_cost combined party maximum Burst-cost reference and result maxValues [.4,.5,.6,.7,.8]. Reuse combined-party-energy-cost-burst-bonus; not current Energy, ER, per-member stacks or input cap. All descriptions/progression/other fields/locales preserved, no schema change.
+- References inspected 2026-10-21: https://library.keqingmains.com/equipment/weapons/polearms#wavebreakers-fin ; https://gi.yatta.moe/api/v2/en/weapon/13416 ; https://gi.yatta.moe/api/v2/pt/weapon/13416 (one provider); https://genshin-impact.fandom.com/api.php?action=parse&page=Wavebreaker%27s_Fin&prop=wikitext&format=json agree on identity/release/ranks/reference/caps. HoYoWiki exact search shell and Game8 index no exact discovery are not evidence. Bundle `/tmp/opencode/wavebreaker-s-fin-sources/`; no conflict.
+- Exact ratio conversion/ranks/result caps/reference/labels, JSON/EN-PT parity/preservation/focused format/diff/delivery parity checked before commits. Node20 build/lint `/tmp/opencode/wavebreaker-s-fin-{build,lint}.log` reproduce declaration/17 unrelated formatting failures. Agent then JSON-only delivery before Waveriding; no push.
+
 ## 2026-10-21 — waster-greatsword — reviewed-not-applicable (no passive)
 
 - Fourteenth ID after Wandering agent `73b601b5` / delivery `7076408b`. KQM/Yatta/Fandom agree on released one-star Claymore without passive; no modifier/proc to map. EN/PT, progression and all locales remain byte-identical; no invented empty effects or display cleanup. History-only agent commit; no publishable delta and therefore no delivery commit.
