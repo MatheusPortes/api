@@ -13,6 +13,26 @@
   },
   "description": "Uma espada de aço confiável. Uma certa pessoa tentou usá-la como espada voadora...",
   "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Determinação",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATQ após usar o Supremo",
+          "type": "atk_percent",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Veloc. Mov. após usar o Supremo",
+          "type": "movement_speed_percent",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 37.6075,
