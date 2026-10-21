@@ -7,7 +7,73 @@
   "passiveName": "\"Bom de Papo\"",
   "passiveDesc": "Nos 15s seguintes após ser afetado por Pyro, aumenta o ATQ em 16/20/24/28/32%. Esse efeito pode ser desencadeado uma vez a cada 12s. Nos 15s após ser afetado por Hydro, Cryo, Electro ou Dendro, fornece Bônus de Dano de todos os Elementos de 12/15/18/21/24%. Esse efeito pode ser desencadeado uma vez a cada 12s.",
   "location": "Passe de Batalha do Gnóstico",
-  "baseDamage": { "attack": 44, "subStat": 40 },
+  "baseDamage": {
+    "attack": 44,
+    "subStat": 40
+  },
   "description": "A maioria das pessoas acha que esse porrete com obsidiana incrustrada é bem convincente.",
-  "weapon_type": "CLAYMORE"
+  "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "\"Bom de Papo\"",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATQ após ser afetado por Pyro",
+          "type": "atk_percent",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "Dano Geo após ser afetado por Hydro, Cryo, Electro ou Dendro",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dano Anemo após ser afetado por Hydro, Cryo, Electro ou Dendro",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dano Cryo após ser afetado por Hydro, Cryo, Electro ou Dendro",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dano Dendro após ser afetado por Hydro, Cryo, Electro ou Dendro",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dano Electro após ser afetado por Hydro, Cryo, Electro ou Dendro",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dano Hydro após ser afetado por Hydro, Cryo, Electro ou Dendro",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dano Pyro após ser afetado por Hydro, Cryo, Electro ou Dendro",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
