@@ -5,7 +5,7 @@
   "baseAttack": 42,
   "subStat": "Taxa Crítica",
   "passiveName": "Divisor de Ondas",
-  "passiveDesc": "Quando o jogador está em combate, a cada 4s aumenta o dano causado em 6%/7%/8%/9%/10% e 3%/2.7%/2.4%/2.2%/2% do Dano recebido. Este efeito pode ser acumulado até 5 vezes, não sendo redefinido após o personagem sair de campo, mas reduzirá 1 camada do efeito quando o personagem receber Dano.",
+  "passiveDesc": "A cada 4s em campo, aumenta o Dano causado em 6%/7%/8%/9%/10% e o Dano recebido em 3%/2.7%/2.4%/2.2%/2% por acúmulo. Máximo de 5 acúmulos. Sair de campo não remove os acúmulos; receber Dano remove 1 acúmulo.",
   "location": "Liyue",
   "baseDamage": {
     "attack": 42,
@@ -13,6 +13,21 @@
   },
   "description": "Uma arma rara cuja origem são os oceanos antigos. Ao brandi-la, é possível ouvir as ondas do mar.",
   "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Divisor de Ondas",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Bônus de Dano causado por acúmulo de Divisor de Ondas",
+          "type": "dmg_percent",
+          "values": [0.06, 0.07, 0.08, 0.09, 0.1],
+          "bonus": true,
+          "accumulations": 5
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 42.401,

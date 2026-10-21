@@ -5,10 +5,25 @@
   "baseAttack": 42,
   "subStat": "CRIT Rate",
   "passiveName": "Wavesplitter",
-  "passiveDesc": "Every 4s a character is on the field, they will deal 6% more DMG and take 3% more DMG. This effect has a maximum of 5 stacks and will not be reset if the character leaves the field, but will be cleared when the character takes DMG.",
+  "passiveDesc": "Every 4s a character is on the field, they will deal 6%/7%/8%/9%/10% more DMG and take 3%/2.7%/2.4%/2.2%/2% more DMG per stack. This effect has a maximum of 5 stacks and will not be reset if the character leaves the field, but will be reduced by 1 stack when the character takes DMG.",
   "location": "BP Bounty",
   "ascensionMaterial": "aerosiderite",
   "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Wavesplitter",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Outgoing DMG Bonus per Wavesplitter stack",
+          "type": "dmg_percent",
+          "values": [0.06, 0.07, 0.08, 0.09, 0.1],
+          "bonus": true,
+          "accumulations": 5
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 42.401,
