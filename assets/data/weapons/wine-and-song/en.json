@@ -2,13 +2,27 @@
   "name": "Wine and Song",
   "type": "Catalyst",
   "rarity": 4,
-  "baseAttack": 42,
+  "baseAttack": 44,
   "subStat": "Energy Recharge",
-  "passiveName": "Wind in the Square",
-  "passiveDesc": "For every character in the party who hails from Mondstadt, the character who equips this weapon gains 8/10/12/14/16% ATK increase and 3/3.5/4/4.5/5% Movement SPD increase.",
+  "passiveName": "Ever-Changing",
+  "passiveDesc": "Hitting an opponent with a Normal Attack decreases the Stamina consumption of Sprint or Alternate Sprint by 14/16/18/20/22% for 5s. Additionally, using a Sprint or Alternate Sprint ability increases ATK by 20/25/30/35/40% for 5s.",
   "location": "Gacha",
   "ascensionMaterial": "boreal",
   "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Ever-Changing",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATK after using Sprint or Alternate Sprint",
+          "type": "atk_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 43.7349,
