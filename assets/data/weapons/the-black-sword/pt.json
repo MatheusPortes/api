@@ -7,7 +7,41 @@
   "passiveName": "Justiça",
   "passiveDesc": "Aumenta o dano causado pelos Ataques Normais e Carregados em 20%/25%/30%/35%/40%, regenera 60%/70%/80%/90%/100% do ATQ como Vida quando o Ataque Normal ou Ataque Carregado atingir Crítico. Este efeito pode ser ativado uma vez a cada 5s.",
   "location": "Mondstadt",
-  "baseDamage": { "attack": 42, "subStat": 60 },
+  "baseDamage": {
+    "attack": 42,
+    "subStat": 60
+  },
   "description": "Uma espada longa que anseia por conflito e combate. Dizem-se que mergulha seu portador em um desejo violento de se manchar de sangue em um massacre.",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Justiça",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano de Ataque Normal",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "Dano de Ataque Carregado",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "Cura do portador em acertos CRIT de Ataques Normais ou Carregados",
+          "type": "healing",
+          "values": [0.6, 0.7, 0.8, 0.9, 1],
+          "conditional": {
+            "origin": "character",
+            "attribute": "atk"
+          }
+        }
+      ]
+    }
+  ]
 }
