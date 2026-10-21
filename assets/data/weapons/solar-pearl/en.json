@@ -9,6 +9,35 @@
   "location": "BP Bounty",
   "ascensionMaterial": "guyun",
   "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Solar Shine",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Elemental Skill DMG after Normal Attack hits",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "Elemental Burst DMG after Normal Attack hits",
+          "type": "dmg_percent",
+          "target": "elemental_burst",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "Normal Attack DMG after Elemental Skill or Burst hits",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 42.401,
