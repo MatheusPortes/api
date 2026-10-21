@@ -7,7 +7,36 @@
   "passiveName": "Seasoned Symphony",
   "passiveDesc": "ATK is increased by 12%/15%/18%/21%/24%. When the equipping character is off-field, ATK is increased by an additional 12%/15%/18%/21%/24%. After initiating healing, the equipping character and the character(s) they have healed will obtain the \"Sweet Echoes\" effect, increasing their ATK by 32%/40%/48%/56%/64% for 3s. This effect can be triggered even if the equipping character is off-field.",
   "location": "Event Wish Exclusive",
-  "baseDamage": { "attack": 46, "subStat": 144 },
+  "baseDamage": {
+    "attack": 46,
+    "subStat": 144
+  },
   "description": "An elegantly built polearm, said to have been a conductor's baton wielded by a great musician to bridge tune and taste.",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Seasoned Symphony",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Wearer ATK",
+          "type": "atk_percent",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Additional wearer ATK while off-field",
+          "type": "atk_percent",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Sweet Echoes — ATK for wearer and healed characters after initiating healing",
+          "type": "atk_percent",
+          "values": [0.32, 0.4, 0.48, 0.56, 0.64],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
