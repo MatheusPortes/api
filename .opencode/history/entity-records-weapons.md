@@ -1,5 +1,11 @@
 # Weapon Entity Records
 
+## 2026-10-21 — wandering-evenstar — complete (EN/PT passive)
+
+- Thirteenth ID of the authorized Thundering–Windblume round, after Vortex agent `45e19a10` / delivery `52e32472`. Released four-star Catalyst. Separate wearer flat_atk [.24,.30,.36,.42,.48] and other-nearby-member share [.072,.09,.108,.126,.144] = base×.30, both bonus true with character.elemental_mastery referring to wearer EM. Reuses universal attribute-result and fixed-source-bonus-increase contracts, same semantics as read-only live Makhaira EN/PT; no recipient schema, stacks, targets or proc. Consumer routes recipients and handles 10s/12s/off-field/multiple copies. Expand EN R1-only text to validated ranks; preserve progression, other fields/locales.
+- References inspected 2026-10-21: https://library.keqingmains.com/equipment/weapons/catalysts#wandering-evenstar ; https://gi.yatta.moe/api/v2/en/weapon/14416 ; https://gi.yatta.moe/api/v2/pt/weapon/14416 (one provider); https://genshin-impact.fandom.com/api.php?action=parse&page=Wandering_Evenstar&prop=wikitext&format=json agree on identity/release/ranks/EM reference/share/usage. HoYoWiki exact search is app shell; Game8 weapon-index discovery yielded no exact link, not factual evidence. Bundle `/tmp/opencode/wandering-evenstar-sources/`; no disagreement.
+- Checks before commits: rank arrays/share derivation/references/labels, JSON/EN-PT parity/preserved branch baselines, focused format/diff/delivery parity; Node20 build/lint logs `/tmp/opencode/wandering-evenstar-{build,lint}.log` retain declaration/17 unrelated formatting failures. Commit agent then JSON-only delivery before Waster; no push.
+
 Each complete entry is EN/PT passive scope only, committed/mirrored individually in the authorized 2026-10-16 weapon round. KQM/Yatta validated values; inaccessible primary pages are recorded as unavailable, not inferred.
 
 | ID                         | Status / compact result                                                                                                                                                                  |
