@@ -5,10 +5,38 @@
   "baseAttack": 42,
   "subStat": "CRIT Rate",
   "passiveName": "Justice",
-  "passiveDesc": "Increases DMG dealt by Normal and Charged Attacks by 20%.\nAdditionally, regenerates 60% of ATK as HP when Normal and Charged Attacks score a CRIT Hit. This effect can occur once every 5s.",
+  "passiveDesc": "Increases DMG dealt by Normal and Charged Attacks by 20/25/30/35/40%. Additionally, regenerates 60/70/80/90/100% of ATK as HP when Normal and Charged Attacks score a CRIT Hit. This effect can occur once every 5s.",
   "location": "BP Bounty",
   "ascensionMaterial": "boreal",
   "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Justice",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Normal Attack DMG",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "Charged Attack DMG",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "Wearer healing on Normal or Charged CRIT hits",
+          "type": "healing",
+          "values": [0.6, 0.7, 0.8, 0.9, 1],
+          "conditional": { "origin": "character", "attribute": "atk" }
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 42.401,
