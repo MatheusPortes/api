@@ -13,6 +13,32 @@
   },
   "description": "An elegantly built polearm, said to have been a conductor's baton wielded by a great musician to bridge tune and taste.",
   "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Seasoned Symphony",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Wearer ATK",
+          "type": "atk_percent",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Additional wearer ATK while off-field",
+          "type": "atk_percent",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Sweet Echoes — ATK for wearer and healed characters after initiating healing",
+          "type": "atk_percent",
+          "values": [0.32, 0.4, 0.48, 0.56, 0.64],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 45.9364,
