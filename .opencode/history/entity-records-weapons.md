@@ -1,5 +1,12 @@
 # Weapon Entity Records
 
+## 2026-10-21 — azurelight — complete (new EN/PT entity, progression and passive)
+
+- Fourth new ID after Athame agent `40c4918d` / delivery `2139a232`. Released five-star Sword2025-06-18 (Fandom); KQM/Yatta corroborate live identity/profile48ATK/4.8%CR/Weapon Event Wish acquisition. Add complete localized EN/PT records; Yatta47.537/.048, ATTACK_302→ATK3.2/CRITICAL_301→C3, ascension0..186.7 at20..90. No images/unrelated records changed.
+- Universal stat contracts: separate atk_percent [.24,.30,.36,.42,.48] after Skill and same-valued additional atk_percent plus crit_dmg [.4,.5,.6,.7,.8] only at zero Energy during12s. All bonus true, no target/conditional/stacks/skills; zero Energy is activation, not time.energy_cost or energy_recharge reference. No merging equal values or granting zero-Energy bonuses unconditionally; consumer handles Skill/window/Energy/snapshot. No new schema.
+- References inspected 2026-10-21: https://library.keqingmains.com/equipment/weapons/swords#azurelight ; https://gi.yatta.moe/api/v2/en/weapon/11517 ; https://gi.yatta.moe/api/v2/pt/weapon/11517 (one provider); https://genshin-impact.fandom.com/api.php?action=parse&page=Azurelight&prop=wikitext&format=json agree on identity/profile/ranks/separate ATK/CRIT/usage, Fandom supplies release/acquisition. HoYoWiki exact search shell; Game8 index https://game8.co/games/Genshin-Impact/archives/297497 no exact discovery, not evidence. Bundle `/tmp/opencode/azurelight-sources/`; no conflict.
+- Exact progression/curves/rank arrays/scopes/labels/complete JSON/parity/focused format/diff/identical delivery checked before commits; Node20 build/lint logs retain declaration/17 unrelated formatting failures. Agent then JSON-only delivery before Beyond the Chrysalis; no push.
+
 ## 2026-10-21 — athame-artis — complete (new EN/PT entity, progression and passive)
 
 - Third new ID after Angelos agent `ea223d0c` / delivery `f404212b`. Released five-star Sword2025-12-03 (Game8/Fandom), profile46ATK/7.2%CR/Event Wish/localized description. Yatta progression45.9364/.072, ATTACK_301→ATK3.1/CRITICAL_301→C3; ascension0..186.7 at20..90. Native new complete EN/PT records only; no images or unrelated data.
