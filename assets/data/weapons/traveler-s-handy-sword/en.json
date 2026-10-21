@@ -9,6 +9,20 @@
   "location": "Chest",
   "ascensionMaterial": "dandelion",
   "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Journey",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Wearer Max HP healing per Elemental Orb or Particle collected",
+          "type": "healing",
+          "values": [0.01, 0.0125, 0.015, 0.0175, 0.02],
+          "conditional": { "origin": "character", "attribute": "hp" }
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 39.8751,
