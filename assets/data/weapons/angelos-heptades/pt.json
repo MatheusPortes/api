@@ -1,0 +1,56 @@
+{
+  "name": "Os Sete Éditos da Poeira e Luz",
+  "type": "Catalisador",
+  "rarity": 5,
+  "baseAttack": 49,
+  "subStat": "Porcentagem de ATQ",
+  "passiveName": "Coroa do Advento Final",
+  "passiveDesc": "O ATQ é aumentado em 12%/15%/18%/21%/24%. Após o portador criar um Escudo, ele obtém \"Luz Pioneira\" por 20s: aumenta o Dano do membro da equipe em campo em 10%/13%/16%/19%/22% para cada 1.000 de ATQ do portador, até um máximo de 26%/34%/42%/50%/58%. Além disso, quando o portador criar um Escudo, ele também obtém \"Gula do Guia\": restaura 14/15/16/17/18 de Energia Elemental para o portador. O efeito mencionado pode ser ativado uma vez a cada 14s, e também pode ser ativado quando um baú é aberto fora de combate. Esse efeito pode ser desencadeado mesmo que o portador não seja o personagem ativo. Mágico: Ritual Secreto: quando houver personagens Mágicos fora de campo na sua equipe, eles também receberão 50% do aumento de Dano de Luz Pioneira.",
+  "location": "Oração de Evento de Arma",
+  "baseDamage": { "attack": 49, "subStat": 36 },
+  "description": "Uma caixa dourada tão esplêndida quanto a luz dos céus. Segundo a lenda, ela já pertenceu a um enviado divino da Corte da Eternidade.",
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Coroa do Advento Final",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATQ do portador",
+          "type": "atk_percent",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano do membro ativo baseado no ATQ do portador após criar Escudo",
+          "type": "dmg_percent",
+          "values": [0.0001, 0.00013, 0.00016, 0.00019, 0.00022],
+          "maxValues": [0.26, 0.34, 0.42, 0.5, 0.58],
+          "conditional": { "origin": "character", "attribute": "atk" },
+          "bonus": true
+        },
+        {
+          "label": "Bônus de Dano de membro Mágico próprio fora de campo: parcela alternativa de 50% do ATQ do portador, não somada à concessão do membro ativo",
+          "type": "dmg_percent",
+          "values": [0.00005, 0.000065, 0.00008, 0.000095, 0.00011],
+          "maxValues": [0.13, 0.17, 0.21, 0.25, 0.29],
+          "conditional": { "origin": "character", "attribute": "atk" },
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 49.1377, "attackPercent": 0.036 },
+    "growthCurves": { "baseAttack": "ATK 3.3", "attackPercent": "C3" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 31.1 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 62.2 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 93.4 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 124.5 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 155.6 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 186.7 } }
+    ]
+  }
+}
