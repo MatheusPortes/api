@@ -2,14 +2,84 @@
   "name": "Skyward Atlas",
   "type": "Catalyst",
   "rarity": 5,
-  "baseAttack": 45,
+  "baseAttack": 48,
   "subStat": "ATK",
   "passiveName": "Wandering Clouds",
   "passiveDesc": "Increases Elemental DMG Bonus by 12/15/18/21/24%. Normal Attack hits have a 50% chance to earn the favor of the clouds. which actively seek out nearby enemies to attack for 15s, dealing 160/200/240/280/320% ATK DMG. Can only occur once every 30s.",
   "location": "Gacha",
   "ascensionMaterial": "boreal",
   "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Wandering Clouds",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Geo DMG Bonus",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Anemo DMG Bonus",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Cryo DMG Bonus",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dendro DMG Bonus",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Electro DMG Bonus",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Hydro DMG Bonus",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Pyro DMG Bonus",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
+    "skills": [
+      {
+        "label": "Wandering Clouds — cloud attack",
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [1.6, 2, 2.4, 2.8, 3.2],
+            "conditional": { "origin": "character", "attribute": "atk" }
+          }
+        ]
+      }
+    ],
     "initialStats": {
       "baseAttack": 47.537,
       "attackPercent": 0.072
