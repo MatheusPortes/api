@@ -9,6 +9,28 @@
   "location": "Inazuma Fishing Association",
   "ascensionMaterial": "mask",
   "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Shanty",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Elemental Burst DMG",
+          "type": "dmg_percent",
+          "target": "elemental_burst",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "Elemental Burst CRIT Rate",
+          "type": "crit_rate",
+          "target": "elemental_burst",
+          "values": [0.06, 0.075, 0.09, 0.105, 0.12],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 42.401,
