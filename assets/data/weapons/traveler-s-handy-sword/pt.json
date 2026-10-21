@@ -7,7 +7,27 @@
   "passiveName": "Jornada",
   "passiveDesc": "Cada Orbe ou Partícula Elemental coletada restaura 1%/1.25%/1.5%/1.75%/2% da Vida.",
   "location": "Mondstadt",
-  "baseDamage": { "attack": 40, "subStat": 64 },
+  "baseDamage": {
+    "attack": 40,
+    "subStat": 64
+  },
   "description": "Uma espada de aço que esconde tesouras, lupas, entre outros itens úteis de viagem em sua bainha.",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Jornada",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Cura baseada na Vida Máxima do portador por Orbe ou Partícula Elemental coletada",
+          "type": "healing",
+          "values": [0.01, 0.0125, 0.015, 0.0175, 0.02],
+          "conditional": {
+            "origin": "character",
+            "attribute": "hp"
+          }
+        }
+      ]
+    }
+  ]
 }
