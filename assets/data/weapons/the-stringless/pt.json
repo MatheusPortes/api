@@ -13,6 +13,28 @@
   },
   "description": "Um arco que serviu como um instrumento extraordinário. Não é mais capaz de fazer pessoas dançarem.",
   "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Canção Sem Flechas",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano da Habilidade Elemental",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.24, 0.3, 0.36, 0.42, 0.48],
+          "bonus": true
+        },
+        {
+          "label": "Dano do Supremo",
+          "type": "dmg_percent",
+          "target": "elemental_burst",
+          "values": [0.24, 0.3, 0.36, 0.42, 0.48],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 42.401,
