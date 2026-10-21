@@ -13,6 +13,20 @@
   },
   "description": "Uma história fictícia de um grupo de 5 heróis em uma viagem de caça de dragões. Possui péssima caligrafia e está mal estruturada, porém transmite a importância de não cometer erros.",
   "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Herança",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATQ do novo personagem que entra em campo após trocar o portador",
+          "type": "atk_percent",
+          "values": [0.24, 0.3, 0.36, 0.42, 0.48],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 38.7413,
