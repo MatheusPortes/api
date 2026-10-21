@@ -7,7 +7,24 @@
   "passiveName": "Desejo da Brisa Florescente",
   "passiveDesc": "Ao lançar uma Habilidade Elemental, se obtém o desejo antigo da Flor do Vento, e o Ataque aumenta 16%/20%/24%/28%/32% por 6s.",
   "location": "Mondstadt",
-  "baseDamage": { "attack": 42, "subStat": 36 },
+  "baseDamage": {
+    "attack": 42,
+    "subStat": 36
+  },
   "description": "Um arco adornado com flores desconhecidas que carrega as esperanças de uma pessoa também desconhecida.",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Desejo da Brisa Florescente",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATQ após usar Habilidade Elemental",
+          "type": "atk_percent",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
