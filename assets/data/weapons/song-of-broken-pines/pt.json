@@ -5,7 +5,7 @@
   "baseAttack": 49,
   "subStat": "Bônus de Dano Físico",
   "passiveName": "Música de Rebelião da Bandeira",
-  "passiveDesc": "Uma parte do Concerto Milenar que flutua no vento. Aumenta o ATQ em 16%/20%/24%/28%/32%. Quando Ataque Normal ou Ataque Carregado atingir os inimigos, o personagem obterá um Símbolo dos Suspiros, que pode ser ativado uma vez a cada 0.3s. Possuir 4 Símbolos dos Sussurros faz consumir todos eles, e faz todos os personagens da equipe obterem o efeito de \"Concerto Milenar: Música do Levantar da Bandeira\" por 12s: A Vel. de Ataque Normal será aumentada em 12%/15%/18%/21%/24%, além disso o ATQ será aumentado em 20%/25%/30%/35%/40%. Dentro de 20s depois da ativação, não é possível obter os Símbolos dos Sussurros de novo. Entre todos os efeitos de vários valores, os efeitos do mesmo valor não podem ser acumulados.",
+  "passiveDesc": "Uma parte do Concerto Milenar que flutua no vento. Aumenta o ATQ em 16%/20%/24%/28%/32%. Quando Ataque Normal ou Ataque Carregado atingir os inimigos, o personagem obterá um Símbolo dos Sussurros, que pode ser ativado uma vez a cada 0.3s. Possuir 4 Símbolos dos Sussurros faz consumir todos eles, e faz todos os personagens próximos da equipe obterem o efeito de \"Concerto Milenar: Música do Levantar da Bandeira\" por 12s: A Vel. de Ataque Normal será aumentada em 12%/15%/18%/21%/24%, além disso o ATQ será aumentado em 20%/25%/30%/35%/40%. Dentro de 20s depois da ativação, não é possível obter os Símbolos dos Sussurros de novo. Entre os vários efeitos do Concerto Milenar, bônus do mesmo tipo não podem ser acumulados.",
   "location": "Mondstadt",
   "baseDamage": {
     "attack": 49,
@@ -13,6 +13,33 @@
   },
   "description": "Uma espada grande tão leve quanto o suspiro de grama na brisa, mas tão impiedosa para os corruptos quanto um tufão.",
   "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Música de Rebelião da Bandeira",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATQ do portador",
+          "type": "atk_percent",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "Música do Levantar da Bandeira — Velocidade de Ataque Normal da equipe próxima; bônus do mesmo tipo do Concerto não acumulam",
+          "type": "atk_speed_percent",
+          "target": "normal_attack",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Música do Levantar da Bandeira — ATQ da equipe próxima; bônus do mesmo tipo do Concerto não acumulam",
+          "type": "atk_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 49.1377,
