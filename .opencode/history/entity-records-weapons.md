@@ -1,5 +1,12 @@
 # Weapon Entity Records
 
+## 2026-10-21 — blade-of-atonement — complete (new EN/PT entity, progression and passive)
+
+- Seventh new ID after Blackmarrow agent `360264af` / delivery `be6916fc`. Released/craftable four-star Claymore2026-08-12 (Game8/Fandom); complete EN/PT44ATK/6%ATK/profile/passive/description. Yatta43.7349/.06 ATTACK_202→ATK2.2/CRITICAL_201→C2, ascension0/25.9/51.9/77.8/103.7/129.7/155.6 at20..90. No images/other data edited.
+- Root direct elemental_mastery [64,80,96,112,128] after any Elemental Reaction; separate atk_percent [.16,.20,.24,.28,.32] after Stellar Glimmer, bonus true. Reaction triggers are not reaction-scoped damage results; no reaction/target/conditional/stacks/skills. Universal stat contracts, consumer12s/off-field/activation, no new schema.
+- References inspected 2026-10-21: https://game8.co/games/Genshin-Impact/archives/613895 ; https://library.keqingmains.com/equipment/weapons/claymores#blade-of-atonement ; https://gi.yatta.moe/api/v2/en/weapon/12436 ; https://gi.yatta.moe/api/v2/pt/weapon/12436 (one provider); https://genshin-impact.fandom.com/api.php?action=parse&page=Blade_of_Atonement&prop=wikitext&format=json agree on identity/release/profile/ranks/stat results; Game8/Fandom crafting. HoYoWiki exact search shell. Bundle `/tmp/opencode/blade-of-atonement-sources/`, exact Game8 HTML retained; no conflict.
+- Exact source progression/curves/units/ranks/no erroneous reaction metadata/labels/JSON/parity/format/diff/identical delivery checked before commits; Node20 build/lint logs retain declaration/17 unrelated formatting failures. Agent then JSON-only delivery before Bloodsoaked Ruins; no push.
+
 ## 2026-10-21 — blackmarrow-lantern — complete (new EN/PT entity, progression and passive)
 
 - Sixth new ID after Chrysalis agent `f6e5583b` / delivery `b268021c`. Released four-star Catalyst2025-09-10 (Fandom), craftable (Game8/Fandom). Complete EN/PT profile41ATK/48EM/localized passive/description. Yatta41.0671/48, ATTACK_204→ATK2.4/CRITICAL_201→C2; ascension0/25.9/51.9/77.8/103.7/129.7/155.6 at20..90. No image/material cost/new fields or existing data edited.

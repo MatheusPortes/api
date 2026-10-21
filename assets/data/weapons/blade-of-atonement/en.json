@@ -1,0 +1,46 @@
+{
+  "name": "Blade of Atonement",
+  "type": "Claymore",
+  "rarity": 4,
+  "baseAttack": 44,
+  "subStat": "ATK",
+  "passiveName": "Repentance and Redemption",
+  "passiveDesc": "Triggering an Elemental Reaction increases the equipping character's Elemental Mastery by 64/80/96/112/128 for 12s, while triggering a Stellar Glimmer reaction increases their ATK by 16/20/24/28/32% for 12s. The aforementioned effects can trigger even when the character is not on the field.",
+  "location": "Crafting",
+  "baseDamage": { "attack": 44, "subStat": 60 },
+  "description": "A greatsword passed down by the Luchkin. It is said that only the bravest warrior is qualified to wield it.",
+  "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Repentance and Redemption",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Elemental Mastery after triggering an Elemental Reaction",
+          "type": "elemental_mastery",
+          "values": [64, 80, 96, 112, 128],
+          "bonus": true
+        },
+        {
+          "label": "ATK after triggering Stellar Glimmer",
+          "type": "atk_percent",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 43.7349, "attackPercent": 0.06 },
+    "growthCurves": { "baseAttack": "ATK 2.2", "attackPercent": "C2" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 25.9 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 51.9 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 77.8 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 103.7 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 129.7 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 155.6 } }
+    ]
+  }
+}
