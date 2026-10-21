@@ -7,7 +7,30 @@
   "passiveName": "Táticas de Invasão",
   "passiveDesc": "Ao derrotar um inimigo, aumenta a Veloc. Mov. e o ATQ em 12%/14%/16%/18%/20% por 15s.",
   "location": "Liyue",
-  "baseDamage": { "attack": 40, "subStat": 34 },
+  "baseDamage": {
+    "attack": 40,
+    "subStat": 34
+  },
   "description": "Um pingente de jade colocado junto entre duas pedras de jade.",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Táticas de Invasão",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Veloc. Mov. após derrotar um inimigo",
+          "type": "movement_speed_percent",
+          "values": [0.12, 0.14, 0.16, 0.18, 0.2],
+          "bonus": true
+        },
+        {
+          "label": "ATQ após derrotar um inimigo",
+          "type": "atk_percent",
+          "values": [0.12, 0.14, 0.16, 0.18, 0.2],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
