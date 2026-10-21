@@ -13,6 +13,34 @@
   },
   "description": "Um bastão vermelho utilizado em um antigo ritual que não se pratica há muito tempo.",
   "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Liberdade da Borboleta Vermelha",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Vida",
+          "type": "hp_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "ATQ baseado na Vida Máxima do portador",
+          "type": "flat_atk",
+          "values": [0.008, 0.01, 0.012, 0.014, 0.016],
+          "conditional": { "origin": "character", "attribute": "hp" },
+          "bonus": true
+        },
+        {
+          "label": "ATQ adicional baseado na Vida Máxima do portador enquanto abaixo de 50% de Vida",
+          "type": "flat_atk",
+          "values": [0.01, 0.012, 0.014, 0.016, 0.018],
+          "conditional": { "origin": "character", "attribute": "hp" },
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 45.9364,
