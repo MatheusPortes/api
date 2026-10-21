@@ -9,6 +9,20 @@
   "location": "Akitsu Kimodameshi Event",
   "ascensionMaterial": "narukami",
   "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Kaidan: Rainfall Earthbinder",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Wearer DMG to the opponent affected by Cursed Parasol",
+          "type": "dmg_percent",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 42.401,

@@ -5,7 +5,7 @@
   "baseAttack": 42,
   "subStat": "Proficiência Elemental",
   "passiveName": "Épico: Chuva do Atrelador da Terra",
-  "passiveDesc": "Ao atingir os inimigos com um ataque, aplicará o estado de \"Assombração do Guarda-Chuva\" em um inimigo por 10s. Esse efeito pode ser desencadeado uma vez a cada 15s; caso esse inimigo seja derrotado na duração do efeito, redefinirá o tempo de recarga dele. Os inimigos sob o estado “Assombração do Guarda-Chuva” receberão Dano aumentado em 16%/20%/24%/28%/32% de personagens que tenham esta arma equipada.",
+  "passiveDesc": "Ao atingir os inimigos com um ataque, aplicará o estado de \"Assombração do Guarda-Chuva\" em um inimigo por 10s. Esse efeito pode ser desencadeado uma vez a cada 15s; caso esse inimigo seja derrotado na duração do efeito, redefinirá o tempo de recarga dele. Personagens com esta arma equipada causam 16%/20%/24%/28%/32% a mais de Dano contra inimigos no estado \"Assombração do Guarda-Chuva\".",
   "location": "Obtido no Evento \"Akitsu Kimodameshi\" na versão 3.3",
   "baseDamage": {
     "attack": 42,
@@ -13,6 +13,20 @@
   },
   "description": "Um guarda-chuva especial feito de papel e óleo. Apesar de longas viagens poderem fazer alguém se acostumar com o vento e a chuva, talvez ainda exista razão para admirar uma cena chuvosa sob esse guarda-chuva.",
   "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Épico: Chuva do Atrelador da Terra",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano do portador contra o inimigo afetado por Assombração do Guarda-Chuva",
+          "type": "dmg_percent",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 42.401,
