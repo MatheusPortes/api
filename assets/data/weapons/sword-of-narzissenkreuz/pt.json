@@ -7,7 +7,28 @@
   "passiveName": "Espada do Herói",
   "passiveDesc": "Quando o personagem com esta arma equipada não possui um Arkhe: quando Ataques Normais, Ataques Carregados ou Ataques Imersivos acertam, uma explosão de energia Pneuma ou Ousia será liberada, causando 160%/200%/240%/280%/320% do ATQ como Dano. Este efeito pode ser ativado uma vez a cada 12 segundos. O tipo de explosão de energia é determinado pelo tipo atual da Espada da Cruz de Narcissus.",
   "location": "Série de Missões de Mundo - Pistas de Narcissus",
-  "baseDamage": { "attack": 42, "subStat": 90 },
+  "baseDamage": {
+    "attack": 42,
+    "subStat": 90
+  },
   "description": "Uma espada cujo poder desapareceu quando a história chegou ao fim. Agora, ela partirá em uma nova jornada com o poder que permanece dentro dela, o qual comemora um certo grande sonho.",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "calculation": {
+    "skills": [
+      {
+        "label": "Espada do Herói — explosão Pneuma ou Ousia, portador sem Arkhe",
+        "refinementLevels": [1, 2, 3, 4, 5],
+        "scalings": [
+          {
+            "type": "atk_percent",
+            "values": [1.6, 2, 2.4, 2.8, 3.2],
+            "conditional": {
+              "origin": "character",
+              "attribute": "atk"
+            }
+          }
+        ]
+      }
+    ]
+  }
 }
