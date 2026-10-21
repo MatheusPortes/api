@@ -5,8 +5,77 @@
   "baseAttack": 42,
   "subStat": "CRIT DMG",
   "passiveName": "Debut",
-  "passiveDesc": "When the character takes the field, they gain a random theme song for 10s:\nRecitative: Increases Base ATK by 60%\nInterlude: Elemental Mastery is increased by 240\nAria: Increases all Elemental DMG by 48%\nCan only occur once every 30s",
+  "passiveDesc": "When the character takes the field, they will gain a random theme song for 10s. This can only occur once every 30s. Recitative: ATK is increased by 60/75/90/105/120%. Aria: Increases all Elemental DMG by 48/60/72/84/96%. Interlude: Elemental Mastery is increased by 240/300/360/420/480.",
   "location": "Gacha",
   "ascensionMaterial": "boreal",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Debut — apply only the randomly selected theme song",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Recitative only — ATK (exclusive song)",
+          "type": "atk_percent",
+          "values": [0.6, 0.75, 0.9, 1.05, 1.2],
+          "bonus": true
+        },
+        {
+          "label": "Aria only — Geo DMG (exclusive song)",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.48, 0.6, 0.72, 0.84, 0.96],
+          "bonus": true
+        },
+        {
+          "label": "Aria only — Anemo DMG (exclusive song)",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.48, 0.6, 0.72, 0.84, 0.96],
+          "bonus": true
+        },
+        {
+          "label": "Aria only — Cryo DMG (exclusive song)",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.48, 0.6, 0.72, 0.84, 0.96],
+          "bonus": true
+        },
+        {
+          "label": "Aria only — Dendro DMG (exclusive song)",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.48, 0.6, 0.72, 0.84, 0.96],
+          "bonus": true
+        },
+        {
+          "label": "Aria only — Electro DMG (exclusive song)",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.48, 0.6, 0.72, 0.84, 0.96],
+          "bonus": true
+        },
+        {
+          "label": "Aria only — Hydro DMG (exclusive song)",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.48, 0.6, 0.72, 0.84, 0.96],
+          "bonus": true
+        },
+        {
+          "label": "Aria only — Pyro DMG (exclusive song)",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.48, 0.6, 0.72, 0.84, 0.96],
+          "bonus": true
+        },
+        {
+          "label": "Interlude only — Elemental Mastery (exclusive song)",
+          "type": "elemental_mastery",
+          "values": [240, 300, 360, 420, 480],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }

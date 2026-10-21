@@ -7,7 +7,79 @@
   "passiveName": "Abertura",
   "passiveDesc": "Ao entrar no campo de batalha, o personagem ganha uma música temática aleatória por 10s. Pode ser ativada uma vez a cada 30s. Recitativa: O ATQ é aumentado em 60%/75%/90%/105%/120%; Aria: Aumenta todos os Danos Elementais em 48%/60%/72%/84%/96%; Interlúdio: A Proficiência Elemental é aumentada em 240/300/360/420/480.",
   "location": "Mondstadt",
-  "baseDamage": { "attack": 42, "subStat": 120 },
+  "baseDamage": {
+    "attack": 42,
+    "subStat": 120
+  },
   "description": "Um caderno pesado cheio de partituras. Apesar de já estar bastante danificado, ainda há muito poder que pode ser encontrado nas palavras escritas.",
-  "weapon_type": "CATALYST"
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Abertura — aplicar apenas a música temática sorteada",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Apenas Recitativa — ATQ (música exclusiva)",
+          "type": "atk_percent",
+          "values": [0.6, 0.75, 0.9, 1.05, 1.2],
+          "bonus": true
+        },
+        {
+          "label": "Apenas Aria — Dano Geo (música exclusiva)",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.48, 0.6, 0.72, 0.84, 0.96],
+          "bonus": true
+        },
+        {
+          "label": "Apenas Aria — Dano Anemo (música exclusiva)",
+          "type": "elemental_dmg_percent",
+          "element": "ANEMO",
+          "values": [0.48, 0.6, 0.72, 0.84, 0.96],
+          "bonus": true
+        },
+        {
+          "label": "Apenas Aria — Dano Cryo (música exclusiva)",
+          "type": "elemental_dmg_percent",
+          "element": "CRYO",
+          "values": [0.48, 0.6, 0.72, 0.84, 0.96],
+          "bonus": true
+        },
+        {
+          "label": "Apenas Aria — Dano Dendro (música exclusiva)",
+          "type": "elemental_dmg_percent",
+          "element": "DENDRO",
+          "values": [0.48, 0.6, 0.72, 0.84, 0.96],
+          "bonus": true
+        },
+        {
+          "label": "Apenas Aria — Dano Electro (música exclusiva)",
+          "type": "elemental_dmg_percent",
+          "element": "ELECTRO",
+          "values": [0.48, 0.6, 0.72, 0.84, 0.96],
+          "bonus": true
+        },
+        {
+          "label": "Apenas Aria — Dano Hydro (música exclusiva)",
+          "type": "elemental_dmg_percent",
+          "element": "HYDRO",
+          "values": [0.48, 0.6, 0.72, 0.84, 0.96],
+          "bonus": true
+        },
+        {
+          "label": "Apenas Aria — Dano Pyro (música exclusiva)",
+          "type": "elemental_dmg_percent",
+          "element": "PYRO",
+          "values": [0.48, 0.6, 0.72, 0.84, 0.96],
+          "bonus": true
+        },
+        {
+          "label": "Apenas Interlúdio — Proficiência Elemental (música exclusiva)",
+          "type": "elemental_mastery",
+          "values": [240, 300, 360, 420, 480],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
