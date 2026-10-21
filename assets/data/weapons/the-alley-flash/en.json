@@ -2,11 +2,25 @@
   "name": "The Alley Flash",
   "type": "Sword",
   "rarity": 4,
-  "baseAttack": 44,
-  "subStat": "CRIT Rate",
+  "baseAttack": 45,
+  "subStat": "Elemental Mastery",
   "passiveName": "Itinerant Hero",
-  "passiveDesc": "Continuosly sprinting for at least 1s increases ATK by 28% for 6s. This effect cannot stack.",
+  "passiveDesc": "Increases DMG dealt by the character equipping this weapon by 12/15/18/21/24%. Taking DMG disables this effect for 5s.",
   "location": "Gacha",
   "ascensionMaterial": "decarabian",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Itinerant Hero",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Wearer DMG while the effect is enabled; disabled for 5s after taking DMG",
+          "type": "dmg_percent",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
