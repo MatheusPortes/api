@@ -9,6 +9,48 @@
   "location": "Gacha",
   "ascensionMaterial": "distant-sea",
   "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Brocade Bloom, Shrine Sword",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Normal Attack DMG",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "Elemental Skill DMG",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.24, 0.3, 0.36, 0.42, 0.48],
+          "bonus": true
+        },
+        {
+          "label": "Additional Normal Attack DMG after a nearby active character deals Geo DMG",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "Additional Elemental Skill DMG after a nearby active character deals Geo DMG",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.24, 0.3, 0.36, 0.42, 0.48],
+          "bonus": true
+        },
+        {
+          "label": "Wearer DEF",
+          "type": "def_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 44.3358,
