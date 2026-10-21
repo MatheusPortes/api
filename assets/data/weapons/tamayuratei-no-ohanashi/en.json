@@ -13,6 +13,26 @@
   },
   "description": "Once upon a time, there was a youkai that roamed Inazuma in the form of a lantern's flame. This must once have been one of its vessels.",
   "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Busybody's Running Light",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATK after using an Elemental Skill",
+          "type": "atk_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "Movement SPD after using an Elemental Skill",
+          "type": "movement_speed_percent",
+          "values": [0.1, 0.1, 0.1, 0.1, 0.1],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 43.7349,
