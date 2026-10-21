@@ -8,5 +8,47 @@
   "passiveDesc": "Normal Attack DMG is increased by 16/20/24/28/32% and Elemental Skill DMG is increased by 24/30/36/42/48%. After a nearby active character deals Geo DMG, the aforementioned effects increase by 100% for 15s. Additionally, the wielder's DEF is increased by 20/25/30/35/40%.",
   "location": "Gacha",
   "ascensionMaterial": "distant-sea",
-  "weapon_type": "SWORD"
+  "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Brocade Bloom, Shrine Sword",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Normal Attack DMG",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "Elemental Skill DMG",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.24, 0.3, 0.36, 0.42, 0.48],
+          "bonus": true
+        },
+        {
+          "label": "Additional Normal Attack DMG after a nearby active character deals Geo DMG",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "Additional Elemental Skill DMG after a nearby active character deals Geo DMG",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.24, 0.3, 0.36, 0.42, 0.48],
+          "bonus": true
+        },
+        {
+          "label": "Wearer DEF",
+          "type": "def_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
