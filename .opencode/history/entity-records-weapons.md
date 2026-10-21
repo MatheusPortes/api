@@ -1,5 +1,12 @@
 # Weapon Entity Records
 
+## 2026-10-21 — athame-artis — complete (new EN/PT entity, progression and passive)
+
+- Third new ID after Angelos agent `ea223d0c` / delivery `f404212b`. Released five-star Sword2025-12-03 (Game8/Fandom), profile46ATK/7.2%CR/Event Wish/localized description. Yatta progression45.9364/.072, ATTACK_301→ATK3.1/CRITICAL_301→C3; ascension0..186.7 at20..90. Native new complete EN/PT records only; no images or unrelated data.
+- Burst crit_dmg [.16,.20,.24,.28,.32] remains separate from wearer ATK [.20,.25,.30,.35,.40] and other-nearby-active-member ATK [.16,.20,.24,.28,.32]. Distinct Hexerei additions are respective ATK bases×.75: [.15,.1875,.225,.2625,.30] and [.12,.15,.18,.21,.24]. No75% increase to the unconditional Burst CRIT grant. All bonus true; target only Burst CRIT DMG, no conditional/stacks/skills. Universal stat/benefiting target plus fixed-source-bonus-increase (same source75% semantics as reviewed Thousand Blazing Suns), consumer routes recipients/3s/Hexerei/off-field eligibility. No new schema.
+- References inspected 2026-10-21: https://game8.co/games/Genshin-Impact/archives/567340 ; https://library.keqingmains.com/equipment/weapons/swords#athame-artis ; https://gi.yatta.moe/api/v2/en/weapon/11518 ; https://gi.yatta.moe/api/v2/pt/weapon/11518 (one provider); https://genshin-impact.fandom.com/api.php?action=parse&page=Athame_Artis&prop=wikitext&format=json agree on release/identity/profile/ranks/Burst CRIT DMG/recipient distinction/75% ATK amplification. HoYoWiki exact search shell only. Bundle `/tmp/opencode/athame-artis-sources/` includes exact Game8 HTML; no conflict.
+- Exact source progression/curve existence/profile/rank arrays/75% derivations/scopes/labels/JSON/parity/focused format/diff/identical new delivery checked before commits. Node20 build/lint logs retain declaration/17 unrelated formatting failures. Agent then JSON-only delivery before Azurelight; no push.
+
 ## 2026-10-21 — angelos-heptades — complete (new EN/PT entity, progression and passive)
 
 - Second new-entity ID after Teaspoon agent `db01e5cc` / delivery `b064d36a`. Released five-star Catalyst2026-05-20 corroborated Game8/Fandom. Complete localized EN/PT profile49ATK/3.6%ATK/Event Wish/passive/description and Yatta progression49.1377/.036, ATTACK_303→ATK3.3/CRITICAL_301→C3, ascension0..186.7 at20..90. No images/material catalog/progression costs or existing fields/locales edited.
