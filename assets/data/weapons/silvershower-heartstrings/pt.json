@@ -13,6 +13,39 @@
   },
   "description": "Um arco espiritual lendário. Não importa se nos palcos ou nas batalhas, ele pode tocar facilmente o coração de todos os seus ouvintes.",
   "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Melodia de Dryas",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Vida Máxima com 1 acúmulo de Remédio (nível exclusivo)",
+          "type": "hp_percent",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Vida Máxima com 2 acúmulos de Remédio (nível exclusivo)",
+          "type": "hp_percent",
+          "values": [0.24, 0.3, 0.36, 0.42, 0.48],
+          "bonus": true
+        },
+        {
+          "label": "Vida Máxima com 3 acúmulos de Remédio (nível exclusivo)",
+          "type": "hp_percent",
+          "values": [0.4, 0.5, 0.6, 0.7, 0.8],
+          "bonus": true
+        },
+        {
+          "label": "Taxa CRIT do Supremo com 3 acúmulos de Remédio; persiste por 4s após ficar abaixo de 3",
+          "type": "crit_rate",
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "target": "elemental_burst",
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 44.3358,
