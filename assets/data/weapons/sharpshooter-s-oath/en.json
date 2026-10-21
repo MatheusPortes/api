@@ -8,5 +8,19 @@
   "passiveDesc": "Increases DMG against weak spots by 24/30/36/42/48%.",
   "location": "Gacha",
   "ascensionMaterial": "boreal",
-  "weapon_type": "BOW"
+  "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Precise",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "DMG against weak spots",
+          "type": "dmg_percent",
+          "values": [0.24, 0.3, 0.36, 0.42, 0.48],
+          "bonus": true
+        }
+      ]
+    }
+  ]
 }
