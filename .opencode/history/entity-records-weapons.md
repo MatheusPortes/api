@@ -1,5 +1,12 @@
 # Weapon Entity Records
 
+## 2026-10-21 — bloodsoaked-ruins — complete (new EN/PT entity, progression and passive)
+
+- Eighth new ID after Blade agent `8f66b29e` / delivery `b44221c9`. Released five-star Polearm2025-09-30 (Game8/Fandom); complete EN/PT48ATK/4.8%CR/Event Wish/description. Yatta47.537/.048 ATTACK_302→ATK3.2/CRITICAL_301→C3, ascension0..186.7 at20..90. No images/other records changed.
+- Reaction-scoped dmg_percent LUNAR_CHARGED [.36,.48,.60,.72,.84] after Burst, separate global crit_dmg [.28,.35,.42,.49,.56] after Lunar-Charged, bonus true/no target/conditional/stacks/skills. Reuse reaction-scoped-damage-bonus/universal stat; reaction does not scope CRIT stat, Burst is activation. Fixed Energy12..16 and14s limit remain consumer-only-fixed-energy-restoration;3.5s/6s/activation consumer state. No new schema.
+- References inspected 2026-10-21: https://game8.co/games/Genshin-Impact/archives/546785 ; https://library.keqingmains.com/equipment/weapons/polearms#bloodsoaked-ruins ; https://gi.yatta.moe/api/v2/en/weapon/13516 ; https://gi.yatta.moe/api/v2/pt/weapon/13516 (one provider); https://genshin-impact.fandom.com/api.php?action=parse&page=Bloodsoaked_Ruins&prop=wikitext&format=json agree on identity/release/profile/ranks/usage. Fandom infobox ID193516 differs from Yatta13516; provider IDs are not served and identity is cross-validated by name/type/stats/passive, no upstream-ID import or official correction. HoYoWiki exact search shell. Bundle `/tmp/opencode/bloodsoaked-ruins-sources/`, exact Game8 HTML retained.
+- Exact structured progression/curves/ratios/reaction/stat distinction/labels/JSON/parity/format/diff/identical delivery checked before commits; Node20 build/lint logs retain declaration/17 unrelated formatting failures. Agent then JSON-only delivery before Breezeborne Refrain; no push.
+
 ## 2026-10-21 — blade-of-atonement — complete (new EN/PT entity, progression and passive)
 
 - Seventh new ID after Blackmarrow agent `360264af` / delivery `be6916fc`. Released/craftable four-star Claymore2026-08-12 (Game8/Fandom); complete EN/PT44ATK/6%ATK/profile/passive/description. Yatta43.7349/.06 ATTACK_202→ATK2.2/CRITICAL_201→C2, ascension0/25.9/51.9/77.8/103.7/129.7/155.6 at20..90. No images/other data edited.
