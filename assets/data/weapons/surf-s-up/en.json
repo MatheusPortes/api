@@ -13,6 +13,28 @@
   },
   "description": "A commemorative item originally reserved for the champion of the \"First All-Tribe Surfing Championship.\" Since said tournament is currently in the preparatory stage, the prize is in temporary storage at the Leisurely Puffer, with the shop owner as its custodian.",
   "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Aqua Remembrance",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Max HP",
+          "type": "hp_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "Normal Attack DMG per Scorching Summer stack",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true,
+          "accumulations": 4
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 44.3358,
