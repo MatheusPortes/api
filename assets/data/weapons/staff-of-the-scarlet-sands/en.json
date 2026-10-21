@@ -1,12 +1,41 @@
 {
-  "name": "Moonpiercer",
+  "name": "Staff of the Scarlet Sands",
   "type": "Polearm",
   "rarity": 5,
   "baseAttack": 44,
   "subStat": "CRIT Rate",
   "passiveName": "Heat Haze at Horizon's End",
-  "passiveDesc": "The equipping character gains 52% of their Elemental Mastery as bonus ATK. When an Elemental Skill hits opponents, the Dream of the Scarlet Sands effect will be gained for 10s: The equipping character will gain 28% of their Elemental Mastery as bonus ATK. Max 3 stacks.",
+  "passiveDesc": "The equipping character gains 52/65/78/91/104% of their Elemental Mastery as bonus ATK. When an Elemental Skill hits opponents, the Dream of the Scarlet Sands effect will be gained for 10s: The equipping character will gain 28/35/42/49/56% of their Elemental Mastery as bonus ATK. Max 3 stacks.",
   "location": "Gacha",
   "ascensionMaterial": "oasis",
-  "weapon_type": "POLEARM"
+  "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Heat Haze at Horizon's End",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATK based on wearer Elemental Mastery",
+          "type": "flat_atk",
+          "values": [0.52, 0.65, 0.78, 0.91, 1.04],
+          "conditional": {
+            "origin": "character",
+            "attribute": "elemental_mastery"
+          },
+          "bonus": true
+        },
+        {
+          "label": "Dream of the Scarlet Sands — ATK per stack based on wearer Elemental Mastery",
+          "type": "flat_atk",
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "conditional": {
+            "origin": "character",
+            "attribute": "elemental_mastery"
+          },
+          "bonus": true,
+          "accumulations": 3
+        }
+      ]
+    }
+  ]
 }
