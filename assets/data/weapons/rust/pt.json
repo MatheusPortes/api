@@ -13,6 +13,28 @@
   },
   "description": "Um arco de ferro completamente enferrujado. Uma pessoa comum não teria forças para sequer levantá-lo, muito menos dispará-lo.",
   "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Disparo Rápido",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Bônus de Dano do Ataque Normal",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.4, 0.5, 0.6, 0.7, 0.8],
+          "bonus": true
+        },
+        {
+          "label": "Penalidade aditiva de Dano do Ataque Carregado",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [-0.1, -0.1, -0.1, -0.1, -0.1],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 42.401,
