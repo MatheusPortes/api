@@ -9,6 +9,20 @@
   "location": "Invitation to Windblume (v1.4) Event Shop",
   "ascensionMaterial": "dandelion",
   "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Windblume Wish",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATK after using an Elemental Skill",
+          "type": "atk_percent",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 42.401,

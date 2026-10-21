@@ -13,6 +13,20 @@
   },
   "description": "Um arco adornado com flores desconhecidas que carrega as esperanças de uma pessoa também desconhecida.",
   "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Desejo da Brisa Florescente",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATQ após usar Habilidade Elemental",
+          "type": "atk_percent",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 42.401,
