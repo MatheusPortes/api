@@ -13,6 +13,22 @@
   },
   "description": "A longsword made of bone that has only grown harder after being hit and swung countless times. It is said that this was the hero Wanjiru's reliable weapon.",
   "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Trapper's Pride",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Normal Attack attached DMG after Sprint or Alternate Sprint",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "conditional": { "origin": "character", "attribute": "atk" },
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 43.7349,

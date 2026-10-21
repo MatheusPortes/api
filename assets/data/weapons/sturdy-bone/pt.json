@@ -13,6 +13,22 @@
   },
   "description": "Uma espada longa feita de osso que se tornou ainda mais resistente após ter sido golpeada e balançada inúmeras vezes. Diz-se que esta era a arma fiel do herói Wanjiru.",
   "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Orgulho do Armador",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano agregado ao Ataque Normal após Correr ou usar Habilidade que substitui Correr",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "conditional": { "origin": "character", "attribute": "atk" },
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 43.7349,
