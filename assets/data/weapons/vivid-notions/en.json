@@ -13,6 +13,34 @@
   },
   "description": "A trophy made from gemstones from the Collective of Plenty and crystals from the Flower-Feather Clan. It is said to have once belonged to a legendary wrestler.",
   "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Falling Rainbow's Wish",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATK",
+          "type": "atk_percent",
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "bonus": true
+        },
+        {
+          "label": "Dawn's First Hue — Plunging Attack CRIT DMG after using a Plunging Attack",
+          "type": "crit_dmg",
+          "target": "plunging_attack",
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "bonus": true
+        },
+        {
+          "label": "Twilight's Splendor — Plunging Attack CRIT DMG after using Skill or Burst",
+          "type": "crit_dmg",
+          "target": "plunging_attack",
+          "values": [0.4, 0.5, 0.6, 0.7, 0.8],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 47.537,

@@ -13,6 +13,34 @@
   },
   "description": "Um troféu feito de gemas do Coletivo da Fartura e cristais do Clã das Plumas de Flores. Dizem que pertenceu a um lendário lutador.",
   "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Desejo do Arco-Íris Cadente",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATQ",
+          "type": "atk_percent",
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "bonus": true
+        },
+        {
+          "label": "Cores do Crepúsculo — Dano CRIT de Ataque Imersivo após usar Ataque Imersivo",
+          "type": "crit_dmg",
+          "target": "plunging_attack",
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "bonus": true
+        },
+        {
+          "label": "Esplendor do Crepúsculo — Dano CRIT de Ataque Imersivo após usar Habilidade ou Supremo",
+          "type": "crit_dmg",
+          "target": "plunging_attack",
+          "values": [0.4, 0.5, 0.6, 0.7, 0.8],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 47.537,
