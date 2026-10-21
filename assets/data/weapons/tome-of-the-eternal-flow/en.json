@@ -9,6 +9,28 @@
   "location": "Gacha",
   "ascensionMaterial": "pure-sacred-dewdrop",
   "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Aeon Wave",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "HP",
+          "type": "hp_percent",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "Charged Attack DMG per stack after current HP changes",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.14, 0.18, 0.22, 0.26, 0.3],
+          "bonus": true,
+          "accumulations": 3
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 44.3358,

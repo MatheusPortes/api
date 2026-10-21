@@ -13,6 +13,28 @@
   },
   "description": "Um manual passado de geração em geração num centro de treinamento submarino. Hoje, ninguém sabe da sua existência.",
   "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Ondas de Eras Passadas",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Vida",
+          "type": "hp_percent",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "Dano de Ataque Carregado por acúmulo após mudanças na Vida atual",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.14, 0.18, 0.22, 0.26, 0.3],
+          "bonus": true,
+          "accumulations": 3
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 44.3358,
