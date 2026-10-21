@@ -1,0 +1,47 @@
+{
+  "name": "Bloodsoaked Ruins",
+  "type": "Polearm",
+  "rarity": 5,
+  "baseAttack": 48,
+  "subStat": "CRIT Rate",
+  "passiveName": "Mournful Tribute",
+  "passiveDesc": "For 3.5s after using an Elemental Burst, the equipping character's Lunar-Charged DMG dealt to opponents is increased by 36/48/60/72/84%. Additionally, after triggering a Lunar-Charged reaction, the equipping character will gain Requiem of Ruin: CRIT DMG is increased by 28/35/42/49/56% for 6s. They will also regain 12/13/14/15/16 Elemental Energy. Elemental Energy can be restored this way once every 14s.",
+  "location": "Event Wish Exclusive",
+  "baseDamage": { "attack": 48, "subStat": 48 },
+  "description": "A long spear tainted black by unrelenting battle, it shines with an ethereal glow beneath the ghostly blue light of lantern-fire.",
+  "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Mournful Tribute",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Lunar-Charged DMG after Burst use",
+          "type": "dmg_percent",
+          "reaction": ["LUNAR_CHARGED"],
+          "values": [0.36, 0.48, 0.6, 0.72, 0.84],
+          "bonus": true
+        },
+        {
+          "label": "CRIT DMG after triggering Lunar-Charged",
+          "type": "crit_dmg",
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 47.537, "critRate": 0.048 },
+    "growthCurves": { "baseAttack": "ATK 3.2", "critRate": "C3" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 31.1 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 62.2 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 93.4 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 124.5 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 155.6 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 186.7 } }
+    ]
+  }
+}
