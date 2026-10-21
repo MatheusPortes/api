@@ -1,0 +1,46 @@
+{
+  "name": "Lâmina da Redenção",
+  "type": "Espadão",
+  "rarity": 4,
+  "baseAttack": 44,
+  "subStat": "Porcentagem de ATQ",
+  "passiveName": "Arrependimento e Redenção",
+  "passiveDesc": "Nos 12s após desencadear uma Reação Elemental, aumenta a Proficiência Elemental do portador em 64/80/96/112/128. Nos 12s após desencadear uma reação de Brilho Estelar, aumenta o ATQ do portador em 16%/20%/24%/28%/32%. Esses efeitos podem ser desencadeados, mesmo quando o portador não é o personagem ativo.",
+  "location": "Forjamento",
+  "baseDamage": { "attack": 44, "subStat": 60 },
+  "description": "Um Espadão passado de geração em geração dos Luchkins. Dizem que só um guerreiro corajoso é capaz de empunhá-lo.",
+  "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Arrependimento e Redenção",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Proficiência Elemental após desencadear Reação Elemental",
+          "type": "elemental_mastery",
+          "values": [64, 80, 96, 112, 128],
+          "bonus": true
+        },
+        {
+          "label": "ATQ após desencadear Brilho Estelar",
+          "type": "atk_percent",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 43.7349, "attackPercent": 0.06 },
+    "growthCurves": { "baseAttack": "ATK 2.2", "attackPercent": "C2" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 25.9 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 51.9 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 77.8 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 103.7 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 129.7 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 155.6 } }
+    ]
+  }
+}
