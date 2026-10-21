@@ -10,7 +10,23 @@
     "subStat": 102
   },
   "description": "Este poderoso arco pertencia a um grande arqueiro. Contudo, emana um aroma bastante forte, o tornando inadequado para caças.",
+  "passiveName": "Precisão",
+  "passiveDesc": "Aumenta o Dano contra pontos fracos em 24/30/36/42/48%.",
   "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Precisão",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano contra pontos fracos",
+          "type": "dmg_percent",
+          "values": [0.24, 0.3, 0.36, 0.42, 0.48],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 38.7413,
