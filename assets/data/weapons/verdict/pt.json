@@ -5,7 +5,7 @@
   "baseAttack": 48,
   "subStat": "Taxa Crítica",
   "passiveName": "Juramento dos Reinos e Crepúsculos",
-  "passiveDesc": "Aumenta o ATQ em 20%/25%/30%/35%/40%. Quando o personagem da equipe obtém um Fragmento gerado por Cristalização, concede ao personagem que está com essa arma equipada 1 \"Selo do Juramento\", aumentando o Dano causado por sua Habilidade Elemental em 18%/22.5%/27%/31.5%/36%. O Selo do Juramento dura 15s e pode ser acumulado até duas vezes. Todos os Selos do Juramento serão removidos 0.2s após o personagem que está com essa arma equipada causar Dano de Habilidade Elemental.",
+  "passiveDesc": "Aumenta o ATQ em 20%/25%/30%/35%/40%. Quando o personagem da equipe obtém um Fragmento gerado por Cristalização ou desencadeia uma Reação de Cristalização Lunar, concede ao personagem que está com essa arma equipada 1 \"Selo do Juramento\", aumentando o Dano causado por sua Habilidade Elemental em 18%/22.5%/27%/31.5%/36%. O Selo do Juramento dura 15s e pode ser acumulado até duas vezes. Todos os Selos do Juramento serão removidos 0.2s após o personagem que está com essa arma equipada causar Dano de Habilidade Elemental. É possível obter 1 Selo do Juramento por segundo através de Cristalização Lunar.",
   "location": "Oração de Evento de Arma",
   "baseDamage": {
     "attack": 48,
@@ -13,6 +13,28 @@
   },
   "description": "Uma espada usada por uma jovem donzela que abandonou o nome de sua família, manchada com o sangue de inimigos e de familiares.",
   "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Juramento dos Reinos e Crepúsculos",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATQ",
+          "type": "atk_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "Dano da Habilidade Elemental por Selo do Juramento",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.18, 0.225, 0.27, 0.315, 0.36],
+          "bonus": true,
+          "accumulations": 2
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 47.537,

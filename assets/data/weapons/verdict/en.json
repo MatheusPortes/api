@@ -5,10 +5,32 @@
   "baseAttack": 48,
   "subStat": "CRIT Rate",
   "passiveName": "Many Oaths of Dawn and Dusk",
-  "passiveDesc": "Increases ATK by 20/25/30/35/40%. When characters in your party obtain Elemental Shards from Crystallize reactions, the equipping character will gain 1 Seal, increasing Elemental Skill DMG by 18/22.5/27/31.5/36%. The Seal lasts for 15s, and the equipped may have up to 2 Seals at once. All of the equipper's Seals will disappear 0.2s after their Elemental Skill deals DMG.",
+  "passiveDesc": "Increases ATK by 20/25/30/35/40%. When party members obtain Elemental Shards from Crystallize or trigger Lunar-Crystallize reactions, the equipping character will gain 1 Seal, increasing Elemental Skill DMG by 18/22.5/27/31.5/36%. The Seal lasts for 15s, and the equipper may have up to 2 Seals at once. All of the equipper's Seals will disappear 0.2s after their Elemental Skill deals DMG. Up to 1 Seal may be obtained every second through the Lunar-Crystallize reaction.",
   "location": "Gacha",
   "ascensionMaterial": "ancient-chord",
   "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Many Oaths of Dawn and Dusk",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATK",
+          "type": "atk_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "Elemental Skill DMG per Seal",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.18, 0.225, 0.27, 0.315, 0.36],
+          "bonus": true,
+          "accumulations": 2
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 47.537,
