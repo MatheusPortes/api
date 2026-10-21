@@ -13,6 +13,20 @@
   },
   "description": "Um arco longo com uma aparência estranha, semelhante a uma criatura marinha, que parece não emitir som quando a corda é tensionada.",
   "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Tremor Marinho",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano após o portador ser curado",
+          "type": "dmg_percent",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 42.401,
