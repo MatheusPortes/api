@@ -13,6 +13,26 @@
   },
   "description": "Uma grande espada que foi usada pelo Cavaleiro Lobo. Originalmente era apenas uma lâmina de ferro pesada que foi dado por um ferreiro da cidade. No entanto, recebeu poderes lendários por sua amizade com os lobos.",
   "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Caçador Selvagem",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATQ do portador",
+          "type": "atk_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "ATQ de todos os membros da equipe após atingir oponente com Vida inferior a 30%, incluindo o portador",
+          "type": "atk_percent",
+          "values": [0.4, 0.5, 0.6, 0.7, 0.8],
+          "bonus": true
+        }
+      ]
+    }
+  ],
   "calculation": {
     "initialStats": {
       "baseAttack": 45.9364,
