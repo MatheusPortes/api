@@ -1,0 +1,69 @@
+{
+  "name": "Coração Congelado",
+  "type": "Catalisador",
+  "rarity": 4,
+  "baseAttack": 42,
+  "subStat": "Dano CRIT",
+  "passiveName": "Legado Secreto da Geada",
+  "passiveDesc": "O portador obtém Acordo de Sangue Prateado Contaminado: aumenta a Proficiência Elemental do portador em 24/30/36/42/48 para cada personagem Cryo da equipe. Aumenta o ATQ do portador em 4.8/6/7.2/8.4/9.6% para cada personagem Electro da equipe. É possível que até 4 personagens Cryo ou Electro forneçam esse efeito.\nBrilho Reluzente: Brilho Estelar: o efeito Acordo de Sangue Prateado Contaminado é alterado para: para cada personagem Cryo ou Electro da equipe, aumenta a Proficiência Elemental do portador em 20/25/30/35/40 e o Dano de reações de Brilho Estelar do portador em 6/7.5/9/10.5/12%.",
+  "location": "Exclusivo de Oração de Evento",
+  "baseDamage": { "attack": 42, "subStat": 120 },
+  "description": "Um objeto ritualístico feito de gelo e neve puros. Dizem que até quinhentos anos atrás, eram usados em coroações dos reis Snegoviks.",
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Legado Secreto da Geada: Acordo de Sangue Prateado Contaminado comum; substituído por Brilho Reluzente: Brilho Estelar",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Proficiência Elemental comum do portador por membro Cryo, incluindo portador elegível; contagens Cryo e Electro somam até quatro",
+          "type": "elemental_mastery",
+          "values": [24, 30, 36, 42, 48],
+          "accumulations": 4,
+          "bonus": true
+        },
+        {
+          "label": "ATQ comum do portador por membro Electro, incluindo portador elegível; contagens Cryo e Electro somam até quatro",
+          "type": "atk_percent",
+          "values": [0.048, 0.06, 0.072, 0.084, 0.096],
+          "accumulations": 4,
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Legado Secreto da Geada: Brilho Reluzente: Brilho Estelar; substitui Acordo de Sangue Prateado Contaminado comum",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Proficiência Elemental substituta com Brilho Reluzente por membro Cryo ou Electro, incluindo portador elegível; mesma contagem do bônus substituto de reação",
+          "type": "elemental_mastery",
+          "values": [20, 25, 30, 35, 40],
+          "accumulations": 4,
+          "bonus": true
+        },
+        {
+          "label": "Dano de Brilho Estelar substituto com Brilho Reluzente por membro Cryo ou Electro, incluindo portador elegível; mesma contagem da Proficiência Elemental substituta",
+          "type": "dmg_percent",
+          "reaction": ["STELLAR_GLIMMER"],
+          "values": [0.06, 0.075, 0.09, 0.105, 0.12],
+          "accumulations": 4,
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 42.401, "critDamage": 0.12 },
+    "growthCurves": { "baseAttack": "ATK 2.1", "critDamage": "C2" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 25.9 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 51.9 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 77.8 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 103.7 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 129.7 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 155.6 } }
+    ]
+  }
+}
