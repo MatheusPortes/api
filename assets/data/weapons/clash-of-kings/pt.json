@@ -1,0 +1,46 @@
+{
+  "name": "Duelo de Reis",
+  "type": "Catalisador",
+  "rarity": 4,
+  "baseAttack": 42,
+  "subStat": "Taxa Crítica",
+  "passiveName": "Esquecido pelo Dia e Noite",
+  "passiveDesc": "Depois que o portador lançar a Habilidade Elemental, obtém o efeito Regras do Tabuleiro por 6s: aumenta o ATQ em 20%/25%/30%/35%/40% e a Proficiência Elemental em 100/125/150/175/200. Esse efeito pode ser desencadeado uma vez a cada 12s, e não é acumulável. Na duração, quando o Ataque Carregado do portador atingir o inimigo, prolonga a duração desse efeito em 6s. É possível prolongar a duração do efeito dessa forma em até 6s.",
+  "location": "Passe de Batalha do Gnóstico",
+  "baseDamage": { "attack": 42, "subStat": 60 },
+  "description": "Uma caixa dourada ricamente incrustada com joias preciosas. Ela guarda um jogo muito apreciado pelos reis das areias.",
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Esquecido pelo Dia e Noite",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATQ durante Regras do Tabuleiro após usar Habilidade",
+          "type": "atk_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "Proficiência Elemental durante Regras do Tabuleiro após usar Habilidade",
+          "type": "elemental_mastery",
+          "values": [100, 125, 150, 175, 200],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 42.401, "critRate": 0.06 },
+    "growthCurves": { "baseAttack": "ATK 2.1", "critRate": "C2" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 25.9 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 51.9 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 77.8 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 103.7 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 129.7 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 155.6 } }
+    ]
+  }
+}
