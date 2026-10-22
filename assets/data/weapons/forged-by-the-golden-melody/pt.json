@@ -1,0 +1,78 @@
+{
+  "name": "Forjada pela Lei Dourada",
+  "type": "Espadão",
+  "rarity": 4,
+  "baseAttack": 42,
+  "subStat": "Taxa Crítica",
+  "passiveName": "Dia e Noite Opostos",
+  "passiveDesc": "A cada 10s, o portador toca um Movimento Harmônico correspondente na seguinte ordem: aumenta o ATQ em 18%/22.5%/27%/31.5%/36%; aumenta a Proficiência Elemental em 120/150/180/210/240; aumenta o Dano de Brilho Estelar em 28%/35%/42%/49%/56%. Cada efeito de Movimento Harmônico dura 10s, e pode ser desencadeado mesmo quando o portador não for o personagem ativo. Depois de desencadear Brilho Estelar, obtém por 12s \"Movimento Harmônico: Oposto\" com os mesmos efeitos do Movimento Harmônico ativo no momento em que a reação Brilho Estelar foi desencadeada. Esse efeito pode acumular sobre o efeito Movimento Harmônico original, e pode ser desencadeado uma vez a cada 12s.",
+  "location": "Passe de Batalha do Gnóstico",
+  "baseDamage": { "attack": 42, "subStat": 60 },
+  "description": "Um espadão decorado com ouro. Diz a lenda que foi a arma preferida de um certo Harmosta ilustre em um passado distante.",
+  "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Movimento Harmônico — escolha exatamente uma alternativa cíclica atual",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Somente movimento atual de ATQ",
+          "type": "atk_percent",
+          "values": [0.18, 0.225, 0.27, 0.315, 0.36],
+          "bonus": true
+        },
+        {
+          "label": "Somente movimento atual de Proficiência Elemental",
+          "type": "elemental_mastery",
+          "values": [120, 150, 180, 210, 240],
+          "bonus": true
+        },
+        {
+          "label": "Somente movimento atual de Brilho Estelar",
+          "type": "dmg_percent",
+          "reaction": ["STELLAR_GLIMMER"],
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Movimento Harmônico: Oposto — escolha somente a alternativa copiada ao desencadear a reação",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Somente movimento adicional copiado de ATQ",
+          "type": "atk_percent",
+          "values": [0.18, 0.225, 0.27, 0.315, 0.36],
+          "bonus": true
+        },
+        {
+          "label": "Somente movimento adicional copiado de Proficiência Elemental",
+          "type": "elemental_mastery",
+          "values": [120, 150, 180, 210, 240],
+          "bonus": true
+        },
+        {
+          "label": "Somente movimento adicional copiado de Brilho Estelar",
+          "type": "dmg_percent",
+          "reaction": ["STELLAR_GLIMMER"],
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 42.401, "critRate": 0.06 },
+    "growthCurves": { "baseAttack": "ATK 2.1", "critRate": "C2" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 25.9 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 51.9 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 77.8 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 103.7 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 129.7 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 155.6 } }
+    ]
+  }
+}
