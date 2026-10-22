@@ -1,0 +1,41 @@
+{
+  "name": "Silver Light",
+  "type": "Sword",
+  "rarity": 4,
+  "baseAttack": 42,
+  "subStat": "ATK",
+  "passiveName": "Radiance on the Water",
+  "passiveDesc": "Increases Elemental Mastery by 52/65/78/91/104 for 12s after Elemental Skill use. Max 2 stacks, and each stack's duration is independent of the others.",
+  "location": "Event Reward",
+  "baseDamage": { "attack": 42, "subStat": 90 },
+  "description": "A longsword left behind by Wind Reader, one of the Three Hermits of Guizang in Liyue. Legend has it that it was forged out of sacred silver descended from the heavens, and that it once cleaved flowing sea water into two.",
+  "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Radiance on the Water",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Wearer Elemental Mastery per independently timed stack after Skill use",
+          "type": "elemental_mastery",
+          "values": [52, 65, 78, 91, 104],
+          "accumulations": 2,
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 42.401, "attackPercent": 0.09 },
+    "growthCurves": { "baseAttack": "ATK 2.1", "attackPercent": "C2" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 25.9 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 51.9 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 77.8 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 103.7 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 129.7 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 155.6 } }
+    ]
+  }
+}

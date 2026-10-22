@@ -1,5 +1,12 @@
 # Weapon Entity Records
 
+## 2026-10-22 — silver-light — complete (new EN/PT entity, progression and passive)
+
+- Eighteenth selection after Serenity agent `814c894a` / delivery `cab4ca98`. Released four-star Sword2026-09-24/event reward: Fandom release/event, Game8 actual day1 claim instructions and dated Sep24–Oct12 event corroborate despite expected-tense release paragraph. Complete EN/PT42ATK/9%ATK/profile/description. Exact Yatta42.401/.09 ATK2.1/C2 ascensions0..155.6 at20..90; no existing records/images changed.
+- One per-stack elemental_mastery [52,65,78,91,104], bonus true/accumulations2/no target/conditional/skills. Skill trigger/12s independently timed stacks consumer-only. Existing stackable contract, not hits/two fixed bonuses or a timer engine; no new schema.
+- References inspected2026-10-22: https://game8.co/games/Genshin-Impact/archives/622065 ; https://library.keqingmains.com/equipment/weapons/swords#silver-light ; https://gi.yatta.moe/api/v2/en/weapon/11438 ; https://gi.yatta.moe/api/v2/pt/weapon/11438 ; https://genshin-impact.fandom.com/api.php?action=parse&page=Silver_Light&prop=wikitext&format=json . Detailed coefficients/identity/counts agree; Game8 display ATK% endpoint41.0 rounds differently from matching KQM/Yatta41.3, so exact progression uses corroborated raw values/shared curve rather than rounded display. HoYoWiki shell; bundle `/tmp/opencode/silver-light-sources/`.
+- Exact progression/curves/per-stack array/count/JSON/source templates/parity/format/diff/identical delivery checked; Node20 build2 declaration/lint1 with17 unrelated formatting failures retained. Agent then JSON-only delivery before next; no push.
+
 ## 2026-10-22 — serenity-s-call — complete (new EN/PT entity, progression and passive)
 
 - Seventeenth selection after Sacrificer agent `99180325` / delivery `6bf80f1d`. Released four-star Sword2025-09-10/Forging (Fandom release/Game8 acquisition); complete EN/PT41ATK/13.3%ER/profile/description. Exact Yatta41.0671/.133333 ATK2.4/C2 ascensions0..155.6 at20..90, baseDamage133 display/raw precision retained separately. No existing records/images changed.
