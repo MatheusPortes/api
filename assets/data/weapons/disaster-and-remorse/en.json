@@ -1,0 +1,90 @@
+{
+  "name": "Disaster and Remorse",
+  "type": "Polearm",
+  "rarity": 5,
+  "baseAttack": 48,
+  "subStat": "CRIT Rate",
+  "passiveName": "Dolorous Stroke",
+  "passiveDesc": "After the equipping character uses an Elemental Skill, they gain \"Path of Conflict\" for 17s, as well as \"Unforgivable\" and \"Irreparable\" for 3s each. This effect can trigger once every 18s. Unforgivable: Increases the equipping character's Normal Attack and Charged Attack DMG by 40/50/60/70/80%. Irreparable: Increases the equipping character's Elemental Skill and Elemental Burst DMG by 40/50/60/70/80%. While Path of Conflict is in effect, when the equipping character hits an opponent with a Normal Attack or Charged Attack, Irreparable's duration will be increased by 1s. When the equipping character hits an opponent with their Elemental Skill or Elemental Burst, Unforgivable's duration will be increased by 1s. Each of the above effects can be triggered once every 0.1s. When Path of Conflict ends or the equipping character leaves the field, both Unforgivable and Irreparable will be removed. Hexerei: Secret Rite: The above DMG boosts are increased by 75%.",
+  "location": "Event Wish Exclusive",
+  "baseDamage": { "attack": 48, "subStat": 48 },
+  "description": "A polearm forged from Whitestone and Starsilver. Its keen point is constantly enveloped in a bone-piercing chill.",
+  "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Dolorous Stroke",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Unforgivable — Normal Attack DMG",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.4, 0.5, 0.6, 0.7, 0.8],
+          "bonus": true
+        },
+        {
+          "label": "Unforgivable — Charged Attack DMG",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.4, 0.5, 0.6, 0.7, 0.8],
+          "bonus": true
+        },
+        {
+          "label": "Irreparable — Skill DMG",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.4, 0.5, 0.6, 0.7, 0.8],
+          "bonus": true
+        },
+        {
+          "label": "Irreparable — Burst DMG",
+          "type": "dmg_percent",
+          "target": "elemental_burst",
+          "values": [0.4, 0.5, 0.6, 0.7, 0.8],
+          "bonus": true
+        },
+        {
+          "label": "Additional Unforgivable Normal DMG with Hexerei: Secret Rite",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.3, 0.375, 0.45, 0.525, 0.6],
+          "bonus": true
+        },
+        {
+          "label": "Additional Unforgivable Charged DMG with Hexerei: Secret Rite",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.3, 0.375, 0.45, 0.525, 0.6],
+          "bonus": true
+        },
+        {
+          "label": "Additional Irreparable Skill DMG with Hexerei: Secret Rite",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.3, 0.375, 0.45, 0.525, 0.6],
+          "bonus": true
+        },
+        {
+          "label": "Additional Irreparable Burst DMG with Hexerei: Secret Rite",
+          "type": "dmg_percent",
+          "target": "elemental_burst",
+          "values": [0.3, 0.375, 0.45, 0.525, 0.6],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 47.537, "critRate": 0.048 },
+    "growthCurves": { "baseAttack": "ATK 3.2", "critRate": "C3" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 31.1 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 62.2 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 93.4 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 124.5 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 155.6 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 186.7 } }
+    ]
+  }
+}

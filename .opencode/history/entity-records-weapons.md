@@ -1,5 +1,12 @@
 # Weapon Entity Records
 
+## 2026-10-22 — disaster-and-remorse — complete (new EN/PT entity, progression and passive)
+
+- Thirteenth new ID after Dawning agent `95cb3569` / delivery `c545bac6`. Released five-star Polearm2026-06-09 (Game8/Fandom), complete EN/PT48ATK/4.8%CR/Event Wish/description. Yatta47.537/.048 ATTACK_302→ATK3.2/CRITICAL_301→C3, ascension0..186.7 at20..90. No images/existing data edited.
+- Four targeted dmg_percent bonuses [.4,.5,.6,.7,.8]: Normal/Charged under Unforgivable, Skill/Burst under Irreparable. Four distinct same-target Hexerei additions base×.75 [.30,.375,.45,.525,.60], not totals×1.75 in addition to base. All bonus true/no conditional/stacks/skills; no Plunging or global ATK. Universal target/fixed-source-bonus-increase contracts; Skill/17s/3s/18s/1s extensions/.1s/off-field removal/two active buff states/Hexerei consumer-only. No new schema.
+- References inspected 2026-10-22: https://game8.co/games/Genshin-Impact/archives/598991 ; https://library.keqingmains.com/equipment/weapons/polearms#disaster-and-remorse ; https://gi.yatta.moe/api/v2/en/weapon/13517 ; https://gi.yatta.moe/api/v2/pt/weapon/13517 (one provider); https://genshin-impact.fandom.com/api.php?action=parse&page=Disaster_and_Remorse&prop=wikitext&format=json agree on release/identity/profile/ranks/targets/75% increase/usage. Game8 summary mentions ATK increase incorrectly; use matching actual clause across Game8/KQM/Yatta/Fandom, no ATK grant or official correction claim. HoYoWiki exact search shell. Bundle `/tmp/opencode/disaster-and-remorse-sources/` includes Game8 HTML.
+- Exact progression/curves/four targets/base-plus-derived ratios/labels/JSON/parity/format/diff/identical delivery checked before commits; Node20 build/lint logs retain declaration/17 unrelated formatting failures. Agent then JSON-only delivery before Echoes of the Heart; no push.
+
 ## 2026-10-22 — dawning-frost — complete (new EN/PT entity, progression and passive)
 
 - Twelfth new ID after Covenant agent `9c479ef5` / delivery `ceed869a`. Released four-star Catalyst2025-10-22 (Game8/Fandom); complete EN/PT42ATK/12%CD/Event Wish/description. Yatta42.401/.12 ATTACK_201→ATK2.1/CRITICAL_201→C2, ascension0..155.6 at20..90. No images/existing data edited.
