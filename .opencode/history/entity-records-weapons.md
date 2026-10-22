@@ -1,5 +1,12 @@
 # Weapon Entity Records
 
+## 2026-10-22 — clash-of-kings — complete (new EN/PT entity, progression and passive)
+
+- Tenth new ID after Breezeborne agent `0b0ba882` / delivery `96a8bb49`. Released four-star Catalyst2026-08-12/Battle Pass (Game8/Fandom); complete EN/PT42ATK/6%CR/description/passive. Yatta42.401/.06 ATTACK_201→ATK2.1/CRITICAL_201→C2, ascension0..155.6 at20..90. No images/existing records edited.
+- Root atk_percent [.20,.25,.30,.35,.40] and direct elemental_mastery [100,125,150,175,200], bonus true/no target/conditional/stacks/skills. Universal stat rules; Skill trigger,6s/12s/Charged-hit extension by6s max/nonstacking consumer-only. Duration extension does not double coefficients, create a second grant or accumulations. No new schema/current-refinement-availability certification.
+- References inspected 2026-10-22: https://game8.co/games/Genshin-Impact/archives/613904 ; https://library.keqingmains.com/equipment/weapons/catalysts#clash-of-kings ; https://gi.yatta.moe/api/v2/en/weapon/14435 ; https://gi.yatta.moe/api/v2/pt/weapon/14435 (one provider); https://genshin-impact.fandom.com/api.php?action=parse&page=Clash_of_Kings&prop=wikitext&format=json agree on identity/release/profile/ranks/nonstacking usage. HoYoWiki exact search shell. Bundle `/tmp/opencode/clash-of-kings-sources/`, exact Game8 HTML retained; no conflict.
+- Exact source progression/curves/units/ranks/labels/JSON/parity/focused format/diff/identical delivery checked before commits; Node20 build/lint logs retain declaration/17 unrelated formatting failures. Agent then JSON-only delivery before Covenant of Frost and Snow; no push.
+
 ## 2026-10-22 — breezeborne-refrain — complete (new EN/PT entity, progression and passive)
 
 - Ninth new ID after Bloodsoaked agent `99bc3b26` / delivery `e9af9a37`; owner reiterated continue same round. Released four-star Bow2026-09-23, Game8 past banner/Fandom release. Complete EN/PT42ATK/6%CR/Event Wish/description; Yatta42.401/.06 ATTACK_201→ATK2.1/CRITICAL_201→C2, ascension0..155.6 at20..90. No images/other records changed.
