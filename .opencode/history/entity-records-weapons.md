@@ -1,5 +1,12 @@
 # Weapon Entity Records
 
+## 2026-10-22 — jade-vista — complete (new EN/PT entity, progression and passive)
+
+- Sixth selection after Hymn agent `5b1e5e88` / delivery `139c98c7`. Released four-star Bow2026-08-12/Battle Pass confirmed Game8/Fandom; complete EN/PT42ATK/6%CR/profile. Yatta42.401/.06 ATK2.1/C2, ascensions0..155.6 at20..90. No existing records/images changed.
+- Per other same-element member direct elemental_mastery [64,80,96,112,128]; per other different-element member atk_percent [.12,.15,.18,.21,.24]. Both bonus true/accumulations3, omit target/conditional/skills; counts together at most3, EM applied first. `party-member-counted-bonus` preserves mutually constrained recipient-excluding counts, not unconditional six-stack total or precomputed team bonuses. Party selection stays consumer text/labels; no new schema.
+- References inspected2026-10-22: https://game8.co/games/Genshin-Impact/archives/613907 ; https://library.keqingmains.com/equipment/weapons/bows#jade-vista ; https://gi.yatta.moe/api/v2/en/weapon/15435 ; https://gi.yatta.moe/api/v2/pt/weapon/15435 ; https://genshin-impact.fandom.com/api.php?action=parse&page=Jade_Vista&prop=wikitext&format=json agree on release/profile/acquisition/full ranks/counts. HoYoWiki shell; bundle `/tmp/opencode/jade-vista-sources/`; no conflict.
+- Exact progression/curves/two per-member arrays/counts/labels/JSON/source templates/parity/format/diff/identical delivery checked. Node20 build2 Node declaration/lint1 with17 unrelated format failures retained. Agent then JSON-only delivery before next selection; no push.
+
 ## 2026-10-22 — hymn-of-the-maelstrom — complete (new EN/PT entity, progression and passive)
 
 - Fifth selected ID after Heretic agent `a79b1001` / delivery `38661299`. Released2026-09-23 five-star Catalyst/Event Wish (Game8 availability banner and Fandom release); Game8 release paragraph retains expected-future tense, while its banner availability is past-tense and Fandom corroborates release. Complete EN/PT44ATK/14.4%HP/profile/description. Exact Yatta44.3358/.144 ATK3.4/C3, ascensions0..186.7 at20..90. Existing entities/locales/images preserved.

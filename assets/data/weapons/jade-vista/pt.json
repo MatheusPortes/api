@@ -1,0 +1,48 @@
+{
+  "name": "Vista da Jade Primordial",
+  "type": "Arco",
+  "rarity": 4,
+  "baseAttack": 42,
+  "subStat": "Taxa CRIT",
+  "passiveName": "Uma Vela Tecida pela Noite",
+  "passiveDesc": "Para cada membro da equipe que não seja o portador: se possuir o mesmo Tipo Elemental que o portador: a Proficiência Elemental do portador aumenta em 64/80/96/112/128; se não possuir o mesmo Tipo Elemental que o portador: o ATQ do portador aumenta em 12/15/18/21/24%. Os dois efeitos descritos acima podem acumular até 3 vezes no total, com os bônus de Proficiência Elemental sendo aplicados primeiro.",
+  "location": "Passe de Batalha",
+  "baseDamage": { "attack": 42, "subStat": 60 },
+  "description": "Um arco longo de imensa força. Ele brilha com o esplendor dos sonhos mesmo nas noites mais escuras.",
+  "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Uma Vela Tecida pela Noite",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Proficiência Elemental do portador por outro membro do mesmo elemento; contagens de Proficiência e ATQ somam até três, Proficiência primeiro",
+          "type": "elemental_mastery",
+          "values": [64, 80, 96, 112, 128],
+          "accumulations": 3,
+          "bonus": true
+        },
+        {
+          "label": "ATQ do portador por outro membro de elemento diferente; contagens de Proficiência e ATQ somam até três, Proficiência primeiro",
+          "type": "atk_percent",
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "accumulations": 3,
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 42.401, "critRate": 0.06 },
+    "growthCurves": { "baseAttack": "ATK 2.1", "critRate": "C2" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 25.9 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 51.9 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 77.8 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 103.7 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 129.7 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 155.6 } }
+    ]
+  }
+}
