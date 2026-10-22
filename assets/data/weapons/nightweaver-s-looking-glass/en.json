@@ -1,0 +1,67 @@
+{
+  "name": "Nightweaver's Looking Glass",
+  "type": "Catalyst",
+  "rarity": 5,
+  "baseAttack": 44,
+  "subStat": "Elemental Mastery",
+  "passiveName": "Millennial Hymn",
+  "passiveDesc": "When the equipping character's Elemental Skill deals Hydro or Dendro DMG, they will gain Prayer of the Far North: Elemental Mastery is increased by 60/75/90/105/120 for 4.5s. When nearby party members trigger Lunar-Bloom reactions, the equipping character gains New Moon Verse: Elemental Mastery is increased by 60/75/90/105/120 for 10s. When both Prayer of the Far North and New Moon Verse are in effect, all nearby party members' Bloom DMG is increased by 120/150/180/210/240%, their Hyperbloom and Burgeon DMG is increased by 80/100/120/140/160%, and their Lunar-Bloom DMG is increased by 40/50/60/70/80%. This effect cannot stack. The aforementioned effects can be triggered even if the equipping character is off-field.",
+  "location": "Event Wish Exclusive",
+  "baseDamage": { "attack": 44, "subStat": 58 },
+  "description": "A mirror crafted from flawless silver that is said to have witnessed the birth of the Moon Maiden. It is seen as a relic of unrivalled provenance by the Frostmoon Scions.",
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Millennial Hymn",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Wearer Elemental Mastery during Prayer of the Far North after Hydro or Dendro Skill DMG",
+          "type": "elemental_mastery",
+          "values": [60, 75, 90, 105, 120],
+          "bonus": true
+        },
+        {
+          "label": "Wearer Elemental Mastery during New Moon Verse after nearby Lunar-Bloom",
+          "type": "elemental_mastery",
+          "values": [60, 75, 90, 105, 120],
+          "bonus": true
+        },
+        {
+          "label": "Nearby party Bloom DMG with both effects active; nonstacking",
+          "type": "dmg_percent",
+          "reaction": ["BLOOM"],
+          "values": [1.2, 1.5, 1.8, 2.1, 2.4],
+          "bonus": true
+        },
+        {
+          "label": "Nearby party Hyperbloom and Burgeon DMG with both effects active; nonstacking",
+          "type": "dmg_percent",
+          "reaction": ["HYPERBLOOM", "BURGEON"],
+          "values": [0.8, 1, 1.2, 1.4, 1.6],
+          "bonus": true
+        },
+        {
+          "label": "Nearby party Lunar-Bloom DMG with both effects active; nonstacking",
+          "type": "dmg_percent",
+          "reaction": ["LUNAR_BLOOM"],
+          "values": [0.4, 0.5, 0.6, 0.7, 0.8],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 44.3358, "elementalMastery": 57.6 },
+    "growthCurves": { "baseAttack": "ATK 3.4", "elementalMastery": "C3" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 31.1 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 62.2 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 93.4 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 124.5 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 155.6 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 186.7 } }
+    ]
+  }
+}

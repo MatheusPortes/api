@@ -1,5 +1,12 @@
 # Weapon Entity Records
 
+## 2026-10-22 — nightweaver-s-looking-glass — complete (new EN/PT entity, progression and passive)
+
+- Eleventh selection after New Bough agent `f2dc6c75` / delivery `984144d2`. Released five-star Catalyst2025-09-10/Event Wish confirmed Game8/Fandom. Complete EN/PT44ATK/58EM/profile; exact Yatta44.3358/57.6 ATK3.4/C3 ascensions0..186.7 at20..90. No existing data/images changed.
+- Two distinct wearer elemental_mastery [60,75,90,105,120] for Prayer and Verse; neither stacks. When both active, three separate party dmg_percent contributions: BLOOM [1.2,1.5,1.8,2.1,2.4], HYPERBLOOM/BURGEON [.8,1,1.2,1.4,1.6] shared equal-coefficient alternatives, LUNAR_BLOOM [.4,.5,.6,.7,.8]. All bonus true/no target/conditional/accumulations/skills. Skill Hydro/Dendro is activation, not granted elemental DMG. Duration4.5s/10s/party/off-field/nonstacking consumer-only. Existing distinct-stat/reaction/equal-alternative contracts; no new schema.
+- References inspected2026-10-22: https://game8.co/games/Genshin-Impact/archives/546786 ; https://library.keqingmains.com/equipment/weapons/catalysts#nightweavers-looking-glass ; https://gi.yatta.moe/api/v2/en/weapon/14520 ; https://gi.yatta.moe/api/v2/pt/weapon/14520 ; https://genshin-impact.fandom.com/api.php?action=parse&page=Nightweaver%27s_Looking_Glass&prop=wikitext&format=json agree on release/identity/full ranks/recipient/clauses. Game8 passive-name typo Millenial vs corroborated Millennial resolved with matching KQM/Yatta/Fandom; HoYoWiki shell. Bundle `/tmp/opencode/nightweaver-s-looking-glass-sources/`.
+- Exact progression/curves/five arrays/reaction lists/nonstacking/JSON/source templates/parity/format/diff/identical delivery checked. Node20 build2 declaration/lint1 with17 unrelated format failures retained. Agent then JSON-only delivery before next; no push.
+
 ## 2026-10-22 — new-bough — complete (new EN/PT entity, progression and passive)
 
 - Tenth selection after Moonweaver agent `8778961f` / delivery `f43dd6fe`. Released four-star Sword2026-09-23/Event Wish corroborated Game8 actual past banner/Fandom despite Game8 expected-tense release paragraph. Complete EN/PT42ATK/12%CD/profile; Yatta42.401/.12 ATK2.1/C2 ascensions0..155.6 at20..90. No existing records/images changed.

@@ -1,0 +1,67 @@
+{
+  "name": "Luneta do Tecedor da Noite",
+  "type": "Catalisador",
+  "rarity": 5,
+  "baseAttack": 44,
+  "subStat": "Proficiência Elemental",
+  "passiveName": "Oração Milenar",
+  "passiveDesc": "Quando a Habilidade Elemental causa Dano Hydro ou Dendro, o personagem que está com essa arma equipada obtém o efeito Palavras Sagradas do Norte: aumenta a Proficiência Elemental em 60/75/90/105/120 por 4.5s. Quando os personagens próximos da equipe desencadeiam Florescimento Lunar, o personagem que está com essa arma equipada obtém o efeito Poema da Lua Nova: aumenta a Proficiência Elemental em 60/75/90/105/120 por 10s. Quando os efeitos Palavras Sagradas do Norte e Poema da Lua Nova existirem simultaneamente, aumenta o Dano de Florescimento causado por todos os membros próximos da equipe em 120/150/180/210/240%, o Dano causado por Superflorescimento e Germinação em 80/100/120/140/160% e o Dano de Florescimento Lunar em 40/50/60/70/80%. Esse efeito não acumula. Esse efeito pode ser desencadeado mesmo quando o personagem que está com essa arma equipada não estiver ativo.",
+  "location": "Exclusivo de Oração de Evento",
+  "baseDamage": { "attack": 44, "subStat": 58 },
+  "description": "Um espelho feito de prata perfeita, dizem que testemunhou o nascimento da Dama da Lua. É visto como uma relíquia única e elevada dos Filhos da Lua Gelada.",
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Oração Milenar",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Proficiência Elemental do portador durante Palavras Sagradas do Norte após Dano Hydro ou Dendro de Habilidade Elemental",
+          "type": "elemental_mastery",
+          "values": [60, 75, 90, 105, 120],
+          "bonus": true
+        },
+        {
+          "label": "Proficiência Elemental do portador durante Poema da Lua Nova após Florescimento Lunar próximo",
+          "type": "elemental_mastery",
+          "values": [60, 75, 90, 105, 120],
+          "bonus": true
+        },
+        {
+          "label": "Dano de Florescimento dos membros próximos com ambos os efeitos ativos; não acumula",
+          "type": "dmg_percent",
+          "reaction": ["BLOOM"],
+          "values": [1.2, 1.5, 1.8, 2.1, 2.4],
+          "bonus": true
+        },
+        {
+          "label": "Dano de Superflorescimento e Germinação dos membros próximos com ambos os efeitos ativos; não acumula",
+          "type": "dmg_percent",
+          "reaction": ["HYPERBLOOM", "BURGEON"],
+          "values": [0.8, 1, 1.2, 1.4, 1.6],
+          "bonus": true
+        },
+        {
+          "label": "Dano de Florescimento Lunar dos membros próximos com ambos os efeitos ativos; não acumula",
+          "type": "dmg_percent",
+          "reaction": ["LUNAR_BLOOM"],
+          "values": [0.4, 0.5, 0.6, 0.7, 0.8],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 44.3358, "elementalMastery": 57.6 },
+    "growthCurves": { "baseAttack": "ATK 3.4", "elementalMastery": "C3" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 31.1 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 62.2 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 93.4 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 124.5 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 155.6 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 186.7 } }
+    ]
+  }
+}
