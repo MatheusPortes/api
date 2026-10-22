@@ -1,5 +1,12 @@
 # Weapon Entity Records
 
+## 2026-10-22 — etherlight-spindlelute — complete (new EN/PT entity, progression and passive)
+
+- Sixteenth new ID after Emberwell agent `6475aef9` / delivery `60d70e10`. Released four-star Catalyst, Clink Clank Clash event in6.0 (Game8/Fandom). Complete EN/PT42ATK/10%ER/profile/passive/description; PT location generic localized version-event descriptor avoids inventing localized event title. Yatta42.401/.1 ATTACK_201→ATK2.1/CRITICAL_201→C2, ascension0..155.6 at20..90. No images/existing records edited.
+- Universal direct elemental_mastery [100,125,150,175,200], bonus true/no target/conditional/stacks/skills; Skill use/20s consumer-only. ER substat is distinct from EM passive, no Energy restoration or scaling inferred. No new schema.
+- References inspected 2026-10-22: https://game8.co/games/Genshin-Impact/archives/546853 (discovered through exact related-weapon link); https://library.keqingmains.com/equipment/weapons/catalysts#etherlight-spindlelute ; https://gi.yatta.moe/api/v2/en/weapon/14432 ; https://gi.yatta.moe/api/v2/pt/weapon/14432 (one provider); https://genshin-impact.fandom.com/api.php?action=parse&page=Etherlight_Spindlelute&prop=wikitext&format=json agree on identity/profile/ranks/event acquisition/usage. Fandom exact release2025-09-12 vs Game8 broad6.0 date2025-09-10; no exact release-date field imported, both establish already-released event item, not a current availability claim. HoYoWiki exact search shell. Bundle `/tmp/opencode/etherlight-spindlelute-sources/` includes Game8 HTML.
+- Exact source progression/curves/ranks/profile/labels/JSON/parity/format/diff/identical delivery checked before commits; Node20 build/lint logs retain declaration/17 unrelated formatting failures. Agent then JSON-only delivery before Exaiphanes Blade; no push.
+
 ## 2026-10-22 — emberwell — complete (new EN/PT entity, progression and passive)
 
 - Fifteenth new ID after Echoes agent `9908aebd` / delivery `9e362def`. Released/craftable four-star Sword2026-08-12 (Game8/Fandom), complete EN/PT42ATK/36EM/description. Yatta42.401/36 ATTACK_201→ATK2.1/CRITICAL_201→C2, ascension0..155.6 at20..90. No images/existing data edited.
