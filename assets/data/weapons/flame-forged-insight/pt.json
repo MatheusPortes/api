@@ -1,0 +1,40 @@
+{
+  "name": "Forja da Sabedoria",
+  "type": "Espadão",
+  "rarity": 4,
+  "baseAttack": 42,
+  "subStat": "Proficiência Elemental",
+  "passiveName": "Pensamentos de Florescimento",
+  "passiveDesc": "Quando desencadeia uma reação de Eletricamente Carregado, Carga Lunar, Florescimento, Florescimento Lunar, Cristalização ou Cristalização Lunar, regenera 12/15/18/21/24 de Energia Elemental e aumenta a Proficiência Elemental em 60/75/90/105/120 nos próximos 15s. Esse efeito pode ser desencadeado uma vez a cada 15s. Esse efeito pode ser desencadeado, mesmo que o portador não seja o personagem ativo.",
+  "location": "Evento da Versão 5.8",
+  "baseDamage": { "attack": 42, "subStat": 36 },
+  "description": "Histórias da tribo contam sobre uma grande lâmina forjada pelo Povo das Termas para proteger uma criança que embarcaria numa jornada para uma terra distante. Essa arma parece ser uma réplica da espada lendária.",
+  "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Pensamentos de Florescimento",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Proficiência Elemental após o portador desencadear reação válida",
+          "type": "elemental_mastery",
+          "values": [60, 75, 90, 105, 120],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 42.401, "elementalMastery": 36 },
+    "growthCurves": { "baseAttack": "ATK 2.1", "elementalMastery": "C2" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 25.9 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 51.9 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 77.8 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 103.7 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 129.7 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 155.6 } }
+    ]
+  }
+}

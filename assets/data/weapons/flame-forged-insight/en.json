@@ -1,0 +1,40 @@
+{
+  "name": "Flame-Forged Insight",
+  "type": "Claymore",
+  "rarity": 4,
+  "baseAttack": 42,
+  "subStat": "Elemental Mastery",
+  "passiveName": "Mind in Bloom",
+  "passiveDesc": "When Electro-Charged, Lunar-Charged, Bloom, Lunar-Bloom, Crystallize or Lunar-Crystallize is triggered, restore 12/15/18/21/24 Elemental Energy and increase Elemental Mastery by 60/75/90/105/120 for 15 seconds. This effect can be triggered at most once every 15s and can be triggered even when the equipping character is off-field.",
+  "location": "Event: Sunspray Summer Resort",
+  "baseDamage": { "attack": 42, "subStat": 36 },
+  "description": "Tribal tales tell of a great blade forged by the People of the Springs to protect a child who would embark on a distant journey. This particular weapon appears to be a replica of that legendary sword.",
+  "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Mind in Bloom",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Elemental Mastery after the wearer triggers a qualifying reaction",
+          "type": "elemental_mastery",
+          "values": [60, 75, 90, 105, 120],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 42.401, "elementalMastery": 36 },
+    "growthCurves": { "baseAttack": "ATK 2.1", "elementalMastery": "C2" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 25.9 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 51.9 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 77.8 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 103.7 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 129.7 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 155.6 } }
+    ]
+  }
+}
