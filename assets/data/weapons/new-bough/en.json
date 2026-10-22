@@ -1,0 +1,69 @@
+{
+  "name": "New Bough",
+  "type": "Sword",
+  "rarity": 4,
+  "baseAttack": 42,
+  "subStat": "CRIT DMG",
+  "passiveName": "Wildgrowth",
+  "passiveDesc": "When the equipping character hits the opponent with an attack within 12s after using the Elemental Skill, they gain the \"Verdant\" effect, which increases their ATK by 4/5/6/7/8% and their Elemental Mastery by 20/25/30/35/40. This effect lasts 6s and can trigger once every second. Max 3 stacks. The aforementioned effects can still trigger even when the equipping character is not on the field.\nRadiance: Stellar Glimmer: The effect of \"Verdant\" is changed to: Increases ATK by 6/7.5/9/10.5/12% as well as Stellar Glimmer reaction DMG dealt by the equipping character by 8/10/12/14/16%.",
+  "location": "Event Wish Exclusive",
+  "baseDamage": { "attack": 42, "subStat": 120 },
+  "description": "A sword made from sacred wood, said to have once turned the tide of battle.",
+  "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Wildgrowth: ordinary Verdant; replaced by Radiance: Stellar Glimmer",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Ordinary Verdant ATK per stack; excludes Radiance replacement",
+          "type": "atk_percent",
+          "values": [0.04, 0.05, 0.06, 0.07, 0.08],
+          "accumulations": 3,
+          "bonus": true
+        },
+        {
+          "label": "Ordinary Verdant Elemental Mastery per stack; excludes Radiance replacement",
+          "type": "elemental_mastery",
+          "values": [20, 25, 30, 35, 40],
+          "accumulations": 3,
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Wildgrowth: Radiance: Stellar Glimmer; replaces ordinary Verdant",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Radiance replacement ATK per Verdant stack",
+          "type": "atk_percent",
+          "values": [0.06, 0.075, 0.09, 0.105, 0.12],
+          "accumulations": 3,
+          "bonus": true
+        },
+        {
+          "label": "Radiance replacement Stellar Glimmer DMG per Verdant stack",
+          "type": "dmg_percent",
+          "reaction": ["STELLAR_GLIMMER"],
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "accumulations": 3,
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 42.401, "critDamage": 0.12 },
+    "growthCurves": { "baseAttack": "ATK 2.1", "critDamage": "C2" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 25.9 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 51.9 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 77.8 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 103.7 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 129.7 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 155.6 } }
+    ]
+  }
+}
