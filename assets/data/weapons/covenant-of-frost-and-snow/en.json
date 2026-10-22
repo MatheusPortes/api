@@ -1,0 +1,40 @@
+{
+  "name": "Covenant of Frost and Snow",
+  "type": "Bow",
+  "rarity": 4,
+  "baseAttack": 42,
+  "subStat": "DEF",
+  "passiveName": "The Law's Equilibrium",
+  "passiveDesc": "For 12s after the equipping character uses an Elemental Skill, their Elemental Mastery is increased by 120/150/180/210/240.",
+  "location": "Crafting",
+  "baseDamage": { "attack": 42, "subStat": 113 },
+  "description": "A longbow crafted to preserve order. Its cold radiance perfectly emanates the ideals of absolute fairness and justice.",
+  "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "The Law's Equilibrium",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Elemental Mastery after Skill use",
+          "type": "elemental_mastery",
+          "values": [120, 150, 180, 210, 240],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 42.401, "defensePercent": 0.1126 },
+    "growthCurves": { "baseAttack": "ATK 2.1", "defensePercent": "C2" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 25.9 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 51.9 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 77.8 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 103.7 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 129.7 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 155.6 } }
+    ]
+  }
+}
