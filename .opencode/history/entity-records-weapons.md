@@ -1,5 +1,12 @@
 # Weapon Entity Records
 
+## 2026-10-22 — rainbow-serpent-s-rain-bow — complete (new EN/PT entity, progression and passive)
+
+- Fourteenth selection after Prospector agent `86c59ce4` / delivery `de49b1c7`. Released four-star Bow2025-12-19/event reward corroborated Game8 actual event acquisition/release paragraph and Fandom; Game8 phase table separately shows Dec23, not the matched event release date. Complete EN/PT42ATK/10%ER/profile. Exact Yatta42.401/.1 ATK2.1/C2 ascensions0..155.6 at20..90; no existing data/images changed.
+- One root atk_percent [.28,.35,.42,.49,.56], bonus true, no target/conditional/stacks/skills. Wearer's attack hits while off-field are activation, not attack-category scope;8s/field state consumer-only. Existing universal stat/activation contract, no new schema.
+- References inspected2026-10-22: https://game8.co/games/Genshin-Impact/archives/567342 ; https://library.keqingmains.com/equipment/weapons/bows#rainbow-serpents-rain-bow ; https://gi.yatta.moe/api/v2/en/weapon/15434 ; https://gi.yatta.moe/api/v2/pt/weapon/15434 ; https://genshin-impact.fandom.com/api.php?action=parse&page=Rainbow_Serpent%27s_Rain_Bow&prop=wikitext&format=json agree on identity/profile/full ranks/activation/event acquisition. HoYoWiki shell; bundle `/tmp/opencode/rainbow-serpent-s-rain-bow-sources/`.
+- Exact progression/curves/coefficients/JSON/source templates/parity/format/diff/identical delivery checked; Node20 build2 declaration/lint1 with17 unrelated format failures retained. Agent then JSON-only delivery before next; no push.
+
 ## 2026-10-22 — prospector-s-shovel — complete (new EN/PT entity, progression and passive)
 
 - Thirteenth selection after Nocturne agent `c34241a6` / delivery `01287bc7`. Released four-star Polearm2025-09-10/Forging (Fandom release/Game8 available acquisition); complete EN/PT42ATK/9%ATK/profile/description. Yatta42.401/.09 ATK2.1/C2 ascensions0..155.6 at20..90. No existing entities/images changed.
