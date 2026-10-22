@@ -1,5 +1,12 @@
 # Weapon Entity Records
 
+## 2026-10-22 — dawning-frost — complete (new EN/PT entity, progression and passive)
+
+- Twelfth new ID after Covenant agent `9c479ef5` / delivery `ceed869a`. Released four-star Catalyst2025-10-22 (Game8/Fandom); complete EN/PT42ATK/12%CD/Event Wish/description. Yatta42.401/.12 ATTACK_201→ATK2.1/CRITICAL_201→C2, ascension0..155.6 at20..90. No images/existing data edited.
+- Universal distinct direct stat grants elemental_mastery [72,90,108,126,144] after Charged hit and [48,60,72,84,96] after Skill hit, bonus true/no target/conditional/stacks/skills. Separate10s qualification consumer-only, no pre-summed total or attack-target restriction on EM. No new schema.
+- References inspected 2026-10-22: https://game8.co/games/Genshin-Impact/archives/557055 ; https://library.keqingmains.com/equipment/weapons/catalysts#dawning-frost ; https://gi.yatta.moe/api/v2/en/weapon/14434 ; https://gi.yatta.moe/api/v2/pt/weapon/14434 (one provider); https://genshin-impact.fandom.com/api.php?action=parse&page=Dawning_Frost&prop=wikitext&format=json agree on identity/release/profile/ranks/usage/acquisition. HoYoWiki exact search shell. Bundle `/tmp/opencode/dawning-frost-sources/`, exact Game8 HTML retained; no conflict. Source structured progression, not rounded/inconsistent Game8 intermediate rows, supplies calculation precision.
+- Exact source progression/curves/raw direct units/ranks/labels/JSON/parity/focused format/diff/identical delivery checked before commits; Node20 build/lint logs retain declaration/17 unrelated formatting failures. Agent then JSON-only delivery before Disaster and Remorse; no push.
+
 ## 2026-10-22 — covenant-of-frost-and-snow — complete (new EN/PT entity, progression and passive)
 
 - Eleventh new ID after Clash agent `53ee73e6` / delivery `3245828a`. Released/craftable four-star Bow2026-08-12 (Game8/Fandom), complete EN/PT42ATK/11.3%DEF/profile/passive/description. Yatta42.401/.1126 ATTACK_201→ATK2.1/CRITICAL_201→C2, ascension0..155.6 at20..90. Existing one-decimal-percent display baseDamage113 follows established Whiteblind-style convention; exact .1126 retained in calculation. No images/existing data changed.
