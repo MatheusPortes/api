@@ -1,5 +1,12 @@
 # Weapon Entity Records
 
+## 2026-10-22 — breezeborne-refrain — complete (new EN/PT entity, progression and passive)
+
+- Ninth new ID after Bloodsoaked agent `99bc3b26` / delivery `e9af9a37`; owner reiterated continue same round. Released four-star Bow2026-09-23, Game8 past banner/Fandom release. Complete EN/PT42ATK/6%CR/Event Wish/description; Yatta42.401/.06 ATTACK_201→ATK2.1/CRITICAL_201→C2, ascension0..155.6 at20..90. No images/other records changed.
+- Root energy_recharge [.20,.25,.30,.35,.40], separate party dmg_percent STELLAR_GLIMMER [.24,.30,.36,.42,.48] during triggered buff, both bonus true/no target/conditional/accumulations/skills. Three Hymn stacks are consumed to activate one grant, not three summable damage stacks. Universal stat/reaction contracts; consumer handles12s/.03s/stack lockout/off-field/recipients. Align PT nearby-recipient qualifier to corroborated KQM/Yatta EN/Fandom/Game8 rather than unqualified Yatta PT all members; no official correction claim/new schema.
+- References inspected 2026-10-21/22: https://game8.co/games/Genshin-Impact/archives/622069 ; https://library.keqingmains.com/equipment/weapons/bows#breezeborne-refrain ; https://gi.yatta.moe/api/v2/en/weapon/15437 ; https://gi.yatta.moe/api/v2/pt/weapon/15437 (one provider); https://genshin-impact.fandom.com/api.php?action=parse&page=Breezeborne_Refrain&prop=wikitext&format=json agree on identity/profile/ranks/threshold/usage. Game8 release section retains expected wording but acquisition explicitly records past banner; Fandom confirms release. HoYoWiki exact search shell. Bundle `/tmp/opencode/breezeborne-refrain-sources/`, Game8 HTML retained.
+- Exact progression/curves/ratios/threshold-vs-stack semantics/labels/JSON/parity/format/diff/identical delivery checked before commits; Node20 build/lint logs retain declaration/17 unrelated formatting failures. Agent then JSON-only delivery before Clash of Kings; no push.
+
 ## 2026-10-21 — bloodsoaked-ruins — complete (new EN/PT entity, progression and passive)
 
 - Eighth new ID after Blade agent `8f66b29e` / delivery `b44221c9`. Released five-star Polearm2025-09-30 (Game8/Fandom); complete EN/PT48ATK/4.8%CR/Event Wish/description. Yatta47.537/.048 ATTACK_302→ATK3.2/CRITICAL_301→C3, ascension0..186.7 at20..90. No images/other records changed.
