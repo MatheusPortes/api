@@ -1,5 +1,12 @@
 # Weapon Entity Records
 
+## 2026-10-22 — moonweaver-s-dawn — complete (new EN/PT entity, progression and passive)
+
+- Ninth selection after Master agent `1642ac86` / delivery `91a466a2`. Released four-star Sword2025-09-10 confirmed Game8/Fandom; both Weapon Event Wishes and quest copy corroborated, no claim of wish-exclusive acquisition. Complete EN/PT44ATK/6%ATK/profile. Yatta43.7349/.06 ATK2.2/C2 ascensions0..155.6 at20..90. No existing records/images changed.
+- Root Burst-targeted dmg_percent base [.2,.25,.3,.35,.4] plus mutually exclusive additional [.16,.2,.24,.28,.32] for40<Energy Capacity≤60 OR [.28,.35,.42,.49,.56] for≤40. Bonus true/no conditional/stacks/skills; choose exactly one eligible extra, not both. Existing condition-labeled tier alternatives/stat targets; no new schema. PT clarifies capacidade to match KQM/YattaEN/Fandom/Game8 actual clauses, not current Energy. Game8 summary reverses16/28 ordering, isolated from matching detailed clauses; use corroborated detailed order. Source rank-paired percentages retained explicitly.
+- References inspected2026-10-22: https://game8.co/games/Genshin-Impact/archives/550431 ; https://library.keqingmains.com/equipment/weapons/swords#moonweavers-dawn ; https://gi.yatta.moe/api/v2/en/weapon/11434 ; https://gi.yatta.moe/api/v2/pt/weapon/11434 ; https://genshin-impact.fandom.com/api.php?action=parse&page=Moonweaver%27s_Dawn&prop=wikitext&format=json . HoYoWiki exact search shell. Bundle `/tmp/opencode/moonweaver-s-dawn-sources/`; detailed mechanics agree, PT correction standing-authorized/source-backed.
+- Exact progression/curves/three arrays/threshold alternatives/JSON/parity/format/diff/identical delivery checked. Node20 build2 declaration/lint1 with17 unrelated format failures retained. Agent then JSON-only delivery before next; no push.
+
 ## 2026-10-22 — master-key — complete (new EN/PT entity, progression and passive)
 
 - Eighth selection after Moonshard agent `7c698075` / delivery `2517358b`. Released four-star Claymore2025-09-10/Forging (Fandom release, Game8 available craft acquisition); complete EN/PT41ATK/13.3%ER/profile. Exact Yatta41.0671/.133333 ATK2.4/C2 ascensions0..155.6 at20..90; displayed baseDamage subStat133 retains13.3% display, not raw progression rounding. No existing entities/images changed.
