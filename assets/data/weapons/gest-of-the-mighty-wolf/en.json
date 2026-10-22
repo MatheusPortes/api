@@ -1,0 +1,54 @@
+{
+  "name": "Gest of the Mighty Wolf",
+  "type": "Claymore",
+  "rarity": 5,
+  "baseAttack": 46,
+  "subStat": "CRIT Rate",
+  "passiveName": "Indomitable Chivalry",
+  "passiveDesc": "Increase ATK SPD by 10%. Every time the equipping character's Normal Attack(s) hit opponent(s), when they cast their Elemental Skill, or when they begin their Charged Attack(s), gain 1/2/2 stacks of Four Winds' Hymn respectively: DMG dealt is increased by 7.5/9.5/11.5/13.5/15.5% for 4s. Max 4 stacks. This effect can be triggered once every 0.01s.\nAdditionally, when the party has the \"Hexerei: Secret Rite\" effect, each stack of Four Winds' Hymn also increases the equipping character's CRIT DMG by 7.5/9.5/11.5/13.5/15.5%.",
+  "location": "Event Wish Exclusive",
+  "baseDamage": { "attack": 46, "subStat": 72 },
+  "description": "Legend has it that this greatsword was forged by the hand of Ravenwood, who inherited the name of Boreas, prior to his ascension to knighthood.",
+  "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Indomitable Chivalry",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Wearer ATK SPD",
+          "type": "atk_speed_percent",
+          "values": [0.1, 0.1, 0.1, 0.1, 0.1],
+          "bonus": true
+        },
+        {
+          "label": "DMG per Four Winds' Hymn stack",
+          "type": "dmg_percent",
+          "values": [0.075, 0.095, 0.115, 0.135, 0.155],
+          "bonus": true,
+          "accumulations": 4
+        },
+        {
+          "label": "CRIT DMG per Four Winds' Hymn stack with Hexerei: Secret Rite",
+          "type": "crit_dmg",
+          "values": [0.075, 0.095, 0.115, 0.135, 0.155],
+          "bonus": true,
+          "accumulations": 4
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 45.9364, "critRate": 0.072 },
+    "growthCurves": { "baseAttack": "ATK 3.1", "critRate": "C3" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 31.1 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 62.2 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 93.4 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 124.5 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 155.6 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 186.7 } }
+    ]
+  }
+}
