@@ -1,0 +1,46 @@
+{
+  "name": "Estrela Gelada",
+  "type": "Catalisador",
+  "rarity": 4,
+  "baseAttack": 42,
+  "subStat": "Dano Crítico",
+  "passiveName": "Sonhos Noturnos",
+  "passiveDesc": "Nos 10s após um Ataque Carregado atingir um inimigo, aumenta a Proficiência Elemental em 72/90/108/126/144. Nos 10s após a Habilidade Elemental atingir um inimigo, aumenta a Proficiência Elemental em 48/60/72/84/96.",
+  "location": "Oração de Evento de Arma",
+  "baseDamage": { "attack": 42, "subStat": 120 },
+  "description": "Um recipiente de ritual forjado em prata, puro e completamente imaculado. Dizem que foi uma Relíquia Sagrada passada por gerações entre sacerdotisas do norte distante.",
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Sonhos Noturnos",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Proficiência Elemental após acerto Carregado",
+          "type": "elemental_mastery",
+          "values": [72, 90, 108, 126, 144],
+          "bonus": true
+        },
+        {
+          "label": "Proficiência Elemental separada após acerto da Habilidade",
+          "type": "elemental_mastery",
+          "values": [48, 60, 72, 84, 96],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 42.401, "critDamage": 0.12 },
+    "growthCurves": { "baseAttack": "ATK 2.1", "critDamage": "C2" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 25.9 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 51.9 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 77.8 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 103.7 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 129.7 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 155.6 } }
+    ]
+  }
+}
