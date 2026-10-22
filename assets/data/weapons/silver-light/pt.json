@@ -1,0 +1,41 @@
+{
+  "name": "Lâmpada Prateada",
+  "type": "Espada",
+  "rarity": 4,
+  "baseAttack": 42,
+  "subStat": "ATQ",
+  "passiveName": "Crepúsculo Sobre as Águas",
+  "passiveDesc": "Nos 12s após lançar a Habilidade Elemental, aumenta a Proficiência Elemental em 52/65/78/91/104. Esse efeito pode ser acumulado até 2 vezes, e a duração de cada acúmulo é contada separadamente.",
+  "location": "Recompensa de Evento",
+  "baseDamage": { "attack": 42, "subStat": 90 },
+  "description": "Uma espada antiga deixada pelo Leitor do Vento, um dos Três Eremitas de Guizang de Liyue. Lendas dizem que foi forjada da prata sagrada que caiu dos céus, e que chegou a cortar a água do mar em duas.",
+  "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Crepúsculo Sobre as Águas",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Proficiência Elemental do portador por acúmulo com duração independente após Habilidade Elemental",
+          "type": "elemental_mastery",
+          "values": [52, 65, 78, 91, 104],
+          "accumulations": 2,
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 42.401, "attackPercent": 0.09 },
+    "growthCurves": { "baseAttack": "ATK 2.1", "attackPercent": "C2" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 25.9 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 51.9 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 77.8 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 103.7 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 129.7 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 155.6 } }
+    ]
+  }
+}
