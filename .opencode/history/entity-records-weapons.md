@@ -1,5 +1,12 @@
 # Weapon Entity Records
 
+## 2026-10-22 — echoes-of-the-heart — complete (new EN/PT entity, progression and passive)
+
+- Fourteenth new ID after Disaster agent `30ca6858` / delivery `b99f30eb`. Released/craftable four-star Catalyst2026-08-12 (Game8/Fandom), complete EN/PT44ATK/6%ATK/description. Yatta43.7349/.06 ATTACK_202→ATK2.2/CRITICAL_201→C2, ascension0..155.6 at20..90. No images/existing data edited.
+- Direct elemental_mastery [60,75,90,105,120] after any Elemental Reaction and separate dmg_percent [.16,.20,.24,.28,.32], reaction STELLAR_GLIMMER, after Stellar Glimmer; bonus true/no targets/conditional/stacks/skills. Universal direct stat/reaction-scoped-damage-bonus contracts;12s/off-field/activation consumer-only. No ATK passive inferred from ATK substat or reaction scope on EM. No new schema.
+- References inspected 2026-10-22: https://game8.co/games/Genshin-Impact/archives/613897 ; https://library.keqingmains.com/equipment/weapons/catalysts#echoes-of-the-heart ; https://gi.yatta.moe/api/v2/en/weapon/14436 ; https://gi.yatta.moe/api/v2/pt/weapon/14436 (one provider); https://genshin-impact.fandom.com/api.php?action=parse&page=Echoes_of_the_Heart&prop=wikitext&format=json agree on release/identity/profile/ranks/usage/crafting. HoYoWiki exact search shell. Bundle `/tmp/opencode/echoes-of-the-heart-sources/` includes exact Game8 HTML; no conflict.
+- Exact progression/curves/direct units/reaction ratios/labels/JSON/parity/format/diff/identical delivery checked before commits; Node20 build/lint logs retain declaration/17 unrelated formatting failures. Agent then JSON-only delivery before Emberwell; no push.
+
 ## 2026-10-22 — disaster-and-remorse — complete (new EN/PT entity, progression and passive)
 
 - Thirteenth new ID after Dawning agent `95cb3569` / delivery `c545bac6`. Released five-star Polearm2026-06-09 (Game8/Fandom), complete EN/PT48ATK/4.8%CR/Event Wish/description. Yatta47.537/.048 ATTACK_302→ATK3.2/CRITICAL_301→C3, ascension0..186.7 at20..90. No images/existing data edited.
