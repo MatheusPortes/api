@@ -1,0 +1,53 @@
+{
+  "name": "Cortinas Noturnas",
+  "type": "Catalisador",
+  "rarity": 5,
+  "baseAttack": 44,
+  "subStat": "Dano CRIT",
+  "passiveName": "Canção das Encruzilhadas",
+  "passiveDesc": "Aumenta a Vida Máxima em 10/12/14/16/18%. Quando o portador desencadear Reações Lunares ou causar Dano de Reações Lunares contra os inimigos, regenera 14/15/16/17/18 de Energia Elemental para o portador, e obtém por 12s o efeito \"Vinho Divino\": aumenta a Vida Máxima em mais 14/16/18/20/22% e aumenta o Dano CRIT das Reações Lunares em mais 60/80/100/120/140%. Esses efeitos de regeneração de Energia Elemental podem ser desencadeados uma vez a cada 18s. Esses efeitos podem ser desencadeados, mesmo quando o portador não é o personagem ativo.",
+  "location": "Exclusivo de Oração de Evento",
+  "baseDamage": { "attack": 44, "subStat": 192 },
+  "description": "Uma pérola de jade envolvida pela luz do luar. Mesmo nas noites mais frias de inverno, seu calor gentil permanece como uma canção.",
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Canção das Encruzilhadas",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Vida Máxima do portador",
+          "type": "hp_percent",
+          "values": [0.1, 0.12, 0.14, 0.16, 0.18],
+          "bonus": true
+        },
+        {
+          "label": "Vida Máxima adicional do portador durante Vinho Divino",
+          "type": "hp_percent",
+          "values": [0.14, 0.16, 0.18, 0.2, 0.22],
+          "bonus": true
+        },
+        {
+          "label": "Dano CRIT das Reações Lunares durante Vinho Divino",
+          "type": "crit_dmg",
+          "reaction": ["LUNAR_CHARGED", "LUNAR_BLOOM", "LUNAR_CRYSTALLIZE"],
+          "values": [0.6, 0.8, 1, 1.2, 1.4],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 44.3358, "critDamage": 0.192 },
+    "growthCurves": { "baseAttack": "ATK 3.4", "critDamage": "C3" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 31.1 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 62.2 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 93.4 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 124.5 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 155.6 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 186.7 } }
+    ]
+  }
+}
