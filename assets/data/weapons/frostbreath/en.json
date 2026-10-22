@@ -1,0 +1,40 @@
+{
+  "name": "Frostbreath",
+  "type": "Polearm",
+  "rarity": 4,
+  "baseAttack": 42,
+  "subStat": "Energy Recharge",
+  "passiveName": "A Cast Real Far",
+  "passiveDesc": "Triggering a Cryo or Hydro-related elemental reaction increases the equipping character's ATK by 20/25/30/35/40% for the next 15s, as well as regenerates 6/7.5/9/10.5/12 Elemental Energy for other members of their party. This effect can trigger once every 16s.",
+  "location": "Battle Pass",
+  "baseDamage": { "attack": 42, "subStat": 100 },
+  "description": "A spear of solid ice imbued with an icy chill. It is said that it once belonged to the Belyi Tsar who ruled Snezhnaya in the distant past.",
+  "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "A Cast Real Far",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Wearer ATK after triggering a Cryo or Hydro-related reaction",
+          "type": "atk_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 42.401, "energyRecharge": 0.1 },
+    "growthCurves": { "baseAttack": "ATK 2.1", "energyRecharge": "C2" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 25.9 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 51.9 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 77.8 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 103.7 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 129.7 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 155.6 } }
+    ]
+  }
+}
