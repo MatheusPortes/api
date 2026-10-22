@@ -1,5 +1,12 @@
 # Weapon Entity Records
 
+## 2026-10-22 — new-bough — complete (new EN/PT entity, progression and passive)
+
+- Tenth selection after Moonweaver agent `8778961f` / delivery `f43dd6fe`. Released four-star Sword2026-09-23/Event Wish corroborated Game8 actual past banner/Fandom despite Game8 expected-tense release paragraph. Complete EN/PT42ATK/12%CD/profile; Yatta42.401/.12 ATK2.1/C2 ascensions0..155.6 at20..90. No existing records/images changed.
+- Two mutually exclusive native effects: ordinary Verdant per-stack atk_percent [.04,.05,.06,.07,.08] and elemental_mastery [20,25,30,35,40]; Radiance replacement per-stack atk_percent [.06,.075,.09,.105,.12] and STELLAR_GLIMMER dmg_percent [.08,.1,.12,.14,.16]. Every modifier bonus true/accumulations3, no targets/conditional/skills. Choose one entire variant, never base+replacement; localized labels explicitly preserve replacement. Existing stackable/stat/reaction/condition-alternative contracts, no runtime group/schema. Skill12s qualification/6s/1s/off-field are consumer state.
+- References inspected2026-10-22: https://game8.co/games/Genshin-Impact/archives/622067 ; https://library.keqingmains.com/equipment/weapons/swords#new-bough ; https://gi.yatta.moe/api/v2/en/weapon/11437 ; https://gi.yatta.moe/api/v2/pt/weapon/11437 ; https://genshin-impact.fandom.com/api.php?action=parse&page=New_Bough&prop=wikitext&format=json . Detailed clauses/ranks/identity agree; Game8 summary's triggering-reaction shorthand is not substituted for the actual Radiance clause. HoYoWiki shell; bundle `/tmp/opencode/new-bough-sources/`.
+- Exact progression/curves/four arrays/replacement/counts/JSON/source templates/parity/format/diff/identical delivery checked. Node20 build2 declaration/lint1 with17 unrelated format failures retained. Agent then JSON-only delivery before next selection; no push.
+
 ## 2026-10-22 — moonweaver-s-dawn — complete (new EN/PT entity, progression and passive)
 
 - Ninth selection after Master agent `1642ac86` / delivery `91a466a2`. Released four-star Sword2025-09-10 confirmed Game8/Fandom; both Weapon Event Wishes and quest copy corroborated, no claim of wish-exclusive acquisition. Complete EN/PT44ATK/6%ATK/profile. Yatta43.7349/.06 ATK2.2/C2 ascensions0..155.6 at20..90. No existing records/images changed.

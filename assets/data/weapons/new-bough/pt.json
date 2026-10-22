@@ -1,0 +1,69 @@
+{
+  "name": "Ramo Novo",
+  "type": "Espada",
+  "rarity": 4,
+  "baseAttack": 42,
+  "subStat": "Dano CRIT",
+  "passiveName": "Nervuras da Videira",
+  "passiveDesc": "Nos 12s após lançar a Habilidade Elemental, quando o portador atinge um inimigo com um ataque, obtém o efeito Vegetação Exuberante: aumenta o ATQ em 4/5/6/7/8%, aumenta a Proficiência Elemental em 20/25/30/35/40 por 6s. Acumula até 3 vezes. É possível desencadear uma vez por segundo. Esse efeito pode ser ativado mesmo quando o portador não for o personagem ativo.\nBrilho Reluzente: Brilho Estelar: o efeito de Vegetação Exuberante é alterado para aumentar o ATQ em 6/7.5/9/10.5/12%, e aumenta o Dano de reações de Brilho Estelar do portador em 8/10/12/14/16%.",
+  "location": "Exclusivo de Oração de Evento",
+  "baseDamage": { "attack": 42, "subStat": 120 },
+  "description": "Uma espada feita de madeira sagrado. Dizem que foi a chave para a reviravolta de uma batalha.",
+  "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Nervuras da Videira: Vegetação Exuberante comum; substituída por Brilho Reluzente: Brilho Estelar",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATQ comum por acúmulo de Vegetação Exuberante; exclui substituição por Brilho Reluzente",
+          "type": "atk_percent",
+          "values": [0.04, 0.05, 0.06, 0.07, 0.08],
+          "accumulations": 3,
+          "bonus": true
+        },
+        {
+          "label": "Proficiência Elemental comum por acúmulo de Vegetação Exuberante; exclui substituição por Brilho Reluzente",
+          "type": "elemental_mastery",
+          "values": [20, 25, 30, 35, 40],
+          "accumulations": 3,
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Nervuras da Videira: Brilho Reluzente: Brilho Estelar; substitui Vegetação Exuberante comum",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATQ substituto por acúmulo de Vegetação Exuberante com Brilho Reluzente",
+          "type": "atk_percent",
+          "values": [0.06, 0.075, 0.09, 0.105, 0.12],
+          "accumulations": 3,
+          "bonus": true
+        },
+        {
+          "label": "Dano de Brilho Estelar substituto por acúmulo de Vegetação Exuberante com Brilho Reluzente",
+          "type": "dmg_percent",
+          "reaction": ["STELLAR_GLIMMER"],
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "accumulations": 3,
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 42.401, "critDamage": 0.12 },
+    "growthCurves": { "baseAttack": "ATK 2.1", "critDamage": "C2" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 25.9 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 51.9 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 77.8 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 103.7 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 129.7 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 155.6 } }
+    ]
+  }
+}
