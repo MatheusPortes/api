@@ -1,0 +1,48 @@
+{
+  "name": "Cajado do Sacrificador",
+  "type": "Lança",
+  "rarity": 4,
+  "baseAttack": 45,
+  "subStat": "Taxa CRIT",
+  "passiveName": "Desejo Puro",
+  "passiveDesc": "Nos 6s depois da Habilidade Elemental atingir o inimigo, aumenta o ATQ em 8/10/12/14/16% e a Recarga de Energia em 6/7.5/9/10.5/12%. Esse efeito pode acumular até 3 vezes, e também surtirá se o portador não for o personagem ativo.",
+  "location": "Exclusivo de Oração de Evento",
+  "baseDamage": { "attack": 45, "subStat": 20 },
+  "description": "Uma lança branca prateada, pura e completamente imaculada. Dizem as lendas que foi usada pelas Arquissacerdotisas de Hiperbórea de eras passadas para guiar seus rebanhos aos Filhos da Lua Gelada.",
+  "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Desejo Puro",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATQ do portador por acúmulo após acerto de Habilidade Elemental",
+          "type": "atk_percent",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "accumulations": 3,
+          "bonus": true
+        },
+        {
+          "label": "Recarga de Energia do portador por acúmulo após acerto de Habilidade Elemental",
+          "type": "energy_recharge",
+          "values": [0.06, 0.075, 0.09, 0.105, 0.12],
+          "accumulations": 3,
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 45.0687, "critRate": 0.02 },
+    "growthCurves": { "baseAttack": "ATK 2.3", "critRate": "C2" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 25.9 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 51.9 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 77.8 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 103.7 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 129.7 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 155.6 } }
+    ]
+  }
+}

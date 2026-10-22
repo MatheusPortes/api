@@ -1,0 +1,48 @@
+{
+  "name": "Sacrificer's Staff",
+  "type": "Polearm",
+  "rarity": 4,
+  "baseAttack": 45,
+  "subStat": "CRIT Rate",
+  "passiveName": "Untainted Desire",
+  "passiveDesc": "For 6s after an Elemental Skill hits an opponent, ATK is increased by 8/10/12/14/16% and Energy Recharge is increased by 6/7.5/9/10.5/12%. Max 3 stacks. This effect can be triggered even when the equipping character is off-field.",
+  "location": "Event Wish Exclusive",
+  "baseDamage": { "attack": 45, "subStat": 20 },
+  "description": "A silver-white polearm, pure and completely without blemish. Legend has it that it was used by the Archpriestesses of Hyperborea in ages past to guide their flock of Frostmoon Scions.",
+  "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Untainted Desire",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Wearer ATK per stack after Skill hit",
+          "type": "atk_percent",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "accumulations": 3,
+          "bonus": true
+        },
+        {
+          "label": "Wearer Energy Recharge per stack after Skill hit",
+          "type": "energy_recharge",
+          "values": [0.06, 0.075, 0.09, 0.105, 0.12],
+          "accumulations": 3,
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 45.0687, "critRate": 0.02 },
+    "growthCurves": { "baseAttack": "ATK 2.3", "critRate": "C2" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 25.9 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 51.9 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 77.8 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 103.7 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 129.7 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 155.6 } }
+    ]
+  }
+}
