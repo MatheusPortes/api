@@ -1,5 +1,12 @@
 # Weapon Entity Records
 
+## 2026-10-22 — gest-of-the-mighty-wolf — complete (new EN/PT entity, progression and passive)
+
+- Second selection after Frostbreath agent `5162e1a7` / delivery `a17ba239`. Released five-star Claymore2026-02-25/Event Wish confirmed Game8/Fandom; complete EN/PT46ATK/7.2%CR/description. Yatta45.9364/.072, ATK3.1/C3, ascension0..186.7 at20..90. No existing data/images changed.
+- Generic atk_speed_percent [.1,.1,.1,.1,.1] without target follows universal generic-bonus rule and reviewed Cashflow/Skyward Blade precedent; no invented attack category. Separate dmg_percent and Hexerei-qualified crit_dmg each [.075,.095,.115,.135,.155] per stack, accumulations4, bonus true. Same consumer count; gain1/2/2 is not damage hits or independent stacks,4s/.01s/party eligibility stay text. No new schema.
+- References inspected2026-10-22: https://game8.co/games/Genshin-Impact/archives/580687 ; https://library.keqingmains.com/equipment/weapons/claymores#gest-of-the-mighty-wolf ; https://gi.yatta.moe/api/v2/en/weapon/12515 ; https://gi.yatta.moe/api/v2/pt/weapon/12515 ; https://genshin-impact.fandom.com/api.php?action=parse&page=Gest_of_the_Mighty_Wolf&prop=wikitext&format=json . Actual clauses agree on release/identity/ranks/activation/recipient; Game8 summary inaccurately equates all triggers to hits and Hexerei to wearer identity, so use matching detailed clauses instead. Fandom internal ID192515 differs from Yatta12515, not a served field; identity matches name/type/stats/passive. HoYoWiki shell; raw bundle `/tmp/opencode/gest-of-the-mighty-wolf-sources/`.
+- Exact progression/shared curves/ranks/separate bonuses/counts/labels/JSON/parity/format/diff/identical delivery checked; Node20 build2 declaration/lint1 with17 unrelated format failures retained. Agent then JSON-only delivery before next selection; no push.
+
 ## 2026-10-22 — frostbreath — complete (new EN/PT entity, progression and passive)
 
 - First selection in the owner-authorized next bounded round of up to20 missing weapons; baseline agent `452843c2`, delivery `b6fc1e0c`, both clean. Released four-star Polearm2026-08-12/Battle Pass independently confirmed by Game8/Fandom. Complete EN/PT42ATK/10%ER/profile/description; no images or existing records changed.
