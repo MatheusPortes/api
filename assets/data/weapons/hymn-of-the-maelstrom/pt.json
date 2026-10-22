@@ -1,0 +1,80 @@
+{
+  "name": "Cântico Rodopiante",
+  "type": "Catalisador",
+  "rarity": 5,
+  "baseAttack": 44,
+  "subStat": "Vida",
+  "passiveName": "Rondo da Hibernação",
+  "passiveDesc": "Aumenta o Bônus de Cura em 4/5/6/7/8%.\nAo curar, o portador obtém o efeito Relíquia Profética de Vatsamonga: aumenta a Vida Máxima em 4/5/6/7/8%, e para cada 1.000 de Vida Máxima acima de 40.000 da Vida Máxima do portador, aumenta o ATQ do personagem ativo em 0.4/0.5/0.6/0.7/0.8%. É possível elevar até 8/10/12/14/16% dessa forma por 10s. Esse efeito acumula até 3 vezes.\nNos 5s após um personagem próximo da equipe causar Congelamento ou Redemoinho Estelar, esse efeito de aumento de Vida Máxima e ATQ pode aumentar em mais 75%.\nEsse efeito pode ser desencadeado mesmo quando o portador não for o personagem ativo.",
+  "location": "Exclusivo de Oração de Evento",
+  "baseDamage": { "attack": 44, "subStat": 144 },
+  "description": "Uma lâmpada refinada feita de calcedônia azul que parece um tesouro de um conto de fadas. Dizem que há um louvor inesquecível dentro dessa lâmpada.",
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Rondo da Hibernação",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Bônus de Cura do portador",
+          "type": "healing_bonus",
+          "values": [0.04, 0.05, 0.06, 0.07, 0.08],
+          "bonus": true
+        },
+        {
+          "label": "Vida Máxima do portador por acúmulo de Relíquia Profética de Vatsamonga após curar",
+          "type": "hp_percent",
+          "values": [0.04, 0.05, 0.06, 0.07, 0.08],
+          "accumulations": 3,
+          "bonus": true
+        },
+        {
+          "label": "ATQ do personagem ativo por acúmulo baseado na Vida Máxima do portador acima de 40000",
+          "type": "atk_percent",
+          "values": [0.000004, 0.000005, 0.000006, 0.000007, 0.000008],
+          "conditional": {
+            "origin": "character",
+            "attribute": "hp",
+            "offset": 40000
+          },
+          "maxValues": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "accumulations": 3,
+          "bonus": true
+        },
+        {
+          "label": "Vida Máxima adicional do portador por acúmulo após Congelamento ou Redemoinho Estelar próximo",
+          "type": "hp_percent",
+          "values": [0.03, 0.0375, 0.045, 0.0525, 0.06],
+          "accumulations": 3,
+          "bonus": true
+        },
+        {
+          "label": "ATQ adicional do personagem ativo por acúmulo baseado na Vida Máxima do portador acima de 40000 após Congelamento ou Redemoinho Estelar próximo",
+          "type": "atk_percent",
+          "values": [0.000003, 0.00000375, 0.0000045, 0.00000525, 0.000006],
+          "conditional": {
+            "origin": "character",
+            "attribute": "hp",
+            "offset": 40000
+          },
+          "maxValues": [0.06, 0.075, 0.09, 0.105, 0.12],
+          "accumulations": 3,
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 44.3358, "hpPercent": 0.144 },
+    "growthCurves": { "baseAttack": "ATK 3.4", "hpPercent": "C3" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 31.1 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 62.2 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 93.4 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 124.5 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 155.6 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 186.7 } }
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "name": "Hymn of the Maelstrom",
+  "type": "Catalyst",
+  "rarity": 5,
+  "baseAttack": 44,
+  "subStat": "HP",
+  "passiveName": "Rondo of Slumber",
+  "passiveDesc": "Increases Healing Bonus by 4/5/6/7/8%.\nWhen performing healing, the equipping character gains the \"Vatsamonga's Vatic Vintage\" effect, which increases Max HP by 4/5/6/7/8% as well as increases the currently active party member's ATK by 0.4/0.5/0.6/0.7/0.8% for every 1,000 Max HP the equipping character has over 40,000. A maximum of 8/10/12/14/16% ATK can be gained in this way. This effect lasts 10s, max 3 stacks.\nWhen a nearby party member triggers a Frozen or Stellar Swirl reaction, the aforementioned Max HP and ATK boosts will be further increased by 75% for the next 5s.\nThe aforementioned effects can still trigger even when the equipping character is not on the field.",
+  "location": "Event Wish Exclusive",
+  "baseDamage": { "attack": 44, "subStat": 144 },
+  "description": "An exquisite lamp crafted out of blue chalcedony which looks like a treasure right out of a fairy tale. It is said that a song of praise, forgotten by all, slumbers sealed inside this lamp.",
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Rondo of Slumber",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Wearer Healing Bonus",
+          "type": "healing_bonus",
+          "values": [0.04, 0.05, 0.06, 0.07, 0.08],
+          "bonus": true
+        },
+        {
+          "label": "Wearer Max HP per Vatsamonga's Vatic Vintage stack after healing",
+          "type": "hp_percent",
+          "values": [0.04, 0.05, 0.06, 0.07, 0.08],
+          "accumulations": 3,
+          "bonus": true
+        },
+        {
+          "label": "Active member ATK per stack from wearer Max HP above 40000",
+          "type": "atk_percent",
+          "values": [0.000004, 0.000005, 0.000006, 0.000007, 0.000008],
+          "conditional": {
+            "origin": "character",
+            "attribute": "hp",
+            "offset": 40000
+          },
+          "maxValues": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "accumulations": 3,
+          "bonus": true
+        },
+        {
+          "label": "Additional wearer Max HP per stack after nearby Frozen or Stellar Swirl",
+          "type": "hp_percent",
+          "values": [0.03, 0.0375, 0.045, 0.0525, 0.06],
+          "accumulations": 3,
+          "bonus": true
+        },
+        {
+          "label": "Additional active member ATK per stack from wearer Max HP above 40000 after nearby Frozen or Stellar Swirl",
+          "type": "atk_percent",
+          "values": [0.000003, 0.00000375, 0.0000045, 0.00000525, 0.000006],
+          "conditional": {
+            "origin": "character",
+            "attribute": "hp",
+            "offset": 40000
+          },
+          "maxValues": [0.06, 0.075, 0.09, 0.105, 0.12],
+          "accumulations": 3,
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 44.3358, "hpPercent": 0.144 },
+    "growthCurves": { "baseAttack": "ATK 3.4", "hpPercent": "C3" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 31.1 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 62.2 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 93.4 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 124.5 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 155.6 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 186.7 } }
+    ]
+  }
+}
