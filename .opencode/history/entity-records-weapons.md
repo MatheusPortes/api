@@ -1,5 +1,12 @@
 # Weapon Entity Records
 
+## 2026-10-22 — golden-frostbound-oath — complete (new EN/PT entity, progression and passive)
+
+- Third selection after Gest agent `b0132da8` / delivery `aab3b41c`. Released five-star Bow2026-04-08/Event Wish confirmed Game8/Fandom; complete EN/PT44ATK/19.2%CD/profile. Yatta44.3358/.192 ATK3.4/C3, ascensions0..186.7 at20..90. No existing records/images changed.
+- Five distinct root bonuses: wearer def_percent [.16,.2,.24,.28,.32]; wearer GEO elemental_dmg_percent and LUNAR_CRYSTALLIZE dmg_percent each [.4,.5,.6,.7,.8]; other-nearby-member GEO and Lunar-Crystallize bonuses each [.2,.25,.3,.35,.4]. All bonus true/no target/conditional/stacks/skills; source recipients/6s/Moondrift/off-field activation consumer-only. Do not sum wearer and other-member grants or reinterpret Skill trigger as damage scope. Existing elemental/reaction/stat contracts, no new schema.
+- References inspected2026-10-22: https://game8.co/games/Genshin-Impact/archives/590317 ; https://library.keqingmains.com/equipment/weapons/bows#golden-frostbound-oath ; https://gi.yatta.moe/api/v2/en/weapon/15516 ; https://gi.yatta.moe/api/v2/pt/weapon/15516 ; https://genshin-impact.fandom.com/api.php?action=parse&page=Golden_Frostbound_Oath&prop=wikitext&format=json agree on release/identity/ranks/recipients/acquisition. HoYoWiki exact search shell; bundle `/tmp/opencode/golden-frostbound-oath-sources/`; no conflict.
+- Exact progression/curves/five coefficients/scopes/labels/JSON/parity/format/diff/identical delivery checked; Node20 build2 declaration/lint1 with17 unrelated format failures retained. Agent then JSON-only delivery before next; no push.
+
 ## 2026-10-22 — gest-of-the-mighty-wolf — complete (new EN/PT entity, progression and passive)
 
 - Second selection after Frostbreath agent `5162e1a7` / delivery `a17ba239`. Released five-star Claymore2026-02-25/Event Wish confirmed Game8/Fandom; complete EN/PT46ATK/7.2%CR/description. Yatta45.9364/.072, ATK3.1/C3, ascension0..186.7 at20..90. No existing data/images changed.
