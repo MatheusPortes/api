@@ -1,5 +1,12 @@
 # Weapon Entity Records
 
+## 2026-10-22 — reliquary-of-truth — complete (new EN/PT entity, progression and passive)
+
+- Fifteenth selection after Rainbow agent `e1f37bc3` / delivery `9d7d302b`. Released five-star Catalyst2025-10-22/Event Wish confirmed Game8/Fandom; complete EN/PT44ATK/19.2%CD/profile. Exact Yatta44.3358/.192 ATK3.4/C3 ascensions0..186.7 at20..90. Existing data/locales/images preserved.
+- Root crit_rate [.08,.1,.12,.14,.16], EM [80,100,120,140,160] after Skill, global crit_dmg [.24,.3,.36,.42,.48] after Lunar-Bloom damage; separate coexistence additions base×.5: EM [40,50,60,70,80], crit_dmg [.12,.15,.18,.21,.24]. All bonus true/no reaction/target/conditional/stacks/skills; Lunar-Bloom activates global CRIT, unlike Nocturne's benefiting scope.12s/4s/coexistence consumer-only. Existing fixed-source-increase/distinct-stat rules; no new schema or pre-summed totals.
+- References inspected2026-10-22: https://game8.co/games/Genshin-Impact/archives/557054 ; https://library.keqingmains.com/equipment/weapons/catalysts#reliquary-of-truth ; https://gi.yatta.moe/api/v2/en/weapon/14521 ; https://gi.yatta.moe/api/v2/pt/weapon/14521 ; https://genshin-impact.fandom.com/api.php?action=parse&page=Reliquary_of_Truth&prop=wikitext&format=json . Detailed clauses/ranks agree; Game8 summary inaccurately says up to50% CRIT, so use matching detailed50%-increase clause (R1 extra12%,total36%). HoYoWiki shell; bundle `/tmp/opencode/reliquary-of-truth-sources/`; localized source flavor descriptions retained despite EN/PT stylistic differences.
+- Exact progression/curves/five arrays/base-additional derivation/no reaction on global CRIT/JSON/source templates/parity/format/diff/identical delivery checked; Node20 build2 declaration/lint1 with17 unrelated format failures retained. Agent then JSON-only delivery before next; no push.
+
 ## 2026-10-22 — rainbow-serpent-s-rain-bow — complete (new EN/PT entity, progression and passive)
 
 - Fourteenth selection after Prospector agent `86c59ce4` / delivery `de49b1c7`. Released four-star Bow2025-12-19/event reward corroborated Game8 actual event acquisition/release paragraph and Fandom; Game8 phase table separately shows Dec23, not the matched event release date. Complete EN/PT42ATK/10%ER/profile. Exact Yatta42.401/.1 ATK2.1/C2 ascensions0..155.6 at20..90; no existing data/images changed.
