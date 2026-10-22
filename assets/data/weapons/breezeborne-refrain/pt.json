@@ -1,0 +1,47 @@
+{
+  "name": "Cordas Suaves",
+  "type": "Arco",
+  "rarity": 4,
+  "baseAttack": 42,
+  "subStat": "Taxa Crítica",
+  "passiveName": "Balada da Serpente",
+  "passiveDesc": "Aumenta a Recarga de Energia em 20%/25%/30%/35%/40%. Quando a Habilidade Elemental ou o Supremo do portador atingem um inimigo, obtém um acúmulo de Canto Sagrado do Purificador. Acumula até 3 vezes, e pode obter 1 acúmulo a cada 0.03s. Ao acumular 3 vezes, remove todos os acúmulos de Canto Sagrado do Purificador para obter Veneno Mortal da Serpente: aumenta o Dano de reações de Brilho Estelar dos membros próximos da equipe em 24%/30%/36%/42%/48% por 12s. Nesse período não é possível obter mais Canto Sagrado do Purificador. Esse efeito pode ser desencadeado mesmo quando o portador não for o personagem ativo.",
+  "location": "Oração de Evento de Arma",
+  "baseDamage": { "attack": 42, "subStat": 60 },
+  "description": "Um arco verde-escuro feito de gemas puras e perfeitas. Sempre invoca uma brisa primaveril quando é retesado.",
+  "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Balada da Serpente",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Recarga de Energia",
+          "type": "energy_recharge",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "Dano de Brilho Estelar dos membros próximos durante Veneno Mortal da Serpente após consumir 3 acúmulos",
+          "type": "dmg_percent",
+          "reaction": ["STELLAR_GLIMMER"],
+          "values": [0.24, 0.3, 0.36, 0.42, 0.48],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 42.401, "critRate": 0.06 },
+    "growthCurves": { "baseAttack": "ATK 2.1", "critRate": "C2" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 25.9 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 51.9 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 77.8 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 103.7 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 129.7 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 155.6 } }
+    ]
+  }
+}

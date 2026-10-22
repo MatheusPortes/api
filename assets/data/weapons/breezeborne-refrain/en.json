@@ -1,0 +1,47 @@
+{
+  "name": "Breezeborne Refrain",
+  "type": "Bow",
+  "rarity": 4,
+  "baseAttack": 42,
+  "subStat": "CRIT Rate",
+  "passiveName": "Viper's Ballad",
+  "passiveDesc": "Increases Energy Recharge by 20/25/30/35/40%. When the equipping character hits the opponent with their Elemental Skill or Elemental Burst, they gain a stack of \"Hymn of the Pure.\" This effect can trigger once every 0.03s, max 3 stacks, and at 3 stacks, all instances of \"Hymn of the Pure\" are cleared to give the equipping character \"Thus Lied the Viper\" instead. This grants nearby party members a 24/30/36/42/48% Stellar Glimmer reaction DMG boost for 12s, during which no stacks of \"Hymn of the Pure\" can be obtained. The aforementioned effects can still trigger even when the equipping character is not on the field.",
+  "location": "Event Wish Exclusive",
+  "baseDamage": { "attack": 42, "subStat": 60 },
+  "description": "A dark green bow string made out of pure and flawless gemstone. It never fails to summon a warm spring breeze whenever it is drawn.",
+  "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Viper's Ballad",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Energy Recharge",
+          "type": "energy_recharge",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "Nearby party members' Stellar Glimmer DMG during Thus Lied the Viper after consuming 3 Hymn stacks",
+          "type": "dmg_percent",
+          "reaction": ["STELLAR_GLIMMER"],
+          "values": [0.24, 0.3, 0.36, 0.42, 0.48],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 42.401, "critRate": 0.06 },
+    "growthCurves": { "baseAttack": "ATK 2.1", "critRate": "C2" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 25.9 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 51.9 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 77.8 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 103.7 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 129.7 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 155.6 } }
+    ]
+  }
+}
