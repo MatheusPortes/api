@@ -1,5 +1,12 @@
 # Weapon Entity Records
 
+## 2026-10-22 — heretic-s-molten-blade — complete after owner interval approval
+
+- Fourth selection in the same unfinished20-ID round; owner confirmed one modifier with minimum values/maximum maxValues, resolving the earlier blocker. Added complete EN/PT42ATK/6%CR/Battle Pass/localized profile/description, exact Yatta42.401/.06 ATK2.1/C2 progression and ascensions0..155.6 at20..90. No existing entities/images/locales changed.
+- Apply `heretic-distance-atk-range`: one root atk_percent with minimum [.18,.225,.27,.315,.36], maximum [.36,.45,.54,.63,.72], bonus true, localized interval labels; no conditional/target/stacks/skills. Distance selection/14s windows/off-field removal consumer-only. Active workflow and conventions document this owner-selected interval exception; rule history records read-only compatibility with existing conditional result caps and healing input caps, unchanged.
+- Source bundle/references/release agreement remain as recorded in the earlier research below: Game8 https://game8.co/games/Genshin-Impact/archives/613905 ; KQM https://library.keqingmains.com/equipment/weapons/swords#heretics-molten-blade ; Yatta https://gi.yatta.moe/api/v2/en/weapon/11435 and https://gi.yatta.moe/api/v2/pt/weapon/11435 ; Fandom https://genshin-impact.fandom.com/api.php?action=parse&page=Heretic%27s_Molten_Blade&prop=wikitext&format=json . HoYoWiki shell; source semantics agree, interval representation owner-approved rather than inferred.
+- Validate exact source progression/curves/minimum/maximum/ranks/full source passive templates/EN-PT parity/focused formatting/diff/JSON-only delivery. Node20 build/lint retain existing declaration exit2/17 unrelated formatting files exit1. Commit full entity plus directly affected rules/history on agent, then mirror JSON only before Hymn; no push. Previous3-entity stop/audit is historical, not round completion.
+
 ## 2026-10-22 — frostbreath through golden-frostbound-oath — bounded round stopped at semantic blocker
 
 - Owner authorized up to20 missing weapons, starting Frostbreath; completed three sequential released entities, six full EN/PT files with progression/passives. Agent commits `5162e1a7`, `b0132da8`, `216cd3a9`; matching JSON-only delivery commits `a17ba239`, `aab3b41c`, `45dc27bc`. Each delivery completed before next selection. Catalog232 EN weapons. Existing entities, other locales, images, branch-native calculations and stale/prunable worktree registration preserved; no push or automatic further entity/round.

@@ -1,0 +1,41 @@
+{
+  "name": "Lâmina Derretida do Herege",
+  "type": "Espada",
+  "rarity": 4,
+  "baseAttack": 42,
+  "subStat": "Taxa CRIT",
+  "passiveName": "Bênção da Luz Solitária",
+  "passiveDesc": "Depois que o portador lança a Habilidade Elemental, obtém Brilho da Primeira Luz: registra a distância percorrida pelo portador. A cada segundo, com base na distância percorrida no último segundo, o portador ganha um Bônus de ATQ mínimo de 18/22.5/27/31.5/36% e máximo de 36/45/54/63/72%. Esse efeito dura 14s, pode ser desencadeado uma vez a cada 14s e será removido quando o portador deixar de ser o personagem ativo.",
+  "location": "Passe de Batalha",
+  "baseDamage": { "attack": 42, "subStat": 60 },
+  "description": "Era a arma que ele sacou novamente ao encontrar pela primeira vez aquele Deus das Chamas abençoado por todos — uma arma que havia muito tempo não utilizava.",
+  "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Bênção da Luz Solitária",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Bônus de ATQ mínimo–máximo do portador pela distância percorrida no último segundo de Brilho da Primeira Luz",
+          "type": "atk_percent",
+          "values": [0.18, 0.225, 0.27, 0.315, 0.36],
+          "maxValues": [0.36, 0.45, 0.54, 0.63, 0.72],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 42.401, "critRate": 0.06 },
+    "growthCurves": { "baseAttack": "ATK 2.1", "critRate": "C2" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 25.9 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 51.9 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 77.8 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 103.7 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 129.7 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 155.6 } }
+    ]
+  }
+}

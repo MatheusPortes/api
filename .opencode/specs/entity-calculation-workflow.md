@@ -57,7 +57,9 @@ States: `not-started`, `in-progress`, `partial`, `blocked`, `complete`, `reviewe
 | `wearer-shield-strength-bonus`                      | `shield_strength_percent`, positive value, `bonus: true`; distinct from shield creation/absorption.                                                                                            |
 | `combined-party-energy-cost-burst-bonus`            | Burst `dmg_percent`, target `elemental_burst`, `conditional: time.energy_cost`, per-point values and same-rank result `maxValues`; consumer applies `min(sum party Burst costs × value, cap)`. |
 
-`maxValues` otherwise caps the supplied result, not the reference. No rule authorizes formulas, timers, recipient selectors, state engines, unsupported scopes, or automatic migrations.
+`maxValues` otherwise caps the supplied result, not the reference; the entity-specific `heretic-distance-atk-range` rule below is an explicit minimum–maximum interval exception. No rule authorizes formulas, timers, recipient selectors, state engines, unsupported scopes, or automatic migrations.
+
+Rule `heretic-distance-atk-range`: the owner-approved Heretic's Molten Blade representation uses exactly one root `atk_percent` modifier with R1–R5 minimum bonuses in `values` [.18,.225,.27,.315,.36], maximum bonuses in `maxValues` [.36,.45,.54,.63,.72], and `bonus: true`. For this entity's modifier only, these are the inclusive lower/upper endpoints of a single distance-dependent ATK-bonus interval, not a scaling coefficient plus ordinary cap, two summable bonuses, or discrete stack tiers. Localized labels identify the minimum–maximum interval. Omit `conditional`, `target`, `accumulations` and skills; the consumer determines the qualifying bonus from distance traveled during the previous second and handles Skill activation, duration/cooldown and off-field removal. No distance unit, interpolation formula or new runtime field is inferred. Existing result caps and recorded-healing input caps keep their meanings; this exception does not authorize other range mappings or automatic migrations.
 
 ### Party-member eligibility and thresholds
 
