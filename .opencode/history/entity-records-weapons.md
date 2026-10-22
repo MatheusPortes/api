@@ -1,5 +1,12 @@
 # Weapon Entity Records
 
+## 2026-10-22 — serenity-s-call — complete (new EN/PT entity, progression and passive)
+
+- Seventeenth selection after Sacrificer agent `99180325` / delivery `6bf80f1d`. Released four-star Sword2025-09-10/Forging (Fandom release/Game8 acquisition); complete EN/PT41ATK/13.3%ER/profile/description. Exact Yatta41.0671/.133333 ATK2.4/C2 ascensions0..155.6 at20..90, baseDamage133 display/raw precision retained separately. No existing records/images changed.
+- Separate base and Moonsign-qualified additional hp_percent [.16,.2,.24,.28,.32], bonus true/no target/conditional/reaction/stacks/skills. Reaction activates stat;12s/off-field/party eligibility consumer-only. Existing distinct-stat contract, no merged/doubled always-on contribution or new schema.
+- References inspected2026-10-22: https://game8.co/games/Genshin-Impact/archives/546790 (Master Key related link); https://library.keqingmains.com/equipment/weapons/swords#serenitys-call ; https://gi.yatta.moe/api/v2/en/weapon/11433 ; https://gi.yatta.moe/api/v2/pt/weapon/11433 ; https://genshin-impact.fandom.com/api.php?action=parse&page=Serenity%27s_Call&prop=wikitext&format=json agree on profile/acquisition/ranks/clauses. HoYoWiki shell; bundle `/tmp/opencode/serenity-s-call-sources/`; no conflict.
+- Exact progression/curves/separate arrays/JSON/source templates/parity/format/diff/identical delivery checked; Node20 build2 declaration/lint1 with17 unrelated formatting failures retained. Agent then JSON-only delivery before next; no push.
+
 ## 2026-10-22 — sacrificer-s-staff — complete (new EN/PT entity, progression and passive)
 
 - Sixteenth selection after Reliquary agent `924b04dc` / delivery `e3f1e67c`. Released four-star Polearm2025-10-22/Event Wish confirmed Game8/Fandom; complete EN/PT45ATK/2%CR/profile/description. Exact Yatta45.0687/.02 ATK2.3/C2 ascensions0..155.6 at20..90 (620 endpoint, not ordinary565). No existing data/images changed.

@@ -1,0 +1,46 @@
+{
+  "name": "Chamado da Serenidade",
+  "type": "Espada",
+  "rarity": 4,
+  "baseAttack": 41,
+  "subStat": "Recarga de Energia",
+  "passiveName": "Silêncio dos Murmúrios",
+  "passiveDesc": "Nos 12s depois de desencadear uma reação Elemental, aumenta a Vida Máxima em 16/20/24/28/32%. Presságio Lunar: Reluzir Cheio: aumenta a Vida Máxima nesse efeito em mais 16/20/24/28/32%. Esse efeito pode ser desencadeado mesmo quando o personagem que está com essa arma equipada não esteja ativo.",
+  "location": "Forja",
+  "baseDamage": { "attack": 41, "subStat": 133 },
+  "description": "Uma espada longa forjada de metal que emite um som de luto ao ser brandida.",
+  "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Silêncio dos Murmúrios",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Vida Máxima do portador após causar reação Elemental",
+          "type": "hp_percent",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "Vida Máxima adicional do portador com Presságio Lunar: Reluzir Cheio após reação",
+          "type": "hp_percent",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 41.0671, "energyRecharge": 0.133333 },
+    "growthCurves": { "baseAttack": "ATK 2.4", "energyRecharge": "C2" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 25.9 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 51.9 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 77.8 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 103.7 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 129.7 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 155.6 } }
+    ]
+  }
+}
