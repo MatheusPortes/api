@@ -1,5 +1,12 @@
 # Weapon Entity Records
 
+## 2026-10-22 — master-key — complete (new EN/PT entity, progression and passive)
+
+- Eighth selection after Moonshard agent `7c698075` / delivery `2517358b`. Released four-star Claymore2025-09-10/Forging (Fandom release, Game8 available craft acquisition); complete EN/PT41ATK/13.3%ER/profile. Exact Yatta41.0671/.133333 ATK2.4/C2 ascensions0..155.6 at20..90; displayed baseDamage subStat133 retains13.3% display, not raw progression rounding. No existing entities/images changed.
+- Two root elemental_mastery [60,75,90,105,120], bonus true: base after reaction and separately additional Moonsign Ascendant Gleam contribution. No target/conditional/reaction scope/stacks/skills; preserve12s/off-field/party activation consumer text. Equal numbers do not authorize merging/pre-doubling. Existing distinct-stat contracts; no schema change.
+- References inspected2026-10-22: https://game8.co/games/Genshin-Impact/archives/546837 (located from Gest related-weapon links); https://library.keqingmains.com/equipment/weapons/claymores#master-key ; https://gi.yatta.moe/api/v2/en/weapon/12433 ; https://gi.yatta.moe/api/v2/pt/weapon/12433 ; https://genshin-impact.fandom.com/api.php?action=parse&page=Master_Key&prop=wikitext&format=json agree on identity/acquisition/full ranks/activation. HoYoWiki shell; bundle `/tmp/opencode/master-key-sources/`; no source conflict.
+- Exact progression/curves/separate base-additional arrays/JSON/source templates/parity/format/diff/identical delivery checked. Node20 build2 declaration/lint1 with17 unrelated format failures retained. Agent then JSON-only delivery before next selection; no push.
+
 ## 2026-10-22 — lightbearing-moonshard — complete (new EN/PT entity, progression and passive)
 
 - Seventh selection after Jade agent `17effa22` / delivery `65ad9e9b`. Released five-star Sword2026-02-03/Event Wish confirmed Game8 banner history/Fandom; complete EN/PT44ATK/19.2%CD/profile. Game8's release paragraph retains expected tense/incorrect Phase1, but actual banner section/date match Fandom release and Phase2. Yatta44.3358/.192 ATK3.4/C3 ascensions0..186.7 at20..90. No existing records/images changed.
