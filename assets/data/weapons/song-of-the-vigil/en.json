@@ -1,0 +1,40 @@
+{
+  "name": "Song of the Vigil",
+  "type": "Polearm",
+  "rarity": 4,
+  "baseAttack": 44,
+  "subStat": "Elemental Mastery",
+  "passiveName": "Cadence of Days Gone By",
+  "passiveDesc": "Triggering an Elemental Reaction regenerates 4/5/6/7/8 Elemental Energy for the equipping character. This effect can trigger once every 9s. On the other hand, triggering a Stellar Glimmer reaction increases their ATK by 20/25/30/35/40% for 12s. The aforementioned effects can trigger even when the character is not on the field.",
+  "location": "Forging",
+  "baseDamage": { "attack": 44, "subStat": 24 },
+  "description": "A long spear that once stood guard over all. Today, it has found a new purpose with children and their games of make-believe.",
+  "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Cadence of Days Gone By",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Wearer ATK after triggering Stellar Glimmer",
+          "type": "atk_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 43.7349, "elementalMastery": 24 },
+    "growthCurves": { "baseAttack": "ATK 2.2", "elementalMastery": "C2" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 25.9 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 51.9 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 77.8 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 103.7 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 129.7 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 155.6 } }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Canção da Vigília",
+  "type": "Lança",
+  "rarity": 4,
+  "baseAttack": 44,
+  "subStat": "Proficiência Elemental",
+  "passiveName": "Cadência dos Dias Passados",
+  "passiveDesc": "Depois de desencadear uma reação Elemental, regenera 4/5/6/7/8 de Energia Elemental para o portador. Esse efeito pode ser desencadeado uma vez a cada 9s. Nos 12s após desencadear uma reação de Brilho Estelar, aumenta o ATQ do portador em 20/25/30/35/40%. Esse efeito pode ser desencadeado mesmo quando o portador não for o personagem ativo.",
+  "location": "Forja",
+  "baseDamage": { "attack": 44, "subStat": 24 },
+  "description": "Uma lança longa que vigiou a todos. Hoje, possui um novo propósito entre crianças e seus jogos de faz-de-conta.",
+  "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Cadência dos Dias Passados",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATQ do portador após desencadear Brilho Estelar",
+          "type": "atk_percent",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 43.7349, "elementalMastery": 24 },
+    "growthCurves": { "baseAttack": "ATK 2.2", "elementalMastery": "C2" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 25.9 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 51.9 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 77.8 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 103.7 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 129.7 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 155.6 } }
+    ]
+  }
+}
