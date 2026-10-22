@@ -1,0 +1,48 @@
+{
+  "name": "Asa Gelada do Lago Branco",
+  "type": "Espada",
+  "rarity": 5,
+  "baseAttack": 48,
+  "subStat": "Taxa CRIT",
+  "passiveName": "Finalização do Cisne da Neve",
+  "passiveDesc": "Quando a Habilidade Elemental do portador atinge um inimigo, obtém Lamento da Cor do Lago: aumenta o ATQ em 8/10/12/14/16% por 8s. Acumula até 3 vezes. Pode ser desencadeado uma vez a cada 0.1s. A duração de cada acúmulo é contada separadamente. Ao possuir 3 acúmulos, aumenta o Dano CRIT da reação de Brilho Estelar do portador em 50/65/80/95/110%, e ao desencadear Brilho Estelar ou causar Dano de Brilho Estelar, regenera 4/4.5/5/5.5/6 de Energia Elemental para o portador. Esse efeito de regeneração pode ser desencadeado uma vez a cada 3.5s. Esse efeito pode ser desencadeado mesmo quando o portador não for o personagem ativo.",
+  "location": "Exclusivo de Oração de Evento",
+  "baseDamage": { "attack": 48, "subStat": 48 },
+  "description": "Uma espada longa leve como as suaves plumas de um Cisne da Neve, que permanece pura e imaculada a qualquer momento.",
+  "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Finalização do Cisne da Neve",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATQ do portador por acúmulo com duração independente de Lamento da Cor do Lago após acerto de Habilidade Elemental",
+          "type": "atk_percent",
+          "values": [0.08, 0.1, 0.12, 0.14, 0.16],
+          "accumulations": 3,
+          "bonus": true
+        },
+        {
+          "label": "Dano CRIT de Brilho Estelar com três acúmulos de Lamento da Cor do Lago; bônus único, não por acúmulo",
+          "type": "crit_dmg",
+          "reaction": ["STELLAR_GLIMMER"],
+          "values": [0.5, 0.65, 0.8, 0.95, 1.1],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 47.537, "critRate": 0.048 },
+    "growthCurves": { "baseAttack": "ATK 3.2", "critRate": "C3" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 31.1 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 62.2 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 93.4 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 124.5 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 155.6 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 186.7 } }
+    ]
+  }
+}
