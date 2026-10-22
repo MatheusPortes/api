@@ -1,0 +1,58 @@
+{
+  "name": "The Daybreak Chronicles",
+  "type": "Bow",
+  "rarity": 5,
+  "baseAttack": 48,
+  "subStat": "CRIT DMG",
+  "passiveName": "Ode Beyond Time",
+  "passiveDesc": "The equipping character gains Stirring Dawn Breeze: 3s after leaving combat, Normal Attack, Elemental Skill, and Elemental Burst DMG is increased by 60/75/90/105/120%. While in combat, this DMG Bonus will decrease by 10/12.5/15/17.5/20% per second until it reaches 0%. When the equipping character's Normal Attacks, Elemental Skills, or Elemental Bursts hit an opponent, the DMG Bonus for the corresponding DMG type is increased by 10/12.5/15/17.5/20% until it reaches 60/75/90/105/120%. This effect can be triggered once every 0.1s for each of the attack types mentioned above. This effect can be triggered even if the equipping character is off-field.\nAdditionally, when the party possesses Hexerei: Secret Rite effects, when the equipping character's Normal Attacks, Elemental Skills, or Elemental Bursts hit an opponent, the DMG Bonus for all these DMG types is increased by 20/25/30/35/40% instead.",
+  "location": "Event Wish Exclusive",
+  "baseDamage": { "attack": 48, "subStat": 96 },
+  "description": "The songs of resistance come hither on the wind to settle as gentle tones upon these strings, their combined power great enough to rip boundless darkness asunder with the light of the breaking dawn.",
+  "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Ode Beyond Time",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Normal Attack DMG per active Stirring Dawn Breeze bonus step (0–6); consumer tracks this category's gain and decay",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "accumulations": 6,
+          "bonus": true
+        },
+        {
+          "label": "Elemental Skill DMG per active Stirring Dawn Breeze bonus step (0–6); consumer tracks this category's gain and decay",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "accumulations": 6,
+          "bonus": true
+        },
+        {
+          "label": "Elemental Burst DMG per active Stirring Dawn Breeze bonus step (0–6); consumer tracks this category's gain and decay",
+          "type": "dmg_percent",
+          "target": "elemental_burst",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "accumulations": 6,
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 47.537, "critDamage": 0.096 },
+    "growthCurves": { "baseAttack": "ATK 3.2", "critDamage": "C3" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 31.1 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 62.2 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 93.4 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 124.5 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 155.6 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 186.7 } }
+    ]
+  }
+}
