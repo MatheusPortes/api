@@ -1,0 +1,40 @@
+{
+  "name": "Cordas da Chuva da Serpente Arco-Íris",
+  "type": "Arco",
+  "rarity": 4,
+  "baseAttack": 42,
+  "subStat": "Recarga de Energia",
+  "passiveName": "Idioma Estelar Estrangeiro Sagrado",
+  "passiveDesc": "Quando o portador não é o personagem ativo, aumenta o ATQ em 28/35/42/49/56% por 8s após o portador atingir um inimigo com um ataque.",
+  "location": "Recompensa de Evento",
+  "baseDamage": { "attack": 42, "subStat": 100 },
+  "description": "Uma arma cerimonial antiga passada de geração em geração pelos Mestres do Vento Noturno. Esse arco escuro estará para sempre envolto por um frio indelével.",
+  "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Idioma Estelar Estrangeiro Sagrado",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATQ do portador após seu ataque atingir enquanto fora de campo",
+          "type": "atk_percent",
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 42.401, "energyRecharge": 0.1 },
+    "growthCurves": { "baseAttack": "ATK 2.1", "energyRecharge": "C2" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 25.9 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 51.9 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 77.8 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 103.7 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 129.7 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 155.6 } }
+    ]
+  }
+}
