@@ -1,0 +1,47 @@
+{
+  "name": "Resplendor Fragmentado",
+  "type": "Lança",
+  "rarity": 5,
+  "baseAttack": 46,
+  "subStat": "Dano Crítico",
+  "passiveName": "Coroa de Jade Gelado",
+  "passiveDesc": "Nos 20s depois de lançar a Habilidade Elemental ou o Supremo, aumenta o ATQ em 24%/30%/36%/42%/48%. Nesse período, se o personagem que está com essa arma equipada criar um escudo, obterá o efeito Corrente das Ordens Sagradas nos 20s seguintes: aumenta o Dano de Carga Lunar de todos os membros próximos da equipe em 40%/50%/60%/70%/80%.",
+  "location": "Oração de Evento de Arma",
+  "baseDamage": { "attack": 46, "subStat": 144 },
+  "description": "Uma lâmina mecânica giratória produzida pela Oficina de Rolinho de Ovo Trilimlim que parece esconder os segredos de uma era passada...",
+  "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Coroa de Jade Gelado",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATQ do portador após usar Habilidade ou Supremo",
+          "type": "atk_percent",
+          "values": [0.24, 0.3, 0.36, 0.42, 0.48],
+          "bonus": true
+        },
+        {
+          "label": "Dano de Carga Lunar dos membros próximos durante Corrente das Ordens Sagradas após criar escudo",
+          "type": "dmg_percent",
+          "reaction": ["LUNAR_CHARGED"],
+          "values": [0.4, 0.5, 0.6, 0.7, 0.8],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 45.9364, "critDamage": 0.144 },
+    "growthCurves": { "baseAttack": "ATK 3.1", "critDamage": "C3" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 31.1 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 62.2 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 93.4 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 124.5 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 155.6 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 186.7 } }
+    ]
+  }
+}
