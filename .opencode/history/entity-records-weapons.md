@@ -1,5 +1,12 @@
 # Weapon Entity Records
 
+## 2026-10-22 — snare-hook — complete (new EN/PT entity, progression and passive)
+
+- Nineteenth selection after Silver agent `b0a583b2` / delivery `db223a13`. Released four-star Bow2025-09-10/Forging (Fandom release/Game8 current acquisition); complete EN/PT41ATK/13.3%ER/profile. Exact Yatta41.0671/.133333 ATK2.4/C2 ascensions0..155.6 at20..90; raw precision preserved separately from display133. No existing data/images changed.
+- Two distinct elemental_mastery [60,75,90,105,120] root bonuses: base after reaction and additional with Moonsign Ascendant Gleam; no target/conditional/reaction/stacks/skills.12s/off-field/eligibility consumer-only. Same approved mechanics as individually researched Master Key, but identity/progression/profile verified separately; no bulk import or merged/doubled unconditional total/new schema.
+- References inspected2026-10-22: https://game8.co/games/Genshin-Impact/archives/546840 (Master Key related link); https://library.keqingmains.com/equipment/weapons/bows#snare-hook ; https://gi.yatta.moe/api/v2/en/weapon/15433 ; https://gi.yatta.moe/api/v2/pt/weapon/15433 ; https://genshin-impact.fandom.com/api.php?action=parse&page=Snare_Hook&prop=wikitext&format=json agree on profile/acquisition/full ranks/activation. HoYoWiki shell; bundle `/tmp/opencode/snare-hook-sources/`; no mechanical conflict, localized source flavor text retained.
+- Exact progression/curves/two arrays/JSON/source templates/parity/format/diff/identical delivery checked; Node20 build2 declaration/lint1 with17 unrelated format failures retained. Agent then JSON-only delivery before final Song of the Vigil; no push.
+
 ## 2026-10-22 — silver-light — complete (new EN/PT entity, progression and passive)
 
 - Eighteenth selection after Serenity agent `814c894a` / delivery `cab4ca98`. Released four-star Sword2026-09-24/event reward: Fandom release/event, Game8 actual day1 claim instructions and dated Sep24–Oct12 event corroborate despite expected-tense release paragraph. Complete EN/PT42ATK/9%ATK/profile/description. Exact Yatta42.401/.09 ATK2.1/C2 ascensions0..155.6 at20..90; no existing records/images changed.

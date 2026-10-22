@@ -1,0 +1,46 @@
+{
+  "name": "Snare Hook",
+  "type": "Bow",
+  "rarity": 4,
+  "baseAttack": 41,
+  "subStat": "Energy Recharge",
+  "passiveName": "Phantom Flash",
+  "passiveDesc": "Upon causing an Elemental Reaction, increases Elemental Mastery by 60/75/90/105/120 for 12s. Moonsign: Ascendant Gleam: Elemental Mastery from this effect is further increased by 60/75/90/105/120. This effect can be triggered even if the equipping character is off-field.",
+  "location": "Forging",
+  "baseDamage": { "attack": 41, "subStat": 133 },
+  "description": "The stave of this bow is comprised of metal alloy and yet remains surprisingly light. Even when faced with thick, heavy snares, the arrows it fires can pass through unhindered.",
+  "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Phantom Flash",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Wearer Elemental Mastery after causing an Elemental Reaction",
+          "type": "elemental_mastery",
+          "values": [60, 75, 90, 105, 120],
+          "bonus": true
+        },
+        {
+          "label": "Additional wearer Elemental Mastery with Moonsign: Ascendant Gleam after reaction",
+          "type": "elemental_mastery",
+          "values": [60, 75, 90, 105, 120],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 41.0671, "energyRecharge": 0.133333 },
+    "growthCurves": { "baseAttack": "ATK 2.4", "energyRecharge": "C2" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 25.9 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 51.9 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 77.8 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 103.7 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 129.7 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 155.6 } }
+    ]
+  }
+}
