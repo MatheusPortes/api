@@ -1,0 +1,90 @@
+{
+  "name": "Desastre e Remorso",
+  "type": "Lança",
+  "rarity": 5,
+  "baseAttack": 48,
+  "subStat": "Taxa Crítica",
+  "passiveName": "Ruínas e Culpa",
+  "passiveDesc": "Depois que o portador lança uma Habilidade Elemental, ele obtém \"Caminho da Disputa\" por 17s, além de \"Imperdoável\" e \"Incurável\" por 3s cada. Esse efeito pode ser ativado uma vez a cada 18s. Imperdoável: Aumenta o Dano de Ataque Normal e Ataque Carregado do portador em 40%/50%/60%/70%/80%. Incurável: Aumenta o Dano da Habilidade Elemental e do Supremo do portador em 40%/50%/60%/70%/80%. Enquanto Caminho da Disputa estiver ativo, quando o portador atingir um oponente com um Ataque Normal ou Ataque Carregado, a duração de Incurável aumentará em 1s. Quando o portador atingir um oponente com sua Habilidade Elemental ou Supremo, a duração de Imperdoável aumentará em 1s. Cada um dos efeitos acima pode ser ativado uma vez a cada 0.1s. Quando Caminho da Disputa terminar, ou o portador sair de campo, Imperdoável e Incurável serão removidos. Mágico: Ritual Secreto: Os Bônus de Dano acima aumentam em 75%.",
+  "location": "Oração de Evento de Arma",
+  "baseDamage": { "attack": 48, "subStat": 48 },
+  "description": "Uma lança forjada com Pedra Branca e Estrelas de Prata. Sua ponta afiada é constantemente envolta por um frio que penetra os ossos.",
+  "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Ruínas e Culpa",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Imperdoável — Dano de Ataque Normal",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.4, 0.5, 0.6, 0.7, 0.8],
+          "bonus": true
+        },
+        {
+          "label": "Imperdoável — Dano de Ataque Carregado",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.4, 0.5, 0.6, 0.7, 0.8],
+          "bonus": true
+        },
+        {
+          "label": "Incurável — Dano da Habilidade",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.4, 0.5, 0.6, 0.7, 0.8],
+          "bonus": true
+        },
+        {
+          "label": "Incurável — Dano do Supremo",
+          "type": "dmg_percent",
+          "target": "elemental_burst",
+          "values": [0.4, 0.5, 0.6, 0.7, 0.8],
+          "bonus": true
+        },
+        {
+          "label": "Dano Normal adicional de Imperdoável com Mágico: Ritual Secreto",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.3, 0.375, 0.45, 0.525, 0.6],
+          "bonus": true
+        },
+        {
+          "label": "Dano Carregado adicional de Imperdoável com Mágico: Ritual Secreto",
+          "type": "dmg_percent",
+          "target": "charged_attack",
+          "values": [0.3, 0.375, 0.45, 0.525, 0.6],
+          "bonus": true
+        },
+        {
+          "label": "Dano adicional da Habilidade de Incurável com Mágico: Ritual Secreto",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.3, 0.375, 0.45, 0.525, 0.6],
+          "bonus": true
+        },
+        {
+          "label": "Dano adicional do Supremo de Incurável com Mágico: Ritual Secreto",
+          "type": "dmg_percent",
+          "target": "elemental_burst",
+          "values": [0.3, 0.375, 0.45, 0.525, 0.6],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 47.537, "critRate": 0.048 },
+    "growthCurves": { "baseAttack": "ATK 3.2", "critRate": "C3" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 31.1 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 62.2 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 93.4 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 124.5 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 155.6 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 186.7 } }
+    ]
+  }
+}
