@@ -1,0 +1,55 @@
+{
+  "name": "Pá do Escavador",
+  "type": "Lança",
+  "rarity": 4,
+  "baseAttack": 42,
+  "subStat": "ATQ",
+  "passiveName": "Decisões Imediatas",
+  "passiveDesc": "Dano de Eletricamente Carregado é aumentado em 48/60/72/84/96%. Dano de Carga Lunar é aumentado em 12/15/18/21/24%. Presságio Lunar: Reluzir Cheio: aumenta o Dano de Carga Lunar em mais 12/15/18/21/24%.",
+  "location": "Forja",
+  "baseDamage": { "attack": 42, "subStat": 90 },
+  "description": "Uma lança que parece ter sido criada de uma ferramenta agrícola. A primeira vista, não poderia ser mais ordinária, mas seu desenho discreto esconde truques refinados e luxuosos.",
+  "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Decisões Imediatas",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano de Eletricamente Carregado do portador",
+          "type": "dmg_percent",
+          "reaction": ["ELECTRO_CHARGED"],
+          "values": [0.48, 0.6, 0.72, 0.84, 0.96],
+          "bonus": true
+        },
+        {
+          "label": "Dano base de Carga Lunar do portador",
+          "type": "dmg_percent",
+          "reaction": ["LUNAR_CHARGED"],
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Dano adicional de Carga Lunar do portador com Presságio Lunar: Reluzir Cheio",
+          "type": "dmg_percent",
+          "reaction": ["LUNAR_CHARGED"],
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 42.401, "attackPercent": 0.09 },
+    "growthCurves": { "baseAttack": "ATK 2.1", "attackPercent": "C2" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 25.9 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 51.9 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 77.8 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 103.7 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 129.7 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 155.6 } }
+    ]
+  }
+}

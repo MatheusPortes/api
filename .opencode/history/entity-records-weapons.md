@@ -1,5 +1,12 @@
 # Weapon Entity Records
 
+## 2026-10-22 — prospector-s-shovel — complete (new EN/PT entity, progression and passive)
+
+- Thirteenth selection after Nocturne agent `c34241a6` / delivery `01287bc7`. Released four-star Polearm2025-09-10/Forging (Fandom release/Game8 available acquisition); complete EN/PT42ATK/9%ATK/profile/description. Yatta42.401/.09 ATK2.1/C2 ascensions0..155.6 at20..90. No existing entities/images changed.
+- Three separate root dmg_percent bonuses: ELECTRO_CHARGED [.48,.6,.72,.84,.96], base LUNAR_CHARGED [.12,.15,.18,.21,.24] and separately same additional Lunar-Charged under Moonsign Ascendant Gleam. Bonus true/no target/conditional/stacks/skills; party eligibility consumer-only. Existing reaction/distinct-contribution contracts; no new schema or merged base/additional grant.
+- References inspected2026-10-22: https://game8.co/games/Genshin-Impact/archives/546838 (Master Key related-link discovery); https://library.keqingmains.com/equipment/weapons/polearms#prospectors-shovel ; https://gi.yatta.moe/api/v2/en/weapon/13433 ; https://gi.yatta.moe/api/v2/pt/weapon/13433 ; https://genshin-impact.fandom.com/api.php?action=parse&page=Prospector%27s_Shovel&prop=wikitext&format=json agree on profile/acquisition/full ranks/clauses. HoYoWiki exact search shell; bundle `/tmp/opencode/prospector-s-shovel-sources/`; no conflict.
+- Exact progression/curves/three arrays/reactions/JSON/source templates/parity/format/diff/identical delivery checked; Node20 build2 declaration/lint1 with17 unrelated formatting failures retained. Agent then JSON-only delivery before next; no push.
+
 ## 2026-10-22 — nocturne-s-curtain-call — complete after owner reaction-scoped CRIT approval
 
 - Twelfth selection in the same authorized20-ID round; owner confirmed displayed crit_dmg with three Lunar reactions, resolving earlier scope blocker. Added complete EN/PT44ATK/19.2%CD/Event Wish/profile/description. Released2026-01-14 corroborated Game8/Fandom. Exact Yatta44.3358/.192 ATK3.4/C3, ascensions0..186.7 at20..90. Existing entities/locales/images preserved.
