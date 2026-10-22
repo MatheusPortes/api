@@ -1,0 +1,58 @@
+{
+  "name": "As Crônicas do Amanhecer",
+  "type": "Arco",
+  "rarity": 5,
+  "baseAttack": 48,
+  "subStat": "Dano CRIT",
+  "passiveName": "Canção da Ode Atemporal",
+  "passiveDesc": "O portador obtém Prenúncio da Alvorada: 3s depois de sair de batalha, aumenta o Dano do Ataque Normal, Habilidade Elemental e Supremo em 60/75/90/105/120%. Em batalha, esse efeito de aumento de Dano é reduzido em 10/12.5/15/17.5/20% por segundo até alcançar 0%. Quando o Ataque Normal, Habilidade Elemental ou Supremo do portador atinge o inimigo, aumenta o efeito de aumento de Dano correspondente em 10/12.5/15/17.5/20% até alcançar 60/75/90/105/120%, esse efeito pode ser desencadeado uma vez a cada 0.1s para cada tipo de ataque acima. Esse efeito pode ser desencadeado, mesmo que o portador não seja o personagem ativo.\nAlém disso, quando a equipe possui o efeito Mágico: Ritual Secreto e o portador atinge o inimigo com um Ataque Normal, Habilidade Elemental ou Supremo, o incremento do bônus para esses três tipos de Dano passa a ser 20/25/30/35/40% em vez do incremento normal.",
+  "location": "Exclusivo de Oração de Evento",
+  "baseDamage": { "attack": 48, "subStat": 96 },
+  "description": "As canções de resistência chegam ao vento como tons gentis, seu poder combinado é grande o suficiente para rasgar a escuridão sem limites com a luz do amanhecer.",
+  "weapon_type": "BOW",
+  "effects": [
+    {
+      "label": "Canção da Ode Atemporal",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano de Ataque Normal por passo ativo do bônus de Prenúncio da Alvorada (0–6); consumidor controla ganho e perda desta categoria",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "accumulations": 6,
+          "bonus": true
+        },
+        {
+          "label": "Dano de Habilidade Elemental por passo ativo do bônus de Prenúncio da Alvorada (0–6); consumidor controla ganho e perda desta categoria",
+          "type": "dmg_percent",
+          "target": "elemental_skill",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "accumulations": 6,
+          "bonus": true
+        },
+        {
+          "label": "Dano de Supremo por passo ativo do bônus de Prenúncio da Alvorada (0–6); consumidor controla ganho e perda desta categoria",
+          "type": "dmg_percent",
+          "target": "elemental_burst",
+          "values": [0.1, 0.125, 0.15, 0.175, 0.2],
+          "accumulations": 6,
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 47.537, "critDamage": 0.096 },
+    "growthCurves": { "baseAttack": "ATK 3.2", "critDamage": "C3" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 31.1 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 62.2 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 93.4 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 124.5 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 155.6 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 186.7 } }
+    ]
+  }
+}
