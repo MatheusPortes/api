@@ -101,10 +101,12 @@ Rule `independent-proc-alternative-totals`: source-validated mutually exclusive 
 
 ### Reactions
 
-`reaction` is required only for reaction-scoped `dmg_percent`; omit it elsewhere. Valid values:
+`reaction` is required for reaction-scoped `dmg_percent` and approved reaction-scoped `crit_dmg` under `lunar-reaction-scoped-crit-damage`; omit it on other results and on ordinary/global CRIT grants. Valid values:
 `SWIRL`, `STELLAR_SWIRL`, `OVERLOADED`, `ELECTRO_CHARGED`, `SUPERCONDUCT`, `BURNING`, `BURGEON`, `BLOOM`, `HYPERBLOOM`, `LUNAR_BLOOM`, `AGGRAVATE`, `LUNAR_CHARGED`, `LUNAR_CRYSTALLIZE`, `STELLAR_CONDUCT`, `STELLAR_GLIMMER`, `VAPORIZE`, `MELT`.
 
 Lunar-family bonuses name only source-eligible Lunar reactions; ordinary reaction names do not imply family-wide coverage. Reaction formulas and ownership remain consumer work.
+
+Rule `lunar-reaction-scoped-crit-damage`: a source-validated Lunar Reaction-only CRIT DMG grant may use `crit_dmg`, positive ratio `values`, `bonus: true`, and an explicit nonempty `reaction` list identifying benefiting reactions, not the activation trigger. The owner-approved Nocturne's Curtain Call modifier names `LUNAR_CHARGED`, `LUNAR_BLOOM`, `LUNAR_CRYSTALLIZE` with R1–R5 [.6,.8,1,1.2,1.4], without `target`, `conditional` or stacks. This supplies CRIT DMG only for eligible Lunar Reaction damage, not global CRIT DMG or reaction `dmg_percent`; reaction eligibility/formula/CRIT execution,12s activation and Energy restoration remain consumer work. Do not add reaction scope to a global CRIT grant merely triggered by a reaction, broaden source-specific reaction lists, introduce reaction-scoped CRIT Rate, or migrate existing entities automatically.
 
 ## Shapes and Vocabulary
 

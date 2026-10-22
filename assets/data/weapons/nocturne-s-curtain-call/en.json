@@ -1,0 +1,53 @@
+{
+  "name": "Nocturne's Curtain Call",
+  "type": "Catalyst",
+  "rarity": 5,
+  "baseAttack": 44,
+  "subStat": "CRIT DMG",
+  "passiveName": "Ballad of the Crossroads",
+  "passiveDesc": "Max HP increases by 10/12/14/16/18%. When triggering Lunar reactions or inflicting Lunar Reaction DMG on opponents, the equipping character will recover 14/15/16/17/18 Energy, and receive the Bountiful Sea's Sacred Wine effect for 12s: Max HP increases by an additional 14/16/18/20/22%, CRIT DMG from Lunar Reaction DMG increases by 60/80/100/120/140%. The Energy recovery effect can be triggered at most once every 18s, and can be triggered even when the equipping character is off-field.",
+  "location": "Event Wish Exclusive",
+  "baseDamage": { "attack": 44, "subStat": 192 },
+  "description": "A jade pearl shrouded in the light of the moon. Even in the coldest winter night, its gentle warmth lingers like a song.",
+  "weapon_type": "CATALYST",
+  "effects": [
+    {
+      "label": "Ballad of the Crossroads",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Wearer Max HP",
+          "type": "hp_percent",
+          "values": [0.1, 0.12, 0.14, 0.16, 0.18],
+          "bonus": true
+        },
+        {
+          "label": "Additional wearer Max HP during Bountiful Sea's Sacred Wine",
+          "type": "hp_percent",
+          "values": [0.14, 0.16, 0.18, 0.2, 0.22],
+          "bonus": true
+        },
+        {
+          "label": "Lunar Reaction CRIT DMG during Bountiful Sea's Sacred Wine",
+          "type": "crit_dmg",
+          "reaction": ["LUNAR_CHARGED", "LUNAR_BLOOM", "LUNAR_CRYSTALLIZE"],
+          "values": [0.6, 0.8, 1, 1.2, 1.4],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 44.3358, "critDamage": 0.192 },
+    "growthCurves": { "baseAttack": "ATK 3.4", "critDamage": "C3" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 31.1 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 62.2 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 93.4 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 124.5 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 155.6 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 186.7 } }
+    ]
+  }
+}
