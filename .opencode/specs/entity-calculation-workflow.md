@@ -101,12 +101,14 @@ Rule `independent-proc-alternative-totals`: source-validated mutually exclusive 
 
 ### Reactions
 
-`reaction` is required for reaction-scoped `dmg_percent` and approved reaction-scoped `crit_dmg` under `lunar-reaction-scoped-crit-damage`; omit it on other results and on ordinary/global CRIT grants. Valid values:
+`reaction` is required for reaction-scoped `dmg_percent` and approved reaction-scoped `crit_dmg` under `lunar-reaction-scoped-crit-damage` or `stellar-glimmer-scoped-crit-damage`; omit it on other results and on ordinary/global CRIT grants. Valid values:
 `SWIRL`, `STELLAR_SWIRL`, `OVERLOADED`, `ELECTRO_CHARGED`, `SUPERCONDUCT`, `BURNING`, `BURGEON`, `BLOOM`, `HYPERBLOOM`, `LUNAR_BLOOM`, `AGGRAVATE`, `LUNAR_CHARGED`, `LUNAR_CRYSTALLIZE`, `STELLAR_CONDUCT`, `STELLAR_GLIMMER`, `VAPORIZE`, `MELT`.
 
 Lunar-family bonuses name only source-eligible Lunar reactions; ordinary reaction names do not imply family-wide coverage. Reaction formulas and ownership remain consumer work.
 
 Rule `lunar-reaction-scoped-crit-damage`: a source-validated Lunar Reaction-only CRIT DMG grant may use `crit_dmg`, positive ratio `values`, `bonus: true`, and an explicit nonempty `reaction` list identifying benefiting reactions, not the activation trigger. The owner-approved Nocturne's Curtain Call modifier names `LUNAR_CHARGED`, `LUNAR_BLOOM`, `LUNAR_CRYSTALLIZE` with R1–R5 [.6,.8,1,1.2,1.4], without `target`, `conditional` or stacks. This supplies CRIT DMG only for eligible Lunar Reaction damage, not global CRIT DMG or reaction `dmg_percent`; reaction eligibility/formula/CRIT execution,12s activation and Energy restoration remain consumer work. Do not add reaction scope to a global CRIT grant merely triggered by a reaction, broaden source-specific reaction lists, introduce reaction-scoped CRIT Rate, or migrate existing entities automatically.
+
+Rule `stellar-glimmer-scoped-crit-damage`: the owner-approved Whitelake Frostfeather mapping uses one `crit_dmg` modifier with `reaction: ['STELLAR_GLIMMER']`, R1–R5 [.5,.65,.8,.95,1.1], and `bonus: true`, granted once only while the wearer has three Lake-Hued Lament stacks. Its localized label preserves the threshold; omit `accumulations`, `conditional`, `target` and skills on this CRIT grant. Keep separate per-stack `atk_percent` [.08,.1,.12,.14,.16] with `accumulations: 3`. Fixed Energy recovery remains consumer-only, as do stack duration/activation/off-field state and CRIT execution. This explicit benefiting-reaction extension does not classify Stellar Glimmer as Lunar, broaden Nocturne's reaction list, make CRIT global, grant it per stack, substitute reaction DMG%, authorize reaction CRIT Rate, or migrate unrelated records.
 
 ## Shapes and Vocabulary
 
