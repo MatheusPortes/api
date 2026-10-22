@@ -1,0 +1,47 @@
+{
+  "name": "Fractured Halo",
+  "type": "Polearm",
+  "rarity": 5,
+  "baseAttack": 46,
+  "subStat": "CRIT DMG",
+  "passiveName": "Purifying Crown",
+  "passiveDesc": "After an Elemental Skill or Elemental Burst is used, ATK is increased by 24/30/36/42/48% for 20s. If the equipping character creates a Shield while this effect is active, they will gain the Electrifying Edict effect for 20s: All nearby party members deal 40/50/60/70/80% more Lunar-Charged DMG.",
+  "location": "Event Wish Exclusive",
+  "baseDamage": { "attack": 46, "subStat": 144 },
+  "description": "A spinning mechanical blade produced by the Clink-Clank Krumkake Craftshop that seems to hide secrets from a bygone era...",
+  "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Purifying Crown",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Wearer ATK after Skill or Burst use",
+          "type": "atk_percent",
+          "values": [0.24, 0.3, 0.36, 0.42, 0.48],
+          "bonus": true
+        },
+        {
+          "label": "Nearby party members' Lunar-Charged DMG during Electrifying Edict after shield creation",
+          "type": "dmg_percent",
+          "reaction": ["LUNAR_CHARGED"],
+          "values": [0.4, 0.5, 0.6, 0.7, 0.8],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 45.9364, "critDamage": 0.144 },
+    "growthCurves": { "baseAttack": "ATK 3.1", "critDamage": "C3" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 31.1 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 62.2 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 93.4 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 124.5 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 155.6 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 186.7 } }
+    ]
+  }
+}
