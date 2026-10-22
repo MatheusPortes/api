@@ -1,0 +1,55 @@
+{
+  "name": "Moonweaver's Dawn",
+  "type": "Sword",
+  "rarity": 4,
+  "baseAttack": 44,
+  "subStat": "ATK",
+  "passiveName": "Secret Silver's Testament",
+  "passiveDesc": "Increases Elemental Burst DMG by 20/25/30/35/40%. When the equipping character's Energy Capacity does not exceed 60/40, their Elemental Burst DMG is increased by an additional 16%/28% / 20%/35% / 24%/42% / 28%/49% / 32%/56%.",
+  "location": "Weapon Event Wishes and Quests",
+  "baseDamage": { "attack": 44, "subStat": 60 },
+  "description": "An immaculate, sharp silver sword that can slice through armor like moonlight flowing through the empty night. According to legend, it is a divine blade, blessed by the first Moonchanter herself.",
+  "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Secret Silver's Testament",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Base Elemental Burst DMG",
+          "type": "dmg_percent",
+          "target": "elemental_burst",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "Additional Burst DMG with Energy Capacity above 40 and at most 60; excludes the at-most-40 alternative",
+          "type": "dmg_percent",
+          "target": "elemental_burst",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "Additional Burst DMG with Energy Capacity at most 40; replaces the at-most-60 alternative",
+          "type": "dmg_percent",
+          "target": "elemental_burst",
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 43.7349, "attackPercent": 0.06 },
+    "growthCurves": { "baseAttack": "ATK 2.2", "attackPercent": "C2" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 25.9 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 51.9 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 77.8 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 103.7 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 129.7 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 155.6 } }
+    ]
+  }
+}

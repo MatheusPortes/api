@@ -1,0 +1,55 @@
+{
+  "name": "Alvorada do Tecedor do Luar",
+  "type": "Espada",
+  "rarity": 4,
+  "baseAttack": 44,
+  "subStat": "ATQ",
+  "passiveName": "Testemunho da Prata Sagrada",
+  "passiveDesc": "Aumenta o Dano causado pelo Supremo em 20/25/30/35/40%. Quando a capacidade de Energia Elemental do personagem que está com essa arma equipada não é maior que 60/40, aumenta o Dano do Supremo em mais 16%/28% / 20%/35% / 24%/42% / 28%/49% / 32%/56%.",
+  "location": "Orações de Evento de Arma e Missões",
+  "baseDamage": { "attack": 44, "subStat": 60 },
+  "description": "Uma espada prateada imaculada e afiada que pode cortar armadura como o luar rompendo a noite. As lendas dizem que é uma lâmina divina abençoada pela primeira Emissária da Canção Lunar.",
+  "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Testemunho da Prata Sagrada",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Dano base do Supremo",
+          "type": "dmg_percent",
+          "target": "elemental_burst",
+          "values": [0.2, 0.25, 0.3, 0.35, 0.4],
+          "bonus": true
+        },
+        {
+          "label": "Dano adicional do Supremo com capacidade de Energia maior que 40 e até 60; exclui a alternativa até 40",
+          "type": "dmg_percent",
+          "target": "elemental_burst",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "Dano adicional do Supremo com capacidade de Energia até 40; substitui a alternativa até 60",
+          "type": "dmg_percent",
+          "target": "elemental_burst",
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 43.7349, "attackPercent": 0.06 },
+    "growthCurves": { "baseAttack": "ATK 2.2", "attackPercent": "C2" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 25.9 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 51.9 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 77.8 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 103.7 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 129.7 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 155.6 } }
+    ]
+  }
+}
