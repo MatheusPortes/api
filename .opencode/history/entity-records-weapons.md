@@ -1,5 +1,12 @@
 # Weapon Entity Records
 
+## 2026-10-22 — frostbreath — complete (new EN/PT entity, progression and passive)
+
+- First selection in the owner-authorized next bounded round of up to20 missing weapons; baseline agent `452843c2`, delivery `b6fc1e0c`, both clean. Released four-star Polearm2026-08-12/Battle Pass independently confirmed by Game8/Fandom. Complete EN/PT42ATK/10%ER/profile/description; no images or existing records changed.
+- Yatta42.401/.1, ATTACK_201→ATK2.1/CRITICAL_201→C2, ascension0..155.6 at20..90. Root wearer atk_percent [.2,.25,.3,.35,.4], bonus true, after Cryo/Hydro-related reaction; no target/conditional/reaction scope/stacks/skills. Fixed party Energy [6,7.5,9,10.5,12] is consumer-only under `consumer-only-fixed-energy-restoration`; preserve15s duration/16s cooldown/other-member recipients in localized passive. No new schema or unrelated corrections.
+- References inspected2026-10-22: https://game8.co/games/Genshin-Impact/archives/613903 ; https://library.keqingmains.com/equipment/weapons/polearms#frostbreath ; https://gi.yatta.moe/api/v2/en/weapon/13435 ; https://gi.yatta.moe/api/v2/pt/weapon/13435 ; https://genshin-impact.fandom.com/api.php?action=parse&page=Frostbreath&prop=wikitext&format=json . Identity/profile/ATK/Energy/ranks/acquisition/release agree. HoYoWiki exact search returned application shell, not factual corroboration. Raw bundle `/tmp/opencode/frostbreath-sources/`; no source conflict.
+- Validation: exact source progression/shared curves/rank coefficients/JSON/EN-PT parity/focused format/diff and identical JSON-only delivery checked; Node20 build/lint retain known Node declaration exit2 and17 unrelated formatting files exit1. Commit agent then delivery before selecting next; no push.
+
 ## 2026-10-22 — new weapon catalog round: a-teaspoon-of-transcendence through fractured-halo — closure
 
 - Owner requested missing-weapon EN/PT catalog additions like artifacts, then selected registration plus progression/passive calculation and reiterated continue. First bounded20-ID round completed sequentially from43 non-skin absent-name candidates discovered against209 local EN weapons. All20 selected identities independently confirmed released before adding; local catalog now229 EN entities. No additional round, skins, images, material catalogs, existing entity corrections or push performed. Exaiphanes explicitly covers corroborated released R1–R4 only, not unavailable/uncorroborated R5; fixed Energy/resource/state/timer engines remain outside structured coverage under active rules.
