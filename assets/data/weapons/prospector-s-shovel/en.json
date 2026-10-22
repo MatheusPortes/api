@@ -1,0 +1,55 @@
+{
+  "name": "Prospector's Shovel",
+  "type": "Polearm",
+  "rarity": 4,
+  "baseAttack": 42,
+  "subStat": "ATK",
+  "passiveName": "Swift and Sure",
+  "passiveDesc": "Electro-Charged DMG is increased by 48/60/72/84/96%, and Lunar-Charged DMG is increased by 12/15/18/21/24%. Moonsign: Ascendant Gleam: Lunar-Charged DMG is increased by an additional 12/15/18/21/24%.",
+  "location": "Forging",
+  "baseDamage": { "attack": 42, "subStat": 90 },
+  "description": "A polearm that appears to have been crafted from a metal agricultural tool. At first glance, it could not look more ordinary, yet its discreet design hides fittings that are both lavish and undeniably exquisite.",
+  "weapon_type": "POLEARM",
+  "effects": [
+    {
+      "label": "Swift and Sure",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Wearer Electro-Charged DMG",
+          "type": "dmg_percent",
+          "reaction": ["ELECTRO_CHARGED"],
+          "values": [0.48, 0.6, 0.72, 0.84, 0.96],
+          "bonus": true
+        },
+        {
+          "label": "Wearer base Lunar-Charged DMG",
+          "type": "dmg_percent",
+          "reaction": ["LUNAR_CHARGED"],
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        },
+        {
+          "label": "Additional wearer Lunar-Charged DMG with Moonsign: Ascendant Gleam",
+          "type": "dmg_percent",
+          "reaction": ["LUNAR_CHARGED"],
+          "values": [0.12, 0.15, 0.18, 0.21, 0.24],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 42.401, "attackPercent": 0.09 },
+    "growthCurves": { "baseAttack": "ATK 2.1", "attackPercent": "C2" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 25.9 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 51.9 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 77.8 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 103.7 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 129.7 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 155.6 } }
+    ]
+  }
+}
