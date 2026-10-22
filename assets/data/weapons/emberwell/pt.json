@@ -1,0 +1,47 @@
+{
+  "name": "Fonte da Ignição",
+  "type": "Espada",
+  "rarity": 4,
+  "baseAttack": 42,
+  "subStat": "Proficiência Elemental",
+  "passiveName": "Fogo Estelar sobre as Planícies Nevadas",
+  "passiveDesc": "Nos 12s após desencadear uma reação Elemental, aumenta o ATQ do portador em 16%/20%/24%/28%/32%. Nos 12s após desencadear uma reação de Brilho Estelar, aumenta o Dano de reações de Brilho Estelar do portador em 16%/20%/24%/28%/32%. Esse efeito pode ser desencadeado mesmo que o portador não seja o personagem ativo.",
+  "location": "Forjamento",
+  "baseDamage": { "attack": 42, "subStat": 36 },
+  "description": "Uma espada longa feita de gemas, dizem que foi feita para o caminho da justiça. Quando desembainhada, brilha como uma chama azul.",
+  "weapon_type": "SWORD",
+  "effects": [
+    {
+      "label": "Fogo Estelar sobre as Planícies Nevadas",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "ATQ após Reação Elemental",
+          "type": "atk_percent",
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        },
+        {
+          "label": "Dano de Brilho Estelar após desencadear Brilho Estelar",
+          "type": "dmg_percent",
+          "reaction": ["STELLAR_GLIMMER"],
+          "values": [0.16, 0.2, 0.24, 0.28, 0.32],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 42.401, "elementalMastery": 36 },
+    "growthCurves": { "baseAttack": "ATK 2.1", "elementalMastery": "C2" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 25.9 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 51.9 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 77.8 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 103.7 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 129.7 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 155.6 } }
+    ]
+  }
+}

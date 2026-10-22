@@ -1,5 +1,12 @@
 # Weapon Entity Records
 
+## 2026-10-22 — emberwell — complete (new EN/PT entity, progression and passive)
+
+- Fifteenth new ID after Echoes agent `9908aebd` / delivery `9e362def`. Released/craftable four-star Sword2026-08-12 (Game8/Fandom), complete EN/PT42ATK/36EM/description. Yatta42.401/36 ATTACK_201→ATK2.1/CRITICAL_201→C2, ascension0..155.6 at20..90. No images/existing data edited.
+- Separate atk_percent [.16,.20,.24,.28,.32] after Elemental Reaction and dmg_percent same coefficients/reaction STELLAR_GLIMMER after Stellar Glimmer, bonus true/no target/conditional/stacks/skills. Universal stat/reaction contracts,12s/off-field/activation consumer-only; equal values are not merged, no EM passive inferred from substat. No new schema.
+- References inspected 2026-10-22: https://game8.co/games/Genshin-Impact/archives/613898 ; https://library.keqingmains.com/equipment/weapons/swords#emberwell ; https://gi.yatta.moe/api/v2/en/weapon/11436 ; https://gi.yatta.moe/api/v2/pt/weapon/11436 (one provider); https://genshin-impact.fandom.com/api.php?action=parse&page=Emberwell&prop=wikitext&format=json agree on release/identity/passive ranks/usage/crafting. Profile disagreement: Game8 gives44ATK/24EM and565/110 at90, while KQM/Yatta/Fandom agree42ATK/36EM and KQM/Yatta510/165 at90; select corroborated42/36 under standing consensus, not official tie-breaker. Fandom eff_att1 incorrectly labels EM but actual passive clause consistently grants ATK; use matching clauses, not provider metadata. HoYoWiki exact search shell. Bundle `/tmp/opencode/emberwell-sources/` includes Game8 HTML.
+- Exact progression/curves/corroborated profile/ranks/distinct scopes/labels/JSON/parity/format/diff/identical delivery checked before commits; Node20 build/lint logs retain declaration/17 unrelated formatting failures. Agent then JSON-only delivery before Etherlight Spindlelute; no push.
+
 ## 2026-10-22 — echoes-of-the-heart — complete (new EN/PT entity, progression and passive)
 
 - Fourteenth new ID after Disaster agent `30ca6858` / delivery `b99f30eb`. Released/craftable four-star Catalyst2026-08-12 (Game8/Fandom), complete EN/PT44ATK/6%ATK/description. Yatta43.7349/.06 ATTACK_202→ATK2.2/CRITICAL_201→C2, ascension0..155.6 at20..90. No images/existing data edited.
