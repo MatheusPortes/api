@@ -1,5 +1,12 @@
 # Weapon Entity Records
 
+## 2026-10-22 — lightbearing-moonshard — complete (new EN/PT entity, progression and passive)
+
+- Seventh selection after Jade agent `17effa22` / delivery `65ad9e9b`. Released five-star Sword2026-02-03/Event Wish confirmed Game8 banner history/Fandom; complete EN/PT44ATK/19.2%CD/profile. Game8's release paragraph retains expected tense/incorrect Phase1, but actual banner section/date match Fandom release and Phase2. Yatta44.3358/.192 ATK3.4/C3 ascensions0..186.7 at20..90. No existing records/images changed.
+- Root def_percent [.2,.25,.3,.35,.4] and separate reaction-scoped dmg_percent LUNAR_CRYSTALLIZE [.64,.8,.96,1.12,1.28], bonus true/no targets/conditional/stacks/skills. Skill is trigger, not benefiting damage category;5s consumer-only. Existing stat/reaction contracts, no new schema.
+- References inspected2026-10-22: https://game8.co/games/Genshin-Impact/archives/572616 ; https://library.keqingmains.com/equipment/weapons/swords#lightbearing-moonshard ; https://gi.yatta.moe/api/v2/en/weapon/11519 ; https://gi.yatta.moe/api/v2/pt/weapon/11519 ; https://genshin-impact.fandom.com/api.php?action=parse&page=Lightbearing_Moonshard&prop=wikitext&format=json . Detailed mechanics/ranks/profile agree. HoYoWiki exact search shell; bundle `/tmp/opencode/lightbearing-moonshard-sources/`.
+- Exact progression/curves/coefficients/reaction/JSON/full source templates/parity/format/diff/identical delivery checked. Node20 build2 Node declaration/lint1 with17 unrelated formatting failures retained. Agent then JSON-only delivery before next selection; no push.
+
 ## 2026-10-22 — jade-vista — complete (new EN/PT entity, progression and passive)
 
 - Sixth selection after Hymn agent `5b1e5e88` / delivery `139c98c7`. Released four-star Bow2026-08-12/Battle Pass confirmed Game8/Fandom; complete EN/PT42ATK/6%CR/profile. Yatta42.401/.06 ATK2.1/C2, ascensions0..155.6 at20..90. No existing records/images changed.
