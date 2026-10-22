@@ -1,0 +1,78 @@
+{
+  "name": "Forged by the Golden Melody",
+  "type": "Claymore",
+  "rarity": 4,
+  "baseAttack": 42,
+  "subStat": "CRIT Rate",
+  "passiveName": "Day and Night in Counterpoint",
+  "passiveDesc": "Every 10s, the equipping character plays a \"Harmonic Movement\" of the corresponding type for a boost in the following order: +18/22.5/27/31.5/36% ATK > +120/150/180/210/240 Elemental Mastery > +28/35/42/49/56% Stellar Glimmer reaction DMG. Each instance of Harmonic Movement lasts 10s. This effect can trigger even when the equipping character is not on the field. Triggering a Stellar Glimmer reaction will also grant an additional 12-second instance of \"Harmonic Movement: Contrapuntal\" with the same effects as the Harmonic Movement active when Stellar Glimmer is triggered. This effect stacks with the original Harmonic Movement effect, and can trigger once every 12s.",
+  "location": "BP Bounty",
+  "baseDamage": { "attack": 42, "subStat": 60 },
+  "description": "A greatsword decorated in gold. Legend has it that it was the favored weapon of a certain exalted Harmost back in the distant past.",
+  "weapon_type": "CLAYMORE",
+  "effects": [
+    {
+      "label": "Harmonic Movement — choose exactly one current cyclic alternative",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Current ATK movement only",
+          "type": "atk_percent",
+          "values": [0.18, 0.225, 0.27, 0.315, 0.36],
+          "bonus": true
+        },
+        {
+          "label": "Current Elemental Mastery movement only",
+          "type": "elemental_mastery",
+          "values": [120, 150, 180, 210, 240],
+          "bonus": true
+        },
+        {
+          "label": "Current Stellar Glimmer movement only",
+          "type": "dmg_percent",
+          "reaction": ["STELLAR_GLIMMER"],
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "bonus": true
+        }
+      ]
+    },
+    {
+      "label": "Harmonic Movement: Contrapuntal — choose only the alternative copied at reaction trigger",
+      "refinementLevels": [1, 2, 3, 4, 5],
+      "modifiers": [
+        {
+          "label": "Additional copied ATK movement only",
+          "type": "atk_percent",
+          "values": [0.18, 0.225, 0.27, 0.315, 0.36],
+          "bonus": true
+        },
+        {
+          "label": "Additional copied Elemental Mastery movement only",
+          "type": "elemental_mastery",
+          "values": [120, 150, 180, 210, 240],
+          "bonus": true
+        },
+        {
+          "label": "Additional copied Stellar Glimmer movement only",
+          "type": "dmg_percent",
+          "reaction": ["STELLAR_GLIMMER"],
+          "values": [0.28, 0.35, 0.42, 0.49, 0.56],
+          "bonus": true
+        }
+      ]
+    }
+  ],
+  "calculation": {
+    "initialStats": { "baseAttack": 42.401, "critRate": 0.06 },
+    "growthCurves": { "baseAttack": "ATK 2.1", "critRate": "C2" },
+    "ascensions": [
+      { "ascension": 0, "maxLevel": 20, "bonuses": {} },
+      { "ascension": 1, "maxLevel": 40, "bonuses": { "baseAttack": 25.9 } },
+      { "ascension": 2, "maxLevel": 50, "bonuses": { "baseAttack": 51.9 } },
+      { "ascension": 3, "maxLevel": 60, "bonuses": { "baseAttack": 77.8 } },
+      { "ascension": 4, "maxLevel": 70, "bonuses": { "baseAttack": 103.7 } },
+      { "ascension": 5, "maxLevel": 80, "bonuses": { "baseAttack": 129.7 } },
+      { "ascension": 6, "maxLevel": 90, "bonuses": { "baseAttack": 155.6 } }
+    ]
+  }
+}
