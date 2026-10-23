@@ -15,70 +15,929 @@
     {
       "name": "Favonius Bladework - Weiss",
       "unlock": "Normal Attack",
-      "description": "Normal Attack\nPerform up to 5 rapid strikes.\nCharged Attack\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\nPlunging Attack\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+      "description": "Normal Attack\nPerforms up to 5 rapid strikes.\n\nCharged Attack\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\n\nPlunging Attack\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
       "upgrades": [
         {
           "name": "1-Hit DMG",
-          "value": "36.7%"
+          "type": "atk_percent",
+          "damageType": "PHYSICAL",
+          "target": "normal_attack",
+          "power": [
+            {
+              "value": "36.7392%",
+              "level": 1,
+              "scalings": 0.367392
+            },
+            {
+              "value": "39.7296%",
+              "level": 2,
+              "scalings": 0.397296
+            },
+            {
+              "value": "42.72%",
+              "level": 3,
+              "scalings": 0.4272
+            },
+            {
+              "value": "46.992%",
+              "level": 4,
+              "scalings": 0.46992
+            },
+            {
+              "value": "49.9824%",
+              "level": 5,
+              "scalings": 0.499824
+            },
+            {
+              "value": "53.4%",
+              "level": 6,
+              "scalings": 0.534
+            },
+            {
+              "value": "58.0992%",
+              "level": 7,
+              "scalings": 0.580992
+            },
+            {
+              "value": "62.7984%",
+              "level": 8,
+              "scalings": 0.627984
+            },
+            {
+              "value": "67.4976%",
+              "level": 9,
+              "scalings": 0.674976
+            },
+            {
+              "value": "72.624%",
+              "level": 10,
+              "scalings": 0.72624
+            },
+            {
+              "value": "78.498%",
+              "level": 11,
+              "scalings": 0.78498
+            },
+            {
+              "value": "85.4058%",
+              "level": 12,
+              "scalings": 0.854058
+            },
+            {
+              "value": "92.3136%",
+              "level": 13,
+              "scalings": 0.923136
+            },
+            {
+              "value": "99.2215%",
+              "level": 14,
+              "scalings": 0.992215
+            },
+            {
+              "value": "106.7573%",
+              "level": 15,
+              "scalings": 1.067573
+            }
+          ]
         },
         {
           "name": "2-Hit DMG",
-          "value": "36.7%"
+          "type": "atk_percent",
+          "damageType": "PHYSICAL",
+          "target": "normal_attack",
+          "power": [
+            {
+              "value": "36.7392%",
+              "level": 1,
+              "scalings": 0.367392
+            },
+            {
+              "value": "39.7296%",
+              "level": 2,
+              "scalings": 0.397296
+            },
+            {
+              "value": "42.72%",
+              "level": 3,
+              "scalings": 0.4272
+            },
+            {
+              "value": "46.992%",
+              "level": 4,
+              "scalings": 0.46992
+            },
+            {
+              "value": "49.9824%",
+              "level": 5,
+              "scalings": 0.499824
+            },
+            {
+              "value": "53.4%",
+              "level": 6,
+              "scalings": 0.534
+            },
+            {
+              "value": "58.0992%",
+              "level": 7,
+              "scalings": 0.580992
+            },
+            {
+              "value": "62.7984%",
+              "level": 8,
+              "scalings": 0.627984
+            },
+            {
+              "value": "67.4976%",
+              "level": 9,
+              "scalings": 0.674976
+            },
+            {
+              "value": "72.624%",
+              "level": 10,
+              "scalings": 0.72624
+            },
+            {
+              "value": "78.498%",
+              "level": 11,
+              "scalings": 0.78498
+            },
+            {
+              "value": "85.4058%",
+              "level": 12,
+              "scalings": 0.854058
+            },
+            {
+              "value": "92.3136%",
+              "level": 13,
+              "scalings": 0.923136
+            },
+            {
+              "value": "99.2215%",
+              "level": 14,
+              "scalings": 0.992215
+            },
+            {
+              "value": "106.7573%",
+              "level": 15,
+              "scalings": 1.067573
+            }
+          ]
         },
         {
           "name": "3-Hit DMG",
-          "value": "47.5%"
+          "type": "atk_percent",
+          "damageType": "PHYSICAL",
+          "target": "normal_attack",
+          "power": [
+            {
+              "value": "47.4548%",
+              "level": 1,
+              "scalings": 0.474548
+            },
+            {
+              "value": "51.3174%",
+              "level": 2,
+              "scalings": 0.513174
+            },
+            {
+              "value": "55.18%",
+              "level": 3,
+              "scalings": 0.5518
+            },
+            {
+              "value": "60.698%",
+              "level": 4,
+              "scalings": 0.60698
+            },
+            {
+              "value": "64.5606%",
+              "level": 5,
+              "scalings": 0.645606
+            },
+            {
+              "value": "68.975%",
+              "level": 6,
+              "scalings": 0.68975
+            },
+            {
+              "value": "75.0448%",
+              "level": 7,
+              "scalings": 0.750448
+            },
+            {
+              "value": "81.1146%",
+              "level": 8,
+              "scalings": 0.811146
+            },
+            {
+              "value": "87.1844%",
+              "level": 9,
+              "scalings": 0.871844
+            },
+            {
+              "value": "93.806%",
+              "level": 10,
+              "scalings": 0.93806
+            },
+            {
+              "value": "101.3932%",
+              "level": 11,
+              "scalings": 1.013932
+            },
+            {
+              "value": "110.3159%",
+              "level": 12,
+              "scalings": 1.103159
+            },
+            {
+              "value": "119.2385%",
+              "level": 13,
+              "scalings": 1.192385
+            },
+            {
+              "value": "128.1611%",
+              "level": 14,
+              "scalings": 1.281611
+            },
+            {
+              "value": "137.8948%",
+              "level": 15,
+              "scalings": 1.378948
+            }
+          ]
         },
         {
           "name": "4-Hit DMG",
-          "value": "49.8%"
+          "type": "atk_percent",
+          "damageType": "PHYSICAL",
+          "target": "normal_attack",
+          "power": [
+            {
+              "value": "49.751%",
+              "level": 1,
+              "scalings": 0.49751
+            },
+            {
+              "value": "53.8005%",
+              "level": 2,
+              "scalings": 0.538005
+            },
+            {
+              "value": "57.85%",
+              "level": 3,
+              "scalings": 0.5785
+            },
+            {
+              "value": "63.635%",
+              "level": 4,
+              "scalings": 0.63635
+            },
+            {
+              "value": "67.6845%",
+              "level": 5,
+              "scalings": 0.676845
+            },
+            {
+              "value": "72.3125%",
+              "level": 6,
+              "scalings": 0.723125
+            },
+            {
+              "value": "78.676%",
+              "level": 7,
+              "scalings": 0.78676
+            },
+            {
+              "value": "85.0395%",
+              "level": 8,
+              "scalings": 0.850395
+            },
+            {
+              "value": "91.403%",
+              "level": 9,
+              "scalings": 0.91403
+            },
+            {
+              "value": "98.345%",
+              "level": 10,
+              "scalings": 0.98345
+            },
+            {
+              "value": "106.2994%",
+              "level": 11,
+              "scalings": 1.062994
+            },
+            {
+              "value": "115.6537%",
+              "level": 12,
+              "scalings": 1.156537
+            },
+            {
+              "value": "125.0081%",
+              "level": 13,
+              "scalings": 1.250081
+            },
+            {
+              "value": "134.3624%",
+              "level": 14,
+              "scalings": 1.343624
+            },
+            {
+              "value": "144.5671%",
+              "level": 15,
+              "scalings": 1.445671
+            }
+          ]
         },
         {
           "name": "5-Hit DMG",
-          "value": "62.1%"
+          "type": "atk_percent",
+          "damageType": "PHYSICAL",
+          "target": "normal_attack",
+          "power": [
+            {
+              "value": "62.0739%",
+              "level": 1,
+              "scalings": 0.620739
+            },
+            {
+              "value": "67.1265%",
+              "level": 2,
+              "scalings": 0.671265
+            },
+            {
+              "value": "72.179%",
+              "level": 3,
+              "scalings": 0.72179
+            },
+            {
+              "value": "79.3969%",
+              "level": 4,
+              "scalings": 0.793969
+            },
+            {
+              "value": "84.4494%",
+              "level": 5,
+              "scalings": 0.844494
+            },
+            {
+              "value": "90.2238%",
+              "level": 6,
+              "scalings": 0.902238
+            },
+            {
+              "value": "98.1634%",
+              "level": 7,
+              "scalings": 0.981634
+            },
+            {
+              "value": "106.1031%",
+              "level": 8,
+              "scalings": 1.061031
+            },
+            {
+              "value": "114.0428%",
+              "level": 9,
+              "scalings": 1.140428
+            },
+            {
+              "value": "122.7043%",
+              "level": 10,
+              "scalings": 1.227043
+            },
+            {
+              "value": "132.6289%",
+              "level": 11,
+              "scalings": 1.326289
+            },
+            {
+              "value": "144.3003%",
+              "level": 12,
+              "scalings": 1.443003
+            },
+            {
+              "value": "155.9716%",
+              "level": 13,
+              "scalings": 1.559716
+            },
+            {
+              "value": "167.6429%",
+              "level": 14,
+              "scalings": 1.676429
+            },
+            {
+              "value": "180.3753%",
+              "level": 15,
+              "scalings": 1.803753
+            }
+          ]
         },
         {
-          "name": "Charged Attack DMG",
-          "value": "47.3%+60.2%"
+          "name": "Charged Attack DMG — Hit 1",
+          "type": "atk_percent",
+          "damageType": "PHYSICAL",
+          "target": "charged_attack",
+          "power": [
+            {
+              "value": "47.3%",
+              "level": 1,
+              "scalings": 0.473
+            },
+            {
+              "value": "51.15%",
+              "level": 2,
+              "scalings": 0.5115
+            },
+            {
+              "value": "55%",
+              "level": 3,
+              "scalings": 0.55
+            },
+            {
+              "value": "60.5%",
+              "level": 4,
+              "scalings": 0.605
+            },
+            {
+              "value": "64.35%",
+              "level": 5,
+              "scalings": 0.6435
+            },
+            {
+              "value": "68.75%",
+              "level": 6,
+              "scalings": 0.6875
+            },
+            {
+              "value": "74.8%",
+              "level": 7,
+              "scalings": 0.748
+            },
+            {
+              "value": "80.85%",
+              "level": 8,
+              "scalings": 0.8085
+            },
+            {
+              "value": "86.9%",
+              "level": 9,
+              "scalings": 0.869
+            },
+            {
+              "value": "93.5%",
+              "level": 10,
+              "scalings": 0.935
+            },
+            {
+              "value": "101.0625%",
+              "level": 11,
+              "scalings": 1.010625
+            },
+            {
+              "value": "109.956%",
+              "level": 12,
+              "scalings": 1.09956
+            },
+            {
+              "value": "118.8495%",
+              "level": 13,
+              "scalings": 1.188495
+            },
+            {
+              "value": "127.743%",
+              "level": 14,
+              "scalings": 1.27743
+            },
+            {
+              "value": "137.445%",
+              "level": 15,
+              "scalings": 1.37445
+            }
+          ]
+        },
+        {
+          "name": "Charged Attack DMG — Hit 2",
+          "type": "atk_percent",
+          "damageType": "PHYSICAL",
+          "target": "charged_attack",
+          "power": [
+            {
+              "value": "60.2%",
+              "level": 1,
+              "scalings": 0.602
+            },
+            {
+              "value": "65.1%",
+              "level": 2,
+              "scalings": 0.651
+            },
+            {
+              "value": "70%",
+              "level": 3,
+              "scalings": 0.7
+            },
+            {
+              "value": "77%",
+              "level": 4,
+              "scalings": 0.77
+            },
+            {
+              "value": "81.9%",
+              "level": 5,
+              "scalings": 0.819
+            },
+            {
+              "value": "87.5%",
+              "level": 6,
+              "scalings": 0.875
+            },
+            {
+              "value": "95.2%",
+              "level": 7,
+              "scalings": 0.952
+            },
+            {
+              "value": "102.9%",
+              "level": 8,
+              "scalings": 1.029
+            },
+            {
+              "value": "110.6%",
+              "level": 9,
+              "scalings": 1.106
+            },
+            {
+              "value": "119%",
+              "level": 10,
+              "scalings": 1.19
+            },
+            {
+              "value": "128.625%",
+              "level": 11,
+              "scalings": 1.28625
+            },
+            {
+              "value": "139.944%",
+              "level": 12,
+              "scalings": 1.39944
+            },
+            {
+              "value": "151.263%",
+              "level": 13,
+              "scalings": 1.51263
+            },
+            {
+              "value": "162.582%",
+              "level": 14,
+              "scalings": 1.62582
+            },
+            {
+              "value": "174.93%",
+              "level": 15,
+              "scalings": 1.7493
+            }
+          ]
         },
         {
           "name": "Charged Attack Stamina Cost",
-          "value": "20"
+          "power": [
+            {
+              "value": "20",
+              "level": 1
+            },
+            {
+              "value": "20",
+              "level": 2
+            },
+            {
+              "value": "20",
+              "level": 3
+            },
+            {
+              "value": "20",
+              "level": 4
+            },
+            {
+              "value": "20",
+              "level": 5
+            },
+            {
+              "value": "20",
+              "level": 6
+            },
+            {
+              "value": "20",
+              "level": 7
+            },
+            {
+              "value": "20",
+              "level": 8
+            },
+            {
+              "value": "20",
+              "level": 9
+            },
+            {
+              "value": "20",
+              "level": 10
+            },
+            {
+              "value": "20",
+              "level": 11
+            },
+            {
+              "value": "20",
+              "level": 12
+            },
+            {
+              "value": "20",
+              "level": 13
+            },
+            {
+              "value": "20",
+              "level": 14
+            },
+            {
+              "value": "20",
+              "level": 15
+            }
+          ]
         },
         {
           "name": "Plunge DMG",
-          "value": "63.9%"
+          "type": "atk_percent",
+          "damageType": "PHYSICAL",
+          "target": "plunging_attack",
+          "power": [
+            {
+              "value": "63.9324%",
+              "level": 1,
+              "scalings": 0.639324
+            },
+            {
+              "value": "69.1362%",
+              "level": 2,
+              "scalings": 0.691362
+            },
+            {
+              "value": "74.34%",
+              "level": 3,
+              "scalings": 0.7434
+            },
+            {
+              "value": "81.774%",
+              "level": 4,
+              "scalings": 0.81774
+            },
+            {
+              "value": "86.9778%",
+              "level": 5,
+              "scalings": 0.869778
+            },
+            {
+              "value": "92.925%",
+              "level": 6,
+              "scalings": 0.92925
+            },
+            {
+              "value": "101.1024%",
+              "level": 7,
+              "scalings": 1.011024
+            },
+            {
+              "value": "109.2798%",
+              "level": 8,
+              "scalings": 1.092798
+            },
+            {
+              "value": "117.4572%",
+              "level": 9,
+              "scalings": 1.174572
+            },
+            {
+              "value": "126.378%",
+              "level": 10,
+              "scalings": 1.26378
+            },
+            {
+              "value": "135.2988%",
+              "level": 11,
+              "scalings": 1.352988
+            },
+            {
+              "value": "144.2196%",
+              "level": 12,
+              "scalings": 1.442196
+            },
+            {
+              "value": "153.1404%",
+              "level": 13,
+              "scalings": 1.531404
+            },
+            {
+              "value": "162.0612%",
+              "level": 14,
+              "scalings": 1.620612
+            },
+            {
+              "value": "170.982%",
+              "level": 15,
+              "scalings": 1.70982
+            }
+          ]
         },
         {
-          "name": "Low/High Plunge DMG",
-          "value": "128%/160%"
+          "name": "Low Plunge DMG",
+          "type": "atk_percent",
+          "damageType": "PHYSICAL",
+          "target": "plunging_attack",
+          "power": [
+            {
+              "value": "127.8377%",
+              "level": 1,
+              "scalings": 1.278377
+            },
+            {
+              "value": "138.2431%",
+              "level": 2,
+              "scalings": 1.382431
+            },
+            {
+              "value": "148.6485%",
+              "level": 3,
+              "scalings": 1.486485
+            },
+            {
+              "value": "163.5134%",
+              "level": 4,
+              "scalings": 1.635134
+            },
+            {
+              "value": "173.9187%",
+              "level": 5,
+              "scalings": 1.739187
+            },
+            {
+              "value": "185.8106%",
+              "level": 6,
+              "scalings": 1.858106
+            },
+            {
+              "value": "202.162%",
+              "level": 7,
+              "scalings": 2.02162
+            },
+            {
+              "value": "218.5133%",
+              "level": 8,
+              "scalings": 2.185133
+            },
+            {
+              "value": "234.8646%",
+              "level": 9,
+              "scalings": 2.348646
+            },
+            {
+              "value": "252.7025%",
+              "level": 10,
+              "scalings": 2.527025
+            },
+            {
+              "value": "270.5403%",
+              "level": 11,
+              "scalings": 2.705403
+            },
+            {
+              "value": "288.3781%",
+              "level": 12,
+              "scalings": 2.883781
+            },
+            {
+              "value": "306.2159%",
+              "level": 13,
+              "scalings": 3.062159
+            },
+            {
+              "value": "324.0537%",
+              "level": 14,
+              "scalings": 3.240537
+            },
+            {
+              "value": "341.8915%",
+              "level": 15,
+              "scalings": 3.418915
+            }
+          ]
+        },
+        {
+          "name": "High Plunge DMG",
+          "type": "atk_percent",
+          "damageType": "PHYSICAL",
+          "target": "plunging_attack",
+          "power": [
+            {
+              "value": "159.6762%",
+              "level": 1,
+              "scalings": 1.596762
+            },
+            {
+              "value": "172.6731%",
+              "level": 2,
+              "scalings": 1.726731
+            },
+            {
+              "value": "185.67%",
+              "level": 3,
+              "scalings": 1.8567
+            },
+            {
+              "value": "204.237%",
+              "level": 4,
+              "scalings": 2.04237
+            },
+            {
+              "value": "217.2339%",
+              "level": 5,
+              "scalings": 2.172339
+            },
+            {
+              "value": "232.0875%",
+              "level": 6,
+              "scalings": 2.320875
+            },
+            {
+              "value": "252.5112%",
+              "level": 7,
+              "scalings": 2.525112
+            },
+            {
+              "value": "272.9349%",
+              "level": 8,
+              "scalings": 2.729349
+            },
+            {
+              "value": "293.3586%",
+              "level": 9,
+              "scalings": 2.933586
+            },
+            {
+              "value": "315.639%",
+              "level": 10,
+              "scalings": 3.15639
+            },
+            {
+              "value": "337.9194%",
+              "level": 11,
+              "scalings": 3.379194
+            },
+            {
+              "value": "360.1998%",
+              "level": 12,
+              "scalings": 3.601998
+            },
+            {
+              "value": "382.4802%",
+              "level": 13,
+              "scalings": 3.824802
+            },
+            {
+              "value": "404.7606%",
+              "level": 14,
+              "scalings": 4.047606
+            },
+            {
+              "value": "427.041%",
+              "level": 15,
+              "scalings": 4.27041
+            }
+          ]
         }
       ],
       "type": "NORMAL_ATTACK",
       "attribute-scaling": [
         {
           "name": "1-Hit DMG (%)",
-          "value": "36.74 39.73 42.72 46.99 49.98 53.4 58.1 62.8 67.5 72.62 78.5"
+          "value": "36.7392 39.7296 42.72 46.992 49.9824 53.4 58.0992 62.7984 67.4976 72.624 78.498 85.4058 92.3136 99.2215 106.7573"
         },
         {
           "name": "2-Hit DMG (%)",
-          "value": "36.74 39.73 42.72 46.99 49.98 53.4 58.1 62.8 67.5 72.62 78.5"
+          "value": "36.7392 39.7296 42.72 46.992 49.9824 53.4 58.0992 62.7984 67.4976 72.624 78.498 85.4058 92.3136 99.2215 106.7573"
         },
         {
           "name": "3-Hit DMG (%)",
-          "value": "47.45 51.32 55.18 60.7 64.56 68.97 75.04 81.11 87.18 93.81 101.39"
+          "value": "47.4548 51.3174 55.18 60.698 64.5606 68.975 75.0448 81.1146 87.1844 93.806 101.3932 110.3159 119.2385 128.1611 137.8948"
         },
         {
           "name": "4-Hit DMG (%)",
-          "value": "49.75 53.8 57.85 63.63 67.68 72.31 78.68 85.04 91.4 98.34 106.3"
+          "value": "49.751 53.8005 57.85 63.635 67.6845 72.3125 78.676 85.0395 91.403 98.345 106.2994 115.6537 125.0081 134.3624 144.5671"
         },
         {
           "name": "5-Hit DMG (%)",
-          "value": "62.07 67.13 72.18 79.4 84.45 90.22 98.16 106.1 114.04 122.7 132.63"
+          "value": "62.0739 67.1265 72.179 79.3969 84.4494 90.2238 98.1634 106.1031 114.0428 122.7043 132.6289 144.3003 155.9716 167.6429 180.3753"
         },
         {
           "name": "Charged Attack DMG (%)",
-          "value": "47.3+60.2 51.15+65.1 55+70 60.5+77 64.35+81.9 68.75+87.5 74.8+95.2 80.85+102.9 86.9+110.6 93.5+119 101.06+128.63"
+          "value": "47.3+60.2 51.15+65.1 55+70 60.5+77 64.35+81.9 68.75+87.5 74.8+95.2 80.85+102.9 86.9+110.6 93.5+119 101.0625+128.625 109.956+139.944 118.8495+151.263 127.743+162.582 137.445+174.93"
         },
         {
           "name": "Charged Attack Stamina Cost",
@@ -86,49 +945,329 @@
         },
         {
           "name": "Plunge DMG (%)",
-          "value": "63.93 69.14 74.34 81.77 86.98 92.92 101.1 109.28 117.46 126.38 135.3"
+          "value": "63.9324 69.1362 74.34 81.774 86.9778 92.925 101.1024 109.2798 117.4572 126.378 135.2988 144.2196 153.1404 162.0612 170.982"
         },
         {
           "name": "Low Plunge DMG (%)",
-          "value": "127.84 138.24 148.65 163.51 173.92 185.81 202.16 218.51 234.86 252.7 270.54"
+          "value": "127.8377 138.2431 148.6485 163.5134 173.9187 185.8106 202.162 218.5133 234.8646 252.7025 270.5403 288.3781 306.2159 324.0537 341.8915"
         },
         {
           "name": "High Plunge DMG (%)",
-          "value": "159.68 172.67 185.67 204.24 217.23 232.09 252.51 272.93 293.36 315.64 337.92"
+          "value": "159.6762 172.6731 185.67 204.237 217.2339 232.0875 252.5112 272.9349 293.3586 315.639 337.9194 360.1998 382.4802 404.7606 427.041"
         }
       ]
     },
     {
       "name": "Abiogenesis: Solar Isotoma",
       "unlock": "Elemental Skill",
-      "description": "Albedo creates a Solar Isotoma using alchemy, which deals AoE Geo DMG on appearance.\nSolar Isotoma\n\nWhen enemies within the Solar Isotoma zone are hit, the Solar Isotoma will generate Transient Blossoms which deal AoE Geo DMG. DMG dealt scales off Albedo's DEF.\nTransient Blossoms can only be generated once every 2s.\nWhen a character is located at the locus of the Solar Isotoma, the Solar Isotoma will accumulate Geo power to form a crystallized platform that lifts the character up to a certain height. Only one crystallized platform can exist at a time.\nSolar Isotoma is considered a Geo construct.\n\nHold to designate the location of the skill.",
+      "description": "Albedo creates a Solar Isotoma using alchemy, which deals AoE Geo DMG on appearance.\n\nSolar Isotoma\nhas the following properties:\n·When opponents within the Solar Isotoma field take DMG, the Solar Isotoma will generate Transient Blossoms which deal AoE Geo DMG. DMG dealt scales off Albedo's DEF. \n·Transient Blossoms can only be generated once every 2s.\n·When a character is located at the locus of the Solar Isotoma, the Solar Isotoma will accumulate Geo power to form a crystallized platform that lifts the character up to a certain height. Only one crystallized platform can exist at a time.\n·Solar Isotoma is considered a Geo construct. Only one Solar Isotoma created by Albedo himself can exist at a time. \n\nHold to designate the location of the skill.\n\nThis Geo bloom has an unusual property mirrored in the aim of alchemy. To rise from the earth, soar into the sky, and become the sun.",
       "upgrades": [
         {
           "name": "Skill DMG",
-          "value": "130.4%"
+          "type": "atk_percent",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "power": [
+            {
+              "value": "130.4%",
+              "level": 1,
+              "scalings": 1.304
+            },
+            {
+              "value": "140.18%",
+              "level": 2,
+              "scalings": 1.4018
+            },
+            {
+              "value": "149.96%",
+              "level": 3,
+              "scalings": 1.4996
+            },
+            {
+              "value": "163%",
+              "level": 4,
+              "scalings": 1.63
+            },
+            {
+              "value": "172.78%",
+              "level": 5,
+              "scalings": 1.7278
+            },
+            {
+              "value": "182.56%",
+              "level": 6,
+              "scalings": 1.8256
+            },
+            {
+              "value": "195.6%",
+              "level": 7,
+              "scalings": 1.956
+            },
+            {
+              "value": "208.64%",
+              "level": 8,
+              "scalings": 2.0864
+            },
+            {
+              "value": "221.68%",
+              "level": 9,
+              "scalings": 2.2168
+            },
+            {
+              "value": "234.72%",
+              "level": 10,
+              "scalings": 2.3472
+            },
+            {
+              "value": "247.76%",
+              "level": 11,
+              "scalings": 2.4776
+            },
+            {
+              "value": "260.8%",
+              "level": 12,
+              "scalings": 2.608
+            },
+            {
+              "value": "277.1%",
+              "level": 13,
+              "scalings": 2.771
+            },
+            {
+              "value": "293.4%",
+              "level": 14,
+              "scalings": 2.934
+            },
+            {
+              "value": "309.7%",
+              "level": 15,
+              "scalings": 3.097
+            }
+          ]
         },
         {
           "name": "Transient Blossom DMG",
-          "value": "134% DEF"
+          "type": "def_percent",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "power": [
+            {
+              "value": "133.6% DEF",
+              "level": 1,
+              "scalings": 1.336
+            },
+            {
+              "value": "143.62% DEF",
+              "level": 2,
+              "scalings": 1.4362
+            },
+            {
+              "value": "153.64% DEF",
+              "level": 3,
+              "scalings": 1.5364
+            },
+            {
+              "value": "167% DEF",
+              "level": 4,
+              "scalings": 1.67
+            },
+            {
+              "value": "177.02% DEF",
+              "level": 5,
+              "scalings": 1.7702
+            },
+            {
+              "value": "187.04% DEF",
+              "level": 6,
+              "scalings": 1.8704
+            },
+            {
+              "value": "200.4% DEF",
+              "level": 7,
+              "scalings": 2.004
+            },
+            {
+              "value": "213.76% DEF",
+              "level": 8,
+              "scalings": 2.1376
+            },
+            {
+              "value": "227.12% DEF",
+              "level": 9,
+              "scalings": 2.2712
+            },
+            {
+              "value": "240.48% DEF",
+              "level": 10,
+              "scalings": 2.4048
+            },
+            {
+              "value": "253.84% DEF",
+              "level": 11,
+              "scalings": 2.5384
+            },
+            {
+              "value": "267.2% DEF",
+              "level": 12,
+              "scalings": 2.672
+            },
+            {
+              "value": "283.9% DEF",
+              "level": 13,
+              "scalings": 2.839
+            },
+            {
+              "value": "300.6% DEF",
+              "level": 14,
+              "scalings": 3.006
+            },
+            {
+              "value": "317.3% DEF",
+              "level": 15,
+              "scalings": 3.173
+            }
+          ]
         },
         {
           "name": "Duration",
-          "value": "30"
+          "power": [
+            {
+              "value": "30s",
+              "level": 1
+            },
+            {
+              "value": "30s",
+              "level": 2
+            },
+            {
+              "value": "30s",
+              "level": 3
+            },
+            {
+              "value": "30s",
+              "level": 4
+            },
+            {
+              "value": "30s",
+              "level": 5
+            },
+            {
+              "value": "30s",
+              "level": 6
+            },
+            {
+              "value": "30s",
+              "level": 7
+            },
+            {
+              "value": "30s",
+              "level": 8
+            },
+            {
+              "value": "30s",
+              "level": 9
+            },
+            {
+              "value": "30s",
+              "level": 10
+            },
+            {
+              "value": "30s",
+              "level": 11
+            },
+            {
+              "value": "30s",
+              "level": 12
+            },
+            {
+              "value": "30s",
+              "level": 13
+            },
+            {
+              "value": "30s",
+              "level": 14
+            },
+            {
+              "value": "30s",
+              "level": 15
+            }
+          ]
         },
         {
           "name": "Skill CD",
-          "value": "4s"
+          "power": [
+            {
+              "value": "4s",
+              "level": 1
+            },
+            {
+              "value": "4s",
+              "level": 2
+            },
+            {
+              "value": "4s",
+              "level": 3
+            },
+            {
+              "value": "4s",
+              "level": 4
+            },
+            {
+              "value": "4s",
+              "level": 5
+            },
+            {
+              "value": "4s",
+              "level": 6
+            },
+            {
+              "value": "4s",
+              "level": 7
+            },
+            {
+              "value": "4s",
+              "level": 8
+            },
+            {
+              "value": "4s",
+              "level": 9
+            },
+            {
+              "value": "4s",
+              "level": 10
+            },
+            {
+              "value": "4s",
+              "level": 11
+            },
+            {
+              "value": "4s",
+              "level": 12
+            },
+            {
+              "value": "4s",
+              "level": 13
+            },
+            {
+              "value": "4s",
+              "level": 14
+            },
+            {
+              "value": "4s",
+              "level": 15
+            }
+          ]
         }
       ],
       "type": "ELEMENTAL_SKILL",
       "attribute-scaling": [
         {
           "name": "Skill DMG (%)",
-          "value": "130.4 140.18 149.96 163 172.78 182.56 195.6 208.64 221.68 234.72 247.76 260.8 277.1 293.4"
+          "value": "130.4 140.18 149.96 163 172.78 182.56 195.6 208.64 221.68 234.72 247.76 260.8 277.1 293.4 309.7"
         },
         {
           "name": "Transient Blossom DMG (% DEF)",
-          "value": "133.6 143.62 153.64 167 177.02 187.04 200.4 213.76 227.12 240.48 253.84 267.2 283.9 300.6"
+          "value": "133.6 143.62 153.64 167 177.02 187.04 200.4 213.76 227.12 240.48 253.84 267.2 283.9 300.6 317.3"
         },
         {
           "name": "Duration",
@@ -143,34 +1282,314 @@
     {
       "name": "Rite of Progeniture: Tectonic Tide",
       "unlock": "Elemental Burst",
-      "description": "Under Albedo's command, Geo crystals surge and burst forth, dealing AoE Geo DMG in front of him.\nIf a Solar Isotoma created by Albedo himself is on the field, 7 Fatal Blossoms will be generated in the Solar Isotoma field, bursting violently into bloom and dealing AoE Geo DMG\nTecotonic Tide DMG and Fatal Blossom DMG will not generate Transient Blossoms.",
+      "description": "Under Albedo's command, Geo crystals surge and burst forth, dealing AoE Geo DMG in front of him.\nIf a Solar Isotoma created by Albedo himself is on the field, 7 Fatal Blossoms will be generated in the Solar Isotoma field, bursting violently into bloom and dealing AoE Geo DMG.\n\nTectonic Tide DMG and Fatal Blossom DMG will not generate Transient Blossoms.\n\nUnder the Kreideprinz's command, the tectonic tide of creation seethes into life.",
       "upgrades": [
         {
           "name": "Elemental Burst DMG",
-          "value": "367.2%"
+          "type": "atk_percent",
+          "damageType": "GEO",
+          "target": "elemental_burst",
+          "power": [
+            {
+              "value": "367.2%",
+              "level": 1,
+              "scalings": 3.672
+            },
+            {
+              "value": "394.74%",
+              "level": 2,
+              "scalings": 3.9474
+            },
+            {
+              "value": "422.28%",
+              "level": 3,
+              "scalings": 4.2228
+            },
+            {
+              "value": "459%",
+              "level": 4,
+              "scalings": 4.59
+            },
+            {
+              "value": "486.54%",
+              "level": 5,
+              "scalings": 4.8654
+            },
+            {
+              "value": "514.08%",
+              "level": 6,
+              "scalings": 5.1408
+            },
+            {
+              "value": "550.8%",
+              "level": 7,
+              "scalings": 5.508
+            },
+            {
+              "value": "587.52%",
+              "level": 8,
+              "scalings": 5.8752
+            },
+            {
+              "value": "624.24%",
+              "level": 9,
+              "scalings": 6.2424
+            },
+            {
+              "value": "660.96%",
+              "level": 10,
+              "scalings": 6.6096
+            },
+            {
+              "value": "697.68%",
+              "level": 11,
+              "scalings": 6.9768
+            },
+            {
+              "value": "734.4%",
+              "level": 12,
+              "scalings": 7.344
+            },
+            {
+              "value": "780.3%",
+              "level": 13,
+              "scalings": 7.803
+            },
+            {
+              "value": "826.2%",
+              "level": 14,
+              "scalings": 8.262
+            },
+            {
+              "value": "872.1%",
+              "level": 15,
+              "scalings": 8.721
+            }
+          ]
         },
         {
           "name": "Fatal Blossom DMG",
-          "value": "72% each"
+          "type": "atk_percent",
+          "damageType": "GEO",
+          "target": "elemental_burst",
+          "power": [
+            {
+              "value": "72% each",
+              "level": 1,
+              "scalings": 0.72
+            },
+            {
+              "value": "77.4% each",
+              "level": 2,
+              "scalings": 0.774
+            },
+            {
+              "value": "82.8% each",
+              "level": 3,
+              "scalings": 0.828
+            },
+            {
+              "value": "90% each",
+              "level": 4,
+              "scalings": 0.9
+            },
+            {
+              "value": "95.4% each",
+              "level": 5,
+              "scalings": 0.954
+            },
+            {
+              "value": "100.8% each",
+              "level": 6,
+              "scalings": 1.008
+            },
+            {
+              "value": "108% each",
+              "level": 7,
+              "scalings": 1.08
+            },
+            {
+              "value": "115.2% each",
+              "level": 8,
+              "scalings": 1.152
+            },
+            {
+              "value": "122.4% each",
+              "level": 9,
+              "scalings": 1.224
+            },
+            {
+              "value": "129.6% each",
+              "level": 10,
+              "scalings": 1.296
+            },
+            {
+              "value": "136.8% each",
+              "level": 11,
+              "scalings": 1.368
+            },
+            {
+              "value": "144% each",
+              "level": 12,
+              "scalings": 1.44
+            },
+            {
+              "value": "153% each",
+              "level": 13,
+              "scalings": 1.53
+            },
+            {
+              "value": "162% each",
+              "level": 14,
+              "scalings": 1.62
+            },
+            {
+              "value": "171% each",
+              "level": 15,
+              "scalings": 1.71
+            }
+          ]
         },
         {
           "name": "CD",
-          "value": "12s"
+          "power": [
+            {
+              "value": "12s",
+              "level": 1
+            },
+            {
+              "value": "12s",
+              "level": 2
+            },
+            {
+              "value": "12s",
+              "level": 3
+            },
+            {
+              "value": "12s",
+              "level": 4
+            },
+            {
+              "value": "12s",
+              "level": 5
+            },
+            {
+              "value": "12s",
+              "level": 6
+            },
+            {
+              "value": "12s",
+              "level": 7
+            },
+            {
+              "value": "12s",
+              "level": 8
+            },
+            {
+              "value": "12s",
+              "level": 9
+            },
+            {
+              "value": "12s",
+              "level": 10
+            },
+            {
+              "value": "12s",
+              "level": 11
+            },
+            {
+              "value": "12s",
+              "level": 12
+            },
+            {
+              "value": "12s",
+              "level": 13
+            },
+            {
+              "value": "12s",
+              "level": 14
+            },
+            {
+              "value": "12s",
+              "level": 15
+            }
+          ]
         },
         {
           "name": "Energy Cost",
-          "value": "40"
+          "power": [
+            {
+              "value": "40",
+              "level": 1
+            },
+            {
+              "value": "40",
+              "level": 2
+            },
+            {
+              "value": "40",
+              "level": 3
+            },
+            {
+              "value": "40",
+              "level": 4
+            },
+            {
+              "value": "40",
+              "level": 5
+            },
+            {
+              "value": "40",
+              "level": 6
+            },
+            {
+              "value": "40",
+              "level": 7
+            },
+            {
+              "value": "40",
+              "level": 8
+            },
+            {
+              "value": "40",
+              "level": 9
+            },
+            {
+              "value": "40",
+              "level": 10
+            },
+            {
+              "value": "40",
+              "level": 11
+            },
+            {
+              "value": "40",
+              "level": 12
+            },
+            {
+              "value": "40",
+              "level": 13
+            },
+            {
+              "value": "40",
+              "level": 14
+            },
+            {
+              "value": "40",
+              "level": 15
+            }
+          ]
         }
       ],
       "type": "ELEMENTAL_BURST",
       "attribute-scaling": [
         {
           "name": "Elemental Burst DMG (%)",
-          "value": "367.2 394.74 422.28 459 486.54 514.08 550.8 587.52 624.24 660.96 697.68 734.4 780.3 826"
+          "value": "367.2 394.74 422.28 459 486.54 514.08 550.8 587.52 624.24 660.96 697.68 734.4 780.3 826.2 872.1"
         },
         {
           "name": "Fatal Blossom DMG (%)",
-          "value": "72 77.4 82.8 90 95.4 100.8 108 115.2 122.4 129.6 136.8 144 153 162"
+          "value": "72 77.4 82.8 90 95.4 100.8 108 115.2 122.4 129.6 136.8 144 153 162 171"
         },
         {
           "name": "CD",
@@ -187,57 +1606,289 @@
     {
       "name": "Calcite Might",
       "unlock": "Unlocked at Ascension 1",
-      "description": "Transient Blossoms generated by Abiogenesis: Solar Isotoma deal 25% more DMG to enemies whose HP is below 50%.",
-      "level": 1
+      "description": "Transient Blossoms generated by Abiogenesis: Solar Isotoma deal 25% more DMG to opponents whose HP is below 50%.\n\nHexerei enhancement\nTransient Blossoms generated by the Elemental Skill Abiogenesis: Solar Isotoma deal 25% more DMG to opponents whose HP is below 50%.\nAdditionally, if there is a Silver Isotoma on the field that was created by Albedo, the DMG dealt will also be increased by 240% of Albedo's DEF.",
+      "level": 1,
+      "modifiers": [
+        {
+          "label": "Transient Blossom DMG against opponents below 50% HP",
+          "type": "dmg_percent",
+          "values": [0.25],
+          "bonus": true,
+          "target": "elemental_skill"
+        },
+        {
+          "label": "Hexerei enhancement — Additional Transient Blossom DMG with a Silver Isotoma on the field, based on Albedo's DEF",
+          "type": "dmg_percent",
+          "values": [2.4],
+          "bonus": true,
+          "target": "elemental_skill",
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          }
+        }
+      ]
     },
     {
       "name": "Homuncular Nature",
       "unlock": "Unlocked at Ascension 4",
       "description": "Using Rite of Progeniture: Tectonic Tide increases the Elemental Mastery of nearby party members by 125 for 10s.",
-      "level": 4
+      "level": 4,
+      "modifiers": [
+        {
+          "label": "Nearby party members' Elemental Mastery",
+          "type": "elemental_mastery",
+          "values": [125],
+          "bonus": true
+        }
+      ]
     },
     {
       "name": "Flash of Genius",
       "unlock": "Unlocked Automatically",
-      "description": "When Albedo crafts Weapon Ascension Materials, he has a 10% chance to receive double the product."
+      "description": "When Albedo crafts Weapon Ascension Materials, he has a 10% chance to receive double the product.",
+      "modifiers": []
+    },
+    {
+      "name": "Witch's Eve Rite: Book of Blinding Light",
+      "unlock": "Complete Witch's Homework: Beyond the Lesson",
+      "description": "After completing Witch's Homework: Beyond the Lesson, Albedo will become a Hexerei character. When the party includes at least 2 Hexerei characters, you will gain the Hexerei: Secret Rite effect, which enhances Hexerei characters.\n\nHexerei: Secret Rite\n· When Albedo hits an opponent with his Elemental Skill within 20s of using an Elemental Skill, it will generate a Silver Isotoma near the opponent that lasts for 10s. When there are no Solar Isotomas created by Albedo on the field, and as long as Albedo is not downed, a single Silver Isotoma will begin generating Transient Blossoms, just as Solar Isotomas would. There can be up to two Silver Isotomas generated by Albedo on the field at any one time.\n· After creating a Solar Isotoma, nearby party members' Normal Attack, Charged Attack, Plunging Attack, Elemental Skill, and Elemental Burst DMG are increased by 4% for every 1,000 DEF Albedo has for 20s. The maximum increase that can be achieved this way is 12%.\n· After generating a Silver Isotoma, nearby Hexerei party members' Normal Attack, Charged Attack, Plunging Attack, Elemental Skill, and Elemental Burst DMG are increased by 10% for every 1,000 DEF Albedo has for 20s. The maximum increase that can be achieved this way is 30%.",
+      "modifiers": [
+        {
+          "label": "Hexerei: Secret Rite — Nearby party members' Normal Attack DMG after creating a Solar Isotoma, per point of Albedo's DEF",
+          "type": "dmg_percent",
+          "values": [0.00004],
+          "bonus": true,
+          "target": "normal_attack",
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          },
+          "maxValues": [0.12]
+        },
+        {
+          "label": "Hexerei: Secret Rite — Nearby party members' Charged Attack DMG after creating a Solar Isotoma, per point of Albedo's DEF",
+          "type": "dmg_percent",
+          "values": [0.00004],
+          "bonus": true,
+          "target": "charged_attack",
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          },
+          "maxValues": [0.12]
+        },
+        {
+          "label": "Hexerei: Secret Rite — Nearby party members' Plunging Attack DMG after creating a Solar Isotoma, per point of Albedo's DEF",
+          "type": "dmg_percent",
+          "values": [0.00004],
+          "bonus": true,
+          "target": "plunging_attack",
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          },
+          "maxValues": [0.12]
+        },
+        {
+          "label": "Hexerei: Secret Rite — Nearby party members' Elemental Skill DMG after creating a Solar Isotoma, per point of Albedo's DEF",
+          "type": "dmg_percent",
+          "values": [0.00004],
+          "bonus": true,
+          "target": "elemental_skill",
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          },
+          "maxValues": [0.12]
+        },
+        {
+          "label": "Hexerei: Secret Rite — Nearby party members' Elemental Burst DMG after creating a Solar Isotoma, per point of Albedo's DEF",
+          "type": "dmg_percent",
+          "values": [0.00004],
+          "bonus": true,
+          "target": "elemental_burst",
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          },
+          "maxValues": [0.12]
+        },
+        {
+          "label": "Hexerei: Secret Rite — Nearby Hexerei party members' Normal Attack DMG after generating a Silver Isotoma, per point of Albedo's DEF",
+          "type": "dmg_percent",
+          "values": [0.0001],
+          "bonus": true,
+          "target": "normal_attack",
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          },
+          "maxValues": [0.3]
+        },
+        {
+          "label": "Hexerei: Secret Rite — Nearby Hexerei party members' Charged Attack DMG after generating a Silver Isotoma, per point of Albedo's DEF",
+          "type": "dmg_percent",
+          "values": [0.0001],
+          "bonus": true,
+          "target": "charged_attack",
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          },
+          "maxValues": [0.3]
+        },
+        {
+          "label": "Hexerei: Secret Rite — Nearby Hexerei party members' Plunging Attack DMG after generating a Silver Isotoma, per point of Albedo's DEF",
+          "type": "dmg_percent",
+          "values": [0.0001],
+          "bonus": true,
+          "target": "plunging_attack",
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          },
+          "maxValues": [0.3]
+        },
+        {
+          "label": "Hexerei: Secret Rite — Nearby Hexerei party members' Elemental Skill DMG after generating a Silver Isotoma, per point of Albedo's DEF",
+          "type": "dmg_percent",
+          "values": [0.0001],
+          "bonus": true,
+          "target": "elemental_skill",
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          },
+          "maxValues": [0.3]
+        },
+        {
+          "label": "Hexerei: Secret Rite — Nearby Hexerei party members' Elemental Burst DMG after generating a Silver Isotoma, per point of Albedo's DEF",
+          "type": "dmg_percent",
+          "values": [0.0001],
+          "bonus": true,
+          "target": "elemental_burst",
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          },
+          "maxValues": [0.3]
+        }
+      ]
     }
   ],
   "constellations": [
     {
       "name": "Flower of Eden",
       "unlock": "Constellation Lv. 1",
-      "description": "Transient Blossoms generated by Albedo's Abiogenesis: Solar Isotoma regenerate 1.2 Energy for Albedo.",
-      "level": 1
+      "description": "Transient Blossoms generated by Albedo's Abiogenesis: Solar Isotoma regenerate 1.2 Energy for Albedo.\n\nHexerei enhancement\nTransient Blossoms generated by Albedo's Elemental Skill Abiogenesis: Solar Isotoma regenerate 1.2 Energy for Albedo.\nAdditionally, the use of Albedo's Elemental Skill Abiogenesis: Solar Isotoma also increases his DEF by 50% for the next 20s.",
+      "level": 1,
+      "modifiers": [
+        {
+          "label": "Hexerei enhancement — Albedo's DEF after using his Elemental Skill",
+          "type": "def_percent",
+          "values": [0.5],
+          "bonus": true
+        }
+      ]
     },
     {
       "name": "Opening of Phanerozoic",
       "unlock": "Constellation Lv. 2",
-      "description": "Transient Blossoms generated by Abiogenesis: Solar Isotoma grant Albedo Fatal Reckoning for 30s:\n\nEach stack of Fatal Reckoning increases DMG by of Albedo's DEF.\nThe effect stacks up to 4 times.\n\nUnleashing Rite of Progeniture: Tectonic Tide consumes all stacks of Fatal Reckoning, increasing the DMG dealt by the Tectonic Tide and Fatal Blossoms based on the number of stacks consumed.",
-      "level": 2
+      "description": "Transient Blossoms generated by Abiogenesis: Solar Isotoma grant Albedo Fatal Reckoning for 30s:\n·Unleashing Rite of Progeniture: Tectonic Tide consumes all stacks of Fatal Reckoning. Each stack of Fatal Reckoning consumed increases the DMG dealt by Fatal Blossoms and Rite of Progeniture: Tectonic Tide's burst DMG by 30% of Albedo's DEF.\n·This effect stacks up to 4 times.\n\nHexerei enhancement\nTransient Blossoms generated by the Elemental Skill Abiogenesis: Solar Isotoma grant Albedo Fatal Reckoning for 30s:\n· Unleashing the Elemental Burst Rite of Progeniture: Tectonic Tide consumes all stacks of Fatal Reckoning. Each stack of Fatal Reckoning consumed increases the DMG dealt by Fatal Blossoms and Rite of Progeniture: Tectonic Tide's burst DMG by 30% of Albedo's DEF.\n· This effect stacks up to 4 times.\n\nAdditionally, when Albedo is not on the field and when the stack count of Fatal Reckoning reaches 4, all stacks of Fatal Reckoning are consumed. This generates 3 Fatal Blossoms near your active character, which will violently bloom to deal AoE Geo DMG equal to 300% of Albedo's DEF, DMG that will be considered Elemental Burst DMG. Where the Passive Talent Homuncular Nature has also been unlocked, the Elemental Mastery of nearby party members will also increase by 125 for 10s.",
+      "level": 2,
+      "modifiers": [
+        {
+          "label": "Burst cast and Fatal Blossom DMG per Fatal Reckoning stack consumed by casting the Burst, based on Albedo's DEF",
+          "type": "dmg_percent",
+          "values": [0.3],
+          "bonus": true,
+          "target": "elemental_burst",
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          },
+          "accumulations": 4
+        }
+      ],
+      "skills": [
+        {
+          "label": "Hexerei enhancement — One Fatal Blossom generated when four Fatal Reckoning stacks are consumed off-field",
+          "damageType": "GEO",
+          "target": "elemental_burst",
+          "scalings": [
+            {
+              "type": "def_percent",
+              "values": [3],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Grace of Helios",
       "unlock": "Constellation Lv. 3",
-      "description": "Increases the level of Abiogenesis: Solar Isotoma by 3.\nMaximum upgrade level is 15.",
-      "level": 3
+      "description": "Increases the Level of Abiogenesis: Solar Isotoma by 3.\nMaximum upgrade level is 15.",
+      "level": 3,
+      "modifiers": []
     },
     {
       "name": "Descent of Divinity",
       "unlock": "Constellation Lv. 4",
-      "description": "Solar Isotoma increases Plunging Attack DMG by 30% for active party members within the AoE.",
-      "level": 4
+      "description": "Active party members within the Solar Isotoma field have their Plunging Attack DMG increased by 30%.\n\nHexerei enhancement\nActive party members within the Solar Isotoma field have their Plunging Attack DMG increased by 30%.\nAdditionally, when a nearby active party member jumps near a Silver Isotoma, the Silver Isotoma will be destroyed while greatly increasing the height of that jump, and for the next 3s, said character will deal 30% more Plunging Attack ground impact DMG. This effect is removed 0.1s after Plunging Attack ground impact DMG is dealt.",
+      "level": 4,
+      "modifiers": [
+        {
+          "label": "Active character's Plunging Attack DMG within the Solar Isotoma field",
+          "type": "dmg_percent",
+          "values": [0.3],
+          "bonus": true,
+          "target": "plunging_attack"
+        },
+        {
+          "label": "Hexerei enhancement — Additional Plunging Attack ground impact DMG only, after jumping near and destroying a Silver Isotoma",
+          "type": "dmg_percent",
+          "values": [0.3],
+          "bonus": true,
+          "target": "plunging_attack"
+        }
+      ]
     },
     {
-      "name": "Tide of Hadaen",
+      "name": "Tide of Hadean",
       "unlock": "Constellation Lv. 5",
-      "description": "Increases the level of Rite of Progeniture: Tectonic Tide by 3.\nMaximum upgrade level is 15.",
-      "level": 5
+      "description": "Increases the Level of Rite of Progeniture: Tectonic Tide by 3.\nMaximum upgrade level is 15.",
+      "level": 5,
+      "modifiers": []
     },
     {
       "name": "Dust of Purification",
       "unlock": "Constellation Lv. 6",
-      "description": "If active party members within the AoE are protected by a shield created by Crystallize, Solar Isotoma increases their DMG by 17%.",
-      "level": 6
+      "description": "Active party members within the Solar Isotoma field who are protected by a shield created by Crystallize, or when Moondrifts are present within the Solar Isotoma field, have their DMG increased by 17%.\n\nHexerei enhancement\nCurrent active party members within the Solar Isotoma field who are protected by a Shield created by Crystallize, or when Moondrifts are present within the Solar Isotoma field, have their DMG increased by 17%.\nAdditionally, use of the Elemental Burst Rite of Progeniture: Tectonic Tide destroys all Silver Isotomas present on the field, and whenever a Silver Isotoma is destroyed this way the current instance of Elemental Burst will also be considered as having cleared 4 Fatal Reckoning stacks from the Constellation Opening of Phanerozoic. This increases the DMG dealt by Fatal Blossom by 250% of Albedo's DEF for the next 20s.",
+      "level": 6,
+      "modifiers": [
+        {
+          "label": "Active character's DMG within the Solar Isotoma field, protected by a Crystallize shield or with Moondrifts in the field",
+          "type": "dmg_percent",
+          "values": [0.17],
+          "bonus": true
+        },
+        {
+          "label": "Hexerei enhancement — Additional Fatal Blossom DMG after destroying Silver Isotomas with the Burst, based on Albedo's DEF",
+          "type": "dmg_percent",
+          "values": [2.5],
+          "bonus": true,
+          "target": "elemental_burst",
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          }
+        }
+      ]
     }
   ],
   "vision_key": "GEO",
