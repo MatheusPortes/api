@@ -20,146 +20,897 @@
       "upgrades": [
         {
           "name": "Dano do 1° Golpe",
+          "type": "atk_percent",
+          "damageType": "PHYSICAL",
+          "target": "normal_attack",
           "power": [
-            { "value": "36.7%", "level": 1 },
-            { "value": "39.73%", "level": 2 },
-            { "value": "42.72%", "level": 3 },
-            { "value": "46.99%", "level": 4 },
-            { "value": "49.98%", "level": 5 },
-            { "value": "53.4%", "level": 6 },
-            { "value": "58.1%", "level": 7 },
-            { "value": "62.8%", "level": 8 },
-            { "value": "67.5%", "level": 9 },
-            { "value": "72.62%", "level": 10 },
-            { "value": "78.5%", "level": 11 }
+            {
+              "value": "36.7392%",
+              "level": 1,
+              "scalings": 0.367392
+            },
+            {
+              "value": "39.7296%",
+              "level": 2,
+              "scalings": 0.397296
+            },
+            {
+              "value": "42.72%",
+              "level": 3,
+              "scalings": 0.4272
+            },
+            {
+              "value": "46.992%",
+              "level": 4,
+              "scalings": 0.46992
+            },
+            {
+              "value": "49.9824%",
+              "level": 5,
+              "scalings": 0.499824
+            },
+            {
+              "value": "53.4%",
+              "level": 6,
+              "scalings": 0.534
+            },
+            {
+              "value": "58.0992%",
+              "level": 7,
+              "scalings": 0.580992
+            },
+            {
+              "value": "62.7984%",
+              "level": 8,
+              "scalings": 0.627984
+            },
+            {
+              "value": "67.4976%",
+              "level": 9,
+              "scalings": 0.674976
+            },
+            {
+              "value": "72.624%",
+              "level": 10,
+              "scalings": 0.72624
+            },
+            {
+              "value": "78.498%",
+              "level": 11,
+              "scalings": 0.78498
+            },
+            {
+              "value": "85.4058%",
+              "level": 12,
+              "scalings": 0.854058
+            },
+            {
+              "value": "92.3136%",
+              "level": 13,
+              "scalings": 0.923136
+            },
+            {
+              "value": "99.2215%",
+              "level": 14,
+              "scalings": 0.992215
+            },
+            {
+              "value": "106.7573%",
+              "level": 15,
+              "scalings": 1.067573
+            }
           ]
         },
         {
           "name": "Dano do 2° Golpe",
+          "type": "atk_percent",
+          "damageType": "PHYSICAL",
+          "target": "normal_attack",
           "power": [
-            { "value": "36.7%", "level": 1 },
-            { "value": "39.73%", "level": 2 },
-            { "value": "42.72%", "level": 3 },
-            { "value": "46.99%", "level": 4 },
-            { "value": "49.98%", "level": 5 },
-            { "value": "53.4%", "level": 6 },
-            { "value": "58.1%", "level": 7 },
-            { "value": "62.8%", "level": 8 },
-            { "value": "67.5%", "level": 9 },
-            { "value": "72.62%", "level": 10 },
-            { "value": "78.5%", "level": 11 }
+            {
+              "value": "36.7392%",
+              "level": 1,
+              "scalings": 0.367392
+            },
+            {
+              "value": "39.7296%",
+              "level": 2,
+              "scalings": 0.397296
+            },
+            {
+              "value": "42.72%",
+              "level": 3,
+              "scalings": 0.4272
+            },
+            {
+              "value": "46.992%",
+              "level": 4,
+              "scalings": 0.46992
+            },
+            {
+              "value": "49.9824%",
+              "level": 5,
+              "scalings": 0.499824
+            },
+            {
+              "value": "53.4%",
+              "level": 6,
+              "scalings": 0.534
+            },
+            {
+              "value": "58.0992%",
+              "level": 7,
+              "scalings": 0.580992
+            },
+            {
+              "value": "62.7984%",
+              "level": 8,
+              "scalings": 0.627984
+            },
+            {
+              "value": "67.4976%",
+              "level": 9,
+              "scalings": 0.674976
+            },
+            {
+              "value": "72.624%",
+              "level": 10,
+              "scalings": 0.72624
+            },
+            {
+              "value": "78.498%",
+              "level": 11,
+              "scalings": 0.78498
+            },
+            {
+              "value": "85.4058%",
+              "level": 12,
+              "scalings": 0.854058
+            },
+            {
+              "value": "92.3136%",
+              "level": 13,
+              "scalings": 0.923136
+            },
+            {
+              "value": "99.2215%",
+              "level": 14,
+              "scalings": 0.992215
+            },
+            {
+              "value": "106.7573%",
+              "level": 15,
+              "scalings": 1.067573
+            }
           ]
         },
         {
           "name": "Dano do 3° Golpe",
+          "type": "atk_percent",
+          "damageType": "PHYSICAL",
+          "target": "normal_attack",
           "power": [
-            { "value": "47.5%", "level": 1 },
-            { "value": "51.3%", "level": 2 },
-            { "value": "55.1%", "level": 3 },
-            { "value": "60.7%", "level": 4 },
-            { "value": "64.5%", "level": 5 },
-            { "value": "68.9%", "level": 6 },
-            { "value": "75%", "level": 7 },
-            { "value": "81.1%", "level": 8 },
-            { "value": "87.2%", "level": 9 },
-            { "value": "93.8%", "level": 10 },
-            { "value": "101.4%", "level": 11 }
+            {
+              "value": "47.4548%",
+              "level": 1,
+              "scalings": 0.474548
+            },
+            {
+              "value": "51.3174%",
+              "level": 2,
+              "scalings": 0.513174
+            },
+            {
+              "value": "55.18%",
+              "level": 3,
+              "scalings": 0.5518
+            },
+            {
+              "value": "60.698%",
+              "level": 4,
+              "scalings": 0.60698
+            },
+            {
+              "value": "64.5606%",
+              "level": 5,
+              "scalings": 0.645606
+            },
+            {
+              "value": "68.975%",
+              "level": 6,
+              "scalings": 0.68975
+            },
+            {
+              "value": "75.0448%",
+              "level": 7,
+              "scalings": 0.750448
+            },
+            {
+              "value": "81.1146%",
+              "level": 8,
+              "scalings": 0.811146
+            },
+            {
+              "value": "87.1844%",
+              "level": 9,
+              "scalings": 0.871844
+            },
+            {
+              "value": "93.806%",
+              "level": 10,
+              "scalings": 0.93806
+            },
+            {
+              "value": "101.3932%",
+              "level": 11,
+              "scalings": 1.013932
+            },
+            {
+              "value": "110.3159%",
+              "level": 12,
+              "scalings": 1.103159
+            },
+            {
+              "value": "119.2385%",
+              "level": 13,
+              "scalings": 1.192385
+            },
+            {
+              "value": "128.1611%",
+              "level": 14,
+              "scalings": 1.281611
+            },
+            {
+              "value": "137.8948%",
+              "level": 15,
+              "scalings": 1.378948
+            }
           ]
         },
         {
           "name": "Dano do 4° Golpe",
+          "type": "atk_percent",
+          "damageType": "PHYSICAL",
+          "target": "normal_attack",
           "power": [
-            { "value": "49.8%", "level": 1 },
-            { "value": "53.8%", "level": 2 },
-            { "value": "57.9%", "level": 3 },
-            { "value": "63.6%", "level": 4 },
-            { "value": "67.7%", "level": 5 },
-            { "value": "72.3%", "level": 6 },
-            { "value": "78.7%", "level": 7 },
-            { "value": "85%", "level": 8 },
-            { "value": "91.4%", "level": 9 },
-            { "value": "98.4%", "level": 10 },
-            { "value": "106.3%", "level": 11 }
+            {
+              "value": "49.751%",
+              "level": 1,
+              "scalings": 0.49751
+            },
+            {
+              "value": "53.8005%",
+              "level": 2,
+              "scalings": 0.538005
+            },
+            {
+              "value": "57.85%",
+              "level": 3,
+              "scalings": 0.5785
+            },
+            {
+              "value": "63.635%",
+              "level": 4,
+              "scalings": 0.63635
+            },
+            {
+              "value": "67.6845%",
+              "level": 5,
+              "scalings": 0.676845
+            },
+            {
+              "value": "72.3125%",
+              "level": 6,
+              "scalings": 0.723125
+            },
+            {
+              "value": "78.676%",
+              "level": 7,
+              "scalings": 0.78676
+            },
+            {
+              "value": "85.0395%",
+              "level": 8,
+              "scalings": 0.850395
+            },
+            {
+              "value": "91.403%",
+              "level": 9,
+              "scalings": 0.91403
+            },
+            {
+              "value": "98.345%",
+              "level": 10,
+              "scalings": 0.98345
+            },
+            {
+              "value": "106.2994%",
+              "level": 11,
+              "scalings": 1.062994
+            },
+            {
+              "value": "115.6537%",
+              "level": 12,
+              "scalings": 1.156537
+            },
+            {
+              "value": "125.0081%",
+              "level": 13,
+              "scalings": 1.250081
+            },
+            {
+              "value": "134.3624%",
+              "level": 14,
+              "scalings": 1.343624
+            },
+            {
+              "value": "144.5671%",
+              "level": 15,
+              "scalings": 1.445671
+            }
           ]
         },
         {
           "name": "Dano do 5° Golpe",
+          "type": "atk_percent",
+          "damageType": "PHYSICAL",
+          "target": "normal_attack",
           "power": [
-            { "value": "62.1%", "level": 1 },
-            { "value": "67.1%", "level": 2 },
-            { "value": "72.2%", "level": 3 },
-            { "value": "79.4%", "level": 4 },
-            { "value": "84.5%", "level": 5 },
-            { "value": "90.2%", "level": 6 },
-            { "value": "98.1%", "level": 7 },
-            { "value": "106.1%", "level": 8 },
-            { "value": "114%", "level": 9 },
-            { "value": "122.7%", "level": 10 },
-            { "value": "132.6%", "level": 11 }
+            {
+              "value": "62.0739%",
+              "level": 1,
+              "scalings": 0.620739
+            },
+            {
+              "value": "67.1265%",
+              "level": 2,
+              "scalings": 0.671265
+            },
+            {
+              "value": "72.179%",
+              "level": 3,
+              "scalings": 0.72179
+            },
+            {
+              "value": "79.3969%",
+              "level": 4,
+              "scalings": 0.793969
+            },
+            {
+              "value": "84.4494%",
+              "level": 5,
+              "scalings": 0.844494
+            },
+            {
+              "value": "90.2238%",
+              "level": 6,
+              "scalings": 0.902238
+            },
+            {
+              "value": "98.1634%",
+              "level": 7,
+              "scalings": 0.981634
+            },
+            {
+              "value": "106.1031%",
+              "level": 8,
+              "scalings": 1.061031
+            },
+            {
+              "value": "114.0428%",
+              "level": 9,
+              "scalings": 1.140428
+            },
+            {
+              "value": "122.7043%",
+              "level": 10,
+              "scalings": 1.227043
+            },
+            {
+              "value": "132.6289%",
+              "level": 11,
+              "scalings": 1.326289
+            },
+            {
+              "value": "144.3003%",
+              "level": 12,
+              "scalings": 1.443003
+            },
+            {
+              "value": "155.9716%",
+              "level": 13,
+              "scalings": 1.559716
+            },
+            {
+              "value": "167.6429%",
+              "level": 14,
+              "scalings": 1.676429
+            },
+            {
+              "value": "180.3753%",
+              "level": 15,
+              "scalings": 1.803753
+            }
           ]
         },
         {
-          "name": "Dano de Ataque Carregado",
+          "name": "Dano de Ataque Carregado — 1º Golpe",
+          "type": "atk_percent",
+          "damageType": "PHYSICAL",
+          "target": "charged_attack",
           "power": [
-            { "value": "47.3%+60.2%", "level": 1 },
-            { "value": "51.1%+65.1%", "level": 2 },
-            { "value": "55.0%+70.0%", "level": 3 },
-            { "value": "60.5%+77.0%", "level": 4 },
-            { "value": "64.4%+81.9%", "level": 5 },
-            { "value": "68.8%+87.5%", "level": 6 },
-            { "value": "74.8%+95.2%", "level": 7 },
-            { "value": "80.9%+102.9%", "level": 8 },
-            { "value": "86.9%+110.6%", "level": 9 },
-            { "value": "93.5%+119%", "level": 10 },
-            { "value": "101.1%+128.6%", "level": 11 }
+            {
+              "value": "47.3%",
+              "level": 1,
+              "scalings": 0.473
+            },
+            {
+              "value": "51.15%",
+              "level": 2,
+              "scalings": 0.5115
+            },
+            {
+              "value": "55%",
+              "level": 3,
+              "scalings": 0.55
+            },
+            {
+              "value": "60.5%",
+              "level": 4,
+              "scalings": 0.605
+            },
+            {
+              "value": "64.35%",
+              "level": 5,
+              "scalings": 0.6435
+            },
+            {
+              "value": "68.75%",
+              "level": 6,
+              "scalings": 0.6875
+            },
+            {
+              "value": "74.8%",
+              "level": 7,
+              "scalings": 0.748
+            },
+            {
+              "value": "80.85%",
+              "level": 8,
+              "scalings": 0.8085
+            },
+            {
+              "value": "86.9%",
+              "level": 9,
+              "scalings": 0.869
+            },
+            {
+              "value": "93.5%",
+              "level": 10,
+              "scalings": 0.935
+            },
+            {
+              "value": "101.0625%",
+              "level": 11,
+              "scalings": 1.010625
+            },
+            {
+              "value": "109.956%",
+              "level": 12,
+              "scalings": 1.09956
+            },
+            {
+              "value": "118.8495%",
+              "level": 13,
+              "scalings": 1.188495
+            },
+            {
+              "value": "127.743%",
+              "level": 14,
+              "scalings": 1.27743
+            },
+            {
+              "value": "137.445%",
+              "level": 15,
+              "scalings": 1.37445
+            }
+          ]
+        },
+        {
+          "name": "Dano de Ataque Carregado — 2º Golpe",
+          "type": "atk_percent",
+          "damageType": "PHYSICAL",
+          "target": "charged_attack",
+          "power": [
+            {
+              "value": "60.2%",
+              "level": 1,
+              "scalings": 0.602
+            },
+            {
+              "value": "65.1%",
+              "level": 2,
+              "scalings": 0.651
+            },
+            {
+              "value": "70%",
+              "level": 3,
+              "scalings": 0.7
+            },
+            {
+              "value": "77%",
+              "level": 4,
+              "scalings": 0.77
+            },
+            {
+              "value": "81.9%",
+              "level": 5,
+              "scalings": 0.819
+            },
+            {
+              "value": "87.5%",
+              "level": 6,
+              "scalings": 0.875
+            },
+            {
+              "value": "95.2%",
+              "level": 7,
+              "scalings": 0.952
+            },
+            {
+              "value": "102.9%",
+              "level": 8,
+              "scalings": 1.029
+            },
+            {
+              "value": "110.6%",
+              "level": 9,
+              "scalings": 1.106
+            },
+            {
+              "value": "119%",
+              "level": 10,
+              "scalings": 1.19
+            },
+            {
+              "value": "128.625%",
+              "level": 11,
+              "scalings": 1.28625
+            },
+            {
+              "value": "139.944%",
+              "level": 12,
+              "scalings": 1.39944
+            },
+            {
+              "value": "151.263%",
+              "level": 13,
+              "scalings": 1.51263
+            },
+            {
+              "value": "162.582%",
+              "level": 14,
+              "scalings": 1.62582
+            },
+            {
+              "value": "174.93%",
+              "level": 15,
+              "scalings": 1.7493
+            }
           ]
         },
         {
           "name": "Consumo de Stamina de Ataque Carregado",
           "power": [
-            { "value": "20", "level": 1 },
-            { "value": "20", "level": 2 },
-            { "value": "20", "level": 3 },
-            { "value": "20", "level": 4 },
-            { "value": "20", "level": 5 },
-            { "value": "20", "level": 6 },
-            { "value": "20", "level": 7 },
-            { "value": "20", "level": 8 },
-            { "value": "20", "level": 9 },
-            { "value": "20", "level": 10 },
-            { "value": "20", "level": 11 }
+            {
+              "value": "20",
+              "level": 1
+            },
+            {
+              "value": "20",
+              "level": 2
+            },
+            {
+              "value": "20",
+              "level": 3
+            },
+            {
+              "value": "20",
+              "level": 4
+            },
+            {
+              "value": "20",
+              "level": 5
+            },
+            {
+              "value": "20",
+              "level": 6
+            },
+            {
+              "value": "20",
+              "level": 7
+            },
+            {
+              "value": "20",
+              "level": 8
+            },
+            {
+              "value": "20",
+              "level": 9
+            },
+            {
+              "value": "20",
+              "level": 10
+            },
+            {
+              "value": "20",
+              "level": 11
+            },
+            {
+              "value": "20",
+              "level": 12
+            },
+            {
+              "value": "20",
+              "level": 13
+            },
+            {
+              "value": "20",
+              "level": 14
+            },
+            {
+              "value": "20",
+              "level": 15
+            }
           ]
         },
         {
           "name": "Dano Durante a Queda",
+          "type": "atk_percent",
+          "damageType": "PHYSICAL",
+          "target": "plunging_attack",
           "power": [
-            { "value": "63.9%", "level": 1 },
-            { "value": "69.1%", "level": 2 },
-            { "value": "74.4%", "level": 3 },
-            { "value": "81.8%", "level": 4 },
-            { "value": "87%", "level": 5 },
-            { "value": "92.9%", "level": 6 },
-            { "value": "101.1%", "level": 7 },
-            { "value": "109.3%", "level": 8 },
-            { "value": "117.5%", "level": 9 },
-            { "value": "126.4%", "level": 10 },
-            { "value": "135.3%", "level": 11 }
+            {
+              "value": "63.9324%",
+              "level": 1,
+              "scalings": 0.639324
+            },
+            {
+              "value": "69.1362%",
+              "level": 2,
+              "scalings": 0.691362
+            },
+            {
+              "value": "74.34%",
+              "level": 3,
+              "scalings": 0.7434
+            },
+            {
+              "value": "81.774%",
+              "level": 4,
+              "scalings": 0.81774
+            },
+            {
+              "value": "86.9778%",
+              "level": 5,
+              "scalings": 0.869778
+            },
+            {
+              "value": "92.925%",
+              "level": 6,
+              "scalings": 0.92925
+            },
+            {
+              "value": "101.1024%",
+              "level": 7,
+              "scalings": 1.011024
+            },
+            {
+              "value": "109.2798%",
+              "level": 8,
+              "scalings": 1.092798
+            },
+            {
+              "value": "117.4572%",
+              "level": 9,
+              "scalings": 1.174572
+            },
+            {
+              "value": "126.378%",
+              "level": 10,
+              "scalings": 1.26378
+            },
+            {
+              "value": "135.2988%",
+              "level": 11,
+              "scalings": 1.352988
+            },
+            {
+              "value": "144.2196%",
+              "level": 12,
+              "scalings": 1.442196
+            },
+            {
+              "value": "153.1404%",
+              "level": 13,
+              "scalings": 1.531404
+            },
+            {
+              "value": "162.0612%",
+              "level": 14,
+              "scalings": 1.620612
+            },
+            {
+              "value": "170.982%",
+              "level": 15,
+              "scalings": 1.70982
+            }
           ]
         },
         {
-          "name": "Dano de Queda de Baixa/Alta Altitude",
+          "name": "Dano de Queda de Baixa Altitude",
+          "type": "atk_percent",
+          "damageType": "PHYSICAL",
+          "target": "plunging_attack",
           "power": [
-            { "value": "128%/160%", "level": 1 },
-            { "value": "138%/183%", "level": 2 },
-            { "value": "149%/186%", "level": 3 },
-            { "value": "164%/204%", "level": 4 },
-            { "value": "174%/217%", "level": 5 },
-            { "value": "174%/217%", "level": 6 },
-            { "value": "186%/232%", "level": 7 },
-            { "value": "219%/273%", "level": 8 },
-            { "value": "235%/293%", "level": 9 },
-            { "value": "253%/316%", "level": 10 },
-            { "value": "271%/338%", "level": 11 }
+            {
+              "value": "127.8377%",
+              "level": 1,
+              "scalings": 1.278377
+            },
+            {
+              "value": "138.2431%",
+              "level": 2,
+              "scalings": 1.382431
+            },
+            {
+              "value": "148.6485%",
+              "level": 3,
+              "scalings": 1.486485
+            },
+            {
+              "value": "163.5134%",
+              "level": 4,
+              "scalings": 1.635134
+            },
+            {
+              "value": "173.9187%",
+              "level": 5,
+              "scalings": 1.739187
+            },
+            {
+              "value": "185.8106%",
+              "level": 6,
+              "scalings": 1.858106
+            },
+            {
+              "value": "202.162%",
+              "level": 7,
+              "scalings": 2.02162
+            },
+            {
+              "value": "218.5133%",
+              "level": 8,
+              "scalings": 2.185133
+            },
+            {
+              "value": "234.8646%",
+              "level": 9,
+              "scalings": 2.348646
+            },
+            {
+              "value": "252.7025%",
+              "level": 10,
+              "scalings": 2.527025
+            },
+            {
+              "value": "270.5403%",
+              "level": 11,
+              "scalings": 2.705403
+            },
+            {
+              "value": "288.3781%",
+              "level": 12,
+              "scalings": 2.883781
+            },
+            {
+              "value": "306.2159%",
+              "level": 13,
+              "scalings": 3.062159
+            },
+            {
+              "value": "324.0537%",
+              "level": 14,
+              "scalings": 3.240537
+            },
+            {
+              "value": "341.8915%",
+              "level": 15,
+              "scalings": 3.418915
+            }
+          ]
+        },
+        {
+          "name": "Dano de Queda de Alta Altitude",
+          "type": "atk_percent",
+          "damageType": "PHYSICAL",
+          "target": "plunging_attack",
+          "power": [
+            {
+              "value": "159.6762%",
+              "level": 1,
+              "scalings": 1.596762
+            },
+            {
+              "value": "172.6731%",
+              "level": 2,
+              "scalings": 1.726731
+            },
+            {
+              "value": "185.67%",
+              "level": 3,
+              "scalings": 1.8567
+            },
+            {
+              "value": "204.237%",
+              "level": 4,
+              "scalings": 2.04237
+            },
+            {
+              "value": "217.2339%",
+              "level": 5,
+              "scalings": 2.172339
+            },
+            {
+              "value": "232.0875%",
+              "level": 6,
+              "scalings": 2.320875
+            },
+            {
+              "value": "252.5112%",
+              "level": 7,
+              "scalings": 2.525112
+            },
+            {
+              "value": "272.9349%",
+              "level": 8,
+              "scalings": 2.729349
+            },
+            {
+              "value": "293.3586%",
+              "level": 9,
+              "scalings": 2.933586
+            },
+            {
+              "value": "315.639%",
+              "level": 10,
+              "scalings": 3.15639
+            },
+            {
+              "value": "337.9194%",
+              "level": 11,
+              "scalings": 3.379194
+            },
+            {
+              "value": "360.1998%",
+              "level": 12,
+              "scalings": 3.601998
+            },
+            {
+              "value": "382.4802%",
+              "level": 13,
+              "scalings": 3.824802
+            },
+            {
+              "value": "404.7606%",
+              "level": 14,
+              "scalings": 4.047606
+            },
+            {
+              "value": "427.041%",
+              "level": 15,
+              "scalings": 4.27041
+            }
           ]
         }
       ],
@@ -172,74 +923,298 @@
       "upgrades": [
         {
           "name": "Dano de Habilidade",
+          "type": "atk_percent",
+          "damageType": "GEO",
+          "target": "elemental_skill",
           "power": [
-            { "value": "130.4%", "level": 1 },
-            { "value": "140.18%", "level": 2 },
-            { "value": "149.96%", "level": 3 },
-            { "value": "163%", "level": 4 },
-            { "value": "172.78%", "level": 5 },
-            { "value": "182.56%", "level": 6 },
-            { "value": "195.6%", "level": 7 },
-            { "value": "208.64%", "level": 8 },
-            { "value": "221.68%", "level": 9 },
-            { "value": "234.72%", "level": 10 },
-            { "value": "247.76%", "level": 11 },
-            { "value": "260.8%", "level": 12 },
-            { "value": "277.1%", "level": 13 }
+            {
+              "value": "130.4%",
+              "level": 1,
+              "scalings": 1.304
+            },
+            {
+              "value": "140.18%",
+              "level": 2,
+              "scalings": 1.4018
+            },
+            {
+              "value": "149.96%",
+              "level": 3,
+              "scalings": 1.4996
+            },
+            {
+              "value": "163%",
+              "level": 4,
+              "scalings": 1.63
+            },
+            {
+              "value": "172.78%",
+              "level": 5,
+              "scalings": 1.7278
+            },
+            {
+              "value": "182.56%",
+              "level": 6,
+              "scalings": 1.8256
+            },
+            {
+              "value": "195.6%",
+              "level": 7,
+              "scalings": 1.956
+            },
+            {
+              "value": "208.64%",
+              "level": 8,
+              "scalings": 2.0864
+            },
+            {
+              "value": "221.68%",
+              "level": 9,
+              "scalings": 2.2168
+            },
+            {
+              "value": "234.72%",
+              "level": 10,
+              "scalings": 2.3472
+            },
+            {
+              "value": "247.76%",
+              "level": 11,
+              "scalings": 2.4776
+            },
+            {
+              "value": "260.8%",
+              "level": 12,
+              "scalings": 2.608
+            },
+            {
+              "value": "277.1%",
+              "level": 13,
+              "scalings": 2.771
+            },
+            {
+              "value": "293.4%",
+              "level": 14,
+              "scalings": 2.934
+            },
+            {
+              "value": "309.7%",
+              "level": 15,
+              "scalings": 3.097
+            }
           ]
         },
         {
           "name": "Dano das Flores Transitórias",
+          "type": "def_percent",
+          "damageType": "GEO",
+          "target": "elemental_skill",
           "power": [
-            { "value": "134% da DEF", "level": 1 },
-            { "value": "143.62% da DEF", "level": 2 },
-            { "value": "153.64% da DEF", "level": 3 },
-            { "value": "167% da DEF", "level": 4 },
-            { "value": "177.02% da DEF", "level": 5 },
-            { "value": "187.04% da DEF", "level": 6 },
-            { "value": "200.4% da DEF", "level": 7 },
-            { "value": "213.76% da DEF", "level": 8 },
-            { "value": "227.12% da DEF", "level": 9 },
-            { "value": "240.48% da DEF", "level": 10 },
-            { "value": "253.84% da DEF", "level": 11 },
-            { "value": "267.2% da DEF", "level": 12 },
-            { "value": "283.9% da DEF", "level": 13 }
+            {
+              "value": "133.6% da DEF",
+              "level": 1,
+              "scalings": 1.336
+            },
+            {
+              "value": "143.62% da DEF",
+              "level": 2,
+              "scalings": 1.4362
+            },
+            {
+              "value": "153.64% da DEF",
+              "level": 3,
+              "scalings": 1.5364
+            },
+            {
+              "value": "167% da DEF",
+              "level": 4,
+              "scalings": 1.67
+            },
+            {
+              "value": "177.02% da DEF",
+              "level": 5,
+              "scalings": 1.7702
+            },
+            {
+              "value": "187.04% da DEF",
+              "level": 6,
+              "scalings": 1.8704
+            },
+            {
+              "value": "200.4% da DEF",
+              "level": 7,
+              "scalings": 2.004
+            },
+            {
+              "value": "213.76% da DEF",
+              "level": 8,
+              "scalings": 2.1376
+            },
+            {
+              "value": "227.12% da DEF",
+              "level": 9,
+              "scalings": 2.2712
+            },
+            {
+              "value": "240.48% da DEF",
+              "level": 10,
+              "scalings": 2.4048
+            },
+            {
+              "value": "253.84% da DEF",
+              "level": 11,
+              "scalings": 2.5384
+            },
+            {
+              "value": "267.2% da DEF",
+              "level": 12,
+              "scalings": 2.672
+            },
+            {
+              "value": "283.9% da DEF",
+              "level": 13,
+              "scalings": 2.839
+            },
+            {
+              "value": "300.6% da DEF",
+              "level": 14,
+              "scalings": 3.006
+            },
+            {
+              "value": "317.3% da DEF",
+              "level": 15,
+              "scalings": 3.173
+            }
           ]
         },
         {
           "name": "Duração",
           "power": [
-            { "value": "30", "level": 1 },
-            { "value": "30", "level": 2 },
-            { "value": "30", "level": 3 },
-            { "value": "30", "level": 4 },
-            { "value": "30", "level": 5 },
-            { "value": "30", "level": 6 },
-            { "value": "30", "level": 7 },
-            { "value": "30", "level": 8 },
-            { "value": "30", "level": 9 },
-            { "value": "30", "level": 10 },
-            { "value": "30", "level": 11 },
-            { "value": "30", "level": 12 },
-            { "value": "30", "level": 13 }
+            {
+              "value": "30s",
+              "level": 1
+            },
+            {
+              "value": "30s",
+              "level": 2
+            },
+            {
+              "value": "30s",
+              "level": 3
+            },
+            {
+              "value": "30s",
+              "level": 4
+            },
+            {
+              "value": "30s",
+              "level": 5
+            },
+            {
+              "value": "30s",
+              "level": 6
+            },
+            {
+              "value": "30s",
+              "level": 7
+            },
+            {
+              "value": "30s",
+              "level": 8
+            },
+            {
+              "value": "30s",
+              "level": 9
+            },
+            {
+              "value": "30s",
+              "level": 10
+            },
+            {
+              "value": "30s",
+              "level": 11
+            },
+            {
+              "value": "30s",
+              "level": 12
+            },
+            {
+              "value": "30s",
+              "level": 13
+            },
+            {
+              "value": "30s",
+              "level": 14
+            },
+            {
+              "value": "30s",
+              "level": 15
+            }
           ]
         },
         {
           "name": "Recarga da Habilidade",
           "power": [
-            { "value": "4s", "level": 1 },
-            { "value": "4s", "level": 2 },
-            { "value": "4s", "level": 3 },
-            { "value": "4s", "level": 4 },
-            { "value": "4s", "level": 5 },
-            { "value": "4s", "level": 6 },
-            { "value": "4s", "level": 7 },
-            { "value": "4s", "level": 8 },
-            { "value": "4s", "level": 9 },
-            { "value": "4s", "level": 10 },
-            { "value": "4s", "level": 11 },
-            { "value": "4s", "level": 12 },
-            { "value": "4s", "level": 13 }
+            {
+              "value": "4s",
+              "level": 1
+            },
+            {
+              "value": "4s",
+              "level": 2
+            },
+            {
+              "value": "4s",
+              "level": 3
+            },
+            {
+              "value": "4s",
+              "level": 4
+            },
+            {
+              "value": "4s",
+              "level": 5
+            },
+            {
+              "value": "4s",
+              "level": 6
+            },
+            {
+              "value": "4s",
+              "level": 7
+            },
+            {
+              "value": "4s",
+              "level": 8
+            },
+            {
+              "value": "4s",
+              "level": 9
+            },
+            {
+              "value": "4s",
+              "level": 10
+            },
+            {
+              "value": "4s",
+              "level": 11
+            },
+            {
+              "value": "4s",
+              "level": 12
+            },
+            {
+              "value": "4s",
+              "level": 13
+            },
+            {
+              "value": "4s",
+              "level": 14
+            },
+            {
+              "value": "4s",
+              "level": 15
+            }
           ]
         }
       ],
@@ -252,78 +1227,298 @@
       "upgrades": [
         {
           "name": "Dano do Supremo",
+          "type": "atk_percent",
+          "damageType": "GEO",
+          "target": "elemental_burst",
           "power": [
-            { "value": "367.2%", "level": 1 },
-            { "value": "394.74%", "level": 2 },
-            { "value": "422.28%", "level": 3 },
-            { "value": "459%", "level": 4 },
-            { "value": "486.54%", "level": 5 },
-            { "value": "514.08%", "level": 6 },
-            { "value": "550.8%", "level": 7 },
-            { "value": "587.52%", "level": 8 },
-            { "value": "624.24%", "level": 9 },
-            { "value": "660.96%", "level": 10 },
-            { "value": "697.68%", "level": 11 },
-            { "value": "734.4%", "level": 12 },
-            { "value": "780.3%", "level": 13 },
-            { "value": "826.2%", "level": 14 }
+            {
+              "value": "367.2%",
+              "level": 1,
+              "scalings": 3.672
+            },
+            {
+              "value": "394.74%",
+              "level": 2,
+              "scalings": 3.9474
+            },
+            {
+              "value": "422.28%",
+              "level": 3,
+              "scalings": 4.2228
+            },
+            {
+              "value": "459%",
+              "level": 4,
+              "scalings": 4.59
+            },
+            {
+              "value": "486.54%",
+              "level": 5,
+              "scalings": 4.8654
+            },
+            {
+              "value": "514.08%",
+              "level": 6,
+              "scalings": 5.1408
+            },
+            {
+              "value": "550.8%",
+              "level": 7,
+              "scalings": 5.508
+            },
+            {
+              "value": "587.52%",
+              "level": 8,
+              "scalings": 5.8752
+            },
+            {
+              "value": "624.24%",
+              "level": 9,
+              "scalings": 6.2424
+            },
+            {
+              "value": "660.96%",
+              "level": 10,
+              "scalings": 6.6096
+            },
+            {
+              "value": "697.68%",
+              "level": 11,
+              "scalings": 6.9768
+            },
+            {
+              "value": "734.4%",
+              "level": 12,
+              "scalings": 7.344
+            },
+            {
+              "value": "780.3%",
+              "level": 13,
+              "scalings": 7.803
+            },
+            {
+              "value": "826.2%",
+              "level": 14,
+              "scalings": 8.262
+            },
+            {
+              "value": "872.1%",
+              "level": 15,
+              "scalings": 8.721
+            }
           ]
         },
         {
           "name": "Dano do Florescer Fatal",
+          "type": "atk_percent",
+          "damageType": "GEO",
+          "target": "elemental_burst",
           "power": [
-            { "value": "72% por flor", "level": 1 },
-            { "value": "77.4% por flor", "level": 2 },
-            { "value": "82.8% por flor", "level": 3 },
-            { "value": "90% por flor", "level": 4 },
-            { "value": "95.4% por flor", "level": 5 },
-            { "value": "100.8% por flor", "level": 6 },
-            { "value": "108% por flor", "level": 7 },
-            { "value": "115.2% por flor", "level": 8 },
-            { "value": "122.4% por flor", "level": 9 },
-            { "value": "129.6% por flor", "level": 10 },
-            { "value": "136.8% por flor", "level": 11 },
-            { "value": "144% por flor", "level": 12 },
-            { "value": "153% por flor", "level": 13 },
-            { "value": "162% por flor", "level": 14 }
+            {
+              "value": "72% por flor",
+              "level": 1,
+              "scalings": 0.72
+            },
+            {
+              "value": "77.4% por flor",
+              "level": 2,
+              "scalings": 0.774
+            },
+            {
+              "value": "82.8% por flor",
+              "level": 3,
+              "scalings": 0.828
+            },
+            {
+              "value": "90% por flor",
+              "level": 4,
+              "scalings": 0.9
+            },
+            {
+              "value": "95.4% por flor",
+              "level": 5,
+              "scalings": 0.954
+            },
+            {
+              "value": "100.8% por flor",
+              "level": 6,
+              "scalings": 1.008
+            },
+            {
+              "value": "108% por flor",
+              "level": 7,
+              "scalings": 1.08
+            },
+            {
+              "value": "115.2% por flor",
+              "level": 8,
+              "scalings": 1.152
+            },
+            {
+              "value": "122.4% por flor",
+              "level": 9,
+              "scalings": 1.224
+            },
+            {
+              "value": "129.6% por flor",
+              "level": 10,
+              "scalings": 1.296
+            },
+            {
+              "value": "136.8% por flor",
+              "level": 11,
+              "scalings": 1.368
+            },
+            {
+              "value": "144% por flor",
+              "level": 12,
+              "scalings": 1.44
+            },
+            {
+              "value": "153% por flor",
+              "level": 13,
+              "scalings": 1.53
+            },
+            {
+              "value": "162% por flor",
+              "level": 14,
+              "scalings": 1.62
+            },
+            {
+              "value": "171% por flor",
+              "level": 15,
+              "scalings": 1.71
+            }
           ]
         },
         {
           "name": "Tempo de Recarga",
           "power": [
-            { "value": "12s", "level": 1 },
-            { "value": "12s", "level": 2 },
-            { "value": "12s", "level": 3 },
-            { "value": "12s", "level": 4 },
-            { "value": "12s", "level": 5 },
-            { "value": "12s", "level": 6 },
-            { "value": "12s", "level": 7 },
-            { "value": "12s", "level": 8 },
-            { "value": "12s", "level": 9 },
-            { "value": "12s", "level": 10 },
-            { "value": "12s", "level": 11 },
-            { "value": "12s", "level": 12 },
-            { "value": "12s", "level": 13 },
-            { "value": "12s", "level": 14 }
+            {
+              "value": "12s",
+              "level": 1
+            },
+            {
+              "value": "12s",
+              "level": 2
+            },
+            {
+              "value": "12s",
+              "level": 3
+            },
+            {
+              "value": "12s",
+              "level": 4
+            },
+            {
+              "value": "12s",
+              "level": 5
+            },
+            {
+              "value": "12s",
+              "level": 6
+            },
+            {
+              "value": "12s",
+              "level": 7
+            },
+            {
+              "value": "12s",
+              "level": 8
+            },
+            {
+              "value": "12s",
+              "level": 9
+            },
+            {
+              "value": "12s",
+              "level": 10
+            },
+            {
+              "value": "12s",
+              "level": 11
+            },
+            {
+              "value": "12s",
+              "level": 12
+            },
+            {
+              "value": "12s",
+              "level": 13
+            },
+            {
+              "value": "12s",
+              "level": 14
+            },
+            {
+              "value": "12s",
+              "level": 15
+            }
           ]
         },
         {
           "name": "Energia Elemental",
           "power": [
-            { "value": "40", "level": 1 },
-            { "value": "40", "level": 2 },
-            { "value": "40", "level": 3 },
-            { "value": "40", "level": 4 },
-            { "value": "40", "level": 5 },
-            { "value": "40", "level": 6 },
-            { "value": "40", "level": 7 },
-            { "value": "40", "level": 8 },
-            { "value": "40", "level": 9 },
-            { "value": "40", "level": 10 },
-            { "value": "40", "level": 11 },
-            { "value": "40", "level": 12 },
-            { "value": "40", "level": 13 },
-            { "value": "40", "level": 14 }
+            {
+              "value": "40",
+              "level": 1
+            },
+            {
+              "value": "40",
+              "level": 2
+            },
+            {
+              "value": "40",
+              "level": 3
+            },
+            {
+              "value": "40",
+              "level": 4
+            },
+            {
+              "value": "40",
+              "level": 5
+            },
+            {
+              "value": "40",
+              "level": 6
+            },
+            {
+              "value": "40",
+              "level": 7
+            },
+            {
+              "value": "40",
+              "level": 8
+            },
+            {
+              "value": "40",
+              "level": 9
+            },
+            {
+              "value": "40",
+              "level": 10
+            },
+            {
+              "value": "40",
+              "level": 11
+            },
+            {
+              "value": "40",
+              "level": 12
+            },
+            {
+              "value": "40",
+              "level": 13
+            },
+            {
+              "value": "40",
+              "level": 14
+            },
+            {
+              "value": "40",
+              "level": 15
+            }
           ]
         }
       ],
@@ -334,102 +1529,421 @@
     {
       "name": "Pressão Calcária",
       "unlock": "Desbloqueado na Ascenção 1",
-      "description": "Flores transitórias geradas por Abiogênese - Radiação Solar causam mais 25% de Dano aos inimigos cuja Vida esteja abaixo de 50%.",
-      "level": 1
+      "description": "Flores transitórias geradas por Abiogênese - Radiação Solar causam mais 25% de Dano aos inimigos cuja Vida esteja abaixo de 50%.\n\nAprimoramento Mágico\nA Habilidade Elemental Abiogênese - Radiação Solar aumenta o Dano causado pelas Flores Transitórias geradas pela Radiação Solar em 25% contra inimigos com Vida abaixo de 50%.\nAlém disso, se houverem Aurelitas criadas por Albedo ativas, aumentará essa instância de Dano em 240% da DEF de Albedo.",
+      "level": 1,
+      "modifiers": [
+        {
+          "label": "Dano das Flores Transitórias contra inimigos com Vida abaixo de 50%",
+          "type": "dmg_percent",
+          "values": [0.25],
+          "bonus": true,
+          "target": "elemental_skill"
+        },
+        {
+          "label": "Aprimoramento Mágico — Dano adicional das Flores Transitórias com uma Aurelita em campo, baseado na DEF de Albedo",
+          "type": "dmg_percent",
+          "values": [2.4],
+          "bonus": true,
+          "target": "elemental_skill",
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          }
+        }
+      ]
     },
     {
       "name": "Sabedoria em Uma Garrafa",
       "unlock": "Desbloqueado na Ascenção 4",
       "description": "Ritual da Progenitura - Maré Tectônica aumenta a Proficiência Elemental dos membros próximos do grupo em 125 por 10s.",
-      "level": 4
+      "level": 4,
+      "modifiers": [
+        {
+          "label": "Proficiência Elemental dos membros próximos do grupo",
+          "type": "elemental_mastery",
+          "values": [125],
+          "bonus": true
+        }
+      ]
     },
     {
       "name": "Gênio Despertado",
       "unlock": "Desbloqueado automaticamente",
-      "description": "Quando Albedo fabrica Materiais de Ascensão de Armas, ele tem 10% de chance de receber o dobro do produto."
+      "description": "Quando Albedo fabrica Materiais de Ascensão de Armas, ele tem 10% de chance de receber o dobro do produto.",
+      "modifiers": []
+    },
+    {
+      "name": "Presente da Noite da Bruxa: Livro da Ponta Branca",
+      "unlock": "Concluir Tarefa da Bruxa: Além da Lição",
+      "description": "Ao concluir Tarefa da Bruxa: Além da Lição, Albedo se tornará um Personagem do tipo Mágico. Quando houver pelo menos 2 Personagens Mágicos na equipe, será ativado o efeito Mágico: Ritual Secreto, fortalecendo os Personagens Mágicos.\n\nMágico: Ritual Secreto\n· Nos 20 segundos após usar a Habilidade Elemental, quando Albedo, ao causar Dano de Habilidade Elemental nos inimigos, será refinada uma Aurelita próxima ao inimigo, com duração de 10 segundos. Caso não exista uma Radiação Solar criada por Albedo em campo e ele não esteja derrotado, a Aurelita receberá o mesmo efeito de geração de Flores Transitórias da Radiação Solar. Somente duas Aurelitas criadas por Albedo podem existir simultaneamente.\n· Nos 20 segundos após refinar uma Radiação Solar, com base na DEF de Albedo, o Dano causado por Ataques Normais, Ataques Carregados, Ataques Imersivos, Habilidade Elemental e Supremo dos Personagens próximos da equipe será aumentado: para cada 1.000 pontos de DEF, o Dano é aumentado em 4%, até um máximo de 12%.\n· Nos 20 segundos após refinar uma Aurelita, com base na DEF de Albedo, o Dano causado por Ataques Normais, Ataques Carregados, Ataques Imersivos, Habilidade Elemental e Supremo dos Personagens Mágicos próximos da equipe será aumentado: para cada 1.000 pontos de DEF, o Dano é aumentado em 10%, até um máximo de 30%.",
+      "modifiers": [
+        {
+          "label": "Mágico: Ritual Secreto — Dano de Ataque Normal dos membros próximos do grupo após criar Radiação Solar, por ponto da DEF de Albedo",
+          "type": "dmg_percent",
+          "values": [0.00004],
+          "bonus": true,
+          "target": "normal_attack",
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          },
+          "maxValues": [0.12]
+        },
+        {
+          "label": "Mágico: Ritual Secreto — Dano de Ataque Carregado dos membros próximos do grupo após criar Radiação Solar, por ponto da DEF de Albedo",
+          "type": "dmg_percent",
+          "values": [0.00004],
+          "bonus": true,
+          "target": "charged_attack",
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          },
+          "maxValues": [0.12]
+        },
+        {
+          "label": "Mágico: Ritual Secreto — Dano de Ataque Imersivo dos membros próximos do grupo após criar Radiação Solar, por ponto da DEF de Albedo",
+          "type": "dmg_percent",
+          "values": [0.00004],
+          "bonus": true,
+          "target": "plunging_attack",
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          },
+          "maxValues": [0.12]
+        },
+        {
+          "label": "Mágico: Ritual Secreto — Dano de Habilidade Elemental dos membros próximos do grupo após criar Radiação Solar, por ponto da DEF de Albedo",
+          "type": "dmg_percent",
+          "values": [0.00004],
+          "bonus": true,
+          "target": "elemental_skill",
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          },
+          "maxValues": [0.12]
+        },
+        {
+          "label": "Mágico: Ritual Secreto — Dano de Supremo dos membros próximos do grupo após criar Radiação Solar, por ponto da DEF de Albedo",
+          "type": "dmg_percent",
+          "values": [0.00004],
+          "bonus": true,
+          "target": "elemental_burst",
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          },
+          "maxValues": [0.12]
+        },
+        {
+          "label": "Mágico: Ritual Secreto — Dano de Ataque Normal dos Personagens Mágicos próximos após criar uma Aurelita, por ponto da DEF de Albedo",
+          "type": "dmg_percent",
+          "values": [0.0001],
+          "bonus": true,
+          "target": "normal_attack",
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          },
+          "maxValues": [0.3]
+        },
+        {
+          "label": "Mágico: Ritual Secreto — Dano de Ataque Carregado dos Personagens Mágicos próximos após criar uma Aurelita, por ponto da DEF de Albedo",
+          "type": "dmg_percent",
+          "values": [0.0001],
+          "bonus": true,
+          "target": "charged_attack",
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          },
+          "maxValues": [0.3]
+        },
+        {
+          "label": "Mágico: Ritual Secreto — Dano de Ataque Imersivo dos Personagens Mágicos próximos após criar uma Aurelita, por ponto da DEF de Albedo",
+          "type": "dmg_percent",
+          "values": [0.0001],
+          "bonus": true,
+          "target": "plunging_attack",
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          },
+          "maxValues": [0.3]
+        },
+        {
+          "label": "Mágico: Ritual Secreto — Dano de Habilidade Elemental dos Personagens Mágicos próximos após criar uma Aurelita, por ponto da DEF de Albedo",
+          "type": "dmg_percent",
+          "values": [0.0001],
+          "bonus": true,
+          "target": "elemental_skill",
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          },
+          "maxValues": [0.3]
+        },
+        {
+          "label": "Mágico: Ritual Secreto — Dano de Supremo dos Personagens Mágicos próximos após criar uma Aurelita, por ponto da DEF de Albedo",
+          "type": "dmg_percent",
+          "values": [0.0001],
+          "bonus": true,
+          "target": "elemental_burst",
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          },
+          "maxValues": [0.3]
+        }
+      ]
     }
   ],
   "constellations": [
     {
       "name": "Flor de Éden",
       "unlock": "Constelação Lv. 1",
-      "description": "Flores Transitórias geradas pela Abiogênese - Radiação Solar de Albedo regeneram 1.2 de Energia para Albedo.",
-      "level": 1
+      "description": "Flores Transitórias geradas pela Abiogênese - Radiação Solar de Albedo regeneram 1.2 de Energia para Albedo.\n\nAprimoramento Mágico\nQuando as Flores Transitórias geradas por Radiação Solar da Habilidade Elemental de Albedo Abiogênese - Radiação Solar florescem, regeneram 1.2 de Energia Elemental para ele.\nAlém disso, aumenta a DEF de Albedo em 50% por 20s após lançar a Habilidade Elemental Abiogênese - Radiação Solar.",
+      "level": 1,
+      "modifiers": [
+        {
+          "label": "Aprimoramento Mágico — DEF de Albedo após lançar a Habilidade Elemental",
+          "type": "def_percent",
+          "values": [0.5],
+          "bonus": true
+        }
+      ]
     },
     {
       "name": "Éon da Vida",
       "unlock": "Constelação Lv. 2",
-      "description": "Flores Transitórias geradas pela Abiogênese - Radiação Solar concedem ao Albedo Julgamento Fatal por 30s:\nDesencadeando o Ritual da Progenitura - Maré Tectônica consome todos os acúmulos do Julgamento Fatal. Cada acúmulo do Julgamento Fatal consumido aumenta o Dano causado pelas Flores Fatais e o Dano de Explosão do Ritual da Progenitura: Maré Tectônica em 30% da DEF de Albedo.\nEste efeito pode ser acumulado até 4x.",
-      "level": 2
+      "description": "Flores Transitórias geradas pela Abiogênese - Radiação Solar concedem ao Albedo Julgamento Fatal por 30s:\nDesencadeando o Ritual da Progenitura - Maré Tectônica consome todos os acúmulos do Julgamento Fatal. Cada acúmulo do Julgamento Fatal consumido aumenta o Dano causado pelas Flores Fatais e o Dano de Explosão do Ritual da Progenitura: Maré Tectônica em 30% da DEF de Albedo.\nEste efeito pode ser acumulado até 4x.\n\nAprimoramento Mágico\nQuando uma Flor Transitória da Habilidade Elemental Abiogênese - Radiação Solar floresce, Albedo recebe o efeito Julgamento Fatal, com duração de 30 segundos:\n· Ao usar o Supremo Ritual da Progenitura - Maré Tectônica, todos os efeitos de Julgamento Fatal serão removidos, e o Dano de Explosão do Supremo e o Dano causado pelas Flores Fatais será aumentado com base no número de Acúmulos removidos;\n· Cada Acúmulo de Julgamento Fatal aumenta o Dano em um valor equivalente a 30% da DEF de Albedo;\n· Esse efeito pode ser acumulado até 4 vezes;\n\nAlém disso, quando Albedo estiver em segundo plano e atingir 4 Acúmulos de Julgamento Fatal, todos os Acúmulos serão consumidos, gerando 3 Flores Fatais próximas ao Personagem em campo, que florescerão violentamente e causarão Dano Geo em uma AdE. Esse Dano é baseado em 300% da DEF de Albedo e é considerado como Dano de Supremo. Após desbloquear o Talento Passivo Sabedoria em Uma Garrafa, esse Talento também será ativado, aumentando a Proficiência Elemental dos Personagens próximos da equipe em 125 pontos por 10 segundos.",
+      "level": 2,
+      "modifiers": [
+        {
+          "label": "Dano de Explosão do Supremo e das Flores Fatais por acúmulo de Julgamento Fatal consumido ao lançar o Supremo, baseado na DEF de Albedo",
+          "type": "dmg_percent",
+          "values": [0.3],
+          "bonus": true,
+          "target": "elemental_burst",
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          },
+          "accumulations": 4
+        }
+      ],
+      "skills": [
+        {
+          "label": "Aprimoramento Mágico — Uma Flor Fatal gerada ao consumir quatro acúmulos de Julgamento Fatal em segundo plano",
+          "damageType": "GEO",
+          "target": "elemental_burst",
+          "scalings": [
+            {
+              "type": "def_percent",
+              "values": [3],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Esplendor Solar",
       "unlock": "Constelação Lv. 3",
       "description": "Aumenta o nível da Abiogênese - Radiação Solar em 3.\nO nível máximo de elevação é 15.",
-      "level": 3
+      "level": 3,
+      "modifiers": []
     },
     {
       "name": "Queda Divina",
       "unlock": "Constelação Lv. 4",
-      "description": "Membros ativos da equipe que estiverem dentro do campo de Radiação Solar têm seu Dano de Ataque Imersivo aumentado em 30%",
-      "level": 4
+      "description": "Membros ativos da equipe que estiverem dentro do campo de Radiação Solar têm seu Dano de Ataque Imersivo aumentado em 30%\n\nAprimoramento Mágico\nOs Personagens da equipe que estiverem em campo dentro da Área da Radiação Solar terão o Dano de seus Ataques Imersivos aumentado em 30%.\nAlém disso, quando um Personagem da equipe próximo salta nas proximidades de uma Aurelita, ela será destruída, concedendo um grande aumento na altura do salto. Nos 3 segundos seguintes, o Dano da Onda Mergulhadora dos Ataques Imersivos desse Personagem será aumentado em 30%. Esse efeito será cancelado 0.1s após a Onda Mergulhadora do Ataque Imersivo causar Dano.",
+      "level": 4,
+      "modifiers": [
+        {
+          "label": "Dano de Ataque Imersivo do personagem em campo dentro da área de Radiação Solar",
+          "type": "dmg_percent",
+          "values": [0.3],
+          "bonus": true,
+          "target": "plunging_attack"
+        },
+        {
+          "label": "Aprimoramento Mágico — Dano adicional apenas da Onda Mergulhadora após saltar próximo de uma Aurelita e destruí-la",
+          "type": "dmg_percent",
+          "values": [0.3],
+          "bonus": true,
+          "target": "plunging_attack"
+        }
+      ]
     },
     {
       "name": "Maré de Hadeano",
       "unlock": "Constelação Lv. 5",
       "description": "Aumenta o Nível do Ritual da Progenitura - Maré Tectônica em 3.\nO nível máximo de elevação é 15.",
-      "level": 5
+      "level": 5,
+      "modifiers": []
     },
     {
       "name": "Poeira da Purificação",
       "unlock": "Constelação Lv. 6",
-      "description": "Membros ativos da equipe que estiverem dentro do campo de Radiação Solar forem protegidos por um escudo criado pela Cristalização, tem seu Dano aumentado em 17%.",
-      "level": 6
+      "description": "Membros ativos da equipe que estiverem dentro do campo de Radiação Solar e forem protegidos por um escudo criado pela Cristalização, ou quando houver uma Jaula Lunar dentro da área de Radiação Solar, têm seu Dano aumentado em 17%.\n\nAprimoramento Mágico\nQuando o Personagem em campo da equipe estiver dentro da Área da Radiação Solar e sob a proteção de um Escudo gerado por uma Reação de Cristalização, ou quando houver uma Jaula Lunar na área de Radiação Solar, o Dano causado será aumentado em 17%.\nAlém disso, ao usar o Supremo Ritual da Progenitura - Maré Tectônica, todas as Aurelitas em campo serão destruídas; ao destruí-las dessa forma, o Supremo será considerado como se tivesse consumido 4 Acúmulos de Julgamento Fatal da Constelação Éon da Vida, e durante os 20 segundos seguintes, o Dano causado pelas Flores Fatais será aumentado em um Valor equivalente a 250% da DEF de Albedo.",
+      "level": 6,
+      "modifiers": [
+        {
+          "label": "Dano do personagem em campo na área de Radiação Solar, sob escudo de Cristalização ou com Jaula Lunar na área",
+          "type": "dmg_percent",
+          "values": [0.17],
+          "bonus": true
+        },
+        {
+          "label": "Aprimoramento Mágico — Dano adicional das Flores Fatais após destruir Aurelitas com o Supremo, baseado na DEF de Albedo",
+          "type": "dmg_percent",
+          "values": [2.5],
+          "bonus": true,
+          "target": "elemental_burst",
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          }
+        }
+      ]
     }
   ],
   "vision_key": "GEO",
   "weapon_type": "SWORD",
   "ascension_materials": {
     "level_20": [
-      { "name": "Mora", "value": 20000 },
-      { "name": "Lasca de Topázio Prithiva", "value": 1 },
-      { "name": "Cecília", "value": 3 },
-      { "name": "Pergaminho Guia", "value": 3 }
+      {
+        "name": "Mora",
+        "value": 20000
+      },
+      {
+        "name": "Lasca de Topázio Prithiva",
+        "value": 1
+      },
+      {
+        "name": "Cecília",
+        "value": 3
+      },
+      {
+        "name": "Pergaminho Guia",
+        "value": 3
+      }
     ],
     "level_40": [
-      { "name": "Mora", "value": 40000 },
-      { "name": "Fragmento de Topázio Prithiva", "value": 3 },
-      { "name": "Torre da Terra", "value": 2 },
-      { "name": "Cecília", "value": 10 },
-      { "name": "Pergaminho Guia", "value": 15 }
+      {
+        "name": "Mora",
+        "value": 40000
+      },
+      {
+        "name": "Fragmento de Topázio Prithiva",
+        "value": 3
+      },
+      {
+        "name": "Torre da Terra",
+        "value": 2
+      },
+      {
+        "name": "Cecília",
+        "value": 10
+      },
+      {
+        "name": "Pergaminho Guia",
+        "value": 15
+      }
     ],
     "level_50": [
-      { "name": "Mora", "value": 60000 },
-      { "name": "Fragmento de Topázio Prithiva", "value": 6 },
-      { "name": "Torre da Terra", "value": 4 },
-      { "name": "Cecília", "value": 20 },
-      { "name": "Pergaminho do Encantamento", "value": 12 }
+      {
+        "name": "Mora",
+        "value": 60000
+      },
+      {
+        "name": "Fragmento de Topázio Prithiva",
+        "value": 6
+      },
+      {
+        "name": "Torre da Terra",
+        "value": 4
+      },
+      {
+        "name": "Cecília",
+        "value": 20
+      },
+      {
+        "name": "Pergaminho do Encantamento",
+        "value": 12
+      }
     ],
     "level_60": [
-      { "name": "Mora", "value": 80000 },
-      { "name": "Pedaço de Topázio Prithiva", "value": 3 },
-      { "name": "Torre da Terra", "value": 8 },
-      { "name": "Cecília", "value": 30 },
-      { "name": "Pergaminho do Encantamento", "value": 18 }
+      {
+        "name": "Mora",
+        "value": 80000
+      },
+      {
+        "name": "Pedaço de Topázio Prithiva",
+        "value": 3
+      },
+      {
+        "name": "Torre da Terra",
+        "value": 8
+      },
+      {
+        "name": "Cecília",
+        "value": 30
+      },
+      {
+        "name": "Pergaminho do Encantamento",
+        "value": 18
+      }
     ],
     "level_70": [
-      { "name": "Mora", "value": 100000 },
-      { "name": "Pedaço de Topázio Prithiva", "value": 6 },
-      { "name": "Torre da Terra", "value": 12 },
-      { "name": "Cecília", "value": 45 },
-      { "name": "Pergaminho da Maldição", "value": 12 }
+      {
+        "name": "Mora",
+        "value": 100000
+      },
+      {
+        "name": "Pedaço de Topázio Prithiva",
+        "value": 6
+      },
+      {
+        "name": "Torre da Terra",
+        "value": 12
+      },
+      {
+        "name": "Cecília",
+        "value": 45
+      },
+      {
+        "name": "Pergaminho da Maldição",
+        "value": 12
+      }
     ],
     "level_80": [
-      { "name": "Mora", "value": 120000 },
-      { "name": "Gema de Topázio Prithiva", "value": 6 },
-      { "name": "Torre da Terra", "value": 20 },
-      { "name": "Cecília", "value": 60 },
-      { "name": "Pergaminho da Maldição", "value": 24 }
+      {
+        "name": "Mora",
+        "value": 120000
+      },
+      {
+        "name": "Gema de Topázio Prithiva",
+        "value": 6
+      },
+      {
+        "name": "Torre da Terra",
+        "value": 20
+      },
+      {
+        "name": "Cecília",
+        "value": 60
+      },
+      {
+        "name": "Pergaminho da Maldição",
+        "value": 24
+      }
     ]
   }
 }
