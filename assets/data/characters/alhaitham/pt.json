@@ -19,147 +19,1888 @@
       "description": "Ataque Normal\nRealiza até 5 golpes rápidos.\n\nAtaque Carregado\nConsome uma certa quantidade de Stamina para desferir 2 golpes rápidos com a espada.\n\nAtaque Imersivo\nMergulha em pleno ar para golpear o chão, causando dano aos inimigos ao longo do caminho e infligindo Dano em uma AdE durante o impacto.",
       "upgrades": [
         {
-          "name": "Dano do 1º Golpe",
+          "name": "Dano do 1° Golpe",
+          "damageType": "PHYSICAL",
+          "target": "normal_attack",
           "power": [
-            { "value": "49.5%", "level": 1 },
-            { "value": "53.6%", "level": 2 },
-            { "value": "57.6%", "level": 3 },
-            { "value": "63.3%", "level": 4 },
-            { "value": "67.4%", "level": 5 },
-            { "value": "72.0%", "level": 6 },
-            { "value": "78.3%", "level": 7 },
-            { "value": "84.7%", "level": 8 },
-            { "value": "91.0%", "level": 9 },
-            { "value": "97.9%", "level": 10 },
-            { "value": "104.8%", "level": 11 }
+            {
+              "value": "49.5257%",
+              "level": 1,
+              "components": [
+                {
+                  "scalings": 0.495257,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "53.5568%",
+              "level": 2,
+              "components": [
+                {
+                  "scalings": 0.535568,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "57.588%",
+              "level": 3,
+              "components": [
+                {
+                  "scalings": 0.57588,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "63.3468%",
+              "level": 4,
+              "components": [
+                {
+                  "scalings": 0.633468,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "67.378%",
+              "level": 5,
+              "components": [
+                {
+                  "scalings": 0.67378,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "71.985%",
+              "level": 6,
+              "components": [
+                {
+                  "scalings": 0.71985,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "78.3197%",
+              "level": 7,
+              "components": [
+                {
+                  "scalings": 0.783197,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "84.6544%",
+              "level": 8,
+              "components": [
+                {
+                  "scalings": 0.846544,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "90.989%",
+              "level": 9,
+              "components": [
+                {
+                  "scalings": 0.90989,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "97.8996%",
+              "level": 10,
+              "components": [
+                {
+                  "scalings": 0.978996,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "104.8102%",
+              "level": 11,
+              "components": [
+                {
+                  "scalings": 1.048102,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "111.7207%",
+              "level": 12,
+              "components": [
+                {
+                  "scalings": 1.117207,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "118.6313%",
+              "level": 13,
+              "components": [
+                {
+                  "scalings": 1.186313,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "125.5418%",
+              "level": 14,
+              "components": [
+                {
+                  "scalings": 1.255418,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "132.4524%",
+              "level": 15,
+              "components": [
+                {
+                  "scalings": 1.324524,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            }
           ]
         },
         {
-          "name": "Dano do 2º Golpe",
+          "name": "Dano do 2° Golpe",
+          "damageType": "PHYSICAL",
+          "target": "normal_attack",
           "power": [
-            { "value": "50.7%", "level": 1 },
-            { "value": "54.9%", "level": 2 },
-            { "value": "59.0%", "level": 3 },
-            { "value": "64.9%", "level": 4 },
-            { "value": "69.0%", "level": 5 },
-            { "value": "73.8%", "level": 6 },
-            { "value": "80.3%", "level": 7 },
-            { "value": "86.7%", "level": 8 },
-            { "value": "93.2%", "level": 9 },
-            { "value": "100.3%", "level": 10 },
-            { "value": "107.4%", "level": 11 }
+            {
+              "value": "50.7495%",
+              "level": 1,
+              "components": [
+                {
+                  "scalings": 0.507495,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "54.8802%",
+              "level": 2,
+              "components": [
+                {
+                  "scalings": 0.548802,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "59.011%",
+              "level": 3,
+              "components": [
+                {
+                  "scalings": 0.59011,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "64.9121%",
+              "level": 4,
+              "components": [
+                {
+                  "scalings": 0.649121,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "69.0429%",
+              "level": 5,
+              "components": [
+                {
+                  "scalings": 0.690429,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "73.7638%",
+              "level": 6,
+              "components": [
+                {
+                  "scalings": 0.737638,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "80.255%",
+              "level": 7,
+              "components": [
+                {
+                  "scalings": 0.80255,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "86.7462%",
+              "level": 8,
+              "components": [
+                {
+                  "scalings": 0.867462,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "93.2374%",
+              "level": 9,
+              "components": [
+                {
+                  "scalings": 0.932374,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "100.3187%",
+              "level": 10,
+              "components": [
+                {
+                  "scalings": 1.003187,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "107.4%",
+              "level": 11,
+              "components": [
+                {
+                  "scalings": 1.074,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "114.4813%",
+              "level": 12,
+              "components": [
+                {
+                  "scalings": 1.144813,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "121.5627%",
+              "level": 13,
+              "components": [
+                {
+                  "scalings": 1.215627,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "128.644%",
+              "level": 14,
+              "components": [
+                {
+                  "scalings": 1.28644,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "135.7253%",
+              "level": 15,
+              "components": [
+                {
+                  "scalings": 1.357253,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            }
           ]
         },
         {
-          "name": "Dano do 3º Golpe",
+          "name": "Dano do 3° Golpe",
+          "damageType": "PHYSICAL",
+          "target": "normal_attack",
+          "hits": 2,
           "power": [
-            { "value": "34.2% + 34.2%", "level": 1 },
-            { "value": "37.0% + 37.0%", "level": 2 },
-            { "value": "39.7% + 39.7%", "level": 3 },
-            { "value": "43.7% + 43.7%", "level": 4 },
-            { "value": "46.5% + 46.5%", "level": 5 },
-            { "value": "49.7% + 49.7%", "level": 6 },
-            { "value": "54.0% + 54.0%", "level": 7 },
-            { "value": "58.4% + 58.4%", "level": 8 },
-            { "value": "62.8% + 62.8%", "level": 9 },
-            { "value": "67.6% + 67.6%", "level": 10 },
-            { "value": "72.3% + 72.3%", "level": 11 }
+            {
+              "value": "34.1785%+34.1785%",
+              "level": 1,
+              "components": [
+                {
+                  "scalings": 0.341785,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "36.9605%+36.9605%",
+              "level": 2,
+              "components": [
+                {
+                  "scalings": 0.369605,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "39.7425%+39.7425%",
+              "level": 3,
+              "components": [
+                {
+                  "scalings": 0.397425,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "43.7167%+43.7167%",
+              "level": 4,
+              "components": [
+                {
+                  "scalings": 0.437167,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "46.4987%+46.4987%",
+              "level": 5,
+              "components": [
+                {
+                  "scalings": 0.464987,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "49.6781%+49.6781%",
+              "level": 6,
+              "components": [
+                {
+                  "scalings": 0.496781,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "54.0498%+54.0498%",
+              "level": 7,
+              "components": [
+                {
+                  "scalings": 0.540498,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "58.4215%+58.4215%",
+              "level": 8,
+              "components": [
+                {
+                  "scalings": 0.584215,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "62.7931%+62.7931%",
+              "level": 9,
+              "components": [
+                {
+                  "scalings": 0.627931,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "67.5622%+67.5622%",
+              "level": 10,
+              "components": [
+                {
+                  "scalings": 0.675622,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "72.3313%+72.3313%",
+              "level": 11,
+              "components": [
+                {
+                  "scalings": 0.723313,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "77.1004%+77.1004%",
+              "level": 12,
+              "components": [
+                {
+                  "scalings": 0.771004,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "81.8696%+81.8696%",
+              "level": 13,
+              "components": [
+                {
+                  "scalings": 0.818696,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "86.6387%+86.6387%",
+              "level": 14,
+              "components": [
+                {
+                  "scalings": 0.866387,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "91.4077%+91.4077%",
+              "level": 15,
+              "components": [
+                {
+                  "scalings": 0.914077,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            }
           ]
         },
         {
-          "name": "Dano do 4º Golpe",
+          "name": "Dano do 4° Golpe",
+          "damageType": "PHYSICAL",
+          "target": "normal_attack",
           "power": [
-            { "value": "66.8%", "level": 1 },
-            { "value": "72.2%", "level": 2 },
-            { "value": "77.6%", "level": 3 },
-            { "value": "85.4%", "level": 4 },
-            { "value": "90.8%", "level": 5 },
-            { "value": "97.0%", "level": 6 },
-            { "value": "105.6%", "level": 7 },
-            { "value": "114.1%", "level": 8 },
-            { "value": "122.7%", "level": 9 },
-            { "value": "132.0%", "level": 10 },
-            { "value": "141.3%", "level": 11 }
+            {
+              "value": "66.7678%",
+              "level": 1,
+              "components": [
+                {
+                  "scalings": 0.667678,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "72.2024%",
+              "level": 2,
+              "components": [
+                {
+                  "scalings": 0.722024,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "77.637%",
+              "level": 3,
+              "components": [
+                {
+                  "scalings": 0.77637,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "85.4007%",
+              "level": 4,
+              "components": [
+                {
+                  "scalings": 0.854007,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "90.8353%",
+              "level": 5,
+              "components": [
+                {
+                  "scalings": 0.908353,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "97.0463%",
+              "level": 6,
+              "components": [
+                {
+                  "scalings": 0.970463,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "105.5863%",
+              "level": 7,
+              "components": [
+                {
+                  "scalings": 1.055863,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "114.1264%",
+              "level": 8,
+              "components": [
+                {
+                  "scalings": 1.141264,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "122.6665%",
+              "level": 9,
+              "components": [
+                {
+                  "scalings": 1.226665,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "131.9829%",
+              "level": 10,
+              "components": [
+                {
+                  "scalings": 1.319829,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "141.2993%",
+              "level": 11,
+              "components": [
+                {
+                  "scalings": 1.412993,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "150.6158%",
+              "level": 12,
+              "components": [
+                {
+                  "scalings": 1.506158,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "159.9322%",
+              "level": 13,
+              "components": [
+                {
+                  "scalings": 1.599322,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "169.2487%",
+              "level": 14,
+              "components": [
+                {
+                  "scalings": 1.692487,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "178.5651%",
+              "level": 15,
+              "components": [
+                {
+                  "scalings": 1.785651,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            }
           ]
         },
         {
-          "name": "Dano do 5º Golpe",
+          "name": "Dano do 5° Golpe",
+          "damageType": "PHYSICAL",
+          "target": "normal_attack",
           "power": [
-            { "value": "83.9%", "level": 1 },
-            { "value": "90.7%", "level": 2 },
-            { "value": "97.5%", "level": 3 },
-            { "value": "107.3%", "level": 4 },
-            { "value": "114.1%", "level": 5 },
-            { "value": "121.9%", "level": 6 },
-            { "value": "132.6%", "level": 7 },
-            { "value": "143.3%", "level": 8 },
-            { "value": "154.1%", "level": 9 },
-            { "value": "165.8%", "level": 10 },
-            { "value": "177.5%", "level": 11 }
+            {
+              "value": "83.8509%",
+              "level": 1,
+              "components": [
+                {
+                  "scalings": 0.838509,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "90.6759%",
+              "level": 2,
+              "components": [
+                {
+                  "scalings": 0.906759,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "97.501%",
+              "level": 3,
+              "components": [
+                {
+                  "scalings": 0.97501,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "107.2511%",
+              "level": 4,
+              "components": [
+                {
+                  "scalings": 1.072511,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "114.0762%",
+              "level": 5,
+              "components": [
+                {
+                  "scalings": 1.140762,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "121.8762%",
+              "level": 6,
+              "components": [
+                {
+                  "scalings": 1.218762,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "132.6014%",
+              "level": 7,
+              "components": [
+                {
+                  "scalings": 1.326014,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "143.3265%",
+              "level": 8,
+              "components": [
+                {
+                  "scalings": 1.433265,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "154.0516%",
+              "level": 9,
+              "components": [
+                {
+                  "scalings": 1.540516,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "165.7517%",
+              "level": 10,
+              "components": [
+                {
+                  "scalings": 1.657517,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "177.4518%",
+              "level": 11,
+              "components": [
+                {
+                  "scalings": 1.774518,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "189.1519%",
+              "level": 12,
+              "components": [
+                {
+                  "scalings": 1.891519,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "200.8521%",
+              "level": 13,
+              "components": [
+                {
+                  "scalings": 2.008521,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "212.5522%",
+              "level": 14,
+              "components": [
+                {
+                  "scalings": 2.125522,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "224.2523%",
+              "level": 15,
+              "components": [
+                {
+                  "scalings": 2.242523,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            }
           ]
         },
         {
           "name": "Dano de Ataque Carregado",
+          "damageType": "PHYSICAL",
+          "target": "charged_attack",
+          "hits": 2,
           "power": [
-            { "value": "55.3% + 55.3%", "level": 1 },
-            { "value": "59.8% + 59.8%", "level": 2 },
-            { "value": "64.3% + 64.3%", "level": 3 },
-            { "value": "70.7% + 70.7%", "level": 4 },
-            { "value": "75.2% + 75.2%", "level": 5 },
-            { "value": "80.3% + 80.3%", "level": 6 },
-            { "value": "87.4% + 87.4%", "level": 7 },
-            { "value": "94.4% + 94.4%", "level": 8 },
-            { "value": "101.5% + 101.5%", "level": 9 },
-            { "value": "109.2% + 109.2%", "level": 10 },
-            { "value": "116.9% +116.9%", "level": 11 }
+            {
+              "value": "55.255%+55.255%",
+              "level": 1,
+              "components": [
+                {
+                  "scalings": 0.55255,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "59.7525%+59.7525%",
+              "level": 2,
+              "components": [
+                {
+                  "scalings": 0.597525,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "64.25%+64.25%",
+              "level": 3,
+              "components": [
+                {
+                  "scalings": 0.6425,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "70.675%+70.675%",
+              "level": 4,
+              "components": [
+                {
+                  "scalings": 0.70675,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "75.1725%+75.1725%",
+              "level": 5,
+              "components": [
+                {
+                  "scalings": 0.751725,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "80.3125%+80.3125%",
+              "level": 6,
+              "components": [
+                {
+                  "scalings": 0.803125,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "87.38%+87.38%",
+              "level": 7,
+              "components": [
+                {
+                  "scalings": 0.8738,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "94.4475%+94.4475%",
+              "level": 8,
+              "components": [
+                {
+                  "scalings": 0.944475,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "101.515%+101.515%",
+              "level": 9,
+              "components": [
+                {
+                  "scalings": 1.01515,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "109.225%+109.225%",
+              "level": 10,
+              "components": [
+                {
+                  "scalings": 1.09225,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "116.935%+116.935%",
+              "level": 11,
+              "components": [
+                {
+                  "scalings": 1.16935,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "124.645%+124.645%",
+              "level": 12,
+              "components": [
+                {
+                  "scalings": 1.24645,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "132.355%+132.355%",
+              "level": 13,
+              "components": [
+                {
+                  "scalings": 1.32355,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "140.065%+140.065%",
+              "level": 14,
+              "components": [
+                {
+                  "scalings": 1.40065,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "147.775%+147.775%",
+              "level": 15,
+              "components": [
+                {
+                  "scalings": 1.47775,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            }
           ]
         },
         {
           "name": "Consumo de Stamina de Ataque Carregado",
           "power": [
-            { "value": "20", "level": 1 },
-            { "value": "20", "level": 2 },
-            { "value": "20", "level": 3 },
-            { "value": "20", "level": 4 },
-            { "value": "20", "level": 5 },
-            { "value": "20", "level": 6 },
-            { "value": "20", "level": 7 },
-            { "value": "20", "level": 8 },
-            { "value": "20", "level": 9 },
-            { "value": "20", "level": 10 },
-            { "value": "20", "level": 11 }
+            {
+              "value": "20",
+              "level": 1
+            },
+            {
+              "value": "20",
+              "level": 2
+            },
+            {
+              "value": "20",
+              "level": 3
+            },
+            {
+              "value": "20",
+              "level": 4
+            },
+            {
+              "value": "20",
+              "level": 5
+            },
+            {
+              "value": "20",
+              "level": 6
+            },
+            {
+              "value": "20",
+              "level": 7
+            },
+            {
+              "value": "20",
+              "level": 8
+            },
+            {
+              "value": "20",
+              "level": 9
+            },
+            {
+              "value": "20",
+              "level": 10
+            },
+            {
+              "value": "20",
+              "level": 11
+            },
+            {
+              "value": "20",
+              "level": 12
+            },
+            {
+              "value": "20",
+              "level": 13
+            },
+            {
+              "value": "20",
+              "level": 14
+            },
+            {
+              "value": "20",
+              "level": 15
+            }
           ]
         },
         {
           "name": "Dano Durante a Queda",
+          "damageType": "PHYSICAL",
+          "target": "plunging_attack",
           "power": [
-            { "value": "63.9%", "level": 1 },
-            { "value": "69.1%", "level": 2 },
-            { "value": "74.3%", "level": 3 },
-            { "value": "81.8%", "level": 4 },
-            { "value": "87.0%", "level": 5 },
-            { "value": "92.9%", "level": 6 },
-            { "value": "101.1%", "level": 7 },
-            { "value": "109.3%", "level": 8 },
-            { "value": "117.5%", "level": 9 },
-            { "value": "126.4%", "level": 10 },
-            { "value": "135.3%", "level": 11 }
+            {
+              "value": "63.9324%",
+              "level": 1,
+              "components": [
+                {
+                  "scalings": 0.639324,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "69.1362%",
+              "level": 2,
+              "components": [
+                {
+                  "scalings": 0.691362,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "74.34%",
+              "level": 3,
+              "components": [
+                {
+                  "scalings": 0.7434,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "81.774%",
+              "level": 4,
+              "components": [
+                {
+                  "scalings": 0.81774,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "86.9778%",
+              "level": 5,
+              "components": [
+                {
+                  "scalings": 0.869778,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "92.925%",
+              "level": 6,
+              "components": [
+                {
+                  "scalings": 0.92925,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "101.1024%",
+              "level": 7,
+              "components": [
+                {
+                  "scalings": 1.011024,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "109.2798%",
+              "level": 8,
+              "components": [
+                {
+                  "scalings": 1.092798,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "117.4572%",
+              "level": 9,
+              "components": [
+                {
+                  "scalings": 1.174572,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "126.378%",
+              "level": 10,
+              "components": [
+                {
+                  "scalings": 1.26378,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "135.2988%",
+              "level": 11,
+              "components": [
+                {
+                  "scalings": 1.352988,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "144.2196%",
+              "level": 12,
+              "components": [
+                {
+                  "scalings": 1.442196,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "153.1404%",
+              "level": 13,
+              "components": [
+                {
+                  "scalings": 1.531404,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "162.0612%",
+              "level": 14,
+              "components": [
+                {
+                  "scalings": 1.620612,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "170.982%",
+              "level": 15,
+              "components": [
+                {
+                  "scalings": 1.70982,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            }
           ]
         },
         {
-          "name": "Dano de Queda de Baixa/Alta Altitude",
+          "name": "Dano de Queda de Baixa Altitude",
+          "damageType": "PHYSICAL",
+          "target": "plunging_attack",
           "power": [
-            { "value": "128%/160%", "level": 1 },
-            { "value": "138%/173%", "level": 2 },
-            { "value": "149%/186%", "level": 3 },
-            { "value": "164%/204%", "level": 4 },
-            { "value": "174%/217%", "level": 5 },
-            { "value": "186%/232%", "level": 6 },
-            { "value": "202%/253%", "level": 7 },
-            { "value": "219%/273%", "level": 8 },
-            { "value": "235/293%", "level": 9 },
-            { "value": "253%/316%", "level": 10 },
-            { "value": "271%/338%", "level": 11 }
+            {
+              "value": "127.8377%",
+              "level": 1,
+              "components": [
+                {
+                  "scalings": 1.278377,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "138.2431%",
+              "level": 2,
+              "components": [
+                {
+                  "scalings": 1.382431,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "148.6485%",
+              "level": 3,
+              "components": [
+                {
+                  "scalings": 1.486485,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "163.5134%",
+              "level": 4,
+              "components": [
+                {
+                  "scalings": 1.635134,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "173.9187%",
+              "level": 5,
+              "components": [
+                {
+                  "scalings": 1.739187,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "185.8106%",
+              "level": 6,
+              "components": [
+                {
+                  "scalings": 1.858106,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "202.162%",
+              "level": 7,
+              "components": [
+                {
+                  "scalings": 2.02162,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "218.5133%",
+              "level": 8,
+              "components": [
+                {
+                  "scalings": 2.185133,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "234.8646%",
+              "level": 9,
+              "components": [
+                {
+                  "scalings": 2.348646,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "252.7025%",
+              "level": 10,
+              "components": [
+                {
+                  "scalings": 2.527025,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "270.5403%",
+              "level": 11,
+              "components": [
+                {
+                  "scalings": 2.705403,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "288.3781%",
+              "level": 12,
+              "components": [
+                {
+                  "scalings": 2.883781,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "306.2159%",
+              "level": 13,
+              "components": [
+                {
+                  "scalings": 3.062159,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "324.0537%",
+              "level": 14,
+              "components": [
+                {
+                  "scalings": 3.240537,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "341.8915%",
+              "level": 15,
+              "components": [
+                {
+                  "scalings": 3.418915,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Dano de Queda de Alta Altitude",
+          "damageType": "PHYSICAL",
+          "target": "plunging_attack",
+          "power": [
+            {
+              "value": "159.6762%",
+              "level": 1,
+              "components": [
+                {
+                  "scalings": 1.596762,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "172.6731%",
+              "level": 2,
+              "components": [
+                {
+                  "scalings": 1.726731,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "185.67%",
+              "level": 3,
+              "components": [
+                {
+                  "scalings": 1.8567,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "204.237%",
+              "level": 4,
+              "components": [
+                {
+                  "scalings": 2.04237,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "217.2339%",
+              "level": 5,
+              "components": [
+                {
+                  "scalings": 2.172339,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "232.0875%",
+              "level": 6,
+              "components": [
+                {
+                  "scalings": 2.320875,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "252.5112%",
+              "level": 7,
+              "components": [
+                {
+                  "scalings": 2.525112,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "272.9349%",
+              "level": 8,
+              "components": [
+                {
+                  "scalings": 2.729349,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "293.3586%",
+              "level": 9,
+              "components": [
+                {
+                  "scalings": 2.933586,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "315.639%",
+              "level": 10,
+              "components": [
+                {
+                  "scalings": 3.15639,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "337.9194%",
+              "level": 11,
+              "components": [
+                {
+                  "scalings": 3.379194,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "360.1998%",
+              "level": 12,
+              "components": [
+                {
+                  "scalings": 3.601998,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "382.4802%",
+              "level": 13,
+              "components": [
+                {
+                  "scalings": 3.824802,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "404.7606%",
+              "level": 14,
+              "components": [
+                {
+                  "scalings": 4.047606,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "427.041%",
+              "level": 15,
+              "components": [
+                {
+                  "scalings": 4.27041,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            }
           ]
         }
       ],
@@ -168,314 +1909,1431 @@
     {
       "name": "Entendimento Mútuo: Representação do Conhecimento",
       "unlock": "Habilidade Elemental",
-      "description": "Faz uma investida rapidamente. Ao terminar essa investida rápida, causa Dano Dendro contra os oponentes ao seu redor e acumula \"Espelho Cortante\".\nSerá lançada de maneira de diferente ao Manter Pressionado.\n\nManter Pressionado\nEntra em um estado de mira para ajustar a direção em que vai avançar.\n\nEspelho Cortante\nAo lançar, Alhaitham gerará 1 Espelho Cortante. se ainda não possuir nenhum Espelho Cortante, gerará um adicional. O Espelho Cortante possui os seguintes efeitos:\n· Ao possuir um Espelho Cortante, os Ataques Normais, Carregados e Imersivos de Alhaitham serão convertidos em Dano Dendro que não pode ser substituído por outros elementos.\n· Quando o ataque descrito acima atinge um inimigo, o Espelho Cortante fará o ataque Cortina de Luz, causando Dano Dendro em AdE baseado na quantidade de Espelhos Cortantes.\n· É possível possuir até 3 Espelhos Cortantes.\n· Os Espelhos Cortantes desaparecerão com o passar do tempo, e todos serão eliminados quando Alhaitham sair do campo de batalha.\n\n\"A verdade existe na incerteza, e nem mesmo os magnânimos acadêmicos são capazes de evitar seus erros.\"",
+      "description": "Faz uma investida rapidamente. Ao terminar essa investida rápida, causa Dano Dendro contra os oponentes ao seu redor e acumula \"Espelho Cortante\".\nSerá lançada de maneira diferente ao Manter Pressionado.\n\nManter Pressionado\nEntra em um estado de mira para ajustar a direção em que vai avançar.\n\nEspelho Cortante\nAo lançar, Alhaitham gerará 1 Espelho Cortante; se ainda não possuir nenhum Espelho Cortante, gerará um adicional. O Espelho Cortante possui os seguintes efeitos:\n· Ao possuir Espelhos Cortantes, os Ataques Normais, Carregados e Imersivos de Alhaitham serão convertidos em Dano Dendro que não pode ser substituído por outros elementos;\n· Quando o ataque descrito acima atinge um inimigo, o Espelho Cortante fará o ataque Cortina de Luz, causando Dano Dendro em AdE baseado na quantidade de Espelhos Cortantes;\n· É possível possuir até 3 Espelhos Cortantes;\n· Os Espelhos Cortantes desaparecerão com o passar do tempo, e todos serão eliminados quando Alhaitham sair do campo de batalha.\n\n\"A verdade existe na incerteza, e nem mesmo os magnânimos acadêmicos são capazes de evitar seus erros.\"",
       "upgrades": [
         {
           "name": "Dano de Ataque de Investida",
+          "damageType": "DENDRO",
+          "target": "elemental_skill",
           "power": [
             {
               "value": "193.6% do ATQ + 154.88% da Proficiência Elemental",
-              "level": 1
+              "level": 1,
+              "components": [
+                {
+                  "scalings": 1.936,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.5488,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "208.1% do ATQ + 166.5% da Proficiência Elemental",
-              "level": 2
+              "value": "208.12% do ATQ + 166.496% da Proficiência Elemental",
+              "level": 2,
+              "components": [
+                {
+                  "scalings": 2.0812,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.66496,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "222.6% do ATQ + 178.11% da Proficiência Elemental",
-              "level": 3
+              "value": "222.64% do ATQ + 178.112% da Proficiência Elemental",
+              "level": 3,
+              "components": [
+                {
+                  "scalings": 2.2264,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.78112,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "242.0% do ATQ + 193.6% da Proficiência Elemental",
-              "level": 4
+              "value": "242% do ATQ + 193.6% da Proficiência Elemental",
+              "level": 4,
+              "components": [
+                {
+                  "scalings": 2.42,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.936,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "256.5% do ATQ + 205.22% da Proficiência Elemental",
-              "level": 5
+              "value": "256.52% do ATQ + 205.216% da Proficiência Elemental",
+              "level": 5,
+              "components": [
+                {
+                  "scalings": 2.5652,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.05216,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "271.0% do ATQ + 216.83% da Proficiência Elemental",
-              "level": 6
+              "value": "271.04% do ATQ + 216.832% da Proficiência Elemental",
+              "level": 6,
+              "components": [
+                {
+                  "scalings": 2.7104,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.16832,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
               "value": "290.4% do ATQ + 232.32% da Proficiência Elemental",
-              "level": 7
+              "level": 7,
+              "components": [
+                {
+                  "scalings": 2.904,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.3232,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "309.8% do ATQ + 247.81% da Proficiência Elemental",
-              "level": 8
+              "value": "309.76% do ATQ + 247.808% da Proficiência Elemental",
+              "level": 8,
+              "components": [
+                {
+                  "scalings": 3.0976,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.47808,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "329.1% do ATQ + 263.3% da Proficiência Elemental",
-              "level": 9
+              "value": "329.12% do ATQ + 263.296% da Proficiência Elemental",
+              "level": 9,
+              "components": [
+                {
+                  "scalings": 3.2912,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.63296,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "348.5% do ATQ + 278.78% da Proficiência Elemental",
-              "level": 10
+              "value": "348.48% do ATQ + 278.784% da Proficiência Elemental",
+              "level": 10,
+              "components": [
+                {
+                  "scalings": 3.4848,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.78784,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "367.8% do ATQ + 294.27% da Proficiência Elemental",
-              "level": 11
+              "value": "367.84% do ATQ + 294.272% da Proficiência Elemental",
+              "level": 11,
+              "components": [
+                {
+                  "scalings": 3.6784,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.94272,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
               "value": "387.2% do ATQ + 309.76% da Proficiência Elemental",
-              "level": 12
+              "level": 12,
+              "components": [
+                {
+                  "scalings": 3.872,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 3.0976,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
               "value": "411.4% do ATQ + 329.12% da Proficiência Elemental",
-              "level": 13
+              "level": 13,
+              "components": [
+                {
+                  "scalings": 4.114,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 3.2912,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
               "value": "435.6% do ATQ + 348.48% da Proficiência Elemental",
-              "level": 14
+              "level": 14,
+              "components": [
+                {
+                  "scalings": 4.356,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 3.4848,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
               "value": "459.8% do ATQ + 367.84% da Proficiência Elemental",
-              "level": 15
+              "level": 15,
+              "components": [
+                {
+                  "scalings": 4.598,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 3.6784,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             }
           ]
         },
         {
           "name": "Intervalo de Ataque da Cortina de Luz",
           "power": [
-            { "value": "1.6s", "level": 1 },
-            { "value": "1.6s", "level": 2 },
-            { "value": "1.6s", "level": 3 },
-            { "value": "1.6s", "level": 4 },
-            { "value": "1.6s", "level": 5 },
-            { "value": "1.6s", "level": 6 },
-            { "value": "1.6s", "level": 7 },
-            { "value": "1.6s", "level": 8 },
-            { "value": "1.6s", "level": 9 },
-            { "value": "1.6s", "level": 10 },
-            { "value": "1.6s", "level": 11 },
-            { "value": "1.6s", "level": 12 },
-            { "value": "1.6s", "level": 13 },
-            { "value": "1.6s", "level": 14 },
-            { "value": "1.6s", "level": 15 }
+            {
+              "value": "1.6s",
+              "level": 1
+            },
+            {
+              "value": "1.6s",
+              "level": 2
+            },
+            {
+              "value": "1.6s",
+              "level": 3
+            },
+            {
+              "value": "1.6s",
+              "level": 4
+            },
+            {
+              "value": "1.6s",
+              "level": 5
+            },
+            {
+              "value": "1.6s",
+              "level": 6
+            },
+            {
+              "value": "1.6s",
+              "level": 7
+            },
+            {
+              "value": "1.6s",
+              "level": 8
+            },
+            {
+              "value": "1.6s",
+              "level": 9
+            },
+            {
+              "value": "1.6s",
+              "level": 10
+            },
+            {
+              "value": "1.6s",
+              "level": 11
+            },
+            {
+              "value": "1.6s",
+              "level": 12
+            },
+            {
+              "value": "1.6s",
+              "level": 13
+            },
+            {
+              "value": "1.6s",
+              "level": 14
+            },
+            {
+              "value": "1.6s",
+              "level": 15
+            }
           ]
         },
         {
-          "name": "Dano de Ataque de 1 Cortina de Luz",
+          "name": "Dano de Ataque da Cortina de Luz com 1 Espelho Cortante",
+          "damageType": "DENDRO",
+          "target": "elemental_skill",
           "power": [
             {
               "value": "67.2% do ATQ + 134.4% da Proficiência Elemental",
-              "level": 1
+              "level": 1,
+              "components": [
+                {
+                  "scalings": 0.672,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.344,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "72.2% do ATQ + 144.5% da Proficiência Elemental",
-              "level": 2
+              "value": "72.24% do ATQ + 144.48% da Proficiência Elemental",
+              "level": 2,
+              "components": [
+                {
+                  "scalings": 0.7224,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.4448,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "77.3% do ATQ + 154.6% da Proficiência Elemental",
-              "level": 3
+              "value": "77.28% do ATQ + 154.56% da Proficiência Elemental",
+              "level": 3,
+              "components": [
+                {
+                  "scalings": 0.7728,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.5456,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "84.0% do ATQ + 168.0% da Proficiência Elemental",
-              "level": 4
+              "value": "84% do ATQ + 168% da Proficiência Elemental",
+              "level": 4,
+              "components": [
+                {
+                  "scalings": 0.84,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.68,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "89.0% do ATQ + 178.1% da Proficiência Elemental",
-              "level": 5
+              "value": "89.04% do ATQ + 178.08% da Proficiência Elemental",
+              "level": 5,
+              "components": [
+                {
+                  "scalings": 0.8904,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.7808,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "94.1% do ATQ + 188.2% da Proficiência Elemental",
-              "level": 6
+              "value": "94.08% do ATQ + 188.16% da Proficiência Elemental",
+              "level": 6,
+              "components": [
+                {
+                  "scalings": 0.9408,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.8816,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
               "value": "100.8% do ATQ + 201.6% da Proficiência Elemental",
-              "level": 7
+              "level": 7,
+              "components": [
+                {
+                  "scalings": 1.008,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.016,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "107.5% do ATQ + 215.0% da Proficiência Elemental",
-              "level": 8
+              "value": "107.52% do ATQ + 215.04% da Proficiência Elemental",
+              "level": 8,
+              "components": [
+                {
+                  "scalings": 1.0752,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.1504,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "114.2% do ATQ + 228.5% da Proficiência Elemental",
-              "level": 9
+              "value": "114.24% do ATQ + 228.48% da Proficiência Elemental",
+              "level": 9,
+              "components": [
+                {
+                  "scalings": 1.1424,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.2848,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "121.0% do ATQ + 241.9% da Proficiência Elemental",
-              "level": 10
+              "value": "120.96% do ATQ + 241.92% da Proficiência Elemental",
+              "level": 10,
+              "components": [
+                {
+                  "scalings": 1.2096,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.4192,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "127.7% do ATQ + 255.4% da Proficiência Elemental",
-              "level": 11
+              "value": "127.68% do ATQ + 255.36% da Proficiência Elemental",
+              "level": 11,
+              "components": [
+                {
+                  "scalings": 1.2768,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.5536,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
               "value": "134.4% do ATQ + 268.8% da Proficiência Elemental",
-              "level": 12
+              "level": 12,
+              "components": [
+                {
+                  "scalings": 1.344,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.688,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
               "value": "142.8% do ATQ + 285.6% da Proficiência Elemental",
-              "level": 13
+              "level": 13,
+              "components": [
+                {
+                  "scalings": 1.428,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.856,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
               "value": "151.2% do ATQ + 302.4% da Proficiência Elemental",
-              "level": 14
+              "level": 14,
+              "components": [
+                {
+                  "scalings": 1.512,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 3.024,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
               "value": "159.6% do ATQ + 319.2% da Proficiência Elemental",
-              "level": 15
+              "level": 15,
+              "components": [
+                {
+                  "scalings": 1.596,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 3.192,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             }
           ]
         },
         {
-          "name": "Dano do Ataque de 2 Cortinas de Luz",
+          "name": "Dano do Ataque da Cortina de Luz com 2 Espelhos Cortantes",
+          "damageType": "DENDRO",
+          "target": "elemental_skill",
+          "hits": 2,
           "power": [
             {
               "value": "(67.2% do ATQ + 134.4% da Proficiência Elemental) x2",
-              "level": 1
+              "level": 1,
+              "components": [
+                {
+                  "scalings": 0.672,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.344,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "(72.2% do ATQ + 144.5% da Proficiência Elemental) x2",
-              "level": 2
+              "value": "(72.24% do ATQ + 144.48% da Proficiência Elemental) x2",
+              "level": 2,
+              "components": [
+                {
+                  "scalings": 0.7224,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.4448,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "(77.3% do ATQ + 154.6% da Proficiência Elemental) x2",
-              "level": 3
+              "value": "(77.28% do ATQ + 154.56% da Proficiência Elemental) x2",
+              "level": 3,
+              "components": [
+                {
+                  "scalings": 0.7728,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.5456,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "(84.0% do ATQ + 168.0% da Proficiência Elemental) x2",
-              "level": 4
+              "value": "(84% do ATQ + 168% da Proficiência Elemental) x2",
+              "level": 4,
+              "components": [
+                {
+                  "scalings": 0.84,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.68,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "(89.0% do ATQ + 178.1% da Proficiência Elemental) x2",
-              "level": 5
+              "value": "(89.04% do ATQ + 178.08% da Proficiência Elemental) x2",
+              "level": 5,
+              "components": [
+                {
+                  "scalings": 0.8904,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.7808,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "(94.1% do ATQ + 188.2% da Proficiência Elemental x2",
-              "level": 6
+              "value": "(94.08% do ATQ + 188.16% da Proficiência Elemental) x2",
+              "level": 6,
+              "components": [
+                {
+                  "scalings": 0.9408,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.8816,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
               "value": "(100.8% do ATQ + 201.6% da Proficiência Elemental) x2",
-              "level": 7
+              "level": 7,
+              "components": [
+                {
+                  "scalings": 1.008,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.016,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "(107.5% do ATQ + 215.0% da Proficiência Elemental) x2",
-              "level": 8
+              "value": "(107.52% do ATQ + 215.04% da Proficiência Elemental) x2",
+              "level": 8,
+              "components": [
+                {
+                  "scalings": 1.0752,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.1504,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "(114.2% do ATQ + 228.5% da Proficiência Elemental) x2",
-              "level": 9
+              "value": "(114.24% do ATQ + 228.48% da Proficiência Elemental) x2",
+              "level": 9,
+              "components": [
+                {
+                  "scalings": 1.1424,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.2848,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "(121.0% do ATQ + 241.9% da Proficiência Elemental) x2",
-              "level": 10
+              "value": "(120.96% do ATQ + 241.92% da Proficiência Elemental) x2",
+              "level": 10,
+              "components": [
+                {
+                  "scalings": 1.2096,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.4192,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "(127.7% do ATQ + 255.4% da Proficiência Elemental) x2",
-              "level": 11
+              "value": "(127.68% do ATQ + 255.36% da Proficiência Elemental) x2",
+              "level": 11,
+              "components": [
+                {
+                  "scalings": 1.2768,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.5536,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
               "value": "(134.4% do ATQ + 268.8% da Proficiência Elemental) x2",
-              "level": 12
+              "level": 12,
+              "components": [
+                {
+                  "scalings": 1.344,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.688,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "(142.8% do ATQ + 285.6% da Proficiência Elemental) x2",
+              "level": 13,
+              "components": [
+                {
+                  "scalings": 1.428,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.856,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "(151.2% do ATQ + 302.4% da Proficiência Elemental) x2",
+              "level": 14,
+              "components": [
+                {
+                  "scalings": 1.512,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 3.024,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "(159.6% do ATQ + 319.2% da Proficiência Elemental) x2",
+              "level": 15,
+              "components": [
+                {
+                  "scalings": 1.596,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 3.192,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             }
           ]
         },
         {
-          "name": "Dano de Ataque de 3 Cortinas de Luz",
+          "name": "Dano de Ataque da Cortina de Luz com 3 Espelhos Cortantes",
+          "damageType": "DENDRO",
+          "target": "elemental_skill",
+          "hits": 3,
           "power": [
             {
               "value": "(67.2% do ATQ + 134.4% da Proficiência Elemental) x3",
-              "level": 1
+              "level": 1,
+              "components": [
+                {
+                  "scalings": 0.672,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.344,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "(72.2% do ATQ + 144.5% da Proficiência Elemental) x3",
-              "level": 2
+              "value": "(72.24% do ATQ + 144.48% da Proficiência Elemental) x3",
+              "level": 2,
+              "components": [
+                {
+                  "scalings": 0.7224,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.4448,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "77.3% do ATQ + 154.6% da Proficiência Elemental) x3",
-              "level": 3
+              "value": "(77.28% do ATQ + 154.56% da Proficiência Elemental) x3",
+              "level": 3,
+              "components": [
+                {
+                  "scalings": 0.7728,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.5456,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "(84.0% do ATQ + 168.0% da Proficiência Elemental) x3",
-              "level": 4
+              "value": "(84% do ATQ + 168% da Proficiência Elemental) x3",
+              "level": 4,
+              "components": [
+                {
+                  "scalings": 0.84,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.68,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "(89.0% do ATQ + 178.1% da Proficiência Elemental) x3",
-              "level": 5
+              "value": "(89.04% do ATQ + 178.08% da Proficiência Elemental) x3",
+              "level": 5,
+              "components": [
+                {
+                  "scalings": 0.8904,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.7808,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "(94.1% do ATQ + 188.2% da Proficiência Elemental) x3",
-              "level": 6
+              "value": "(94.08% do ATQ + 188.16% da Proficiência Elemental) x3",
+              "level": 6,
+              "components": [
+                {
+                  "scalings": 0.9408,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.8816,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
               "value": "(100.8% do ATQ + 201.6% da Proficiência Elemental) x3",
-              "level": 7
+              "level": 7,
+              "components": [
+                {
+                  "scalings": 1.008,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.016,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "(107.5% do ATQ + 215.0% da Proficiência Elemental) x3",
-              "level": 8
+              "value": "(107.52% do ATQ + 215.04% da Proficiência Elemental) x3",
+              "level": 8,
+              "components": [
+                {
+                  "scalings": 1.0752,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.1504,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "(114.2% do ATQ + 228.5% da Proficiência Elemental) x3",
-              "level": 9
+              "value": "(114.24% do ATQ + 228.48% da Proficiência Elemental) x3",
+              "level": 9,
+              "components": [
+                {
+                  "scalings": 1.1424,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.2848,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "(121.0% do ATQ + 241.9% da Proficiência Elemental) x3",
-              "level": 10
+              "value": "(120.96% do ATQ + 241.92% da Proficiência Elemental) x3",
+              "level": 10,
+              "components": [
+                {
+                  "scalings": 1.2096,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.4192,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "(127.7% do ATQ + 255.4% da Proficiência Elemental) x3",
-              "level": 11
+              "value": "(127.68% do ATQ + 255.36% da Proficiência Elemental) x3",
+              "level": 11,
+              "components": [
+                {
+                  "scalings": 1.2768,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.5536,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
               "value": "(134.4% do ATQ + 268.8% da Proficiência Elemental) x3",
-              "level": 12
+              "level": 12,
+              "components": [
+                {
+                  "scalings": 1.344,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.688,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
               "value": "(142.8% do ATQ + 285.6% da Proficiência Elemental) x3",
-              "level": 13
+              "level": 13,
+              "components": [
+                {
+                  "scalings": 1.428,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.856,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
               "value": "(151.2% do ATQ + 302.4% da Proficiência Elemental) x3",
-              "level": 14
+              "level": 14,
+              "components": [
+                {
+                  "scalings": 1.512,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 3.024,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
               "value": "(159.6% do ATQ + 319.2% da Proficiência Elemental) x3",
-              "level": 15
+              "level": 15,
+              "components": [
+                {
+                  "scalings": 1.596,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 3.192,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             }
           ]
         },
         {
           "name": "Intervalo do desaparecimento do Espelho Cortante",
           "power": [
-            { "value": "4s", "level": 1 },
-            { "value": "4s", "level": 2 },
-            { "value": "4s", "level": 3 },
-            { "value": "4s", "level": 4 },
-            { "value": "4s", "level": 5 },
-            { "value": "4s", "level": 6 },
-            { "value": "4s", "level": 7 },
-            { "value": "4s", "level": 8 },
-            { "value": "4s", "level": 9 },
-            { "value": "4s", "level": 10 },
-            { "value": "4s", "level": 11 },
-            { "value": "4s", "level": 12 },
-            { "value": "4s", "level": 13 },
-            { "value": "4s", "level": 14 },
-            { "value": "4s", "level": 15 }
+            {
+              "value": "4s",
+              "level": 1
+            },
+            {
+              "value": "4s",
+              "level": 2
+            },
+            {
+              "value": "4s",
+              "level": 3
+            },
+            {
+              "value": "4s",
+              "level": 4
+            },
+            {
+              "value": "4s",
+              "level": 5
+            },
+            {
+              "value": "4s",
+              "level": 6
+            },
+            {
+              "value": "4s",
+              "level": 7
+            },
+            {
+              "value": "4s",
+              "level": 8
+            },
+            {
+              "value": "4s",
+              "level": 9
+            },
+            {
+              "value": "4s",
+              "level": 10
+            },
+            {
+              "value": "4s",
+              "level": 11
+            },
+            {
+              "value": "4s",
+              "level": 12
+            },
+            {
+              "value": "4s",
+              "level": 13
+            },
+            {
+              "value": "4s",
+              "level": 14
+            },
+            {
+              "value": "4s",
+              "level": 15
+            }
           ]
         },
         {
           "name": "Tempo de Recarga",
           "power": [
-            { "value": "18s", "level": 1 },
-            { "value": "18s", "level": 2 },
-            { "value": "18s", "level": 3 },
-            { "value": "18s", "level": 4 },
-            { "value": "18s", "level": 5 },
-            { "value": "18s", "level": 6 },
-            { "value": "18s", "level": 7 },
-            { "value": "18s", "level": 8 },
-            { "value": "18s", "level": 9 },
-            { "value": "18s", "level": 10 },
-            { "value": "18s", "level": 11 },
-            { "value": "18s", "level": 12 },
-            { "value": "18s", "level": 13 },
-            { "value": "18s", "level": 14 },
-            { "value": "18s", "level": 15 }
+            {
+              "value": "18s",
+              "level": 1
+            },
+            {
+              "value": "18s",
+              "level": 2
+            },
+            {
+              "value": "18s",
+              "level": 3
+            },
+            {
+              "value": "18s",
+              "level": 4
+            },
+            {
+              "value": "18s",
+              "level": 5
+            },
+            {
+              "value": "18s",
+              "level": 6
+            },
+            {
+              "value": "18s",
+              "level": 7
+            },
+            {
+              "value": "18s",
+              "level": 8
+            },
+            {
+              "value": "18s",
+              "level": 9
+            },
+            {
+              "value": "18s",
+              "level": 10
+            },
+            {
+              "value": "18s",
+              "level": 11
+            },
+            {
+              "value": "18s",
+              "level": 12
+            },
+            {
+              "value": "18s",
+              "level": 13
+            },
+            {
+              "value": "18s",
+              "level": 14
+            },
+            {
+              "value": "18s",
+              "level": 15
+            }
           ]
         }
       ],
@@ -484,191 +3342,703 @@
     {
       "name": "Alienação: Restrição da Ilustração",
       "unlock": "Explosão Elemental",
-      "description": "Cria um reino especial, causando várias instâncias de Dano Dendro em AdE.\nSe ao lançar possuir Espelhos Cortantes, consumirá todos eles para aumentar o número de vezes de Dano causado.\nDepois de 2s, se ao lançar a Habilidade tiver consumido 0/1/2/3 Espelho(s) Cortante(s), gerará 3/2/1/0 Espelho(s) Cortante(s) para Alhaitham.\n\n\"Se um estudioso decide buscar a sabedoria como seu objetivo, ele precisará tratar cada palavra que leu como inimiga, pois só assim evitará seus preconceitos.\"",
+      "description": "Cria um reino especial, causando várias instâncias de Dano Dendro em AdE.\nSe ao lançar possuir Espelhos Cortantes, consumirá todos eles para aumentar o número de vezes de Dano causado.\nDepois de 2s, se ao lançar essa Habilidade tiver consumido 0/1/2/3 Espelho(s) Cortante(s), gerará 3/2/1/0 Espelho(s) Cortante(s) para Alhaitham.\n\n\"Se um estudioso decide buscar a sabedoria como seu objetivo, ele precisará tratar cada palavra que leu como inimiga, pois só assim evitará seus preconceitos.\"",
       "upgrades": [
         {
-          "name": "Dano Único",
+          "name": "Dano de uma instância",
+          "damageType": "DENDRO",
+          "target": "elemental_burst",
           "power": [
             {
-              "value": "121.6% do ATQ + 97.3% da Proficiência Elemental",
-              "level": 1
+              "value": "121.6% do ATQ + 97.28% da Proficiência Elemental",
+              "level": 1,
+              "components": [
+                {
+                  "scalings": 1.216,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 0.9728,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "130.7% do ATQ + 104.6% da Proficiência Elemental",
-              "level": 2
+              "value": "130.72% do ATQ + 104.576% da Proficiência Elemental",
+              "level": 2,
+              "components": [
+                {
+                  "scalings": 1.3072,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.04576,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "139.8% do ATQ + 111.9% da Proficiência Elemental",
-              "level": 3
+              "value": "139.84% do ATQ + 111.872% da Proficiência Elemental",
+              "level": 3,
+              "components": [
+                {
+                  "scalings": 1.3984,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.11872,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "152.0% do ATQ + 121.6% da Proficiência Elemental",
-              "level": 4
+              "value": "152% do ATQ + 121.6% da Proficiência Elemental",
+              "level": 4,
+              "components": [
+                {
+                  "scalings": 1.52,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.216,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "161.1% do ATQ + 128.9% da Proficiência Elemental",
-              "level": 5
+              "value": "161.12% do ATQ + 128.896% da Proficiência Elemental",
+              "level": 5,
+              "components": [
+                {
+                  "scalings": 1.6112,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.28896,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "170.2% do ATQ + 136.2% da Proficiência Elemental",
-              "level": 6
+              "value": "170.24% do ATQ + 136.192% da Proficiência Elemental",
+              "level": 6,
+              "components": [
+                {
+                  "scalings": 1.7024,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.36192,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "182.4% do ATQ + 145.9% da Proficiência Elemental",
-              "level": 7
+              "value": "182.4% do ATQ + 145.92% da Proficiência Elemental",
+              "level": 7,
+              "components": [
+                {
+                  "scalings": 1.824,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.4592,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "194.6% do ATQ + 155.7% da Proficiência Elemental",
-              "level": 8
+              "value": "194.56% do ATQ + 155.648% da Proficiência Elemental",
+              "level": 8,
+              "components": [
+                {
+                  "scalings": 1.9456,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.55648,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "206.7% do ATQ + 165.4% da Proficiência Elemental",
-              "level": 9
+              "value": "206.72% do ATQ + 165.376% da Proficiência Elemental",
+              "level": 9,
+              "components": [
+                {
+                  "scalings": 2.0672,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.65376,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "218.9% do ATQ + 175.1% da Proficiência Elemental",
-              "level": 10
+              "value": "218.88% do ATQ + 175.104% da Proficiência Elemental",
+              "level": 10,
+              "components": [
+                {
+                  "scalings": 2.1888,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.75104,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "231.0% do ATQ + 184.8% da Proficiência Elemental",
-              "level": 11
+              "value": "231.04% do ATQ + 184.832% da Proficiência Elemental",
+              "level": 11,
+              "components": [
+                {
+                  "scalings": 2.3104,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.84832,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "243.2% do ATQ + 194.6% da Proficiência Elemental",
-              "level": 12
+              "value": "243.2% do ATQ + 194.56% da Proficiência Elemental",
+              "level": 12,
+              "components": [
+                {
+                  "scalings": 2.432,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.9456,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "258.4% do ATQ + 206.7% da Proficiência Elemental",
-              "level": 13
+              "value": "258.4% do ATQ + 206.72% da Proficiência Elemental",
+              "level": 13,
+              "components": [
+                {
+                  "scalings": 2.584,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.0672,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "273.6% do ATQ + 218.9% da Proficiência Elemental",
-              "level": 14
+              "value": "273.6% do ATQ + 218.88% da Proficiência Elemental",
+              "level": 14,
+              "components": [
+                {
+                  "scalings": 2.736,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.1888,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             },
             {
-              "value": "288.8% do ATQ + 231.0% da Proficiência Elemental",
-              "level": 15
+              "value": "288.8% do ATQ + 231.04% da Proficiência Elemental",
+              "level": 15,
+              "components": [
+                {
+                  "scalings": 2.888,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.3104,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "elemental_mastery"
+                  }
+                }
+              ]
             }
           ]
         },
         {
           "name": "Quantidade de Ataques Básicos",
           "power": [
-            { "value": "4 vez(es)", "level": 1 },
-            { "value": "4 vez(es)", "level": 2 },
-            { "value": "4 vez(es)", "level": 3 },
-            { "value": "4 vez(es)", "level": 4 },
-            { "value": "4 vez(es)", "level": 5 },
-            { "value": "4 vez(es)", "level": 6 },
-            { "value": "4 vez(es)", "level": 7 },
-            { "value": "4 vez(es)", "level": 8 },
-            { "value": "4 vez(es)", "level": 9 },
-            { "value": "4 vez(es)", "level": 10 },
-            { "value": "4 vez(es)", "level": 11 },
-            { "value": "4 vez(es)", "level": 12 },
-            { "value": "4 vez(es)", "level": 13 },
-            { "value": "4 vez(es)", "level": 14 },
-            { "value": "4 vez(es)", "level": 15 }
+            {
+              "value": "4 vez(es)",
+              "level": 1
+            },
+            {
+              "value": "4 vez(es)",
+              "level": 2
+            },
+            {
+              "value": "4 vez(es)",
+              "level": 3
+            },
+            {
+              "value": "4 vez(es)",
+              "level": 4
+            },
+            {
+              "value": "4 vez(es)",
+              "level": 5
+            },
+            {
+              "value": "4 vez(es)",
+              "level": 6
+            },
+            {
+              "value": "4 vez(es)",
+              "level": 7
+            },
+            {
+              "value": "4 vez(es)",
+              "level": 8
+            },
+            {
+              "value": "4 vez(es)",
+              "level": 9
+            },
+            {
+              "value": "4 vez(es)",
+              "level": 10
+            },
+            {
+              "value": "4 vez(es)",
+              "level": 11
+            },
+            {
+              "value": "4 vez(es)",
+              "level": 12
+            },
+            {
+              "value": "4 vez(es)",
+              "level": 13
+            },
+            {
+              "value": "4 vez(es)",
+              "level": 14
+            },
+            {
+              "value": "4 vez(es)",
+              "level": 15
+            }
           ]
         },
         {
-          "name": "Ataques de 1 Cortina",
+          "name": "Ataques com 1 Espelho Cortante",
           "power": [
-            { "value": "6", "level": 1 },
-            { "value": "6", "level": 2 },
-            { "value": "6", "level": 3 },
-            { "value": "6", "level": 4 },
-            { "value": "6", "level": 5 },
-            { "value": "6", "level": 6 },
-            { "value": "6", "level": 7 },
-            { "value": "6", "level": 8 },
-            { "value": "6", "level": 9 },
-            { "value": "6", "level": 10 },
-            { "value": "6", "level": 11 },
-            { "value": "6", "level": 12 },
-            { "value": "6", "level": 13 },
-            { "value": "6", "level": 14 },
-            { "value": "6", "level": 15 }
+            {
+              "value": "6",
+              "level": 1
+            },
+            {
+              "value": "6",
+              "level": 2
+            },
+            {
+              "value": "6",
+              "level": 3
+            },
+            {
+              "value": "6",
+              "level": 4
+            },
+            {
+              "value": "6",
+              "level": 5
+            },
+            {
+              "value": "6",
+              "level": 6
+            },
+            {
+              "value": "6",
+              "level": 7
+            },
+            {
+              "value": "6",
+              "level": 8
+            },
+            {
+              "value": "6",
+              "level": 9
+            },
+            {
+              "value": "6",
+              "level": 10
+            },
+            {
+              "value": "6",
+              "level": 11
+            },
+            {
+              "value": "6",
+              "level": 12
+            },
+            {
+              "value": "6",
+              "level": 13
+            },
+            {
+              "value": "6",
+              "level": 14
+            },
+            {
+              "value": "6",
+              "level": 15
+            }
           ]
         },
         {
-          "name": "Ataques de 2 Cortinas",
+          "name": "Ataques com 2 Espelhos Cortantes",
           "power": [
-            { "value": "8", "level": 1 },
-            { "value": "8", "level": 2 },
-            { "value": "8", "level": 3 },
-            { "value": "8", "level": 4 },
-            { "value": "8", "level": 5 },
-            { "value": "8", "level": 6 },
-            { "value": "8", "level": 7 },
-            { "value": "8", "level": 8 },
-            { "value": "8", "level": 9 },
-            { "value": "8", "level": 10 },
-            { "value": "8", "level": 11 },
-            { "value": "8", "level": 12 },
-            { "value": "8", "level": 13 },
-            { "value": "8", "level": 14 },
-            { "value": "8", "level": 15 }
+            {
+              "value": "8",
+              "level": 1
+            },
+            {
+              "value": "8",
+              "level": 2
+            },
+            {
+              "value": "8",
+              "level": 3
+            },
+            {
+              "value": "8",
+              "level": 4
+            },
+            {
+              "value": "8",
+              "level": 5
+            },
+            {
+              "value": "8",
+              "level": 6
+            },
+            {
+              "value": "8",
+              "level": 7
+            },
+            {
+              "value": "8",
+              "level": 8
+            },
+            {
+              "value": "8",
+              "level": 9
+            },
+            {
+              "value": "8",
+              "level": 10
+            },
+            {
+              "value": "8",
+              "level": 11
+            },
+            {
+              "value": "8",
+              "level": 12
+            },
+            {
+              "value": "8",
+              "level": 13
+            },
+            {
+              "value": "8",
+              "level": 14
+            },
+            {
+              "value": "8",
+              "level": 15
+            }
           ]
         },
         {
-          "name": "Ataque de 3 Cortinas",
+          "name": "Ataque com 3 Espelhos Cortantes",
           "power": [
-            { "value": "10", "level": 1 },
-            { "value": "10", "level": 2 },
-            { "value": "10", "level": 3 },
-            { "value": "10", "level": 4 },
-            { "value": "10", "level": 5 },
-            { "value": "10", "level": 6 },
-            { "value": "10", "level": 7 },
-            { "value": "10", "level": 8 },
-            { "value": "10", "level": 9 },
-            { "value": "10", "level": 10 },
-            { "value": "10", "level": 11 },
-            { "value": "10", "level": 12 },
-            { "value": "10", "level": 13 },
-            { "value": "10", "level": 14 },
-            { "value": "10", "level": 15 }
+            {
+              "value": "10",
+              "level": 1
+            },
+            {
+              "value": "10",
+              "level": 2
+            },
+            {
+              "value": "10",
+              "level": 3
+            },
+            {
+              "value": "10",
+              "level": 4
+            },
+            {
+              "value": "10",
+              "level": 5
+            },
+            {
+              "value": "10",
+              "level": 6
+            },
+            {
+              "value": "10",
+              "level": 7
+            },
+            {
+              "value": "10",
+              "level": 8
+            },
+            {
+              "value": "10",
+              "level": 9
+            },
+            {
+              "value": "10",
+              "level": 10
+            },
+            {
+              "value": "10",
+              "level": 11
+            },
+            {
+              "value": "10",
+              "level": 12
+            },
+            {
+              "value": "10",
+              "level": 13
+            },
+            {
+              "value": "10",
+              "level": 14
+            },
+            {
+              "value": "10",
+              "level": 15
+            }
           ]
         },
         {
           "name": "Tempo de Recarga",
           "power": [
-            { "value": "18s", "level": 1 },
-            { "value": "18s", "level": 2 },
-            { "value": "18s", "level": 3 },
-            { "value": "18s", "level": 4 },
-            { "value": "18s", "level": 5 },
-            { "value": "18s", "level": 6 },
-            { "value": "18s", "level": 7 },
-            { "value": "18s", "level": 8 },
-            { "value": "18s", "level": 9 },
-            { "value": "18s", "level": 10 },
-            { "value": "18s", "level": 11 },
-            { "value": "18s", "level": 12 },
-            { "value": "18s", "level": 13 },
-            { "value": "18s", "level": 14 },
-            { "value": "18s", "level": 15 }
+            {
+              "value": "18s",
+              "level": 1
+            },
+            {
+              "value": "18s",
+              "level": 2
+            },
+            {
+              "value": "18s",
+              "level": 3
+            },
+            {
+              "value": "18s",
+              "level": 4
+            },
+            {
+              "value": "18s",
+              "level": 5
+            },
+            {
+              "value": "18s",
+              "level": 6
+            },
+            {
+              "value": "18s",
+              "level": 7
+            },
+            {
+              "value": "18s",
+              "level": 8
+            },
+            {
+              "value": "18s",
+              "level": 9
+            },
+            {
+              "value": "18s",
+              "level": 10
+            },
+            {
+              "value": "18s",
+              "level": 11
+            },
+            {
+              "value": "18s",
+              "level": 12
+            },
+            {
+              "value": "18s",
+              "level": 13
+            },
+            {
+              "value": "18s",
+              "level": 14
+            },
+            {
+              "value": "18s",
+              "level": 15
+            }
           ]
         },
         {
           "name": "Energia Elemental",
           "power": [
-            { "value": "70", "level": 1 },
-            { "value": "70", "level": 2 },
-            { "value": "70", "level": 3 },
-            { "value": "70", "level": 4 },
-            { "value": "70", "level": 5 },
-            { "value": "70", "level": 6 },
-            { "value": "70", "level": 7 },
-            { "value": "70", "level": 8 },
-            { "value": "70", "level": 9 },
-            { "value": "70", "level": 10 },
-            { "value": "70", "level": 11 },
-            { "value": "70", "level": 12 },
-            { "value": "70", "level": 13 },
-            { "value": "70", "level": 14 },
-            { "value": "70", "level": 15 }
+            {
+              "value": "70",
+              "level": 1
+            },
+            {
+              "value": "70",
+              "level": 2
+            },
+            {
+              "value": "70",
+              "level": 3
+            },
+            {
+              "value": "70",
+              "level": 4
+            },
+            {
+              "value": "70",
+              "level": 5
+            },
+            {
+              "value": "70",
+              "level": 6
+            },
+            {
+              "value": "70",
+              "level": 7
+            },
+            {
+              "value": "70",
+              "level": 8
+            },
+            {
+              "value": "70",
+              "level": 9
+            },
+            {
+              "value": "70",
+              "level": 10
+            },
+            {
+              "value": "70",
+              "level": 11
+            },
+            {
+              "value": "70",
+              "level": 12
+            },
+            {
+              "value": "70",
+              "level": 13
+            },
+            {
+              "value": "70",
+              "level": 14
+            },
+            {
+              "value": "70",
+              "level": 15
+            }
           ]
         }
       ],
@@ -680,101 +4050,259 @@
       "name": "Quatro Princípios de Retificação",
       "unlock": "Desbloqueado na Ascenção 1",
       "description": "Quando os Ataques Carregados ou Imersivos de Alhaitham atingem um inimigo, gerarão um Espelho Cortante. Esse efeito pode ser desencadeado uma vez a cada 12s.",
-      "level": 1
+      "level": 1,
+      "modifiers": []
     },
     {
       "name": "Revelação da Floresta dos Enigmas",
       "unlock": "Desbloqueado na Ascenção 4",
-      "description": "Cada ponto de Proficiência Elemental de Alhaitham aumentará o Dano causado por Cortina de Luz e Alienação: Restrição da Ilustração em 0.1%.\nÉ possível aumentar o Dano da Cortina da Luz e de Alienação: Restrição da Ilustração em até 100% dessa forma.",
-      "level": 4
+      "description": "Cada ponto de Proficiência Elemental de Alhaitham aumentará o Dano causado por Cortina de Luz e Alienação: Restrição da Ilustração em 0.1%.\nÉ possível aumentar o Dano da Cortina de Luz e de Alienação: Restrição da Ilustração em até 100% dessa forma.",
+      "level": 4,
+      "modifiers": [
+        {
+          "label": "Dano apenas da Cortina de Luz por ponto de Proficiência Elemental de Alhaitham",
+          "type": "dmg_percent",
+          "values": [0.001],
+          "bonus": true,
+          "target": "elemental_skill",
+          "conditional": {
+            "origin": "character",
+            "attribute": "elemental_mastery"
+          },
+          "maxValues": [1]
+        },
+        {
+          "label": "Dano de Alienação: Restrição da Ilustração por ponto de Proficiência Elemental de Alhaitham",
+          "type": "dmg_percent",
+          "values": [0.001],
+          "bonus": true,
+          "target": "elemental_burst",
+          "conditional": {
+            "origin": "character",
+            "attribute": "elemental_mastery"
+          },
+          "maxValues": [1]
+        }
+      ]
     },
     {
       "name": "Lei da Redução Superdeterminada",
       "unlock": "Desbloqueado automaticamente",
-      "description": "Quando Alhaitham fabrica Materiais de Ascensão de Armas, ele tem 10% de chance de receber o dobro do produto."
+      "description": "Quando Alhaitham fabrica Materiais de Ascensão de Armas, ele tem 10% de chance de receber o dobro do produto.",
+      "modifiers": []
     }
   ],
   "constellations": [
     {
       "name": "Observação Direta",
       "unlock": "Constelação Lv. 1",
-      "description": "Quando o ataque da Cortina de Luz atinge um inimigo, reduzirá a Recarga de Entendimento Mútuo: Representação do Conhecimento em 1s. Esse efeito pode ocorrer uma vez a cada 1s.",
-      "level": 1
+      "description": "Quando o ataque da Cortina de Luz atinge um inimigo, reduzirá a Recarga de Entendimento Mútuo: Representação do Conhecimento em 1.2s. Esse efeito pode ocorrer uma vez a cada 1s.",
+      "level": 1,
+      "modifiers": []
     },
     {
       "name": "Debate",
       "unlock": "Constelação Lv. 2",
       "description": "Quando Alhaitham gera um Espelho Cortante, aumenta sua Proficiência Elemental em 50 para cada Espelho Cortante gerado por 8s. Esse efeito pode ser acumulado até 4 vezes, e a duração de cada acúmulo é contada separadamente. Esse efeito ainda pode ser desencadeado quando a quantidade de Espelhos Cortantes alcança o máximo.",
-      "level": 2
+      "level": 2,
+      "modifiers": [
+        {
+          "label": "Proficiência Elemental de Alhaitham por acúmulo obtido ao gerar um Espelho Cortante",
+          "type": "elemental_mastery",
+          "values": [50],
+          "bonus": true,
+          "accumulations": 4
+        }
+      ]
     },
     {
       "name": "Anotações Escondidas",
       "unlock": "Constelação Lv. 3",
-      "description": "Aumenta o nível de Entendimento Mútuo: Representação do Conhecimento em 3. O nível máximo de elevação é 15.",
-      "level": 3
+      "description": "Aumenta o nível de Entendimento Mútuo: Representação do Conhecimento em 3.\nO nível máximo de elevação é 15.",
+      "level": 3,
+      "modifiers": []
     },
     {
       "name": "Aplicação da Justiça",
       "unlock": "Constelação Lv. 4",
-      "description": "Ao lançar Alienação: Restrição da Ilustração, gerará os seguintes efeitos de acordo com o número de Espelhos Cortantes consumidos e gerados:\n- Para cada Espelho Cortante consumido, aumentará a Proficiência Elemental dos outros personagens próximos da equipe em 30 por 15s.\n- Para cada Espelho Cortante gerado, aumenta o Bônus de Dano Dendro de Alhaitham em 10% por 15s.\n\nLançar Alienação: Restrição da Iluminação novamente dentro da duração deste efeito eliminará o efeito original.",
-      "level": 4
+      "description": "Ao lançar Alienação: Restrição da Ilustração, gerará os seguintes efeitos de acordo com o número de Espelhos Cortantes consumidos e gerados:\n· Para cada Espelho Cortante consumido, aumentará a Proficiência Elemental dos outros personagens próximos da equipe em 30 por 15s;\n· Para cada Espelho Cortante gerado, aumenta o Bônus de Dano Dendro de Alhaitham em 10% por 15s.\n\nLançar Alienação: Restrição da Ilustração novamente dentro da duração deste efeito eliminará o efeito original.",
+      "level": 4,
+      "modifiers": [
+        {
+          "label": "Proficiência Elemental dos outros membros próximos da equipe por Espelho Cortante consumido pelo Supremo",
+          "type": "elemental_mastery",
+          "values": [30],
+          "bonus": true,
+          "accumulations": 3
+        },
+        {
+          "label": "Bônus de Dano Dendro de Alhaitham por Espelho Cortante gerado pelo Supremo",
+          "type": "elemental_dmg_percent",
+          "values": [0.1],
+          "bonus": true,
+          "element": "DENDRO",
+          "accumulations": 3
+        }
+      ]
     },
     {
       "name": "O Grau da Sabedoria",
       "unlock": "Constelação Lv. 5",
-      "description": "Aumenta o nível da Habilidade Alienação: Restrição da Ilustração em 3. O nível máximo é 15.",
-      "level": 5
+      "description": "Aumenta o nível da Habilidade Alienação: Restrição da Ilustração em 3.\nO nível máximo é 15.",
+      "level": 5,
+      "modifiers": []
     },
     {
       "name": "Raciocínio Correto",
       "unlock": "Constelação Lv. 6",
-      "description": "Se quando Alhaitham gerar um Espelho Cortante, o número de Espelhos Cortantes já houver alcançado o máximo, aumentará sua Taxa CRIT em 10% e seu Dano CRIT em 70% por 6s.\nSe esse efeito for desencadeado várias vezes na sua duração, a duração restante será aumentada em 6s.",
-      "level": 6
+      "description": "Alhaitham obtém os seguintes efeitos:\n· Após 2s de lançar Alienação: Restrição da Ilustração, ignora o número de Espelhos Cortantes consumidos e cria 3 Espelhos Cortantes;\n· Quando Alhaitham gera um Espelho Cortante, se o número de Espelhos Cortantes já houver alcançado o máximo, aumentará sua Taxa CRIT em 10% e seu Dano CRIT em 70% por 6s.\nSe esse efeito for desencadeado novamente na sua duração, a duração restante será aumentada em 6s.",
+      "level": 6,
+      "modifiers": [
+        {
+          "label": "Taxa CRIT de Alhaitham ao gerar Espelho Cortante quando a quantidade já está no máximo",
+          "type": "crit_rate",
+          "values": [0.1],
+          "bonus": true
+        },
+        {
+          "label": "Dano CRIT de Alhaitham ao gerar Espelho Cortante quando a quantidade já está no máximo",
+          "type": "crit_dmg",
+          "values": [0.7],
+          "bonus": true
+        }
+      ]
     }
   ],
   "vision_key": "DENDRO",
   "weapon_type": "SWORD",
   "ascension_materials": {
     "level_20": [
-      { "name": "Mora", "value": 20000 },
-      { "name": "Lasca de Esmeralda Nagadus", "value": 1 },
-      { "name": "Gordura de Pupa de Areia", "value": 3 },
-      { "name": "Cetim Vermelho Desbotado", "value": 3 }
+      {
+        "name": "Mora",
+        "value": 20000
+      },
+      {
+        "name": "Lasca de Esmeralda Nagadus",
+        "value": 1
+      },
+      {
+        "name": "Gordura de Pupa de Areia",
+        "value": 3
+      },
+      {
+        "name": "Cetim Vermelho Desbotado",
+        "value": 3
+      }
     ],
     "level_40": [
-      { "name": "Mora", "value": 40000 },
-      { "name": "Fragmento de Esmeralda Nagadus", "value": 3 },
-      { "name": "Falso Estame", "value": 2 },
-      { "name": "Gordura de Pupa de Areia", "value": 10 },
-      { "name": "Cetim Vermelho Desbotado", "value": 15 }
+      {
+        "name": "Mora",
+        "value": 40000
+      },
+      {
+        "name": "Fragmento de Esmeralda Nagadus",
+        "value": 3
+      },
+      {
+        "name": "Falso Estame",
+        "value": 2
+      },
+      {
+        "name": "Gordura de Pupa de Areia",
+        "value": 10
+      },
+      {
+        "name": "Cetim Vermelho Desbotado",
+        "value": 15
+      }
     ],
     "level_50": [
-      { "name": "Mora", "value": 60000 },
-      { "name": "Fragmento de Esmeralda Nagadus", "value": 6 },
-      { "name": "Falso Estame", "value": 4 },
-      { "name": "Gordura de Pupa de Areia", "value": 20 },
-      { "name": "Seda Vermelha Bordada", "value": 12 }
+      {
+        "name": "Mora",
+        "value": 60000
+      },
+      {
+        "name": "Fragmento de Esmeralda Nagadus",
+        "value": 6
+      },
+      {
+        "name": "Falso Estame",
+        "value": 4
+      },
+      {
+        "name": "Gordura de Pupa de Areia",
+        "value": 20
+      },
+      {
+        "name": "Seda Vermelha Bordada",
+        "value": 12
+      }
     ],
     "level_60": [
-      { "name": "Mora", "value": 80000 },
-      { "name": "Pedaço de Esmeralda Nagadus", "value": 3 },
-      { "name": "Falso Estame", "value": 8 },
-      { "name": "Gordura de Pupa de Areia", "value": 30 },
-      { "name": "Seda Vermelha Bordada", "value": 18 }
+      {
+        "name": "Mora",
+        "value": 80000
+      },
+      {
+        "name": "Pedaço de Esmeralda Nagadus",
+        "value": 3
+      },
+      {
+        "name": "Falso Estame",
+        "value": 8
+      },
+      {
+        "name": "Gordura de Pupa de Areia",
+        "value": 30
+      },
+      {
+        "name": "Seda Vermelha Bordada",
+        "value": 18
+      }
     ],
     "level_70": [
-      { "name": "Mora", "value": 100000 },
-      { "name": "Pedaço de Esmeralda Nagadus", "value": 6 },
-      { "name": "Falso Estame", "value": 12 },
-      { "name": "Gordura de Pupa de Areia", "value": 45 },
-      { "name": "Cetim Vermelho", "value": 12 }
+      {
+        "name": "Mora",
+        "value": 100000
+      },
+      {
+        "name": "Pedaço de Esmeralda Nagadus",
+        "value": 6
+      },
+      {
+        "name": "Falso Estame",
+        "value": 12
+      },
+      {
+        "name": "Gordura de Pupa de Areia",
+        "value": 45
+      },
+      {
+        "name": "Cetim Vermelho",
+        "value": 12
+      }
     ],
     "level_80": [
-      { "name": "Mora", "value": 120000 },
-      { "name": "Gema de Esmeralda Nagadus", "value": 6 },
-      { "name": "Falso Estame", "value": 20 },
-      { "name": "Gordura de Pupa de Areia", "value": 60 },
-      { "name": "Cetim Vermelho", "value": 24 }
+      {
+        "name": "Mora",
+        "value": 120000
+      },
+      {
+        "name": "Gema de Esmeralda Nagadus",
+        "value": 6
+      },
+      {
+        "name": "Falso Estame",
+        "value": 20
+      },
+      {
+        "name": "Gordura de Pupa de Areia",
+        "value": 60
+      },
+      {
+        "name": "Cetim Vermelho",
+        "value": 24
+      }
     ]
   }
 }
