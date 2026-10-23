@@ -14,6 +14,7 @@
 - Do not claim validation that was not run. State omitted checks and the reason.
 - Ask only for information that cannot be determined from repository sources.
 - The owner authorized source-validated EN/PT display corrections without separate per-text approval and bounded sequential alphabetical artifact rounds of at most five entities on 2026-10-14. The subsequent clarification restores commit-before-advance and grants standing per-entity commit/advance authorization within each requested round, without approval prompts. Work one entity at a time; apply `entity-research.md` to source differences and stop only when an unresolved conflict or schema/semantic decision needs owner evaluation. Report round scope/results/commits together; no push is authorized.
+- Character rounds follow the standing bounded commit/advance authorization in `git-workflow.md`. Do not request per-character approval for supported mappings or validated text corrections; ask only for unresolved factual conflicts or deliberate schema/semantic decisions, retaining the active round position for resumption.
 
 ## Spec Maintenance
 
