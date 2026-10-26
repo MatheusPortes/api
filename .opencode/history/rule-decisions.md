@@ -1,5 +1,10 @@
 # Rule Decisions and Reusable Evidence
 
+## Enemy ATK reduction and implicit source talent levels (2026-10-26)
+
+- Owner approved the remaining Aloy proposal while explicitly rejecting `talentLevels`. Rules `enemy-attack-reduction` and `character-source-level-modifier-values` add positive enemy ATK reduction and implicit contiguous level-1-based `values` indexing for varying modifiers on the originating skill. No separate indexing field, backfill or wearer-penalty substitution.
+- Read-only compatibility: reviewed `characters/albedo/{en,pt}.json` and `characters/alhaitham/{en,pt}.json` have only constant one-value passive/constellation modifiers, no varying Skill modifiers; compatible/unchanged. Their talent `power[].level` and independent skill contracts remain unchanged. Weapon/artifact refinement and resistance results are not applicable and retain their existing contracts. Aloy EN/PT are the selected missing mapping, correction-required only within this entity. No unrelated entity edits.
+
 Read a section only for the matching active rule. Live records remain authoritative for compatibility.
 
 ## Owner-selected resolutions
