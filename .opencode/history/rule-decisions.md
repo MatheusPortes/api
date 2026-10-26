@@ -1,5 +1,10 @@
 # Rule Decisions and Reusable Evidence
 
+## Attribute-referenced summon HP (2026-10-26)
+
+- Owner explicitly selected `hp_percent` with `conditional` for Baron Bunny's HP, rejecting the need for a separate summon result type. Rule `attribute-referenced-summon-hp` supplies the summon HP result through Amber's originating Skill modifier, no `bonus`/attack target, with recipient/reference in localized labels; no damage components on inherited-HP display rows.
+- Read-only EN/PT scan across character/weapon/artifact records found no existing HP-referenced `hp_percent` modifiers. `weapons/ash-graven-drinking-horn/{en,pt}.json` and `weapons/sequence-of-solitude/{en,pt}.json` have the same type/reference only inside `calculation.skills[].scalings[]`: compatible/unchanged HP-based independent damage, not summon HP. Reviewed Albedo/Alhaitham/Aloy source-local modifiers are compatible/unchanged; no summon HP result exists there. Amber's selected missing HP modifier is correction-required; unrelated display-only summon tables remain unreviewed, not migrated.
+
 ## Enemy ATK reduction and implicit source talent levels (2026-10-26)
 
 - Owner approved the remaining Aloy proposal while explicitly rejecting `talentLevels`. Rules `enemy-attack-reduction` and `character-source-level-modifier-values` add positive enemy ATK reduction and implicit contiguous level-1-based `values` indexing for varying modifiers on the originating skill. No separate indexing field, backfill or wearer-penalty substitution.
