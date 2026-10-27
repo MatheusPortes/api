@@ -1,5 +1,10 @@
 # Rule Decisions and Reusable Evidence
 
+## Signed wearer resistance penalties (2026-10-27)
+
+- Owner approved the displayed Itto example: seven elemental `elemental_res_percent` entries and separate new `physical_res_percent`, negative `values: [-.2]`, `bonus: true`, no attack target/conditional. Rule `signed-wearer-resistance-penalty` is additive wearer RES loss, not enemy reduction or a fixed incoming-damage multiplier.
+- Read-only compatibility: `artifacts/defender-s-will/{en,pt}.json`, effects[1] seven positive wearer RES grants, compatible/unchanged. `artifacts/deepwood-memories/{en,pt}.json`, effects[1] enemy Dendro reduction, and `artifacts/viridescent-venerer/{en,pt}.json`, effects[1] enemy elemental reductions, compatible/unchanged positive enemy results without bonus. `weapons/fruit-of-fulfillment/{en,pt}.json` signed wearer ATK and `weapons/rust/{en,pt}.json` signed outgoing Charged DMG are not applicable to RES semantics and remain unchanged. Reviewed Albedo/Alhaitham/Aloy/Amber talent fields have no wearer RES penalty to convert; no backfill. Itto EN/PT are the selected missing mapping only.
+
 ## Attribute-referenced summon HP (2026-10-26)
 
 - Owner explicitly selected `hp_percent` with `conditional` for Baron Bunny's HP, rejecting the need for a separate summon result type. Rule `attribute-referenced-summon-hp` supplies the summon HP result through Amber's originating Skill modifier, no `bonus`/attack target, with recipient/reference in localized labels; no damage components on inherited-HP display rows.
