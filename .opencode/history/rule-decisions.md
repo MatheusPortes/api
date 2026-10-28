@@ -1,5 +1,11 @@
 # Rule Decisions and Reusable Evidence
 
+## Reference products, one current Bond attribute and grouped healing (2026-10-28)
+
+- Owner approved the shown reference-array product and `type: healing` talent components, but explicitly required only `bond_of_life`, not a second `bond_of_life_ratio`. The implementation uses one consistent normalized ratio (130% =1.3); multiply by the existing character HP reference when HP units are needed. Rules `current-bond-of-life-reference`, `multiplicative-attribute-references` and `character-grouped-healing-components` preserve raw coefficients, sum components into one result and leave state/absorption to consumers. The rejected two-attribute proposal in earlier character research is superseded, not current schema.
+- Read-only compatibility: reviewed `characters/{albedo,alhaitham,aloy,amber,arataki-itto}/{en,pt}.json` have only existing single-object references (including native damage components, source-local modifiers, summon HP and independent procs) and no grouped healing rows; compatible/unchanged, no reference-array backfill. `weapons/finale-of-the-deep/{en,pt}.json` cleared-Bond flat ATK stays HP-unit `cleared_bond_of_life`, not current ratio. `weapons/engulfing-lightning/{en,pt}.json` retains its single ER reference/offset/result cap; `weapons/ash-graven-drinking-horn/{en,pt}.json` retains independent HP damage. `artifacts/adventurer/{en,pt}.json` stays native single-reference healing, not talent-table components. Arlecchino EN/PT are the selected missing multiplicative/combined-healing mapping only; no other data paths change.
+- Positive Physical RES reuses the already approved additive `physical_res_percent` type on independently validated Arlecchino A4/C2, paired with elemental grants. Itto EN/PT Burst negative Physical RES is compatible/unchanged; Defender's Will's existing positive elemental grants are compatible/unchanged. No enemy-reduction or fixed incoming-damage reinterpretation.
+
 ## Signed wearer resistance penalties (2026-10-27)
 
 - Owner approved the displayed Itto example: seven elemental `elemental_res_percent` entries and separate new `physical_res_percent`, negative `values: [-.2]`, `bonus: true`, no attack target/conditional. Rule `signed-wearer-resistance-penalty` is additive wearer RES loss, not enemy reduction or a fixed incoming-damage multiplier.

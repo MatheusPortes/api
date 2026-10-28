@@ -25,9 +25,9 @@ States: `not-started`, `in-progress`, `partial`, `blocked`, `complete`, `reviewe
 - A stat/result modifier uses the approved source effect's `modifiers`; an independent proc uses its approved `skills` container. Artifact procs nest at their originating `effects[].skills`; reviewed character source items follow the character rules below, and weapon containers retain their approved native layout.
 - `bonus: true` marks a supplied additive stat/bonus contribution; omit `bonus: false`. Signed ATK/DMG/RES penalties follow `signed-additive-atk-penalty`, `signed-additive-dmg-penalty` and `signed-wearer-resistance-penalty` below. An independent hit normally omits it.
 - Supported attack targets are `normal_attack`, `charged_attack`, `plunging_attack`, `elemental_skill`, `elemental_burst`. Generic bonuses omit target. `elemental_dmg_percent` requires `element`; all-element grants expand to GEO/ANEMO/CRYO/DENDRO/ELECTRO/HYDRO/PYRO, never Physical.
-- `conditional` is `{ origin, attribute, offset? }`; origins: `character`, `weapon`, `artifact`, `time`; attributes: `hp`, `atk`, `def`, `elemental_mastery`, `energy_recharge`, `energy_cost`, `cleared_bond_of_life`. Optional `offset` follows `attribute-reference-baseline-offset` below. `time.energy_cost` is exclusively combined party maximum Burst Energy Cost; `character.cleared_bond_of_life` follows `cleared-bond-of-life-reference`. Coefficients stay in `values`.
+- `conditional` is one `{ origin, attribute, offset? }` reference or a nonempty array of references multiplied under `multiplicative-attribute-references`. Origins: `character`, `weapon`, `artifact`, `time`; attributes: `hp`, `atk`, `def`, `elemental_mastery`, `energy_recharge`, `energy_cost`, `cleared_bond_of_life`, `bond_of_life`. Optional `offset` follows `attribute-reference-baseline-offset` below. `time.energy_cost` is exclusively combined party maximum Burst Energy Cost; `character.cleared_bond_of_life` is cleared HP units, while `character.bond_of_life` is the current normalized ratio under `current-bond-of-life-reference`. Coefficients stay in `values` or talent component `scalings`.
 - Activation, timing, resource use, chance, stacks currently active, party composition, target state, infusions and formula execution are consumer state. Preserve them in localized text.
-- `hits` is a positive count of identical subhits; store one-hit value. `add` is a separate fixed value in talent `power`; never use either for stacks. Do not split multi-attribute one-result mechanics: reviewed character talent tables group them under `character-talent-attribute-components` below; other grouped schemas remain deferred.
+- `hits` is a positive count of identical subhits; store one-hit value. `add` is a separate fixed value in talent `power`; never use either for stacks. Do not split multi-attribute one-result mechanics: reviewed character talent damage and healing group them under `character-talent-attribute-components` and `character-grouped-healing-components` below; other grouped schemas remain deferred.
 
 ## Approved Contracts
 
@@ -88,6 +88,12 @@ Rule `recipient-max-hp-healing-context`: for individually reviewed recipient-Max
 Rule `attribute-reference-baseline-offset`: an individually source-validated above-baseline reference may supply optional finite nonnegative `conditional.offset`, in the referenced attribute's native units. The consumer uses `max(attributeValue - offset, 0)` before multiplying by `values`; `maxValues` retains its existing result-cap meaning. Omission preserves the original unmodified reference; never infer a baseline globally. Engulfing Lightning uses offset `1` for ER above 100% (ratio units), ATK coefficients [.28,.35,.42,.49,.56] and result caps [.8,.9,1,1.1,1.2]. Emblem of Severed Fate continues using full total ER without an offset. This supplies static inputs, not runtime formulas or automatic migrations.
 
 Rule `cleared-bond-of-life-reference`: an individually source-validated modifier may reference `{ origin: 'character', attribute: 'cleared_bond_of_life' }`, the total Bond of Life cleared for the qualifying removal, in HP units supplied by the consumer. It is not Max HP, current Bond remaining, or arbitrary total healing. Keep raw coefficients in `values` and cap the supplied result with same-rank `maxValues`; removal tracking/qualification, calculation timing and buff duration remain consumer state. Finale of the Deep supplies `flat_atk` [.024,.03,.036,.042,.048], result caps [150,187.5,225,262.5,300], separately from its initial ATK-percent grant. Do not assume the cleared value is 25% of Max HP, add offset/stack metadata, alter prior Bond-state grants or implement a resource engine.
+
+Rule `current-bond-of-life-reference`: the owner approved only the new name `bond_of_life` on 2026-10-28, not a second `bond_of_life_ratio` attribute. Use `character.bond_of_life` consistently as the current Bond divided by the character's Max HP, in ratio units (130% is 1.3). This single normalized representation supports Arlecchino's ATK × Bond contribution directly; a product of `character.hp` and `character.bond_of_life` supplies the current Bond amount in HP units for healing. Never reinterpret the same attribute as HP units in another path, alias it to `cleared_bond_of_life`, or add `bond_of_life_ratio`. The consumer supplies the source-appropriate current state before the qualifying hit/heal; generation, consumption, thresholds and absorption remain consumer state, not additional stat grants or a runtime engine.
+
+Rule `multiplicative-attribute-references`: owner approval on 2026-10-28 extends `conditional` to a single existing reference object or a nonempty flat array of reference objects. Array entries are multiplicative factors, not alternatives or additive components. Evaluate each factor with its own approved offset, then multiply the factors and the raw scalar coefficient; existing result caps still apply after the contribution. Arlecchino's Masque/C1/C6 use ATK × current normalized Bond as attached damage, retaining separate source coefficients. Components continue summing contributions to one result; each component may itself reference a product. Keep existing single-object references unchanged, reject nested/empty reference arrays, and do not infer undocumented reference products or precompute consumer state. IndependentSkill.scalings[] retains its separate container/values contract and can use the same reference union without conversion to talent components.
+
+Rule `wearer-physical-resistance-bonus`: an individually validated positive wearer Physical RES contribution reuses the approved `physical_res_percent` result with positive ratio `values` and `bonus: true`, without `element`, attack target or reaction. Arlecchino's C2 supplies [.2] for 15s; A4 uses [.0001] per ATK above1000 with `conditional: character.atk`, `offset: 1000` and result `maxValues: [.2]`, matching the separately scoped elemental grants. This is the positive form of the existing additive wearer stat, not enemy resistance reduction, a damage multiplier or a new state engine; Itto's approved negative contribution remains unchanged. No automatic migration.
 
 Rule `attribute-referenced-independent-scaling`: an individually reviewed independent skill's attribute-referenced scaling carries `conditional` beside `type`/`values`. Use the source's reference, not activation state. Ash-Graven retains `hp_percent`, R1–R5 .4–.8, with `character.hp` (Max HP). Do not infer the reference from the type alone or migrate other entities automatically.
 
@@ -175,6 +181,22 @@ type Reaction =
   | 'STELLAR_GLIMMER'
   | 'VAPORIZE'
   | 'MELT';
+type AttributeReference = {
+  origin: 'character' | 'weapon' | 'artifact' | 'time';
+  attribute:
+    | 'hp'
+    | 'atk'
+    | 'def'
+    | 'elemental_mastery'
+    | 'energy_recharge'
+    | 'energy_cost'
+    | 'cleared_bond_of_life'
+    | 'bond_of_life';
+  offset?: number;
+};
+type AttributeConditional =
+  | AttributeReference
+  | [AttributeReference, ...AttributeReference[]];
 type Modifier = {
   label: string;
   type: EffectType;
@@ -185,18 +207,7 @@ type Modifier = {
   reaction?: Reaction[];
   target?: AttackTarget;
   maxValues?: number[];
-  conditional?: {
-    origin: 'character' | 'weapon' | 'artifact' | 'time';
-    attribute:
-      | 'hp'
-      | 'atk'
-      | 'def'
-      | 'elemental_mastery'
-      | 'energy_recharge'
-      | 'energy_cost'
-      | 'cleared_bond_of_life';
-    offset?: number;
-  };
+  conditional?: AttributeConditional;
 };
 type Effect = {
   label: string;
@@ -249,6 +260,8 @@ Rule `attribute-referenced-summon-hp`: for Amber's individually reviewed Baron B
 Rule `character-separated-talent-components`: owner approval on 2026-10-23 represents distinct unequal subhits as separate named `upgrades`, preserving individual raw coefficients at each source level under `character-talent-attribute-components`. Albedo's Charged Attack becomes Hit 1 (.473 at level 1) and Hit 2 (.602), both Charged/Physical/ATK. Mutually exclusive Low/High Plunge results likewise use separate explicitly named upgrades (1.278377 / 1.596762 at level 1), but the consumer selects only one impact variant. Do not pre-sum, use identical-hit `hits` for unequal coefficients, treat the second percentage as fixed `add`, or emit combined-row duplicates. Non-damage resource/duration/cooldown rows keep localized `power[].value`/`level` without fake damage type/components. This does not permit splitting multi-attribute contributions to one result into separate hits.
 
 Rule `character-talent-attribute-components`: owner approval on 2026-10-23 adopts level-local `power[].components` for every reviewed character talent damage row, including single-attribute rows. Each nonempty component carries finite scalar `scalings` in ratio units plus explicit existing attribute `conditional`; preserve every raw source term separately. One component denotes one attribute contribution, not another hit: the consumer sums the qualifying components (and a source-validated fixed `add`, if present) for one hit before applying shared hit mechanics once. Identical composite hits may use upgrade-level `hits` with one-hit coefficients; mutually exclusive variants remain distinct named upgrades. Do not retain a duplicate `power[].scalings`, infer a shared source from matching numbers, or use upgrade-level `type` as a competing scaling-attribute reference; preserve only independently meaningful result types where approved. Plain damage rows need damageType/target plus explicit component references, not an ATK/DEF type tag. Non-damage display-only rows omit components. The owner explicitly extends this alignment to already reviewed characters: Albedo is the sole prior processed character and receives one-component ATK/DEF rows in EN/PT on both maintenance branches, preserving coefficients and unrelated data. Alhaitham uses ATK+EM components on each composite hit. Existing `Modifier.values` and `IndependentSkill.scalings[]` contracts are unchanged; this does not authorize a bulk character migration or reclassify independent skills.
+
+Rule `character-grouped-healing-components`: owner approval on 2026-10-28 extends the existing level-local `power[].components` contract to individually reviewed talent healing with upgrade `type: healing`. Sum the component contributions into one recovery; omit damageType, benefiting attack target, hits and bonus on that row. Arlecchino's Burst keeps raw 1.5 × Max HP × normalized current Bond and 1.5 × ATK as two components, using a reference product only for the first. This is raw healing before Bond absorption, not two independent heals or effective .5-Bond recovery; preserve absorption/restrictions in localized text for consumer handling. Damage components, modifier values, independent skills, fixed recovery and display-only utility rows retain their existing contracts. No unreviewed healing migration or general grouped-result approval.
 
 Rule `character-source-local-independent-skills`: owner approval on 2026-10-23 places an individually validated independent character proc in optional `skills` beside `modifiers` on the originating `skillTalents`, `passiveTalents`, or `constellations` item, not duplicated at the root. Use labeled `IndependentSkill`, explicit attribute references and source-validated `damageType`; optional `target` identifies the proc's benefiting attack classification, not the triggering attack. Albedo's enhanced C2 uses `constellations[1].skills[0]`, Geo, Burst target, DEF-referenced `def_percent` [3] for one Fatal Blossom. The owner separately and explicitly confirmed the 300%-DEF-per-flower denominator after the source-wording limitation was presented; do not claim independent source certification of that unit. Three flowers per qualifying proc and A4 activation remain localized source text/consumer handling, without pre-summed totals or duplicate attached modifiers. Optional target omission preserves existing weapon/artifact independent-skill meaning; no automatic target backfill or container migration.
 
