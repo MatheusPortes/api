@@ -1,5 +1,10 @@
 # Rule Decisions and Reusable Evidence
 
+## Enemy DEF reduction (2026-11-03)
+
+- Owner approved the displayed Ayaka C4 modifier `enemy_def_reduction`, values[.3], without bonus, attack target or conditional. Rule `enemy-defense-reduction` preserves affected-opponent/trigger/duration scope without interpreting the result as wearer DEF, DEF ignore, enemy RES or a damage bonus.
+- Read-only compatibility: `characters/aloy/{en,pt}.json`, Skill enemy ATK reduction, compatible/unchanged separate result; `artifacts/deepwood-memories/{en,pt}.json`, positive enemy Dendro RES reduction, compatible/unchanged separate attribute; `characters/arataki-itto/{en,pt}.json`, C4 positive party DEF bonus and Burst negative wearer Physical RES, compatible/unchanged wearer results. `characters/arlecchino/{en,pt}.json` positive Physical RES paths remain separate, not applicable to enemy DEF. Ayaka EN/PT are the selected missing C4 mapping; no prior record migration or global coverage claim.
+
 ## Reference products, one current Bond attribute and grouped healing (2026-10-28)
 
 - Owner approved the shown reference-array product and `type: healing` talent components, but explicitly required only `bond_of_life`, not a second `bond_of_life_ratio`. The implementation uses one consistent normalized ratio (130% =1.3); multiply by the existing character HP reference when HP units are needed. Rules `current-bond-of-life-reference`, `multiplicative-attribute-references` and `character-grouped-healing-components` preserve raw coefficients, sum components into one result and leave state/absorption to consumers. The rejected two-attribute proposal in earlier character research is superseded, not current schema.
