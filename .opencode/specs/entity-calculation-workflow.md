@@ -228,6 +228,23 @@ type IndependentSkill = {
     conditional?: Modifier['conditional'];
   }>;
 };
+type CharacterConstellationChange =
+  | {
+      skillTalents: string;
+      level: true;
+      add: number;
+      modifiers?: never;
+      accumulations?: never;
+    }
+  | {
+      skillTalents: string;
+      modifiers: string;
+      accumulations: true;
+      add: number;
+      level?: never;
+    };
+// Optional on an individually reviewed constellation:
+// changes?: CharacterConstellationChange[];
 type CharacterTalentUpgrade = {
   name: string;
   type?: EffectType;
@@ -250,7 +267,9 @@ type CharacterTalentUpgrade = {
 
 Entity progression belongs to top-level `calculation`; talent tables use `skillTalents[*].upgrades[*].power[*]`; character stat/result modifiers follow `character-source-local-modifiers` and independent procs follow `character-source-local-independent-skills` below; weapon passive modifiers use top-level `effects`; weapon independent procs remain `calculation.skills`; artifact effects use top-level `effects`. `refinementLevels` maps array positions; reviewed character talent coefficients use scalar `components[].scalings`, never a duplicate scalar at `power[].scalings`. Omit unknown proc damage type.
 
-Rule `character-source-local-modifiers`: owner approval on 2026-10-23 places individually reviewed character stat/result contributions directly in optional `skillTalents[*].modifiers`, `passiveTalents[*].modifiers`, or `constellations[*].modifiers`. Reuse the existing localized `Modifier` contract; do not duplicate the contribution in `calculation.effects`. Native attack coefficients remain in talent `upgrades[*].power[*]` under `character-talent-attribute-components`, with upgrade-level damageType/target as validated, not bonus modifiers. Use Portuguese `upgrades`/level-indexed `power` as the structural reference when harmonizing EN/PT, but independently validate numbers. Preserve source conditions/recipients/duration in localized descriptions and labels; unlock `level` is not a coefficient-array index. Source scopes narrower than the attack category must remain explicit in labels/text and consumer eligibility, never applied globally to that category. Enhanced-kit additions remain explicitly condition-labeled alongside their originating base effects, with both base and conditional enhanced descriptions preserved in `description`; do not invent variant/activation fields or make enhancements unconditional. A validated resultless utility may have `modifiers: []`. Talent-level increases, fixed Energy, crafting chances, timers and activation remain source text/consumer usage; this does not define structured results for them. No automatic migration.
+Rule `character-source-local-modifiers`: owner approval on 2026-10-23 places individually reviewed character stat/result contributions directly in optional `skillTalents[*].modifiers`, `passiveTalents[*].modifiers`, or `constellations[*].modifiers`. Reuse the existing localized `Modifier` contract; do not duplicate the contribution in `calculation.effects`. Native attack coefficients remain in talent `upgrades[*].power[*]` under `character-talent-attribute-components`, with upgrade-level damageType/target as validated, not bonus modifiers. Use Portuguese `upgrades`/level-indexed `power` as the structural reference when harmonizing EN/PT, but independently validate numbers. Preserve source conditions/recipients/duration in localized descriptions and labels; unlock `level` is not a coefficient-array index. Source scopes narrower than the attack category must remain explicit in labels/text and consumer eligibility, never applied globally to that category. Enhanced-kit additions remain explicitly condition-labeled alongside their originating base effects, with both base and conditional enhanced descriptions preserved in `description`; do not invent variant/activation fields or make enhancements unconditional. A validated resultless utility may have `modifiers: []`. Constellation-driven talent-level and modifier stack-cap increments follow `character-constellation-changes`; fixed Energy, crafting chances, timers and activation remain source text/consumer usage, without new structured results. No automatic migration.
+
+Rule `character-constellation-changes`: owner authorization on 2026-11-06 adds optional source-local `constellations[*].changes`, not `talentChanges`. Each entry identifies one exact, uniquely resolving same-locale `skillTalents[*].name`, explicitly selects exactly one changed property with literal `true`, and supplies a positive integer `add`. A talent-level increment uses `{ skillTalents, level: true, add }`, without a modifier reference. A stack-cap increment uses `{ skillTalents, modifiers, accumulations: true, add }`, with `modifiers` exactly matching one unique label in that talent's own modifiers. Omitted selectors, strings such as `level: 'Talents'`, false selectors, multiple selected properties, dangling/ambiguous references and empty arrays are invalid. References are localized with their targets; rename both together. Keep the base talent levels, coefficient arrays and modifier accumulations unchanged; the consumer applies each unlocked constellation change once to compute the effective level/cap, before selecting the existing source-level coefficient. Retain source limits (including maximum talent level15), activation and descriptions; do not pre-shift or duplicate arrays, encode unlock rank as coefficient level, treat charges as modifier accumulations, or add a runtime evaluator. Ayato Namisen retains base cap4, with C2 add1; C3 supplies a separate Skill level add3. This narrowly approves level/accumulations changes, not arbitrary property mutations or replacement of independent additive damage/stat contributions. The owner explicitly requires an individual retrospective review of previously completed Albedo, Alhaitham, Aloy, Amber, Arataki Itto, Arlecchino and Ayaka before resuming Ayato; record compatibility and complete coordinated per-entity follow-up commits for changed EN/PT records. Preserve unavailable Aloy constellations and all other locales; no unreviewed-character migration.
 
 Rule `enemy-attack-reduction`: owner approval on 2026-10-26 adds `enemy_atk_reduction` for an individually validated reduction of an affected opponent's ATK. Store positive reduction ratios in `values`; omit `bonus`, attack `target` and `conditional`. Aloy's Frozen Wilds uses .12 at source levels 1–3, .13 at 4–6, .14 at 7–9 and .15 at 10–15, with hit eligibility and 6s duration in localized text. This is not a signed wearer `atk_percent`, enemy RES reduction, outgoing DMG bonus or an incoming-damage formula. No automatic migration.
 
