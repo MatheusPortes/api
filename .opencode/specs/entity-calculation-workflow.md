@@ -25,9 +25,9 @@ States: `not-started`, `in-progress`, `partial`, `blocked`, `complete`, `reviewe
 - A stat/result modifier uses the approved source effect's `modifiers`; an independent proc uses its approved `skills` container. Artifact procs nest at their originating `effects[].skills`; reviewed character source items follow the character rules below, and weapon containers retain their approved native layout.
 - `bonus: true` marks a supplied additive stat/bonus contribution; omit `bonus: false`. Signed ATK/DMG/RES penalties follow `signed-additive-atk-penalty`, `signed-additive-dmg-penalty` and `signed-wearer-resistance-penalty` below. An independent hit normally omits it.
 - Supported attack targets are `normal_attack`, `charged_attack`, `plunging_attack`, `elemental_skill`, `elemental_burst`. Generic bonuses omit target. `elemental_dmg_percent` requires `element`; all-element grants expand to GEO/ANEMO/CRYO/DENDRO/ELECTRO/HYDRO/PYRO, never Physical.
-- `conditional` is one `{ origin, attribute, offset? }` reference or a nonempty array of references multiplied under `multiplicative-attribute-references`. Origins: `character`, `weapon`, `artifact`, `time`; attributes: `hp`, `atk`, `def`, `elemental_mastery`, `energy_recharge`, `energy_cost`, `cleared_bond_of_life`, `bond_of_life`. Optional `offset` follows `attribute-reference-baseline-offset` below. `time.energy_cost` is exclusively combined party maximum Burst Energy Cost; `character.cleared_bond_of_life` is cleared HP units, while `character.bond_of_life` is the current normalized ratio under `current-bond-of-life-reference`. Coefficients stay in `values` or talent component `scalings`.
+- Attribute `conditional` is one `{ origin, attribute, offset? }` reference or a nonempty array of references multiplied under `multiplicative-attribute-references`. Attribute origins: `character`, `weapon`, `artifact`, `time`; attributes: `hp`, `atk`, `def`, `elemental_mastery`, `energy_recharge`, `energy_cost`, `cleared_bond_of_life`, `bond_of_life`. Optional `offset` follows `attribute-reference-baseline-offset` below. `time.energy_cost` is exclusively combined party maximum Burst Energy Cost; `character.cleared_bond_of_life` is cleared HP units, while `character.bond_of_life` is the current normalized ratio under `current-bond-of-life-reference`. Coefficients stay in `values` or talent component `scalings`. Healing modifiers additionally allow the narrowly defined single talent-result reference in `character-talent-healing-reference`; it is not an attribute-product factor.
 - Activation, timing, resource use, chance, stacks currently active, party composition, target state, infusions and formula execution are consumer state. Preserve them in localized text.
-- `hits` is a positive count of identical subhits; store one-hit value. `add` is a separate fixed value in talent `power`; never use either for stacks. Do not split multi-attribute one-result mechanics: reviewed character talent damage and healing group them under `character-talent-attribute-components` and `character-grouped-healing-components` below; other grouped schemas remain deferred.
+- `hits` is a positive count of identical subhits; store one-hit value. `add` is a separate fixed value in talent `power`; never use either for stacks. Do not split multi-attribute one-result mechanics: reviewed character talent damage, healing and shield absorption group them under their respective component rules below. Shield fixed terms follow `character-grouped-shield-absorption-components` instead of `add`; other grouped results remain deferred.
 
 ## Approved Contracts
 
@@ -110,7 +110,9 @@ Rule `independent-proc-alternative-totals`: source-validated mutually exclusive 
 ### Reactions
 
 `reaction` is required for reaction-scoped `dmg_percent` and approved reaction-scoped `crit_dmg` under `lunar-reaction-scoped-crit-damage` or `stellar-glimmer-scoped-crit-damage`; omit it on other results and on ordinary/global CRIT grants. Valid values:
-`SWIRL`, `STELLAR_SWIRL`, `OVERLOADED`, `ELECTRO_CHARGED`, `SUPERCONDUCT`, `BURNING`, `BURGEON`, `BLOOM`, `HYPERBLOOM`, `LUNAR_BLOOM`, `AGGRAVATE`, `LUNAR_CHARGED`, `LUNAR_CRYSTALLIZE`, `STELLAR_CONDUCT`, `STELLAR_GLIMMER`, `VAPORIZE`, `MELT`.
+`SWIRL`, `STELLAR_SWIRL`, `OVERLOADED`, `ELECTRO_CHARGED`, `SUPERCONDUCT`, `BURNING`, `BURGEON`, `BLOOM`, `HYPERBLOOM`, `LUNAR_BLOOM`, `AGGRAVATE`, `SPREAD`, `LUNAR_CHARGED`, `LUNAR_CRYSTALLIZE`, `STELLAR_CONDUCT`, `STELLAR_GLIMMER`, `VAPORIZE`, `MELT`.
+
+Rule `spread-reaction-bonus`: Spread is the English name of Portuguese Propagação, distinct from Aggravate/Intensificação. The owner confirmed both source clauses in Baizhu's A4. Use `SPREAD` for individually source-validated Spread bonuses; retain reaction-specific formula placement as consumer context. Do not substitute Dendro elemental DMG or broaden existing Aggravate-only bonuses automatically.
 
 Lunar-family bonuses name only source-eligible Lunar reactions; ordinary reaction names do not imply family-wide coverage. Reaction formulas and ownership remain consumer work.
 
@@ -143,6 +145,7 @@ type EffectType =
   | 'healing_bonus'
   | 'shield_strength_percent'
   | 'healing'
+  | 'shield_absorption'
   | 'accumulated_healing_percent'
   | 'elemental_mastery'
   | 'flat_hp'
@@ -176,6 +179,7 @@ type Reaction =
   | 'HYPERBLOOM'
   | 'LUNAR_BLOOM'
   | 'AGGRAVATE'
+  | 'SPREAD'
   | 'LUNAR_CHARGED'
   | 'LUNAR_CRYSTALLIZE'
   | 'STELLAR_CONDUCT'
@@ -195,9 +199,15 @@ type AttributeReference = {
     | 'bond_of_life';
   offset?: number;
 };
+type TalentHealingReference = {
+  origin: 'skillTalents';
+  skillTalents: string;
+  attribute: 'healing';
+};
 type AttributeConditional =
   | AttributeReference
-  | [AttributeReference, ...AttributeReference[]];
+  | [AttributeReference, ...AttributeReference[]]
+  | TalentHealingReference;
 type Modifier = {
   label: string;
   type: EffectType;
@@ -258,7 +268,9 @@ type CharacterTalentUpgrade = {
     value: string;
     components?: Array<{
       scalings: number;
-      conditional: NonNullable<Modifier['conditional']>;
+      conditional?:
+        | AttributeReference
+        | [AttributeReference, ...AttributeReference[]];
     }>;
     add?: number;
   }>;
@@ -284,6 +296,10 @@ Rule `character-separated-talent-components`: owner approval on 2026-10-23 repre
 Rule `character-talent-attribute-components`: owner approval on 2026-10-23 adopts level-local `power[].components` for every reviewed character talent damage row, including single-attribute rows. Each nonempty component carries finite scalar `scalings` in ratio units plus explicit existing attribute `conditional`; preserve every raw source term separately. One component denotes one attribute contribution, not another hit: the consumer sums the qualifying components (and a source-validated fixed `add`, if present) for one hit before applying shared hit mechanics once. Identical composite hits may use upgrade-level `hits` with one-hit coefficients; mutually exclusive variants remain distinct named upgrades. Do not retain a duplicate `power[].scalings`, infer a shared source from matching numbers, or use upgrade-level `type` as a competing scaling-attribute reference; preserve only independently meaningful result types where approved. Plain damage rows need damageType/target plus explicit component references, not an ATK/DEF type tag. Non-damage display-only rows omit components. The owner explicitly extends this alignment to already reviewed characters: Albedo is the sole prior processed character and receives one-component ATK/DEF rows in EN/PT on both maintenance branches, preserving coefficients and unrelated data. Alhaitham uses ATK+EM components on each composite hit. Existing `Modifier.values` and `IndependentSkill.scalings[]` contracts are unchanged; this does not authorize a bulk character migration or reclassify independent skills.
 
 Rule `character-grouped-healing-components`: owner approval on 2026-10-28 extends the existing level-local `power[].components` contract to individually reviewed talent healing with upgrade `type: healing`. Sum the component contributions into one recovery; omit damageType, benefiting attack target, hits and bonus on that row. Arlecchino's Burst keeps raw 1.5 × Max HP × normalized current Bond and 1.5 × ATK as two components, using a reference product only for the first. This is raw healing before Bond absorption, not two independent heals or effective .5-Bond recovery; preserve absorption/restrictions in localized text for consumer handling. Damage components, modifier values, independent skills, fixed recovery and display-only utility rows retain their existing contracts. No unreviewed healing migration or general grouped-result approval.
+
+Rule `character-grouped-shield-absorption-components`: owner approval on 2026-11-10 adds talent-row `type: shield_absorption` with level-local `power[].components`, explicitly following Alhaitham's additive component structure. For this result, an attribute-referenced component uses raw scalar `scalings` and its reference; a fixed component uses `scalings` in direct absorption units and omits `conditional`. Sum the separate terms once. Baizhu's Burst level1 uses HP .008 plus fixed77.03752 as two components, not `add`, damage or healing. Omit damageType, target, hits and bonus; preserve Dendro250% effectiveness, shield creation/refresh/breakage/duration in localized text and consumer handling. Missing conditional is permitted only for a fixed shield component; existing damage/healing components still require their explicit references. Existing `add` contracts, Shield Strength and The Bell's entity-specific text-only exception remain unchanged. No automatic migration or runtime shield engine.
+
+Rule `character-talent-healing-reference`: owner approval on 2026-11-10 permits a healing modifier's single `conditional` object `{ origin: 'skillTalents', skillTalents: exactLocalizedTalentName, attribute: 'healing' }`. It must resolve uniquely to one same-locale talent and exactly one `upgrades` row with `type: healing`. Use that row's raw grouped recovery, including any fixed term, at its effective source talent level (including unlocked `changes`); multiply once by the modifier's `values` coefficient, then apply applicable healing bonuses once. Baizhu C2 supplies source-local constellation healing `values: [.2]`, without bonus, target, duplicated coefficient arrays or `talentLevels`. Do not reference post-bonus/effective healing, use constellation unlock level as talent level, permit recursive/cyclic references or mix talent-result references into attribute-product arrays. Existing character/weapon/artifact/time references keep their original meanings; this narrowly approves a healing-result dependency, not arbitrary talent parameter references or a runtime evaluator.
 
 Rule `character-source-local-independent-skills`: owner approval on 2026-10-23 places an individually validated independent character proc in optional `skills` beside `modifiers` on the originating `skillTalents`, `passiveTalents`, or `constellations` item, not duplicated at the root. Use labeled `IndependentSkill`, explicit attribute references and source-validated `damageType`; optional `target` identifies the proc's benefiting attack classification, not the triggering attack. Albedo's enhanced C2 uses `constellations[1].skills[0]`, Geo, Burst target, DEF-referenced `def_percent` [3] for one Fatal Blossom. The owner separately and explicitly confirmed the 300%-DEF-per-flower denominator after the source-wording limitation was presented; do not claim independent source certification of that unit. Three flowers per qualifying proc and A4 activation remain localized source text/consumer handling, without pre-summed totals or duplicate attached modifiers. Optional target omission preserves existing weapon/artifact independent-skill meaning; no automatic target backfill or container migration.
 
