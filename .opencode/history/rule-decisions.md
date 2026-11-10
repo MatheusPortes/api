@@ -1,5 +1,10 @@
 # Rule Decisions and Reusable Evidence
 
+## Beidou incoming damage reduction and constellation shield (2026-11-10)
+
+- Owner approved the two displayed proposals: Burst-local `dmg_reduction` with positive effective-level ratios and no bonus/target/conditional; C1-local `shield_absorption` with values[.16], conditional character.hp and no bonus. Rules `character-incoming-damage-reduction` and `character-source-local-shield-absorption` define their limited result meanings. Grouped talent shields still use separate proportional/fixed components; no constellation upgrades, shared damage engine, incoming-increase schema or silent text-only exception expansion.
+- Read-only compatibility checked28 actual EN/PT live paths, with results in `/tmp/opencode/beidou-review-2026-11-10/compatibility.json`: `characters/{albedo,alhaitham,aloy,amber,arataki-itto,arlecchino,ayaka,ayato,baizhu,barbara}/{en,pt}.json` compatible/unchanged; all existing outgoing bonuses, components, character/recipient healing references, enemy ATK/DEF/RES results, wearer RES and Baizhu grouped shield terms retain their meaning. `weapons/serpent-spine/{en,pt}.json` retains its explicitly text-only incoming increase; `weapons/the-bell/{en,pt}.json` retains its text-only shield capacity exception; `weapons/rust/{en,pt}.json` retains its signed outgoing Charged penalty; `artifacts/retracing-bolide/{en,pt}.json` retains Shield Strength, not capacity. All28 paths are byte-identical to pre-Beidou `3673031e`; no prior-character retrospective repeated or unrelated migration.
+
 ## Baizhu grouped shield, healing dependency and Spread naming (2026-11-10)
 
 - Owner approved `shield_absorption` and explicitly required both the HP-scaled and fixed terms as separate `components`, rejecting `add` for the shield row. Rule `character-grouped-shield-absorption-components` uses a fixed component's `scalings` as direct units without conditional, scoped only to shield results; prior damage/healing components keep explicit references and existing fixed-healing `add` is unchanged. The suggested shield text-only exception is not used.
