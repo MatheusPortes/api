@@ -10,6 +10,7 @@ This repository is a static-data API for Genshin Impact entities and images.
 - `src/routes/index.ts` maps catch-all static-data and image routes.
 - `src/modules/filesystem.ts` reads/caches static files, adds response `id`, and converts images with Sharp.
 - The service exposes static records only; it does not calculate progression, stats, damage, reactions, timers, or consumer state.
+- Raw source contributions remain separate; API consumers combine applicable bonuses under `consumer-composed-source-contributions` in the calculation workflow, without automatic bonus inheritance or precomputed post-bonus damage.
 
 ## Data and Assets
 

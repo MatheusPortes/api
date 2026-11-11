@@ -1,5 +1,10 @@
 # Rule Decisions and Reusable Evidence
 
+## Consumer-side source contribution composition (2026-11-11)
+
+- Owner explicitly approved the proposed Chasca A4 raw-coefficient representation as a general API rule: always retain separate contributions and let the API consumer combine bonuses if applicable. Rule `consumer-composed-source-contributions` resolves representation without claiming independent in-game A1 inheritance verification. A4 derives raw Shell coefficients×1.5 at effective Skill level, not an already-bonused Shell result. Bonus eligibility remains explicit consumer handling; no new damage-result reference, runtime evaluator or migration.
+- Read-only compatibility at `1e54a5c8`: `assets/data/characters/{bennett,albedo,charlotte,baizhu}/{en,pt}.json` (eight actual paths), all compatible/unchanged and byte-equal to HEAD. Bennett C4 already derives1.35×raw Skill second-hit coefficients; Albedo C2 keeps independent DEF damage and separate stack contribution; Charlotte C6 retains separate raw damage/healing; Baizhu C2's approved raw healing-result reference is unaffected and is not a post-bonus damage dependency. No prior character is edited or newly certified complete by this bounded compatibility check.
+
 ## Character Base ATK reference (2026-11-11)
 
 - Owner approved the displayed `character.base_atk` reference: innate character plus equipped weapon Base ATK, excluding artifacts/buffs. Rule `character-base-atk-reference` keeps total `character.atk` and the separate EffectType `base_atk` unchanged. Bennett's Burst and C1 supply distinct recipient `flat_atk` contributions with their own raw coefficients, referencing Bennett rather than recipient Base ATK. No runtime stat evaluator or automatic reference replacement.
