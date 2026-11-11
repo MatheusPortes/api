@@ -18,131 +18,1686 @@
       "description": "Ataque Normal\nRealiza até 4 golpes rápidos.\n\nAtaque Carregado\nConsome uma certa quantidade de Stamina para desferir 2 golpes rápidos com a espada.\n\nAtaque Imersivo\nMergulha em pleno ar para golpear o chão, causando Dano aos inimigos ao longo do caminho e infligindo Dano em uma AdE durante o impacto.",
       "upgrades": [
         {
-          "name": "Dano do 1º Golpe",
+          "name": "Dano do 1° Golpe",
+          "damageType": "PHYSICAL",
+          "target": "normal_attack",
           "power": [
-            { "value": "49.4%", "level": 1 },
-            { "value": "53.4%", "level": 2 },
-            { "value": "57.5%", "level": 3 },
-            { "value": "63.2%", "level": 4 },
-            { "value": "67.2%", "level": 5 },
-            { "value": "71.8%", "level": 6 },
-            { "value": "78.1%", "level": 7 },
-            { "value": "84.5%", "level": 8 },
-            { "value": "90.8%", "level": 9 },
-            { "value": "97.7%", "level": 10 },
-            { "value": "104.6%", "level": 11 }
+            {
+              "value": "49.4104%",
+              "level": 1,
+              "components": [
+                {
+                  "scalings": 0.494104,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "53.4322%",
+              "level": 2,
+              "components": [
+                {
+                  "scalings": 0.534322,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "57.454%",
+              "level": 3,
+              "components": [
+                {
+                  "scalings": 0.57454,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "63.1994%",
+              "level": 4,
+              "components": [
+                {
+                  "scalings": 0.631994,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "67.2212%",
+              "level": 5,
+              "components": [
+                {
+                  "scalings": 0.672212,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "71.8175%",
+              "level": 6,
+              "components": [
+                {
+                  "scalings": 0.718175,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "78.1374%",
+              "level": 7,
+              "components": [
+                {
+                  "scalings": 0.781374,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "84.4574%",
+              "level": 8,
+              "components": [
+                {
+                  "scalings": 0.844574,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "90.7773%",
+              "level": 9,
+              "components": [
+                {
+                  "scalings": 0.907773,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "97.6718%",
+              "level": 10,
+              "components": [
+                {
+                  "scalings": 0.976718,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "104.5663%",
+              "level": 11,
+              "components": [
+                {
+                  "scalings": 1.045663,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "111.4608%",
+              "level": 12,
+              "components": [
+                {
+                  "scalings": 1.114608,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "118.3552%",
+              "level": 13,
+              "components": [
+                {
+                  "scalings": 1.183552,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "125.2497%",
+              "level": 14,
+              "components": [
+                {
+                  "scalings": 1.252497,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "132.1442%",
+              "level": 15,
+              "components": [
+                {
+                  "scalings": 1.321442,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            }
           ]
         },
         {
-          "name": "Dano do 2º Golpe",
+          "name": "Dano do 2° Golpe",
+          "damageType": "PHYSICAL",
+          "target": "normal_attack",
           "power": [
-            { "value": "46.8%", "level": 1 },
-            { "value": "50.6%", "level": 2 },
-            { "value": "54.5%", "level": 3 },
-            { "value": "59.9%", "level": 4 },
-            { "value": "63.7%", "level": 5 },
-            { "value": "68.1%", "level": 6 },
-            { "value": "74.1%", "level": 7 },
-            { "value": "80.1%", "level": 8 },
-            { "value": "86.0%", "level": 9 },
-            { "value": "92.6%", "level": 10 },
-            { "value": "99.1%", "level": 11 }
+            {
+              "value": "46.8339%",
+              "level": 1,
+              "components": [
+                {
+                  "scalings": 0.468339,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "50.6459%",
+              "level": 2,
+              "components": [
+                {
+                  "scalings": 0.506459,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "54.458%",
+              "level": 3,
+              "components": [
+                {
+                  "scalings": 0.54458,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "59.9038%",
+              "level": 4,
+              "components": [
+                {
+                  "scalings": 0.599038,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "63.7159%",
+              "level": 5,
+              "components": [
+                {
+                  "scalings": 0.637159,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "68.0725%",
+              "level": 6,
+              "components": [
+                {
+                  "scalings": 0.680725,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "74.0629%",
+              "level": 7,
+              "components": [
+                {
+                  "scalings": 0.740629,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "80.0533%",
+              "level": 8,
+              "components": [
+                {
+                  "scalings": 0.800533,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "86.0436%",
+              "level": 9,
+              "components": [
+                {
+                  "scalings": 0.860436,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "92.5786%",
+              "level": 10,
+              "components": [
+                {
+                  "scalings": 0.925786,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "99.1136%",
+              "level": 11,
+              "components": [
+                {
+                  "scalings": 0.991136,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "105.6485%",
+              "level": 12,
+              "components": [
+                {
+                  "scalings": 1.056485,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "112.1835%",
+              "level": 13,
+              "components": [
+                {
+                  "scalings": 1.121835,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "118.7184%",
+              "level": 14,
+              "components": [
+                {
+                  "scalings": 1.187184,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "125.2534%",
+              "level": 15,
+              "components": [
+                {
+                  "scalings": 1.252534,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            }
           ]
         },
         {
-          "name": "Dano do 3º Golpe",
+          "name": "Dano do 3° Golpe",
+          "damageType": "PHYSICAL",
+          "target": "normal_attack",
+          "hits": 2,
           "power": [
-            { "value": "30.4%+30.4%", "level": 1 },
-            { "value": "32.9%+32.9%", "level": 2 },
-            { "value": "35.4%+35.4%", "level": 3 },
-            { "value": "38.9%+38.9%", "level": 4 },
-            { "value": "41.4%+41.4%", "level": 5 },
-            { "value": "44.2%+44.2%", "level": 6 },
-            { "value": "48.1%+48.1%", "level": 7 },
-            { "value": "52.0%+52.0%", "level": 8 },
-            { "value": "55.9%+55.9%", "level": 9 },
-            { "value": "60.1%+60.1%", "level": 10 },
-            { "value": "64.4%+64.4%", "level": 11 }
+            {
+              "value": "30.4165% × 2",
+              "level": 1,
+              "components": [
+                {
+                  "scalings": 0.304165,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "32.8922% × 2",
+              "level": 2,
+              "components": [
+                {
+                  "scalings": 0.328922,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "35.368% × 2",
+              "level": 3,
+              "components": [
+                {
+                  "scalings": 0.35368,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "38.9048% × 2",
+              "level": 4,
+              "components": [
+                {
+                  "scalings": 0.389048,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "41.3806% × 2",
+              "level": 5,
+              "components": [
+                {
+                  "scalings": 0.413806,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "44.21% × 2",
+              "level": 6,
+              "components": [
+                {
+                  "scalings": 0.4421,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "48.1005% × 2",
+              "level": 7,
+              "components": [
+                {
+                  "scalings": 0.481005,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "51.991% × 2",
+              "level": 8,
+              "components": [
+                {
+                  "scalings": 0.51991,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "55.8814% × 2",
+              "level": 9,
+              "components": [
+                {
+                  "scalings": 0.558814,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "60.1256% × 2",
+              "level": 10,
+              "components": [
+                {
+                  "scalings": 0.601256,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "64.3698% × 2",
+              "level": 11,
+              "components": [
+                {
+                  "scalings": 0.643698,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "68.6139% × 2",
+              "level": 12,
+              "components": [
+                {
+                  "scalings": 0.686139,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "72.8581% × 2",
+              "level": 13,
+              "components": [
+                {
+                  "scalings": 0.728581,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "77.1022% × 2",
+              "level": 14,
+              "components": [
+                {
+                  "scalings": 0.771022,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "81.3464% × 2",
+              "level": 15,
+              "components": [
+                {
+                  "scalings": 0.813464,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            }
           ]
         },
         {
-          "name": "Dano do 4º Golpe",
+          "name": "Dano do 4° Golpe",
+          "damageType": "PHYSICAL",
+          "target": "normal_attack",
           "power": [
-            { "value": "75.1%", "level": 1 },
-            { "value": "81.2%", "level": 2 },
-            { "value": "87.4%", "level": 3 },
-            { "value": "96.1%", "level": 4 },
-            { "value": "102.2%", "level": 5 },
-            { "value": "109.2%", "level": 6 },
-            { "value": "118.8%", "level": 7 },
-            { "value": "128.4%", "level": 8 },
-            { "value": "138.0%", "level": 9 },
-            { "value": "148.5%", "level": 10 },
-            { "value": "159.0%", "level": 11 }
+            {
+              "value": "75.1227%",
+              "level": 1,
+              "components": [
+                {
+                  "scalings": 0.751227,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "81.2374%",
+              "level": 2,
+              "components": [
+                {
+                  "scalings": 0.812374,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "87.352%",
+              "level": 3,
+              "components": [
+                {
+                  "scalings": 0.87352,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "96.0872%",
+              "level": 4,
+              "components": [
+                {
+                  "scalings": 0.960872,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "102.2018%",
+              "level": 5,
+              "components": [
+                {
+                  "scalings": 1.022018,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "109.19%",
+              "level": 6,
+              "components": [
+                {
+                  "scalings": 1.0919,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "118.7987%",
+              "level": 7,
+              "components": [
+                {
+                  "scalings": 1.187987,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "128.4074%",
+              "level": 8,
+              "components": [
+                {
+                  "scalings": 1.284074,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "138.0162%",
+              "level": 9,
+              "components": [
+                {
+                  "scalings": 1.380162,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "148.4984%",
+              "level": 10,
+              "components": [
+                {
+                  "scalings": 1.484984,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "158.9806%",
+              "level": 11,
+              "components": [
+                {
+                  "scalings": 1.589806,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "169.4629%",
+              "level": 12,
+              "components": [
+                {
+                  "scalings": 1.694629,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "179.9451%",
+              "level": 13,
+              "components": [
+                {
+                  "scalings": 1.799451,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "190.4274%",
+              "level": 14,
+              "components": [
+                {
+                  "scalings": 1.904274,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "200.9096%",
+              "level": 15,
+              "components": [
+                {
+                  "scalings": 2.009096,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            }
           ]
         },
         {
           "name": "Dano de Ataque Carregado",
+          "damageType": "PHYSICAL",
+          "target": "charged_attack",
+          "hits": 2,
           "power": [
-            { "value": "54.3%+54.3%", "level": 1 },
-            { "value": "58.7%+58.7%", "level": 2 },
-            { "value": "63.1%+63.1%", "level": 3 },
-            { "value": "69.5%+69.5%", "level": 4 },
-            { "value": "73.9%+73.9%", "level": 5 },
-            { "value": "78.9%+78.9%", "level": 6 },
-            { "value": "85.9%+85.9%", "level": 7 },
-            { "value": "92.8%+92.8%", "level": 8 },
-            { "value": "99.8%+99.8%", "level": 9 },
-            { "value": "107.4%+107.4%", "level": 10 },
-            { "value": "114.9%+114.9%", "level": 11 }
+            {
+              "value": "54.309% × 2",
+              "level": 1,
+              "components": [
+                {
+                  "scalings": 0.54309,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "58.7295% × 2",
+              "level": 2,
+              "components": [
+                {
+                  "scalings": 0.587295,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "63.15% × 2",
+              "level": 3,
+              "components": [
+                {
+                  "scalings": 0.6315,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "69.465% × 2",
+              "level": 4,
+              "components": [
+                {
+                  "scalings": 0.69465,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "73.8855% × 2",
+              "level": 5,
+              "components": [
+                {
+                  "scalings": 0.738855,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "78.9375% × 2",
+              "level": 6,
+              "components": [
+                {
+                  "scalings": 0.789375,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "85.884% × 2",
+              "level": 7,
+              "components": [
+                {
+                  "scalings": 0.85884,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "92.8305% × 2",
+              "level": 8,
+              "components": [
+                {
+                  "scalings": 0.928305,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "99.777% × 2",
+              "level": 9,
+              "components": [
+                {
+                  "scalings": 0.99777,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "107.355% × 2",
+              "level": 10,
+              "components": [
+                {
+                  "scalings": 1.07355,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "114.933% × 2",
+              "level": 11,
+              "components": [
+                {
+                  "scalings": 1.14933,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "122.511% × 2",
+              "level": 12,
+              "components": [
+                {
+                  "scalings": 1.22511,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "130.089% × 2",
+              "level": 13,
+              "components": [
+                {
+                  "scalings": 1.30089,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "137.667% × 2",
+              "level": 14,
+              "components": [
+                {
+                  "scalings": 1.37667,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "145.245% × 2",
+              "level": 15,
+              "components": [
+                {
+                  "scalings": 1.45245,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            }
           ]
         },
         {
-          "name": "Consumo de Stamina do Ataque Carregado",
+          "name": "Consumo de Stamina de Ataque Carregado",
           "power": [
-            { "value": "20.0", "level": 1 },
-            { "value": "20.0", "level": 2 },
-            { "value": "20.0", "level": 3 },
-            { "value": "20.0", "level": 4 },
-            { "value": "20.0", "level": 5 },
-            { "value": "20.0", "level": 6 },
-            { "value": "20.0", "level": 7 },
-            { "value": "20.0", "level": 8 },
-            { "value": "20.0", "level": 9 },
-            { "value": "20.0", "level": 10 },
-            { "value": "20.0", "level": 11 }
+            {
+              "value": "20",
+              "level": 1
+            },
+            {
+              "value": "20",
+              "level": 2
+            },
+            {
+              "value": "20",
+              "level": 3
+            },
+            {
+              "value": "20",
+              "level": 4
+            },
+            {
+              "value": "20",
+              "level": 5
+            },
+            {
+              "value": "20",
+              "level": 6
+            },
+            {
+              "value": "20",
+              "level": 7
+            },
+            {
+              "value": "20",
+              "level": 8
+            },
+            {
+              "value": "20",
+              "level": 9
+            },
+            {
+              "value": "20",
+              "level": 10
+            },
+            {
+              "value": "20",
+              "level": 11
+            },
+            {
+              "value": "20",
+              "level": 12
+            },
+            {
+              "value": "20",
+              "level": 13
+            },
+            {
+              "value": "20",
+              "level": 14
+            },
+            {
+              "value": "20",
+              "level": 15
+            }
           ]
         },
         {
           "name": "Dano Durante a Queda",
+          "damageType": "PHYSICAL",
+          "target": "plunging_attack",
           "power": [
-            { "value": "63.9%", "level": 1 },
-            { "value": "69.1%", "level": 2 },
-            { "value": "74.3%", "level": 3 },
-            { "value": "81.8%", "level": 4 },
-            { "value": "87.0%", "level": 5 },
-            { "value": "92.9%", "level": 6 },
-            { "value": "101.1%", "level": 7 },
-            { "value": "109.3%", "level": 8 },
-            { "value": "117.5%", "level": 9 },
-            { "value": "126.4%", "level": 10 },
-            { "value": "135.3%", "level": 11 }
+            {
+              "value": "63.9324%",
+              "level": 1,
+              "components": [
+                {
+                  "scalings": 0.639324,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "69.1362%",
+              "level": 2,
+              "components": [
+                {
+                  "scalings": 0.691362,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "74.34%",
+              "level": 3,
+              "components": [
+                {
+                  "scalings": 0.7434,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "81.774%",
+              "level": 4,
+              "components": [
+                {
+                  "scalings": 0.81774,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "86.9778%",
+              "level": 5,
+              "components": [
+                {
+                  "scalings": 0.869778,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "92.925%",
+              "level": 6,
+              "components": [
+                {
+                  "scalings": 0.92925,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "101.1024%",
+              "level": 7,
+              "components": [
+                {
+                  "scalings": 1.011024,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "109.2798%",
+              "level": 8,
+              "components": [
+                {
+                  "scalings": 1.092798,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "117.4572%",
+              "level": 9,
+              "components": [
+                {
+                  "scalings": 1.174572,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "126.378%",
+              "level": 10,
+              "components": [
+                {
+                  "scalings": 1.26378,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "135.2988%",
+              "level": 11,
+              "components": [
+                {
+                  "scalings": 1.352988,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "144.2196%",
+              "level": 12,
+              "components": [
+                {
+                  "scalings": 1.442196,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "153.1404%",
+              "level": 13,
+              "components": [
+                {
+                  "scalings": 1.531404,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "162.0612%",
+              "level": 14,
+              "components": [
+                {
+                  "scalings": 1.620612,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "170.982%",
+              "level": 15,
+              "components": [
+                {
+                  "scalings": 1.70982,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            }
           ]
         },
         {
-          "name": "Dano de Queda de Baixa/Alta Altitude",
+          "name": "Dano de Queda de Baixa Altitude",
+          "damageType": "PHYSICAL",
+          "target": "plunging_attack",
           "power": [
-            { "value": "128%/160%", "level": 1 },
-            { "value": "138%/173%", "level": 2 },
-            { "value": "149%/186%", "level": 3 },
-            { "value": "164%/204%", "level": 4 },
-            { "value": "174%/217%", "level": 5 },
-            { "value": "186%/232%", "level": 6 },
-            { "value": "202%/253%", "level": 7 },
-            { "value": "219%/273%", "level": 8 },
-            { "value": "235%/293%", "level": 9 },
-            { "value": "253%/316%", "level": 10 },
-            { "value": "271%/338%", "level": 11 }
+            {
+              "value": "127.8377%",
+              "level": 1,
+              "components": [
+                {
+                  "scalings": 1.278377,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "138.2431%",
+              "level": 2,
+              "components": [
+                {
+                  "scalings": 1.382431,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "148.6485%",
+              "level": 3,
+              "components": [
+                {
+                  "scalings": 1.486485,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "163.5134%",
+              "level": 4,
+              "components": [
+                {
+                  "scalings": 1.635134,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "173.9187%",
+              "level": 5,
+              "components": [
+                {
+                  "scalings": 1.739187,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "185.8106%",
+              "level": 6,
+              "components": [
+                {
+                  "scalings": 1.858106,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "202.162%",
+              "level": 7,
+              "components": [
+                {
+                  "scalings": 2.02162,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "218.5133%",
+              "level": 8,
+              "components": [
+                {
+                  "scalings": 2.185133,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "234.8646%",
+              "level": 9,
+              "components": [
+                {
+                  "scalings": 2.348646,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "252.7025%",
+              "level": 10,
+              "components": [
+                {
+                  "scalings": 2.527025,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "270.5403%",
+              "level": 11,
+              "components": [
+                {
+                  "scalings": 2.705403,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "288.3781%",
+              "level": 12,
+              "components": [
+                {
+                  "scalings": 2.883781,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "306.2159%",
+              "level": 13,
+              "components": [
+                {
+                  "scalings": 3.062159,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "324.0537%",
+              "level": 14,
+              "components": [
+                {
+                  "scalings": 3.240537,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "341.8915%",
+              "level": 15,
+              "components": [
+                {
+                  "scalings": 3.418915,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Dano de Queda de Alta Altitude",
+          "damageType": "PHYSICAL",
+          "target": "plunging_attack",
+          "power": [
+            {
+              "value": "159.6762%",
+              "level": 1,
+              "components": [
+                {
+                  "scalings": 1.596762,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "172.6731%",
+              "level": 2,
+              "components": [
+                {
+                  "scalings": 1.726731,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "185.67%",
+              "level": 3,
+              "components": [
+                {
+                  "scalings": 1.8567,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "204.237%",
+              "level": 4,
+              "components": [
+                {
+                  "scalings": 2.04237,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "217.2339%",
+              "level": 5,
+              "components": [
+                {
+                  "scalings": 2.172339,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "232.0875%",
+              "level": 6,
+              "components": [
+                {
+                  "scalings": 2.320875,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "252.5112%",
+              "level": 7,
+              "components": [
+                {
+                  "scalings": 2.525112,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "272.9349%",
+              "level": 8,
+              "components": [
+                {
+                  "scalings": 2.729349,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "293.3586%",
+              "level": 9,
+              "components": [
+                {
+                  "scalings": 2.933586,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "315.639%",
+              "level": 10,
+              "components": [
+                {
+                  "scalings": 3.15639,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "337.9194%",
+              "level": 11,
+              "components": [
+                {
+                  "scalings": 3.379194,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "360.1998%",
+              "level": 12,
+              "components": [
+                {
+                  "scalings": 3.601998,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "382.4802%",
+              "level": 13,
+              "components": [
+                {
+                  "scalings": 3.824802,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "404.7606%",
+              "level": 14,
+              "components": [
+                {
+                  "scalings": 4.047606,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "427.041%",
+              "level": 15,
+              "components": [
+                {
+                  "scalings": 4.27041,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            }
           ]
         }
       ],
@@ -155,92 +1710,811 @@
       "upgrades": [
         {
           "name": "Dano de Tamoto",
+          "damageType": "GEO",
+          "target": "elemental_skill",
           "power": [
-            { "value": "82% ATQ+103% DEF", "level": 1 },
-            { "value": "88% ATQ+110% DEF", "level": 2 },
-            { "value": "94% ATQ+118% DEF", "level": 3 },
-            { "value": "103% ATQ+128% DEF", "level": 4 },
-            { "value": "109% ATQ+136% DEF", "level": 5 },
-            { "value": "115% ATQ+144% DEF", "level": 6 },
-            { "value": "123% ATQ+154% DEF", "level": 7 },
-            { "value": "131% ATQ+164% DEF", "level": 8 },
-            { "value": "140% ATQ+174% DEF", "level": 9 },
-            { "value": "148% ATQ+185% DEF", "level": 10 },
-            { "value": "156% ATQ+195% DEF", "level": 11 },
-            { "value": "164% ATQ+205% DEF", "level": 12 },
-            { "value": "174% ATQ+218% DEF", "level": 13 }
+            {
+              "value": "82.08% do ATQ + 102.6% da DEF",
+              "level": 1,
+              "components": [
+                {
+                  "scalings": 0.8208,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.026,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "88.236% do ATQ + 110.295% da DEF",
+              "level": 2,
+              "components": [
+                {
+                  "scalings": 0.88236,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.10295,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "94.392% do ATQ + 117.99% da DEF",
+              "level": 3,
+              "components": [
+                {
+                  "scalings": 0.94392,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.1799,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "102.6% do ATQ + 128.25% da DEF",
+              "level": 4,
+              "components": [
+                {
+                  "scalings": 1.026,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.2825,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "108.756% do ATQ + 135.945% da DEF",
+              "level": 5,
+              "components": [
+                {
+                  "scalings": 1.08756,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.35945,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "114.912% do ATQ + 143.64% da DEF",
+              "level": 6,
+              "components": [
+                {
+                  "scalings": 1.14912,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.4364,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "123.12% do ATQ + 153.9% da DEF",
+              "level": 7,
+              "components": [
+                {
+                  "scalings": 1.2312,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.539,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "131.328% do ATQ + 164.16% da DEF",
+              "level": 8,
+              "components": [
+                {
+                  "scalings": 1.31328,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.6416,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "139.536% do ATQ + 174.42% da DEF",
+              "level": 9,
+              "components": [
+                {
+                  "scalings": 1.39536,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.7442,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "147.744% do ATQ + 184.68% da DEF",
+              "level": 10,
+              "components": [
+                {
+                  "scalings": 1.47744,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.8468,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "155.952% do ATQ + 194.94% da DEF",
+              "level": 11,
+              "components": [
+                {
+                  "scalings": 1.55952,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.9494,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "164.16% do ATQ + 205.2% da DEF",
+              "level": 12,
+              "components": [
+                {
+                  "scalings": 1.6416,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.052,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "174.42% do ATQ + 218.025% da DEF",
+              "level": 13,
+              "components": [
+                {
+                  "scalings": 1.7442,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.18025,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "184.68% do ATQ + 230.85% da DEF",
+              "level": 14,
+              "components": [
+                {
+                  "scalings": 1.8468,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.3085,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "194.94% do ATQ + 243.675% da DEF",
+              "level": 15,
+              "components": [
+                {
+                  "scalings": 1.9494,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.43675,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            }
           ]
         },
         {
           "name": "Duração de Tamoto",
           "power": [
-            { "value": "17.0s", "level": 1 },
-            { "value": "17.0s", "level": 2 },
-            { "value": "17.0s", "level": 3 },
-            { "value": "17.0s", "level": 4 },
-            { "value": "17.0s", "level": 5 },
-            { "value": "17.0s", "level": 6 },
-            { "value": "17.0s", "level": 7 },
-            { "value": "17.0s", "level": 8 },
-            { "value": "17.0s", "level": 9 },
-            { "value": "17.0s", "level": 10 },
-            { "value": "17.0s", "level": 11 },
-            { "value": "17.0s", "level": 12 },
-            { "value": "17.0s", "level": 13 }
+            {
+              "value": "17s",
+              "level": 1
+            },
+            {
+              "value": "17s",
+              "level": 2
+            },
+            {
+              "value": "17s",
+              "level": 3
+            },
+            {
+              "value": "17s",
+              "level": 4
+            },
+            {
+              "value": "17s",
+              "level": 5
+            },
+            {
+              "value": "17s",
+              "level": 6
+            },
+            {
+              "value": "17s",
+              "level": 7
+            },
+            {
+              "value": "17s",
+              "level": 8
+            },
+            {
+              "value": "17s",
+              "level": 9
+            },
+            {
+              "value": "17s",
+              "level": 10
+            },
+            {
+              "value": "17s",
+              "level": 11
+            },
+            {
+              "value": "17s",
+              "level": 12
+            },
+            {
+              "value": "17s",
+              "level": 13
+            },
+            {
+              "value": "17s",
+              "level": 14
+            },
+            {
+              "value": "17s",
+              "level": 15
+            }
           ]
         },
         {
           "name": "Intervalo do Ataque de Tamoto",
           "power": [
-            { "value": "3.6s", "level": 1 },
-            { "value": "3.6s", "level": 2 },
-            { "value": "3.6s", "level": 3 },
-            { "value": "3.6s", "level": 4 },
-            { "value": "3.6s", "level": 5 },
-            { "value": "3.6s", "level": 6 },
-            { "value": "3.6s", "level": 7 },
-            { "value": "3.6s", "level": 8 },
-            { "value": "3.6s", "level": 9 },
-            { "value": "3.6s", "level": 10 },
-            { "value": "3.6s", "level": 11 },
-            { "value": "3.6s", "level": 12 },
-            { "value": "3.6s", "level": 13 }
+            {
+              "value": "3.6s",
+              "level": 1
+            },
+            {
+              "value": "3.6s",
+              "level": 2
+            },
+            {
+              "value": "3.6s",
+              "level": 3
+            },
+            {
+              "value": "3.6s",
+              "level": 4
+            },
+            {
+              "value": "3.6s",
+              "level": 5
+            },
+            {
+              "value": "3.6s",
+              "level": 6
+            },
+            {
+              "value": "3.6s",
+              "level": 7
+            },
+            {
+              "value": "3.6s",
+              "level": 8
+            },
+            {
+              "value": "3.6s",
+              "level": 9
+            },
+            {
+              "value": "3.6s",
+              "level": 10
+            },
+            {
+              "value": "3.6s",
+              "level": 11
+            },
+            {
+              "value": "3.6s",
+              "level": 12
+            },
+            {
+              "value": "3.6s",
+              "level": 13
+            },
+            {
+              "value": "3.6s",
+              "level": 14
+            },
+            {
+              "value": "3.6s",
+              "level": 15
+            }
           ]
         },
         {
           "name": "Dano de Ataque de Impulso Ascendente",
+          "damageType": "GEO",
+          "target": "elemental_skill",
           "power": [
-            { "value": "149% ATQ+187% DEF", "level": 1 },
-            { "value": "160% ATQ+201% DEF", "level": 2 },
-            { "value": "172% ATQ+215% DEF", "level": 3 },
-            { "value": "187% ATQ+233% DEF", "level": 4 },
-            { "value": "198% ATQ+247% DEF", "level": 5 },
-            { "value": "209% ATQ+261% DEF", "level": 6 },
-            { "value": "224% ATQ+280% DEF", "level": 7 },
-            { "value": "239% ATQ+299% DEF", "level": 8 },
-            { "value": "254% ATQ+317% DEF", "level": 9 },
-            { "value": "269% ATQ+336% DEF", "level": 10 },
-            { "value": "284% ATQ+355% DEF", "level": 11 },
-            { "value": "299% ATQ+373% DEF", "level": 12 },
-            { "value": "317% ATQ+397% DEF", "level": 13 }
+            {
+              "value": "149.28% do ATQ + 186.6% da DEF",
+              "level": 1,
+              "components": [
+                {
+                  "scalings": 1.4928,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 1.866,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "160.476% do ATQ + 200.595% da DEF",
+              "level": 2,
+              "components": [
+                {
+                  "scalings": 1.60476,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.00595,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "171.672% do ATQ + 214.59% da DEF",
+              "level": 3,
+              "components": [
+                {
+                  "scalings": 1.71672,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.1459,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "186.6% do ATQ + 233.25% da DEF",
+              "level": 4,
+              "components": [
+                {
+                  "scalings": 1.866,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.3325,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "197.796% do ATQ + 247.245% da DEF",
+              "level": 5,
+              "components": [
+                {
+                  "scalings": 1.97796,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.47245,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "208.992% do ATQ + 261.24% da DEF",
+              "level": 6,
+              "components": [
+                {
+                  "scalings": 2.08992,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.6124,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "223.92% do ATQ + 279.9% da DEF",
+              "level": 7,
+              "components": [
+                {
+                  "scalings": 2.2392,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.799,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "238.848% do ATQ + 298.56% da DEF",
+              "level": 8,
+              "components": [
+                {
+                  "scalings": 2.38848,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 2.9856,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "253.776% do ATQ + 317.22% da DEF",
+              "level": 9,
+              "components": [
+                {
+                  "scalings": 2.53776,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 3.1722,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "268.704% do ATQ + 335.88% da DEF",
+              "level": 10,
+              "components": [
+                {
+                  "scalings": 2.68704,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 3.3588,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "283.632% do ATQ + 354.54% da DEF",
+              "level": 11,
+              "components": [
+                {
+                  "scalings": 2.83632,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 3.5454,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "298.56% do ATQ + 373.2% da DEF",
+              "level": 12,
+              "components": [
+                {
+                  "scalings": 2.9856,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 3.732,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "317.22% do ATQ + 396.525% da DEF",
+              "level": 13,
+              "components": [
+                {
+                  "scalings": 3.1722,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 3.96525,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "335.88% do ATQ + 419.85% da DEF",
+              "level": 14,
+              "components": [
+                {
+                  "scalings": 3.3588,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 4.1985,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "354.54% do ATQ + 443.175% da DEF",
+              "level": 15,
+              "components": [
+                {
+                  "scalings": 3.5454,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 4.43175,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            }
           ]
         },
         {
           "name": "Tempo de Recarga",
           "power": [
-            { "value": "16.0s", "level": 1 },
-            { "value": "16.0s", "level": 2 },
-            { "value": "16.0s", "level": 3 },
-            { "value": "16.0s", "level": 4 },
-            { "value": "16.0s", "level": 5 },
-            { "value": "16.0s", "level": 6 },
-            { "value": "16.0s", "level": 7 },
-            { "value": "16.0s", "level": 8 },
-            { "value": "16.0s", "level": 9 },
-            { "value": "16.0s", "level": 10 },
-            { "value": "16.0s", "level": 11 },
-            { "value": "16.0s", "level": 12 },
-            { "value": "16.0s", "level": 13 }
+            {
+              "value": "16s",
+              "level": 1
+            },
+            {
+              "value": "16s",
+              "level": 2
+            },
+            {
+              "value": "16s",
+              "level": 3
+            },
+            {
+              "value": "16s",
+              "level": 4
+            },
+            {
+              "value": "16s",
+              "level": 5
+            },
+            {
+              "value": "16s",
+              "level": 6
+            },
+            {
+              "value": "16s",
+              "level": 7
+            },
+            {
+              "value": "16s",
+              "level": 8
+            },
+            {
+              "value": "16s",
+              "level": 9
+            },
+            {
+              "value": "16s",
+              "level": 10
+            },
+            {
+              "value": "16s",
+              "level": 11
+            },
+            {
+              "value": "16s",
+              "level": 12
+            },
+            {
+              "value": "16s",
+              "level": 13
+            },
+            {
+              "value": "16s",
+              "level": 14
+            },
+            {
+              "value": "16s",
+              "level": 15
+            }
           ]
         }
       ],
@@ -253,56 +2527,439 @@
       "upgrades": [
         {
           "name": "Dano de Habilidade",
+          "damageType": "GEO",
+          "target": "elemental_burst",
           "power": [
-            { "value": "256% ATQ+320% DEF", "level": 1 },
-            { "value": "276% ATQ+344% DEF", "level": 2 },
-            { "value": "295% ATQ+368% DEF", "level": 3 },
-            { "value": "320% ATQ+401% DEF", "level": 4 },
-            { "value": "340% ATQ+425% DEF", "level": 5 },
-            { "value": "359% ATQ+449% DEF", "level": 6 },
-            { "value": "384% ATQ+481% DEF", "level": 7 },
-            { "value": "410% ATQ+513% DEF", "level": 8 },
-            { "value": "436% ATQ+545% DEF", "level": 9 },
-            { "value": "461% ATQ+577% DEF", "level": 10 },
-            { "value": "487% ATQ+609% DEF", "level": 11 },
-            { "value": "513% ATQ+641% DEF", "level": 12 },
-            { "value": "545% ATQ+681% DEF", "level": 13 }
+            {
+              "value": "256.32% do ATQ + 320.4% da DEF",
+              "level": 1,
+              "components": [
+                {
+                  "scalings": 2.5632,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 3.204,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "275.544% do ATQ + 344.43% da DEF",
+              "level": 2,
+              "components": [
+                {
+                  "scalings": 2.75544,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 3.4443,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "294.768% do ATQ + 368.46% da DEF",
+              "level": 3,
+              "components": [
+                {
+                  "scalings": 2.94768,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 3.6846,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "320.4% do ATQ + 400.5% da DEF",
+              "level": 4,
+              "components": [
+                {
+                  "scalings": 3.204,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 4.005,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "339.624% do ATQ + 424.53% da DEF",
+              "level": 5,
+              "components": [
+                {
+                  "scalings": 3.39624,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 4.2453,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "358.848% do ATQ + 448.56% da DEF",
+              "level": 6,
+              "components": [
+                {
+                  "scalings": 3.58848,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 4.4856,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "384.48% do ATQ + 480.6% da DEF",
+              "level": 7,
+              "components": [
+                {
+                  "scalings": 3.8448,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 4.806,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "410.112% do ATQ + 512.64% da DEF",
+              "level": 8,
+              "components": [
+                {
+                  "scalings": 4.10112,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 5.1264,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "435.744% do ATQ + 544.68% da DEF",
+              "level": 9,
+              "components": [
+                {
+                  "scalings": 4.35744,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 5.4468,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "461.376% do ATQ + 576.72% da DEF",
+              "level": 10,
+              "components": [
+                {
+                  "scalings": 4.61376,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 5.7672,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "487.008% do ATQ + 608.76% da DEF",
+              "level": 11,
+              "components": [
+                {
+                  "scalings": 4.87008,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 6.0876,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "512.64% do ATQ + 640.8% da DEF",
+              "level": 12,
+              "components": [
+                {
+                  "scalings": 5.1264,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 6.408,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "544.68% do ATQ + 680.85% da DEF",
+              "level": 13,
+              "components": [
+                {
+                  "scalings": 5.4468,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 6.8085,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "576.72% do ATQ + 720.9% da DEF",
+              "level": 14,
+              "components": [
+                {
+                  "scalings": 5.7672,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 7.209,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            },
+            {
+              "value": "608.76% do ATQ + 760.95% da DEF",
+              "level": 15,
+              "components": [
+                {
+                  "scalings": 6.0876,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                },
+                {
+                  "scalings": 7.6095,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "def"
+                  }
+                }
+              ]
+            }
           ]
         },
         {
           "name": "Recarga",
           "power": [
-            { "value": "13.5s", "level": 1 },
-            { "value": "13.5s", "level": 2 },
-            { "value": "13.5s", "level": 3 },
-            { "value": "13.5s", "level": 4 },
-            { "value": "13.5s", "level": 5 },
-            { "value": "13.5s", "level": 6 },
-            { "value": "13.5s", "level": 7 },
-            { "value": "13.5s", "level": 8 },
-            { "value": "13.5s", "level": 9 },
-            { "value": "13.5s", "level": 10 },
-            { "value": "13.5s", "level": 11 },
-            { "value": "13.5s", "level": 12 },
-            { "value": "13.5s", "level": 13 }
+            {
+              "value": "13.5s",
+              "level": 1
+            },
+            {
+              "value": "13.5s",
+              "level": 2
+            },
+            {
+              "value": "13.5s",
+              "level": 3
+            },
+            {
+              "value": "13.5s",
+              "level": 4
+            },
+            {
+              "value": "13.5s",
+              "level": 5
+            },
+            {
+              "value": "13.5s",
+              "level": 6
+            },
+            {
+              "value": "13.5s",
+              "level": 7
+            },
+            {
+              "value": "13.5s",
+              "level": 8
+            },
+            {
+              "value": "13.5s",
+              "level": 9
+            },
+            {
+              "value": "13.5s",
+              "level": 10
+            },
+            {
+              "value": "13.5s",
+              "level": 11
+            },
+            {
+              "value": "13.5s",
+              "level": 12
+            },
+            {
+              "value": "13.5s",
+              "level": 13
+            },
+            {
+              "value": "13.5s",
+              "level": 14
+            },
+            {
+              "value": "13.5s",
+              "level": 15
+            }
           ]
         },
         {
           "name": "Energia Elemental",
           "power": [
-            { "value": "50", "level": 1 },
-            { "value": "50", "level": 2 },
-            { "value": "50", "level": 3 },
-            { "value": "50", "level": 4 },
-            { "value": "50", "level": 5 },
-            { "value": "50", "level": 6 },
-            { "value": "50", "level": 7 },
-            { "value": "50", "level": 8 },
-            { "value": "50", "level": 9 },
-            { "value": "50", "level": 10 },
-            { "value": "50", "level": 11 },
-            { "value": "50", "level": 12 },
-            { "value": "50", "level": 13 }
+            {
+              "value": "50",
+              "level": 1
+            },
+            {
+              "value": "50",
+              "level": 2
+            },
+            {
+              "value": "50",
+              "level": 3
+            },
+            {
+              "value": "50",
+              "level": 4
+            },
+            {
+              "value": "50",
+              "level": 5
+            },
+            {
+              "value": "50",
+              "level": 6
+            },
+            {
+              "value": "50",
+              "level": 7
+            },
+            {
+              "value": "50",
+              "level": 8
+            },
+            {
+              "value": "50",
+              "level": 9
+            },
+            {
+              "value": "50",
+              "level": 10
+            },
+            {
+              "value": "50",
+              "level": 11
+            },
+            {
+              "value": "50",
+              "level": 12
+            },
+            {
+              "value": "50",
+              "level": 13
+            },
+            {
+              "value": "50",
+              "level": 14
+            },
+            {
+              "value": "50",
+              "level": 15
+            }
           ]
         }
       ],
@@ -313,102 +2970,1276 @@
     {
       "name": "Feito Sob Medida",
       "unlock": "Desbloqueado na Ascenção 1",
-      "description": "Durante um curto período de tempo após executar o Ataque de Impulso Ascendente de Carícia da Pluma Penada, diferentes efeitos são ativados dependendo do que for feito em seguida: se pressionar a Habilidade Elemental, desencadeia \"Costura\"; se pressionar o Ataque Normal, desencadeia \"Bordado\".\n\nCostura\n· Muda para o próximo personagem.\n· Aplica o efeito \"Aproveite o Momento\" a todos os personagens da equipe: quando o personagem ativo atingir um inimigo próximo com um Ataque Normal, Carregado ou Imersivo, Tamoto executará um Ataque Coordenado na localização do oponente que inflige Dano Geo em AdE equivalente a 100% do dano do Ataque de Impulso Ascendente de \"Carícia da Pluma Penada\". O Dano infligido dessa forma é considerado dano de Habilidade Elemental.\n· O efeito \"Aproveite o Momento\" dura 8s, e Tamoto só pode executar um Ataque Coordenado a cada 2s. Enquanto \"Aproveite o Momento\" estiver ativo, no máximo 2 Ataques Coordenados podem ser executados.\n\nBordado· Chiori obtémEncantamento Geo por 5s.\n\nQuando Chiori está ativa, se não pressionar a Habilidade Elemental novamente ou não executar um Ataque Normal durante o curto período de tempo após realizar o Ataque de Impulso Ascendente de \"Carícia da Pluma Penada\", o efeito de \"Bordado\" será ativado diretamente.",
-      "level": 1
+      "description": "Durante um curto período de tempo após executar o Ataque de Impulso Ascendente de Carícia da Pluma Penada, diferentes efeitos são ativados dependendo do que for feito em seguida: se pressionar a Habilidade Elemental, desencadeia \"Costura\"; se pressionar o Ataque Normal, desencadeia \"Bordado\".\n\nCostura\n· Muda para o próximo personagem.\n· Aplica o efeito \"Aproveite o Momento\" a todos os personagens da equipe: quando o personagem ativo atingir um inimigo próximo com um Ataque Normal, Carregado ou Imersivo, Tamoto executará um Ataque Coordenado na localização do oponente que inflige Dano Geo em AdE equivalente a 100% do dano do Ataque de Impulso Ascendente de \"Carícia da Pluma Penada\". O Dano infligido dessa forma é considerado dano de Habilidade Elemental.\n· O efeito \"Aproveite o Momento\" dura 8s, e Tamoto só pode executar um Ataque Coordenado a cada 2s. Enquanto \"Aproveite o Momento\" estiver ativo, no máximo 2 Ataques Coordenados podem ser executados.\n\nBordado\n· Chiori obtém Encantamento Geo por 5s.\n\nQuando Chiori está ativa, se não pressionar a Habilidade Elemental novamente ou não executar um Ataque Normal durante o curto período de tempo após realizar o Ataque de Impulso Ascendente de \"Carícia da Pluma Penada\", o efeito de \"Bordado\" será ativado diretamente.",
+      "level": 1,
+      "modifiers": [],
+      "skills": [
+        {
+          "label": "Aproveite o Momento — ataque coordenado — um ataque no nível efetivo 1 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [1.4928],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [1.866],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Aproveite o Momento — ataque coordenado — um ataque no nível efetivo 2 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [1.60476],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [2.00595],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Aproveite o Momento — ataque coordenado — um ataque no nível efetivo 3 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [1.71672],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [2.1459],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Aproveite o Momento — ataque coordenado — um ataque no nível efetivo 4 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [1.866],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [2.3325],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Aproveite o Momento — ataque coordenado — um ataque no nível efetivo 5 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [1.97796],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [2.47245],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Aproveite o Momento — ataque coordenado — um ataque no nível efetivo 6 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [2.08992],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [2.6124],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Aproveite o Momento — ataque coordenado — um ataque no nível efetivo 7 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [2.2392],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [2.799],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Aproveite o Momento — ataque coordenado — um ataque no nível efetivo 8 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [2.38848],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [2.9856],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Aproveite o Momento — ataque coordenado — um ataque no nível efetivo 9 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [2.53776],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [3.1722],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Aproveite o Momento — ataque coordenado — um ataque no nível efetivo 10 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [2.68704],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [3.3588],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Aproveite o Momento — ataque coordenado — um ataque no nível efetivo 11 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [2.83632],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [3.5454],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Aproveite o Momento — ataque coordenado — um ataque no nível efetivo 12 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [2.9856],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [3.732],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Aproveite o Momento — ataque coordenado — um ataque no nível efetivo 13 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [3.1722],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [3.96525],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Aproveite o Momento — ataque coordenado — um ataque no nível efetivo 14 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [3.3588],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [4.1985],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Aproveite o Momento — ataque coordenado — um ataque no nível efetivo 15 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [3.5454],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [4.43175],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Retoque Final",
       "unlock": "Desbloqueado na Ascenção 4",
       "description": "Quando um aliado próximo criar uma Construção Geo, Chiori ganha 20% de Bônus de Dano Geo por 20s.",
-      "level": 4
+      "level": 4,
+      "modifiers": [
+        {
+          "label": "Retoque Final — Bônus de Dano Geo após a criação próxima de uma Construção Geo, ou pela condição da C1 desbloqueada",
+          "type": "elemental_dmg_percent",
+          "element": "GEO",
+          "values": [0.2],
+          "bonus": true
+        }
+      ]
     },
     {
       "name": "Silhueta Bela",
       "unlock": "Desbloqueado automaticamente",
-      "description": "Quando qualquer membro do grupo estiver usando um Vestuário que não seja o Vestuário padrão, ou estiver usando um Planador que não seja o \"Planador de Iniciante\", os membros do grupo receberão o efeito Passos Ágeis: Veloc. Mov. aumenta em 10%.\nEsse efeito não surte efeito em domínios, Domínios Dizimados e Abismo do Espiral. Passos Ágeis não acumula."
+      "description": "Quando qualquer membro do grupo estiver usando um Vestuário que não seja o Vestuário padrão, ou estiver usando um Planador que não seja o \"Planador de Iniciante\", os membros do grupo receberão o efeito Passos Ágeis: Veloc. Mov. aumenta em 10%.\nEsse efeito não surte efeito em domínios, Domínios Dizimados e Abismo do Espiral. Passos Ágeis não acumula.",
+      "modifiers": [
+        {
+          "label": "Passos Ágeis — Velocidade de Movimento da equipe com vestimenta ou planador elegível, fora dos domínios restritos",
+          "type": "movement_speed_percent",
+          "values": [0.1],
+          "bonus": true
+        }
+      ]
     }
   ],
   "constellations": [
     {
       "name": "Seis Caminhos da Seda da Sabedoria",
       "unlock": "Constelação Lv. 1",
-      "description": "A AdE de Autômata Tamoto invocada por Carícia da Pluma Penada é aumentada em 50%.\nAlém disso, se há outro membro Geo na equipe além de Chiori, Carícia da Pluma Penada vai desencadear o seguinte efeito após a investida:\n· Invoca outra Tamoto. Somente uma Tamoto adicional pode existir ao mesmo tempo, seja invocada por Chiori dessa forma ou através da presença de uma Construção Geo.\n· Desencadeia o Talento Passivo \"Retoque Final\". Esse efeito requer o desbloqueio do Talento Passivo \"Retoque Final\".",
-      "level": 1
+      "description": "A AdE de Autômata Tamoto invocada por Carícia da Pluma Penada é aumentada em 50%.\nAlém disso, se há outro membro Geo na equipe além de Chiori, Carícia da Pluma Penada vai desencadear o seguinte efeito após a investida:\n· Invoca outra Tamoto. Somente uma Tamoto adicional pode existir ao mesmo tempo, seja invocada por Chiori dessa forma ou através da presença de uma Construção Geo.\n· Desencadeia o Talento de Ascensão \"Retoque Final\". Esse efeito requer o desbloqueio do Talento de Ascensão \"Retoque Final\".",
+      "level": 1,
+      "modifiers": []
     },
     {
       "name": "Em Cinco Cores Tingidas",
       "unlock": "Constelação Lv. 2",
       "description": "Nos 10s após usar Lâminas Gêmeas: Em Voo, uma boneca Autômato Simples \"Kinu\" vai ser invocada perto do personagem ativo a cada 3s. Kinu atacará inimigos próximos, causando Dano Geo em AdE equivalente a 170% do Dano de Tamoto. O Dano causado dessa forma é considerado Dano de Habilidade Elemental.\nKinu sairá do campo de batalha após 1 ataque ou depois de 3s.",
-      "level": 2
+      "level": 2,
+      "skills": [
+        {
+          "label": "Em Cinco Cores Tingidas — Kinu — um ataque no nível efetivo 1 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [1.39536],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [1.7442],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Em Cinco Cores Tingidas — Kinu — um ataque no nível efetivo 2 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [1.500012],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [1.875015],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Em Cinco Cores Tingidas — Kinu — um ataque no nível efetivo 3 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [1.604664],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [2.00583],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Em Cinco Cores Tingidas — Kinu — um ataque no nível efetivo 4 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [1.7442],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [2.18025],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Em Cinco Cores Tingidas — Kinu — um ataque no nível efetivo 5 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [1.848852],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [2.311065],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Em Cinco Cores Tingidas — Kinu — um ataque no nível efetivo 6 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [1.953504],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [2.44188],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Em Cinco Cores Tingidas — Kinu — um ataque no nível efetivo 7 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [2.09304],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [2.6163],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Em Cinco Cores Tingidas — Kinu — um ataque no nível efetivo 8 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [2.232576],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [2.79072],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Em Cinco Cores Tingidas — Kinu — um ataque no nível efetivo 9 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [2.372112],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [2.96514],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Em Cinco Cores Tingidas — Kinu — um ataque no nível efetivo 10 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [2.511648],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [3.13956],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Em Cinco Cores Tingidas — Kinu — um ataque no nível efetivo 11 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [2.651184],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [3.31398],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Em Cinco Cores Tingidas — Kinu — um ataque no nível efetivo 12 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [2.79072],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [3.4884],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Em Cinco Cores Tingidas — Kinu — um ataque no nível efetivo 13 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [2.96514],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [3.706425],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Em Cinco Cores Tingidas — Kinu — um ataque no nível efetivo 14 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [3.13956],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [3.92445],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Em Cinco Cores Tingidas — Kinu — um ataque no nível efetivo 15 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [3.31398],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [4.142475],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Quatro Embelezamentos de Brocado",
       "unlock": "Constelação Lv. 3",
       "description": "Aumenta o nível da Carícia da Pluma Penada em 3.\nO nível máximo de elevação é 15.",
-      "level": 3
+      "level": 3,
+      "changes": [
+        {
+          "skillTalents": "Carícia da Pluma Penada",
+          "level": true,
+          "add": 3
+        }
+      ]
     },
     {
       "name": "Três Cortesias da Costura",
       "unlock": "Constelação Lv. 4",
-      "description": "Por 8s após acionar qualquer um dos efeitos subsequentes do Talento Passivo \"Feito Sob Medida\", quando os Ataques Normais, Carregados ou Imersivos do seu personagem ativo atual atingirem um oponente, ele convocará o Autômato Simples Kinu próximo a esse oponente. Você pode invocar 1 Kinu dessa forma a cada 1s, e até 3 Kinu podem ser invocados dessa forma em cada instância de \"Feito Sob Medida\" de \"Aproveite o Momento\" ou do efeito \"Bordado\". Esse efeito acima pode ser ativado uma vez a cada 15s.\nÉ necessário desbloquear o Talento Passivo \"Feito Sob Medida\" primeiro.",
-      "level": 4
+      "description": "Por 8s após acionar qualquer um dos efeitos subsequentes do Talento de Ascensão \"Feito Sob Medida\", quando os Ataques Normais, Carregados ou Imersivos do seu personagem ativo atual atingirem um oponente, ele convocará o Autômato Simples Kinu próximo a esse oponente. Você pode invocar 1 Kinu dessa forma a cada 1s, e até 3 Kinu podem ser invocados dessa forma em cada instância de \"Feito Sob Medida\" de \"Aproveite o Momento\" ou do efeito \"Bordado\". Esse efeito acima pode ser ativado uma vez a cada 15s.\nÉ necessário desbloquear o Talento de Ascensão \"Feito Sob Medida\" primeiro.",
+      "level": 4,
+      "skills": [
+        {
+          "label": "Três Cortesias da Costura — Kinu — um ataque no nível efetivo 1 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [1.39536],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [1.7442],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Três Cortesias da Costura — Kinu — um ataque no nível efetivo 2 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [1.500012],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [1.875015],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Três Cortesias da Costura — Kinu — um ataque no nível efetivo 3 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [1.604664],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [2.00583],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Três Cortesias da Costura — Kinu — um ataque no nível efetivo 4 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [1.7442],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [2.18025],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Três Cortesias da Costura — Kinu — um ataque no nível efetivo 5 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [1.848852],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [2.311065],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Três Cortesias da Costura — Kinu — um ataque no nível efetivo 6 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [1.953504],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [2.44188],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Três Cortesias da Costura — Kinu — um ataque no nível efetivo 7 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [2.09304],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [2.6163],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Três Cortesias da Costura — Kinu — um ataque no nível efetivo 8 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [2.232576],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [2.79072],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Três Cortesias da Costura — Kinu — um ataque no nível efetivo 9 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [2.372112],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [2.96514],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Três Cortesias da Costura — Kinu — um ataque no nível efetivo 10 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [2.511648],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [3.13956],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Três Cortesias da Costura — Kinu — um ataque no nível efetivo 11 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [2.651184],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [3.31398],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Três Cortesias da Costura — Kinu — um ataque no nível efetivo 12 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [2.79072],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [3.4884],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Três Cortesias da Costura — Kinu — um ataque no nível efetivo 13 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [2.96514],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [3.706425],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Três Cortesias da Costura — Kinu — um ataque no nível efetivo 14 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [3.13956],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [3.92445],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Três Cortesias da Costura — Kinu — um ataque no nível efetivo 15 de Carícia da Pluma Penada (selecionar somente um nível; bônus separados)",
+          "damageType": "GEO",
+          "target": "elemental_skill",
+          "scalings": [
+            {
+              "type": "atk_percent",
+              "values": [3.31398],
+              "conditional": {
+                "origin": "character",
+                "attribute": "atk"
+              }
+            },
+            {
+              "type": "def_percent",
+              "values": [4.142475],
+              "conditional": {
+                "origin": "character",
+                "attribute": "def"
+              }
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "Duas Plumas de Seda",
       "unlock": "Constelação Lv. 5",
       "description": "Aumenta o Nível de Lâminas Gêmeas: Em Voo em 3.\nO nível máximo de elevação é 15.",
-      "level": 5
+      "level": 5,
+      "changes": [
+        {
+          "skillTalents": "Lâminas Gêmeas: Em Voo",
+          "level": true,
+          "add": 3
+        }
+      ]
     },
     {
       "name": "Buscando o Princípio Universal",
       "unlock": "Constelação Lv. 6",
-      "description": "Depois de desencadear o efeito subsequente do Talento Passivo \"Feito Sob Medida\", a Carícia da Pluma Penada de Chiori vai ter sua recarga reduzida em 12s. É necessário ter desbloqueado o Talento Passivo \"Feito Sob Medida\" primeiro.\nAlém disso, o Dano causado pelo Ataque Normal de Chiori é aumentado em 235% de sua DEF.",
-      "level": 6
+      "description": "Depois de desencadear o efeito subsequente do Talento de Ascensão \"Feito Sob Medida\", a Carícia da Pluma Penada de Chiori vai ter sua recarga reduzida em 12s. É necessário ter desbloqueado o Talento de Ascensão \"Feito Sob Medida\" primeiro.\nAlém disso, o Dano causado pelo Ataque Normal de Chiori é aumentado em 235% de sua DEF.",
+      "level": 6,
+      "modifiers": [
+        {
+          "label": "Dano adicional dos Ataques Normais de Chiori baseado na DEF de Chiori",
+          "type": "dmg_percent",
+          "target": "normal_attack",
+          "values": [2.35],
+          "conditional": {
+            "origin": "character",
+            "attribute": "def"
+          },
+          "bonus": true
+        }
+      ]
     }
   ],
   "vision_key": "GEO",
   "weapon_type": "SWORD",
   "ascension_materials": {
     "level_20": [
-      { "name": "Mora", "value": 20000 },
-      { "name": "Prithiva Topaz Sliver", "value": 1 },
-      { "name": "Dendrobium", "value": 3 },
-      { "name": "Spectral Husk", "value": 3 }
+      {
+        "name": "Mora",
+        "value": 20000
+      },
+      {
+        "name": "Prithiva Topaz Sliver",
+        "value": 1
+      },
+      {
+        "name": "Dendrobium",
+        "value": 3
+      },
+      {
+        "name": "Spectral Husk",
+        "value": 3
+      }
     ],
     "level_40": [
-      { "name": "Mora", "value": 40000 },
-      { "name": "Prithiva Topaz Fragment", "value": 3 },
-      { "name": "Artificed Spare Clockwork Component — Coppelia", "value": 2 },
-      { "name": "Dendrobium", "value": 10 },
-      { "name": "Spectral Husk", "value": 15 }
+      {
+        "name": "Mora",
+        "value": 40000
+      },
+      {
+        "name": "Prithiva Topaz Fragment",
+        "value": 3
+      },
+      {
+        "name": "Artificed Spare Clockwork Component — Coppelia",
+        "value": 2
+      },
+      {
+        "name": "Dendrobium",
+        "value": 10
+      },
+      {
+        "name": "Spectral Husk",
+        "value": 15
+      }
     ],
     "level_50": [
-      { "name": "Mora", "value": 60000 },
-      { "name": "Prithiva Topaz Fragment", "value": 6 },
-      { "name": "Artificed Spare Clockwork Component — Coppelia", "value": 4 },
-      { "name": "Dendrobium", "value": 20 },
-      { "name": "Spectral Heart", "value": 12 }
+      {
+        "name": "Mora",
+        "value": 60000
+      },
+      {
+        "name": "Prithiva Topaz Fragment",
+        "value": 6
+      },
+      {
+        "name": "Artificed Spare Clockwork Component — Coppelia",
+        "value": 4
+      },
+      {
+        "name": "Dendrobium",
+        "value": 20
+      },
+      {
+        "name": "Spectral Heart",
+        "value": 12
+      }
     ],
     "level_60": [
-      { "name": "Mora", "value": 80000 },
-      { "name": "Prithiva Topaz Chunk", "value": 3 },
-      { "name": "Artificed Spare Clockwork Component — Coppelia", "value": 8 },
-      { "name": "Dendrobium", "value": 30 },
-      { "name": "Spectral Heart", "value": 18 }
+      {
+        "name": "Mora",
+        "value": 80000
+      },
+      {
+        "name": "Prithiva Topaz Chunk",
+        "value": 3
+      },
+      {
+        "name": "Artificed Spare Clockwork Component — Coppelia",
+        "value": 8
+      },
+      {
+        "name": "Dendrobium",
+        "value": 30
+      },
+      {
+        "name": "Spectral Heart",
+        "value": 18
+      }
     ],
     "level_70": [
-      { "name": "Mora", "value": 100000 },
-      { "name": "Prithiva Topaz Chunk", "value": 6 },
-      { "name": "Artificed Spare Clockwork Component — Coppelia", "value": 12 },
-      { "name": "Dendrobium", "value": 45 },
-      { "name": "Spectral Nucleus", "value": 12 }
+      {
+        "name": "Mora",
+        "value": 100000
+      },
+      {
+        "name": "Prithiva Topaz Chunk",
+        "value": 6
+      },
+      {
+        "name": "Artificed Spare Clockwork Component — Coppelia",
+        "value": 12
+      },
+      {
+        "name": "Dendrobium",
+        "value": 45
+      },
+      {
+        "name": "Spectral Nucleus",
+        "value": 12
+      }
     ],
     "level_80": [
-      { "name": "Mora", "value": 120000 },
-      { "name": "Prithiva Topaz Gemstone", "value": 6 },
-      { "name": "Artificed Spare Clockwork Component — Coppelia", "value": 20 },
-      { "name": "Dendrobium", "value": 60 },
-      { "name": "Spectral Nucleus", "value": 24 }
+      {
+        "name": "Mora",
+        "value": 120000
+      },
+      {
+        "name": "Prithiva Topaz Gemstone",
+        "value": 6
+      },
+      {
+        "name": "Artificed Spare Clockwork Component — Coppelia",
+        "value": 20
+      },
+      {
+        "name": "Dendrobium",
+        "value": 60
+      },
+      {
+        "name": "Spectral Nucleus",
+        "value": 24
+      }
     ]
   }
 }
