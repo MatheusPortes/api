@@ -1,5 +1,10 @@
 # Rule Decisions and Reusable Evidence
 
+## Character Base ATK reference (2026-11-11)
+
+- Owner approved the displayed `character.base_atk` reference: innate character plus equipped weapon Base ATK, excluding artifacts/buffs. Rule `character-base-atk-reference` keeps total `character.atk` and the separate EffectType `base_atk` unchanged. Bennett's Burst and C1 supply distinct recipient `flat_atk` contributions with their own raw coefficients, referencing Bennett rather than recipient Base ATK. No runtime stat evaluator or automatic reference replacement.
+- Read-only compatibility inspected28 live EN/PT paths at baseline `79e1d4cc`: `characters/{albedo,alhaitham,aloy,amber,arataki-itto,arlecchino,ayaka,ayato,baizhu,barbara,beidou}/{en,pt}.json` and `weapons/{primordial-jade-cutter,crescent-pike,the-flute}/{en,pt}.json`. All are compatible/unchanged; no existing approved Base ATK reference needs conversion. Prior total-ATK damage, HP/DEF/EM references, cross-talent healing and flat-stat results retain their exact bytes/semantics. No completed retrospective repeated. Detailed checks `/tmp/opencode/bennett-review-2026-11-11/compatibility.json`; Bennett is the sole selected application.
+
 ## Beidou incoming damage reduction and constellation shield (2026-11-10)
 
 - Owner approved the two displayed proposals: Burst-local `dmg_reduction` with positive effective-level ratios and no bonus/target/conditional; C1-local `shield_absorption` with values[.16], conditional character.hp and no bonus. Rules `character-incoming-damage-reduction` and `character-source-local-shield-absorption` define their limited result meanings. Grouped talent shields still use separate proportional/fixed components; no constellation upgrades, shared damage engine, incoming-increase schema or silent text-only exception expansion.
