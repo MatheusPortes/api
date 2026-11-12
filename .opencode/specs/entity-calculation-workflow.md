@@ -116,6 +116,8 @@ Rule `independent-proc-alternative-totals`: source-validated mutually exclusive 
 
 ### Reactions
 
+Rule `direct-reaction-independent-damage`: owner approval on 2026-11-12 adds optional nonempty `IndependentSkill.reaction: Reaction[]` for an individually validated proc explicitly classified as direct reaction damage. This classifies the independent hit itself, not its activation trigger or a DMG Bonus. Cyno's Radiance Starsame uses damageType ELECTRO, reaction[STELLAR_CONDUCT], raw ATK scaling[2] and no attack target; it replaces the ordinary Electro/Skill Bolt for that trigger. Its raw EM addition remains separately source-local on A4: dmg_percent[6], conditional character.elemental_mastery, reaction[STELLAR_CONDUCT], bonus true, with a Starsame-only localized label. That attribute-referenced modifier supplies raw attached damage units, not a dimensionless600% reaction bonus or a second independent hit; unreferenced reaction dmg_percent (C2[.16] per stack) remains a dimensionless bonus. Consumers select the eligible ordinary/enhanced proc, combine its applicable raw contributions and apply separate bonuses under consumer-composed-source-contributions; no reaction evaluator, universal damage/CRIT/DEF formula or implicit inheritance is supplied. Preserve ordinary proc categories and prior independent ATK/DEF/HP/EM scaling meanings. Omit reaction on ordinary procs and activation-only mechanics; never auto-backfill or infer that an attack is reaction damage merely from its element. No new Reaction enum or unrelated migration.
+
 `reaction` is required for reaction-scoped `dmg_percent` and approved reaction-scoped `crit_dmg` under `lunar-reaction-scoped-crit-damage` or `stellar-glimmer-scoped-crit-damage`; omit it on other results and on ordinary/global CRIT grants. Valid values:
 `SWIRL`, `STELLAR_SWIRL`, `OVERLOADED`, `ELECTRO_CHARGED`, `SUPERCONDUCT`, `BURNING`, `BURGEON`, `BLOOM`, `HYPERBLOOM`, `LUNAR_BLOOM`, `AGGRAVATE`, `SPREAD`, `LUNAR_CHARGED`, `LUNAR_CRYSTALLIZE`, `STELLAR_CONDUCT`, `STELLAR_GLIMMER`, `VAPORIZE`, `MELT`.
 
@@ -240,6 +242,7 @@ type IndependentSkill = {
   refinementLevels?: number[];
   damageType?: Vision;
   target?: AttackTarget;
+  reaction?: Reaction[];
   scalings: Array<{
     type: EffectType;
     values: number[];

@@ -1,5 +1,10 @@
 # Rule Decisions and Reusable Evidence
 
+## Direct reaction independent damage and attached EM (2026-11-12)
+
+- Owner approved the displayed Cyno example after reviewing its text and JSON: enhanced independent Electro Starsame with reaction[STELLAR_CONDUCT], ATK[2], no Skill target, plus separate source-local A4 dmg_percent[6] referenced to character.elemental_mastery, same reaction scope, bonus true and Starsame-only label. Rule `direct-reaction-independent-damage` adds the optional IndependentSkill.reaction field and distinguishes raw attached EM damage from C2's unreferenced dimensionless reaction bonus. The approved example selects one enhanced projectile, not three pre-summed bolts or simultaneous ordinary/enhanced alternatives. No runtime reaction/damage evaluator or new reaction enum.
+- Read-only compatibility at `080eec6f` checked10 actual EN/PT paths: `assets/data/characters/{citlali,chiori,alhaitham}/{en,pt}.json`, `assets/data/artifacts/thundering-fury/{en,pt}.json`, `assets/data/weapons/light-of-foliar-incision/{en,pt}.json`. All compatible/unchanged and byte-equal to HEAD: Citlali's independent EM damage remains ordinary unclassified-category Cryo, Chiori's native ATK/DEF procs remain Geo/Skill, Alhaitham's grouped EM components remain native attacks, Thundering Fury's unreferenced reaction ratios remain dimensionless bonuses, and Foliar's attached EM contributions remain source-local weapon modifiers. Evidence `/tmp/opencode/cyno-review-2026-11-12/compatibility.json`. No previous completed retrospective repeated and no prior entity edited.
+
 ## Independent EM-referenced damage (2026-11-12)
 
 - After reading the exact PT C4 clause, the owner approved the displayed Citlali proposal: constellation-local independent Cryo skill with scaling `{ type: 'dmg_percent', values: [18], conditional: { origin: 'character', attribute: 'elemental_mastery' } }`, no inferred attack target/bonus. Rule `independent-em-referenced-damage` distinguishes raw damage from EM stat grants and attached/additive damage. No new enum or runtime evaluator; existing independent ATK/DEF/HP types remain unchanged.
