@@ -1,5 +1,10 @@
 # Rule Decisions and Reusable Evidence
 
+## Independent EM-referenced damage (2026-11-12)
+
+- After reading the exact PT C4 clause, the owner approved the displayed Citlali proposal: constellation-local independent Cryo skill with scaling `{ type: 'dmg_percent', values: [18], conditional: { origin: 'character', attribute: 'elemental_mastery' } }`, no inferred attack target/bonus. Rule `independent-em-referenced-damage` distinguishes raw damage from EM stat grants and attached/additive damage. No new enum or runtime evaluator; existing independent ATK/DEF/HP types remain unchanged.
+- Read-only compatibility at `bfc9e2ec` inspected10 actual paths: `assets/data/characters/{alhaitham,chiori,chasca}/{en,pt}.json` and `assets/data/weapons/{light-of-foliar-incision,wandering-evenstar}/{en,pt}.json`. All compatible/unchanged and byte-equal to HEAD. Alhaitham's grouped EM damage and the weapon's attached EM bonus remain in their distinct approved containers; Wandering Evenstar's EM-to-flat-ATK grants are not independent damage; Chiori's ATK/DEF procs and Chasca's raw ATK alternatives retain existing types. Evidence `/tmp/opencode/citlali-review-2026-11-11/compatibility.json`. No prior-path migration or repeated completed retrospective.
+
 ## Consumer-side source contribution composition (2026-11-11)
 
 - Owner explicitly approved the proposed Chasca A4 raw-coefficient representation as a general API rule: always retain separate contributions and let the API consumer combine bonuses if applicable. Rule `consumer-composed-source-contributions` resolves representation without claiming independent in-game A1 inheritance verification. A4 derives raw Shell coefficients×1.5 at effective Skill level, not an already-bonused Shell result. Bonus eligibility remains explicit consumer handling; no new damage-result reference, runtime evaluator or migration.
