@@ -1,5 +1,10 @@
 # Rule Decisions and Reusable Evidence
 
+## Dahlia generic attack speed and text-only revival (2026-11-13)
+
+- Owner approved Dahlia A4 as `atk_speed_percent`[.000005]×Dahlia MaxHP with `conditional: character.hp`, `maxValues: [.2]`, `bonus: true`, no attack target, labeled for the active recipient under `generic-attack-speed-bonus`. C6 adds a separate current-recipient `atk_speed_percent`[.1], `bonus: true`, no target. C6 revival/full-HP/15-minute interval remain explicitly text-only for consumer handling; no structured revival result or healing engine. Generic speed does not imply an attack target and does not reclassify existing explicitly targeted speed bonuses.
+- Read-only compatibility at `66ab8e40` checked prior completed character paths `assets/data/characters/{bennett,candace,charlotte,chasca,chevreuse,chiori,chongyun,citlali,clorinde,collei,cyno}/{en,pt}.json` (22 actual paths): all compatible/unchanged and byte-equal to HEAD; Dahlia is the first generic-speed application. No prior-path migration. Evidence retained in `/tmp/opencode/dahlia-review-2026-11-12/`.
+
 ## Direct reaction independent damage and attached EM (2026-11-12)
 
 - Owner approved the displayed Cyno example after reviewing its text and JSON: enhanced independent Electro Starsame with reaction[STELLAR_CONDUCT], ATK[2], no Skill target, plus separate source-local A4 dmg_percent[6] referenced to character.elemental_mastery, same reaction scope, bonus true and Starsame-only label. Rule `direct-reaction-independent-damage` adds the optional IndependentSkill.reaction field and distinguishes raw attached EM damage from C2's unreferenced dimensionless reaction bonus. The approved example selects one enhanced projectile, not three pre-summed bolts or simultaneous ordinary/enhanced alternatives. No runtime reaction/damage evaluator or new reaction enum.
