@@ -647,3 +647,15 @@
 ## 2026-11-16 — gaming selected (round4 item4/10)
 
 - Only `gaming` is selected for inventory/research; later items (ganyu, gorou, hu-tao, iansan, ifa, jean) are not started or certified. Baselines: agent `9e994a7a`, delivery `8a4aa4b7`; both worktrees clean before selection. No push or automatic extra round.
+
+## 2026-11-16 — gaming — inventory/research (round4 item4/10)
+
+- Gaming references accessed2026-11-16: https://raw.githubusercontent.com/KQM-git/TCL/master/src/data/characters/Gaming.json ; https://library.keqingmains.com/characters/pyro/gaming ; https://genshin-impact.fandom.com/api.php?action=query&prop=revisions&rvprop=content&format=json&titles=Gaming . Yatta EN/PT inacessíveis (404). KQM acessível com coeficientes brutos (Normal Attack 11 níveis; Bestial Ascent e Burst 13 níveis). Fandom API acessível apenas para identidade (4★, Claymore, Pyro, Liyue). Release Pyro/Claymore identity e coeficientes nativos concordam. Nenhum conflito de fonte verificável.
+- Bundle `/tmp/opencode/gaming-review-2026-11-16/`; Node20.20.2 research passes114 independent rounded KQM comparisons and45-level raw EN/PT parameter parity. No source conflict.
+- Map native Physical/Pyro Normal/Charged/Plunge rows: 1-Hit[0.839], 2-Hit[0.79], 3-Hit[1.066], 4-Hit[1.279], Charged Cyclic[0.625], Charged Final[1.13], Plunge[0.641], Low/High Plunge[1.28/1.60]. Skill Plunging Attack: Charmed Cloudstrider DMG[2.304]×ATK. Burst Suanni Man Chai Smash DMG[3.704]×ATK; Skill Healing[0.30]×MaxHP fixed at all levels. C1 Suanni Man Chai returns — healing[0.15]×Gaming HP; C2 Healing overflow — ATK increase[0.20]; C3 Bestial Ascent level change[+3]; C4 Energy restoration text-only; C5 Burst level change[+3]; C6 Charmed Cloudstrider CRIT Rate[0.20] and CRIT DMG[0.40]. A1 Dance of Amity (HP regen over time), A2 Air of Prosperity (below 50% HP — Healing Bonus[0.20], above 50% HP — Plunge DMG bonus[0.20], both text-only), A3 The Striding Beast text-only. Preserve unrelated fields/locales/assets/progression. No new schema/runtime evaluator.
+- Node20.20.2 focused exact-source/level/type/reference/hit/component/modifier/change checks,114 independent KQM research comparisons, EN/PT parity, preservation and actual filesystem smoke pass. Focused format/diff checks pass. Build exits2, lint exits1 after ESLint passes;62 TypeScript diagnostic lines and17 unrelated Prettier paths exactly match Furina baseline. Evidence `/tmp/opencode/gaming-review-2026-11-16/`; no unrelated fix or successful-build claim.
+- Gaming paired commits completed: agent `94172673` / characters-specifications `d3d90168`, both `gaming - map talent calculations and separate Max HP bonuses`. Exact reviewed-field equality, branch-native preservation, JSON-only delivery scope and focused formatting/diff checks passed; worktrees clean. Round4/10 progress4/10. No push.
+
+## 2026-11-16 — ganyu selected (round4 item5/10)
+
+- Only `ganyu` is selected for inventory/research; later items (gorou, hu-tao, iansan, ifa, jean) are not started or certified. Baselines: agent `94172673`, delivery `d3d90168`; both worktrees clean before selection. No push or automatic extra round.
