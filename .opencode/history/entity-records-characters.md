@@ -679,3 +679,15 @@
 ## 2026-11-16 — hu-tao selected (round4 item7/10)
 
 - Only `hu-tao` is selected for inventory/research; later items (iansan, ifa, jean) are not started or certified. Baselines: agent `574843ca`, delivery `0612e70e`; both worktrees clean before selection. No push or automatic extra round.
+
+## 2026-11-17 — hu-tao — inventory/research (round4 item7/10)
+
+- Hu Tao references accessed2026-11-17: https://raw.githubusercontent.com/KQM-git/TCL/master/src/data/characters/Hu_Tao.json ; https://library.keqingmains.com/characters/pyro/hu-tao ; https://genshin-impact.fandom.com/api.php?action=query&prop=revisions&rvprop=content&format=json&titles=Hu_Tao . Yatta EN/PT inacessíveis (404). KQM acessível com coeficientes brutos (Normal Attack 11 níveis; Guide to Afterlife e Spirit Soother 13 níveis). Fandom API acessível apenas para identidade (5★, Polearm, Pyro, Liyue). Release Pyro/Polearm identity e coeficientes nativos concordam. Nenhum conflito de fonte verificável.
+- Bundle `/tmp/opencode/hu-tao-review-2026-11-16/`; Node20.20.2 research passes186 independent rounded KQM comparisons and45-level raw EN/PT parameter parity. No source conflict.
+- Map native Physical/Pyro Normal/Charged/Plunge rows: 1-Hit[0.469], 2-Hit[0.483], 3-Hit[0.611], 4-Hit[0.656], 5-Hit separate hits[0.333/0.352], 6-Hit[0.860], Charged Attack[1.36], Plunge[0.654], Low/High Plunge[1.31/1.63]. Skill Blood Blossom DMG[0.64]×MaxHP. Burst Skill DMG[3.03]×MaxHP, Low HP Skill DMG[3.79]×MaxHP, Skill HP Regeneration[0.0626]×MaxHP, Low HP Skill Regeneration[0.0835]×MaxHP. C1 Blood Blossom DMG bonus[0.10]×MaxHP; C2 Guide to Afterlife level change[+3]; C4 Spirit Soother level change[+3]. A1 Flutter By (CRIT Rate[0.12] after Paramita Papilio ends); A2 Sanguine Rouge (Pyro DMG Bonus[0.33] when HP≤50%); A3 The More the Merrier (cooking, text-only). C0 Crimson Bouquet (stamina, text-only), C3 Garden of Eternal Rest (CRIT on kill, text-only), C5 Butterfly's Embrace (HP<25% effect, text-only). Preserve unrelated fields/locales/assets/progression. No new schema/runtime evaluator.
+- Node20.20.2 focused exact-source/level/type/reference/hit/component/modifier/change checks,186 independent KQM research comparisons, EN/PT parity, preservation and actual filesystem smoke pass. Focused format/diff checks pass. Build exits2, lint exits1 after ESLint passes;62 TypeScript diagnostic lines and17 unrelated Prettier paths exactly match Gorou baseline. Evidence `/tmp/opencode/hu-tao-review-2026-11-16/`; no unrelated fix or successful-build claim.
+- Hu Tao paired commits completed: agent `a93463bb` / characters-specifications `dce234d5`, both `hu-tao - map talent calculations and separate Max HP bonuses`. Exact reviewed-field equality, branch-native preservation, JSON-only delivery scope and focused formatting/diff checks passed; worktrees clean. Round4/10 progress7/10. No push.
+
+## 2026-11-17 — iansan selected (round4 item8/10)
+
+- Only `iansan` is selected for inventory/research; later items (ifa, jean) are not started or certified. Baselines: agent `a93463bb`, delivery `dce234d5`; both worktrees clean before selection. No push or automatic extra round.
