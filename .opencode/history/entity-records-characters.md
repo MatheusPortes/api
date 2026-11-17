@@ -703,3 +703,15 @@
 ## 2026-11-17 — ifa selected (round4 item9/10)
 
 - Only `ifa` is selected for inventory/research; later items (jean) are not started or certified. Baselines: agent `d3502b94`, delivery `81b49f76`; both worktrees clean before selection. No push or automatic extra round.
+
+## 2026-11-17 — ifa — inventory/research (round4 item9/10)
+
+- Ifa references accessed2026-11-17: https://raw.githubusercontent.com/KQM-git/TCL/master/src/data/characters/Ifa.json ; https://library.keqingmains.com/characters/anemo/ifa ; https://genshin-impact.fandom.com/api.php?action=query&prop=revisions&rvprop=content&format=json&titles=Ifa . Yatta EN/PT inacessíveis (404). KQM acessível com coeficientes brutos (Normal Attack 11 níveis; Airborne Disease Prevention e Compound Sedation Field 13 níveis). Fandom API acessível apenas para identidade (4★, Catalyst, Anemo, Natlan). Release Anemo/Catalyst identity e coeficientes nativos concordam. Nenhum conflito de fonte verificável.
+- Bundle `/tmp/opencode/ifa-review-2026-11-17/`; Node20.20.2 research passes116 independent rounded KQM comparisons and45-level raw EN/PT parameter parity. No source conflict.
+- Map native Physical/Anemo Normal/Charged/Plunge rows: 1-Hit[0.536], 2-Hit[0.475], 3-Hit[0.748], Charged Attack[1.47], Plunge[0.568], Low/High Plunge[1.14/1.42]. Skill Tonicshot DMG[1.334]×ATK; Tonicshot Healing On Hit[0.202]×EM + 48.1 fixed. Burst Skill DMG[5.085]×ATK, Sedation Mark DMG[1.09]×ATK. C1 Energy restoration text-only; C2 Rescue Essentials limit increase text-only; C3 Airborne Disease Prevention level change[+3]; C4 Burst duration extension + EM increase text-only; C5 Compound Sedation Field level change[+3]; C6 Extreme Force text-only. A1 Mutual Aid Agreement (EM increase text-only); A2 Night Realm's Gift: Focused Emergency Rescue (Nightsoul transmission text-only); A3 Tactical Warm Compress Bandaging (Phlogiston healing text-only); A4 Field Medic's Vision (Rescue Essentials text-only, kept as info-only 4th skill talent). Preserve unrelated fields/locales/assets/progression. No new schema/runtime evaluator.
+- Node20.20.2 focused exact-source/level/type/reference/hit/component/modifier/change checks,116 independent KQM research comparisons, EN/PT parity, preservation and actual filesystem smoke pass. Focused format/diff checks pass. Build exits2, lint exits1 after ESLint passes;62 TypeScript diagnostic lines and17 unrelated Prettier paths exactly match Iansan baseline. Evidence `/tmp/opencode/ifa-review-2026-11-17/`; no unrelated fix or successful-build claim.
+- Ifa paired commits completed: agent `a5fdfecb` / characters-specifications `6d387025`, both `ifa - map talent calculations and separate Max HP bonuses`. Exact reviewed-field equality, branch-native preservation, JSON-only delivery scope and focused formatting/diff checks passed; worktrees clean. Round4/10 progress9/10. No push.
+
+## 2026-11-17 — jean selected (round4 item10/10)
+
+- Only `jean` is selected for inventory/research; this is the final authorized item of Round 4. Baselines: agent `a5fdfecb`, delivery `6d387025`; both worktrees clean before selection. No push or automatic extra round.
