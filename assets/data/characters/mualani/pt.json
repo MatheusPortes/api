@@ -19,107 +19,1008 @@
       "upgrades": [
         {
           "name": "Dano do 1° Golpe",
+          "damageType": "HYDRO",
+          "target": "normal_attack",
           "power": [
-            { "value": "51.4%", "level": 1 },
-            { "value": "55.3%", "level": 2 },
-            { "value": "59.1%", "level": 3 },
-            { "value": "64.2%", "level": 4 },
-            { "value": "68.1%", "level": 5 },
-            { "value": "72%", "level": 6 },
-            { "value": "77.1%", "level": 7 },
-            { "value": "82.2%", "level": 8 },
-            { "value": "87.4%", "level": 9 },
-            { "value": "92.5%", "level": 10 }
+            {
+              "level": 1,
+              "value": "51.4%",
+              "components": [
+                {
+                  "scalings": 0.514,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 2,
+              "value": "55.3%",
+              "components": [
+                {
+                  "scalings": 0.553,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 3,
+              "value": "59.1%",
+              "components": [
+                {
+                  "scalings": 0.591,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 4,
+              "value": "64.2%",
+              "components": [
+                {
+                  "scalings": 0.642,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 5,
+              "value": "68.1%",
+              "components": [
+                {
+                  "scalings": 0.681,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 6,
+              "value": "72%",
+              "components": [
+                {
+                  "scalings": 0.72,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 7,
+              "value": "77.1%",
+              "components": [
+                {
+                  "scalings": 0.771,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 8,
+              "value": "82.2%",
+              "components": [
+                {
+                  "scalings": 0.822,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 9,
+              "value": "87.4%",
+              "components": [
+                {
+                  "scalings": 0.874,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 10,
+              "value": "92.5%",
+              "components": [
+                {
+                  "scalings": 0.925,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            }
           ]
         },
         {
           "name": "Dano do 2° Golpe",
+          "damageType": "HYDRO",
+          "target": "normal_attack",
           "power": [
-            { "value": "44.6%", "level": 1 },
-            { "value": "48%", "level": 2 },
-            { "value": "51.3%", "level": 3 },
-            { "value": "55.8%", "level": 4 },
-            { "value": "59.1%", "level": 5 },
-            { "value": "62.5%", "level": 6 },
-            { "value": "66.9%", "level": 7 },
-            { "value": "71.4%", "level": 8 },
-            { "value": "75.9%", "level": 9 },
-            { "value": "80.3%", "level": 10 }
+            {
+              "level": 1,
+              "value": "44.6%",
+              "components": [
+                {
+                  "scalings": 0.446,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 2,
+              "value": "48%",
+              "components": [
+                {
+                  "scalings": 0.48,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 3,
+              "value": "51.3%",
+              "components": [
+                {
+                  "scalings": 0.513,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 4,
+              "value": "55.8%",
+              "components": [
+                {
+                  "scalings": 0.558,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 5,
+              "value": "59.1%",
+              "components": [
+                {
+                  "scalings": 0.591,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 6,
+              "value": "62.5%",
+              "components": [
+                {
+                  "scalings": 0.625,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 7,
+              "value": "66.9%",
+              "components": [
+                {
+                  "scalings": 0.669,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 8,
+              "value": "71.4%",
+              "components": [
+                {
+                  "scalings": 0.714,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 9,
+              "value": "75.9%",
+              "components": [
+                {
+                  "scalings": 0.759,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 10,
+              "value": "80.3%",
+              "components": [
+                {
+                  "scalings": 0.803,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            }
           ]
         },
         {
           "name": "Dano do 3° Golpe",
+          "damageType": "HYDRO",
+          "target": "normal_attack",
           "power": [
-            { "value": "70%", "level": 1 },
-            { "value": "75.3%", "level": 2 },
-            { "value": "80.5%", "level": 3 },
-            { "value": "87.5%", "level": 4 },
-            { "value": "92.8%", "level": 5 },
-            { "value": "98%", "level": 6 },
-            { "value": "105.1%", "level": 7 },
-            { "value": "112.1%", "level": 8 },
-            { "value": "119.1%", "level": 9 },
-            { "value": "126.1%", "level": 10 }
+            {
+              "level": 1,
+              "value": "70%",
+              "components": [
+                {
+                  "scalings": 0.7,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 2,
+              "value": "75.3%",
+              "components": [
+                {
+                  "scalings": 0.753,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 3,
+              "value": "80.5%",
+              "components": [
+                {
+                  "scalings": 0.805,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 4,
+              "value": "87.5%",
+              "components": [
+                {
+                  "scalings": 0.875,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 5,
+              "value": "92.8%",
+              "components": [
+                {
+                  "scalings": 0.928,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 6,
+              "value": "98%",
+              "components": [
+                {
+                  "scalings": 0.98,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 7,
+              "value": "105.1%",
+              "components": [
+                {
+                  "scalings": 1.051,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 8,
+              "value": "112.1%",
+              "components": [
+                {
+                  "scalings": 1.121,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 9,
+              "value": "119.1%",
+              "components": [
+                {
+                  "scalings": 1.191,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 10,
+              "value": "126.1%",
+              "components": [
+                {
+                  "scalings": 1.261,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            }
           ]
         },
         {
           "name": "Dano de Ataque Carregado",
+          "damageType": "HYDRO",
+          "target": "charged_attack",
           "power": [
-            { "value": "143%", "level": 1 },
-            { "value": "154%", "level": 2 },
-            { "value": "164%", "level": 3 },
-            { "value": "179%", "level": 4 },
-            { "value": "189%", "level": 5 },
-            { "value": "200%", "level": 6 },
-            { "value": "214%", "level": 7 },
-            { "value": "229%", "level": 8 },
-            { "value": "243%", "level": 9 },
-            { "value": "257%", "level": 10 }
+            {
+              "level": 1,
+              "value": "143%",
+              "components": [
+                {
+                  "scalings": 1.43,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 2,
+              "value": "154%",
+              "components": [
+                {
+                  "scalings": 1.54,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 3,
+              "value": "164%",
+              "components": [
+                {
+                  "scalings": 1.64,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 4,
+              "value": "179%",
+              "components": [
+                {
+                  "scalings": 1.79,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 5,
+              "value": "189%",
+              "components": [
+                {
+                  "scalings": 1.89,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 6,
+              "value": "200%",
+              "components": [
+                {
+                  "scalings": 2,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 7,
+              "value": "214%",
+              "components": [
+                {
+                  "scalings": 2.14,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 8,
+              "value": "229%",
+              "components": [
+                {
+                  "scalings": 2.29,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 9,
+              "value": "243%",
+              "components": [
+                {
+                  "scalings": 2.43,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 10,
+              "value": "257%",
+              "components": [
+                {
+                  "scalings": 2.57,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            }
           ]
         },
         {
           "name": "Consumo de Stamina do Ataque Carregado",
           "power": [
-            { "value": "50 pts.", "level": 1 },
-            { "value": "50 pts.", "level": 2 },
-            { "value": "50 pts.", "level": 3 },
-            { "value": "50 pts.", "level": 4 },
-            { "value": "50 pts.", "level": 5 },
-            { "value": "50 pts.", "level": 6 },
-            { "value": "50 pts.", "level": 7 },
-            { "value": "50 pts.", "level": 8 },
-            { "value": "50 pts.", "level": 9 },
-            { "value": "50 pts.", "level": 10 }
+            {
+              "level": 1,
+              "value": "50 pts."
+            },
+            {
+              "level": 2,
+              "value": "50 pts."
+            },
+            {
+              "level": 3,
+              "value": "50 pts."
+            },
+            {
+              "level": 4,
+              "value": "50 pts."
+            },
+            {
+              "level": 5,
+              "value": "50 pts."
+            },
+            {
+              "level": 6,
+              "value": "50 pts."
+            },
+            {
+              "level": 7,
+              "value": "50 pts."
+            },
+            {
+              "level": 8,
+              "value": "50 pts."
+            },
+            {
+              "level": 9,
+              "value": "50 pts."
+            },
+            {
+              "level": 10,
+              "value": "50 pts."
+            }
           ]
         },
         {
           "name": "Dano Durante a Queda",
+          "damageType": "HYDRO",
+          "target": "plunging_attack",
           "power": [
-            { "value": "56.8%", "level": 1 },
-            { "value": "61.5%", "level": 2 },
-            { "value": "66.1%", "level": 3 },
-            { "value": "72.7%", "level": 4 },
-            { "value": "77.3%", "level": 5 },
-            { "value": "82.6%", "level": 6 },
-            { "value": "89.9%", "level": 7 },
-            { "value": "97.1%", "level": 8 },
-            { "value": "104.4%", "level": 9 },
-            { "value": "112.3%", "level": 10 }
+            {
+              "level": 1,
+              "value": "56.8%",
+              "components": [
+                {
+                  "scalings": 0.568,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 2,
+              "value": "61.5%",
+              "components": [
+                {
+                  "scalings": 0.615,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 3,
+              "value": "66.1%",
+              "components": [
+                {
+                  "scalings": 0.661,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 4,
+              "value": "72.7%",
+              "components": [
+                {
+                  "scalings": 0.727,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 5,
+              "value": "77.3%",
+              "components": [
+                {
+                  "scalings": 0.773,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 6,
+              "value": "82.6%",
+              "components": [
+                {
+                  "scalings": 0.826,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 7,
+              "value": "89.9%",
+              "components": [
+                {
+                  "scalings": 0.899,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 8,
+              "value": "97.1%",
+              "components": [
+                {
+                  "scalings": 0.971,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 9,
+              "value": "104.4%",
+              "components": [
+                {
+                  "scalings": 1.044,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 10,
+              "value": "112.3%",
+              "components": [
+                {
+                  "scalings": 1.123,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            }
           ]
         },
         {
-          "name": "Dano de Queda de Baixa/Alta Altitude",
+          "name": "Dano de Queda Baixa",
+          "value": "114%",
+          "damageType": "HYDRO",
+          "target": "plunging_attack",
           "power": [
-            { "value": "114%/142%", "level": 1 },
-            { "value": "123%/153%", "level": 2 },
-            { "value": "132%/165%", "level": 3 },
-            { "value": "145%/182%", "level": 4 },
-            { "value": "155%/193%", "level": 5 },
-            { "value": "165%/206%", "level": 6 },
-            { "value": "180%/224%", "level": 7 },
-            { "value": "194%/243%", "level": 8 },
-            { "value": "209%/261%", "level": 9 },
-            { "value": "225%/281%", "level": 10 }
+            {
+              "level": 1,
+              "value": "114%",
+              "components": [
+                {
+                  "scalings": 1.14,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 2,
+              "value": "123%",
+              "components": [
+                {
+                  "scalings": 1.23,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 3,
+              "value": "132%",
+              "components": [
+                {
+                  "scalings": 1.32,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 4,
+              "value": "145%",
+              "components": [
+                {
+                  "scalings": 1.45,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 5,
+              "value": "155%",
+              "components": [
+                {
+                  "scalings": 1.55,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 6,
+              "value": "165%",
+              "components": [
+                {
+                  "scalings": 1.65,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 7,
+              "value": "180%",
+              "components": [
+                {
+                  "scalings": 1.8,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 8,
+              "value": "194%",
+              "components": [
+                {
+                  "scalings": 1.94,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 9,
+              "value": "209%",
+              "components": [
+                {
+                  "scalings": 2.09,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 10,
+              "value": "225%",
+              "components": [
+                {
+                  "scalings": 2.25,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Dano de Queda Alta",
+          "value": "142%",
+          "damageType": "HYDRO",
+          "target": "plunging_attack",
+          "power": [
+            {
+              "level": 1,
+              "value": "142%",
+              "components": [
+                {
+                  "scalings": 1.42,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 2,
+              "value": "153%",
+              "components": [
+                {
+                  "scalings": 1.53,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 3,
+              "value": "165%",
+              "components": [
+                {
+                  "scalings": 1.65,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 4,
+              "value": "182%",
+              "components": [
+                {
+                  "scalings": 1.82,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 5,
+              "value": "193%",
+              "components": [
+                {
+                  "scalings": 1.93,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 6,
+              "value": "206%",
+              "components": [
+                {
+                  "scalings": 2.06,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 7,
+              "value": "224%",
+              "components": [
+                {
+                  "scalings": 2.24,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 8,
+              "value": "243%",
+              "components": [
+                {
+                  "scalings": 2.43,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 9,
+              "value": "261%",
+              "components": [
+                {
+                  "scalings": 2.61,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 10,
+              "value": "281%",
+              "components": [
+                {
+                  "scalings": 2.81,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            }
           ]
         }
       ],
@@ -132,92 +1033,548 @@
       "upgrades": [
         {
           "name": "Dano Básico da Mordida de Tubarão",
+          "damageType": "HYDRO",
+          "target": "normal_attack",
           "power": [
-            { "value": "8.68% da Vida Máxima", "level": 1 },
-            { "value": "9.33% da Vida Máxima", "level": 2 },
-            { "value": "9.98% da Vida Máxima", "level": 3 },
-            { "value": "10.85% da Vida Máxima", "level": 4 },
-            { "value": "11.5% da Vida Máxima", "level": 5 },
-            { "value": "12.15% da Vida Máxima", "level": 6 },
-            { "value": "13.02% da Vida Máxima", "level": 7 },
-            { "value": "13.89% da Vida Máxima", "level": 8 },
-            { "value": "14.76% da Vida Máxima", "level": 9 },
-            { "value": "15.62% da Vida Máxima", "level": 10 }
+            {
+              "level": 1,
+              "value": "8.68% da Vida Máxima",
+              "components": [
+                {
+                  "scalings": 0.0868,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 2,
+              "value": "9.33% da Vida Máxima",
+              "components": [
+                {
+                  "scalings": 0.0933,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 3,
+              "value": "9.98% da Vida Máxima",
+              "components": [
+                {
+                  "scalings": 0.0998,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 4,
+              "value": "10.85% da Vida Máxima",
+              "components": [
+                {
+                  "scalings": 0.1085,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 5,
+              "value": "11.5% da Vida Máxima",
+              "components": [
+                {
+                  "scalings": 0.115,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 6,
+              "value": "12.15% da Vida Máxima",
+              "components": [
+                {
+                  "scalings": 0.1215,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 7,
+              "value": "13.02% da Vida Máxima",
+              "components": [
+                {
+                  "scalings": 0.1302,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 8,
+              "value": "13.89% da Vida Máxima",
+              "components": [
+                {
+                  "scalings": 0.1389,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 9,
+              "value": "14.76% da Vida Máxima",
+              "components": [
+                {
+                  "scalings": 0.1476,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 10,
+              "value": "15.62% da Vida Máxima",
+              "components": [
+                {
+                  "scalings": 0.1562,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            }
           ]
         },
         {
           "name": "Aumento de Dano do Impulso de Onda",
+          "damageType": "HYDRO",
+          "target": "normal_attack",
           "power": [
-            { "value": "4.34% da Vida Máxima/Acúmulo", "level": 1 },
-            { "value": "4.67% da Vida Máxima/Acúmulo", "level": 2 },
-            { "value": "4.99% da Vida Máxima/Acúmulo", "level": 3 },
-            { "value": "5.43% da Vida Máxima/Acúmulo", "level": 4 },
-            { "value": "5.75% da Vida Máxima/Acúmulo", "level": 5 },
-            { "value": "6.08%da Vida Máxima/Acúmulo", "level": 6 },
-            { "value": "6.51% da Vida Máxima/Acúmulo", "level": 7 },
-            { "value": "6.94% da Vida Máxima/Acúmulo", "level": 8 },
-            { "value": "7.38%da Vida Máxima/Acúmulo", "level": 9 },
-            { "value": "7.81% da Vida Máxima/Acúmulo", "level": 10 }
+            {
+              "level": 1,
+              "value": "4.34% da Vida Máxima/Acúmulo",
+              "components": [
+                {
+                  "scalings": 0.0434,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 2,
+              "value": "4.67% da Vida Máxima/Acúmulo",
+              "components": [
+                {
+                  "scalings": 0.0467,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 3,
+              "value": "4.99% da Vida Máxima/Acúmulo",
+              "components": [
+                {
+                  "scalings": 0.0499,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 4,
+              "value": "5.43% da Vida Máxima/Acúmulo",
+              "components": [
+                {
+                  "scalings": 0.0543,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 5,
+              "value": "5.75% da Vida Máxima/Acúmulo",
+              "components": [
+                {
+                  "scalings": 0.0575,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 6,
+              "value": "6.08%da Vida Máxima/Acúmulo",
+              "components": [
+                {
+                  "scalings": 0.0608,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 7,
+              "value": "6.51% da Vida Máxima/Acúmulo",
+              "components": [
+                {
+                  "scalings": 0.0651,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 8,
+              "value": "6.94% da Vida Máxima/Acúmulo",
+              "components": [
+                {
+                  "scalings": 0.0694,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 9,
+              "value": "7.38%da Vida Máxima/Acúmulo",
+              "components": [
+                {
+                  "scalings": 0.0738,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 10,
+              "value": "7.81% da Vida Máxima/Acúmulo",
+              "components": [
+                {
+                  "scalings": 0.0781,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            }
           ]
         },
         {
           "name": "Aumento Adicional do Dano da Mordida do Tubarão Gigante",
+          "damageType": "HYDRO",
+          "target": "normal_attack",
           "power": [
-            { "value": "21.7% da Vida Máxima", "level": 1 },
-            { "value": "23.33% da Vida Máxima", "level": 2 },
-            { "value": "24.96% da Vida Máxima", "level": 3 },
-            { "value": "27.13% da Vida Máxima", "level": 4 },
-            { "value": "28.75% da Vida Máxima", "level": 5 },
-            { "value": "30.38% da Vida Máxima", "level": 6 },
-            { "value": "32.55% da Vida Máxima", "level": 7 },
-            { "value": "34.72% da Vida Máxima", "level": 8 },
-            { "value": "36.89% da Vida Máxima", "level": 9 },
-            { "value": "39.06% da Vida Máxima", "level": 10 }
+            {
+              "level": 1,
+              "value": "21.7% da Vida Máxima",
+              "components": [
+                {
+                  "scalings": 0.217,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 2,
+              "value": "23.33% da Vida Máxima",
+              "components": [
+                {
+                  "scalings": 0.2333,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 3,
+              "value": "24.96% da Vida Máxima",
+              "components": [
+                {
+                  "scalings": 0.2496,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 4,
+              "value": "27.13% da Vida Máxima",
+              "components": [
+                {
+                  "scalings": 0.2713,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 5,
+              "value": "28.75% da Vida Máxima",
+              "components": [
+                {
+                  "scalings": 0.2875,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 6,
+              "value": "30.38% da Vida Máxima",
+              "components": [
+                {
+                  "scalings": 0.3038,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 7,
+              "value": "32.55% da Vida Máxima",
+              "components": [
+                {
+                  "scalings": 0.3255,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 8,
+              "value": "34.72% da Vida Máxima",
+              "components": [
+                {
+                  "scalings": 0.3472,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 9,
+              "value": "36.89% da Vida Máxima",
+              "components": [
+                {
+                  "scalings": 0.3689,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 10,
+              "value": "39.06% da Vida Máxima",
+              "components": [
+                {
+                  "scalings": 0.3906,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            }
           ]
         },
         {
           "name": "Recarga da Mordida do Tubarão",
           "power": [
-            { "value": "1.8s", "level": 1 },
-            { "value": "1.8s", "level": 2 },
-            { "value": "1.8s", "level": 3 },
-            { "value": "1.8s", "level": 4 },
-            { "value": "1.8s", "level": 5 },
-            { "value": "1.8s", "level": 6 },
-            { "value": "1.8s", "level": 7 },
-            { "value": "1.8s", "level": 8 },
-            { "value": "1.8s", "level": 9 },
-            { "value": "1.8s", "level": 10 }
+            {
+              "level": 1,
+              "value": "1.8s"
+            },
+            {
+              "level": 2,
+              "value": "1.8s"
+            },
+            {
+              "level": 3,
+              "value": "1.8s"
+            },
+            {
+              "level": 4,
+              "value": "1.8s"
+            },
+            {
+              "level": 5,
+              "value": "1.8s"
+            },
+            {
+              "level": 6,
+              "value": "1.8s"
+            },
+            {
+              "level": 7,
+              "value": "1.8s"
+            },
+            {
+              "level": 8,
+              "value": "1.8s"
+            },
+            {
+              "level": 9,
+              "value": "1.8s"
+            },
+            {
+              "level": 10,
+              "value": "1.8s"
+            }
           ]
         },
         {
           "name": "Límite de Pontos de Espirito da Noite",
           "power": [
-            { "value": "60", "level": 1 },
-            { "value": "60", "level": 2 },
-            { "value": "60", "level": 3 },
-            { "value": "60", "level": 4 },
-            { "value": "60", "level": 5 },
-            { "value": "60", "level": 6 },
-            { "value": "60", "level": 7 },
-            { "value": "60", "level": 8 },
-            { "value": "60", "level": 9 },
-            { "value": "60", "level": 10 }
+            {
+              "level": 1,
+              "value": "60"
+            },
+            {
+              "level": 2,
+              "value": "60"
+            },
+            {
+              "level": 3,
+              "value": "60"
+            },
+            {
+              "level": 4,
+              "value": "60"
+            },
+            {
+              "level": 5,
+              "value": "60"
+            },
+            {
+              "level": 6,
+              "value": "60"
+            },
+            {
+              "level": 7,
+              "value": "60"
+            },
+            {
+              "level": 8,
+              "value": "60"
+            },
+            {
+              "level": 9,
+              "value": "60"
+            },
+            {
+              "level": 10,
+              "value": "60"
+            }
           ]
         },
         {
           "name": "Tempo de Recarga",
           "power": [
-            { "value": "6 s", "level": 1 },
-            { "value": "6 s", "level": 2 },
-            { "value": "6 s", "level": 3 },
-            { "value": "6 s", "level": 4 },
-            { "value": "6 s", "level": 5 },
-            { "value": "6 s", "level": 6 },
-            { "value": "6 s", "level": 7 },
-            { "value": "6 s", "level": 8 },
-            { "value": "6 s", "level": 9 },
-            { "value": "6 s", "level": 10 }
+            {
+              "level": 1,
+              "value": "6 s"
+            },
+            {
+              "level": 2,
+              "value": "6 s"
+            },
+            {
+              "level": 3,
+              "value": "6 s"
+            },
+            {
+              "level": 4,
+              "value": "6 s"
+            },
+            {
+              "level": 5,
+              "value": "6 s"
+            },
+            {
+              "level": 6,
+              "value": "6 s"
+            },
+            {
+              "level": 7,
+              "value": "6 s"
+            },
+            {
+              "level": 8,
+              "value": "6 s"
+            },
+            {
+              "level": 9,
+              "value": "6 s"
+            },
+            {
+              "level": 10,
+              "value": "6 s"
+            }
           ]
         }
       ],
@@ -230,47 +1587,229 @@
       "upgrades": [
         {
           "name": "Dano de Habilidade",
+          "damageType": "HYDRO",
+          "target": "elemental_burst",
           "power": [
-            { "value": "58.4% da Vida Máxima", "level": 1 },
-            { "value": "62.8% da Vida Máxima", "level": 2 },
-            { "value": "67.2% da Vida Máxima", "level": 3 },
-            { "value": "73% da Vida Máxima", "level": 4 },
-            { "value": "77.4% da Vida Máxima", "level": 5 },
-            { "value": "81.8% da Vida Máxima", "level": 6 },
-            { "value": "87.7% da Vida Máxima", "level": 7 },
-            { "value": "93.5% da Vida Máxima", "level": 8 },
-            { "value": "99.3% da Vida Máxima", "level": 9 },
-            { "value": "105.2% da Vida Máxima", "level": 10 }
+            {
+              "level": 1,
+              "value": "58.4% da Vida Máxima",
+              "components": [
+                {
+                  "scalings": 0.584,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 2,
+              "value": "62.8% da Vida Máxima",
+              "components": [
+                {
+                  "scalings": 0.628,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 3,
+              "value": "67.2% da Vida Máxima",
+              "components": [
+                {
+                  "scalings": 0.672,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 4,
+              "value": "73% da Vida Máxima",
+              "components": [
+                {
+                  "scalings": 0.73,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 5,
+              "value": "77.4% da Vida Máxima",
+              "components": [
+                {
+                  "scalings": 0.774,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 6,
+              "value": "81.8% da Vida Máxima",
+              "components": [
+                {
+                  "scalings": 0.818,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 7,
+              "value": "87.7% da Vida Máxima",
+              "components": [
+                {
+                  "scalings": 0.877,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 8,
+              "value": "93.5% da Vida Máxima",
+              "components": [
+                {
+                  "scalings": 0.935,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 9,
+              "value": "99.3% da Vida Máxima",
+              "components": [
+                {
+                  "scalings": 0.993,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 10,
+              "value": "105.2% da Vida Máxima",
+              "components": [
+                {
+                  "scalings": 1.052,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "hp"
+                  }
+                }
+              ]
+            }
           ]
         },
         {
           "name": "Tempo de Recarga",
           "power": [
-            { "value": "15 s", "level": 1 },
-            { "value": "15 s", "level": 2 },
-            { "value": "15 s", "level": 3 },
-            { "value": "15 s", "level": 4 },
-            { "value": "15 s", "level": 5 },
-            { "value": "15 s", "level": 6 },
-            { "value": "15 s", "level": 7 },
-            { "value": "15 s", "level": 8 },
-            { "value": "15 s", "level": 9 },
-            { "value": "15 s", "level": 10 }
+            {
+              "level": 1,
+              "value": "15 s"
+            },
+            {
+              "level": 2,
+              "value": "15 s"
+            },
+            {
+              "level": 3,
+              "value": "15 s"
+            },
+            {
+              "level": 4,
+              "value": "15 s"
+            },
+            {
+              "level": 5,
+              "value": "15 s"
+            },
+            {
+              "level": 6,
+              "value": "15 s"
+            },
+            {
+              "level": 7,
+              "value": "15 s"
+            },
+            {
+              "level": 8,
+              "value": "15 s"
+            },
+            {
+              "level": 9,
+              "value": "15 s"
+            },
+            {
+              "level": 10,
+              "value": "15 s"
+            }
           ]
         },
         {
           "name": "Energia Elemental",
           "power": [
-            { "value": "60", "level": 1 },
-            { "value": "60", "level": 2 },
-            { "value": "60", "level": 3 },
-            { "value": "60", "level": 4 },
-            { "value": "60", "level": 5 },
-            { "value": "60", "level": 6 },
-            { "value": "60", "level": 7 },
-            { "value": "60", "level": 8 },
-            { "value": "60", "level": 9 },
-            { "value": "60", "level": 10 }
+            {
+              "level": 1,
+              "value": "60"
+            },
+            {
+              "level": 2,
+              "value": "60"
+            },
+            {
+              "level": 3,
+              "value": "60"
+            },
+            {
+              "level": 4,
+              "value": "60"
+            },
+            {
+              "level": 5,
+              "value": "60"
+            },
+            {
+              "level": 6,
+              "value": "60"
+            },
+            {
+              "level": 7,
+              "value": "60"
+            },
+            {
+              "level": 8,
+              "value": "60"
+            },
+            {
+              "level": 9,
+              "value": "60"
+            },
+            {
+              "level": 10,
+              "value": "60"
+            }
           ]
         }
       ],
@@ -287,18 +1826,21 @@
       "name": "Melhor Guia de Natlan",
       "unlock": "Desbloqueado na Ascenção 1",
       "description": "Depois que um membro próximo da equipe ativa uma Explosão do Espírito da Noite, Mualani ganha 1 acúmulo de Façanhas da Surfista que dura 20s. Máximo de 3 acúmulos. Quando ela usa Disparo da Tempestade Explosiva, Mualani remove todos os acúmulos e aumenta o Dano causado por Disparo da Tempestade Explosiva em 15%/30%/45% de sua Vida Máxima.",
-      "level": 1
+      "level": 1,
+      "modifiers": []
     },
     {
       "name": "Presente do Reino da Noite: Na Cresta e Fundo das Ondas",
       "unlock": "Desbloqueado na Ascenção 4",
       "description": "Depois que os pontos de Espírito da Noite de Mualani acabam, ela pode trocar para consumir Flogisto e manter sua Bênção do Espírito da Noite.\nEnquanto estiver em uma área com um Dispositivo de Flogisto em Natlan, ela pode usar Transmissão do Espírito da Noite: Mualani. Quando o personagem ativo estiver correndo, nadando ou em um modo de movimento causado por certos Talentos, ou estiver em uma certa altura no ar, o seguinte efeito será desencadeado quando trocar para Mualani: ela entrará no estado Bênção do Espírito da Noite e ganhará 40 pontos de Espírito da Noite. Sua própria equipe pode desencadear essa Transmissão do Espírito da Noite uma vez a cada 10s.\n\nAlém disso, quando estiver em Natlan, Mualani consumirá 75% a menos de pontos de Espírito da Noite ou de Flogisto ao se mover na água e em Flogisto Líquido durante Bênção do Espírito da Noite, e consumirá 35% a menos de pontos de Espírito da Noite enquanto estiver fazendo o mesmo fora de Natlan.",
-      "level": 4
+      "level": 4,
+      "modifiers": []
     },
     {
       "name": "O Truque é Continuar Sorrindo",
       "unlock": "Desbloqueado automaticamente",
-      "description": "Quando estiver em uma área de Natlan com Dispositivos de Flogisto, interagir com alguns itens coletáveis regenerará 15 de Flogisto. Além disso, exibe no mini-mapa o local das especialidades de Natlan próximas."
+      "description": "Quando estiver em uma área de Natlan com Dispositivos de Flogisto, interagir com alguns itens coletáveis regenerará 15 de Flogisto. Além disso, exibe no mini-mapa o local das especialidades de Natlan próximas.",
+      "modifiers": []
     }
   ],
   "constellations": [
@@ -306,82 +1848,289 @@
       "name": "O \"Meztli\" Relaxado...",
       "unlock": "Constelação Lv. 1",
       "description": "Depois de entrar na Bênção do Espírito da Noite, aumenta o Dano causado pela primeira vez que fizer Mordida do Tubarão Gigante e desencadear Míssil Tubarão. O valor do aumento de Dano é baseado em 66% da Vida Máxima de Mualani. Esse aumento de Dano está sujeito às regras de redução de Dano de Tubarão Surfista das Ondas.\nAlém disso, quando não estiver em combate, reduz o consumo de pontos de Espírito da Noite e Flogisto do estado Bênção do Espírito da Noite em 30%.",
-      "level": 1
+      "level": 1,
+      "modifiers": [
+        {
+          "type": "dmg_percent",
+          "values": [0.66],
+          "bonus": true,
+          "target": "normal_attack",
+          "conditional": {
+            "origin": "character",
+            "attribute": "hp"
+          }
+        }
+      ],
+      "changes": []
     },
     {
       "name": "Mualani, Força Total!",
       "unlock": "Constelação Lv. 2",
       "description": "Ao entrar em Bênção do Espírito da Noite, Mualani obtém 2 acúmulos de Impulso da Onda de Tubarão Surfista das Ondas. Quando Mualani obtém um Flutuador, obtém 1 acúmulo de Impulso da Onda.\nAlém disso, quando Mualani obter 2 Flutuadores em uma instância de Bênção do Espírito da Noite, regenerará 12 pontos de Espírito da Noite em 2s. Esse efeito requer que o Talento Passivo \"Flutuador de Água Doce Antitérmico\" esteja desbloqueado.",
-      "level": 2
+      "level": 2,
+      "modifiers": [],
+      "changes": []
     },
     {
       "name": "Surfando nos Mares Alegres",
       "unlock": "Constelação Lv. 3",
       "description": "Aumenta o nível da Tubarão Surfista das Ondas em 3.\nO nível máximo de elevação é 15.",
-      "level": 3
+      "level": 3,
+      "modifiers": [],
+      "changes": [
+        {
+          "reference": "Tubarão Surfista das Ondas",
+          "level": true,
+          "add": 3
+        }
+      ]
     },
     {
       "name": "Tubarãozinho Come Flutuadorzinho",
       "unlock": "Constelação Lv. 4",
       "description": "Mualani regenera 8 de Energia Elemental ao obter um Flutuador. Primeiro é necessário desbloquear o Talento Passivo \"Flutuador de Água Doce Antitérmico\".\nAlém disso, Disparo da Tempestade Explosiva causa 75% a mais de Dano.",
-      "level": 4
+      "level": 4,
+      "modifiers": [
+        {
+          "type": "dmg_percent",
+          "values": [0.75],
+          "bonus": true,
+          "target": "elemental_burst"
+        }
+      ],
+      "changes": []
     },
     {
       "name": "Mesma Modelo de Prancha com Desconto!",
       "unlock": "Constelação Lv. 5",
       "description": "Aumenta o nível da Disparo da Tempestade Explosiva em 3.\nO nível máximo de elevação é 15.",
-      "level": 5
+      "level": 5,
+      "modifiers": [],
+      "changes": [
+        {
+          "reference": "Disparo da Tempestade Explosiva",
+          "level": true,
+          "add": 3
+        }
+      ]
     },
     {
       "name": "Espírito do Povo das Termas",
       "unlock": "Constelação Lv. 6",
       "description": "Remove o limite original do efeito de aumento de Dano da Constelação \"O 'Meztli' Relaxado...\" só podia ser desencadeado uma vez por estado de Bênção do Espírito da Noite.",
-      "level": 6
+      "level": 6,
+      "modifiers": [],
+      "changes": []
     }
   ],
   "vision_key": "HYDRO",
   "weapon_type": "CATALYST",
   "ascension_materials": {
     "level_20": [
-      { "name": "Pedacito de lazurita varunada", "value": 1 },
-      { "name": "Branquia plumaespuma", "value": 3 },
-      { "name": "Silbato de madera del guardián", "value": 3 },
-      { "name": "Mora", "value": 20000 }
+      {
+        "name": "Pedacito de lazurita varunada",
+        "value": 1
+      },
+      {
+        "name": "Branquia plumaespuma",
+        "value": 3
+      },
+      {
+        "name": "Silbato de madera del guardián",
+        "value": 3
+      },
+      {
+        "name": "Mora",
+        "value": 20000
+      }
     ],
     "level_40": [
-      { "name": "Fragmento de lazurita varunada", "value": 3 },
-      { "name": "Sello de la bendición vinculante", "value": 2 },
-      { "name": "Branquia plumaespuma", "value": 10 },
-      { "name": "Silbato de madera del guardián", "value": 15 },
-      { "name": "Mora", "value": 40000 }
+      {
+        "name": "Fragmento de lazurita varunada",
+        "value": 3
+      },
+      {
+        "name": "Sello de la bendición vinculante",
+        "value": 2
+      },
+      {
+        "name": "Branquia plumaespuma",
+        "value": 10
+      },
+      {
+        "name": "Silbato de madera del guardián",
+        "value": 15
+      },
+      {
+        "name": "Mora",
+        "value": 40000
+      }
     ],
     "level_50": [
-      { "name": "Fragmento de lazurita varunada", "value": 6 },
-      { "name": "Sello de la bendición vinculante", "value": 4 },
-      { "name": "Branquia plumaespuma", "value": 20 },
-      { "name": "Silbato de hierro del guerrero", "value": 12 },
-      { "name": "Mora", "value": 60000 }
+      {
+        "name": "Fragmento de lazurita varunada",
+        "value": 6
+      },
+      {
+        "name": "Sello de la bendición vinculante",
+        "value": 4
+      },
+      {
+        "name": "Branquia plumaespuma",
+        "value": 20
+      },
+      {
+        "name": "Silbato de hierro del guerrero",
+        "value": 12
+      },
+      {
+        "name": "Mora",
+        "value": 60000
+      }
     ],
     "level_60": [
-      { "name": "Trozo de lazurita varunada", "value": 3 },
-      { "name": "Sello de la bendición vinculante", "value": 8 },
-      { "name": "Branquia plumaespuma", "value": 30 },
-      { "name": "Silbato de hierro del guerrero", "value": 18 },
-      { "name": "Mora", "value": 80000 }
+      {
+        "name": "Trozo de lazurita varunada",
+        "value": 3
+      },
+      {
+        "name": "Sello de la bendición vinculante",
+        "value": 8
+      },
+      {
+        "name": "Branquia plumaespuma",
+        "value": 30
+      },
+      {
+        "name": "Silbato de hierro del guerrero",
+        "value": 18
+      },
+      {
+        "name": "Mora",
+        "value": 80000
+      }
     ],
     "level_70": [
-      { "name": "Trozo de lazurita varunada", "value": 6 },
-      { "name": "Sello de la bendición vinculante", "value": 12 },
-      { "name": "Branquia plumaespuma", "value": 45 },
-      { "name": "Silbato de oro del soldado sauriocoronado", "value": 12 },
-      { "name": "Mora", "value": 100000 }
+      {
+        "name": "Trozo de lazurita varunada",
+        "value": 6
+      },
+      {
+        "name": "Sello de la bendición vinculante",
+        "value": 12
+      },
+      {
+        "name": "Branquia plumaespuma",
+        "value": 45
+      },
+      {
+        "name": "Silbato de oro del soldado sauriocoronado",
+        "value": 12
+      },
+      {
+        "name": "Mora",
+        "value": 100000
+      }
     ],
     "level_80": [
-      { "name": "Lazurita varunada", "value": 6 },
-      { "name": "Sello de la bendición vinculante", "value": 20 },
-      { "name": "Branquia plumaespuma", "value": 60 },
-      { "name": "Silbato de oro del soldado sauriocoronado", "value": 24 },
-      { "name": "Mora", "value": 120000 }
+      {
+        "name": "Lazurita varunada",
+        "value": 6
+      },
+      {
+        "name": "Sello de la bendición vinculante",
+        "value": 20
+      },
+      {
+        "name": "Branquia plumaespuma",
+        "value": 60
+      },
+      {
+        "name": "Silbato de oro del soldado sauriocoronado",
+        "value": 24
+      },
+      {
+        "name": "Mora",
+        "value": 120000
+      }
+    ]
+  },
+  "calculation": {
+    "initialStats": {
+      "baseHp": 1182.1168,
+      "baseAttack": 14.1512,
+      "baseDefense": 44.39386
+    },
+    "growthCurves": {
+      "baseHp": "Regular HP/DEF 5*",
+      "baseAttack": "Regular ATK 5*",
+      "baseDefense": "Regular HP/DEF 5*"
+    },
+    "ascensions": [
+      {
+        "ascension": 0,
+        "maxLevel": 20,
+        "bonuses": {}
+      },
+      {
+        "ascension": 1,
+        "maxLevel": 40,
+        "bonuses": {
+          "baseHp": 1013.5583,
+          "baseDefense": 38.0646,
+          "baseAttack": 12.132488
+        }
+      },
+      {
+        "ascension": 2,
+        "maxLevel": 50,
+        "bonuses": {
+          "baseHp": 1733.7181,
+          "baseDefense": 65.1105,
+          "baseAttack": 20.75294,
+          "critRate": 0.048
+        }
+      },
+      {
+        "ascension": 3,
+        "maxLevel": 60,
+        "bonuses": {
+          "baseHp": 2693.9312,
+          "baseDefense": 101.1717,
+          "baseAttack": 32.246876,
+          "critRate": 0.096
+        }
+      },
+      {
+        "ascension": 4,
+        "maxLevel": 70,
+        "bonuses": {
+          "baseHp": 3414.091,
+          "baseDefense": 128.2176,
+          "baseAttack": 40.86733,
+          "critRate": 0.096
+        }
+      },
+      {
+        "ascension": 5,
+        "maxLevel": 80,
+        "bonuses": {
+          "baseHp": 4134.251,
+          "baseDefense": 155.2635,
+          "baseAttack": 49.48778,
+          "critRate": 0.144
+        }
+      },
+      {
+        "ascension": 6,
+        "maxLevel": 90,
+        "bonuses": {
+          "baseHp": 4854.4106,
+          "baseDefense": 182.3094,
+          "baseAttack": 58.10823,
+          "critRate": 0.192
+        }
+      }
     ]
   }
 }
