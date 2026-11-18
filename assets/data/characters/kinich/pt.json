@@ -19,393 +19,1252 @@
       "upgrades": [
         {
           "name": "Dano do 1º Golpe",
+          "damageType": "PHYSICAL",
+          "target": "normal_attack",
           "power": [
             {
+              "level": 1,
               "value": "99.0%",
-              "level": 1
+              "components": [
+                {
+                  "scalings": 0.99,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 2,
               "value": "107.0%",
-              "level": 2
+              "components": [
+                {
+                  "scalings": 1.07,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 3,
               "value": "115.1%",
-              "level": 3
+              "components": [
+                {
+                  "scalings": 1.151,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 4,
               "value": "126.6%",
-              "level": 4
+              "components": [
+                {
+                  "scalings": 1.266,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 5,
               "value": "134.7%",
-              "level": 5
+              "components": [
+                {
+                  "scalings": 1.347,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 6,
               "value": "143.9%",
-              "level": 6
+              "components": [
+                {
+                  "scalings": 1.439,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 7,
               "value": "156.5%",
-              "level": 7
+              "components": [
+                {
+                  "scalings": 1.565,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 8,
               "value": "169.2%",
-              "level": 8
+              "components": [
+                {
+                  "scalings": 1.692,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 9,
               "value": "181.9%",
-              "level": 9
+              "components": [
+                {
+                  "scalings": 1.819,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 10,
               "value": "195.7%",
-              "level": 10
+              "components": [
+                {
+                  "scalings": 1.9569999999999999,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 11,
               "value": "209.5%",
-              "level": 11
+              "components": [
+                {
+                  "scalings": 2.095,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             }
           ]
         },
         {
           "name": "Dano do 2º Golpe",
+          "damageType": "PHYSICAL",
+          "target": "normal_attack",
           "power": [
             {
+              "level": 1,
               "value": "82.9%",
-              "level": 1
+              "components": [
+                {
+                  "scalings": 0.8290000000000001,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 2,
               "value": "89.7%",
-              "level": 2
+              "components": [
+                {
+                  "scalings": 0.897,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 3,
               "value": "96.4%",
-              "level": 3
+              "components": [
+                {
+                  "scalings": 0.9640000000000001,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 4,
               "value": "106.0%",
-              "level": 4
+              "components": [
+                {
+                  "scalings": 1.06,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 5,
               "value": "112.8%",
-              "level": 5
+              "components": [
+                {
+                  "scalings": 1.128,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 6,
               "value": "120.5%",
-              "level": 6
+              "components": [
+                {
+                  "scalings": 1.205,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 7,
               "value": "131.1%",
-              "level": 7
+              "components": [
+                {
+                  "scalings": 1.311,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 8,
               "value": "141.7%",
-              "level": 8
+              "components": [
+                {
+                  "scalings": 1.4169999999999998,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 9,
               "value": "152.3%",
-              "level": 9
+              "components": [
+                {
+                  "scalings": 1.5230000000000001,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 10,
               "value": "163.9%",
-              "level": 10
+              "components": [
+                {
+                  "scalings": 1.639,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 11,
               "value": "175.4%",
-              "level": 11
+              "components": [
+                {
+                  "scalings": 1.754,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             }
           ]
         },
         {
           "name": "Dano do 3º Golpe",
+          "damageType": "PHYSICAL",
+          "target": "normal_attack",
           "power": [
             {
+              "level": 1,
               "value": "123.5%",
-              "level": 1
+              "components": [
+                {
+                  "scalings": 1.235,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 2,
               "value": "133.5%",
-              "level": 2
+              "components": [
+                {
+                  "scalings": 1.335,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 3,
               "value": "143.6%",
-              "level": 3
+              "components": [
+                {
+                  "scalings": 1.436,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 4,
               "value": "158.0%",
-              "level": 4
+              "components": [
+                {
+                  "scalings": 1.58,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 5,
               "value": "168.0%",
-              "level": 5
+              "components": [
+                {
+                  "scalings": 1.68,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 6,
               "value": "179.5%",
-              "level": 6
+              "components": [
+                {
+                  "scalings": 1.795,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 7,
               "value": "195.3%",
-              "level": 7
+              "components": [
+                {
+                  "scalings": 1.953,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 8,
               "value": "211.1%",
-              "level": 8
+              "components": [
+                {
+                  "scalings": 2.1109999999999998,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 9,
               "value": "226.9%",
-              "level": 9
+              "components": [
+                {
+                  "scalings": 2.269,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 10,
               "value": "244.1%",
-              "level": 10
+              "components": [
+                {
+                  "scalings": 2.441,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 11,
               "value": "261.4%",
-              "level": 11
+              "components": [
+                {
+                  "scalings": 2.614,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             }
           ]
         },
         {
           "name": "Dano do Ataque Normal no Ar",
+          "damageType": "PHYSICAL",
+          "target": "normal_attack",
           "power": [
             {
+              "level": 1,
               "value": "167.7%",
-              "level": 1
+              "components": [
+                {
+                  "scalings": 1.6769999999999998,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 2,
               "value": "181.4%",
-              "level": 2
+              "components": [
+                {
+                  "scalings": 1.814,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 3,
               "value": "195.0%",
-              "level": 3
+              "components": [
+                {
+                  "scalings": 1.95,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 4,
               "value": "214.5%",
-              "level": 4
+              "components": [
+                {
+                  "scalings": 2.145,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 5,
               "value": "228.1%",
-              "level": 5
+              "components": [
+                {
+                  "scalings": 2.281,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 6,
               "value": "243.8%",
-              "level": 6
+              "components": [
+                {
+                  "scalings": 2.438,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 7,
               "value": "265.2%",
-              "level": 7
+              "components": [
+                {
+                  "scalings": 2.6519999999999997,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 8,
               "value": "286.7%",
-              "level": 8
+              "components": [
+                {
+                  "scalings": 2.867,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 9,
               "value": "308.1%",
-              "level": 9
+              "components": [
+                {
+                  "scalings": 3.0810000000000004,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 10,
               "value": "331.5%",
-              "level": 10
+              "components": [
+                {
+                  "scalings": 3.315,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 11,
               "value": "354.9%",
-              "level": 11
+              "components": [
+                {
+                  "scalings": 3.549,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             }
           ]
         },
         {
           "name": "Dano de Ataque Carregado",
+          "damageType": "PHYSICAL",
+          "target": "charged_attack",
           "power": [
             {
+              "level": 1,
               "value": "48.4%×3",
-              "level": 1
+              "components": [
+                {
+                  "scalings": 0.484,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 2,
               "value": "52.4%×3",
-              "level": 2
+              "components": [
+                {
+                  "scalings": 0.524,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 3,
               "value": "56.3%×3",
-              "level": 3
+              "components": [
+                {
+                  "scalings": 0.563,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 4,
               "value": "61.9%×3",
-              "level": 4
+              "components": [
+                {
+                  "scalings": 0.619,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 5,
               "value": "65.9%×3",
-              "level": 5
+              "components": [
+                {
+                  "scalings": 0.659,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 6,
               "value": "70.4%×3",
-              "level": 6
+              "components": [
+                {
+                  "scalings": 0.7040000000000001,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 7,
               "value": "76.6%×3",
-              "level": 7
+              "components": [
+                {
+                  "scalings": 0.7659999999999999,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 8,
               "value": "82.8%×3",
-              "level": 8
+              "components": [
+                {
+                  "scalings": 0.828,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 9,
               "value": "89.0%×3",
-              "level": 9
+              "components": [
+                {
+                  "scalings": 0.89,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 10,
               "value": "95.7%×3",
-              "level": 10
+              "components": [
+                {
+                  "scalings": 0.9570000000000001,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 11,
               "value": "102.5%×3",
-              "level": 11
+              "components": [
+                {
+                  "scalings": 1.025,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             }
           ]
         },
         {
           "name": "Consumo de Stamina do Ataque Carregado",
+          "damageType": null,
+          "target": null,
           "power": [
             {
-              "value": "50.0",
-              "level": 1
+              "level": 1,
+              "value": "50.0"
             },
             {
-              "value": "50.0",
-              "level": 2
+              "level": 2,
+              "value": "50.0"
             },
             {
-              "value": "50.0",
-              "level": 3
+              "level": 3,
+              "value": "50.0"
             },
             {
-              "value": "50.0",
-              "level": 4
+              "level": 4,
+              "value": "50.0"
             },
             {
-              "value": "50.0",
-              "level": 5
+              "level": 5,
+              "value": "50.0"
             },
             {
-              "value": "50.0",
-              "level": 6
+              "level": 6,
+              "value": "50.0"
             },
             {
-              "value": "50.0",
-              "level": 7
+              "level": 7,
+              "value": "50.0"
             },
             {
-              "value": "50.0",
-              "level": 8
+              "level": 8,
+              "value": "50.0"
             },
             {
-              "value": "50.0",
-              "level": 9
+              "level": 9,
+              "value": "50.0"
             },
             {
-              "value": "50.0",
-              "level": 10
+              "level": 10,
+              "value": "50.0"
             },
             {
-              "value": "50.0",
-              "level": 11
+              "level": 11,
+              "value": "50.0"
             }
           ]
         },
         {
           "name": "Dano Durante a Queda",
+          "damageType": "PHYSICAL",
+          "target": "plunging_attack",
           "power": [
             {
+              "level": 1,
               "value": "74.6%",
-              "level": 1
+              "components": [
+                {
+                  "scalings": 0.746,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 2,
               "value": "80.7%",
-              "level": 2
+              "components": [
+                {
+                  "scalings": 0.807,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 3,
               "value": "86.7%",
-              "level": 3
+              "components": [
+                {
+                  "scalings": 0.867,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 4,
               "value": "95.4%",
-              "level": 4
+              "components": [
+                {
+                  "scalings": 0.9540000000000001,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 5,
               "value": "101.5%",
-              "level": 5
+              "components": [
+                {
+                  "scalings": 1.015,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 6,
               "value": "108.4%",
-              "level": 6
+              "components": [
+                {
+                  "scalings": 1.084,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 7,
               "value": "118.0%",
-              "level": 7
+              "components": [
+                {
+                  "scalings": 1.18,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 8,
               "value": "127.5%",
-              "level": 8
+              "components": [
+                {
+                  "scalings": 1.275,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 9,
               "value": "137.0%",
-              "level": 9
+              "components": [
+                {
+                  "scalings": 1.37,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 10,
               "value": "147.4%",
-              "level": 10
+              "components": [
+                {
+                  "scalings": 1.474,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 11,
               "value": "157.8%",
-              "level": 11
+              "components": [
+                {
+                  "scalings": 1.578,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             }
           ]
         },
         {
-          "name": "Dano de Queda de Baixa/Alta Altitude",
+          "name": "Dano de Queda Baixa",
+          "damageType": "PHYSICAL",
+          "target": "plunging_attack",
           "power": [
             {
-              "value": "149%/186%",
-              "level": 1
+              "level": 1,
+              "value": "149%",
+              "components": [
+                {
+                  "scalings": 1.49,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
-              "value": "161%/201%",
-              "level": 2
+              "level": 2,
+              "value": "161%",
+              "components": [
+                {
+                  "scalings": 1.61,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
-              "value": "173%/217%",
-              "level": 3
+              "level": 3,
+              "value": "173%",
+              "components": [
+                {
+                  "scalings": 1.73,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
-              "value": "191%/238%",
-              "level": 4
+              "level": 4,
+              "value": "191%",
+              "components": [
+                {
+                  "scalings": 1.91,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
-              "value": "203%/253%",
-              "level": 5
+              "level": 5,
+              "value": "203%",
+              "components": [
+                {
+                  "scalings": 2.03,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
-              "value": "217%/271%",
-              "level": 6
+              "level": 6,
+              "value": "217%",
+              "components": [
+                {
+                  "scalings": 2.17,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
-              "value": "236%/295%",
-              "level": 7
+              "level": 7,
+              "value": "236%",
+              "components": [
+                {
+                  "scalings": 2.36,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
-              "value": "255%/318%",
-              "level": 8
+              "level": 8,
+              "value": "255%",
+              "components": [
+                {
+                  "scalings": 2.55,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
-              "value": "274%/342%",
-              "level": 9
+              "level": 9,
+              "value": "274%",
+              "components": [
+                {
+                  "scalings": 2.74,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
-              "value": "295%/368%",
-              "level": 10
+              "level": 10,
+              "value": "295%",
+              "components": [
+                {
+                  "scalings": 2.95,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
-              "value": "316%/394%",
-              "level": 11
+              "level": 11,
+              "value": "316%",
+              "components": [
+                {
+                  "scalings": 3.16,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Dano de Queda Alta",
+          "damageType": "PHYSICAL",
+          "target": "plunging_attack",
+          "power": [
+            {
+              "level": 1,
+              "value": "186%",
+              "components": [
+                {
+                  "scalings": 1.86,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 2,
+              "value": "201%",
+              "components": [
+                {
+                  "scalings": 2.01,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 3,
+              "value": "217%",
+              "components": [
+                {
+                  "scalings": 2.17,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 4,
+              "value": "238%",
+              "components": [
+                {
+                  "scalings": 2.38,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 5,
+              "value": "253%",
+              "components": [
+                {
+                  "scalings": 2.53,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 6,
+              "value": "271%",
+              "components": [
+                {
+                  "scalings": 2.71,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 7,
+              "value": "295%",
+              "components": [
+                {
+                  "scalings": 2.95,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 8,
+              "value": "318%",
+              "components": [
+                {
+                  "scalings": 3.18,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 9,
+              "value": "342%",
+              "components": [
+                {
+                  "scalings": 3.42,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 10,
+              "value": "368%",
+              "components": [
+                {
+                  "scalings": 3.68,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
+            },
+            {
+              "level": 11,
+              "value": "394%",
+              "components": [
+                {
+                  "scalings": 3.94,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             }
           ]
         }
@@ -419,229 +1278,471 @@
       "upgrades": [
         {
           "name": "Dano do Disparo Circular",
+          "damageType": "DENDRO",
+          "target": "elemental_skill",
           "power": [
             {
+              "level": 1,
               "value": "57.3%×2",
-              "level": 1
+              "components": [
+                {
+                  "scalings": 0.573,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 2,
               "value": "61.6%×2",
-              "level": 2
+              "components": [
+                {
+                  "scalings": 0.616,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 3,
               "value": "65.9%×2",
-              "level": 3
+              "components": [
+                {
+                  "scalings": 0.659,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 4,
               "value": "71.6%×2",
-              "level": 4
+              "components": [
+                {
+                  "scalings": 0.716,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 5,
               "value": "75.9%×2",
-              "level": 5
+              "components": [
+                {
+                  "scalings": 0.759,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 6,
               "value": "80.2%×2",
-              "level": 6
+              "components": [
+                {
+                  "scalings": 0.802,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 7,
               "value": "85.9%×2",
-              "level": 7
+              "components": [
+                {
+                  "scalings": 0.8590000000000001,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 8,
               "value": "91.6%×2",
-              "level": 8
+              "components": [
+                {
+                  "scalings": 0.9159999999999999,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 9,
               "value": "97.4%×2",
-              "level": 9
+              "components": [
+                {
+                  "scalings": 0.9740000000000001,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 10,
               "value": "103.1%×2",
-              "level": 10
+              "components": [
+                {
+                  "scalings": 1.031,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 11,
               "value": "108.8%×2",
-              "level": 11
+              "components": [
+                {
+                  "scalings": 1.088,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 12,
               "value": "114.6%×2",
-              "level": 12
+              "components": [
+                {
+                  "scalings": 1.146,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 13,
               "value": "121.7%×2",
-              "level": 13
+              "components": [
+                {
+                  "scalings": 1.217,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             }
           ]
         },
         {
           "name": "Dano do Canhão Perfurador Giratório",
+          "damageType": "DENDRO",
+          "target": "elemental_skill",
           "power": [
             {
+              "level": 1,
               "value": "687.4%",
-              "level": 1
+              "components": [
+                {
+                  "scalings": 6.874,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 2,
               "value": "739.0%",
-              "level": 2
+              "components": [
+                {
+                  "scalings": 7.39,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 3,
               "value": "790.6%",
-              "level": 3
+              "components": [
+                {
+                  "scalings": 7.906000000000001,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 4,
               "value": "859.3%",
-              "level": 4
+              "components": [
+                {
+                  "scalings": 8.593,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 5,
               "value": "910.9%",
-              "level": 5
+              "components": [
+                {
+                  "scalings": 9.109,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 6,
               "value": "962.4%",
-              "level": 6
+              "components": [
+                {
+                  "scalings": 9.624,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 7,
               "value": "1,031.2%",
-              "level": 7
+              "components": [
+                {
+                  "scalings": 0.01,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 8,
               "value": "1,099.9%",
-              "level": 8
+              "components": [
+                {
+                  "scalings": 0.01,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 9,
               "value": "1,168.6%",
-              "level": 9
+              "components": [
+                {
+                  "scalings": 0.01,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 10,
               "value": "1,237.4%",
-              "level": 10
+              "components": [
+                {
+                  "scalings": 0.01,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 11,
               "value": "1,306.1%",
-              "level": 11
+              "components": [
+                {
+                  "scalings": 0.01,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 12,
               "value": "1,374.9%",
-              "level": 12
+              "components": [
+                {
+                  "scalings": 0.01,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 13,
               "value": "1,460.8%",
-              "level": 13
+              "components": [
+                {
+                  "scalings": 0.01,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             }
           ]
         },
         {
           "name": "Limite de Pontos de Espirito da Noite",
+          "damageType": null,
+          "target": null,
           "power": [
             {
-              "value": "20.0",
-              "level": 1
+              "level": 1,
+              "value": "20.0"
             },
             {
-              "value": "20.0",
-              "level": 2
+              "level": 2,
+              "value": "20.0"
             },
             {
-              "value": "20.0",
-              "level": 3
+              "level": 3,
+              "value": "20.0"
             },
             {
-              "value": "20.0",
-              "level": 4
+              "level": 4,
+              "value": "20.0"
             },
             {
-              "value": "20.0",
-              "level": 5
+              "level": 5,
+              "value": "20.0"
             },
             {
-              "value": "20.0",
-              "level": 6
+              "level": 6,
+              "value": "20.0"
             },
             {
-              "value": "20.0",
-              "level": 7
+              "level": 7,
+              "value": "20.0"
             },
             {
-              "value": "20.0",
-              "level": 8
+              "level": 8,
+              "value": "20.0"
             },
             {
-              "value": "20.0",
-              "level": 9
+              "level": 9,
+              "value": "20.0"
             },
             {
-              "value": "20.0",
-              "level": 10
+              "level": 10,
+              "value": "20.0"
             },
             {
-              "value": "20.0",
-              "level": 11
+              "level": 11,
+              "value": "20.0"
             },
             {
-              "value": "20.0",
-              "level": 12
+              "level": 12,
+              "value": "20.0"
             },
             {
-              "value": "20.0",
-              "level": 13
+              "level": 13,
+              "value": "20.0"
             }
           ]
         },
         {
           "name": "Tempo de Recarga",
+          "damageType": null,
+          "target": null,
           "power": [
             {
-              "value": "18.0s",
-              "level": 1
+              "level": 1,
+              "value": "18.0s"
             },
             {
-              "value": "18.0s",
-              "level": 2
+              "level": 2,
+              "value": "18.0s"
             },
             {
-              "value": "18.0s",
-              "level": 3
+              "level": 3,
+              "value": "18.0s"
             },
             {
-              "value": "18.0s",
-              "level": 4
+              "level": 4,
+              "value": "18.0s"
             },
             {
-              "value": "18.0s",
-              "level": 5
+              "level": 5,
+              "value": "18.0s"
             },
             {
-              "value": "18.0s",
-              "level": 6
+              "level": 6,
+              "value": "18.0s"
             },
             {
-              "value": "18.0s",
-              "level": 7
+              "level": 7,
+              "value": "18.0s"
             },
             {
-              "value": "18.0s",
-              "level": 8
+              "level": 8,
+              "value": "18.0s"
             },
             {
-              "value": "18.0s",
-              "level": 9
+              "level": 9,
+              "value": "18.0s"
             },
             {
-              "value": "18.0s",
-              "level": 10
+              "level": 10,
+              "value": "18.0s"
             },
             {
-              "value": "18.0s",
-              "level": 11
+              "level": 11,
+              "value": "18.0s"
             },
             {
-              "value": "18.0s",
-              "level": 12
+              "level": 12,
+              "value": "18.0s"
             },
             {
-              "value": "18.0s",
-              "level": 13
+              "level": 13,
+              "value": "18.0s"
             }
           ]
         }
@@ -655,286 +1756,530 @@
       "upgrades": [
         {
           "name": "Dano de Habilidade",
+          "damageType": "DENDRO",
+          "target": "elemental_burst",
           "power": [
             {
+              "level": 1,
               "value": "134.0%",
-              "level": 1
+              "components": [
+                {
+                  "scalings": 1.34,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 2,
               "value": "144.0%",
-              "level": 2
+              "components": [
+                {
+                  "scalings": 1.44,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 3,
               "value": "154.1%",
-              "level": 3
+              "components": [
+                {
+                  "scalings": 1.541,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 4,
               "value": "167.5%",
-              "level": 4
+              "components": [
+                {
+                  "scalings": 1.675,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 5,
               "value": "177.6%",
-              "level": 5
+              "components": [
+                {
+                  "scalings": 1.776,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 6,
               "value": "187.6%",
-              "level": 6
+              "components": [
+                {
+                  "scalings": 1.876,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 7,
               "value": "201.0%",
-              "level": 7
+              "components": [
+                {
+                  "scalings": 2.01,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 8,
               "value": "214.4%",
-              "level": 8
+              "components": [
+                {
+                  "scalings": 2.144,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 9,
               "value": "227.8%",
-              "level": 9
+              "components": [
+                {
+                  "scalings": 2.278,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 10,
               "value": "241.2%",
-              "level": 10
+              "components": [
+                {
+                  "scalings": 2.412,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 11,
               "value": "254.6%",
-              "level": 11
+              "components": [
+                {
+                  "scalings": 2.546,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 12,
               "value": "268.0%",
-              "level": 12
+              "components": [
+                {
+                  "scalings": 2.68,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 13,
               "value": "284.8%",
-              "level": 13
+              "components": [
+                {
+                  "scalings": 2.8480000000000003,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             }
           ]
         },
         {
           "name": "Dano da Respiração Draconiana",
+          "damageType": "DENDRO",
+          "target": "elemental_burst",
           "power": [
             {
+              "level": 1,
               "value": "120.7%",
-              "level": 1
+              "components": [
+                {
+                  "scalings": 1.207,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 2,
               "value": "129.8%",
-              "level": 2
+              "components": [
+                {
+                  "scalings": 1.298,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 3,
               "value": "138.8%",
-              "level": 3
+              "components": [
+                {
+                  "scalings": 1.3880000000000001,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 4,
               "value": "150.9%",
-              "level": 4
+              "components": [
+                {
+                  "scalings": 1.5090000000000001,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 5,
               "value": "160.0%",
-              "level": 5
+              "components": [
+                {
+                  "scalings": 1.6,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 6,
               "value": "169.0%",
-              "level": 6
+              "components": [
+                {
+                  "scalings": 1.69,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 7,
               "value": "181.1%",
-              "level": 7
+              "components": [
+                {
+                  "scalings": 1.811,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 8,
               "value": "193.2%",
-              "level": 8
+              "components": [
+                {
+                  "scalings": 1.932,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 9,
               "value": "205.3%",
-              "level": 9
+              "components": [
+                {
+                  "scalings": 2.053,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 10,
               "value": "217.3%",
-              "level": 10
+              "components": [
+                {
+                  "scalings": 2.173,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 11,
               "value": "229.4%",
-              "level": 11
+              "components": [
+                {
+                  "scalings": 2.294,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 12,
               "value": "241.5%",
-              "level": 12
+              "components": [
+                {
+                  "scalings": 2.415,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             },
             {
+              "level": 13,
               "value": "256.6%",
-              "level": 13
+              "components": [
+                {
+                  "scalings": 2.5660000000000003,
+                  "conditional": {
+                    "origin": "character",
+                    "attribute": "atk"
+                  }
+                }
+              ]
             }
           ]
         },
         {
           "name": "Duração",
+          "damageType": null,
+          "target": null,
           "power": [
             {
-              "value": "15.0s",
-              "level": 1
+              "level": 1,
+              "value": "15.0s"
             },
             {
-              "value": "15.0s",
-              "level": 2
+              "level": 2,
+              "value": "15.0s"
             },
             {
-              "value": "15.0s",
-              "level": 3
+              "level": 3,
+              "value": "15.0s"
             },
             {
-              "value": "15.0s",
-              "level": 4
+              "level": 4,
+              "value": "15.0s"
             },
             {
-              "value": "15.0s",
-              "level": 5
+              "level": 5,
+              "value": "15.0s"
             },
             {
-              "value": "15.0s",
-              "level": 6
+              "level": 6,
+              "value": "15.0s"
             },
             {
-              "value": "15.0s",
-              "level": 7
+              "level": 7,
+              "value": "15.0s"
             },
             {
-              "value": "15.0s",
-              "level": 8
+              "level": 8,
+              "value": "15.0s"
             },
             {
-              "value": "15.0s",
-              "level": 9
+              "level": 9,
+              "value": "15.0s"
             },
             {
-              "value": "15.0s",
-              "level": 10
+              "level": 10,
+              "value": "15.0s"
             },
             {
-              "value": "15.0s",
-              "level": 11
+              "level": 11,
+              "value": "15.0s"
             },
             {
-              "value": "15.0s",
-              "level": 12
+              "level": 12,
+              "value": "15.0s"
             },
             {
-              "value": "15.0s",
-              "level": 13
+              "level": 13,
+              "value": "15.0s"
             }
           ]
         },
         {
           "name": "Tempo de Recarga",
+          "damageType": null,
+          "target": null,
           "power": [
             {
-              "value": "18.0s",
-              "level": 1
+              "level": 1,
+              "value": "18.0s"
             },
             {
-              "value": "18.0s",
-              "level": 2
+              "level": 2,
+              "value": "18.0s"
             },
             {
-              "value": "18.0s",
-              "level": 3
+              "level": 3,
+              "value": "18.0s"
             },
             {
-              "value": "18.0s",
-              "level": 4
+              "level": 4,
+              "value": "18.0s"
             },
             {
-              "value": "18.0s",
-              "level": 5
+              "level": 5,
+              "value": "18.0s"
             },
             {
-              "value": "18.0s",
-              "level": 6
+              "level": 6,
+              "value": "18.0s"
             },
             {
-              "value": "18.0s",
-              "level": 7
+              "level": 7,
+              "value": "18.0s"
             },
             {
-              "value": "18.0s",
-              "level": 8
+              "level": 8,
+              "value": "18.0s"
             },
             {
-              "value": "18.0s",
-              "level": 9
+              "level": 9,
+              "value": "18.0s"
             },
             {
-              "value": "18.0s",
-              "level": 10
+              "level": 10,
+              "value": "18.0s"
             },
             {
-              "value": "18.0s",
-              "level": 11
+              "level": 11,
+              "value": "18.0s"
             },
             {
-              "value": "18.0s",
-              "level": 12
+              "level": 12,
+              "value": "18.0s"
             },
             {
-              "value": "18.0s",
-              "level": 13
+              "level": 13,
+              "value": "18.0s"
             }
           ]
         },
         {
           "name": "Energia Elemental",
+          "damageType": null,
+          "target": null,
           "power": [
             {
-              "value": "70",
-              "level": 1
+              "level": 1,
+              "value": "70"
             },
             {
-              "value": "70",
-              "level": 2
+              "level": 2,
+              "value": "70"
             },
             {
-              "value": "70",
-              "level": 3
+              "level": 3,
+              "value": "70"
             },
             {
-              "value": "70",
-              "level": 4
+              "level": 4,
+              "value": "70"
             },
             {
-              "value": "70",
-              "level": 5
+              "level": 5,
+              "value": "70"
             },
             {
-              "value": "70",
-              "level": 6
+              "level": 6,
+              "value": "70"
             },
             {
-              "value": "70",
-              "level": 7
+              "level": 7,
+              "value": "70"
             },
             {
-              "value": "70",
-              "level": 8
+              "level": 8,
+              "value": "70"
             },
             {
-              "value": "70",
-              "level": 9
+              "level": 9,
+              "value": "70"
             },
             {
-              "value": "70",
-              "level": 10
+              "level": 10,
+              "value": "70"
             },
             {
-              "value": "70",
-              "level": 11
+              "level": 11,
+              "value": "70"
             },
             {
-              "value": "70",
-              "level": 12
+              "level": 12,
+              "value": "70"
             },
             {
-              "value": "70",
-              "level": 13
+              "level": 13,
+              "value": "70"
             }
           ]
         }
@@ -952,18 +2297,21 @@
       "name": "Contrato do Espírito Flamejante",
       "unlock": "Desbloqueado na Ascenção 1",
       "description": "Depois que um membro próximo da equipe ativa a Explosão do Espírito da Noite, Kinich ganha 1 acúmulo de Experiência do Caçador que dura 15s. Máximo de 2 acúmulos. Quando Kinich usa o Canhão Perfurador Giratório de Caçador de Dossel: Montando nas Alturas, todos os acúmulos serão consumidos, com cada um aumentando o Dano causado pelo disparo do Canhão em 320% do ATQ de Kinich.",
-      "level": 1
+      "level": 1,
+      "modifiers": []
     },
     {
       "name": "Presente do Reino da Noite: Pagamento Completo",
       "unlock": "Desbloqueado na Ascenção 4",
       "description": "Quando Kinich está no ar logo após o golpe no ar de Caçador de Dossel: Montando nas Alturas, pode consumir 10 de Flogisto para fazer outro ataque no ar.\nQuando estiver em uma área com um Dispositivo de Flogisto em Natlan, ele pode usar Transmissão do Espírito da Noite: Kinich. Quando o personagem ativo estiver correndo, em estados de movimento causados por Talentos específicos, ou no ar, mudar para Kinich ativará uma das seguintes ações de acordo com as circunstâncias:\n· Quando puder interagir com Selo da Grama na sua direção: dispara uma Corda-gancho nele e se move.\n· Quando há um inimigo por perto e está no estado de combate: desencadeia Caçador de Dossel: Montando nas Alturas nesse inimigo.\nCaso contrário, Kinich dispara uma Corda-gancho e balançará no ar. Kinich priorizará Selos da Grama como alvos para se prender.\nSua equipe pode usar Transmissão do Espírito da Noite uma vez a cada 10s.\n\nQuando estiver interagindo com Selos da Grama e outros itens que podem interagir com Yumkassauros, \"Caçador de Dossel: Montando nas Alturas\" será convertido em \"Mimésis Yumkassauro\", que faz interações com tais itens seguir regras aplicáveis a Yumkassauros, e que não farão \"Caçador de Dossel: Montando nas Alturas\" entrar em Recarga.",
-      "level": 4
+      "level": 4,
+      "modifiers": []
     },
     {
       "name": "Emissário Veloz",
       "unlock": "Desbloqueado automaticamente",
-      "description": "Quando estiver em uma área de Natlan com Dispositivos de Flogisto, interagir com alguns itens coletáveis aumentará a Veloc. Mov. dos membros da equipe em 15% por 10s. Além disso, exibe no mini-mapa o local das especialidades de Natlan próximas."
+      "description": "Quando estiver em uma área de Natlan com Dispositivos de Flogisto, interagir com alguns itens coletáveis aumentará a Veloc. Mov. dos membros da equipe em 15% por 10s. Além disso, exibe no mini-mapa o local das especialidades de Natlan próximas.",
+      "modifiers": []
     }
   ],
   "constellations": [
@@ -971,37 +2319,61 @@
       "name": "Bico de Papagaio",
       "unlock": "Constelação Lv. 1",
       "description": "Após Kinich aterrissar do ataque aéreo de Caçador de Dossel: Montando nas Alturas, sua Veloc. Mov. aumentará em 30% por 6s. \nAlém disso, o Dano CRIT do Canhão Perfurador Giratório é aumentado em 100%.",
-      "level": 1
+      "level": 1,
+      "modifiers": [],
+      "changes": []
     },
     {
       "name": "Palma do Tigre Estelar",
       "unlock": "Constelação Lv. 2",
       "description": "Quando a Habilidade Elemental de Kinich atinge os oponentes, ela reduzirá a RES Dendro deles em 30% por 6s. \nAlém disso, o primeiro Canhão Perfurador Giratório que Kinich dispara após entrar no estado de Bênção do Espírito da Noite tem a AdE aumentada, e seu Dano aumenta em 100%.",
-      "level": 2
+      "level": 2,
+      "modifiers": [],
+      "changes": []
     },
     {
       "name": "Garras de Protodilo",
       "unlock": "Constelação Lv. 3",
       "description": "Aumenta o nível do Caçador de Dossel: Montando nas Alturas em 3.\nO nível máximo de elevação é 15.",
-      "level": 3
+      "level": 3,
+      "modifiers": [],
+      "changes": [
+        {
+          "skillTalents": "Saúdem o Poderoso Dragão Soberano",
+          "level": true,
+          "add": 3
+        }
+      ]
     },
     {
       "name": "Pena de Beija-flor",
       "unlock": "Constelação Lv. 4",
       "description": "Quando estiver sob a Bênção do Espírito da Noite, Kinich restaurará 5 de Energia após usar seu Disparo Circular ou após disparar o Canhão Perfurador Giratório. A regeneração de Energia pode acontecer dessa maneira uma vez a cada 2.8s.\nAlém disso, o Dano causado por Saúdem o Poderoso Dragão Soberano é aumentado em 70%.",
-      "level": 4
+      "level": 4,
+      "modifiers": [],
+      "changes": []
     },
     {
       "name": "Cauda de Macaco Uivador",
       "unlock": "Constelação Lv. 5",
       "description": "Aumenta o nível de Saúdem o Poderoso Dragão Soberano em 3.\nO nível máximo de elevação é 15.",
-      "level": 5
+      "level": 5,
+      "modifiers": [],
+      "changes": [
+        {
+          "skillTalents": "Caçador de Dossel: Montando nas Alturas",
+          "level": true,
+          "add": 3
+        }
+      ]
     },
     {
       "name": "Forma da Besta Auspiciosa",
       "unlock": "Constelação Lv. 6",
       "description": "Quando o Canhão Perfurador Giratório atinge um inimigo, ricocheteia entre inimigos uma vez, causando Dano Dendro equivalente a 700% do ATQ de Kinich.\nSe esse Canhão Perfurador Giratório desencadear o efeito de fortalecimento do Canhão Perfurador Giratório do Talento Passivo \"Contrato do Espírito Flamejante\" ou da Constelação \"Palma do Tigre Estelar\" , o ataque ricocheteador obterá o efeito de fortalecimento descrito acima.",
-      "level": 6
+      "level": 6,
+      "modifiers": [],
+      "changes": []
     }
   ],
   "vision_key": "DENDRO",
